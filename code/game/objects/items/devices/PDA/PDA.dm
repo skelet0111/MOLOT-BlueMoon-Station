@@ -122,7 +122,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 
 	GLOB.PDAs += src
 	if(default_cartridge)
-		cartridge = new default_cartridge(src)
+		cartridge = /obj/item/cartridge/civil(src)
 	if(inserted_item)
 		inserted_item = new inserted_item(src)
 	else
@@ -782,7 +782,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 	if(HAS_TRAIT(user, TRAIT_DUMB4CUM))
 		to_chat(user, "<span class='love'>You can't focus on anything but cum right now!</span>")
 		return
-		
+
 	var/message = msg_input(user)
 	if(!message || !targets.len)
 		return
