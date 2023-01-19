@@ -34,7 +34,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 
 	//Main variables
 	var/owner = null // String name of owner
-	var/default_cartridge = 0 // Access level defined by cartridge
+	var/default_cartridge = /obj/item/cartridge/civil // Access level defined by cartridge
 	var/obj/item/cartridge/cartridge = null //current cartridge
 	var/mode = 0 //Controls what menu the PDA will display. 0 is hub; the rest are either built in or based on cartridge.
 	var/list/overlays_icons = list('icons/obj/pda_alt.dmi' = list("pda-r", "screen_default", "id_overlay", "insert_overlay", "light_overlay", "pai_overlay"))
@@ -122,7 +122,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 
 	GLOB.PDAs += src
 	if(default_cartridge)
-		cartridge = /obj/item/cartridge/civil(src)
+		cartridge = new default_cartridge(src)
 	if(inserted_item)
 		inserted_item = new inserted_item(src)
 	else
