@@ -123,6 +123,21 @@
 	independent = TRUE
 	channels = list(RADIO_CHANNEL_CENTCOM = 1)
 
+/obj/item/encryptionkey/headset_cargo/tarkoff
+	name = "Tarkof Industry Radio Encryption Key"
+	channels = list(RADIO_CHANNEL_TARKOFF = 1)
+	independent = TRUE
+
+/obj/item/encryptionkey/headset_syndicate/ds1
+	name = "DS1 Radio Encryption Key"
+	channels = list(RADIO_CHANNEL_DS1 = 1)
+	independent = TRUE
+
+/obj/item/encryptionkey/headset_syndicate/ds2
+	name = "DS2 Radio Encryption Key"
+	channels = list(RADIO_CHANNEL_DS2 = 1)
+	independent = TRUE
+
 /obj/item/encryptionkey/ai //ported from NT, this goes 'inside' the AI.
 	channels = list(RADIO_CHANNEL_COMMAND = 1, RADIO_CHANNEL_SECURITY = 1, RADIO_CHANNEL_ENGINEERING = 1, RADIO_CHANNEL_SCIENCE = 1, RADIO_CHANNEL_MEDICAL = 1, RADIO_CHANNEL_SUPPLY = 1, RADIO_CHANNEL_SERVICE = 1, RADIO_CHANNEL_AI_PRIVATE = 1)
 

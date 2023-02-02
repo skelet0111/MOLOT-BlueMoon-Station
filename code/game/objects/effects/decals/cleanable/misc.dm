@@ -312,6 +312,13 @@
 	mergeable_decal = TRUE
 	persistent = TRUE
 
+/obj/effect/decal/cleanable/confetti
+	name = "confetti"
+	desc = "Tiny bits of colored paper thrown about for the janitor to enjoy!"
+	icon = 'icons/effects/confetti_and_decor.dmi'
+	icon_state = "confetti"
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT //the confetti itself might be annoying enough
+
 /obj/effect/decal/cleanable/wrapping
 	name = "wrapping shreds"
 	desc = "Torn pieces of cardboard and paper, left over from a package."

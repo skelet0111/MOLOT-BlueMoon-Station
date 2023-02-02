@@ -223,6 +223,22 @@
 #define ATMOS_GAS_MONITOR_WASTE_ENGINE "engine-waste_out"
 #define ATMOS_GAS_MONITOR_WASTE_ATMOS "atmos-waste_out"
 
+//BlueMoon Edit Begin.
+#define INCINERATOR_TARKOFF_IGNITER "tarkoff_igniter"
+#define INCINERATOR_TARKOFF_DP_VENTPUMP "tarkoff_airlock_pump"
+#define INCINERATOR_TARKOFF_AIRLOCK_SENSOR "tarkoff_airlock_sensor"
+#define INCINERATOR_TARKOFF_AIRLOCK_CONTROLLER "tarkoff_airlock_controller"
+#define INCINERATOR_TARKOFF_AIRLOCK_INTERIOR "tarkoff_airlock_interior"
+#define INCINERATOR_TARKOFF_AIRLOCK_EXTERIOR "tarkoff_airlock_exterior"
+
+#define ATMOS_GAS_MONITOR_TARKOFF_O2 "tarkoff_o2"
+#define ATMOS_GAS_MONITOR_TARKOFF_PLAS "tarkoff_plas"
+#define ATMOS_GAS_MONITOR_TARKOFF_MIX "tarkoff_mix"
+#define ATMOS_GAS_MONITOR_TARKOFF_N2 "tarkoff_n2"
+#define ATMOS_GAS_MONITOR_TARKOFF_N2O "tarkoff_n2o"
+#define ATMOS_GAS_MONITOR_TARKOFF_CO2 "tarkoff_co2"
+#define ATMOS_GAS_MONITOR_TARKOFF_INCINERATOR "tarkoff_incinerator"
+
 //AIRLOCK CONTROLLER TAGS
 
 //RnD toxins burn chamber

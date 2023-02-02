@@ -38,8 +38,10 @@
 	..()
 
 /obj/machinery/atmospherics/pipe/hide(i)
+	level = 1
 	if(level == 1 && isturf(loc))
 		invisibility = i ? INVISIBILITY_MAXIMUM : 0
+		level = 1
 	update_icon()
 
 /obj/machinery/atmospherics/pipe/proc/releaseAirToTurf()

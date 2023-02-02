@@ -28,6 +28,11 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 	/// Does this console store items? if NOT, will dump all items when the user cryo's instead
 	var/allow_items = TRUE
 
+	/// This is what the announcement system uses to make announcements. Make sure to set a radio that has the channel you want to broadcast on.
+	var/obj/item/radio/headset/radio = /obj/item/radio/headset/silicon/pai
+	/// The channel to be broadcast on, valid values are the values of any of the "RADIO_CHANNEL_" defines.
+	var/announcement_channel = null // RADIO_CHANNEL_COMMON doesn't work here.
+
 	var/storage_type = "crewmembers"
 	var/storage_name = "Cryogenic/Teleporter Oversight Control"
 

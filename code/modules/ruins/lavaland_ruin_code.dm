@@ -136,6 +136,13 @@
 /obj/effect/mob_spawn/human/lavaland_syndicate/special(mob/living/new_spawn)
 	new_spawn.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
+/obj/item/radio/headset/ds2
+	name = "DS2 Headset"
+	desc = "A bowman headset with a large red cross on the earpiece, has a small 'IP' written on the top strap. Protects the ears from flashbangs."
+	icon_state = "syndie_headset"
+	radiosound = 'modular_sand/sound/radio/syndie.ogg'
+	keyslot = new /obj/item/encryptionkey/headset_syndicate/ds2
+
 /datum/outfit/lavaland_syndicate
 	name = "Lavaland Syndicate Agent"
 	name = "Off-station Syndicate Agent"

@@ -86,10 +86,11 @@
 			manifest_inject(N.new_character, N.client, N.client.prefs)
 		CHECK_TICK
 
-/datum/datacore/proc/manifest_modify(name, assignment)
+/datum/datacore/proc/manifest_modify(name, assignment, trim)
 	var/datum/data/record/foundrecord = find_record("name", name, GLOB.data_core.general)
 	if(foundrecord)
 		foundrecord.fields["rank"] = assignment
+		foundrecord.fields["trim"] = trim
 
 /datum/datacore/proc/get_manifest_tg() //copypasted from tg, renamed to avoid namespace conflicts
 	var/list/manifest_out = list()
@@ -106,6 +107,7 @@
 	for(var/datum/data/record/t in GLOB.data_core.general)
 		var/name = t.fields["name"]
 		var/rank = t.fields["rank"]
+		var/trim = t.fields["trim"] // internal jobs by trim type
 		var/department_check = GetJobName(t.fields["rank"])
 		var/has_department = FALSE
 		for(var/department in departments)
@@ -115,7 +117,8 @@
 					manifest_out[department] = list()
 				manifest_out[department] += list(list(
 					"name" = name,
-					"rank" = rank
+					"rank" = rank,
+					"trim" = trim
 				))
 				has_department = TRUE
 				break
@@ -124,7 +127,8 @@
 				manifest_out["Misc"] = list()
 			manifest_out["Misc"] += list(list(
 				"name" = name,
-				"rank" = rank
+				"rank" = rank,
+				"trim" = trim
 			))
 	return manifest_out
 
@@ -275,6 +279,7 @@
 		G.fields["id"]			= id
 		G.fields["name"]		= H.real_name
 		G.fields["rank"]		= assignment
+		G.fields["trim"]		= assignment
 		G.fields["age"]			= H.age
 		G.fields["species"]	= H.dna.species.name
 		G.fields["fingerprint"]	= md5(H.dna.uni_identity)
@@ -322,6 +327,7 @@
 		L.fields["id"]			= md5("[H.real_name][H.mind.assigned_role]")	//surely this should just be id, like the others?
 		L.fields["name"]		= H.real_name
 		L.fields["rank"] 		= H.mind.assigned_role
+		L.fields["trim"]		= assignment
 		L.fields["age"]			= H.age
 		if(H.gender == MALE)
 			G.fields["gender"]  = "Male"

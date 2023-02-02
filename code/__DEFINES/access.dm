@@ -106,3 +106,5 @@
 #define ACCESS_BLOODCULT 250
 #define ACCESS_CLOCKCULT 251
 
+	//Таркоф, ёбанный в рот.
+#define ACCESS_TARKOFF "tarkoff"

@@ -731,3 +731,35 @@
 /datum/map_template/shuttle/snowdin/excavation
 	suffix = "excavation"
 	name = "Snowdin Excavation Elevator"
+
+//Tarkoff Блюмуновский. Ебать.
+
+/datum/map_template/shuttle/ruin/tarkon_driver
+	prefix = "_maps/shuttles/bluemoon/"
+	suffix = "tarkoff_driverdc54"
+	name = "Tarkoff Drill Driver"
+
+/datum/map_template/shuttle/ruin/tarkon_driver/defcon3
+	suffix = "tarkoff_driverdc3"
+
+/datum/map_template/shuttle/ruin/tarkon_driver/defcon2
+	suffix = "tarkoff_driverdc2"
+
+/obj/machinery/computer/shuttle/tarkon_driver
+	name = "Tarkoff Driver Control"
+	desc = "Used to control the Tarkoff Driver."
+	circuit = /obj/item/circuitboard/computer/tarkon_driver
+	shuttleId = "tarkoff_driver"
+	possible_destinations = "tarkoff_driver_custom; port_tarkoff; whiteship_home"
+
+/obj/machinery/computer/camera_advanced/shuttle_docker/tarkon_driver
+	name = "Tarkoff Driver Navigation Computer"
+	desc = "The Navigation console for the Tarkoff Driver. A broken \"Engage Drill\" button seems to dimly blink in a yellow colour"
+	shuttleId = "tarkoff_driver"
+	lock_override = NONE
+	shuttlePortId = "tarkoff_driver_custom"
+	view_range = 0
+
+/obj/item/circuitboard/computer/tarkon_driver
+	name = "Tarkoff Driver Control Console (Computer Board)"
+	build_path = /obj/machinery/computer/shuttle/tarkon_driver

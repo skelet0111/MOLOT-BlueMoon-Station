@@ -2574,6 +2574,12 @@
 /obj/effect/clockwork/overlay/floor,
 /turf/open/floor/clockwork/reebe,
 /area/lavaland/surface/outdoors)
+"mi" = (
+/obj/structure/stone_tile/surrounding,
+/obj/structure/stone_tile/center/cracked,
+/mob/living/simple_animal/hostile/big_legion,
+/turf/open/indestructible/boss,
+/area/lavaland/surface/outdoors)
 "mk" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 8
@@ -6420,6 +6426,17 @@
 	},
 /turf/open/floor/carpet/red,
 /area/mine/living_quarters)
+"HS" = (
+/obj/structure/stone_tile,
+/obj/structure/stone_tile{
+	dir = 8
+	},
+/obj/structure/stone_tile/block/cracked{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/big_legion,
+/turf/open/indestructible/boss,
+/area/lavaland/surface/outdoors)
 "HT" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 4
@@ -7031,7 +7048,7 @@
 /obj/structure/stone_tile{
 	dir = 8
 	},
-/obj/structure/destructible/clockwork/reflector,
+/obj/structure/destructible/clockwork/ocular_warden,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "Ls" = (
@@ -34858,7 +34875,7 @@ aa
 aa
 Qh
 mq
-ng
+HS
 nc
 aS
 gC
@@ -39741,7 +39758,7 @@ aa
 aa
 aa
 iB
-dg
+mi
 nc
 JQ
 mq

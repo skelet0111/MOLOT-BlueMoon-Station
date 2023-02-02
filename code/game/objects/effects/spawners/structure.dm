@@ -101,6 +101,9 @@ again.
 /obj/effect/spawner/structure/window/reinforced
 	name = "reinforced window spawner"
 	icon_state = "rwindow_spawner"
+	spawn_list = list(/obj/machinery/door/firedoor/heavy, /obj/structure/grille, /obj/structure/window/reinforced/fulltile)
+
+/obj/effect/spawner/structure/window/reinforced/no_firelock
 	spawn_list = list(/obj/structure/grille, /obj/structure/window/reinforced/fulltile)
 
 /obj/effect/spawner/structure/window/hollow/reinforced
@@ -173,7 +176,7 @@ again.
 /obj/effect/spawner/structure/window/shuttle
 	name = "shuttle window spawner"
 	icon_state = "swindow_spawner"
-	spawn_list = list(/obj/structure/grille, /obj/structure/window/shuttle)
+	spawn_list = list(/obj/machinery/door/firedoor/heavy, /obj/structure/grille, /obj/structure/window/shuttle)
 
 
 //plastitanium window
@@ -181,7 +184,7 @@ again.
 /obj/effect/spawner/structure/window/plastitanium
 	name = "plastitanium window spawner"
 	icon_state = "plastitaniumwindow_spawner"
-	spawn_list = list(/obj/structure/grille, /obj/structure/window/plastitanium)
+	spawn_list = list(/obj/machinery/door/firedoor/heavy, /obj/structure/grille, /obj/structure/window/plastitanium)
 
 //plastitanium pirate window
 
@@ -201,7 +204,7 @@ again.
 /obj/effect/spawner/structure/window/survival_pod
 	name = "pod window spawner"
 	icon_state = "podwindow_spawner"
-	spawn_list = list(/obj/structure/grille, /obj/structure/window/reinforced/survival_pod)
+	spawn_list = list(/obj/machinery/door/firedoor/heavy, /obj/structure/grille, /obj/structure/window/reinforced/survival_pod)
 
 /obj/effect/spawner/structure/window/hollow/survival_pod
 	name = "hollow pod window spawner"
@@ -263,7 +266,7 @@ again.
 /obj/effect/spawner/structure/window/plasma
 	name = "plasma window spawner"
 	icon_state = "pwindow_spawner"
-	spawn_list = list(/obj/structure/grille, /obj/structure/window/plasma/fulltile)
+	spawn_list = list(/obj/machinery/door/firedoor/heavy, /obj/structure/grille, /obj/structure/window/plasma/fulltile)
 
 /obj/effect/spawner/structure/window/hollow/plasma
 	name = "hollow plasma window spawner"

@@ -722,8 +722,8 @@
 	access = list(ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM)
 
 /obj/item/card/id/away
-	name = "a perfectly generic identification card"
-	desc = "A perfectly generic identification card. Looks like it could use some flavor."
+	name = "A Perfectly Generic Identification Card"
+	desc = "A Perfectly Generic Identification Card. Looks like it could use some flavor."
 	icon_state = "retro"
 	access = list(ACCESS_AWAY_GENERAL)
 
@@ -737,8 +737,8 @@
 	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_MAINT, ACCESS_AWAY_SEC)
 
 /obj/item/card/id/away/old
-	name = "a perfectly generic identification card"
-	desc = "A perfectly generic identification card. Looks like it could use some flavor."
+	name = "A Perfectly Generic Identification Card"
+	desc = "A Perfectly Generic Identification Card. Looks like it could use some flavor."
 	icon_state = "centcom"
 
 /obj/item/card/id/away/old/sec
@@ -763,6 +763,40 @@
 	name = "APC Access ID"
 	desc = "A special ID card that allows access to APC terminals."
 	access = list(ACCESS_ENGINE_EQUIP)
+
+/obj/item/card/id/away/old/tarkoff
+	name = "Tarkof Visitor's Pass"
+	desc = "A dust-collected visitors pass, A small tagline reading \"Port Tarkof, The first step to Civilian Partnership in Space Homesteading\"."
+	access = list(ACCESS_AWAY_GENERAL)
+
+/obj/item/card/id/away/old/tarkoff/cargo
+	assignment = "P-T Cargo Personell"
+	desc = "An access card designated for \"cargo's finest\". You're also a part time space miner, when cargonia is quiet."
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
+
+/obj/item/card/id/away/old/tarkoff/sec
+	assignment = "P-T Port Guard"
+	desc = "An access card designated for \"security members\". Everyone wants your guns, partner. Yee-haw."
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
+
+/obj/item/card/id/away/old/tarkoff/med
+	assignment = "P-T Trauma Medic"
+	desc = "An access card designated for \"medical staff\". You provide the medic bags."
+	access = list(ACCESS_MEDICAL, ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
+
+/obj/item/card/id/away/old/tarkoff/eng
+	assignment = "P-T Maintenance Crew"
+	desc = "An access card designated for \"engineering staff\". You're going to be the one everyone points at to fix stuff, lets be honest."
+
+/obj/item/card/id/away/old/tarkoff/sci
+	assignment = "P-T Field Researcher"
+	desc = "An access card designated for \"the science team\". You are forgotten basically immediately when it comes to the lab."
+	access = list(ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_WEAPONS, ACCESS_TARKOFF)
+
+/obj/item/card/id/away/old/tarkoff/ensign
+	assignment = "Tarkof Ensign"
+	desc = "An access card designated for \"tarkoff ensign\". No one has to listen to you... But you're the closest there is for command around here."
+	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKOFF, ACCESS_WEAPONS)
 
 /obj/item/card/id/departmental_budget
 	name = "departmental card (FUCK)"
