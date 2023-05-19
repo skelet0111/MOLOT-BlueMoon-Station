@@ -228,7 +228,7 @@
 /obj/item/storage/backpack/duffelbag/syndie/inteq/shredderbundle
 	desc = "A large duffel bag containing two CX Shredders, some magazines, an elite hardsuit, and a chest rig."
 
-/obj/item/storage/backpack/duffelbag/syndie/shredderbundle/PopulateContents()
+/obj/item/storage/backpack/duffelbag/syndie/inteq/shredderbundle/PopulateContents()
 	new /obj/item/ammo_box/magazine/flechette/shredder(src)
 	new /obj/item/ammo_box/magazine/flechette/shredder(src)
 	new /obj/item/ammo_box/magazine/flechette/shredder(src)
