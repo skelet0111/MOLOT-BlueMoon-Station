@@ -40,7 +40,7 @@
 	W.implant(H)
 	var/obj/item/implant/explosive/E = new
 	E.implant(H)
-	H.faction |= ROLE_SYNDICATE
+	H.faction |= ROLE_INTEQ
 	H.update_icons()
 
 /obj/item/paper/fluff/vr/fluke_ops
