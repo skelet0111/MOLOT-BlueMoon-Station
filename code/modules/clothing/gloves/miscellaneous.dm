@@ -369,6 +369,9 @@
 	name = "polychromic maid gloves"
 	desc = "Colourable maid gloves!"
 	icon_state = "maid_arms"
+	unique_reskin = list(
+		"Purple" = list("icon_state" = "maid_arms_p"),
+	)
 
 /obj/item/clothing/gloves/polymaid/ComponentInitialize()
 	. = ..()

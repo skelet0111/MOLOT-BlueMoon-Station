@@ -33,17 +33,27 @@
 	name = "InteQ Radio Uplink"
 	uplink_flag = UPLINK_NUKE_OPS
 
-/obj/item/uplink/syndicate
-	name = "Syndicate Uplink"
+/obj/item/syndicate_uplink
+	name = "syndicate uplink"
 	icon = 'modular_bluemoon/krashly/icons/obj/inteq-uplink.dmi'
 	icon_state = "syndicate-uplink"
+	item_state = "walkietalkie"
 	desc = "A basic handheld radio that communicates with local telecommunication networks. (You can turn Uplink to dust if you Alt + Click it.)"
+	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 	dog_fashion = /datum/dog_fashion/back
 
-/obj/item/uplink/syndicate/Initialize(mapload, owner, tc_amount = 30)
+	flags_1 = CONDUCT_1
+	slot_flags = ITEM_SLOT_BELT
+	throw_speed = 3
+	throw_range = 7
+	w_class = WEIGHT_CLASS_SMALL
+	var/uplink_flag = UPLINK_SYNDICATE
+
+/obj/item/syndicate_uplink/Initialize(mapload, owner, tc_amount = 30)
 	. = ..()
 	AddComponent(/datum/component/uplink/syndicate, owner, FALSE, TRUE, uplink_flag, tc_amount)
 
-/obj/item/uplink/syndicate/nuclear
-	name = "syndicate nuclear uplink"
-	uplink_flag = UPLINK_NUKE_OPS
+/obj/item/syndicate_uplink/nuclear
+	name = "syndicate strike team uplink"
+	uplink_flag = UPLINK_SYNDICATE

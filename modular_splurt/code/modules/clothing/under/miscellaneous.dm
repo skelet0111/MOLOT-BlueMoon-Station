@@ -55,6 +55,12 @@
 	can_adjust = FALSE
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 	body_parts_covered = CHEST|GROIN
+	unique_reskin = list(
+		"Adjusted" = list("icon_state" = "bunnysuit_d"),
+		"Red" = list("icon_state" = "bunnysuit_r"),
+		"Blue" = list("icon_state" = "bunnysuit_b"),
+		"White" = list("icon_state" = "bunnysuit_w")
+	)
 
 /obj/item/clothing/under/domina
 	name = "Dominatrix Dress"

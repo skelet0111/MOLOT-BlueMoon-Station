@@ -385,7 +385,7 @@
 		ertemplate.ertphrase = prefs["ertphrase"]["value"]
 		ertemplate.enforce_human = prefs["enforce_human"]["value"] == "Да" ? TRUE : FALSE
 		ertemplate.opendoors = prefs["open_armory"]["value"] == "Да" ? TRUE : FALSE
-		priority_announce("Attention, [station_name()]. We are attempting to assemble an [ertemplate.polldesc]. Standby.", "ERT Protocol Activated", 'modular_bluemoon/phenyamomota/sound/announcer/maks/ert_request.ogg') //BlueMoon sound
+		priority_announce("Attention, [station_name()]. We are attempting to assemble an [ertemplate.polldesc]. Standby.", "ERT Protocol Activated", 'modular_bluemoon/kovac_shitcode/sound/ert/ert_send.ogg') //BlueMoon sound
 
 		var/list/mob/candidates = pollGhostCandidates("Do you wish to be considered for [ertemplate.polldesc]?", "Deathsquad", null)
 		var/teamSpawned = FALSE
@@ -454,7 +454,7 @@
 					CHECK_TICK
 			return TRUE
 		else
-			priority_announce("[station_name()], we are unfortunately unable to send you an [ertemplate.polldesc] at this time.", "ERT Unavailable", 'modular_bluemoon/phenyamomota/sound/announcer/maks/ert_unable.ogg') //BlueMoon sound
+			priority_announce("[station_name()], we are unfortunately unable to send you an [ertemplate.polldesc] at this time.", "ERT Unavailable", 'modular_bluemoon/kovac_shitcode/sound/ert/ert_no.ogg') //BlueMoon sound
 			return FALSE
 
 	return

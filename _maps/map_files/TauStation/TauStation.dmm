@@ -14870,7 +14870,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/commons/toilet)
 "fde" = (
-/mob/living/simple_animal/hostile/retaliate/clown/clownhulk/chlown,
+/mob/living/simple_animal/hostile/clown/clownhulk/chlown,
 /turf/open/floor/plating,
 /area/service/theater/abandoned)
 "fdg" = (
@@ -34718,7 +34718,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "lZz" = (
-/mob/living/simple_animal/hostile/retaliate/clown/lube{
+/mob/living/simple_animal/hostile/clown/lube{
 	enemies = list("neutral")
 	},
 /turf/open/floor/mineral/bananium,
@@ -48771,7 +48771,7 @@
 	},
 /area/medical/break_room)
 "qUT" = (
-/mob/living/simple_animal/hostile/retaliate/clown/mutant/blob{
+/mob/living/simple_animal/hostile/clown/mutant/blob{
 	atmos_requirements = list("min_oxy"=0,"max_oxy"=0,"min_tox"=0,"max_tox"=0,"min_co2"=0,"max_co2"=0,"min_n2"=0,"max_n2"=0);
 	enemies = list("neutral");
 	health = 300;

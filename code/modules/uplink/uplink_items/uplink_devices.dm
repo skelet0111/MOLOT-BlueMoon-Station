@@ -61,12 +61,12 @@
 
 /datum/uplink_item/device_tools/magboots
 	name = "Blood-Red Magboots"
-	desc = "A pair of magnetic boots with a Syndicate paintjob that assist with freer movement in space or on-station \
+	desc = "A pair of magnetic boots with a reddish paintjob that assist with freer movement in space or on-station \
 			during gravitational generator failures. These reverse-engineered knockoffs of Nanotrasen's \
 			'Advanced Magboots' slow you down in simulated-gravity environments much like the standard issue variety."
 	item = /obj/item/clothing/shoes/magboots/syndie
 	cost = 2
-	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 
 /datum/uplink_item/device_tools/compressionkit
 	name = "Bluespace Compression Kit"
@@ -165,7 +165,7 @@
 			operatives in the fight, even while under fire. Don't cross the streams!"
 	item = /obj/item/gun/medbeam
 	cost = 15
-	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 
 /datum/uplink_item/device_tools/nutcracker
 	name = "Nutcracker"
@@ -217,13 +217,13 @@
 	surplus = 90
 
 /datum/uplink_item/device_tools/medkit
-	name = "Syndicate Combat Medic Kit"
+	name = "Сombat Medic Kit"
 	desc = "This first aid kit is a suspicious brown and red. Included is a combat stimulant injector \
 			for rapid healing, a medical night vision HUD for quick identification of injured personnel, \
 			and other supplies helpful for a field medic."
 	item = /obj/item/storage/firstaid/tactical/nukeop
 	cost = 4
-	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 
 /datum/uplink_item/device_tools/surgerybag
 	name = "Syndicate Surgery Duffel Bag"
@@ -266,12 +266,12 @@
 	cost = 4
 
 /datum/uplink_item/device_tools/potion
-	name = "Syndicate Sentience Potion"
+	name = "Sentience Potion"
 	item = /obj/item/slimepotion/slime/sentience/nuclear
 	desc = "A potion recovered at great risk by undercover Syndicate operatives and then subsequently modified with Syndicate technology. \
 			Using it will make any animal sentient, and bound to serve you, as well as implanting an internal radio for communication and an internal ID card for opening doors."
 	cost = 2
-	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 	restricted = TRUE
 
 //this seems like a terrible idea to me, so commenting it out for now. -Shell

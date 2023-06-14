@@ -82,6 +82,6 @@
 	max_integrity = 200
 	max_mobs = 15
 	spawn_time = 150
-	mob_types = list(/mob/living/simple_animal/hostile/retaliate/clown, /mob/living/simple_animal/hostile/retaliate/clown/fleshclown, /mob/living/simple_animal/hostile/retaliate/clown/clownhulk, /mob/living/simple_animal/hostile/retaliate/clown/longface, /mob/living/simple_animal/hostile/retaliate/clown/clownhulk/chlown, /mob/living/simple_animal/hostile/retaliate/clown/clownhulk/honcmunculus, /mob/living/simple_animal/hostile/retaliate/clown/mutant/blob)
+	mob_types = list(/mob/living/simple_animal/hostile/clown, /mob/living/simple_animal/hostile/clown/fleshclown, /mob/living/simple_animal/hostile/clown/clownhulk, /mob/living/simple_animal/hostile/clown/longface, /mob/living/simple_animal/hostile/clown/clownhulk/chlown, /mob/living/simple_animal/hostile/clown/clownhulk/honcmunculus, /mob/living/simple_animal/hostile/clown/mutant/blob)
 	spawn_text = "climbs out of"
 	faction = list("clown")

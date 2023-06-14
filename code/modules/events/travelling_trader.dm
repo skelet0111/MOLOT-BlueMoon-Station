@@ -183,7 +183,7 @@
 		/mob/living/simple_animal/hostile/stickman/dog = 1,
 		/mob/living/simple_animal/hostile/asteroid/fugu = 1,
 		/mob/living/simple_animal/hostile/bear = 1,
-		/mob/living/simple_animal/hostile/retaliate/clown/fleshclown = 1,
+		/mob/living/simple_animal/hostile/clown/fleshclown = 1,
 		/mob/living/simple_animal/hostile/tree = 1,
 		/mob/living/simple_animal/hostile/mimic = 1,
 		/mob/living/simple_animal/hostile/shark = 1,

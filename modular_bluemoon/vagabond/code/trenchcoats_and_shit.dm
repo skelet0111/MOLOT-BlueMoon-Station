@@ -8,6 +8,9 @@
 
 /obj/item/clothing/suit/jacket/paratrench/black
 	icon_state = "paratrench_black"
+	unique_reskin = list(
+		"Adjusted coat" = list("icon_state" = "paratrench_black_d")
+	)
 
 /datum/gear/suit/paratrench
 	name = "Brown trenchcoat"
@@ -27,4 +30,4 @@
 	name = "Sunglasses"
 	path = /obj/item/clothing/glasses/sunglasses
 	cost = 3
-	
+

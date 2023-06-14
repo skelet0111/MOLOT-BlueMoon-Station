@@ -15,7 +15,7 @@
 	item = /obj/item/grenade/chem_grenade/bioterrorfoam
 	cost = 5
 	surplus = 35
-	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 
 /datum/uplink_item/explosives/bombanana
 	name = "Bombanana"
@@ -33,7 +33,7 @@
 	item = /obj/item/storage/box/syndie_kit/bee_grenades
 	cost = 15
 	surplus = 35
-	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 
 /datum/uplink_item/explosives/c4
 	name = "Composition C-4"
@@ -96,7 +96,7 @@
 	item = /obj/item/storage/box/syndie_kit/tuberculosisgrenade
 	cost = 8
 	surplus = 35
-	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 	restricted = TRUE
 
 /datum/uplink_item/explosives/grenadier
@@ -133,7 +133,7 @@
 			the blast radius before using the detonator."
 	item = /obj/item/syndicatedetonator
 	cost = 3
-	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 
 /datum/uplink_item/explosives/syndicate_minibomb
 	name = "Syndicate Minibomb"
@@ -159,4 +159,4 @@
 	item = /obj/item/grenade/spawnergrenade/manhacks
 	cost = 5
 	surplus = 35
-	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE

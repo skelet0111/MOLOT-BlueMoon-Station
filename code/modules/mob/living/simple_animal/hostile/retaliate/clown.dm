@@ -1,4 +1,4 @@
-/mob/living/simple_animal/hostile/retaliate/clown
+/mob/living/simple_animal/hostile/clown
 	name = "Clown"
 	desc = "A denizen of clown planet."
 	icon = 'icons/mob/clown_mobs.dmi'
@@ -24,10 +24,14 @@
 	melee_damage_lower = 10
 	melee_damage_upper = 10
 	attack_sound = 'sound/items/bikehorn.ogg'
-	obj_damage = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	obj_damage = 30
+	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 	del_on_death = 1
 	loot = list(/obj/effect/mob_spawn/human/clown/corpse)
+
+	faction = list("hostile")
+	AIStatus = AI_ON
+	status_flags = CANPUSH
 
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 270
@@ -38,11 +42,11 @@
 	var/banana_type = /obj/item/grown/bananapeel
 	var/attack_reagent
 
-/mob/living/simple_animal/hostile/retaliate/clown/Initialize(mapload)
+/mob/living/simple_animal/hostile/clown/Initialize(mapload)
 	. = ..()
-	faction |= "clown"
+	faction |= "hostile"
 
-/mob/living/simple_animal/hostile/retaliate/clown/handle_temperature_damage()
+/mob/living/simple_animal/hostile/clown/handle_temperature_damage()
 	if(bodytemperature < minbodytemp)
 		adjustBruteLoss(10)
 		throw_alert("temp", /atom/movable/screen/alert/cold, 2)
@@ -52,11 +56,11 @@
 	else
 		clear_alert("temp")
 
-/mob/living/simple_animal/hostile/retaliate/clown/on_attack_hand(mob/living/carbon/human/M)
+/mob/living/simple_animal/hostile/clown/on_attack_hand(mob/living/carbon/human/M)
 	..()
 	playsound(src.loc, 'sound/items/bikehorn.ogg', 50, TRUE)
 
-/mob/living/simple_animal/hostile/retaliate/clown/BiologicalLife(delta_time, times_fired)
+/mob/living/simple_animal/hostile/clown/BiologicalLife(delta_time, times_fired)
 	if(!(. = ..()))
 		return
 	if(banana_time && banana_time < world.time)
@@ -65,14 +69,14 @@
 		new banana_type(pick(adjacent))
 		banana_time = world.time + rand(30,60)
 
-/mob/living/simple_animal/hostile/retaliate/clown/AttackingTarget()
+/mob/living/simple_animal/hostile/clown/AttackingTarget()
 	. = ..()
 	if(attack_reagent && . && isliving(target))
 		var/mob/living/L = target
 		if(L.reagents)
 			L.reagents.add_reagent(attack_reagent, rand(1,5))
 
-/mob/living/simple_animal/hostile/retaliate/clown/lube
+/mob/living/simple_animal/hostile/clown/lube
 	name = "Living Lube"
 	desc = "A puddle of lube brought to life by the honkmother."
 	icon_state = "lube"
@@ -85,11 +89,11 @@
 	emote_see = list("bubbles", "oozes")
 	loot = list(/obj/item/clothing/mask/gas/clown_hat, /obj/effect/particle_effect/foam)
 
-/mob/living/simple_animal/hostile/retaliate/clown/lube/Initialize(mapload)
+/mob/living/simple_animal/hostile/clown/lube/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/snailcrawl)
 
-/mob/living/simple_animal/hostile/retaliate/clown/banana
+/mob/living/simple_animal/hostile/clown/banana
 	name = "Clownana"
 	desc = "A fusion of clown and banana DNA birthed from a botany experiment gone wrong."
 	icon_state = "banana tree"
@@ -107,7 +111,7 @@
 	loot = list(/obj/item/clothing/mask/gas/clown_hat, /obj/effect/gibspawner/human, /obj/item/soap, /obj/item/seeds/banana)
 	banana_time = 20
 
-/mob/living/simple_animal/hostile/retaliate/clown/honkling
+/mob/living/simple_animal/hostile/clown/honkling
 	name = "Honkling"
 	desc = "A divine being sent by the Honkmother to spread joy. It's not dangerous, but it's a bit of a nuisance."
 	icon_state = "honkling"
@@ -123,7 +127,7 @@
 	banana_type = /obj/item/grown/bananapeel
 	attack_reagent = /datum/reagent/consumable/laughter
 
-/mob/living/simple_animal/hostile/retaliate/clown/fleshclown
+/mob/living/simple_animal/hostile/clown/fleshclown
 	name = "Fleshclown"
 	desc = "A being forged out of the pure essence of pranking, cursed into existence by a cruel maker."
 	icon_state = "fleshclown"
@@ -144,14 +148,14 @@
 	melee_damage_upper = 15
 	attack_verb_continuous = "limply slaps"
 	attack_verb_simple = "limply slap"
-	obj_damage = 5
+	obj_damage = 15
 	loot = list(/obj/item/clothing/suit/hooded/bloated_human, /obj/item/clothing/mask/gas/clown_hat, /obj/effect/gibspawner/human, /obj/item/soap)
 
-/mob/living/simple_animal/hostile/retaliate/clown/fleshclown/Initialize(mapload)
+/mob/living/simple_animal/hostile/clown/fleshclown/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/ventcrawling, given_tier = VENTCRAWLER_ALWAYS)
 
-/mob/living/simple_animal/hostile/retaliate/clown/longface
+/mob/living/simple_animal/hostile/clown/longface
 	name = "Longface"
 	desc = "Often found walking into the bar."
 	icon_state = "long face"
@@ -177,7 +181,7 @@
 	attack_verb_simple = "YA-HONK"
 	loot = list(/obj/item/clothing/mask/gas/clown_hat, /obj/effect/gibspawner/human, /obj/item/soap)
 
-/mob/living/simple_animal/hostile/retaliate/clown/clownhulk
+/mob/living/simple_animal/hostile/clown/clownhulk
 	name = "Honk Hulk"
 	desc = "A cruel and fearsome clown. Don't make him angry."
 	icon_state = "honkhulk"
@@ -205,7 +209,7 @@
 	environment_smash = ENVIRONMENT_SMASH_WALLS
 	loot = list(/obj/item/clothing/mask/gas/clown_hat, /obj/effect/gibspawner/human, /obj/item/soap)
 
-/mob/living/simple_animal/hostile/retaliate/clown/clownhulk/chlown
+/mob/living/simple_animal/hostile/clown/clownhulk/chlown
 	name = "Chlown"
 	desc = "A real lunkhead who somehow gets all the girls."
 	icon_state = "chlown"
@@ -227,7 +231,7 @@
 	attack_sound = 'sound/items/airhorn2.ogg'
 	loot = list(/obj/item/clothing/mask/gas/clown_hat, /obj/effect/gibspawner/human, /obj/effect/particle_effect/foam, /obj/item/soap)
 
-/mob/living/simple_animal/hostile/retaliate/clown/clownhulk/honcmunculus
+/mob/living/simple_animal/hostile/clown/clownhulk/honcmunculus
 	name = "Honkmunculus"
 	desc = "A slender wiry figure of alchemical origin."
 	icon_state = "honkmunculus"
@@ -239,19 +243,19 @@
 	speak = list("honk")
 	emote_see = list("squirms", "writhes")
 	speak_chance = 1
-	maxHealth = 200
-	health = 200
+	maxHealth = 450
+	health = 350
 	speed = -5
 	harm_intent_damage = 5
-	melee_damage_lower = 5
-	melee_damage_upper = 10
+	melee_damage_lower = 15
+	melee_damage_upper = 40
 	attack_verb_continuous = "ferociously mauls"
 	attack_verb_simple = "ferociously maul"
 	environment_smash = ENVIRONMENT_SMASH_NONE
 	loot = list(/obj/item/clothing/mask/gas/clown_hat, /obj/effect/gibspawner/xeno/bodypartless, /obj/effect/particle_effect/foam, /obj/item/soap)
 	attack_reagent = /datum/reagent/peaceborg_confuse
 
-/mob/living/simple_animal/hostile/retaliate/clown/clownhulk/destroyer
+/mob/living/simple_animal/hostile/clown/clownhulk/destroyer
 	name = "The Destroyer"
 	desc = "An ancient being born of arcane honking."
 	icon_state = "destroyer"
@@ -275,7 +279,7 @@
 	environment_smash = ENVIRONMENT_SMASH_RWALLS
 	loot = list(/obj/item/clothing/mask/gas/clown_hat, /obj/effect/gibspawner/human, /obj/effect/particle_effect/foam, /obj/item/soap)
 
-/mob/living/simple_animal/hostile/retaliate/clown/mutant
+/mob/living/simple_animal/hostile/clown/mutant
 	name = "Unknown"
 	desc = "Kill it for its own sake."
 	icon_state = "mutant"
@@ -291,18 +295,18 @@
 	speak = list("aaaaaahhhhuuhhhuhhhaaaaa", "AAAaaauuuaaAAAaauuhhh", "huuuuuh... hhhhuuuooooonnnnkk", "HuaUAAAnKKKK")
 	emote_see = list("squirms", "writhes", "pulsates", "froths", "oozes")
 	speak_chance = 10
-	maxHealth = 130
-	health = 130
+	maxHealth = 500
+	health = 450
 	pixel_x = -16
 	speed = -5
 	harm_intent_damage = 10
-	melee_damage_lower = 10
-	melee_damage_upper = 20
+	melee_damage_lower = 20
+	melee_damage_upper = 50
 	attack_verb_continuous = "awkwardly flails at"
 	attack_verb_simple = "awkwardly flail at"
 	loot = list(/obj/item/clothing/mask/gas/clown_hat, /obj/effect/gibspawner/xeno/bodypartless, /obj/item/soap, /obj/effect/gibspawner/generic, /obj/effect/gibspawner/generic/animal, /obj/effect/gibspawner/human/bodypartless, /obj/effect/gibspawner/human)
 
-/mob/living/simple_animal/hostile/retaliate/clown/mutant/blob
+/mob/living/simple_animal/hostile/clown/mutant/blob
 	name = "Something that was once a clown"
 	desc = "A grotesque bulging figure far mutated from it's original state."
 	icon_state = "blob"

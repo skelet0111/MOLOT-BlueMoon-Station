@@ -194,7 +194,7 @@
 	/obj/item/gun/ballistic/automatic/pistol=1,\
 	/obj/item/kitchen/knife/combat/survival)
 
-	uplink_type = /obj/item/uplink/syndicate/nuclear
+	uplink_type = /obj/item/syndicate_uplink
 	tc = 60
 
 /datum/outfit/syndicate/lone/inteq
@@ -203,17 +203,17 @@
 	glasses = /obj/item/clothing/glasses/night/syndicate
 	uniform = /obj/item/clothing/under/inteq
 	mask = /obj/item/clothing/mask/gas/sechailer
-	suit = /obj/item/clothing/suit/space/syndicate/contract
-	head = /obj/item/clothing/head/helmet/space/syndicate/contract
+	suit = /obj/item/clothing/suit/space/syndicate/inteq
+	head = /obj/item/clothing/head/helmet/space/syndicate/inteq
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 	internals_slot = ITEM_SLOT_RPOCKET
-	belt = /obj/item/storage/belt/military
+	belt = /obj/item/storage/belt/military/inteq
 	backpack_contents = list(/obj/item/storage/box/survival/syndie=1,\
 	/obj/item/tank/jetpack/oxygen/harness=1,\
 	/obj/item/gun/ballistic/automatic/pistol=1,\
 	/obj/item/kitchen/knife/combat/survival)
 
-	uplink_type = /obj/item/inteq/uplink/radio
+	uplink_type = /obj/item/inteq/uplink/radio/nuclear
 	tc = 60
 
 /datum/outfit/syndicate/syndiesquad
@@ -227,6 +227,8 @@
 	backpack_contents = list(/obj/item/storage/box/survival/syndie=1,\
 		/obj/item/kitchen/knife/combat/survival)
 
+	uplink_type = /obj/item/syndicate_uplink
+
 /datum/outfit/syndicate/syndiesquad/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	if(visualsOnly)
 		return
@@ -236,7 +238,7 @@
 	R.freqlock = TRUE
 
 	var/key = H.key ? H.key : preference_source ? preference_source.key : null
-	var/obj/item/uplink/syndicate/U = new /obj/item/uplink/nuclear_restricted(H, key, 80)
+	var/obj/item/syndicate_uplink/U = new /obj/item/uplink/nuclear_restricted(H, key, 80)
 	H.equip_to_slot_or_del(U, ITEM_SLOT_BACKPACK)
 
 	var/obj/item/implant/mindshield/L = new //Here you go Deuryn
@@ -255,3 +257,5 @@
 	var/obj/item/implant/explosive/E = new
 	E.implant(H)
 	H.update_icons()
+
+	H.grant_language(/datum/language/codespeak, TRUE, TRUE)
