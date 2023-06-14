@@ -16,7 +16,7 @@
 /datum/uplink_item/badass/costumes
 	cost = 4
 	cant_discount = TRUE
-	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 
 /datum/uplink_item/badass/costumes/centcom_official
 	name = "CentCom Official Costume"
@@ -77,14 +77,14 @@
 	cost = 4
 	limited_stock = 1
 	cant_discount = TRUE
-	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 
 /datum/uplink_item/badass/gaming_cardpack
 	name = "TCG Card Operatives Bundle"
 	desc = "A bundle full of goodies required to work as a TCG Card Operative. A warm pajama, a mug of cocoa, a plushie and a two packs full of rare 2560 Core Set cards!"
 	item = /obj/item/storage/box/syndie_kit/sleepytime/cardpack
 	cost = 20
-	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
+	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SYNDICATE
 
 /datum/uplink_item/badass/cardpack
 	name = "TCG Nuclear Cardpack"

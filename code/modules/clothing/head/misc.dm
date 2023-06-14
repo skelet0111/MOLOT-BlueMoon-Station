@@ -492,6 +492,9 @@
 	icon_state = "maid"
 	item_state = "maid"
 	dynamic_hair_suffix = ""
+	unique_reskin = list(
+		"Purple" = list("icon_state" = "maid_p")
+	)
 
 /obj/item/clothing/head/maid/polychromic
 	name = "polychromic maid headband"

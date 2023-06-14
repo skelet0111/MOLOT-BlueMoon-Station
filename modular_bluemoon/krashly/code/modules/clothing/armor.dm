@@ -74,25 +74,45 @@
 	icon_state = "labcoat_inteq"
 	item_state = "labcoat_inteq"
 
+///Winter Coat
+/obj/item/clothing/suit/hooded/wintercoat/syndicate/inteq
+	name = "InteQ winter coat"
+	desc = "A sinister brown coat with black accents and a fancy mantle, it feels like it can take a hit."
+	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
+	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
+	icon_state = "coatinteq"
+	item_state = "coatinteq"
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/syndicate/inteq
+///Hood
+/obj/item/clothing/head/hooded/winterhood/syndicate/inteq
+	name = "InteQ winter hood"
+	desc = "A sinister brown hood with armor padding."
+	icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
+	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
+	icon_state = "winterhood_inteq"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+///
+
 //InteQ Hardsuits//
 
 //Helmet_ELITE
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/inteq
 	name = "InteQ elite hardsuit helmet"
 	desc = "InteQ elite stormtrooper hardsuit helmet."
-	icon_state = "hardsuit0-inteq"
-	item_state = "hardsuit0-inteq"
+	icon_state = "hardsuit0-inteqe"
+	item_state = "hardsuit0-inteqe"
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
-	hardsuit_type = "inteq"
+	hardsuit_type = "inteqe"
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 //Suit_ELITE
 /obj/item/clothing/suit/space/hardsuit/syndi/elite/inteq
 	name = "InteQ elite hardsuit"
 	desc = "InteQ elite stormtrooper hardsuit."
-	icon_state = "hardsuit0-inteq"
-	item_state = "hardsuit0-inteq"
-	hardsuit_type = "inteq"
+	icon_state = "hardsuit0-inteqe"
+	item_state = "hardsuit0-inteqe"
+	hardsuit_type = "inteqe"
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
 	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits_digidrated.dmi'
@@ -103,19 +123,20 @@
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/inteq
 	name = "InteQ hardsuit helmet"
 	desc = "InteQ stormtrooper hardsuit helmet."
-	icon_state = "hardsuit0-brown"
-	item_state = "hardsuit0-brown"
+	icon_state = "hardsuit0-inteq"
+	item_state = "hardsuit0-inteq"
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
 	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/head_muzzled.dmi'
-	hardsuit_type = "brown"
+	hardsuit_type = "inteq"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 //Suit_STANDART
 /obj/item/clothing/suit/space/hardsuit/syndi/inteq
 	name = "InteQ hardsuit"
 	desc = "InteQ stormtrooper hardsuit."
-	icon_state = "hardsuit0-brown"
-	item_state = "hardsuit0-brown"
-	hardsuit_type = "brown"
+	icon_state = "hardsuit0-inteq"
+	item_state = "hardsuit0-inteq"
+	hardsuit_type = "inteq"
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
 	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits_digidrated.dmi'
@@ -126,22 +147,56 @@
 /obj/item/clothing/head/helmet/space/hardsuit/shielded/syndi/inteq
 	name = "InteQ shielded hardsuit helmet"
 	desc = "InteQ shielded stormtrooper hardsuit helmet."
-	icon_state = "hardsuit0-brown"
-	item_state = "hardsuit0-brown"
+	icon_state = "hardsuit0-inteq"
+	item_state = "hardsuit0-inteq"
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
 	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/head_muzzled.dmi'
-	hardsuit_type = "brown"
+	hardsuit_type = "inteq"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 //Suit_SHIELDED
 /obj/item/clothing/suit/space/hardsuit/shielded/syndi/inteq
 	name = "InteQ shielded hardsuit"
 	desc = "InteQ shielded stormtrooper hardsuit."
-	icon_state = "hardsuit0-brown"
-	item_state = "hardsuit0-brown"
-	hardsuit_type = "brown"
+	icon_state = "hardsuit0-inteq"
+	item_state = "hardsuit0-inteq"
+	hardsuit_type = "inteq"
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
 	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
 	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits_digidrated.dmi'
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/shielded/syndi/inteq
 	shield_state = "shield-yellow"
 //////////
+
+///Kovac added
+////InteQ spacesuit
+/obj/item/clothing/head/helmet/space/syndicate/inteq
+	name = "brown space helmet"
+	icon_state = "space-inteq"
+	item_state = "space-inteq"
+	icon = 'modular_bluemoon/krashly/icons/obj/clothing/head.dmi'
+	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/head.dmi'
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+
+/obj/item/clothing/suit/space/syndicate/inteq
+	name = "brown space suit"
+	icon_state = "space-inteq"
+	item_state = "space-inteq"
+	icon = 'modular_bluemoon/krashly/icons/obj/clothing/suits.dmi'
+	mob_overlay_icon = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
+	anthro_mob_worn_overlay = 'modular_bluemoon/krashly/icons/mob/clothing/suits.dmi'
+/////////////////
+
+////InteQ spacesuit box
+/obj/item/storage/box/syndie_kit/space/inteq
+	name = "boxed space suit and helmet"
+
+/obj/item/storage/box/syndie_kit/space/inteq/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_w_class = WEIGHT_CLASS_NORMAL
+	STR.can_hold = typecacheof(list(/obj/item/clothing/suit/space/syndicate/inteq, /obj/item/clothing/head/helmet/space/syndicate/inteq))
+
+/obj/item/storage/box/syndie_kit/space/inteq/PopulateContents()
+	new /obj/item/clothing/suit/space/syndicate/inteq(src) // Black and red is so in right now
+	new /obj/item/clothing/head/helmet/space/syndicate/inteq(src)

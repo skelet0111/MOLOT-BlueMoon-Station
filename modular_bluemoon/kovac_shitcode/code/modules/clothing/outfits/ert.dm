@@ -33,6 +33,7 @@
 	glasses = /obj/item/clothing/glasses/thermal/eyepatch
 	back = /obj/item/storage/backpack/security
 	belt = /obj/item/storage/belt/grenade/fire_grenade
+	l_hand = /obj/item/gun/energy/laser/hellgun
 	r_hand = /obj/item/flamethrower/full/tank/m240
 	backpack_contents = list(/obj/item/storage/box/survival/engineer=1,\
 		/obj/item/clothing/mask/gas/sechailer=1,\
@@ -157,6 +158,8 @@
 	R.keyslot = new /obj/item/encryptionkey/heads/hos
 	R.recalculateChannels()
 
+	H.grant_language(/datum/language/modular_sand/technorussian, TRUE, TRUE)
+
 /datum/outfit/ert/ert_russian_leader
 	name = "NRI Spetsnaz Leader"
 
@@ -187,6 +190,8 @@
 	R.keyslot = new /obj/item/encryptionkey/heads/hos
 	R.recalculateChannels()
 
+	H.grant_language(/datum/language/modular_sand/technorussian, TRUE, TRUE)
+
 //Солдаты армии Солнечной Системы
 /datum/outfit/ert/sol_soldier
 	name = "SolFed Marine"
@@ -213,6 +218,7 @@
 	var/obj/item/radio/R = H.ears
 	R.keyslot = new /obj/item/encryptionkey/heads/hos
 	R.recalculateChannels()
+	H.grant_language(/datum/language/modular_sand/solcommon, TRUE, TRUE)
 
 /datum/outfit/ert/sol_soldier_demo
 	name = "SolFed Demoman"
@@ -241,6 +247,7 @@
 	R.keyslot = new /obj/item/encryptionkey/heads/hos
 	R.recalculateChannels()
 
+	H.grant_language(/datum/language/modular_sand/solcommon, TRUE, TRUE)
 
 /datum/outfit/ert/sol_soldier_leader
 	name = "SolFed Commander"
@@ -271,3 +278,5 @@
 	var/obj/item/radio/R = H.ears
 	R.keyslot = new /obj/item/encryptionkey/heads/hos
 	R.recalculateChannels()
+
+	H.grant_language(/datum/language/modular_sand/solcommon, TRUE, TRUE)

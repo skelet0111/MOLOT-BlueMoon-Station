@@ -7,14 +7,25 @@
 	desc = "Let them know who is the boss!"
 	item = /obj/item/poster/random_inteq
 	cost = 1
+	purchasable_from = (UPLINK_TRAITORS | UPLINK_NUKE_OPS)
 
 /datum/uplink_item/inteq/clothes_box
 	name = "InteQ Starter Pack"
 	desc = "A box with a full set of clothes and armor designed by InteQ. Murderous drip."
 	item = /obj/item/storage/box/inteq_box/inteq_clothes
 	cost = 4
+	purchasable_from = (UPLINK_TRAITORS | UPLINK_NUKE_OPS)
 
-/datum/uplink_item/inteq/hardsuit/elite
+/datum/uplink_item/suits/space_suit/inteq
+	name = "InteQ Space Suit"
+	desc = "This brown InteQ space suit is less encumbering than Nanotrasen variants, \
+			fits inside bags, and has a weapon slot. Nanotrasen crew members are trained to report brown space suit \
+			sightings, however."
+	item = /obj/item/storage/box/syndie_kit/space/inteq
+	cost = 4
+	purchasable_from = (UPLINK_TRAITORS | UPLINK_NUKE_OPS)
+
+/datum/uplink_item/suits/hardsuit/elite // Traitor hardsuit, not for the nuke ops
 	name = "Elite InteQ Hardsuit"
 	desc = "The latest InteQ developments in the field of Hardsuits. MORE ARMOOOOOR!!!"
 	item = /obj/item/clothing/suit/space/hardsuit/syndi/elite/inteq
@@ -49,7 +60,7 @@
 	cost = 6
 	purchasable_from = (UPLINK_NUKE_OPS)
 
-/datum/uplink_item/inteq/space_suit
+/datum/uplink_item/suits/space_suit
 	name = "InteQ Space Suit"
 	desc = "This Yellow and Black Inteq space suit is less encumbering than Nanotrasen variants, \
 			fits inside bags, and has a weapon slot. Nanotrasen crew members are trained to report InteQ space suit \
@@ -57,7 +68,7 @@
 	item = /obj/item/storage/box/syndie_kit/space
 	cost = 4
 
-/datum/uplink_item/inteq/hardsuit
+/datum/uplink_item/suits/hardsuit
 	name = "InteQ Hardsuit"
 	desc = "The feared suit of a Admiral Brown's Chancellery. Features slightly better armoring and a built in jetpack \
 			that runs off standard atmospheric tanks. Toggling the suit in and out of \
@@ -68,7 +79,7 @@
 	cost = 8
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS) //you can't buy it in nuke, because the elite hardsuit costs the same while being better
 
-/datum/uplink_item/inteq/hardsuit/elite
+/datum/uplink_item/suits/hardsuit/elite
 	name = "Elite InteQ Hardsuit"
 	desc = "An upgraded, elite version of the Admiral Brown's Chancellery hardsuit. It features fireproofing, and also \
 			provides the user with superior armor and mobility compared to the standard InteQ hardsuit."
@@ -76,7 +87,7 @@
 	cost = 8
 	purchasable_from = UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS
 
-/datum/uplink_item/inteq/hardsuit/shielded
+/datum/uplink_item/suits/hardsuit/shielded
 	name = "Shielded InteQ Hardsuit"
 	desc = "An upgraded version of the standard Admiral Brown's Chancellery hardsuit. It features a built-in energy shielding system. \
 			The shields can handle up to three impacts within a short duration and will rapidly recharge while not under fire."

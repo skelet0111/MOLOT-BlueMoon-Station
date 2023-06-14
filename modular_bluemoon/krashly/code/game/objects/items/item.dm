@@ -52,6 +52,24 @@
 	icon = 'modular_bluemoon/krashly/icons/obj/poster.dmi'
 	icon_state = "poster_inteq_baza"
 
+/obj/structure/sign/poster/contraband/inteq/inteq_better_dead
+	name = "Better Dead!"
+	desc = "Crush our enemies!"
+	icon = 'modular_bluemoon/krashly/icons/obj/poster.dmi'
+	icon_state = "poster_inteq_better_dead"
+
+/obj/structure/sign/poster/contraband/inteq/inteq_no_peace
+	name = "No peace!"
+	desc = "Make money, not friends, join PMC InteQ!"
+	icon = 'modular_bluemoon/krashly/icons/obj/poster.dmi'
+	icon_state = "poster_inteq_no_love"
+
+/obj/structure/sign/poster/contraband/inteq/inteq_no_sex
+	name = "No SEX"
+	desc = "Stop jerking off, join PMC InteQ!"
+	icon = 'modular_bluemoon/krashly/icons/obj/poster.dmi'
+	icon_state = "poster_inteq_no_sex"
+
 /obj/item/storage/box/inteq_box
 	name = "brown box"
 	desc = "There are definitely no dangerous items inside."
@@ -69,7 +87,7 @@
 	new /obj/item/storage/belt/military/inteq(src)
 	new /obj/item/clothing/glasses/hud/security/sunglasses/inteq(src)
 	new /obj/item/clothing/head/helmet/swat/inteq(src)
-	new /obj/item/clothing/mask/balaclava/inteq(src)
+	new /obj/item/clothing/mask/balaclava/breath/inteq(src)
 	new /obj/item/storage/backpack/security/inteq(src)
 
 // Лодаут

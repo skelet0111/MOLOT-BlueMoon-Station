@@ -32,7 +32,7 @@
 
 /datum/uplink_item/bundles_tc/contract_kit
 	name = "Contract Kit"
-	desc = "The Syndicate have offered you the chance to become a contractor, take on kidnapping contracts for TC and cash payouts. Upon purchase,  \
+	desc = "The Nanotrasen enemies have offered you the chance to become a contractor, take on kidnapping contracts for TC and cash payouts. Upon purchase,  \
 			you'll be granted your own contract uplink embedded within the supplied tablet computer. Additionally, you'll be granted \
 			standard contractor gear to help with your mission - comes supplied with the tablet, specialised space suit, chameleon jumpsuit and mask, \
 			specialised contractor baton, and three randomly selected low cost items. Can include otherwise unobtainable items."
@@ -69,7 +69,7 @@
 	item = /obj/item/storage/toolbox/infiltrator
 	cost = 5
 	limited_stock = 1 //you only get one so you don't end up with too many gun cases
-	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS)
+	purchasable_from = ~(UPLINK_TRAITORS | UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS)
 
 /datum/uplink_item/bundles_tc/cybernetics_bundle
 	name = "Cybernetic Implants Bundle"

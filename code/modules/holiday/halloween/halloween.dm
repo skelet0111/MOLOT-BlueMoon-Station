@@ -108,7 +108,7 @@
 	else if(trapped == INSANE_CLOWN)
 		visible_message("<span class='userdanger'><font size='5'>...</font></span>")
 		playsound(loc, 'sound/spookoween/scary_clown_appear.ogg', 500, 1)
-		spawn_atom_to_turf(/mob/living/simple_animal/hostile/retaliate/clown/insane, loc, 1, FALSE)
+		spawn_atom_to_turf(/mob/living/simple_animal/hostile/clown/insane, loc, 1, FALSE)
 		trapped = 0
 
 //don't spawn in crates
@@ -179,7 +179,7 @@
 //Spookoween Insane Clown//
 ///////////////////////////
 
-/mob/living/simple_animal/hostile/retaliate/clown/insane
+/mob/living/simple_animal/hostile/clown/insane
 	name = "insane clown"
 	desc = "Some clowns do not manage to be accepted, and go insane. This is one of them."
 	icon_state = "scary_clown"
@@ -193,26 +193,26 @@
 	unsuitable_atmos_damage = 0
 	var/timer
 
-/mob/living/simple_animal/hostile/retaliate/clown/insane/Initialize(mapload)
+/mob/living/simple_animal/hostile/clown/insane/clown/Initialize(mapload)
 	. = ..()
 	timer = rand(5,15)
 
-/mob/living/simple_animal/hostile/retaliate/clown/insane/Retaliate()
+//mob/living/simple_animal/hostile/clown/insane/Retaliate()
+	//return
+
+/mob/living/simple_animal/hostile/clown/insane/ex_act()
 	return
 
-/mob/living/simple_animal/hostile/retaliate/clown/insane/ex_act()
-	return
-
-/mob/living/simple_animal/hostile/retaliate/clown/insane/wave_ex_act(power, datum/wave_explosion/explosion, dir)
+/mob/living/simple_animal/hostile/clown/insane/wave_ex_act(power, datum/wave_explosion/explosion, dir)
 	return power
 
-/mob/living/simple_animal/hostile/retaliate/clown/insane/Life()
+/mob/living/simple_animal/hostile/clown/insane/Life()
 	timer--
 	if(target)
 		stalk()
 	return
 
-/mob/living/simple_animal/hostile/retaliate/clown/insane/proc/stalk()
+/mob/living/simple_animal/hostile/clown/insane/proc/stalk()
 	var/mob/living/M = target
 	if(M.stat == DEAD)
 		playsound(M.loc, 'sound/spookoween/insane_low_laugh.ogg', 500, 1)
@@ -223,18 +223,18 @@
 		spawn(12)
 			forceMove(M.loc)
 
-/mob/living/simple_animal/hostile/retaliate/clown/insane/MoveToTarget()
+/mob/living/simple_animal/hostile/clown/insane/MoveToTarget()
 	stalk(target)
 
-/mob/living/simple_animal/hostile/retaliate/clown/insane/AttackingTarget()
+/mob/living/simple_animal/hostile/clown/insane/AttackingTarget()
 	return
 
-/mob/living/simple_animal/hostile/retaliate/clown/insane/adjustHealth()
+/mob/living/simple_animal/hostile/clown/insane/adjustHealth()
 	. = ..()
 	if(prob(5))
 		playsound(loc, 'sound/spookoween/insane_low_laugh.ogg', 500, 1)
 
-/mob/living/simple_animal/hostile/retaliate/clown/insane/attackby(obj/item/O, mob/user)
+/mob/living/simple_animal/hostile/clown/insane/attackby(obj/item/O, mob/user)
 	if(istype(O, /obj/item/nullrod))
 		if(prob(5))
 			visible_message("[src] finally found the peace it deserves. <i>You hear honks echoing off into the distance.</i>")
@@ -245,7 +245,7 @@
 	else
 		..()
 
-/mob/living/simple_animal/hostile/retaliate/clown/insane/handle_temperature_damage()
+/mob/living/simple_animal/hostile/clown/insane/handle_temperature_damage()
 	return
 
 /////////////////////////

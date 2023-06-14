@@ -9,7 +9,7 @@
 
 //InteQ
 
-/obj/item/clothing/mask/balaclava/inteq
+/obj/item/clothing/mask/balaclava/breath/inteq
 	name = "InteQ armored balaclava"
 	desc = "Black balaclava made of high quality fabric with two cutouts for the eyes."
 	icon = 'modular_bluemoon/krashly/icons/obj/clothing/mask.dmi'

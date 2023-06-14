@@ -35,6 +35,38 @@
 						/mob/living/simple_animal/hostile/cult/assassin = 2,\
 						/mob/living/simple_animal/hostile/cult/magic = 2)
 
+/datum/round_event_control/portal_storm_clown
+	name = "Portal Storm: Clowns"
+	typepath = /datum/round_event/portal_storm/portal_storm_clown
+	weight = 30
+	min_players = 40
+	earliest_start = 60 MINUTES
+	max_occurrences = 1
+
+/datum/round_event/portal_storm/portal_storm_clown
+	boss_types = list(/mob/living/simple_animal/hostile/clown/clownhulk = 1)
+	hostile_types = list(/mob/living/simple_animal/hostile/clown/mutant = 7,\
+						/mob/living/simple_animal/hostile/clown/mutant/blob = 4,\
+						/mob/living/simple_animal/hostile/clown/longface = 4,\
+						/mob/living/simple_animal/hostile/clown/clownhulk/honcmunculus = 7,\
+						/mob/living/simple_animal/hostile/clown/lube = 5,\
+						/mob/living/simple_animal/hostile/clown/banana = 5,\
+						/mob/living/simple_animal/hostile/clown/fleshclown = 4)
+
+/datum/round_event_control/portal_storm_necros
+	name = "Portal Storm: Necromorphs"
+	typepath = /datum/round_event/portal_storm/portal_storm_necros
+	weight = 40
+	min_players = 50
+	earliest_start = 60 MINUTES
+	max_occurrences = 1
+
+/datum/round_event/portal_storm/portal_storm_necros
+	boss_types = list(/mob/living/simple_animal/hostile/brute = 1)
+	hostile_types = list(/mob/living/simple_animal/hostile/brute = 3,\
+						/mob/living/simple_animal/hostile/brute/leaper = 5,\
+						/mob/living/simple_animal/hostile/brute/uber = 5)
+
 /datum/round_event/portal_storm
 	start_when = 7
 	end_when = 999
@@ -76,7 +108,7 @@
 	set waitfor = FALSE
 	sound_to_playing_players('sound/magic/lightning_chargeup.ogg')
 	sleep(80)
-	priority_announce("Массивная Блюспейс-Аномалия приближается к [station_name()]. Готовьтесь к столкновению с Угрозами Прошлого!", "Центральное Командование, Отдел Работы с Реальностью", 'sound/announcer/classic/_admin_horror_music.ogg')
+	priority_announce("На [station_name()] зафиксирована крупная блюспейс-аномалия. Приготовьтесь к столкновению с угрозами прошлого и будущего.", "Центральное Командование, Отдел Работы с Реальностью", 'sound/announcer/classic/_admin_horror_music.ogg')
 	sleep(20)
 	sound_to_playing_players('sound/magic/lightningbolt.ogg')
 

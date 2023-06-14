@@ -55,13 +55,13 @@
 //RSH-12
 
 /obj/item/ammo_box/magazine/internal/shot/com/rsh12
-	name = "rsh-12 internal magazine"
+	name = "rsh-15 internal magazine"
 	ammo_type = /obj/item/ammo_casing/shotgun/rubbershot
-	max_ammo = 5
+	max_ammo = 4
 
-/obj/item/gun/ballistic/shotgun/automatic/combat/rsh12
-	name = "RSH-12"
-	desc = "A russian-made semi-automatic beast, intended to use with 12 gauge."
+/obj/item/gun/ballistic/shotgun/rsh12
+	name = "RSH-15"
+	desc = "A moden Russian-made semi-automatic revolver, intended to used with 12 gauge."
 	icon_state = "rsh12"
 	item_state = "rsh12"
 	icon = 'modular_bluemoon/kovac_shitcode/icons/obj/weapons/weapons.dmi'
@@ -76,7 +76,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
 	unique_reskin = list(
-		"RSH-12" = list("icon_state" = "rsh12")
+		"RSH-15" = list("icon_state" = "rsh12")
 	)
 
 //HoS G22 pistol
@@ -150,11 +150,11 @@
 //Head of Security's new weapons beacon and stuff
 
 /obj/item/storage/secure/briefcase/rsh12_box
-	name = "\improper RSH-12 revolver box"
+	name = "\improper RSH-15 revolver box"
 	desc = "A storage case for a heavy revolver."
 
 /obj/item/storage/secure/briefcase/rsh12_box/PopulateContents()
-	new /obj/item/gun/ballistic/shotgun/automatic/combat/rsh12(src)
+	new /obj/item/gun/ballistic/shotgun/rsh12(src)
 	new /obj/item/ammo_box/shotgun/loaded/rubbershot(src)
 	new /obj/item/ammo_box/shotgun/loaded/rubbershot(src)
 	new /obj/item/ammo_box/shotgun/loaded/buckshot(src)
@@ -330,6 +330,7 @@
 	Bought massively from NRI mercenaries, it has become one of the most beloved InteQ weapons."
 	item = /obj/item/inteq_sledgehammer
 	cost = 10
+	purchasable_from = (UPLINK_TRAITORS | UPLINK_NUKE_OPS)
 
 /datum/uplink_item/dangerous/inteq_chainsaw
 	name = "Chainsaw"

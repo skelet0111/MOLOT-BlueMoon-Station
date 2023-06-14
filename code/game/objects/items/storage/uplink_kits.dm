@@ -248,8 +248,8 @@
 	STR.can_hold = typecacheof(list(/obj/item/clothing/suit/space/syndicate, /obj/item/clothing/head/helmet/space/syndicate))
 
 /obj/item/storage/box/syndie_kit/space/PopulateContents()
-	new /obj/item/clothing/suit/space/syndicate/contract(src) // Black and red is so in right now
-	new /obj/item/clothing/head/helmet/space/syndicate/contract(src)
+	new /obj/item/clothing/suit/space/syndicate(src) // Black and red is so in right now
+	new /obj/item/clothing/head/helmet/space/syndicate(src)
 
 /obj/item/storage/box/syndie_kit/emp
 	name = "boxed EMP kit"
