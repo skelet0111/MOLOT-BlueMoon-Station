@@ -749,7 +749,7 @@
 
 /mob/living/simple_animal/hostile/mentordrone/Initialize(mapload)
 	. = ..()
-	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT, TRAIT_NIGHT_VISION, )
+	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT, TRAIT_NIGHT_VISION, TRAIT_SPACEWALK, )
 
 /mob/living/simple_animal/hostile/mannequin
 	name = "living mannequin"
