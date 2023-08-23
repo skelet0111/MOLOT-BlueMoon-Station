@@ -1,4 +1,3 @@
-@@ -1,382 +0,0 @@
 /*!Language holders will either exist in an atom/movable or a mind. Creation of language holders happens
 automatically when they are needed, for example when something tries to speak.
 Where a mind is available, the mind language holder will be the one "in charge". The mind holder
