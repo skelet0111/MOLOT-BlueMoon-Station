@@ -1,3 +1,4 @@
+@@ -1,382 +0,0 @@
 /*!Language holders will either exist in an atom/movable or a mind. Creation of language holders happens
 automatically when they are needed, for example when something tries to speak.
 Where a mind is available, the mind language holder will be the one "in charge". The mind holder
@@ -250,8 +251,7 @@ Key procs
 
 /datum/language_holder/drone
 	understood_languages = list(/datum/language/drone = list(LANGUAGE_ATOM),
-								/datum/language/machine = list(LANGUAGE_ATOM)),
-								/datum/language_holder/synthetic
+								/datum/language/machine = list(LANGUAGE_ATOM))
 	spoken_languages = list(/datum/language/drone = list(LANGUAGE_ATOM))
 	blocked_languages = list(/datum/language/common = list(LANGUAGE_ATOM))
 
