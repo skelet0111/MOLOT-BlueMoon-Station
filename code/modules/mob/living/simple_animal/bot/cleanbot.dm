@@ -493,3 +493,4 @@
 	name = "\improper Servoskull"
 	desc = "Самый настоящий летающий череп! Он держит в своих робо-лапках чистящие средства и выглядит... податливым."
 	icon_state = "servoskull1"
+	base_icon = "servoskull"
