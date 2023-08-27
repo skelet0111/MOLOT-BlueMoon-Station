@@ -22,7 +22,7 @@ jobs:
           echo ::set-output name=CL_ENABLED::${SECRET_EXISTS}
       - name: "Setup python"
         if: steps.value_holder.outputs.CL_ENABLED
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2
         with:
           python-version: '3.x'
       - name: "Install deps"
