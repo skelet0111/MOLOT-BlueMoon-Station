@@ -239,6 +239,7 @@
 
 /datum/outfit/syndicate/syndiesquad
 	name = "Syndicate Special Forces"
+	ears = /obj/item/radio/headset/headset_cent/alt
 	uniform = /obj/item/clothing/under/syndicate
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
