@@ -562,7 +562,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/lighter/ignition_effect(atom/A, mob/user)
 	if(get_temperature())
-		. = "<span class='rose'>Одним плавным движением [user] поджигает [A]. Блин, [user.ru_who()], а ты крутой!</span>"
+		. = "<span class='rose'>Одним плавным движением [user] поджигает [A]. Блин, а ты крутой!</span>"
 
 /obj/item/lighter/proc/set_lit(new_lit)
 	lit = new_lit
