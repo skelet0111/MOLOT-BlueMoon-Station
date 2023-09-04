@@ -7946,7 +7946,7 @@
 /obj/item/paper/crumpled/bloody{
 	pixel_x = -8;
 	pixel_y = 5;
-	info = "Day 32: I've been raped more times than i can remember... in all the despicable ways imaginable... i can't even sit on my ass anymore, and i still feel the taste of cum in my mouth, i don't think i can hold it much longer... h-help me"
+	default_raw_text = "Day 32: I've been raped more times than i can remember... in all the despicable ways imaginable... i can't even sit on my ass anymore, and i still feel the taste of cum in my mouth, i don't think i can hold it much longer... h-help me"
 	},
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/semendrip,
@@ -86904,7 +86904,7 @@
 	},
 /obj/structure/table,
 /obj/item/paper{
-	info = "Incase you forgot how to put a few rods in some holes there's also a TEG upstairs, thought i doubt you would need to use him, and if by any chance EVERYTHING else fails, there's also the solars systems both on the first and second floor, good luck engineers. -Ass. Alicey Marshall";
+	default_raw_text = "Incase you forgot how to put a few rods in some holes there's also a TEG upstairs, thought i doubt you would need to use him, and if by any chance EVERYTHING else fails, there's also the solars systems both on the first and second floor, good luck engineers. -Ass. Alicey Marshall";
 	name = "Note from the Chief Architect";
 	pixel_y = 7
 	},

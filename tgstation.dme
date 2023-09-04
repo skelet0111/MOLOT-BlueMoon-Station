@@ -4828,7 +4828,6 @@
 #include "modular_splurt\code\game\objects\structures\micro_bricks.dm"
 #include "modular_splurt\code\game\objects\structures\pole.dm"
 #include "modular_splurt\code\game\objects\structures\signs.dm"
-#include "modular_splurt\code\game\objects\structures\stairs.dm"
 #include "modular_splurt\code\game\objects\structures\statues.dm"
 #include "modular_splurt\code\game\objects\structures\table_frames.dm"
 #include "modular_splurt\code\game\objects\structures\tables_racks.dm"
