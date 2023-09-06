@@ -31,7 +31,7 @@ GLOBAL_LIST_EMPTY(sechailers)
 			new_message = "996 (Взрывчатка)"
 		if("211")
 			new_message = "211 (Проникновение/Ограбление)"
-	radio.talk_into(src, "Центр, Код [new_message], 10-20: [A]. 10-99, Офицеру [user] требуется поддержка.", radio_channel)
+	radio.talk_into(src, "Центр, Код [new_message], 10-20: [A], [A.x], [A.y], [A.z]. 10-99, Офицеру [user] требуется поддержка.", radio_channel)
 	last_dispatch = world.time
 	for(var/atom/movable/hailer in GLOB.sechailers)
 		if(hailer.loc &&ismob(hailer.loc))
