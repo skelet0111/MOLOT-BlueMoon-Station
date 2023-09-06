@@ -1,9 +1,48 @@
+GLOBAL_LIST_EMPTY(sechailers)
+
+/datum/action/item_action/dispatch
+	name = "Signal dispatch"
+	desc = "Opens up a quick select wheel for reporting crimes, including your current location, to your fellow security officers."
+	button_icon_state = "dispatch"
+	button_icon = 'icons/mob/actions/actions.dmi'
+
+/obj/item/clothing/mask/gas/sechailer/proc/dispatch(mob/user)
+	var/area/A = get_area(src)
+	if(world.time < last_dispatch + dispatch_cooldown)
+		to_chat(user, span_notice("Система Уведомления находится на перезарядке."))
+		return FALSE
+	var/list/options = list()
+	for(var/option in list("69", "187", "404", "505", "996", "211")) //Just hardcoded for now!
+		options[option] = image(icon = 'icons/effects/aiming.dmi', icon_state = option)
+	var/new_option
+	switch(options)
+		if("69")
+			new_option = "69 (Акты Сексуального Характера)"
+		if("187")
+			new_option = "187 (Убийство)"
+		if("404")
+			new_option = "404 (Нарушитель)"
+		if("505")
+			new_option = "505 (Вооружённый Нарушитель)"
+		if("996")
+			new_option = "996 (Взрывчатка)"
+		if("211")
+			new_option = "211 (Проникновение/Ограбление)"
+	var/message = show_radial_menu(user, user, options)
+	if(!message)
+		return FALSE
+	radio.talk_into(src, "Центр, Код [new_option], 10-20: [A]. 10-99, Офицеру [user] требуется поддержка.", radio_channel)
+	last_dispatch = world.time
+	for(var/atom/movable/hailer in GLOB.sechailers)
+		if(hailer.loc &&ismob(hailer.loc))
+			playsound(hailer.loc, "sound/voice/dispatch_please_respond.ogg", 100, FALSE)
+
 
 // **** Security gas mask ****
 
 /obj/item/clothing/mask/gas/sechailer
-	name = "security gas mask"
-	desc = "A standard issue Security gas mask with integrated 'Compli-o-nator 3000' device. Plays over a dozen pre-recorded compliance phrases designed to get scumbags to stand still whilst you tase them. Do not tamper with the device."
+	name = "Security Gas Mask"
+	desc = "Противогаз спецслужб стандартной комплектации со встроенным устройством Compli-o-Nator 3000. Проигрывает более десятка заранее записанных фраз. НЕ ВСКРЫВАЙТЕ ЭТО УСТРОЙСТВО."
 	actions_types = list(/datum/action/item_action/halt, /datum/action/item_action/adjust)
 	icon_state = "sechailer"
 	item_state = "sechailer"
@@ -19,6 +58,19 @@
 	var/recent_uses = 0
 	var/broken_hailer = 0
 	var/safety = TRUE
+	var/obj/item/radio/radio //For engineering alerts.
+	var/radio_key = /obj/item/encryptionkey/headset_sec
+	var/radio_channel = "Security"
+	var/dispatch_cooldown = 250
+	var/last_dispatch = 0
+
+/obj/item/clothing/mask/gas/sechailer/Initialize(mapload)
+	. = ..()
+	GLOB.sechailers += src
+	radio = new(src)
+	radio.keyslot = new radio_key
+	radio.listening = FALSE
+	radio.recalculateChannels()
 
 /obj/item/clothing/mask/gas/sechailer/swat
 	name = "\improper SWAT mask"
