@@ -6789,6 +6789,7 @@
 	},
 /obj/item/radio/off,
 /obj/item/assembly/timer,
+/obj/structure/rack,
 /turf/open/floor/plasteel,
 /area/ai_monitored/command/storage/eva)
 "ayw" = (
@@ -43771,14 +43772,13 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "dAA" = (
-/obj/structure/cable{
-	icon_state = "2-8"
+/obj/machinery/suit_storage_unit/security,
+/obj/machinery/camera{
+	c_tag = "Brig East";
+	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/closed/wall,
-/area/ai_monitored/command/storage/eva)
+/turf/open/floor/plasteel/dark,
+/area/security/brig)
 "dAG" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 8
@@ -45390,9 +45390,6 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/service/kitchen)
 "eVA" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
@@ -50710,10 +50707,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/service/hydroponics)
-"jsg" = (
-/obj/structure/cable,
-/turf/closed/wall,
-/area/ai_monitored/command/storage/eva)
 "jst" = (
 /obj/structure/table/reinforced,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
@@ -53171,9 +53164,6 @@
 /turf/open/floor/plasteel,
 /area/service/bar)
 "ltc" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
@@ -53266,12 +53256,6 @@
 /obj/item/bedsheet/green,
 /turf/open/floor/plasteel,
 /area/security/brig)
-"lwM" = (
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/turf/closed/wall,
-/area/ai_monitored/command/storage/eva)
 "lwN" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -64571,10 +64555,6 @@
 /turf/open/floor/plasteel/dark,
 /area/security/courtroom)
 "vdE" = (
-/obj/structure/cable,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -95555,10 +95535,10 @@ auf
 auf
 eIf
 axA
-lwM
-dAA
+ayW
+ayW
 vdE
-jsg
+ayW
 ayW
 ayW
 ayW
@@ -99907,7 +99887,7 @@ adR
 vIo
 yca
 aiX
-qkM
+dAA
 qkM
 wce
 idr

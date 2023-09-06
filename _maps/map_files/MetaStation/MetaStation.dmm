@@ -3688,13 +3688,13 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "amK" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
 	},
 /obj/machinery/holopad,
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -9761,9 +9761,6 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aNq" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -45187,6 +45184,9 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
 /turf/open/floor/carpet,
 /area/service/lawoffice)
 "dgm" = (
@@ -45940,6 +45940,9 @@
 	dir = 10
 	},
 /mob/living/simple_animal/pet/fox/fennec,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "djs" = (
@@ -56670,11 +56673,11 @@
 /turf/open/floor/wood,
 /area/command/bridge)
 "iwD" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/closed/wall,
 /area/service/lawoffice)
@@ -59216,9 +59219,6 @@
 /turf/open/floor/plating,
 /area/engineering/main)
 "jPf" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -60110,9 +60110,6 @@
 /turf/open/floor/carpet,
 /area/command/bridge)
 "kpk" = (
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
 	},
@@ -75478,13 +75475,10 @@
 /area/command/bridge)
 "skx" = (
 /obj/structure/cable/yellow{
-	icon_state = "4-8"
+	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/turf/closed/wall,
-/area/maintenance/fore)
+/turf/open/floor/carpet,
+/area/service/lawoffice)
 "skz" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/yellow{
@@ -81916,9 +81910,6 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/structure/cable/yellow{
-	icon_state = "1-8"
-	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 4
@@ -85333,15 +85324,15 @@
 /turf/closed/wall,
 /area/service/theater)
 "xzh" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/power/apc{
 	areastring = "/area/service/lawoffice";
 	dir = 1;
 	name = "Law Office APC";
 	pixel_y = 23
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
 	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
@@ -117925,7 +117916,7 @@ lsr
 aBm
 aCu
 iwD
-iRj
+skx
 dgl
 iRj
 sAM
@@ -118954,7 +118945,7 @@ ayJ
 ayJ
 lNc
 lNc
-skx
+lNc
 lNc
 lNc
 lNc

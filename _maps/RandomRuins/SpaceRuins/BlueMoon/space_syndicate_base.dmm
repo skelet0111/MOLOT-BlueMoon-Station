@@ -8911,6 +8911,7 @@
 /obj/effect/turf_decal/siding/yellow{
 	dir = 9
 	},
+/obj/machinery/droneDispenser/syndrone/badass,
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
 "LY" = (

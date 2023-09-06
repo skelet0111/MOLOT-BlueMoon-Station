@@ -1,10 +1,10 @@
 GLOBAL_LIST_EMPTY(sechailers)
 
 /datum/action/item_action/dispatch
-	name = "Signal dispatch"
-	desc = "Opens up a quick select wheel for reporting crimes, including your current location, to your fellow security officers."
+	name = "Signal Dispatch"
+	desc = "Открывает колесо быстрого выбора для сообщения о преступлениях, включая ваше текущее местоположение."
+	icon_icon = 'icons/mob/actions/actions.dmi'
 	button_icon_state = "dispatch"
-	button_icon = 'icons/mob/actions/actions.dmi'
 
 /obj/item/clothing/mask/gas/sechailer/proc/dispatch(mob/user)
 	var/area/A = get_area(src)
@@ -14,24 +14,24 @@ GLOBAL_LIST_EMPTY(sechailers)
 	var/list/options = list()
 	for(var/option in list("69", "187", "404", "505", "996", "211")) //Just hardcoded for now!
 		options[option] = image(icon = 'icons/effects/aiming.dmi', icon_state = option)
-	var/new_option
-	switch(options)
-		if("69")
-			new_option = "69 (Акты Сексуального Характера)"
-		if("187")
-			new_option = "187 (Убийство)"
-		if("404")
-			new_option = "404 (Нарушитель)"
-		if("505")
-			new_option = "505 (Вооружённый Нарушитель)"
-		if("996")
-			new_option = "996 (Взрывчатка)"
-		if("211")
-			new_option = "211 (Проникновение/Ограбление)"
 	var/message = show_radial_menu(user, user, options)
 	if(!message)
 		return FALSE
-	radio.talk_into(src, "Центр, Код [new_option], 10-20: [A]. 10-99, Офицеру [user] требуется поддержка.", radio_channel)
+	var/new_message
+	switch(message)
+		if("69")
+			new_message = "69 (Акты Сексуального Характера)"
+		if("187")
+			new_message = "187 (Убийство)"
+		if("404")
+			new_message = "404 (Нарушитель)"
+		if("505")
+			new_message = "505 (Вооружённый Нарушитель)"
+		if("996")
+			new_message = "996 (Взрывчатка)"
+		if("211")
+			new_message = "211 (Проникновение/Ограбление)"
+	radio.talk_into(src, "Центр, Код [new_message], 10-20: [A]. 10-99, Офицеру [user] требуется поддержка.", radio_channel)
 	last_dispatch = world.time
 	for(var/atom/movable/hailer in GLOB.sechailers)
 		if(hailer.loc &&ismob(hailer.loc))
@@ -43,7 +43,7 @@ GLOBAL_LIST_EMPTY(sechailers)
 /obj/item/clothing/mask/gas/sechailer
 	name = "Security Gas Mask"
 	desc = "Противогаз спецслужб стандартной комплектации со встроенным устройством Compli-o-Nator 3000. Проигрывает более десятка заранее записанных фраз. НЕ ВСКРЫВАЙТЕ ЭТО УСТРОЙСТВО."
-	actions_types = list(/datum/action/item_action/halt, /datum/action/item_action/adjust)
+	actions_types = list(/datum/action/item_action/halt, /datum/action/item_action/adjust, /datum/action/item_action/dispatch)
 	icon_state = "sechailer"
 	item_state = "sechailer"
 	clothing_flags = BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS
@@ -72,10 +72,15 @@ GLOBAL_LIST_EMPTY(sechailers)
 	radio.listening = FALSE
 	radio.recalculateChannels()
 
+/obj/item/clothing/mask/gas/sechailer/Destroy()
+	QDEL_NULL(radio)
+	GLOB.sechailers -= src
+	. = ..()
+
 /obj/item/clothing/mask/gas/sechailer/swat
 	name = "\improper SWAT mask"
-	desc = "A close-fitting tactical mask with an especially aggressive Compli-o-nator 3000."
-	actions_types = list(/datum/action/item_action/halt)
+	desc = "Плотно прилегающая тактическая маска с особо агрессивным Compli-o-Nator 3000."
+	actions_types = list(/datum/action/item_action/halt, /datum/action/item_action/dispatch)
 	icon_state = "swat"
 	item_state = "swat"
 	aggressiveness = 3
@@ -96,12 +101,12 @@ GLOBAL_LIST_EMPTY(sechailers)
 	icon_state = "blue_sechailer"
 
 /obj/item/clothing/mask/gas/sechailer/cyborg
-	name = "security hailer"
-	desc = "A set of recognizable pre-recorded messages for cyborgs to use when apprehending criminals."
+	name = "Security Hailer"
+	desc = "Содержит набор заранее записанных сообщений, которые киборги могут использовать при задержании преступников."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "taperecorder_idle"
 	aggressiveness = 1 //Borgs are nicecurity!
-	actions_types = list(/datum/action/item_action/halt)
+	actions_types = list(/datum/action/item_action/halt, /datum/action/item_action/dispatch)
 
 /obj/item/clothing/mask/gas/sechailer/screwdriver_act(mob/living/user, obj/item/I)
 	if(..())
@@ -135,6 +140,8 @@ GLOBAL_LIST_EMPTY(sechailers)
 /obj/item/clothing/mask/gas/sechailer/ui_action_click(mob/user, action)
 	if(istype(action, /datum/action/item_action/halt))
 		halt()
+	else if(istype(action, /datum/action/item_action/dispatch))
+		dispatch(user)
 	else
 		adjustmask(user)
 
