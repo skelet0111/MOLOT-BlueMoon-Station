@@ -522,7 +522,7 @@
 	if(LAZYLEN(.) > 2) //Want this to appear after species text
 		.[2] += "<hr>"
 
-	if(!(ITEM_SLOT_MASK in obscured))
+	if(!(ITEM_SLOT_EYES in obscured))
 		. += span_boldnotice("Профиль персонажа: <a href='?src=\ref[src];character_profile=1'>\[Осмотреть\]</a>")
 
 	// send signal last so everything else prioritizes above
