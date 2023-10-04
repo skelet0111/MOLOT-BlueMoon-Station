@@ -770,11 +770,7 @@
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership)
 "aPP" = (
-/obj/structure/window/reinforced/fulltile{
-	max_integrity = 5000;
-	name = "hardened window";
-	obj_integrity = 5000
-	},
+/obj/vehicle/sealed/mecha/combat/gygax/dark/loaded/hermes,
 /turf/open/floor/plasteel/dark,
 /area/ctf/arena)
 "aQi" = (
@@ -1291,14 +1287,8 @@
 "bpb" = (
 /obj/structure/table/reinforced,
 /obj/item/book/manual/wiki/medical_cloning,
-<<<<<<< HEAD
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
-=======
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /turf/open/floor/iron/dark,
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 /area/syndicate_mothership)
 "bpc" = (
 /obj/structure/bookcase/random,
@@ -2971,13 +2961,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/ferry)
-<<<<<<< HEAD
-=======
 "cIZ" = (
 /obj/machinery/light/small,
 /turf/open/floor/plating,
 /area/syndicate_mothership)
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 "cJl" = (
 /obj/structure/chair/office/dark,
 /obj/effect/turf_decal/siding/wood,
@@ -3724,8 +3711,7 @@
 /turf/open/floor/grass/grass0,
 /area/centcom/ferry)
 "dnb" = (
-/obj/effect/spawner/lootdrop/melee,
-/turf/open/space/basic,
+/obj/vehicle/sealed/mecha/combat/marauder/loaded,
 /turf/open/floor/plasteel/dark,
 /area/ctf/arena)
 "doi" = (
@@ -4471,14 +4457,8 @@
 /area/holodeck/rec_center/court)
 "dNY" = (
 /obj/effect/decal/cleanable/blood/splats,
-<<<<<<< HEAD
-/obj/structure/statue/bone/rib,
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/turf/open/floor/iron/white,
-=======
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /turf/open/floor/iron/dark,
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 /area/syndicate_mothership)
 "dOl" = (
 /obj/effect/turf_decal/stripes/white/line,
@@ -4531,7 +4511,6 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/salvage,
 /turf/open/floor/plating,
 /area/syndicate_mothership)
 "dQC" = (
@@ -5458,13 +5437,7 @@
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /obj/item/kirbyplants/random,
-<<<<<<< HEAD
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
-=======
 /turf/open/floor/iron/dark,
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 /area/syndicate_mothership)
 "eHf" = (
 /obj/structure/table/wood,
@@ -5484,9 +5457,6 @@
 /area/syndicate_mothership)
 "eHQ" = (
 /obj/structure/safe,
-/obj/item/clothing/head/HoS/inteq_honorable_vanguard,
-/obj/item/clothing/suit/armor/inteq/honorable_vanguard,
-/obj/item/clothing/under/inteq_honorable_vanguard,
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership)
 "eIb" = (
@@ -6568,6 +6538,10 @@
 "fyW" = (
 /turf/closed/indestructible/fakeglass,
 /area/tdome/tdomeadmin)
+"fzo" = (
+/obj/vehicle/sealed/mecha/combat/marauder/mauler/loaded/ares,
+/turf/open/floor/plasteel/dark,
+/area/ctf/arena)
 "fzq" = (
 /obj/item/cardboard_cutout{
 	desc = "They seem to be ignoring you... Typical.";
@@ -6626,14 +6600,8 @@
 /area/syndicate_mothership)
 "fCk" = (
 /obj/machinery/clonepod,
-<<<<<<< HEAD
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
-=======
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /turf/open/floor/iron/dark,
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 /area/syndicate_mothership)
 "fDb" = (
 /turf/open/floor/circuit,
@@ -8010,13 +7978,7 @@
 "gIg" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/effect/decal/cleanable/blood/old,
-<<<<<<< HEAD
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
-=======
 /turf/open/floor/iron/dark,
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 /area/syndicate_mothership)
 "gIZ" = (
 /obj/effect/turf_decal/tile/bar{
@@ -8699,7 +8661,7 @@
 /turf/open/floor/padded,
 /area/slavers)
 "hmP" = (
-/obj/effect/spawner/lootdrop/salvage,
+/obj/structure/closet/emcloset,
 /turf/open/floor/plating,
 /area/syndicate_mothership)
 "hns" = (
@@ -8892,7 +8854,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "hxT" = (
-/turf/open/space/basic,
+/obj/item/card/id/syndicate,
 /turf/open/floor/plasteel/dark,
 /area/ctf/arena)
 "hxW" = (
@@ -9044,17 +9006,6 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/holofloor/plating,
 /area/holodeck/rec_center/refuel)
-<<<<<<< HEAD
-"hDt" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
-/area/syndicate_mothership)
-=======
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 "hDy" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 8
@@ -10036,10 +9987,6 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/centcom/holding)
-"iya" = (
-/mob/living/simple_animal/hostile/carp/cayenne,
-/turf/open/floor/iron/dark,
-/area/syndicate_mothership)
 "izj" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -10788,6 +10735,10 @@
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
+"jhX" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/plasteel/dark,
+/area/ctf/arena)
 "jie" = (
 /obj/effect/turf_decal/snowdin_station_sign/up/five,
 /turf/open/floor/iron/dark,
@@ -12220,6 +12171,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/prison)
+"kul" = (
+/obj/item/card/id/syndicate/inteq,
+/turf/open/floor/plasteel/dark,
+/area/ctf/arena)
 "kus" = (
 /obj/item/kirbyplants/hedge{
 	anchored = 1
@@ -14320,14 +14275,8 @@
 /area/syndicate_mothership)
 "mmZ" = (
 /obj/machinery/computer,
-<<<<<<< HEAD
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
-=======
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /turf/open/floor/iron/dark,
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 /area/syndicate_mothership)
 "mnz" = (
 /obj/effect/turf_decal/tile/brown{
@@ -14404,7 +14353,6 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/salvage,
 /turf/open/floor/plating,
 /area/syndicate_mothership)
 "mqj" = (
@@ -15669,14 +15617,8 @@
 /turf/open/floor/plasteel,
 /area/centcom/supply)
 "nnX" = (
-<<<<<<< HEAD
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
-=======
 /obj/structure/statue/bone/rib,
 /turf/open/floor/iron/cult,
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 /area/syndicate_mothership)
 "nok" = (
 /obj/docking_port/stationary{
@@ -16212,12 +16154,7 @@
 "nIq" = (
 /obj/effect/rune/blood_boil,
 /obj/effect/turf_decal/tile/brown/fourcorners,
-<<<<<<< HEAD
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
-=======
 /turf/open/floor/iron/dark,
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 /area/syndicate_mothership)
 "nIu" = (
 /turf/open/water/decorative,
@@ -17126,12 +17063,7 @@
 "oDZ" = (
 /obj/structure/barricade/wooden,
 /obj/effect/turf_decal/tile/brown/fourcorners,
-<<<<<<< HEAD
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
-=======
 /turf/open/floor/iron/dark,
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 /area/syndicate_mothership)
 "oEc" = (
 /obj/structure/table,
@@ -18969,14 +18901,8 @@
 "qjV" = (
 /obj/structure/table/reinforced,
 /obj/item/paper/fluff/ruins/exp_cloning/log,
-<<<<<<< HEAD
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
-=======
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /turf/open/floor/iron/dark,
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 /area/syndicate_mothership)
 "qkf" = (
 /obj/machinery/door/window/brigdoor{
@@ -20345,6 +20271,10 @@
 	},
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership)
+"rqh" = (
+/obj/vehicle/sealed/mecha/combat/marauder/mauler/loaded,
+/turf/open/floor/plasteel/dark,
+/area/ctf/arena)
 "rqo" = (
 /obj/machinery/computer/security{
 	dir = 8
@@ -20542,13 +20472,7 @@
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/structure/girder,
 /obj/structure/holosign/barrier,
-<<<<<<< HEAD
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
-=======
 /turf/open/floor/iron/dark,
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 /area/syndicate_mothership)
 "rxL" = (
 /obj/structure/table/wood,
@@ -21459,11 +21383,6 @@
 	},
 /turf/open/floor/mineral/titanium/blue,
 /area/centcom/evac)
-"soV" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/mob/living/simple_animal/hostile/carp/brown/beret,
-/turf/open/floor/iron/dark,
-/area/syndicate_mothership)
 "spb" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/closet,
@@ -21934,10 +21853,11 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/centcom/holding)
 "sJX" = (
-/obj/effect/turf_decal/tile/dark_green/fourcorners,
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
-/obj/structure/table/wood,
-/obj/item/clothing/under/inteq_honorable_vanguard,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown,
+/mob/living/simple_animal/hostile/carp/cayenne,
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "sKR" = (
@@ -23272,11 +23192,8 @@
 /turf/open/floor/iron/white,
 /area/syndicate_mothership)
 "tYc" = (
-/obj/effect/turf_decal/box/corners{
-	dir = 1
-	},
-/obj/effect/spawner/lootdrop/salvage,
-/turf/open/floor/iron/dark,
+/obj/structure/filingcabinet/filingcabinet,
+/turf/open/floor/plating,
 /area/syndicate_mothership)
 "tYT" = (
 /obj/machinery/door/airlock/centcom{
@@ -25208,12 +25125,7 @@
 "vLr" = (
 /obj/structure/barricade/wooden/crude,
 /obj/effect/turf_decal/tile/brown/fourcorners,
-<<<<<<< HEAD
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white,
-=======
 /turf/open/floor/iron/dark,
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 /area/syndicate_mothership)
 "vLw" = (
 /obj/machinery/light{
@@ -27018,7 +26930,7 @@
 /obj/item/jukebox/emagged{
 	pixel_y = 10
 	},
-/obj/item/jukebox,
+/obj/item/jukebox/emagged,
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership)
 "xvb" = (
@@ -35067,17 +34979,10 @@ vlZ
 tmX
 hgo
 tmX
-<<<<<<< HEAD
-hmP
-hgo
-apW
-oNp
-=======
 tmX
 oks
 oks
 tmX
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 hgo
 tmX
 sdM
@@ -39422,15 +39327,6 @@ sdM
 sdM
 sdM
 sdM
-<<<<<<< HEAD
-oNp
-hmP
-lnW
-hgo
-hgo
-hgo
-xBW
-=======
 tmX
 sdM
 sdM
@@ -39438,7 +39334,6 @@ sdM
 sdM
 sdM
 jzP
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 hGp
 xfY
 xfY
@@ -39448,7 +39343,7 @@ xfY
 veH
 iCS
 tmX
-hmP
+tYc
 wHj
 hgo
 tmX
@@ -43545,13 +43440,8 @@ iFA
 oks
 oks
 tmX
-<<<<<<< HEAD
-sJX
-lQL
-=======
 nid
 xfY
->>>>>>> parent of 5bdc23adcb (quirk update (#383))
 xfY
 cHJ
 rxL
@@ -43862,7 +43752,7 @@ xKw
 xfY
 xfY
 tmX
-hmP
+lFT
 lFT
 hgo
 tmX
@@ -46155,7 +46045,7 @@ tmX
 xuZ
 aPi
 vMU
-kiH
+sJX
 kiH
 bRD
 pxO
@@ -46244,7 +46134,7 @@ iEw
 xfY
 xfY
 xfY
-iya
+xfY
 xfY
 xfY
 xzn
@@ -46669,7 +46559,7 @@ arL
 kSr
 qIf
 iXj
-soV
+xKw
 bWv
 avp
 tmX
@@ -51806,7 +51696,7 @@ hgo
 tmX
 xjT
 jBl
-tYc
+tPv
 tmX
 sdM
 sdM
@@ -57946,7 +57836,7 @@ sdM
 sdM
 sdM
 tmX
-hmP
+hgo
 hgo
 ibY
 cUv
@@ -59746,7 +59636,7 @@ tmX
 aFc
 rti
 tmX
-hmP
+hgo
 tmX
 xKw
 cUv
@@ -84169,7 +84059,14 @@ sdM
 sdM
 sdM
 qvg
-dbT
+rqh
+hxT
+qvg
+mHL
+mHL
+ovq
+mHL
+mHL
 mHL
 mHL
 mHL
@@ -84177,14 +84074,7 @@ mHL
 ovq
 mHL
 mHL
-mHL
-mHL
-mHL
-mHL
-ovq
-mHL
-mHL
-mHL
+qvg
 hxT
 dnb
 qvg
@@ -84426,8 +84316,8 @@ sdM
 sdM
 sdM
 qvg
-mHL
-mHL
+qvg
+jhX
 qvg
 mHL
 mHL
@@ -84442,8 +84332,8 @@ mHL
 mHL
 mHL
 qvg
+jhX
 qvg
-mHL
 qvg
 sdM
 sdM
@@ -84684,22 +84574,22 @@ sdM
 sdM
 qvg
 mHL
-qvg
-qvg
 mHL
-mHL
-mHL
-qvg
-qvg
-aPP
-aPP
-qvg
-qvg
 mHL
 mHL
 mHL
 mHL
 qvg
+qvg
+qvg
+qvg
+qvg
+qvg
+mHL
+mHL
+mHL
+mHL
+mHL
 mHL
 qvg
 sdM
@@ -85462,8 +85352,8 @@ mHL
 mHL
 mHL
 mHL
-aPP
-aPP
+qvg
+qvg
 mHL
 mHL
 mHL
@@ -85719,7 +85609,7 @@ mHL
 ovq
 mHL
 mHL
-aPP
+qvg
 ovq
 mHL
 mHL
@@ -86487,8 +86377,8 @@ qvg
 ovq
 qvg
 mHL
-aPP
-aPP
+mHL
+mHL
 ovq
 mHL
 mHL
@@ -87524,7 +87414,7 @@ mHL
 mHL
 mHL
 dbT
-aPP
+qvg
 mHL
 mHL
 ovq
@@ -88552,7 +88442,7 @@ ovq
 qvg
 mHL
 ovq
-aPP
+qvg
 ovq
 qvg
 qvg
@@ -89574,13 +89464,13 @@ mHL
 mHL
 mHL
 mHL
-aPP
+qvg
 mHL
 mHL
 mHL
 mHL
 mHL
-aPP
+qvg
 mHL
 mHL
 ovq
@@ -89831,7 +89721,7 @@ mHL
 ovq
 mHL
 mHL
-aPP
+qvg
 ovq
 mHL
 mHL
@@ -90599,8 +90489,8 @@ qvg
 ovq
 qvg
 mHL
-aPP
-aPP
+mHL
+mHL
 ovq
 mHL
 dbT
@@ -91373,7 +91263,7 @@ mHL
 mHL
 mHL
 mHL
-aPP
+qvg
 ovq
 mHL
 mHL
@@ -91630,8 +91520,8 @@ mHL
 ovq
 mHL
 mHL
-aPP
-aPP
+qvg
+qvg
 mHL
 mHL
 mHL
@@ -92394,22 +92284,22 @@ sdM
 sdM
 qvg
 mHL
-qvg
 mHL
 mHL
-mHL
-mHL
-qvg
-qvg
-aPP
-aPP
-qvg
-qvg
 mHL
 mHL
 mHL
 qvg
 qvg
+qvg
+qvg
+qvg
+qvg
+mHL
+mHL
+mHL
+mHL
+mHL
 mHL
 qvg
 sdM
@@ -92650,24 +92540,24 @@ sdM
 sdM
 sdM
 qvg
-mHL
 qvg
-qvg
-mHL
-mHL
-mHL
-mHL
-mHL
-mHL
-mHL
-mHL
-mHL
-mHL
-mHL
-mHL
+jhX
 qvg
 mHL
 mHL
+mHL
+mHL
+mHL
+mHL
+mHL
+mHL
+mHL
+mHL
+mHL
+mHL
+qvg
+jhX
+qvg
 qvg
 sdM
 sdM
@@ -92907,9 +92797,9 @@ sdM
 sdM
 sdM
 qvg
-dbT
-mHL
-mHL
+aPP
+kul
+qvg
 mHL
 mHL
 mHL
@@ -92922,9 +92812,9 @@ ovq
 mHL
 mHL
 mHL
-mHL
-mHL
-dbT
+qvg
+kul
+fzo
 qvg
 sdM
 sdM
