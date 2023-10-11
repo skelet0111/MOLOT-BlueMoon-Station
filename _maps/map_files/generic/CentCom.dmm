@@ -4,6 +4,16 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/syndicate_mothership)
+"abp" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/drinks/beer{
+	pixel_x = 5;
+	pixel_y = -2
+	},
+/obj/item/toy/cards/deck/kotahi,
+/obj/effect/turf_decal/tile/red/fourcorners,
+/turf/open/floor/iron/dark,
+/area/syndicate_mothership)
 "aby" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -1693,16 +1703,6 @@
 /obj/machinery/status_display/evac,
 /turf/closed/indestructible/riveted,
 /area/tdome/tdomeadmin)
-"bJa" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/iron/dark,
-/area/syndicate_mothership)
 "bJg" = (
 /obj/structure/chair/comfy/black,
 /obj/machinery/computer/security/telescreen/entertainment{
@@ -1745,16 +1745,6 @@
 /obj/effect/turf_decal/tile/dark_green/half/contrasted{
 	dir = 8
 	},
-/turf/open/floor/iron/dark,
-/area/syndicate_mothership)
-"bKs" = (
-/obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/beer{
-	pixel_x = 5;
-	pixel_y = -2
-	},
-/obj/item/toy/cards/deck/kotahi,
-/obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "bKE" = (
@@ -3215,16 +3205,6 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/syndicate_mothership)
-"cQq" = (
-/obj/structure/table/wood,
-/obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/item/toy/cards/deck/kotahi,
-/obj/item/reagent_containers/food/drinks/beer{
-	pixel_x = 5;
-	pixel_y = -2
-	},
-/turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "cQw" = (
 /obj/structure/table/reinforced,
@@ -6386,6 +6366,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/ferry)
+"fpo" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/table/wood,
+/obj/item/toy/figure/inteq,
+/turf/open/floor/wood/wood_parquet,
+/area/syndicate_mothership)
 "fpM" = (
 /obj/structure/rack,
 /obj/item/clothing/under/trek/medsci,
@@ -9371,6 +9357,15 @@
 /obj/item/clothing/under/inteq,
 /turf/open/floor/wood,
 /area/syndicate_mothership)
+"hNP" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/drinks/coffee,
+/obj/effect/turf_decal/tile/dark_green/anticorner/contrasted{
+	dir = 4
+	},
+/obj/item/reagent_containers/food/snacks/chips,
+/turf/open/floor/iron/dark,
+/area/syndicate_mothership)
 "hNX" = (
 /obj/effect/turf_decal/tile/brown/anticorner/contrasted{
 	dir = 1
@@ -10349,6 +10344,13 @@
 /obj/structure/curtain,
 /turf/open/floor/mineral/titanium/blue,
 /area/centcom/holding)
+"iIC" = (
+/obj/effect/turf_decal/tile/dark_green/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/structure/table/wood,
+/obj/item/toy/figure/inteq,
+/turf/open/floor/iron/dark,
+/area/syndicate_mothership)
 "iIE" = (
 /obj/effect/turf_decal/tile/bar{
 	dir = 8
@@ -11105,15 +11107,6 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/tdome/tdomeobserve)
-"jtq" = (
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/brown,
-/obj/structure/table/wood,
-/obj/item/paper_bin,
-/turf/open/floor/iron/dark,
-/area/syndicate_mothership)
 "jua" = (
 /obj/structure/table,
 /obj/item/flashlight/lamp,
@@ -11920,14 +11913,6 @@
 	},
 /turf/open/indestructible/hotelwood,
 /area/centcom/holding)
-"kcd" = (
-/obj/structure/table/wood,
-/obj/effect/turf_decal/tile/dark_green/half/contrasted{
-	dir = 4
-	},
-/obj/item/reagent_containers/food/snacks/chips,
-/turf/open/floor/iron/dark,
-/area/syndicate_mothership)
 "kcn" = (
 /obj/item/hilbertshotel/ghostdojo,
 /turf/open/indestructible/hotelwood,
@@ -15652,12 +15637,6 @@
 /obj/structure/sign/flag/nri,
 /turf/closed/indestructible/fakeglass,
 /area/tdome/tdomeobserve)
-"nid" = (
-/obj/effect/turf_decal/tile/dark_green/fourcorners,
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
-/obj/structure/table/wood,
-/turf/open/floor/iron/dark,
-/area/syndicate_mothership)
 "nin" = (
 /obj/machinery/computer/station_alert{
 	dir = 8
@@ -16380,11 +16359,6 @@
 /obj/machinery/vending/dinnerware,
 /turf/open/floor/plasteel/cafeteria,
 /area/centcom/holding)
-"nNi" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/structure/table/wood,
-/turf/open/floor/wood/wood_parquet,
-/area/syndicate_mothership)
 "nNk" = (
 /obj/effect/landmark/abductor/agent{
 	team_number = 3
@@ -16724,13 +16698,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ctf)
-"oeS" = (
-/obj/structure/chair/sofa/corp/left{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/dark_red/fourcorners,
-/turf/open/floor/iron/dark,
-/area/syndicate_mothership)
 "ofx" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 8
@@ -17093,6 +17060,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"oxk" = (
+/obj/structure/table/wood,
+/obj/effect/turf_decal/tile/dark_green/half/contrasted{
+	dir = 4
+	},
+/obj/item/toy/figure/inteq,
+/turf/open/floor/iron/dark,
+/area/syndicate_mothership)
 "oxw" = (
 /obj/item/kirbyplants/hedge{
 	anchored = 1
@@ -17530,6 +17505,16 @@
 /obj/machinery/capture_the_flag/blue,
 /turf/open/floor/circuit/green/anim,
 /area/ctf)
+"oRO" = (
+/obj/structure/table/wood,
+/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/item/toy/cards/deck/kotahi,
+/obj/item/reagent_containers/food/drinks/beer{
+	pixel_x = 5;
+	pixel_y = -2
+	},
+/turf/open/floor/iron/dark,
+/area/syndicate_mothership)
 "oRQ" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/machinery/computer/mech_bay_power_console,
@@ -18148,18 +18133,6 @@
 /obj/item/bedsheet/syndie,
 /obj/structure/sign/flag/syndicate/directional/east,
 /turf/open/floor/wood/wood_parquet,
-/area/syndicate_mothership)
-"pxO" = (
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/brown,
-/obj/structure/table/wood,
-/obj/item/storage/fancy/cigarettes/cigpack_inteq,
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "pyL" = (
 /obj/structure/table,
@@ -22343,6 +22316,13 @@
 /obj/effect/turf_decal/tile/green,
 /turf/open/floor/holofloor,
 /area/holodeck/rec_center/basketball)
+"sWI" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/dark_red/fourcorners,
+/turf/open/floor/iron/dark,
+/area/syndicate_mothership)
 "sWX" = (
 /obj/machinery/door/airlock/centcom{
 	name = "CentCom Security";
@@ -23660,6 +23640,16 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
+"ukd" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/structure/table/wood,
+/obj/item/paper_bin,
+/obj/item/storage/fancy/cigarettes/cigpack_inteq,
+/turf/open/floor/iron/dark,
+/area/syndicate_mothership)
 "ukj" = (
 /obj/effect/landmark/holding_facility,
 /turf/open/indestructible/hotelwood,
@@ -23695,6 +23685,16 @@
 	req_access_txt = "150"
 	},
 /obj/effect/turf_decal/tile/brown/opposingcorners,
+/turf/open/floor/iron/dark,
+/area/syndicate_mothership)
+"ulT" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "umW" = (
@@ -23869,14 +23869,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
-"uwe" = (
-/obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/coffee,
-/obj/effect/turf_decal/tile/dark_green/anticorner/contrasted{
-	dir = 4
-	},
-/turf/open/floor/iron/dark,
-/area/syndicate_mothership)
 "uwf" = (
 /obj/docking_port/stationary{
 	dir = 4;
@@ -27311,6 +27303,18 @@
 	pixel_x = -25
 	},
 /obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/turf/open/floor/iron/dark,
+/area/syndicate_mothership)
+"xAG" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/structure/table/wood,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/item/toy/figure/inteq,
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "xBK" = (
@@ -40143,8 +40147,8 @@ tmX
 sje
 tmX
 tmX
-uwe
-kcd
+hNP
+oxk
 bID
 tmX
 vRJ
@@ -43988,7 +43992,7 @@ tmX
 oks
 oks
 tmX
-nid
+iIC
 xfY
 xfY
 rbh
@@ -45278,9 +45282,9 @@ tmX
 tmX
 tmX
 tmX
-oeS
+sWI
 tFW
-bJa
+ulT
 xKw
 bWv
 xKw
@@ -45911,7 +45915,7 @@ iVf
 xfY
 bhA
 lCv
-bKs
+abp
 hfp
 xfY
 gyH
@@ -46339,8 +46343,8 @@ vMU
 kiH
 kiH
 bRD
-pxO
-jtq
+xAG
+ukd
 kiH
 kiH
 uNE
@@ -47106,7 +47110,7 @@ xrT
 low
 kSr
 sRa
-cQq
+oRO
 xKw
 bWv
 avp
@@ -48379,7 +48383,7 @@ isb
 qDB
 qla
 qla
-nNi
+fpo
 kAA
 kiH
 kiH

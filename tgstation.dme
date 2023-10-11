@@ -10,6 +10,7 @@
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
+#define DEBUG
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
@@ -249,6 +250,7 @@
 #include "code\__HELPERS\text.dm"
 #include "code\__HELPERS\text_vr.dm"
 #include "code\__HELPERS\time.dm"
+#include "code\__HELPERS\turfs.dm"
 #include "code\__HELPERS\type2type.dm"
 #include "code\__HELPERS\type_processing.dm"
 #include "code\__HELPERS\typelists.dm"
@@ -816,6 +818,7 @@
 #include "code\datums\elements\forced_gravity.dm"
 #include "code\datums\elements\ghost_role_eligibility.dm"
 #include "code\datums\elements\haunted.dm"
+#include "code\datums\elements\kneecapping.dm"
 #include "code\datums\elements\mob_holder.dm"
 #include "code\datums\elements\movetype_handler.dm"
 #include "code\datums\elements\object_reskinning.dm"
@@ -4188,7 +4191,8 @@
 #include "modular_bluemoon\SmiLeY\aesthetics\sign\_signs.dm"
 #include "modular_bluemoon\SmiLeY\all_in\landmarks.dm"
 #include "modular_bluemoon\SmiLeY\all_in\wallmount.dm"
-#include "modular_bluemoon\SmiLeY\all_in\barricades\barricades.dm"
+#include "modular_bluemoon\SmiLeY\all_in\security\barricades\barricades.dm"
+#include "modular_bluemoon\SmiLeY\all_in\security\hammers\assault_hammer.dm"
 #include "modular_bluemoon\SmiLeY\all_in\ships\solfed_ships.dm"
 #include "modular_bluemoon\SmiLeY\all_in\ships\syndicate_ships.dm"
 #include "modular_bluemoon\SmiLeY\blastwave_outfits\code\cargo_packs.dm"
@@ -4282,6 +4286,14 @@
 #include "modular_citadel\code\modules\client\loadout\suit.dm"
 #include "modular_citadel\code\modules\client\loadout\uniform.dm"
 #include "modular_citadel\code\modules\client\loadout\unlockable.dm"
+#include "modular_citadel\code\modules\client\loadout\donator\accessory.dm"
+#include "modular_citadel\code\modules\client\loadout\donator\backpack.dm"
+#include "modular_citadel\code\modules\client\loadout\donator\gloves.dm"
+#include "modular_citadel\code\modules\client\loadout\donator\mask.dm"
+#include "modular_citadel\code\modules\client\loadout\donator\neck.dm"
+#include "modular_citadel\code\modules\client\loadout\donator\shoes.dm"
+#include "modular_citadel\code\modules\client\loadout\donator\suit.dm"
+#include "modular_citadel\code\modules\client\loadout\donator\uniform.dm"
 #include "modular_citadel\code\modules\client\verbs\who.dm"
 #include "modular_citadel\code\modules\clothing\neck.dm"
 #include "modular_citadel\code\modules\clothing\trek.dm"
@@ -4995,7 +5007,6 @@
 #include "modular_splurt\code\modules\client\loadout\suit.dm"
 #include "modular_splurt\code\modules\client\loadout\uniform.dm"
 #include "modular_splurt\code\modules\client\loadout\wrists.dm"
-#include "modular_splurt\code\modules\client\loadout\donator\__donator.dm"
 #include "modular_splurt\code\modules\client\loadout\donator\first_tier.dm"
 #include "modular_splurt\code\modules\client\loadout\donator\second_tier.dm"
 #include "modular_splurt\code\modules\client\loadout\donator\third_tier.dm"

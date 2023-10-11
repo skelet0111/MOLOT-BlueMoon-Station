@@ -951,21 +951,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/listeningstation)
-"es" = (
-/obj/structure/table/wood,
-/obj/structure/window/reinforced/survival_pod,
-/obj/structure/window/reinforced/survival_pod{
-	dir = 6
-	},
-/obj/item/toy/cards/deck/syndicate,
-/obj/item/toy/cards/deck/kotahi{
-	pixel_x = 5
-	},
-/obj/item/flashlight/lamp/green{
-	pixel_x = -10
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/listeningstation)
 "ey" = (
 /obj/structure/curtain,
 /obj/machinery/shower{
@@ -981,6 +966,21 @@
 	pixel_y = 1
 	},
 /turf/open/floor/wood,
+/area/ruin/space/has_grav/listeningstation)
+"fi" = (
+/obj/structure/table/wood,
+/obj/structure/window/reinforced/survival_pod,
+/obj/structure/window/reinforced/survival_pod{
+	dir = 6
+	},
+/obj/item/toy/cards/deck/syndicate,
+/obj/item/toy/cards/deck/kotahi{
+	pixel_x = 5
+	},
+/obj/item/flashlight/lamp/green{
+	pixel_x = -10
+	},
+/turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/listeningstation)
 "fo" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
@@ -3241,7 +3241,7 @@ EU
 Mq
 ac
 Ue
-js
+wT
 Ks
 vT
 zT
@@ -3317,8 +3317,8 @@ fo
 XB
 ac
 Ue
-wT
-es
+js
+fi
 vT
 zT
 bw

@@ -246,6 +246,24 @@
 /obj/machinery/atmospherics/components/binary/valve/digital,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/engineering)
+"aO" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/table/wood,
+/obj/structure/window/reinforced/survival_pod,
+/obj/structure/window/reinforced/survival_pod{
+	dir = 6
+	},
+/obj/item/flashlight/lamp/green{
+	pixel_x = -10
+	},
+/obj/item/toy/cards/deck/syndicate,
+/obj/item/toy/cards/deck/kotahi{
+	pixel_x = 5
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/bluemoon/deepspacetwo/service/lounge)
 "aP" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/window/survival_pod{
@@ -2086,6 +2104,21 @@
 /obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/iron/white/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay)
+"hV" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/machinery/power/apc/auto_name/north,
+/obj/structure/chair/sofa/corp/right{
+	color = "#DE3A3A";
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 4
+	},
+/turf/open/floor/wood/wood_large,
+/area/ruin/space/has_grav/bluemoon/deepspacetwo/service/dorms)
 "hZ" = (
 /obj/structure/railing{
 	dir = 4
@@ -4568,6 +4601,24 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo/hangar)
+"sv" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/obj/machinery/button/door/directional/south{
+	id = "dorms-view";
+	req_access_txt = "150";
+	name = "Dorms Blast Door Control"
+	},
+/obj/structure/chair/sofa/corp/left{
+	color = "#DE3A3A";
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/wood/wood_large,
+/area/ruin/space/has_grav/bluemoon/deepspacetwo/service/dorms)
 "sy" = (
 /obj/effect/turf_decal/bluemoon_decals/syndicate/middle/left,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
@@ -7727,15 +7778,6 @@
 	},
 /turf/open/floor/wood/wood_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/admiral)
-"GY" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 5
-	},
-/obj/structure/chair/sofa/corp/left{
-	color = "#DE3A3A"
-	},
-/turf/open/floor/wood,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/service/lounge)
 "Ha" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/window/survival_pod{
@@ -8953,6 +8995,15 @@
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer1,
 /turf/open/floor/iron/white/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay)
+"Mr" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/obj/structure/chair/sofa/corp/left{
+	color = "#DE3A3A"
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/bluemoon/deepspacetwo/service/lounge)
 "Mt" = (
 /obj/machinery/porta_turret/syndicate/energy{
 	dir = 5
@@ -9111,24 +9162,6 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo)
-"Ne" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 10
-	},
-/obj/machinery/button/door/directional/south{
-	id = "dorms-view";
-	req_access_txt = "150";
-	name = "Dorms Blast Door Control"
-	},
-/obj/structure/chair/sofa/corp/right{
-	color = "#DE3A3A";
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
-	dir = 4
-	},
-/turf/open/floor/wood/wood_large,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/service/dorms)
 "Ng" = (
 /obj/effect/turf_decal/vg_decals/atmos/plasma{
 	dir = 4
@@ -9612,21 +9645,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/halls)
-"Pe" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 9
-	},
-/obj/effect/mapping_helpers/network_builder/power_cable/auto,
-/obj/machinery/power/apc/auto_name/north,
-/obj/structure/chair/sofa/corp/left{
-	color = "#DE3A3A";
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
-	dir = 4
-	},
-/turf/open/floor/wood/wood_large,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/service/dorms)
 "Pf" = (
 /obj/structure/chair{
 	dir = 1
@@ -9814,6 +9832,15 @@
 	},
 /turf/open/floor/iron/white/diagonal,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/service/hydroponics)
+"PT" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/obj/structure/chair/sofa/corp/right{
+	color = "#DE3A3A"
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/bluemoon/deepspacetwo/service/lounge)
 "PU" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -10951,24 +10978,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/prison)
-"Uh" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/structure/table/wood,
-/obj/structure/window/reinforced/survival_pod,
-/obj/structure/window/reinforced/survival_pod{
-	dir = 6
-	},
-/obj/item/flashlight/lamp/green{
-	pixel_x = -10
-	},
-/obj/item/toy/cards/deck/syndicate,
-/obj/item/toy/cards/deck/kotahi{
-	pixel_x = 5
-	},
-/turf/open/floor/wood,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/service/lounge)
 "Ui" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/rag,
@@ -11530,15 +11539,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/cargo)
-"Wn" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 9
-	},
-/obj/structure/chair/sofa/corp/right{
-	color = "#DE3A3A"
-	},
-/turf/open/floor/wood,
-/area/ruin/space/has_grav/bluemoon/deepspacetwo/service/lounge)
 "Wq" = (
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security)
@@ -12833,8 +12833,8 @@ Kf
 iR
 eo
 Kf
-Pe
-Ne
+hV
+sv
 Kf
 Az
 iR
@@ -14312,7 +14312,7 @@ Oi
 qh
 qL
 ek
-Wn
+Mr
 Sc
 Xk
 Gg
@@ -14422,8 +14422,8 @@ zI
 qh
 qL
 ek
-GY
-Uh
+PT
+aO
 Ey
 MM
 hJ
