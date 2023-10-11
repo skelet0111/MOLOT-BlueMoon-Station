@@ -1430,7 +1430,7 @@
 /area/eventmap/inside)
 "aex" = (
 /obj/structure/table/plasmaglass,
-/obj/item/toy/cards/deck/unum,
+/obj/item/toy/cards/deck/kotahi,
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountain)

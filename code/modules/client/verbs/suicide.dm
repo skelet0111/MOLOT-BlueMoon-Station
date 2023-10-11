@@ -206,6 +206,25 @@
 	log_game("[key_name(src)] (job: [src.job ? "[src.job]" : "None"]) [is_special_character(src) ? "(ANTAG!) " : ""][ghosting ? "ghosted" : "committed suicide"] at [AREACOORD(src)].")
 	message_admins("[key_name(src)] (job: [src.job ? "[src.job]" : "None"]) [is_special_character(src) ? "(ANTAG!) " : ""][ghosting ? "ghosted" : "committed suicide"] at [AREACOORD(src)].")
 
+/// Proc that handles adding the TRAIT_SUICIDED on the mob in question, as well as additional operations to ensure that everything goes smoothly when we're certain that this person is going to kill themself.
+/// suicide_state is a boolean, and we handle adding/removing the trait in question. Have the trait function reference this mob as the source if we want to do in-depth tracking of where a suicided trait comes from.
+/// For example, the /mob/dead/observer that will inevitably come from the suicidee will inherit the suicided trait upon creation, and keep this reference. Handy for doing checking should we need it.
+/mob/living/proc/set_suicide(suicide_state)
+	if(suicide_state)
+		ADD_TRAIT(src, TRAIT_SUICIDED, REF(src))
+		add_to_mob_suicide_list()
+	else
+		REMOVE_TRAIT(src, TRAIT_SUICIDED, REF(src))
+		remove_from_mob_suicide_list()
+
+///Adds a mob reference to the list of all suicided mobs
+/mob/proc/add_to_mob_suicide_list()
+	GLOB.suicided_mob_list += src
+
+///Removes a mob references from the list of all suicided mobs
+/mob/proc/remove_from_mob_suicide_list()
+	GLOB.suicided_mob_list -= src
+
 /mob/living/proc/canSuicide()
 	var/area/A = get_area(src)
 	if(A.area_flags & BLOCK_SUICIDE)

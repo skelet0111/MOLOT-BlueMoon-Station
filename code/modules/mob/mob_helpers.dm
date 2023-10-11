@@ -369,33 +369,75 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 /mob/proc/reagent_check(datum/reagent/R) // utilized in the species code
 	return 1
 
-/proc/notify_ghosts(message, ghost_sound, enter_link, atom/source, mutable_appearance/alert_overlay, action = NOTIFY_JUMP, flashwindow = TRUE, ignore_mapload = TRUE, ignore_key, ignore_dnr_observers = FALSE, header) //Easy notification of ghosts.
-	if(ignore_mapload && SSatoms.initialized != INITIALIZATION_INNEW_REGULAR)	//don't notify for objects created during a map load
+/**
+ * Fancy notifications for ghosts
+ *
+ * The kitchen sink of notification procs
+ *
+ * Arguments:
+ * * message
+ * * ghost_sound sound to play
+ * * enter_link Href link to enter the ghost role being notified for
+ * * source The source of the notification
+ * * alert_overlay The alert overlay to show in the alert message
+ * * action What action to take upon the ghost interacting with the notification, defaults to NOTIFY_JUMP
+ * * flashwindow Flash the byond client window
+ * * ignore_key  Ignore keys if they're in the GLOB.poll_ignore list
+ * * header The header of the notifiaction
+ * * notify_suiciders If it should notify suiciders (who do not qualify for many ghost roles)
+ * * notify_volume How loud the sound should be to spook the user
+ */
+/proc/notify_ghosts(message, ghost_sound, enter_link, atom/source, mutable_appearance/alert_overlay, action = NOTIFY_JUMP, flashwindow = TRUE, ignore_mapload = TRUE, ignore_key, header, notify_suiciders = TRUE, notify_volume = 100) //Easy notification of ghosts.
+
+	if(ignore_mapload && SSatoms.initialized != INITIALIZATION_INNEW_REGULAR) //don't notify for objects created during a map load
 		return
-	for(var/mob/dead/observer/O in GLOB.player_list)
-		if(O.client)
-			if ((ignore_key && (O.ckey in GLOB.poll_ignore[ignore_key])) || (ignore_dnr_observers && !O.can_reenter_round(TRUE)))
-				continue
-			to_chat(O, "<span class='ghostalert'>[message][(enter_link) ? " [enter_link]" : ""]</span>")
-			if(ghost_sound)
-				SEND_SOUND(O, sound(ghost_sound))
-			if(flashwindow)
-				window_flash(O.client)
-			if(source)
-				var/atom/movable/screen/alert/notify_action/A = O.throw_alert("[REF(source)]_notify_action", /atom/movable/screen/alert/notify_action)
-				if(A)
-					if(O.client.prefs && O.client.prefs.UI_style)
-						A.icon = ui_style2icon(O.client.prefs.UI_style)
-					if (header)
-						A.name = header
-					A.desc = message
-					A.action = action
-					A.target = source
-					if(!alert_overlay)
-						alert_overlay = new(source)
-					alert_overlay.layer = FLOAT_LAYER
-					alert_overlay.plane = FLOAT_PLANE
-					A.add_overlay(alert_overlay)
+	for(var/mob/dead/observer/ghost in GLOB.player_list)
+		if(!notify_suiciders && HAS_TRAIT(ghost, TRAIT_SUICIDED))
+			continue
+		if(ignore_key && (ghost.ckey in GLOB.poll_ignore[ignore_key]))
+			continue
+		var/orbit_link
+		if(source && action == NOTIFY_ORBIT)
+			orbit_link = " <a href='?src=[REF(ghost)];follow=[REF(source)]'>(Orbit)</a>"
+		to_chat(ghost, span_ghostalert("[message][(enter_link) ? " [enter_link]" : ""][orbit_link]"))
+		if(ghost_sound)
+			SEND_SOUND(ghost, sound(ghost_sound, volume = notify_volume))
+		if(flashwindow)
+			window_flash(ghost.client)
+		if(!source)
+			continue
+		var/atom/movable/screen/alert/notify_action/alert = ghost.throw_alert("[REF(source)]_notify_action", /atom/movable/screen/alert/notify_action)
+		if(!alert)
+			continue
+		if(ghost.client.prefs && ghost.client.prefs.UI_style)
+			alert.icon = ui_style2icon(ghost.client.prefs.UI_style)
+		if (header)
+			alert.name = header
+		alert.desc = message
+		alert.action = action
+		alert.target = source
+		if(!alert_overlay)
+			alert_overlay = new(source)
+			alert_overlay.pixel_x = 0
+			alert_overlay.pixel_y = 0
+			var/icon/size_check = icon(source.icon, source.icon_state)
+			var/scale = 1
+			var/width = size_check.Width()
+			var/height = size_check.Height()
+			if(width > world.icon_size)
+				alert_overlay.pixel_x = -(world.icon_size / 2) * ((width - world.icon_size) / world.icon_size)
+			if(height > world.icon_size)
+				alert_overlay.pixel_y = -(world.icon_size / 2) * ((height - world.icon_size) / world.icon_size)
+			if(width > world.icon_size || height > world.icon_size)
+				if(width >= height)
+					scale = world.icon_size / width
+				else
+					scale = world.icon_size / height
+			alert_overlay.transform = alert_overlay.transform.Scale(scale)
+		alert_overlay.appearance_flags |= TILE_BOUND
+		alert_overlay.layer = FLOAT_LAYER
+		alert_overlay.plane = FLOAT_PLANE
+		alert.add_overlay(alert_overlay)
 
 /proc/item_heal_robotic(mob/living/carbon/human/H, mob/user, brute_heal, burn_heal)
 	var/obj/item/bodypart/affecting = H.get_bodypart(check_zone(user.zone_selected))

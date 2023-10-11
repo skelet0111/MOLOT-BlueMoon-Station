@@ -272,3 +272,25 @@
 	description = "<span class='nicegreen'>Обожаю выть!</span>\n"
 	mood_change = 2
 	timeout = 2 MINUTES
+
+/datum/mood_event/playing_cards
+	description = "Мне очень нравится играть в карты!"
+	mood_change = 2
+	timeout = 3 MINUTES
+
+/datum/mood_event/playing_cards/add_effects(param)
+	var/card_players = 1
+	for(var/mob/living/carbon/player in viewers(COMBAT_MESSAGE_RANGE, owner))
+		var/player_has_cards = player.is_holding(/obj/item/toy/singlecard) || player.is_holding_item_of_type(/obj/item/toy/cards)
+		if(player_has_cards)
+			card_players++
+			if(card_players > 5)
+				break
+
+	mood_change *= card_players
+	return ..()
+
+/datum/mood_event/won_52_card_pickup
+	description = "ХА! Какой неудачник!!"
+	mood_change = 3
+	timeout = 3 MINUTES

@@ -7,7 +7,7 @@
 		            /obj/item/storage/dice = 10,
 		            /obj/item/toy/cards/deck/cas = 3,
 		            /obj/item/toy/cards/deck/cas/black = 3,
-					/obj/item/toy/cards/deck/unum = 3,
+					/obj/item/toy/cards/deck/kotahi = 3,
 					/obj/item/camera = 3,
 					/obj/item/cardpack/series_one = 100,
 					/obj/item/tcgcard_binder = 5,

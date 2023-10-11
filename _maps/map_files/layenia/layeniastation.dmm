@@ -65145,7 +65145,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/item/toy/cards/deck/unum{
+/obj/item/toy/cards/deck/kotahi{
 	pixel_y = 6
 	},
 /turf/open/floor/plasteel/white,

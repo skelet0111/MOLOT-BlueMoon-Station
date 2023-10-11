@@ -864,7 +864,7 @@ structure_check() searches for nearby cultist structures required for the invoca
 			fail_invoke()
 			log_game("Manifest rune failed - too many summoned ghosts")
 			return list()
-		notify_ghosts("Manifest rune invoked in [get_area(src)].", 'sound/effects/ghost2.ogg', source = src, ignore_dnr_observers = TRUE)
+		notify_ghosts("Manifest rune invoked in [get_area(src)].", 'sound/effects/ghost2.ogg', source = src, notify_suiciders = TRUE)
 		var/list/ghosts_on_rune = list()
 		for(var/mob/dead/observer/O in T)
 			if(!QDELETED(O) && O.client && !jobban_isbanned(O, ROLE_CULTIST) && !QDELETED(src) && O.can_reenter_round())

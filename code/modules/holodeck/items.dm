@@ -221,3 +221,21 @@
 /obj/item/paper/fluff/holodeck/disclaimer
 	name = "Holodeck Disclaimer"
 	default_raw_text = "Bruises sustained in the holodeck can be healed simply by sleeping."
+
+/obj/item/toy/cards/deck/syndicate/holographic
+	desc = "A deck of holographic playing cards."
+
+/obj/item/toy/cards/deck/syndicate/holographic/Initialize(mapload, obj/machinery/computer/holodeck/holodeck)
+	src.holodeck = holodeck
+	RegisterSignal(src, COMSIG_PARENT_QDELETING, PROC_REF(handle_card_delete))
+	. = ..()
+
+/obj/item/toy/cards/deck/syndicate/holographic/proc/handle_card_delete(datum/source)
+	SIGNAL_HANDLER
+
+	//if any REAL cards have been inserted into the deck they are moved outside before destroying it
+	for(var/obj/item/toy/singlecard/card in card_atoms)
+		if(card.flags_1 & HOLOGRAM_1)
+			continue
+		card_atoms -= card
+		card.forceMove(drop_location())

@@ -26,45 +26,13 @@
 
 // Generates a holodeck-tracked card deck
 /obj/effect/holodeck_effect/cards
-	icon = 'icons/obj/toy.dmi'
-	icon_state = "deck_nanotrasen_full"
-	var/obj/item/toy/cards/deck/D
+	icon = 'icons/obj/toys/playing_cards.dmi'
+	icon_state = "deck_syndicate_full"
 
-/obj/effect/holodeck_effect/cards/activate(var/obj/machinery/computer/holodeck/HC)
-	D = new(loc)
-	safety(!(HC.obj_flags & EMAGGED))
-	D.holo = HC
-	return D
-
-/obj/effect/holodeck_effect/cards/safety(active)
-	if(!D)
-		return
-	if(active)
-		D.card_hitsound = null
-		D.card_force = 0
-		D.card_throwforce = 0
-		D.card_throw_speed = 3
-		D.card_throw_range = 7
-		D.card_attack_verb = list("attacked")
-	else
-		D.card_hitsound = 'sound/weapons/bladeslice.ogg'
-		D.card_force = 5
-		D.card_throwforce = 10
-		D.card_throw_speed = 3
-		D.card_throw_range = 7
-		D.card_attack_verb = list("attacked", "sliced", "diced", "slashed", "cut")
-
-
-/obj/effect/holodeck_effect/sparks/activate(var/obj/machinery/computer/holodeck/HC)
-	var/turf/T = get_turf(src)
-	if(T)
-		var/datum/effect_system/spark_spread/s = new
-		s.set_up(3, 1, T)
-		s.start()
-		T.set_temperature(5000)
-		T.hotspot_expose(50000, 50000, TRUE, TRUE)
-
-
+/obj/effect/holodeck_effect/cards/activate(obj/machinery/computer/holodeck/holodeck)
+	var/obj/item/toy/cards/deck/syndicate/holographic/deck = new(loc, holodeck)
+	deck.flags_1 |= HOLOGRAM_1
+	return deck
 
 /obj/effect/holodeck_effect/mobspawner
 	var/mobtype = /mob/living/simple_animal/hostile/carp/holocarp
