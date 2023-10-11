@@ -34,6 +34,15 @@
 	deck.flags_1 |= HOLOGRAM_1
 	return deck
 
+/obj/effect/holodeck_effect/sparks/activate(var/obj/machinery/computer/holodeck/HC)
+	var/turf/T = get_turf(src)
+	if(T)
+		var/datum/effect_system/spark_spread/s = new
+		s.set_up(3, 1, T)
+		s.start()
+		T.set_temperature(5000)
+		T.hotspot_expose(50000, 50000, TRUE, TRUE)
+
 /obj/effect/holodeck_effect/mobspawner
 	var/mobtype = /mob/living/simple_animal/hostile/carp/holocarp
 	var/mob/mob = null
