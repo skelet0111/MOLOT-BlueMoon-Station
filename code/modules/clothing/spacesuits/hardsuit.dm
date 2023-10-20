@@ -112,6 +112,7 @@
 /obj/item/clothing/suit/space/hardsuit/Initialize(mapload)
 	if(jetpack && ispath(jetpack))
 		jetpack = new jetpack(src)
+	allowed += list(/obj/item/device/cooler) // BLUEMOON ADD - на все скафандры есть возможность повесить ПОУ
 	return ..()
 
 /obj/item/clothing/suit/space/hardsuit/attackby(obj/item/I, mob/user, params)
@@ -638,7 +639,7 @@
 	icon_state = "hardsuit0-hos"
 	hardsuit_type = "hos"
 	armor = list(MELEE = 45, BULLET = 50, LASER = 40, ENERGY = 50, BOMB = 25, BIO = 100, RAD = 50, FIRE = 95, ACID = 95, WOUND = 40)
-
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/suit/space/hardsuit/security/hos
 	icon_state = "hardsuit-hos"

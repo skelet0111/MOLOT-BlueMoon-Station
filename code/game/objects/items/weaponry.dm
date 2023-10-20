@@ -682,9 +682,9 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	extended = !extended
 	playsound(src.loc, 'sound/weapons/batonextend.ogg', 50, TRUE)
 	if(extended)
-		force = 20
+		force = 14
 		w_class = WEIGHT_CLASS_NORMAL
-		throwforce = 23
+		throwforce = 18
 		icon_state = "switchblade_ext"
 		attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 		hitsound = 'sound/weapons/bladeslice.ogg'

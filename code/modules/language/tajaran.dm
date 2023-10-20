@@ -4,7 +4,7 @@
 	speech_verb = "mrowls"
 	ask_verb = "mrowls"
 	exclaim_verb = "yowls"
-	key = "7"
+	key = "8"
 	flags = TONGUELESS_SPEECH
 	space_chance = 45
 	syllables = list("rr","rr","tajr","kir","raj","kii","mir","kra","ahk","nal","vah","khaz","jri","ran","darr", \

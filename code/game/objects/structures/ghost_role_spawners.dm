@@ -994,6 +994,12 @@
 	loadout_enabled = TRUE
 	computer_area = /area/ruin/space/has_grav/port_tarkon/centerhall
 
+// Не добавлено в аутфит, т.к. раса ставится ПОСЛЕ выставления аутфита
+/obj/effect/mob_spawn/human/tarkon/special_post_appearance(mob/living/carbon/human/new_spawn)
+	if(HAS_TRAIT(new_spawn, TRAIT_ROBOTIC_ORGANISM))
+		new_spawn.put_in_l_hand(new /obj/item/device/cooler/charged(new_spawn))
+	. = ..()
+
 /datum/outfit/tarkoff
 	name = "Default Port Tarkov Outfit"
 	uniform = /obj/item/clothing/under/rank/cargo/util

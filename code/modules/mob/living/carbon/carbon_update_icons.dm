@@ -51,7 +51,6 @@
 	overlays_standing[HANDS_LAYER] = hands
 	apply_overlay(HANDS_LAYER)
 
-
 /mob/living/carbon/update_fire(var/fire_icon = "Generic_mob_burning")
 	remove_overlay(FIRE_LAYER)
 	if(on_fire)
@@ -60,8 +59,6 @@
 		overlays_standing[FIRE_LAYER] = new_fire_overlay
 
 	apply_overlay(FIRE_LAYER)
-
-
 
 /mob/living/carbon/update_damage_overlays()
 	remove_overlay(DAMAGE_LAYER)

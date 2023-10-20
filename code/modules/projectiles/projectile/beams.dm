@@ -135,7 +135,7 @@
 /obj/item/projectile/beam/emitter
 	name = "emitter beam"
 	icon_state = "emitter"
-	damage = 30
+	damage = 45
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/green_laser
 	light_color = LIGHT_COLOR_GREEN
 	wound_bonus = 20
@@ -149,6 +149,9 @@
 	muzzle_type = /obj/effect/projectile/muzzle/laser/emitter
 	tracer_type = /obj/effect/projectile/tracer/laser/emitter
 	impact_type = /obj/effect/projectile/impact/laser/emitter
+	wound_bonus = 0
+	bare_wound_bonus = 0
+	armour_penetration = 0
 	impact_effect_type = null
 
 /obj/item/projectile/beam/lasertag

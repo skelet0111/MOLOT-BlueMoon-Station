@@ -21,6 +21,10 @@
 	else if(type == "Syndicate")
 		announcement += "<h1 class='alert'>Синдикат Объявляет</h1>"
 		GLOB.news_network.SubmitArticle(html_encode(text), "Синдикат Объявляет", "Станционное Объявление", null)
+	else if(type == "AI")
+		announcement += "<h1 class='alert'>Искусственный Интеллект</h1>"
+		if (title && length(title) > 0)
+			announcement += "<br><h2 class='alert'>[html_encode(title)]</h2>"
 
 	else
 		if(!sender_override)
@@ -87,7 +91,7 @@
 		title = "Секретно: [command_name()]"
 
 	if(announce)
-		priority_announce("Отчет был загружен и распечатан на всех коммуникационных консолях.", "Входящее Секретное Сообщение", SSstation.announcer.get_rand_report_sound(), has_important_message = TRUE)
+		priority_announce("Отчет был загружен и распечатан на всех коммуникационных консолях.", "Входящее Секретное Сообщение", 'modular_bluemoon/kovac_shitcode/sound/ambience/enc/morse.ogg', has_important_message = TRUE)
 
 	var/datum/comm_message/M  = new
 	M.title = title

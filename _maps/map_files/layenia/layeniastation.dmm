@@ -30937,6 +30937,9 @@
 	dir = 1
 	},
 /obj/structure/reagent_dispensers/watertank,
+/obj/structure/reagent_dispensers/spacecleanertank{
+	pixel_y = -30
+	},
 /turf/open/floor/plasteel/dark{
 	icon_state = "darkfull_whole_alt"
 	},
@@ -62471,6 +62474,9 @@
 	pixel_y = -2
 	},
 /obj/structure/rack,
+/obj/structure/reagent_dispensers/spacecleanertank{
+	pixel_x = -30
+	},
 /turf/open/floor/plasteel/dark{
 	icon_state = "darkfull_whole_alt"
 	},

@@ -128,6 +128,7 @@ GENETICS SCANNER
 
 	if(scanmode == SCANMODE_HEALTH)
 		healthscan(user, M, mode, advanced)
+		playsound(src, 'sound/rig/shortbeep.ogg', 50, 1, 1)
 	else if(scanmode == SCANMODE_CHEMICAL)
 		chemscan(user, M)
 	else
@@ -196,8 +197,8 @@ GENETICS SCANNER
 			msg += "\n<span class='info'>Степень повреждения ДНК: [M.getCloneLoss()].</span>"
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
-		if(advanced && H.has_dna())
-			msg += "\n\t<span class='info'>Генетическая стабильность: [H.dna.stability]%.</span>"
+		if(advanced && H.has_dna() && !HAS_TRAIT(H, TRAIT_ROBOTIC_ORGANISM)) // BLUEMOON CHANGES - у синтетиков нет генетической стабильности
+			msg += "\n\t<span class='info'>Генетическая стабильность: [H.dna.stability]%.</span>" // BLUEMOON TODO - а чё это вообще
 
 	// Body part damage report
 	var/list/dmgreport = list()
@@ -486,7 +487,6 @@ GENETICS SCANNER
 			msg += "<span class='notice'>Обнаружены кибернетические модификации:</span>\n"
 			msg += "<span class='notice'>[cyberimp_detect]</span>\n"
 	to_chat(user, examine_block(msg))
-	playsound(get_turf(user), 'sound/rig/shortbeep.ogg', 50, 1, 1)
 	SEND_SIGNAL(M, COMSIG_HEALTH_SCAN, user)//SPLURT EDIT ADD - gregnancy
 	SEND_SIGNAL(M, COMSIG_NANITE_SCAN, user, FALSE)
 
@@ -975,7 +975,7 @@ GENETICS SCANNER
 			to_chat(user,"<span class='warning'>No database to update from.</span>")
 
 /obj/item/sequence_scanner/proc/gene_scan(mob/living/carbon/C, mob/living/user)
-	if(!iscarbon(C) || !C.has_dna())
+	if(!iscarbon(C) || !C.has_dna() || HAS_TRAIT(C, TRAIT_ROBOTIC_ORGANISM)) // BLUEMOON ADD - у синтетиков "нет" генов, полезных для хранилища
 		return
 	buffer = C.dna.mutation_index
 	var/text = "<span class='notice'>Subject [C.name]'s DNA sequence has been saved to buffer.</span>"
