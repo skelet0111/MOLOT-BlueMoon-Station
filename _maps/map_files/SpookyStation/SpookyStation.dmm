@@ -4756,7 +4756,7 @@
 /area/eventmap/inside)
 "aod" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /obj/structure/window/spawner/east,
 /turf/open/floor/carpet,
 /area/eventmap/inside)

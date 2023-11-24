@@ -43989,7 +43989,7 @@
 	dir = 1
 	},
 /obj/structure/table/wood,
-/obj/machinery/computer/libraryconsole/bookmanagement{
+/obj/machinery/computer/library/checkout{
 	pixel_y = 5
 	},
 /obj/machinery/light{
@@ -52390,7 +52390,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "bJz" = (
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/red,
@@ -78543,7 +78543,7 @@
 /area/maintenance/starboard/fore)
 "cEr" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/libraryconsole/bookmanagement{
+/obj/machinery/computer/library/checkout{
 	pixel_y = 5
 	},
 /obj/effect/turf_decal/tile/neutral,

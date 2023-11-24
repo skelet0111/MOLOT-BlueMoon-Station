@@ -41623,7 +41623,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /turf/open/floor/carpet{
 	icon_state = "carpetsymbol"
 	},
@@ -49317,7 +49317,7 @@
 /area/engineering/main)
 "csr" = (
 /obj/structure/table,
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
 	department = "Bridge";
@@ -63057,7 +63057,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /turf/open/floor/plasteel,
 /area/security/prison)
 "gDY" = (

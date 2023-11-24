@@ -17196,7 +17196,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/service/library)
 "aTd" = (
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /obj/machinery/light_switch{
 	pixel_y = 28
 	},
@@ -60503,7 +60503,7 @@
 /area/commons/dorms)
 "oIl" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /obj/structure/table,
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)

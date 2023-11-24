@@ -19526,7 +19526,7 @@
 /area/ai_monitored/command/storage/eva)
 "cWZ" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/libraryconsole/bookmanagement{
+/obj/machinery/computer/library/checkout{
 	layer = 4;
 	pixel_y = 7
 	},
@@ -119407,7 +119407,7 @@
 /area/cargo/miningdock)
 "ruW" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/libraryconsole/bookmanagement{
+/obj/machinery/computer/library/checkout{
 	pixel_y = 7
 	},
 /turf/open/floor/carpet,
@@ -163308,7 +163308,7 @@
 /area/hallway/primary/central)
 "xLe" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/libraryconsole/bookmanagement{
+/obj/machinery/computer/library/checkout{
 	pixel_y = 7
 	},
 /obj/machinery/light{

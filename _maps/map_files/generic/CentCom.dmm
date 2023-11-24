@@ -35818,7 +35818,7 @@
 /area/centcom)
 "xyE" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /turf/open/indestructible/hotelwood,
 /area/centcom/holding)
 "xAk" = (

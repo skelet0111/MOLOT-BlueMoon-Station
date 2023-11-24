@@ -11783,7 +11783,7 @@
 /area/engineering/atmos)
 "dZI" = (
 /obj/machinery/airalarm/directional/north,
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /obj/structure/table/wood,
 /turf/open/floor/carpet,
 /area/security/prison/rec)
@@ -48177,7 +48177,7 @@
 "qLL" = (
 /obj/machinery/atmospherics/pipe/simple/brown/hidden,
 /obj/structure/table/wood,
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /turf/open/floor/wood/wood_large,
 /area/service/library)
 "qLY" = (

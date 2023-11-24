@@ -58005,7 +58005,7 @@
 /area/engineering/break_room)
 "jtX" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /obj/structure/noticeboard{
 	desc = "A board for pinning important notices upon. Probably helpful for keeping track of requests.";
 	dir = 8;
@@ -62524,7 +62524,7 @@
 "lQK" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},

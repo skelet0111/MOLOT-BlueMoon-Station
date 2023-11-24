@@ -49,7 +49,7 @@ GLOBAL_PROTECT(admin_verbs_admin)
 	/client/proc/cmd_admin_check_contents,	/*displays the contents of an instance*/
 	/client/proc/centcom_podlauncher,/*Open a window to launch a Supplypod and configure it or it's contents*/
 	/client/proc/check_antagonists,		/*shows all antags*/
-	/datum/admins/proc/access_news_network,	/*allows access of newscasters*/
+//	/datum/admins/proc/access_news_network,	/*allows access of newscasters*/
 	/client/proc/jumptocoord,			/*we ghost and jump to a coordinate*/
 	/client/proc/Getmob,				/*teleports a mob to our location*/
 	/client/proc/Getkey,				/*teleports a mob with a certain ckey to our location*/
@@ -238,7 +238,7 @@ GLOBAL_LIST_INIT(admin_verbs_hideable, list(
 	/client/proc/admin_ghost,
 	/client/proc/toggle_view_range,
 	/client/proc/cmd_admin_check_contents,
-	/datum/admins/proc/access_news_network,
+//	/datum/admins/proc/access_news_network,
 	/client/proc/admin_end_shift,
 	/client/proc/admin_call_shuttle,
 	/client/proc/admin_cancel_shuttle,
@@ -390,9 +390,6 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 
 	to_chat(src, "<span class='interface'>All of your adminverbs are now visible.</span>", confidential = TRUE)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Show Adminverbs") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
-
-
-
 
 /client/proc/admin_ghost()
 	set category = "Admin.Game"

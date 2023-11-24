@@ -106924,7 +106924,7 @@
 /area/command/heads_quarters/cmo)
 "qgf" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -118955,7 +118955,7 @@
 /area/engineering/supermatter)
 "tVI" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /obj/machinery/newscaster{
 	pixel_x = 32
 	},

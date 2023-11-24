@@ -2259,7 +2259,7 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/security/prison)
 "afF" = (
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /obj/structure/table,
 /obj/machinery/newscaster{
 	pixel_x = -32
@@ -27969,7 +27969,7 @@
 /area/science/explab)
 "brK" = (
 /obj/structure/table/reinforced,
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /turf/open/floor/plasteel/white,
 /area/science/explab)
 "brL" = (
@@ -57311,7 +57311,7 @@
 /area/hallway/secondary/exit/departure_lounge)
 "njI" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/libraryconsole/bookmanagement,
+/obj/machinery/computer/library/checkout,
 /turf/open/floor/plasteel/dark,
 /area/service/library)
 "nku" = (
