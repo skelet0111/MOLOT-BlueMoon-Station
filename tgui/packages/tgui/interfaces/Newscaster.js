@@ -379,7 +379,8 @@ const NewscasterJobs = (properties, context) => {
         <b>Head of Personnel&apos;s Office!</b><br />
         <Box as="small" color="label">
           By signing up for a job at Nanotrasen, you agree to transfer your soul
-          to the loyalty department of the omnipresent and helpful watcher of humanity.
+          to the loyalty department of the omnipresent and helpful watcher
+          of humanity.
         </Box>
       </Section>
     </Flex>
@@ -858,7 +859,8 @@ const wantedNoticeModalBodyOverride = (modal, context) => {
         }}
       />
       <Button.Confirm
-        disabled={author.trim().length === 0 || name.trim().length === 0 || description.trim().length === 0}
+        disabled={author.trim().length === 0
+        || name.trim().length === 0 || description.trim().length === 0}
         icon="check"
         color="good"
         content="Submit"
