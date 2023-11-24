@@ -25,6 +25,9 @@
 
 	light_color = LIGHT_COLOR_DARKBLUE
 
+/obj/machinery/computer/med_data/syndie
+	icon_keyboard = "syndie_key"
+
 /obj/machinery/computer/med_data/Initialize()
 	..()
 	field_edit_questions = list(

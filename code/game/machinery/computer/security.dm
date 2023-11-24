@@ -30,6 +30,9 @@
 
 	light_color = LIGHT_COLOR_RED
 
+/obj/machinery/computer/secure_data/syndie
+	icon_keyboard = "syndie_key"
+
 /obj/machinery/computer/secure_data/Initialize(mapload)
 	. = ..()
 	if(!field_edit_questions)
