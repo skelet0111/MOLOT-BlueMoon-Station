@@ -2184,13 +2184,6 @@
 	},
 /turf/open/floor/engine,
 /area/ai_monitored/turret_protected/aisat/foyer)
-"adT" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating,
-/area/science/xenobiology)
 "adU" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
@@ -3514,17 +3507,6 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
-"agf" = (
-/obj/machinery/camera{
-	c_tag = "Xenobiology Euthanization Chamber";
-	name = "xenobiology camera";
-	network = list("ss13","rd","xeno")
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/circuit/telecomms,
-/area/science/xenobiology)
 "agg" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -3542,16 +3524,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
-"agh" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	external_pressure_bound = 120;
-	name = "server vent"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/circuit/telecomms,
-/area/science/xenobiology)
 "agi" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -43983,24 +43955,6 @@
 /obj/item/ammo_casing/shotgun/beanbag,
 /turf/open/floor/plasteel/dark,
 /area/service/bar)
-"bvt" = (
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/structure/table/wood,
-/obj/machinery/computer/library/checkout{
-	pixel_y = 5
-	},
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/structure/noticeboard{
-	dir = 8;
-	pixel_x = 32
-	},
-/turf/open/floor/plasteel/dark,
-/area/service/library)
 "bvu" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -52389,25 +52343,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
-"bJz" = (
-/obj/machinery/computer/library/checkout,
-/obj/structure/table,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/machinery/computer/security/telescreen/entertainment{
-	pixel_y = 28
-	},
-/obj/machinery/camera{
-	c_tag = "Prison Yard Machines";
-	name = "prison camera";
-	network = list("ss13","prison")
-	},
-/turf/open/floor/plasteel/showroomfloor,
-/area/security/prison)
 "bJB" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Long-Term Cell 1";
@@ -72192,12 +72127,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
-"cqw" = (
-/obj/structure/sign/warning/deathsposal{
-	layer = 4
-	},
-/turf/closed/wall,
-/area/science/xenobiology)
 "cqx" = (
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal/bin{
@@ -78541,23 +78470,6 @@
 	icon_state = "platingdmg1"
 	},
 /area/maintenance/starboard/fore)
-"cEr" = (
-/obj/structure/table/wood,
-/obj/machinery/computer/library/checkout{
-	pixel_y = 5
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/cobweb,
-/obj/structure/noticeboard{
-	dir = 4;
-	pixel_x = -27
-	},
-/turf/open/floor/plasteel/dark,
-/area/maintenance/starboard/fore)
 "cEs" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -83304,6 +83216,24 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
+"jgP" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/structure/table/wood,
+/obj/machinery/computer/library/checkout{
+	pixel_y = 5
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/noticeboard{
+	dir = 8;
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/dark,
+/area/service/library)
 "jhM" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/bottle/grenadine,
@@ -83496,6 +83426,25 @@
 /obj/item/clothing/suit/armor/brigdoc/armor,
 /turf/open/floor/plasteel/white,
 /area/security/warden)
+"jMz" = (
+/obj/machinery/computer/library/checkout,
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/computer/security/telescreen/entertainment{
+	pixel_y = 28
+	},
+/obj/machinery/camera{
+	c_tag = "Prison Yard Machines";
+	name = "prison camera";
+	network = list("ss13","prison")
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/security/prison)
 "jNK" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -83711,6 +83660,11 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
+"kuP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/departments/xenobio,
+/turf/closed/wall/r_wall,
+/area/maintenance/starboard/fore)
 "kzw" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -83845,6 +83799,13 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/starboard)
+"luC" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/science/xenobiology)
 "lxT" = (
 /obj/item/grenade/barrier{
 	pixel_x = 4
@@ -84045,6 +84006,23 @@
 /obj/effect/turf_decal/tile/red,
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/prison)
+"mpC" = (
+/obj/structure/table/wood,
+/obj/machinery/computer/library/checkout{
+	pixel_y = 5
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/cobweb,
+/obj/structure/noticeboard{
+	dir = 4;
+	pixel_x = -27
+	},
+/turf/open/floor/plasteel/dark,
+/area/maintenance/starboard/fore)
 "mrU" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/ppflowers,
@@ -84795,6 +84773,14 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/dark,
 /area/security/prison)
+"qGz" = (
+/obj/machinery/camera{
+	c_tag = "Xenobiology Euthanization Chamber";
+	name = "xenobiology camera";
+	network = list("ss13","rd","xeno")
+	},
+/turf/open/floor/circuit/telecomms,
+/area/science/xenobiology)
 "qID" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
@@ -85019,6 +85005,10 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
+"rDz" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/r_wall,
+/area/maintenance/starboard/fore)
 "rIc" = (
 /obj/machinery/suit_storage_unit/industrial/atmos,
 /obj/effect/turf_decal/tile/neutral,
@@ -85368,6 +85358,17 @@
 /obj/machinery/vending/wardrobe/blueshield_wardrobe,
 /turf/open/floor/plasteel,
 /area/command/bridge)
+"tRd" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "xeno5";
+	name = "Creature Cell 5"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/science/xenobiology)
 "tTe" = (
 /obj/effect/turf_decal/tile/red,
 /obj/structure/cable{
@@ -85776,6 +85777,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/supply)
+"waj" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
+	external_pressure_bound = 120;
+	name = "server vent"
+	},
+/turf/open/floor/circuit/telecomms,
+/area/science/xenobiology)
 "wal" = (
 /obj/structure/closet/secure_closet/security/sec,
 /obj/effect/turf_decal/tile/neutral{
@@ -86082,6 +86090,9 @@
 	},
 /turf/open/floor/grass/grass0,
 /area/medical/virology)
+"xFe" = (
+/turf/open/floor/circuit/telecomms,
+/area/science/xenobiology)
 "xGx" = (
 /obj/structure/table/wood,
 /obj/structure/window/reinforced/tinted,
@@ -98262,7 +98273,7 @@ bHa
 bIl
 bVB
 aav
-bJz
+jMz
 qEt
 qey
 mjj
@@ -112117,7 +112128,7 @@ buC
 buN
 buM
 buX
-bvt
+jgP
 bsY
 bvA
 bpH
@@ -118258,7 +118269,7 @@ khA
 cCP
 cEa
 cEj
-cEr
+mpC
 cEx
 baH
 cFs
@@ -122100,8 +122111,8 @@ bfq
 iMq
 bbx
 alB
-arx
-arx
+rDz
+kuP
 alB
 alB
 alB
@@ -122357,8 +122368,8 @@ aWJ
 ayv
 aWJ
 alB
-bdp
-bhl
+xFe
+xFe
 alB
 bfq
 juX
@@ -122614,7 +122625,7 @@ bfs
 aWJ
 bft
 aWR
-agf
+qGz
 agM
 aWR
 bhu
@@ -122869,9 +122880,9 @@ alB
 alB
 bfM
 bfM
-bfM
+tRd
 aWR
-agh
+waj
 agQ
 aWR
 bfs
@@ -123128,7 +123139,7 @@ aeV
 bfl
 bfV
 aWR
-adT
+luC
 adx
 aWR
 bgC
@@ -123391,7 +123402,7 @@ aWR
 acw
 bgn
 bgB
-cqw
+aWR
 bgM
 bgn
 bVA

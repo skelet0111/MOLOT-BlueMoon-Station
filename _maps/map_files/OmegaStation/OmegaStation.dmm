@@ -25213,17 +25213,6 @@
 /obj/structure/lattice,
 /turf/open/space,
 /area/asteroid/nearstation)
-"aWA" = (
-/obj/machinery/newscaster{
-	pixel_x = -32
-	},
-/obj/structure/table/wood,
-/obj/machinery/computer/library/checkout,
-/obj/machinery/light_switch{
-	pixel_y = -24
-	},
-/turf/open/floor/plasteel/dark,
-/area/service/library)
 "aWB" = (
 /obj/effect/landmark/start/librarian,
 /obj/structure/chair/office/dark{
@@ -30527,12 +30516,6 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/science/xenobiology)
-"bgd" = (
-/obj/structure/closet/l3closet/scientist,
-/turf/open/floor/plasteel/dark/side{
-	dir = 8
-	},
 /area/science/xenobiology)
 "bge" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
@@ -36501,6 +36484,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
+"krB" = (
+/obj/structure/closet/l3closet/scientist,
+/obj/structure/sign/xenobio_guide{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/dark/side{
+	dir = 8
+	},
+/area/science/xenobiology)
 "krX" = (
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/yellowsiding/corner{
@@ -41480,6 +41472,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/command/gateway)
+"uPK" = (
+/obj/machinery/newscaster{
+	pixel_x = -32
+	},
+/obj/structure/table/wood,
+/obj/machinery/computer/library/checkout,
+/obj/machinery/light_switch{
+	pixel_y = -24
+	},
+/turf/open/floor/plasteel/dark,
+/area/service/library)
 "uQN" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -76733,7 +76736,7 @@ fHF
 aUc
 aUV
 aVN
-aWA
+uPK
 aQW
 jnK
 aYw
@@ -87037,7 +87040,7 @@ nTi
 jdD
 bhb
 bhO
-bgd
+krB
 uac
 snF
 aad
