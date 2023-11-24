@@ -112,7 +112,8 @@ export const Newscaster = (properties, context) => {
                     key={channel}
                     icon={channel.icon}
                     title={channel.name}
-                    selected={screen === 2 && channels[channel_idx - 1] === channel}
+                    selected={screen === 2
+                    && channels[channel_idx - 1] === channel}
                     onClick={() => act('channel', { uid: channel.uid })}>
                     {channel.unread > 0 && (
                       <Box className="Newscaster__menuButton--unread">
@@ -227,7 +228,8 @@ const NewscasterFeed = (properties, context) => {
   } = data;
   const [fullStories, _setFullStories] = useLocalState(context, "fullStories", []);
   const [censorMode, _setCensorMode] = useLocalState(context, "censorMode", false);
-  const channel = (screen === 2 && channel_idx > -1) ? channels[channel_idx - 1] : null;
+  const channel = (screen === 2 && channel_idx > -1)
+  ? channels[channel_idx - 1] : null;
   return (
     <Flex direction="column" height="100%" flex="1">
       {!!wanted && <Story story={wanted} wanted />}
@@ -243,7 +245,8 @@ const NewscasterFeed = (properties, context) => {
           ? stories.slice()
             .reverse()
             .map(story =>
-              (!fullStories.includes(story.uid) && story.body.length + 3 > HEADLINE_MAX_LENGTH)
+              (!fullStories.includes(story.uid)
+              && story.body.length + 3 > HEADLINE_MAX_LENGTH)
                 ? { ...story, body_short: story.body.substr(0, HEADLINE_MAX_LENGTH - 4) + "..." }
                 : story
             )
@@ -372,9 +375,11 @@ const NewscasterJobs = (properties, context) => {
       </Section>
       <Section flexShrink="1">
         Interested in serving Nanotrasen?<br />
-        Sign up for any of the above position now at the <b>Head of Personnel&apos;s Office!</b><br />
+        Sign up for any of the above position now at the
+        <b>Head of Personnel&apos;s Office!</b><br />
         <Box as="small" color="label">
-          By signing up for a job at Nanotrasen, you agree to transfer your soul to the loyalty department of the omnipresent and helpful watcher of humanity.
+          By signing up for a job at Nanotrasen, you agree to transfer your soul
+          to the loyalty department of the omnipresent and helpful watcher of humanity.
         </Box>
       </Section>
     </Flex>
@@ -501,7 +506,8 @@ const PhotoZoom = (properties, context) => {
 const manageChannelModalBodyOverride = (modal, context) => {
   const { act, data } = useBackend(context);
   // Additional data
-  const channel = !!modal.args.uid && data.channels.filter(c => c.uid === modal.args.uid).pop();
+  const channel = !!modal.args.uid
+  && data.channels.filter(c => c.uid === modal.args.uid).pop();
   if (modal.id === "manage_channel" && !channel) {
     modalClose(context); // ?
     return;
@@ -630,10 +636,12 @@ const createStoryModalBodyOverride = (modal, context) => {
         return 1;
       }
     })
-    .filter(c => isAdmin || (!c.frozen && (c.author === scannedUser || !!c.public)));
+    .filter(c => isAdmin || (!c.frozen
+      && (c.author === scannedUser || !!c.public)));
   // Temp data
   const [author, setAuthor] = useLocalState(context, "author", scannedUser || "Unknown");
-  const [channel, setChannel] = useLocalState(context, "channel", availableChannels.length > 0 ? availableChannels[0].name : "");
+  const [channel, setChannel] = useLocalState(context, "channel", availableChannels.length > 0
+  ? availableChannels[0].name : "");
   const [title, setTitle] = useLocalState(context, "title", "");
   const [body, setBody] = useLocalState(context, "body", "");
   const [adminLocked, setAdminLocked] = useLocalState(context, "adminLocked", false);
