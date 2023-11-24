@@ -1990,11 +1990,11 @@
 /obj/item/melee/transforming/energy/axe,
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
-"jX" = (
+"kg" = (
 /obj/structure/table,
 /obj/item/paper_bin/carbon,
-/turf/open/space/basic,
-/area/space)
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
 "kT" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel,
@@ -2575,6 +2575,10 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/grass/grass0,
 /area/service/hydroponics)
+"AB" = (
+/obj/machinery/photocopier,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
 "AP" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
@@ -3229,17 +3233,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
-"OL" = (
-/obj/docking_port/stationary{
-	dir = 2;
-	dwidth = 11;
-	height = 15;
-	id = "whiteship_home";
-	name = "SS13: Auxiliary Dock, Station-Port";
-	width = 28
-	},
-/turf/closed/wall/r_wall,
-/area/hallway/secondary/exit/departure_lounge)
 "OU" = (
 /obj/item/disk/tech_disk/debug,
 /turf/open/floor/plasteel,
@@ -3304,10 +3297,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
-"QZ" = (
-/obj/machinery/photocopier,
-/turf/closed/wall/r_wall,
-/area/maintenance/aft)
 "Rb" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -8227,8 +8216,8 @@ EY
 dE
 cS
 Tt
-QZ
-jX
+vm
+aa
 aa
 aa
 aa
@@ -8506,7 +8495,7 @@ fI
 ga
 ga
 ga
-OL
+ga
 aa
 aa
 aa
@@ -8595,8 +8584,8 @@ dJ
 dO
 cS
 fO
-fO
-fO
+AB
+kg
 fO
 gf
 aa
