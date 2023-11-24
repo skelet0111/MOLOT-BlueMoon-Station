@@ -397,7 +397,7 @@
 			if(!istype(FC))
 				return
 			if(FC.admin_locked && !usr.can_admin_interact())
-				set_temp("This channel has been locked by CentComm and thus cannot be (un)censored.", "danger")
+				set_temp("This channel has been locked by CentCom and thus cannot be (un)censored.", "danger")
 				return
 			FC.censored = !FC.censored
 		if("censor_author", "censor_story")
@@ -408,7 +408,7 @@
 			if(!istype(FM))
 				return
 			if(FM.admin_locked && !usr.can_admin_interact())
-				set_temp("This story has been locked by CentComm and thus cannot be censored in any way.", "danger")
+				set_temp("This story has been locked by CentCom and thus cannot be censored in any way.", "danger")
 				return
 			if(action == "censor_author")
 				FM.censor_flags = (FM.censor_flags & CENSOR_AUTHOR) ? (FM.censor_flags & ~CENSOR_AUTHOR) : (FM.censor_flags|CENSOR_AUTHOR)
@@ -424,7 +424,7 @@
 			if(!WN)
 				return
 			if(WN.admin_locked && !usr.can_admin_interact())
-				set_temp("This wanted notice has been locked by CentComm and thus cannot be altered.", "danger")
+				set_temp("This wanted notice has been locked by CentCom and thus cannot be altered.", "danger")
 				return
 			GLOB.news_network.wanted_issue = null
 			set_temp("Wanted notice cleared.", update_now = TRUE)
@@ -561,7 +561,7 @@
 					var/datum/feed_message/WN = GLOB.news_network.wanted_issue
 					if(WN)
 						if(WN.admin_locked && !usr.can_admin_interact())
-							set_temp("This wanted notice has been locked by CentComm and thus cannot be altered.", "danger")
+							set_temp("This wanted notice has been locked by CentCom and thus cannot be altered.", "danger")
 							return
 					else
 						WN = new

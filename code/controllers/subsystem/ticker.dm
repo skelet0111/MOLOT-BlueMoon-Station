@@ -537,7 +537,7 @@ SUBSYSTEM_DEF(ticker)
 
 	newChannel = new /datum/feed_channel
 	newChannel.channel_name = "Nyx Daily"
-	newChannel.author = "CentComm Minister of Information"
+	newChannel.author = "CentCom Minister of Information"
 	newChannel.icon = "meteor"
 	newChannel.frozen = TRUE
 	newChannel.admin_locked = TRUE
