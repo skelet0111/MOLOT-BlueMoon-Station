@@ -945,6 +945,8 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/table,
+/obj/machinery/fax,
 /turf/open/floor/plating,
 /area/commons/storage/primary)
 "dy" = (
@@ -1734,13 +1736,10 @@
 /turf/open/floor/plating,
 /area/commons/storage/primary)
 "fS" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	pixel_y = 23
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
 "fT" = (
@@ -2789,16 +2788,13 @@
 	icon_state = "0-2";
 	pixel_y = 1
 	},
-/obj/machinery/power/apc{
-	dir = 1;
-	pixel_y = 23
-	},
 /obj/machinery/airalarm/unlocked{
 	pixel_x = 32
 	},
 /obj/machinery/computer/shuttle/mining{
 	dir = 2
 	},
+/obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/plasteel,
 /area/cargo/miningoffice)
 "CV" = (
@@ -3030,6 +3026,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/cargo/miningoffice)
+"Js" = (
+/obj/machinery/computer/secure_data{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/commons/storage/primary)
 "JF" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -3238,6 +3240,12 @@
 /obj/item/disk/tech_disk/debug,
 /turf/open/floor/plasteel,
 /area/science)
+"OZ" = (
+/obj/machinery/computer/med_data{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/commons/storage/primary)
 "PD" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3255,6 +3263,12 @@
 /obj/machinery/vending/dinnerware,
 /turf/open/floor/plasteel/freezer,
 /area/service/cafeteria)
+"PW" = (
+/obj/machinery/computer/account_database{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/commons/storage/primary)
 "PX" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -9304,9 +9318,9 @@ dl
 Bz
 ez
 dB
-dl
-dl
-dl
+OZ
+Js
+PW
 dx
 dE
 cS
