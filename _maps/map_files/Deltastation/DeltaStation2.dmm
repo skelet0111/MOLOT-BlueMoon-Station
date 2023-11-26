@@ -73429,6 +73429,19 @@
 	icon_state = "chapel"
 	},
 /area/service/chapel/main)
+"fLg" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/closed/wall/r_wall,
+/area/tcommsat/server)
 "fLq" = (
 /obj/structure/cable/white{
 	icon_state = "1-2"
@@ -78142,7 +78155,6 @@
 /area/security/office)
 "hlS" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/fancy/donut_box,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -78153,7 +78165,10 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Security Fax";
+	name = "Security Fax"
+	},
 /turf/open/floor/plasteel,
 /area/security/office)
 "hlZ" = (
@@ -79962,14 +79977,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
-"hLG" = (
-/obj/machinery/newscaster{
-	pixel_x = 32;
-	pixel_y = -32
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/open/floor/wood,
-/area/command/meeting_room/council)
 "hLH" = (
 /obj/machinery/disposal/bin,
 /obj/machinery/light,
@@ -81112,7 +81119,6 @@
 /area/service/abandoned_gambling_den)
 "ieB" = (
 /obj/structure/table/reinforced,
-/obj/machinery/recharger,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -81123,7 +81129,10 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Bridge Fax";
+	name = "Bridge Fax"
+	},
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "ieG" = (
@@ -83485,7 +83494,10 @@
 	pixel_x = 25
 	},
 /obj/structure/table/wood,
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "NTR Fax";
+	name = "NTR Fax"
+	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "iMm" = (
@@ -95449,6 +95461,13 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plating,
 /area/service/abandoned_gambling_den)
+"mAT" = (
+/obj/machinery/newscaster{
+	pixel_x = 32;
+	pixel_y = -32
+	},
+/turf/open/floor/wood,
+/area/command/meeting_room/council)
 "mBD" = (
 /obj/machinery/status_display/evac,
 /turf/closed/wall,
@@ -116686,7 +116705,9 @@
 /area/command/heads_quarters/cmo)
 "tkW" = (
 /obj/structure/table/reinforced,
-/obj/machinery/recharger,
+/obj/machinery/recharger{
+	pixel_x = 6
+	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -116696,6 +116717,9 @@
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
+	},
+/obj/machinery/recharger{
+	pixel_x = -6
 	},
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
@@ -120696,7 +120720,10 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "General Fax";
+	name = "General Fax"
+	},
 /turf/open/floor/plasteel/grimy,
 /area/service/library)
 "uyr" = (
@@ -124170,6 +124197,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
 /area/service/library/abandoned)
+"vJl" = (
+/obj/machinery/computer/account_database{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/command/meeting_room/council)
 "vJs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
@@ -128188,7 +128221,10 @@
 /area/cargo/storage)
 "xbS" = (
 /obj/structure/table/wood,
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Lawyer Fax";
+	name = "Lawyer Fax"
+	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "xcf" = (
@@ -129987,6 +130023,9 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/obj/item/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
 /turf/open/floor/plasteel,
 /area/security/office)
 "xGW" = (
@@ -168789,7 +168828,7 @@ jYV
 xJo
 kKv
 uQL
-hLG
+xJo
 xJo
 sql
 sjO
@@ -169046,8 +169085,8 @@ xCx
 iNj
 riK
 eWw
-nAr
-tKL
+mAT
+vJl
 lJN
 lJN
 lJN
@@ -169305,7 +169344,7 @@ wBf
 lpH
 hnW
 tKL
-bUF
+fLg
 bWW
 bUF
 bUF

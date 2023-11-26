@@ -2374,7 +2374,10 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Security Fax";
+	name = "Security Fax"
+	},
 /turf/open/floor/plasteel,
 /area/security/office)
 "aki" = (
@@ -14421,6 +14424,9 @@
 "bgL" = (
 /obj/machinery/computer/security/telescreen/entertainment{
 	pixel_y = -32
+	},
+/obj/machinery/computer/account_database{
+	dir = 1
 	},
 /turf/open/floor/wood,
 /area/command/meeting_room)
@@ -45556,7 +45562,10 @@
 	pixel_y = -29
 	},
 /obj/structure/table/wood,
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Bridge Fax";
+	name = "Bridge Fax"
+	},
 /turf/open/floor/wood,
 /area/command/bridge)
 "fSO" = (
@@ -58956,7 +58965,10 @@
 	dir = 4
 	},
 /obj/structure/table/wood,
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Lawyer Fax";
+	name = "Lawyer Fax"
+	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "qgb" = (
@@ -64485,9 +64497,12 @@
 /area/maintenance/bar)
 "uwl" = (
 /obj/structure/table/wood,
-/obj/machinery/fax,
 /obj/structure/window/reinforced{
 	dir = 8
+	},
+/obj/machinery/fax{
+	fax_name = "General Fax";
+	name = "General Fax"
 	},
 /turf/open/floor/wood,
 /area/service/library)

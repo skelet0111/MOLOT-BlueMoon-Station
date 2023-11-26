@@ -49454,10 +49454,13 @@
 /area/ruin/unpowered/no_grav)
 "hpx" = (
 /obj/structure/table/wood,
-/obj/machinery/fax,
 /obj/structure/window/reinforced{
 	dir = 4;
 	layer = 2.9
+	},
+/obj/machinery/fax{
+	fax_name = "General Fax";
+	name = "General Fax"
 	},
 /turf/open/floor/carpet,
 /area/service/library)
@@ -57387,7 +57390,10 @@
 /area/science/server)
 "iwZ" = (
 /obj/structure/table/wood,
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Prison Fax";
+	name = "Prison Fax"
+	},
 /turf/open/floor/wood,
 /area/security/prison)
 "ixf" = (
@@ -82877,6 +82883,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/unpowered/no_grav)
+"lYB" = (
+/obj/machinery/computer/account_database,
+/turf/open/floor/plasteel,
+/area/command/bridge)
 "lYD" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 6
@@ -100715,8 +100725,11 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/machinery/fax,
 /obj/structure/table/wood,
+/obj/machinery/fax{
+	fax_name = "Lawyer Fax";
+	name = "Lawyer Fax"
+	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "oFd" = (
@@ -123337,7 +123350,10 @@
 /obj/machinery/status_display/ai{
 	pixel_y = 26
 	},
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Bridge Fax";
+	name = "Bridge Fax"
+	},
 /turf/open/floor/plasteel,
 /area/command/bridge)
 "rYT" = (
@@ -165152,8 +165168,11 @@
 	icon_state = "ledge_short";
 	name = "short ledge"
 	},
-/obj/machinery/fax,
 /obj/structure/table,
+/obj/machinery/fax{
+	fax_name = "Security Fax";
+	name = "Security Fax"
+	},
 /turf/open/floor/plasteel/dark{
 	dir = 1;
 	icon_state = "darkfull_plate"
@@ -266345,7 +266364,7 @@ hfE
 cEa
 xZg
 ueb
-xsu
+lYB
 tsq
 bqA
 tgJ
@@ -267373,7 +267392,7 @@ hfE
 cEa
 xZg
 ueb
-xsu
+lYB
 tsq
 bqA
 rcD

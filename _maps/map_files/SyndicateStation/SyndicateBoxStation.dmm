@@ -18101,11 +18101,14 @@
 /area/service/library)
 "aVS" = (
 /obj/structure/table/reinforced,
-/obj/machinery/fax,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /obj/structure/window/reinforced,
+/obj/machinery/fax{
+	fax_name = "General Fax";
+	name = "General Fax"
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/service/library)
 "aVT" = (
@@ -19230,8 +19233,11 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/machinery/fax,
 /obj/structure/table/wood/fancy/blackred,
+/obj/machinery/fax{
+	fax_name = "Bridge Fax";
+	name = "Bridge Fax"
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/command/bridge)
 "aYs" = (
@@ -22308,6 +22314,9 @@
 "bgL" = (
 /obj/machinery/computer/security/telescreen/entertainment{
 	pixel_y = -32
+	},
+/obj/machinery/computer/account_database{
+	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/command/meeting_room)
@@ -52264,7 +52273,10 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Lawyer Fax";
+	name = "Lawyer Fax"
+	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "eRr" = (
@@ -66159,7 +66171,10 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Security Fax";
+	name = "Security Fax"
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/office)
 "wUg" = (

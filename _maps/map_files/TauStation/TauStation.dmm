@@ -13124,10 +13124,11 @@
 /area/security/prison)
 "ezV" = (
 /obj/structure/table/glass,
-/obj/item/aicard,
-/obj/item/assembly/flash/handheld,
-/obj/item/assembly/flash/handheld,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/fax{
+	fax_name = "Bridge Fax";
+	name = "Bridge Fax"
+	},
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "eAj" = (
@@ -34229,7 +34230,10 @@
 /area/security/brig)
 "lRO" = (
 /obj/structure/table/wood,
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Lawyer Fax";
+	name = "Lawyer Fax"
+	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "lRR" = (
@@ -40316,7 +40320,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red,
-/obj/machinery/fax,
+/obj/item/flashlight/lamp/green,
 /turf/open/floor/plasteel,
 /area/security/office)
 "nSt" = (
@@ -50398,8 +50402,11 @@
 	pixel_y = -3;
 	req_access_txt = "37"
 	},
-/obj/machinery/fax,
 /obj/structure/table/wood,
+/obj/machinery/fax{
+	fax_name = "General Fax";
+	name = "General Fax"
+	},
 /turf/open/floor/wood/wood_large,
 /area/service/library)
 "rxu" = (
@@ -50843,8 +50850,6 @@
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/rd)
 "rEH" = (
-/obj/structure/table/wood,
-/obj/item/flashlight/lamp/green,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
@@ -50852,6 +50857,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel,
 /area/security/office)
 "rEN" = (
@@ -50899,14 +50905,14 @@
 /area/service/hydroponics/enclosure)
 "rFL" = (
 /obj/structure/table/wood,
-/obj/item/folder/red,
-/obj/item/pen{
-	pixel_x = -4
-	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red,
+/obj/machinery/fax{
+	fax_name = "Security Fax";
+	name = "Security Fax"
+	},
 /turf/open/floor/plasteel,
 /area/security/office)
 "rGb" = (
@@ -56888,7 +56894,9 @@
 /area/hallway/primary/starboard)
 "tJw" = (
 /obj/structure/table/glass,
-/obj/machinery/fax,
+/obj/item/aicard,
+/obj/item/assembly/flash/handheld,
+/obj/item/assembly/flash/handheld,
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "tJB" = (
@@ -64628,6 +64636,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/machinery/computer/account_database,
 /turf/open/floor/wood,
 /area/command/meeting_room/council)
 "wje" = (

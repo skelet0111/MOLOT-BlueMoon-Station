@@ -55754,7 +55754,10 @@
 /area/security/detectives_office)
 "hrn" = (
 /obj/structure/table/reinforced,
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Security Fax";
+	name = "Security Fax"
+	},
 /turf/open/floor/plasteel,
 /area/security/office)
 "hrB" = (
@@ -56826,14 +56829,11 @@
 /turf/open/floor/plasteel/dark,
 /area/command/teleporter)
 "hNB" = (
-/obj/item/paper_bin{
-	pixel_x = -2;
-	pixel_y = 4
-	},
-/obj/item/pen,
 /obj/structure/window/reinforced,
-/obj/structure/table/wood,
 /obj/machinery/firealarm/directional/west,
+/obj/machinery/computer/account_database{
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/command/heads_quarters/hop)
 "hNP" = (
@@ -62966,6 +62966,11 @@
 	req_access_txt = "28"
 	},
 /obj/structure/table/wood,
+/obj/item/paper_bin{
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/item/pen,
 /turf/open/floor/wood,
 /area/command/heads_quarters/hop)
 "kHw" = (
@@ -78566,9 +78571,12 @@
 	dir = 1
 	},
 /obj/structure/table/wood,
-/obj/machinery/fax,
 /obj/structure/window/reinforced{
 	dir = 8
+	},
+/obj/machinery/fax{
+	fax_name = "General Fax";
+	name = "General Fax"
 	},
 /turf/open/floor/wood,
 /area/service/library)
@@ -88177,8 +88185,11 @@
 	department = "Law office";
 	pixel_y = 32
 	},
-/obj/machinery/fax,
 /obj/structure/table/wood,
+/obj/machinery/fax{
+	fax_name = "Lawyer Fax";
+	name = "Lawyer Fax"
+	},
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "wrY" = (
@@ -92149,8 +92160,11 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/machinery/fax,
 /obj/structure/table/glass,
+/obj/machinery/fax{
+	fax_name = "Bridge Fax";
+	name = "Bridge Fax"
+	},
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "ycy" = (

@@ -5030,8 +5030,10 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red,
-/obj/item/storage/fancy/donut_box,
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Security Fax";
+	name = "Security Fax"
+	},
 /turf/open/floor/plasteel,
 /area/security/office)
 "aiJ" = (
@@ -5070,6 +5072,9 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red,
+/obj/item/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
 /turf/open/floor/plasteel,
 /area/security/office)
 "aiL" = (
@@ -7888,7 +7893,10 @@
 	pixel_y = 22
 	},
 /obj/structure/table/wood,
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Lawyer Fax";
+	name = "Lawyer Fax"
+	},
 /turf/open/floor/plasteel/dark,
 /area/service/lawoffice)
 "aol" = (
@@ -9321,7 +9329,10 @@
 	name = "Station Intercom (Command)";
 	pixel_x = 1
 	},
-/obj/machinery/fax,
+/obj/machinery/fax{
+	fax_name = "Bridge Fax";
+	name = "Bridge Fax"
+	},
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "aqE" = (
@@ -11956,13 +11967,18 @@
 /area/security/prison)
 "auX" = (
 /obj/structure/table,
-/obj/machinery/recharger,
+/obj/machinery/recharger{
+	pixel_x = -6
+	},
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
+	},
+/obj/machinery/recharger{
+	pixel_x = 6
 	},
 /turf/open/floor/plasteel,
 /area/command/bridge)
@@ -42415,8 +42431,6 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "bsH" = (
-/obj/structure/table,
-/obj/machinery/recharger,
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -42429,6 +42443,9 @@
 	},
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
+	},
+/obj/machinery/computer/account_database{
+	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/command/bridge)
@@ -42506,10 +42523,13 @@
 /obj/machinery/light_switch{
 	pixel_y = -24
 	},
-/obj/machinery/fax,
 /obj/structure/table/wood,
 /obj/structure/window/reinforced{
 	dir = 8
+	},
+/obj/machinery/fax{
+	fax_name = "General Fax";
+	name = "General Fax"
 	},
 /turf/open/floor/plasteel/grimy,
 /area/service/library)
