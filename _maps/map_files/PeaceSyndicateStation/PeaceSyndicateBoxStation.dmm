@@ -4988,6 +4988,11 @@
 	},
 /obj/structure/table,
 /obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/office)
 "akS" = (
@@ -14422,6 +14427,11 @@
 /area/service/library)
 "aLg" = (
 /obj/structure/table/reinforced,
+/obj/item/camera,
+/obj/item/taperecorder,
+/obj/item/camera_film,
+/obj/item/camera_film,
+/obj/structure/window/reinforced,
 /turf/open/floor/mineral/plastitanium,
 /area/service/library)
 "aLi" = (
@@ -16685,6 +16695,7 @@
 	name = "Private Study";
 	req_access_txt = "37"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/carpet/black,
 /area/service/library)
 "aRR" = (
@@ -18183,11 +18194,12 @@
 /turf/open/floor/mineral/plastitanium,
 /area/service/library)
 "aVS" = (
-/obj/item/camera_film,
-/obj/item/camera_film,
-/obj/item/taperecorder,
-/obj/item/camera,
 /obj/structure/table/reinforced,
+/obj/machinery/fax,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/service/library)
 "aVT" = (
@@ -18202,6 +18214,7 @@
 /obj/item/pen/fountain,
 /obj/item/pen/fourcolor,
 /obj/structure/table/reinforced,
+/obj/structure/window/reinforced,
 /turf/open/floor/mineral/plastitanium,
 /area/service/library)
 "aVU" = (
@@ -19311,6 +19324,8 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/machinery/fax,
+/obj/structure/table,
 /turf/open/floor/mineral/plastitanium,
 /area/command/bridge)
 "aYs" = (
@@ -52401,6 +52416,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+/obj/machinery/fax,
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "eRr" = (
@@ -59924,6 +59940,15 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/carpet/black,
 /area/service/bar)
+"oaW" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/northright{
+	dir = 2;
+	name = "Library Desk Door";
+	req_access_txt = "37"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/service/library)
 "obs" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -60493,6 +60518,17 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/security/prison)
+"oPX" = (
+/obj/item/flashlight/lamp/green{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/service/library)
 "oPY" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 4
@@ -66113,7 +66149,6 @@
 /area/commons/toilet/locker)
 "wTO" = (
 /obj/structure/table,
-/obj/item/storage/fancy/donut_box,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -66124,6 +66159,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/fax,
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/office)
 "wUg" = (
@@ -111809,7 +111845,7 @@ aFu
 mPE
 aFu
 aTc
-aUD
+oPX
 aVS
 aYW
 aYW
@@ -112324,7 +112360,7 @@ aYW
 aRQ
 aIt
 aUF
-aLg
+oaW
 aYW
 aYW
 aVQ

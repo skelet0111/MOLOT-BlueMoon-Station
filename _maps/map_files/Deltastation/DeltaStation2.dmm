@@ -69928,6 +69928,10 @@
 /area/engineering/atmos)
 "eFD" = (
 /obj/structure/table/wood,
+/obj/item/storage/dice,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
 /turf/open/floor/plasteel/grimy,
 /area/service/library)
 "eFF" = (
@@ -70243,6 +70247,9 @@
 /obj/structure/table/wood,
 /obj/item/storage/fancy/donut_box,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
 /turf/open/floor/plasteel/grimy,
 /area/service/library)
 "eKx" = (
@@ -78146,6 +78153,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/obj/machinery/fax,
 /turf/open/floor/plasteel,
 /area/security/office)
 "hlZ" = (
@@ -81115,7 +81123,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/item/paper_bin,
+/obj/machinery/fax,
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "ieG" = (
@@ -82998,7 +83006,8 @@
 	},
 /obj/machinery/door/window{
 	dir = 8;
-	name = "Library Desk"
+	name = "Library Desk";
+	req_access_txt = "37"
 	},
 /turf/open/floor/plasteel/grimy,
 /area/service/library)
@@ -83475,6 +83484,8 @@
 	name = "Representative Office Shutters";
 	pixel_x = 25
 	},
+/obj/structure/table/wood,
+/obj/machinery/fax,
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "iMm" = (
@@ -85058,6 +85069,9 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
 /turf/open/floor/plasteel/grimy,
 /area/service/library)
 "jmz" = (
@@ -86150,6 +86164,7 @@
 /obj/structure/table/wood,
 /obj/item/clipboard,
 /obj/item/toy/figure/lawyer,
+/obj/item/paper_bin,
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "jDc" = (
@@ -116510,6 +116525,7 @@
 	},
 /obj/item/paper_bin,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/item/pen,
 /turf/open/floor/plasteel/grimy,
 /area/command/bridge)
 "tiz" = (
@@ -120674,13 +120690,13 @@
 /area/service/bar/atrium)
 "uyc" = (
 /obj/structure/table/wood,
-/obj/item/storage/dice,
 /obj/machinery/computer/security/telescreen/entertainment{
 	pixel_y = -32
 	},
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/obj/machinery/fax,
 /turf/open/floor/plasteel/grimy,
 /area/service/library)
 "uyr" = (
@@ -123614,6 +123630,11 @@
 /obj/structure/table/wood,
 /obj/item/folder,
 /obj/item/pen,
+/obj/machinery/door/window{
+	dir = 1;
+	name = "Library Desk";
+	req_access_txt = "37"
+	},
 /turf/open/floor/plasteel/grimy,
 /area/service/library)
 "vyw" = (
@@ -128167,7 +128188,7 @@
 /area/cargo/storage)
 "xbS" = (
 /obj/structure/table/wood,
-/obj/item/paper_bin,
+/obj/machinery/fax,
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "xcf" = (
@@ -131336,6 +131357,9 @@
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 24
+	},
+/obj/structure/window/reinforced{
+	dir = 1
 	},
 /turf/open/floor/plasteel/grimy,
 /area/service/library)

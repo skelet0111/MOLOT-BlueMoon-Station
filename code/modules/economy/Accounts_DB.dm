@@ -57,9 +57,9 @@ GLOBAL_VAR(current_date_string)
 	ui_interact(user)
 
 /obj/machinery/computer/account_database/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui_key, ui, force_open)
+	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, ui_key, "AccountsUplinkTerminal", name, 800, 600, master_ui, state)
+		ui = new(user, src, "AccountsUplinkTerminal", name, 800, 600)
 		ui.open()
 
 /obj/machinery/computer/account_database/ui_data(mob/user)

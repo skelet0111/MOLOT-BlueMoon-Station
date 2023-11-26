@@ -10646,6 +10646,8 @@
 /obj/item/clothing/mask/cigarette/cigar/havana{
 	pixel_x = 4
 	},
+/obj/item/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "dHO" = (
@@ -34196,6 +34198,10 @@
 	pixel_x = 1;
 	pixel_y = 5
 	},
+/obj/item/folder/blue,
+/obj/item/folder/blue,
+/obj/item/folder/blue,
+/obj/item/stamp/law,
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "lRg" = (
@@ -34223,11 +34229,7 @@
 /area/security/brig)
 "lRO" = (
 /obj/structure/table/wood,
-/obj/item/folder/blue,
-/obj/item/folder/blue,
-/obj/item/folder/blue,
-/obj/item/folder/blue,
-/obj/item/stamp/law,
+/obj/machinery/fax,
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "lRR" = (
@@ -40310,11 +40312,11 @@
 /area/maintenance/port/aft)
 "nSp" = (
 /obj/structure/table/wood,
-/obj/item/toy/plush/lampplushie,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red,
+/obj/machinery/fax,
 /turf/open/floor/plasteel,
 /area/security/office)
 "nSt" = (
@@ -45205,6 +45207,9 @@
 	pixel_y = 3
 	},
 /obj/item/camera/spooky,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
 /turf/open/floor/wood/wood_large,
 /area/service/library)
 "pIj" = (
@@ -50393,6 +50398,8 @@
 	pixel_y = -3;
 	req_access_txt = "37"
 	},
+/obj/machinery/fax,
+/obj/structure/table/wood,
 /turf/open/floor/wood/wood_large,
 /area/service/library)
 "rxu" = (
@@ -51033,12 +51040,14 @@
 "rHK" = (
 /obj/machinery/atmospherics/pipe/simple/brown/hidden,
 /obj/structure/table/wood,
+/obj/machinery/newscaster{
+	pixel_x = -32
+	},
+/obj/structure/window/reinforced,
+/obj/item/paicard,
 /obj/item/flashlight/lamp/green{
 	pixel_x = 1;
 	pixel_y = 5
-	},
-/obj/machinery/newscaster{
-	pixel_x = -32
 	},
 /turf/open/floor/wood/wood_large,
 /area/service/library)
@@ -51088,6 +51097,10 @@
 	},
 /obj/item/book/manual/random,
 /obj/structure/table/wood,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
 /turf/open/floor/wood/wood_large,
 /area/service/library)
 "rIK" = (
@@ -56875,7 +56888,7 @@
 /area/hallway/primary/starboard)
 "tJw" = (
 /obj/structure/table/glass,
-/obj/item/storage/fancy/donut_box,
+/obj/machinery/fax,
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "tJB" = (
@@ -67410,7 +67423,11 @@
 	dir = 5
 	},
 /obj/structure/table/wood,
-/obj/item/paicard,
+/obj/machinery/door/window/northright{
+	dir = 2;
+	name = "Library Desk Door";
+	req_access_txt = "37"
+	},
 /turf/open/floor/wood/wood_large,
 /area/service/library)
 "xby" = (

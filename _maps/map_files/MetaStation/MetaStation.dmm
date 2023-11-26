@@ -53185,6 +53185,20 @@
 /obj/item/taperecorder{
 	pixel_x = -4
 	},
+/obj/item/folder/blue{
+	pixel_x = -2;
+	pixel_y = 3
+	},
+/obj/item/folder/red{
+	pixel_x = 3
+	},
+/obj/item/folder/red{
+	pixel_x = 3
+	},
+/obj/item/folder/blue{
+	pixel_x = -2;
+	pixel_y = 3
+	},
 /turf/open/floor/plasteel,
 /area/security/office)
 "gfr" = (
@@ -55740,13 +55754,7 @@
 /area/security/detectives_office)
 "hrn" = (
 /obj/structure/table/reinforced,
-/obj/item/folder/red{
-	pixel_x = 3
-	},
-/obj/item/folder/blue{
-	pixel_x = -2;
-	pixel_y = 3
-	},
+/obj/machinery/fax,
 /turf/open/floor/plasteel,
 /area/security/office)
 "hrB" = (
@@ -64245,6 +64253,15 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
+/obj/item/taperecorder,
+/obj/item/taperecorder,
+/obj/item/tape,
+/obj/item/tape,
+/obj/item/folder,
+/obj/item/folder,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/open/floor/wood,
 /area/service/library)
 "lmp" = (
@@ -68931,6 +68948,13 @@
 	pixel_y = 7
 	},
 /obj/item/toy/figure/curator,
+/obj/machinery/door/window/northright{
+	base_state = "left";
+	icon_state = "left";
+	name = "Library Desk Door";
+	pixel_x = 3;
+	req_access_txt = "37"
+	},
 /turf/open/floor/wood,
 /area/service/library)
 "nCh" = (
@@ -78538,14 +78562,14 @@
 /turf/open/floor/plating,
 /area/security/prison/cells)
 "rRZ" = (
-/obj/item/folder,
-/obj/item/folder,
 /obj/machinery/camera/autoname{
 	dir = 1
 	},
 /obj/structure/table/wood,
-/obj/item/taperecorder,
-/obj/item/tape,
+/obj/machinery/fax,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/open/floor/wood,
 /area/service/library)
 "rSi" = (
@@ -81304,6 +81328,10 @@
 	dir = 4;
 	name = "Station Intercom (General)";
 	pixel_x = 27
+	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
 	},
 /turf/open/floor/wood,
 /area/service/library)
@@ -86287,6 +86315,21 @@
 /mob/living/simple_animal/slime,
 /turf/open/floor/engine,
 /area/science/xenobiology)
+"vzE" = (
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp/green{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/turf/open/floor/wood,
+/area/service/library)
 "vAp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable/yellow{
@@ -88134,6 +88177,8 @@
 	department = "Law office";
 	pixel_y = 32
 	},
+/obj/machinery/fax,
+/obj/structure/table/wood,
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "wrY" = (
@@ -92096,6 +92141,18 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/white,
 /area/science/research)
+"ycb" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/machinery/fax,
+/obj/structure/table/glass,
+/turf/open/floor/plasteel/dark,
+/area/command/bridge)
 "ycy" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
@@ -92488,6 +92545,10 @@
 "yko" = (
 /obj/structure/table/wood,
 /obj/item/paicard,
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
 /turf/open/floor/wood,
 /area/service/library)
 "ykE" = (
@@ -113248,7 +113309,7 @@ snU
 yhY
 vfr
 iHr
-exO
+vzE
 oNf
 lmm
 rRZ
@@ -118635,7 +118696,7 @@ hlQ
 pfU
 xXI
 mzq
-qWe
+ycb
 tmg
 sjK
 tmg

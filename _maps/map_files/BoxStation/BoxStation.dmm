@@ -2374,7 +2374,7 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/item/storage/fancy/donut_box,
+/obj/machinery/fax,
 /turf/open/floor/plasteel,
 /area/security/office)
 "aki" = (
@@ -9154,6 +9154,11 @@
 /area/service/bar)
 "aLg" = (
 /obj/structure/table/wood,
+/obj/item/flashlight/lamp/green{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/structure/window/reinforced,
 /turf/open/floor/wood,
 /area/service/library)
 "aLi" = (
@@ -11338,6 +11343,10 @@
 /obj/item/camera_film,
 /obj/item/taperecorder,
 /obj/item/camera,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
 /turf/open/floor/wood,
 /area/service/library)
 "aVT" = (
@@ -11352,6 +11361,7 @@
 	},
 /obj/item/pen/fountain,
 /obj/item/pen/fourcolor,
+/obj/structure/window/reinforced,
 /turf/open/floor/wood,
 /area/service/library)
 "aVV" = (
@@ -41215,16 +41225,11 @@
 /turf/closed/wall,
 /area/maintenance/fore/secondary)
 "cQt" = (
-/obj/machinery/power/apc{
-	areastring = "/area/medical/surgery";
-	dir = 8;
-	name = "Treatment Center APC";
-	pixel_x = -25
-	},
 /obj/structure/cable{
 	dir = 1
 	},
 /obj/structure/closet/secure_closet/medical2,
+/obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/plasteel,
 /area/medical/surgery)
 "cQu" = (
@@ -43539,6 +43544,19 @@
 /turf/open/floor/plasteel,
 /area/service/hydroponics)
 "erm" = (
+/obj/machinery/button/door{
+	id = "sauna2";
+	name = "Cabin Bolt Control";
+	normaldoorcontrol = 1;
+	specialfunctions = 4;
+	pixel_y = 8;
+	pixel_x = -32
+	},
+/obj/machinery/button/electrochromatic{
+	id = "sauna_room";
+	pixel_y = -8;
+	pixel_x = -32
+	},
 /obj/structure/chair/pew/left{
 	dir = 4
 	},
@@ -45538,7 +45556,7 @@
 	pixel_y = -29
 	},
 /obj/structure/table/wood,
-/obj/item/storage/fancy/donut_box,
+/obj/machinery/fax,
 /turf/open/floor/wood,
 /area/command/bridge)
 "fSO" = (
@@ -51830,6 +51848,15 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/security/prison/upper)
+"kHT" = (
+/obj/structure/table/wood,
+/obj/machinery/door/window/northright{
+	dir = 2;
+	name = "Library Desk Door";
+	req_access_txt = "37"
+	},
+/turf/open/floor/wood,
+/area/service/library)
 "kIh" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/smartfridge/organ,
@@ -52983,20 +53010,6 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/wood,
 /area/command/bridge)
-"lAk" = (
-/obj/machinery/button/electrochromatic{
-	id = "sauna_room";
-	pixel_y = -8
-	},
-/obj/machinery/button/door{
-	id = "sauna2";
-	name = "Cabin Bolt Control";
-	normaldoorcontrol = 1;
-	specialfunctions = 4;
-	pixel_y = 8
-	},
-/turf/closed/wall,
-/area/service/sauna)
 "lAw" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -55430,11 +55443,11 @@
 /turf/closed/wall,
 /area/service/abandoned_gambling_den)
 "nsK" = (
-/obj/machinery/door/airlock{
+/obj/machinery/door/firedoor,
+/obj/machinery/door/morgue{
 	name = "Private Study";
 	req_access_txt = "37"
 	},
-/obj/machinery/door/firedoor,
 /turf/open/floor/wood,
 /area/service/library)
 "nsW" = (
@@ -58532,6 +58545,13 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
+"pPq" = (
+/obj/structure/displaycase/trophy,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/service/library)
 "pPI" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
@@ -58936,6 +58956,7 @@
 	dir = 4
 	},
 /obj/structure/table/wood,
+/obj/machinery/fax,
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "qgb" = (
@@ -62510,6 +62531,13 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+"sVJ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/computer/account_database{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/command/meeting_room)
 "sVM" = (
 /obj/machinery/light{
 	dir = 1;
@@ -63989,6 +64017,7 @@
 	pixel_x = -7;
 	pixel_y = 7
 	},
+/obj/item/storage/fancy/donut_box,
 /turf/open/floor/wood,
 /area/command/bridge)
 "tZu" = (
@@ -64454,6 +64483,14 @@
 /obj/structure/mineral_door/wood,
 /turf/open/floor/wood,
 /area/maintenance/bar)
+"uwl" = (
+/obj/structure/table/wood,
+/obj/machinery/fax,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/service/library)
 "uwD" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -65084,6 +65121,7 @@
 	pixel_x = 7;
 	pixel_y = 7
 	},
+/obj/item/storage/fancy/donut_box,
 /turf/open/floor/wood,
 /area/command/bridge)
 "uWX" = (
@@ -96394,7 +96432,7 @@ bdI
 bgK
 bgK
 bjE
-bgK
+sVJ
 bmq
 bnQ
 bpd
@@ -109959,7 +109997,7 @@ wet
 wet
 wet
 wet
-lAk
+wet
 wet
 dOb
 pTo
@@ -113339,7 +113377,7 @@ oFt
 rMk
 rMk
 qfD
-aRO
+pPq
 aIt
 aPd
 aIt
@@ -114114,7 +114152,7 @@ aFu
 aFu
 aFu
 ePX
-aUD
+uwl
 aVS
 aYW
 aYW
@@ -114629,7 +114667,7 @@ nsK
 aIt
 aIt
 aUF
-aLg
+kHT
 aYW
 aYW
 aVQ

@@ -82,9 +82,9 @@
 	return parent ? parent : src
 
 /obj/machinery/computer/secure_data/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui_key, ui, force_open)
+	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, ui_key, "SecurityRecords", name, 800, 800)
+		ui = new(user, src, "SecurityRecords", name, 800, 800)
 		ui.open()
 		ui.set_autoupdate(FALSE)
 

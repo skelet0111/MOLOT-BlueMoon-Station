@@ -4949,6 +4949,11 @@
 	},
 /obj/structure/table,
 /obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/office)
 "akS" = (
@@ -14328,6 +14333,11 @@
 /area/service/library)
 "aLg" = (
 /obj/structure/table/reinforced,
+/obj/item/camera,
+/obj/item/taperecorder,
+/obj/item/camera_film,
+/obj/item/camera_film,
+/obj/structure/window/reinforced,
 /turf/open/floor/mineral/plastitanium,
 /area/service/library)
 "aLi" = (
@@ -16591,6 +16601,7 @@
 	name = "Private Study";
 	req_access_txt = "37"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/carpet/black,
 /area/service/library)
 "aRR" = (
@@ -18089,11 +18100,12 @@
 /turf/open/floor/mineral/plastitanium,
 /area/service/library)
 "aVS" = (
-/obj/item/camera_film,
-/obj/item/camera_film,
-/obj/item/taperecorder,
-/obj/item/camera,
 /obj/structure/table/reinforced,
+/obj/machinery/fax,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
 /turf/open/floor/mineral/plastitanium,
 /area/service/library)
 "aVT" = (
@@ -18108,6 +18120,7 @@
 /obj/item/pen/fountain,
 /obj/item/pen/fourcolor,
 /obj/structure/table/reinforced,
+/obj/structure/window/reinforced,
 /turf/open/floor/mineral/plastitanium,
 /area/service/library)
 "aVU" = (
@@ -19217,6 +19230,8 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/machinery/fax,
+/obj/structure/table/wood/fancy/blackred,
 /turf/open/floor/mineral/plastitanium,
 /area/command/bridge)
 "aYs" = (
@@ -52249,6 +52264,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+/obj/machinery/fax,
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "eRr" = (
@@ -60181,6 +60197,17 @@
 /obj/structure/closet,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+"oFf" = (
+/obj/item/flashlight/lamp/green{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/service/library)
 "oFq" = (
 /obj/structure/loot_pile/maint,
 /turf/open/floor/plating,
@@ -62127,6 +62154,15 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space,
 /area/solars/port/fore)
+"rxt" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/northright{
+	dir = 2;
+	name = "Library Desk Door";
+	req_access_txt = "37"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/service/library)
 "rxD" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -66113,7 +66149,6 @@
 /area/commons/toilet/locker)
 "wTO" = (
 /obj/structure/table,
-/obj/item/storage/fancy/donut_box,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -66124,6 +66159,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/fax,
 /turf/open/floor/mineral/plastitanium/red,
 /area/security/office)
 "wUg" = (
@@ -111807,7 +111843,7 @@ aFu
 mPE
 aFu
 aTc
-aUD
+oFf
 aVS
 aYW
 aYW
@@ -112322,7 +112358,7 @@ aYW
 aRQ
 aIt
 aUF
-aLg
+rxt
 aYW
 aYW
 aVQ

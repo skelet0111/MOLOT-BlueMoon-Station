@@ -16782,6 +16782,11 @@
 	},
 /obj/structure/table,
 /obj/item/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
 /turf/open/floor/plasteel,
 /area/security/brig)
 "aDZ" = (
@@ -20635,19 +20640,20 @@
 	pixel_x = 1;
 	pixel_y = 5
 	},
+/obj/item/folder/blue,
+/obj/item/folder/blue,
+/obj/item/folder/blue,
+/obj/item/folder/blue,
+/obj/item/stamp/law,
 /turf/open/floor/plasteel/grimy,
 /area/service/lawoffice)
 "aLf" = (
 /obj/structure/table/wood,
-/obj/item/folder/blue,
-/obj/item/folder/blue,
-/obj/item/folder/blue,
-/obj/item/folder/blue,
 /obj/machinery/camera{
 	c_tag = "Law Office";
 	dir = 8
 	},
-/obj/item/stamp/law,
+/obj/machinery/fax,
 /turf/open/floor/plasteel/grimy,
 /area/service/lawoffice)
 "aLg" = (
@@ -27123,6 +27129,8 @@
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/machinery/light,
+/obj/machinery/fax,
+/obj/structure/table,
 /turf/open/floor/plasteel,
 /area/security/brig)
 "bab" = (
@@ -36953,6 +36961,8 @@
 /area/security/prison)
 "bzK" = (
 /obj/machinery/light,
+/obj/machinery/fax,
+/obj/structure/table/wood,
 /turf/open/floor/wood,
 /area/service/library)
 "bzL" = (
@@ -38162,6 +38172,8 @@
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 9
 	},
+/obj/machinery/fax,
+/obj/structure/table/reinforced,
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "bDw" = (

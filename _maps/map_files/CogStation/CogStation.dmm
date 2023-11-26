@@ -17302,11 +17302,11 @@
 /area/maintenance/department/security)
 "aSh" = (
 /obj/structure/table,
-/obj/item/storage/fancy/donut_box,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/orange/hidden,
+/obj/machinery/fax,
 /turf/open/floor/carpet/red,
 /area/security/brig)
 "aSi" = (
@@ -18474,6 +18474,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/orange/hidden,
+/obj/item/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
 /turf/open/floor/carpet/red,
 /area/security/brig)
 "aVJ" = (
@@ -37464,6 +37466,11 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/green,
+/obj/structure/table/wood,
+/obj/item/book/manual/splurt_space_law,
+/obj/item/book/manual/splurt_space_law{
+	pixel_y = 3
+	},
 /turf/open/floor/plasteel/dark,
 /area/service/lawoffice)
 "bQB" = (
@@ -41559,6 +41566,8 @@
 	name = "Library Desk Window";
 	req_access_txt = "37"
 	},
+/obj/item/paper_bin,
+/obj/item/pen,
 /turf/open/floor/carpet{
 	icon_state = "carpetsymbol"
 	},
@@ -43291,8 +43300,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/item/paper_bin,
-/obj/item/pen,
+/obj/machinery/fax,
 /turf/open/floor/carpet{
 	icon_state = "carpetsymbol"
 	},
@@ -46468,6 +46476,8 @@
 	name = "Station Intercom (Security)";
 	pixel_y = -28
 	},
+/obj/machinery/fax,
+/obj/structure/table/wood,
 /turf/open/floor/plasteel/dark,
 /area/service/lawoffice)
 "cmO" = (
@@ -70311,6 +70321,8 @@
 	name = "Station Intercom (Security)";
 	pixel_y = -28
 	},
+/obj/machinery/fax,
+/obj/structure/table,
 /turf/open/floor/plasteel,
 /area/command/bridge)
 "woc" = (
@@ -70583,12 +70595,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
-"wXM" = (
-/obj/structure/closet/crate,
-/obj/item/book/manual/splurt_space_law,
-/obj/item/book/manual/splurt_space_law,
-/turf/open/floor/plasteel/dark,
-/area/service/lawoffice)
 "wXP" = (
 /obj/structure/sign/warning/fire,
 /turf/closed/wall/mineral/lead,
@@ -97595,7 +97601,7 @@ aZy
 bVV
 bWg
 aWg
-wXM
+bae
 baw
 bZC
 cjv

@@ -691,6 +691,8 @@
 	},
 /obj/structure/table/wood,
 /obj/item/storage/lockbox/medal,
+/obj/item/paper_bin,
+/obj/item/pen,
 /turf/open/floor/plasteel,
 /area/command/bridge)
 "abq" = (
@@ -801,8 +803,7 @@
 	icon_state = "1-4"
 	},
 /obj/structure/table/wood,
-/obj/item/paper_bin,
-/obj/item/pen,
+/obj/machinery/fax,
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "abF" = (
@@ -7540,7 +7541,7 @@
 /obj/machinery/light/small,
 /obj/structure/table/wood,
 /obj/structure/window/reinforced/spawner/west,
-/obj/item/folder/blue,
+/obj/machinery/fax,
 /turf/open/floor/carpet/green,
 /area/service/lawoffice)
 "aoE" = (
@@ -8779,6 +8780,13 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/obj/machinery/door/window/northright{
+	name = "Security Desk"
+	},
+/obj/machinery/door/window/brigdoor/southright{
+	name = "Security Desk";
+	req_access_txt = "63"
+	},
 /turf/open/floor/plasteel,
 /area/security/brig)
 "aqS" = (
@@ -9616,6 +9624,13 @@
 	dir = 8
 	},
 /obj/item/toy/figure/secofficer,
+/obj/machinery/door/window/brigdoor/southright{
+	name = "Security Desk";
+	req_access_txt = "63"
+	},
+/obj/machinery/door/window/northright{
+	name = "Security Desk"
+	},
 /turf/open/floor/plasteel,
 /area/security/brig)
 "asC" = (
@@ -9719,6 +9734,12 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+/obj/item/taperecorder,
+/obj/item/taperecorder,
+/obj/item/flashlight/seclite,
+/obj/item/flashlight/seclite,
+/obj/item/book/manual/splurt_space_law,
+/obj/item/book/manual/splurt_space_law,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "asP" = (
@@ -24788,6 +24809,9 @@
 /obj/machinery/status_display{
 	pixel_x = -32
 	},
+/obj/structure/window/reinforced/spawner{
+	dir = 1
+	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 10
 	},
@@ -24802,8 +24826,19 @@
 /area/service/library)
 "aVP" = (
 /obj/structure/table/wood,
-/obj/item/flashlight/lamp,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/item/camera_film,
+/obj/item/camera_film{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/flashlight/lamp,
+/obj/structure/window/reinforced/spawner{
+	dir = 4
+	},
+/obj/structure/window/reinforced/spawner{
+	dir = 1
+	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 10
 	},
@@ -25225,12 +25260,11 @@
 /area/service/library)
 "aWC" = (
 /obj/structure/table/wood,
-/obj/item/camera_film{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/camera_film,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/fax,
+/obj/structure/window/reinforced/spawner{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/service/library)
 "aWD" = (
@@ -38588,12 +38622,9 @@
 /area/ai_monitored/command/nuke_storage)
 "spY" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/splurt_space_law,
-/obj/item/taperecorder,
 /obj/machinery/status_display{
 	pixel_y = -32
 	},
-/obj/item/flashlight/seclite,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -38603,6 +38634,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+/obj/machinery/fax,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "sqz" = (
@@ -38726,6 +38758,7 @@
 	name = "Lawyer RC";
 	pixel_y = -30
 	},
+/obj/item/folder/blue,
 /turf/open/floor/carpet/green,
 /area/service/lawoffice)
 "syT" = (
