@@ -346,10 +346,13 @@ Class Procs:
 	if(living_user.incapacitated()) //idk why silicons aren't supposed to care about incapacitation when interacting with machines, but it was apparently like this before
 		return FALSE
 
-	// TODO: nerf blind people
-	// if((interaction_flags_machine & INTERACT_MACHINE_REQUIRES_SIGHT) && user.is_blind())
-	// 	to_chat(user, span_warning("This machine requires sight to use."))
-	// 	return FALSE
+	if((interaction_flags_machine & INTERACT_MACHINE_REQUIRES_SIGHT) && user.is_blind())
+		to_chat(user, span_warning("This machine requires sight to use."))
+		return FALSE
+
+	// machines have their own lit up display screens and LED buttons so we don't need to check for light
+	if((interaction_flags_machine & INTERACT_MACHINE_REQUIRES_LITERACY) && !user.can_read(src))
+		return FALSE
 
 	if(panel_open && !(interaction_flags_machine & INTERACT_MACHINE_OPEN))
 		return FALSE

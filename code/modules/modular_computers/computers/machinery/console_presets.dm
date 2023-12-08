@@ -82,6 +82,7 @@
 	hard_drive.store_file(new/datum/computer_file/program/chatclient())
 	hard_drive.store_file(new/datum/computer_file/program/card_mod())
 	hard_drive.store_file(new/datum/computer_file/program/job_management())
+	hard_drive.store_file(new /datum/computer_file/program/newscaster())
 	hard_drive.store_file(new/datum/computer_file/program/crew_manifest())
 
 /obj/machinery/modular_computer/console/preset/id/centcom
@@ -94,6 +95,7 @@
 	hard_drive.store_file(new /datum/computer_file/program/chatclient())
 	hard_drive.store_file(card_mod_centcom)
 	hard_drive.store_file(new /datum/computer_file/program/job_management())
+	hard_drive.store_file(new /datum/computer_file/program/newscaster())
 	hard_drive.store_file(new /datum/computer_file/program/crew_manifest())
 
 // ===== CIVILIAN CONSOLE =====
@@ -117,6 +119,8 @@
 /obj/machinery/modular_computer/console/preset/curator/install_programs()
 	var/obj/item/computer_hardware/hard_drive/hard_drive = cpu.all_components[MC_HDD]
 	hard_drive.store_file(new/datum/computer_file/program/portrait_printer())
+	hard_drive.store_file(new /datum/computer_file/program/newscaster())
+	hard_drive.store_file(new /datum/computer_file/program/news_archive())
 
 // ===== CARGO CHAT CONSOLES =====
 /obj/machinery/modular_computer/console/preset/cargochat

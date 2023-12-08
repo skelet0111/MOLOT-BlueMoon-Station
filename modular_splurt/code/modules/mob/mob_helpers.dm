@@ -34,7 +34,7 @@
 	// Check for D4C craving
 	if(HAS_TRAIT(src, TRAIT_DUMB_CUM_CRAVE))
 		// Warn user, then return
-		to_chat(src, span_love("Вы пытаетесь прочитать [O], но вам приходит на ум только теплое семя.!"))
+		to_chat(src, span_love("Вы пытаетесь прочитать [O], но вам приходит на ум только теплое семя!"))
 		return
 
 	// Return normally

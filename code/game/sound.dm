@@ -352,4 +352,6 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 				soundin = pick('modular_sand/sound/misc/drawer_open1.ogg', 'modular_sand/sound/misc/drawer_open2.ogg')
 			if("drawer_close")
 				soundin = pick('modular_sand/sound/misc/drawer_close.ogg')
+			if(SFX_PAGE_TURN)
+				soundin = pick('sound/effects/pageturn1.ogg', 'sound/effects/pageturn2.ogg','sound/effects/pageturn3.ogg')
 	return soundin

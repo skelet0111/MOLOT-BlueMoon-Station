@@ -47,6 +47,7 @@
     "common": "workspace:*",
     "css-loader": "^6.8.1",
     "debug": "^4.3.4",
+    "esbuild-loader": "^4.0.2",
     "eslint": "^8.54.0",
     "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-radar": "^0.2.1",

@@ -210,6 +210,8 @@
 #define ANNOUNCER_IROD "irod"
 #define ANNOUNCER_LAMBDA "lambda"
 
+/// List of all of our sound keys.
+#define SFX_PAGE_TURN "page_turn"
 
 /// Global list of all of our announcer keys.
 GLOBAL_LIST_INIT(announcer_keys, list(

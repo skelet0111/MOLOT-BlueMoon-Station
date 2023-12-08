@@ -200,5 +200,13 @@ do { \
 /// If you modify this, you'll need to modify the tsx file too
 #define MAX_EXPECTED_Z_DEPTH 11
 
+<<<<<<< Updated upstream
 /// The amount of lumcount on a tile for it to be considered dark (used to determine reading and nyctophobia)
 #define LIGHTING_TILE_IS_DARK 0.2
+=======
+/// A set of appearance flags applied to all emissive and emissive blocker overlays.
+/// KEEP_APART to prevent parent hooking, KEEP_TOGETHER for children, and we reset the color and alpha of our parent so nothing gets overriden
+#define EMISSIVE_APPEARANCE_FLAGS (KEEP_APART|KEEP_TOGETHER|RESET_COLOR|RESET_ALPHA)
+
+#define _EM_BLOCK_COLOR(val) list(0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,val, 0,0,0,0)
+>>>>>>> Stashed changes

@@ -188,3 +188,8 @@ GLOBAL_LIST_INIT(ddlc_chars, list(
 	"ŭ", "Ů", "ů", "Ű", "ű", "Ų", "ų",
 	"Ŵ", "ŵ", "Ŷ", "ŷ", "Ÿ", "Ź", "ź",
 	"Ż", "ż", "Ž", "ž"))
+
+/// File location for in-rotation news stories
+#define NEWS_FILE "[global.config.directory]/news_stories.json"
+/// File location for out-of-rotation news stories
+#define ARCHIVE_FILE "[global.config.directory]/archived_stories.json"

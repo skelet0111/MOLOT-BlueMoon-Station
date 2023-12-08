@@ -5114,6 +5114,7 @@
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/security/lawyer)
 "uW" = (
 /obj/structure/tank_holder/anesthetic,
+/obj/item/clothing/mask/breath/medical,
 /turf/open/floor/iron/white/small,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/medbay)
 "uZ" = (
@@ -8995,8 +8996,7 @@
 /obj/structure/table/wood,
 /obj/machinery/fax{
 	fax_name = "Unknown Syndicate Fax";
-	name = "DS-2 Fax Machine";
-	syndicate_network = 1
+	name = "DS-2 Fax Machine"
 	},
 /turf/open/floor/wood/wood_large,
 /area/ruin/space/has_grav/bluemoon/deepspacetwo/bridge/admiral)

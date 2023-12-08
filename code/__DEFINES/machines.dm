@@ -142,3 +142,21 @@
 #define LOGIN_TYPE_AI 2
 #define LOGIN_TYPE_ROBOT 3
 #define LOGIN_TYPE_ADMIN 4
+
+/// Create directional subtypes for a path to simplify mapping.
+#define MAPPING_DIRECTIONAL_HELPERS(path, offset) ##path/directional/north {\
+	dir = NORTH; \
+	pixel_y = offset; \
+} \
+##path/directional/south {\
+	dir = SOUTH; \
+	pixel_y = -offset; \
+} \
+##path/directional/east {\
+	dir = EAST; \
+	pixel_x = offset; \
+} \
+##path/directional/west {\
+	dir = WEST; \
+	pixel_x = -offset; \
+}

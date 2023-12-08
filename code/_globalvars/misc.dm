@@ -5,6 +5,11 @@ GLOBAL_VAR_INIT(timezoneOffset, 0) // The difference betwen midnight (of the hos
 GLOBAL_VAR_INIT(year, time2text(world.realtime,"YYYY"))
 GLOBAL_VAR_INIT(year_integer, text2num(year)) // = 2013???
 
+/// In-universe, SS13 is set 540 years in the future from the real-world day, hence this number for determining the year-offset for the in-game year.
+#define STATION_YEAR_OFFSET 540
+
+/// Define that just has the current in-universe year for use in whatever context you might want to display that in. (For example, 2022 -> 2562 given a 540 year offset)
+#define CURRENT_STATION_YEAR (GLOB.year_integer + STATION_YEAR_OFFSET)
 
 	// For FTP requests. (i.e. downloading runtime logs.)
 	// However it'd be ok to use for accessing attack logs and such too, which are even laggier.
