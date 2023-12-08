@@ -17,7 +17,7 @@
 	icon_state = "pen"
 	item_state = "pen"
 	// item_state = "pen"
-	// worn_icon_state = "pen"
+	// item_state = "pen"
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_EARS
 	throwforce = 0
 	w_class = WEIGHT_CLASS_TINY
@@ -307,7 +307,7 @@
 	icon_state = "digging_pen"
 	item_state = "pen"
 	// item_state = "pen"
-	// worn_icon_state = "pen"
+	// item_state = "pen"
 	force = 3
 	w_class = WEIGHT_CLASS_TINY
 	custom_materials = list(/datum/material/iron=10, /datum/material/diamond=100, /datum/material/titanium = 10)

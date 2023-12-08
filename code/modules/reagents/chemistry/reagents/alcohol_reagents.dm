@@ -2550,12 +2550,14 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	boozepwr = 35
 	quality = DRINK_GOOD
 	taste_description = "bad coding"
-	can_synth = FALSE
 	var/list/names = list("null fruit" = 1) //Names of the fruits used. Associative list where name is key, value is the percentage of that fruit.
 	var/list/tastes = list("bad coding" = 1) //List of tastes. See above.
-	pH = 4
 
 /datum/reagent/consumable/ethanol/fruit_wine/on_new(list/data)
+	if(!data)
+		return
+
+	src.data = data
 	names = data["names"]
 	tastes = data["tastes"]
 	boozepwr = data["boozepwr"]
@@ -2563,6 +2565,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	generate_data_info(data)
 
 /datum/reagent/consumable/ethanol/fruit_wine/on_merge(list/data, amount)
+	..()
 	var/diff = (amount/volume)
 	if(diff < 1)
 		color = BlendRGB(color, data["color"], diff/2) //The percentage difference over two, so that they take average if equal.
@@ -2585,11 +2588,10 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	generate_data_info(data)
 
 /datum/reagent/consumable/ethanol/fruit_wine/proc/generate_data_info(list/data)
-	var/minimum_percent = 0.15 //Percentages measured between 0 and 1.
+	// BYOND's compiler fails to catch non-consts in a ranged switch case, and it causes incorrect behavior. So this needs to explicitly be a constant.
+	var/const/minimum_percent = 0.15 //Percentages measured between 0 and 1.
 	var/list/primary_tastes = list()
 	var/list/secondary_tastes = list()
-	glass_name = "glass of [name]"
-	glass_desc = description
 	for(var/taste in tastes)
 		switch(tastes[taste])
 			if(minimum_percent*2 to INFINITY)
@@ -2599,16 +2601,16 @@ All effects don't start immediately, but rather get worse over time; the rate is
 
 	var/minimum_name_percent = 0.35
 	name = ""
-	var/list/names_in_order = sortTim(names, /proc/cmp_numeric_dsc, TRUE)
+	var/list/names_in_order = sortTim(names, GLOBAL_PROC_REF(cmp_numeric_dsc), TRUE)
 	var/named = FALSE
 	for(var/fruit_name in names)
 		if(names[fruit_name] >= minimum_name_percent)
 			name += "[fruit_name] "
 			named = TRUE
 	if(named)
-		name += "wine"
+		name += "Wine"
 	else
-		name = "mixed [names_in_order[1]] wine"
+		name = "Mixed [names_in_order[1]] Wine"
 
 	var/alcohol_description
 	switch(boozepwr)
@@ -2645,5 +2647,3 @@ All effects don't start immediately, but rather get worse over time; the rate is
 		flavor += ", with a hint of "
 		flavor += english_list(secondary_tastes)
 	taste_description = flavor
-	if(holder.my_atom)
-		holder.my_atom.on_reagent_change()

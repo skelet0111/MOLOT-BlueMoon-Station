@@ -26,75 +26,74 @@
 
 // Generates a holodeck-tracked card deck
 /obj/effect/holodeck_effect/cards
-	icon = 'icons/obj/toy.dmi'
-	icon_state = "deck_nanotrasen_full"
-	var/obj/item/toy/cards/deck/D
+	icon = 'icons/obj/toys/playing_cards.dmi'
+	icon_state = "deck_syndicate_full"
 
-/obj/effect/holodeck_effect/cards/activate(var/obj/machinery/computer/holodeck/HC)
-	D = new(loc)
-	safety(!(HC.obj_flags & EMAGGED))
-	D.holo = HC
-	return D
+/obj/effect/holodeck_effect/cards/activate(obj/machinery/computer/holodeck/holodeck)
+	var/obj/item/toy/cards/deck/syndicate/holographic/deck = new(loc, holodeck)
+	deck.flags_1 |= HOLOGRAM_1
+	return deck
 
-/obj/effect/holodeck_effect/cards/safety(active)
-	if(!D)
-		return
-	if(active)
-		D.card_hitsound = null
-		D.card_force = 0
-		D.card_throwforce = 0
-		D.card_throw_speed = 3
-		D.card_throw_range = 7
-		D.card_attack_verb = list("attacked")
-	else
-		D.card_hitsound = 'sound/weapons/bladeslice.ogg'
-		D.card_force = 5
-		D.card_throwforce = 10
-		D.card_throw_speed = 3
-		D.card_throw_range = 7
-		D.card_attack_verb = list("attacked", "sliced", "diced", "slashed", "cut")
-
-
-/obj/effect/holodeck_effect/sparks/activate(var/obj/machinery/computer/holodeck/HC)
+/obj/effect/holodeck_effect/sparks/activate(obj/machinery/computer/holodeck/HC)
 	var/turf/T = get_turf(src)
 	if(T)
 		var/datum/effect_system/spark_spread/s = new
 		s.set_up(3, 1, T)
 		s.start()
-		T.set_temperature(5000)
-		T.hotspot_expose(50000, 50000, TRUE, TRUE)
+		T.initial_temperature = 5000 //Why? not quite sure to be honest with you
+		T.hotspot_expose(50000,50000,1)
 
-
+/obj/effect/holodeck_effect/random_book/activate(obj/machinery/computer/holodeck/father_holodeck)
+	var/static/banned_books = list(/obj/item/book/manual/random, /obj/item/book/manual/nuclear, /obj/item/book/manual/wiki)
+	var/newtype = pick(subtypesof(/obj/item/book/manual) - banned_books)
+	var/obj/item/book/manual/to_spawn = new newtype(loc)
+	to_spawn.flags_1 |= (HOLOGRAM_1 | NODECONSTRUCT_1)
+	return to_spawn
 
 /obj/effect/holodeck_effect/mobspawner
 	var/mobtype = /mob/living/simple_animal/hostile/carp/holocarp
-	var/mob/mob = null
+	var/mob/our_mob = null
 
-/obj/effect/holodeck_effect/mobspawner/activate(var/obj/machinery/computer/holodeck/HC)
+/obj/effect/holodeck_effect/mobspawner/activate(obj/machinery/computer/holodeck/HC)
 	if(islist(mobtype))
 		mobtype = pick(mobtype)
-	mob = new mobtype(loc)
+	our_mob = new mobtype(loc)
+	our_mob.flags_1 |= HOLOGRAM_1
 
 	// these vars are not really standardized but all would theoretically create stuff on death
-	for(var/v in list("butcher_results","corpse","weapon1","weapon2","blood_volume") & mob.vars)
-		mob.vars[v] = null
-	mob.flags_1 |= HOLOGRAM_1
-	if(isliving(mob))
-		var/mob/living/L = mob
-		L.vore_flags = 0
-	return mob
+	for(var/v in list("butcher_results","corpse","weapon1","weapon2","blood_volume") & our_mob.vars)
+		our_mob.vars[v] = null
+	RegisterSignal(our_mob, COMSIG_PARENT_QDELETING, PROC_REF(handle_mob_delete))
+	return our_mob
 
-/obj/effect/holodeck_effect/mobspawner/deactivate(var/obj/machinery/computer/holodeck/HC)
-	if(mob)
-		HC.derez(mob)
+/obj/effect/holodeck_effect/mobspawner/deactivate(obj/machinery/computer/holodeck/HC)
+	if(our_mob)
+		HC.derez(our_mob)
 	qdel(src)
 
+/obj/effect/holodeck_effect/mobspawner/proc/handle_mob_delete(datum/source)
+	SIGNAL_HANDLER
+	our_mob = null
+
 /obj/effect/holodeck_effect/mobspawner/pet
+
+/obj/effect/holodeck_effect/mobspawner/pet/Initialize(mapload)
+	. = ..()
 	mobtype = list(
-		/mob/living/simple_animal/butterfly, /mob/living/simple_animal/chick/holo,
-		/mob/living/simple_animal/pet/cat, /mob/living/simple_animal/pet/cat/kitten,
-		/mob/living/simple_animal/pet/dog/corgi, /mob/living/simple_animal/pet/dog/corgi/puppy,
-		/mob/living/simple_animal/pet/dog/pug, /mob/living/simple_animal/pet/fox)
+		/mob/living/simple_animal/butterfly,
+		/mob/living/simple_animal/chick,
+		/mob/living/simple_animal/pet/fox,
+		/mob/living/simple_animal/chicken/rabbit
+	)
+	mobtype += pick(
+		/mob/living/simple_animal/pet/dog/corgi,
+		/mob/living/simple_animal/pet/dog/corgi/puppy,
+		/mob/living/simple_animal/pet/dog/pug,
+	)
+	mobtype += pick(
+		/mob/living/simple_animal/pet/cat,
+		/mob/living/simple_animal/pet/cat/kitten,
+	)
 
 /obj/effect/holodeck_effect/mobspawner/bee
 	mobtype = /mob/living/simple_animal/hostile/poison/bees/toxin
@@ -112,3 +111,6 @@
 
 /obj/effect/holodeck_effect/mobspawner/penguin_baby
 	mobtype = /mob/living/simple_animal/pet/penguin/baby
+
+/obj/effect/holodeck_effect/mobspawner/crab/jon
+	mobtype = /mob/living/simple_animal/crab/kreb

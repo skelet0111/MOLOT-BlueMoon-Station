@@ -958,7 +958,7 @@
 	dir = 6
 	},
 /obj/item/toy/cards/deck/syndicate,
-/obj/item/toy/cards/deck/unum{
+/obj/item/toy/cards/deck/kotahi{
 	pixel_x = 5
 	},
 /obj/item/flashlight/lamp/green{

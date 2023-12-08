@@ -12670,7 +12670,7 @@
 	pixel_x = 5;
 	pixel_y = -2
 	},
-/obj/item/toy/cards/deck/unum,
+/obj/item/toy/cards/deck/kotahi,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
@@ -22314,7 +22314,7 @@
 "dMf" = (
 /obj/structure/table/wood,
 /obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/item/toy/cards/deck/unum,
+/obj/item/toy/cards/deck/kotahi,
 /obj/item/reagent_containers/food/drinks/beer{
 	pixel_x = 5;
 	pixel_y = -2

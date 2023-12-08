@@ -297,11 +297,11 @@
 				return
 
 			user.visible_message("[user] begins repairing [src].", \
-				"<span class='notice'>Вы начинаете чинить [src]...</span>", \
+				"<span class='notice'>You begin repairing [src]...</span>", \
 				"<span class='italics'>You hear welding.</span>")
 
 			if(O.use_tool(src, user, 40, volume=50))
-				to_chat(user, "<span class='notice'>Вы починили [src].</span>")
+				to_chat(user, "<span class='notice'>You repair [src].</span>")
 				apply_damage(-max_integrity)
 		else
 			to_chat(user, "<span class='notice'>[src] does not need repairs.</span>")
@@ -467,15 +467,15 @@ if(driver.sprinting && !(boost_cooldown))
 				return WEST
 	else
 		switch(angle)
-			if(0 to -22)
+			if(-22 to 0)
 				return EAST
-			if(-22 to -67)
+			if(-67 to -22)
 				return SOUTHEAST
-			if(-67 to -112)
+			if(-112 to -67)
 				return SOUTH
-			if(-112 to -157)
+			if(-157 to -112)
 				return SOUTHWEST
-			if(-157 to -180)
+			if(-180 to -157)
 				return WEST
 
 

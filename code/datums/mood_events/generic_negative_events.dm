@@ -398,3 +398,8 @@
 	description = "<span class='warning'>Проклятые дикари!</span>\n"
 	mood_change = -5
 	timeout = 2 MINUTES
+
+/datum/mood_event/lost_52_card_pickup
+	description = "Это просто ужасно! Мне стыдно поднимать все эти карты..."
+	mood_change = -3
+	timeout = 3 MINUTES

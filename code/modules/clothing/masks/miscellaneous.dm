@@ -375,9 +375,9 @@
 			nk.desc = "[desc] It's tied up like a neckerchief."
 			nk.icon_state = icon_state
 			nk.sourceBandanaType = src.type
-			var/currentHandIndex = user.get_held_index_of_item(src)
+			var/initial_cardsIndex = user.get_held_index_of_item(src)
 			user.transferItemToLoc(src, null)
-			user.put_in_hand(nk, currentHandIndex)
+			user.put_in_hand(nk, initial_cardsIndex)
 			user.visible_message("<span class='notice'>You tie [src] up like a neckerchief.</span>", "<span class='notice'>[user] ties [src] up like a neckerchief.</span>")
 			qdel(src)
 		else
