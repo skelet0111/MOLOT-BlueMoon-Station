@@ -6940,8 +6940,7 @@
 "apX" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/airlock/centcom{
-	name = "Auxillary Dock";
-	req_access_txt = ""
+	name = "Auxillary Dock"
 	},
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /turf/open/floor/iron/dark,
@@ -16146,7 +16145,7 @@
 /obj/effect/turf_decal/tile/brown,
 /obj/machinery/door/airlock/centcom{
 	name = "Intersection";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
@@ -18067,7 +18066,7 @@
 /obj/effect/turf_decal/tile/red,
 /obj/machinery/door/airlock/centcom{
 	name = "Medbay";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/white,
 /area/syndicate_mothership)
@@ -18521,7 +18520,8 @@
 "aSz" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Leader's Room";
-	req_one_access_txt = "151"
+	req_one_access_txt = "151";
+	req_access_txt = "151"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
@@ -19017,13 +19017,15 @@
 /area/slavers)
 "aUH" = (
 /obj/machinery/door/airlock/external{
-	req_one_access_txt = "150"
+	req_one_access_txt = "150";
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "aUJ" = (
 /obj/machinery/door/airlock/external{
-	req_one_access_txt = "150"
+	req_one_access_txt = "150";
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /turf/open/floor/iron/dark,
@@ -19593,7 +19595,7 @@
 /area/centcom/supplypod)
 "aWP" = (
 /obj/machinery/door/airlock/external{
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
@@ -19707,8 +19709,7 @@
 /area/centcom/supplypod/loading/four)
 "aXs" = (
 /obj/machinery/door/airlock/centcom{
-	name = "Auxillary Dock";
-	req_access_txt = ""
+	name = "Auxillary Dock"
 	},
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /turf/open/floor/iron/dark,
@@ -19798,7 +19799,7 @@
 "aXC" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Restroom";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
@@ -20862,7 +20863,7 @@
 	},
 /obj/machinery/door/airlock/centcom{
 	name = "Bar";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
@@ -21076,7 +21077,8 @@
 /area/centcom/holding)
 "cdt" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Fore Primary Hallway"
+	name = "Fore Primary Hallway";
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/effect/mapping_helpers/airlock/locked,
@@ -21106,7 +21108,7 @@
 "cgo" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Intersection";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -21131,7 +21133,7 @@
 /area/syndicate_mothership/control)
 "chR" = (
 /obj/machinery/door/airlock/external{
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -21245,7 +21247,8 @@
 /obj/effect/turf_decal/tile/brown,
 /obj/machinery/door/airlock/centcom{
 	name = "Nuke Ops Barracks";
-	req_one_access_txt = "150"
+	req_one_access_txt = "150";
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
@@ -22004,7 +22007,7 @@
 	},
 /obj/machinery/door/airlock/centcom{
 	name = "Bar";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership/control)
@@ -22562,7 +22565,7 @@
 "elS" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Restroom";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -22874,7 +22877,7 @@
 /area/syndicate_mothership/control)
 "eJs" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/structure/chair{
+/obj/structure/chair/comfy/black{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -23375,7 +23378,7 @@
 	},
 /obj/machinery/door/airlock/centcom{
 	name = "Bar";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership/control)
@@ -23825,7 +23828,8 @@
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/machinery/door/airlock/centcom{
 	name = "Nuke Ops Equipment Room";
-	req_one_access_txt = "150"
+	req_one_access_txt = "150";
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
@@ -24156,7 +24160,8 @@
 "gvo" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Nuke Ops Equipment Room";
-	req_one_access_txt = "150"
+	req_one_access_txt = "150";
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
@@ -24463,7 +24468,7 @@
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/machinery/door/airlock/centcom{
 	name = "Intersection";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
@@ -24898,7 +24903,7 @@
 "hyx" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Intersection";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/plating,
 /area/syndicate_mothership/control)
@@ -25717,7 +25722,7 @@
 	},
 /obj/machinery/door/airlock/centcom{
 	name = "Intersection";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
@@ -25961,7 +25966,7 @@
 "iSb" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Restroom";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /turf/open/floor/iron/dark,
@@ -26546,7 +26551,7 @@
 "jPx" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Raiders Barracks";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -26831,7 +26836,7 @@
 "kjB" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Intersection";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /turf/open/floor/iron/dark,
@@ -27897,7 +27902,7 @@
 "lxE" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Raiders Barracks";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -28491,7 +28496,7 @@
 /area/centcom/holding)
 "mtQ" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/structure/chair,
+/obj/structure/chair/comfy/black,
 /turf/open/floor/iron/dark,
 /area/shuttle/inteq/collosus)
 "muY" = (
@@ -28854,7 +28859,7 @@
 /area/centcom)
 "nbL" = (
 /obj/machinery/door/airlock/centcom{
-	req_access_txt = "150";
+	req_access_txt = "152";
 	name = "Prison"
 	},
 /turf/open/floor/plating,
@@ -28901,7 +28906,8 @@
 /obj/effect/turf_decal/tile/brown,
 /obj/machinery/door/airlock/centcom{
 	name = "Nuke Ops Equipment Room";
-	req_one_access_txt = "150"
+	req_one_access_txt = "150";
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
@@ -29658,7 +29664,7 @@
 "omP" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Intersection";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
@@ -30091,7 +30097,7 @@
 "oWo" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/machinery/door/airlock/public/glass{
-	req_access_txt = "150";
+	req_access_txt = "152";
 	name = "Bar"
 	},
 /turf/open/floor/iron/dark,
@@ -30360,7 +30366,7 @@
 "prd" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Medbay";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/effect/turf_decal/tile/brown/opposingcorners,
@@ -30397,7 +30403,7 @@
 /area/centcom/holding)
 "pss" = (
 /obj/machinery/door/airlock/external{
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /turf/open/floor/iron/dark,
@@ -30559,7 +30565,7 @@
 "pzJ" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Medbay";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -30584,7 +30590,7 @@
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/machinery/door/airlock/centcom{
 	name = "Intersection";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
@@ -30592,7 +30598,7 @@
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/machinery/door/airlock/centcom{
 	name = "Intersection";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
@@ -31404,7 +31410,8 @@
 "qYy" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Leader's Room";
-	req_one_access_txt = "151"
+	req_one_access_txt = "151";
+	req_access_txt = "153"
 	},
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership/control)
@@ -32050,7 +32057,8 @@
 /area/syndicate_mothership/control)
 "rVK" = (
 /obj/machinery/door/airlock/external{
-	req_one_access_txt = "150"
+	req_one_access_txt = "150";
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -32092,7 +32100,7 @@
 	},
 /obj/machinery/door/airlock/centcom{
 	name = "Bar";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership/control)
@@ -32251,7 +32259,7 @@
 /area/syndicate_mothership/control)
 "siW" = (
 /obj/machinery/door/airlock/external{
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -32592,7 +32600,7 @@
 /area/centcom/holding/exterior)
 "sFe" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/structure/chair{
+/obj/structure/chair/comfy/black{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -32636,7 +32644,7 @@
 "sIq" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Restroom";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -34000,7 +34008,8 @@
 /area/centcom/holding)
 "uWt" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Fore Primary Hallway"
+	name = "Fore Primary Hallway";
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 8
@@ -34010,7 +34019,7 @@
 "uXT" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Raiders Barracks";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /turf/open/floor/iron/dark,
@@ -34304,7 +34313,8 @@
 /area/syndicate_mothership/control)
 "vnJ" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Fore Primary Hallway"
+	name = "Fore Primary Hallway";
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/effect/mapping_helpers/airlock/locked,
@@ -35246,7 +35256,8 @@
 /area/syndicate_mothership/control)
 "wEh" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Fore Primary Hallway"
+	name = "Fore Primary Hallway";
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 4
@@ -35781,7 +35792,7 @@
 "xnU" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/machinery/door/airlock/centcom{
-	req_access_txt = "150";
+	req_access_txt = "152";
 	name = "Prison"
 	},
 /turf/open/floor/iron/dark,
@@ -36069,7 +36080,7 @@
 "xHx" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Intersection";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /turf/open/floor/iron/dark,
@@ -36324,7 +36335,7 @@
 "xYL" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Intersection";
-	req_access_txt = "150"
+	req_access_txt = "152"
 	},
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /turf/open/floor/iron/dark,
@@ -36356,7 +36367,8 @@
 /area/centcom)
 "yah" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Fore Primary Hallway"
+	name = "Fore Primary Hallway";
+	req_access_txt = "152"
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)

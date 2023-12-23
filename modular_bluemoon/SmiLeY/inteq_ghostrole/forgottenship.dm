@@ -21,9 +21,12 @@ GLOBAL_VAR_INIT(fscpassword, generate_password())
 
 /obj/item/paper/fluff/ruins/forgottenship/password/Initialize(mapload)
 	. = ..()
-	default_raw_text = "Добро пожаловать на самый продвинутый крейсер, принадлежащий Cyber Sun Industries!<br>Вы могли заметить, что этот крейсер оснащен 12 прототипами улучшенных лазерных турелей, что делает любые попытки абордажа затруднительными.<br><br>Другие объекты, построенные на корабле: атмосферная система, система камер со встроенными X-RAY модулями, позволяющим использовать аварийные двигатели в случае... ну, вы знаете, чрезвычайной ситуации.<br><br><br>Аварийная система доставит вас к ближайшему аванпосту Конгломерата Синдикат, содержащему все необходимое для жизни человека.<br><br><b>В случае возникновения чрезвычайной ситуации необходимо запомнить код активации шлюза в бункерную часть аванпоста - [GLOB.fscpassword]</b><br><br>Cyber Sun Industries (C) 2484.<br>"
+	var/report_text = "Добро пожаловать на самый продвинутый крейсер, принадлежащий Cyber Sun Industries!<br>Вы могли заметить, что этот крейсер оснащен 12 прототипами улучшенных лазерных турелей, что делает любые попытки абордажа затруднительными.<br><br>Другие объекты, построенные на корабле: атмосферная система, система камер со встроенными X-RAY модулями, позволяющим использовать аварийные двигатели в случае... ну, вы знаете, чрезвычайной ситуации.<br><br><br>Аварийная система доставит вас к ближайшему аванпосту Конгломерата Синдикат, содержащему все необходимое для жизни человека.<br><br><b>В случае возникновения чрезвычайной ситуации необходимо запомнить код активации шлюза в бункерную часть аванпоста - [GLOB.fscpassword]</b><br><br>Cyber Sun Industries (C) 2484.<br>"
 	icon_state = "paper_words"
 	item_state = "paper"
+	add_raw_text(report_text)
+	update_appearance()
+	update_icon()
 
 /obj/item/paper/fluff/ruins/forgottenship/powerissues
 	name = "Проблемы с Питанием"
@@ -77,7 +80,7 @@ GLOBAL_VAR_INIT(fscpassword, generate_password())
 	icon = 'modular_splurt/icons/obj/clothing/neck.dmi'
 	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/neck.dmi'
 	armor = list(MELEE = 35, BULLET = 40, LASER = 25, ENERGY = 10, BOMB = 25, BIO = 20, RAD = 20, FIRE = 60, ACID = 60)
-	body_parts_covered = CHEST|GROIN|ARMS
+	body_parts_covered = CHEST|LEGS|ARMS
 	is_edible = 0
 
 /obj/item/storage/belt/esabre_belt
@@ -213,7 +216,6 @@ GLOBAL_VAR_INIT(fscpassword, generate_password())
 /obj/item/melee/transforming/energy/sword/energy_sabre/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/butchering, 30, 95, 5) //fast and effective, but as a sword, it might damage the results.
-	AddElement(/datum/element/sword_point)
 
 /obj/item/melee/transforming/energy/sword/energy_sabre/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(attack_type & ATTACK_TYPE_PROJECTILE)		// Don't bring a sword to a gunfight.
@@ -322,39 +324,6 @@ GLOBAL_VAR_INIT(fscpassword, generate_password())
 	name = "InteQ Forgotten Vault"
 	icon_state = "inteq-ship"
 	ambientsounds = list('sound/ambience/ambitech2.ogg', 'sound/ambience/ambitech3.ogg')
-
-	//Cybersun hardsuit
-
-/obj/item/clothing/head/helmet/space/hardsuit/cybersun
-	name = "Cybersun Hardsuit Helmet"
-	desc = "Prototype hardsuit helmet with experimental armor plates, protecting from laser-based weapons very well, while giving limited protection against anything else."
-	icon = 'modular_splurt/icons/obj/clothing/head.dmi'
-	icon_state = "cybersun"
-	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/head.dmi'
-	anthro_mob_worn_overlay = 'modular_splurt/icons/mob/clothing/head_muzzled.dmi'
-	hardsuit_type = "cybersun"
-	armor = list("melee" = 30, "bullet" = 40, "laser" = 70, "energy" = 70, "bomb" = 30, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 60)
-	strip_delay = 600
-	actions_types = list()
-
-
-/obj/item/clothing/suit/space/hardsuit/cybersun
-	name = "Cybersun Hardsuit"
-	desc = "Prototype hardsuit with experimental armor plates, protecting from laser-based weapons very well, while giving limited protection against anything else. Requires the user to activate the inner mechanism in order to unequip it, making it really difficult to take it off from somebody else."
-	icon = 'modular_splurt/icons/obj/clothing/suits.dmi'
-	icon_state = "cybersun"
-	item_state = "cybersun"
-	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/suit.dmi'
-	anthro_mob_worn_overlay = 'modular_splurt/icons/mob/clothing/suit_digi.dmi'
-	taur_mob_worn_overlay = 'modular_splurt/icons/mob/clothing/hardsuits_taur.dmi'
-	hardsuit_type = "cybersun"
-	armor = list("melee" = 30, "bullet" = 40, "laser" = 70, "energy" = 70, "bomb" = 30, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 60)
-	strip_delay = 600
-	slowdown = 0
-	mutantrace_variation = STYLE_ALL_TAURIC
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/cybersun
-	actions_types = list(/datum/action/item_action/toggle_helmet)
-	jetpack = /obj/item/tank/jetpack/suit
 
 //Special NT NPCs
 
