@@ -24324,13 +24324,6 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/holding)
-"gGQ" = (
-/obj/machinery/porta_turret/syndicate/energy/pirate/inteq{
-	dir = 8;
-	pixel_x = 30
-	},
-/turf/open/space/basic,
-/area/space)
 "gHb" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -25732,14 +25725,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/centcom)
-"iAR" = (
-/obj/structure/lattice,
-/obj/machinery/porta_turret/syndicate/energy/pirate/inteq{
-	dir = 4;
-	pixel_x = -30
-	},
-/turf/open/space/basic,
-/area/space)
 "iCx" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -31554,14 +31539,6 @@
 /obj/machinery/vending/cola/random,
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
-"rhE" = (
-/obj/structure/lattice,
-/obj/machinery/porta_turret/syndicate/energy/pirate/inteq{
-	dir = 8;
-	pixel_x = 30
-	},
-/turf/open/space/basic,
-/area/space)
 "rid" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green{
@@ -34021,13 +33998,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/holding)
-"uWd" = (
-/obj/machinery/porta_turret/syndicate/energy/pirate/inteq{
-	dir = 4;
-	pixel_x = -30
-	},
-/turf/open/space/basic,
-/area/space)
 "uWt" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Fore Primary Hallway"
@@ -35057,13 +35027,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
-"wml" = (
-/obj/machinery/porta_turret/syndicate/energy/pirate/inteq{
-	dir = 8;
-	pixel_x = 30
-	},
-/turf/open/space/transit/centcom,
-/area/space)
 "wmw" = (
 /obj/machinery/light{
 	dir = 1
@@ -41249,7 +41212,6 @@ aaa
 aaa
 aaa
 aaa
-gGQ
 aaa
 aaa
 aaa
@@ -41261,7 +41223,8 @@ aaa
 aaa
 aaa
 aaa
-gGQ
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -46173,7 +46136,7 @@ aaa
 aaa
 aaa
 aaa
-gGQ
+aaa
 aaa
 aaa
 aaa
@@ -46954,7 +46917,7 @@ aaa
 aaa
 aaa
 alI
-wml
+alI
 alI
 alI
 alI
@@ -48251,7 +48214,7 @@ uZh
 uZh
 aaa
 aaa
-gGQ
+aaa
 aaa
 aaa
 aaa
@@ -52878,7 +52841,7 @@ uZh
 aaa
 aaa
 aaa
-uWd
+aaa
 aaa
 aaa
 aaa
@@ -55623,7 +55586,7 @@ grt
 aaa
 grt
 aaa
-iAR
+tbR
 aaa
 tbR
 uZh
@@ -55875,7 +55838,7 @@ aaa
 aaa
 aaa
 aaa
-rhE
+tbR
 aaa
 aaa
 wGP
@@ -57737,11 +57700,6 @@ aaa
 aaa
 aaa
 aaa
-uWd
-aaa
-aaa
-aaa
-uWd
 aaa
 aaa
 aaa
@@ -57757,7 +57715,12 @@ aaa
 aaa
 aaa
 aaa
-uWd
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -58488,7 +58451,7 @@ qTz
 wyv
 rFj
 grt
-gGQ
+aaa
 aaa
 aaa
 aaa
@@ -58959,7 +58922,7 @@ aaa
 aaa
 grt
 aaa
-uWd
+aaa
 tbR
 aaa
 aaa
@@ -59006,7 +58969,7 @@ uZh
 aaa
 aaa
 aaa
-uWd
+aaa
 aaa
 uZh
 idk
@@ -59487,7 +59450,7 @@ aaa
 aaa
 aaa
 aaa
-gGQ
+aaa
 tbR
 wyv
 tPA
@@ -60040,7 +60003,7 @@ aaa
 aaa
 aaa
 aaa
-uWd
+aaa
 aaa
 aaa
 aaa
@@ -62601,7 +62564,7 @@ idj
 idj
 idj
 uZh
-gGQ
+aaa
 aaa
 aaa
 aaa
@@ -65171,7 +65134,7 @@ dwY
 idj
 idj
 uZh
-uWd
+aaa
 aaa
 aaa
 aaa
@@ -67708,7 +67671,7 @@ aaa
 aaa
 aaa
 aaa
-uWd
+aaa
 aaa
 aaa
 aaa
@@ -69768,7 +69731,6 @@ aaa
 aaa
 aaa
 aaa
-uWd
 aaa
 aaa
 aaa
@@ -69796,7 +69758,8 @@ aaa
 aaa
 aaa
 aaa
-uWd
+aaa
+aaa
 aaa
 aaa
 aaa
