@@ -1956,6 +1956,7 @@
 #include "code\modules\antagonists\overthrow\overthrow.dm"
 #include "code\modules\antagonists\overthrow\overthrow_converter.dm"
 #include "code\modules\antagonists\overthrow\overthrow_team.dm"
+#include "code\modules\antagonists\paradise_ratvar\rebase_files.dm"
 #include "code\modules\antagonists\pirate\pirate.dm"
 #include "code\modules\antagonists\pyro_slime\pyro_slime.dm"
 #include "code\modules\antagonists\revenant\haunted_item.dm"
