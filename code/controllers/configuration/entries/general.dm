@@ -288,9 +288,6 @@
 	default = 1800
 	min_val = 0
 
-/datum/config_entry/flag/allow_clockwork_marauder_on_station
-	default = TRUE
-
 /datum/config_entry/flag/suicide_allowed
 
 

@@ -7,7 +7,6 @@ GLOBAL_LIST_INIT(arcade_prize_pool, list(
 		/obj/item/toy/balloon = ARCADE_WEIGHT_USELESS,
 		/obj/item/toy/beach_ball = ARCADE_WEIGHT_USELESS,
 		/obj/item/toy/cattoy = ARCADE_WEIGHT_USELESS,
-		/obj/item/toy/clockwork_watch = ARCADE_WEIGHT_TRICK,
 		/obj/item/toy/dummy = ARCADE_WEIGHT_TRICK,
 		/obj/item/toy/eightball = ARCADE_WEIGHT_USELESS,
 		/obj/item/toy/eightball/haunted = ARCADE_WEIGHT_RARE,

@@ -614,11 +614,6 @@
 	screen_loc = ui_health
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
-/atom/movable/screen/healths/clock/gear
-	icon = 'icons/mob/clockwork_mobs.dmi'
-	icon_state = "bg_gear"
-	screen_loc = ui_internal
-
 /atom/movable/screen/healths/revenant
 	name = "essence"
 	icon = 'icons/mob/actions.dmi'

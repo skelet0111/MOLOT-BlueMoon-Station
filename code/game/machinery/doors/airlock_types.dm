@@ -545,6 +545,10 @@
 /obj/machinery/door/airlock/cult/narsie_act()
 	return
 
+/obj/machinery/door/airlock/cult/ratvar_act()
+	new /obj/machinery/door/airlock/clockwork(get_turf(src))
+	qdel(src)
+
 /obj/machinery/door/airlock/cult/emp_act(severity)
 	return
 
@@ -575,125 +579,73 @@
 	friendly = TRUE
 
 /obj/machinery/door/airlock/cult/weak
-	name = "brittle cult airlock"
+	name = "Brittle Cult Airlock"
 	desc = "An airlock hastily corrupted by blood magic, it is unusually brittle in this state."
 	normal_integrity = 150
 	damage_deflection = 5
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0)
 
-//Pinion airlocks: Clockwork doors that only let servants of Ratvar through.
+//////////////////////////////////
+/*
+	Clockwork Airlocks
+*/
+
 /obj/machinery/door/airlock/clockwork
-	name = "pinion airlock"
-	desc = "A massive cogwheel set into two heavy slabs of brass."
+	name = "clockwork airlock"
 	icon = 'icons/obj/doors/airlocks/clockwork/pinion_airlock.dmi'
 	overlays_file = 'icons/obj/doors/airlocks/clockwork/overlays.dmi'
+	assemblytype = /obj/structure/door_assembly/door_assembly_clock
+	damage_deflection = 10
 	hackProof = TRUE
-	aiControlDisabled = 1
-	req_access = list(ACCESS_CLOCKCULT)
-	use_power = FALSE
-	resistance_flags = FIRE_PROOF | ACID_PROOF
-	damage_deflection = 30
-	normal_integrity = 240
-	var/construction_state = GEAR_SECURE //Pinion airlocks have custom deconstruction
+	aiControlDisabled = AICONTROLDISABLED_ON
+	paintable = FALSE
+	/// Will the door let anyone through
+	var/friendly = FALSE
 
-/obj/machinery/door/airlock/clockwork/Initialize(mapload)
+/obj/machinery/door/airlock/clockwork/Initialize()
 	. = ..()
-	new /obj/effect/temp_visual/ratvar/door(loc)
-	new /obj/effect/temp_visual/ratvar/beam/door(loc)
-	change_construction_value(5)
-
-/obj/machinery/door/airlock/clockwork/Destroy()
-	change_construction_value(-5)
-	return ..()
-
-/obj/machinery/door/airlock/clockwork/examine(mob/user)
-	. = ..()
-	switch(construction_state)
-		if(GEAR_SECURE)
-			. += "<span class='brass'>The cogwheel is solidly <b>wrenched</b> to the brass around it.</span>"
-		if(GEAR_LOOSE)
-			. += "<span class='alloy'>The cogwheel has been <i>loosened</i>, but remains <b>connected loosely</b> to the door!</span>"
-
-/obj/machinery/door/airlock/clockwork/emp_act(severity)
-	if(prob(severity/1.25))
-		open()
+	new /obj/effect/temp_visual/ratvar/door(get_turf(src))
 
 /obj/machinery/door/airlock/clockwork/canAIControl(mob/user)
-	return (is_servant_of_ratvar(user) && !isAllPowerCut())
+	return (isclocker(user) && !isAllPowerLoss())
 
-/obj/machinery/door/airlock/clockwork/ratvar_act()
-	return 0
+/obj/machinery/door/airlock/clockwork/allowed(mob/living/L)
+	if(!density)
+		return TRUE
+	if(friendly || isclocker(L))
+		return TRUE
+	else
+		new /obj/effect/temp_visual/ratvar/door(loc)
+		var/atom/throwtarget
+		throwtarget = get_edge_target_turf(src, get_dir(src, get_step_away(L, src)))
+		SEND_SOUND(L, pick(sound('sound/hallucinations/turn_around1.ogg', 0, 1, 50), sound('sound/hallucinations/turn_around2.ogg', 0, 1, 50)))
+		L.Weaken(4 SECONDS)
+		L.throw_at(throwtarget, 5, 1,src)
+		return FALSE
 
 /obj/machinery/door/airlock/clockwork/narsie_act()
-	..()
-	if(src)
-		var/previouscolor = color
-		color = "#960000"
-		animate(src, color = previouscolor, time = 8)
-		addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 8)
-
-/obj/machinery/door/airlock/clockwork/attackby(obj/item/I, mob/living/user, params)
-	if(!attempt_construction(I, user))
-		return ..()
-
-/obj/machinery/door/airlock/clockwork/allowed(mob/M)
-	if(is_servant_of_ratvar(M))
-		return 1
-	return 0
-
-/obj/machinery/door/airlock/clockwork/hasPower()
-	return TRUE //yes we do have power
-
-/obj/machinery/door/airlock/clockwork/obj_break(damage_flag)
-	return
-
-/obj/machinery/door/airlock/clockwork/deconstruct(disassembled = TRUE)
-	playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
-	if(!(flags_1 & NODECONSTRUCT_1))
-		var/turf/T = get_turf(src)
-		if(disassembled)
-			new/obj/item/stack/tile/brass(T, 4)
-		else
-			new/obj/item/clockwork/alloy_shards(T)
-		new/obj/item/clockwork/alloy_shards/pinion_lock(T)
+	new /obj/machinery/door/airlock/cult(get_turf(src))
 	qdel(src)
 
-/obj/machinery/door/airlock/clockwork/proc/attempt_construction(obj/item/I, mob/living/user)
-	if(!I || !user || !user.canUseTopic(src))
-		return 0
-	else if(I.tool_behaviour == TOOL_WRENCH)
-		if(construction_state == GEAR_SECURE)
-			user.visible_message("<span class='notice'>[user] begins loosening [src]'s cogwheel...</span>", "<span class='notice'>You begin loosening [src]'s cogwheel...</span>")
-			if(!I.use_tool(src, user, 75, volume=50) || construction_state != GEAR_SECURE)
-				return 1
-			user.visible_message("<span class='notice'>[user] loosens [src]'s cogwheel!</span>", "<span class='notice'>[src]'s cogwheel pops off and dangles loosely.</span>")
-			playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
-			construction_state = GEAR_LOOSE
-		else if(construction_state == GEAR_LOOSE)
-			user.visible_message("<span class='notice'>[user] begins tightening [src]'s cogwheel...</span>", "<span class='notice'>You begin tightening [src]'s cogwheel into place...</span>")
-			if(!I.use_tool(src, user, 75, volume=50) || construction_state != GEAR_LOOSE)
-				return 1
-			user.visible_message("<span class='notice'>[user] tightens [src]'s cogwheel!</span>", "<span class='notice'>You firmly tighten [src]'s cogwheel into place.</span>")
-			playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
-			construction_state = GEAR_SECURE
-		return 1
-	else if(I.tool_behaviour == TOOL_CROWBAR)
-		if(construction_state == GEAR_SECURE)
-			to_chat(user, "<span class='warning'>[src]'s cogwheel is too tightly secured! Your [I.name] can't reach under it!</span>")
-			return 1
-		else if(construction_state == GEAR_LOOSE)
-			user.visible_message("<span class='notice'>[user] begins slowly lifting off [src]'s cogwheel...</span>", "<span class='notice'>You slowly begin lifting off [src]'s cogwheel...</span>")
-			if(!I.use_tool(src, user, 75, volume=50) || construction_state != GEAR_LOOSE)
-				return 1
-			user.visible_message("<span class='notice'>[user] lifts off [src]'s cogwheel, causing it to fall apart!</span>", \
-			"<span class='notice'>You lift off [src]'s cogwheel, causing it to fall apart!</span>")
-			deconstruct(TRUE)
-		return 1
-	return 0
+/obj/machinery/door/airlock/clockwork/ratvar_act()
+	return
 
-/obj/machinery/door/airlock/clockwork/brass
+/obj/machinery/door/airlock/clockwork/friendly
+	friendly = TRUE
+
+/obj/machinery/door/airlock/clockwork/glass
 	glass = TRUE
 	opacity = 0
+
+/obj/machinery/door/airlock/clockwork/glass/friendly
+	friendly = TRUE
+
+/obj/machinery/door/airlock/clockwork/weak
+	name = "Brittle Clockwork Airlock"
+	desc = "An airlock made from pure-hands into some brass moving structure."
+	normal_integrity = 150
+	damage_deflection = 5
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0)
 
 //////////////////////////////////
 /*

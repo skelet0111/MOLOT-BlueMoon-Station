@@ -209,7 +209,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "EVA Storage"
 	icon_state = "eva"
 	// ambience_index = AMBIENCE_DANGER
-	clockwork_warp_allowed = FALSE
 	ambientsounds = HIGHSEC
 
 /area/ai_monitored/command/storage/eva/upper
@@ -563,7 +562,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/command/heads_quarters/captain
 	name = "Captain's Office"
 	icon_state = "captain"
-	clockwork_warp_allowed = FALSE
 	sound_environment = SOUND_AREA_WOODFLOOR
 
 /area/command/heads_quarters/captain/private
@@ -787,7 +785,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/commons/fitness/cogpool
 	name = "Pool"
 	icon_state = "fitness"
-	clockwork_warp_fail = "Pool's closed."
 	nightshift_public_area = NIGHTSHIFT_AREA_RECREATION
 
 /area/service/barbershop
@@ -966,8 +963,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	// mood_message = "<span class='nicegreen'>Being in the chapel brings me peace.</span>\n"
 	// mood_trait = TRAIT_SPIRITUAL
 	// ambience_index = AMBIENCE_HOLY
-	clockwork_warp_allowed = FALSE
-	clockwork_warp_fail = "The consecration here prevents you from warping in."
 	nightshift_public_area = NIGHTSHIFT_AREA_RECREATION
 	ambientsounds = HOLY
 	flags_1 = NONE
@@ -1087,8 +1082,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/engineering/gravity_generator
 	name = "Gravity Generator Room"
 	icon_state = "grav_gen"
-	clockwork_warp_allowed = FALSE
-	clockwork_warp_fail = "The gravitons generated here could throw off your warp's destination and possibly throw you into deep space."
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 
 /area/engineering/secure_construction
@@ -1111,13 +1104,11 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/engineering/storage/tech
 	name = "Technical Storage"
 	icon_state = "aux_storage"
-	clockwork_warp_allowed = FALSE
 
 /area/engineering/storage/tcomms
 	name = "Telecomms Storage"
 	icon_state = "tcom"
 	area_flags = BLOBS_ALLOWED | UNIQUE_AREA | CULT_PERMITTED
-	clockwork_warp_allowed = FALSE
 
 //Engineering - Construction
 
@@ -1552,7 +1543,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "armory"
 	// ambience_index = AMBIENCE_DANGER
 	ambientsounds = HIGHSEC
-	clockwork_warp_allowed = FALSE // n omegalul
 	// airlock_wires = /datum/wires/airlock/security
 
 /area/ai_monitored/security/armory/upper
@@ -1719,8 +1709,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 // Telecommunications Satellite
 
 /area/tcommsat
-	clockwork_warp_allowed = FALSE
-	clockwork_warp_fail = "For safety reasons, warping here is disallowed; the radio and bluespace noise could cause catastrophic results."
 	ambientsounds = list('sound/ambience/ambisin2.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/ambigen10.ogg', 'sound/ambience/ambitech.ogg',\
 											'sound/ambience/ambitech2.ogg', 'sound/ambience/ambitech3.ogg', 'sound/ambience/ambimystery.ogg')
 	// airlock_wires = /datum/wires/airlock/engineering

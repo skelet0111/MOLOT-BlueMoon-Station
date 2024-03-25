@@ -20,7 +20,6 @@
 		#include "map_files\TauStation\TauStation.dmm"
 		#include "splurt_maps\map_files\Smexistation\Snaxi_Splurt.dmm"
 		#include "map_files\BoxedInStation\BoxedInStation.dmm"
-		#include "map_files\RatvarStation\RatvarStation.dmm"
 		#include "map_files\ArmyStation\ArmyStation.dmm"
 		#include "map_files\PrisonStation\PrisonStation.dmm"
 

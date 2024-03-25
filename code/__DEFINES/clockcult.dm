@@ -1,100 +1,162 @@
-//component id defines; sometimes these may not make sense in regards to their use in scripture but important ones are bright
-#define BELLIGERENT_EYE "belligerent_eye" //Use this for offensive and damaging scripture!
-#define VANGUARD_COGWHEEL "vanguard_cogwheel" //Use this for defensive and healing scripture!
-#define GEIS_CAPACITOR "geis_capacitor" //Use this for niche scripture!
-#define REPLICANT_ALLOY "replicant_alloy"
-#define HIEROPHANT_ANSIBLE "hierophant_ansible" //Use this for construction-related scripture!
+// Clockwork Raret (Power)
+/// REMINDER: The clockwork_power(var) and clockwork_beacons(list) have been moved at _glovalvars/game_modes
 
-GLOBAL_VAR_INIT(clockwork_construction_value, 0) //The total value of all structures built by the clockwork cult
-GLOBAL_VAR_INIT(clockwork_vitality, 0) //How much Vitality is stored, total
-GLOBAL_VAR_INIT(clockwork_power, 0) //How many watts of power are globally available to the clockwork cult
-GLOBAL_LIST_EMPTY(active_daemons) //A list of all active tinkerer's daemons
-GLOBAL_VAR_INIT(neovgre_exists, 0) //Does neovgre exist?
+//Clockwork Magic
+// state for spell
+#define NO_SPELL 0
+#define CASTING_SPELL -1
 
-GLOBAL_LIST_EMPTY(all_clockwork_objects) //All clockwork items, structures, and effects in existence
-GLOBAL_LIST_EMPTY(all_clockwork_mobs) //All clockwork SERVANTS (not creatures) in existence
+// Clockslab enchant type
+#define STUN_SPELL 1
+#define KNOCK_SPELL 2
+#define REFORM_SPELL 3
+#define TELEPORT_SPELL 4
+#define HEAL_SPELL 5
+#define HIDE_SPELL 6
+// Ratvarian spear enchant type (borgs too)
+#define CONFUSE_SPELL 1
+#define DISABLE_SPELL 2
+// Clock hammer
+#define CRUSH_SPELL 1
+#define KNOCKOFF_SPELL 2
+// Sword
+#define BLOODSHED_SPELL 1
+#define FASTSWORD_SPELL 2
+// Buckler
+#define PUSHOFF_SPELL 1
+#define FLASH_SPELL 2
+// Clockwork robe
+#define INVIS_SPELL 1
+#define SPEED_SPELL 2
+// armour
+#define REFLECT_SPELL 1
+#define ABSORB_SPELL 2
+#define ARMOR_SPELL 3
+// Clockwork gloves
+#define FASTPUNCH_SPELL 1
+#define STUNHAND_SPELL 2
+#define FIRE_SPELL 3
+//Shard
+#define EMP_SPELL 1
+#define TIME_SPELL 2
+#define RECONSTRUCT_SPELL 3
 
-GLOBAL_VAR_INIT(ratvar_approaches, 0) //The servants can choose to "herald" Ratvar, permanently buffing them but announcing their presence to the crew.
-GLOBAL_VAR_INIT(ratvar_awakens, 0) //If Ratvar has been summoned; not a boolean, for proper handling of multiple Ratvars
-GLOBAL_VAR_INIT(ark_of_the_clockwork_justiciar, FALSE) //The Ark on the Reebe z-level
-GLOBAL_VAR_INIT(reebe_loaded, FALSE)    //Is reebe loaded right now? If two seperate things in one round try loading reebe.
+// spell_enchant(name, type_SPELL, cost, time SECONDS(def 3), action needs)
+GLOBAL_LIST_INIT(clockslab_spells, list(
+	new /datum/spell_enchant("Stun", STUN_SPELL, 125, 8),
+	new /datum/spell_enchant("Force Passage", KNOCK_SPELL, 100),
+	new /datum/spell_enchant("Terraform", REFORM_SPELL, 40),
+	new /datum/spell_enchant("Teleportation", TELEPORT_SPELL, 25, 5), // has do_after 1.5 seconds
+	new /datum/spell_enchant("Seal Wounds", HEAL_SPELL, 100, 7),
+	new /datum/spell_enchant("Hidings Clock", HIDE_SPELL, 100)
+))
+GLOBAL_LIST_INIT(spear_spells, list(
+	new /datum/spell_enchant("Confusion", CONFUSE_SPELL, 80),
+	new /datum/spell_enchant("Electrical touch", DISABLE_SPELL, 80)
+))
+GLOBAL_LIST_INIT(hammer_spells, list(
+	new /datum/spell_enchant("Crusher", CRUSH_SPELL, 100),
+	new /datum/spell_enchant("Knock off", KNOCKOFF_SPELL, 100)
+))
+GLOBAL_LIST_INIT(sword_spells, list(
+	new /datum/spell_enchant("Bloodshed", BLOODSHED_SPELL, 100, 4),
+	new /datum/spell_enchant("Swordsman", FASTSWORD_SPELL, 100, 6, spell_action = TRUE)
+))
+GLOBAL_LIST_INIT(shield_spells, list(
+	new /datum/spell_enchant("Flash", FLASH_SPELL, 25, spell_action = TRUE),
+	new /datum/spell_enchant("Push off", PUSHOFF_SPELL, 100)
+))
+GLOBAL_LIST_INIT(robe_spells, list(
+	new /datum/spell_enchant("Camoflauge", INVIS_SPELL, 100, 5, spell_action = TRUE),
+	new /datum/spell_enchant("Haste", SPEED_SPELL, 100, 8, spell_action = TRUE)
+))
+GLOBAL_LIST_INIT(armour_spells, list(
+	new /datum/spell_enchant("Reflection", REFLECT_SPELL, 100, 8),
+	new /datum/spell_enchant("Absorb", ABSORB_SPELL, 100, 4),
+	new /datum/spell_enchant("Harden plates", ARMOR_SPELL, 100, 10, spell_action = TRUE)
+))
+GLOBAL_LIST_INIT(gloves_spell, list(
+	new /datum/spell_enchant("Hands of North Star", FASTPUNCH_SPELL, 75, 5, spell_action = TRUE),
+	new /datum/spell_enchant("Stunning", STUNHAND_SPELL, 75, 8),
+	new /datum/spell_enchant("Red Flame", FIRE_SPELL, 50, 5, spell_action = TRUE)
+))
+GLOBAL_LIST_INIT(shard_spells, list(
+	new /datum/spell_enchant("Electromagnetic Pulse", EMP_SPELL, 500, 9),
+	new /datum/spell_enchant("Stop the time", TIME_SPELL, 500, 9),
+	new /datum/spell_enchant("Reconstruction", RECONSTRUCT_SPELL, 500, 9)
+))
 
-GLOBAL_VAR_INIT(clockwork_gateway_activated, FALSE) //if a gateway to the celestial derelict has ever been successfully activated
-GLOBAL_VAR_INIT(script_scripture_unlocked, FALSE) //If script scripture is available, through converting at least one crewmember
-GLOBAL_VAR_INIT(application_scripture_unlocked, FALSE) //If application scripture is available
-GLOBAL_VAR_INIT(judgement_scripture_unlocked, FALSE) //If judgement scripture is available
-GLOBAL_LIST_EMPTY(all_scripture) //a list containing scripture instances; not used to track existing scripture
-GLOBAL_LIST_EMPTY(all_clockwork_rites) //a list containing all clockwork rites. Filled the first time any cultist interacts with a sigil of rites.
+/// Power gains permanent
+#define CLOCK_POWER_CONVERT 200
+#define CLOCK_POWER_SACRIFICE 600
+/// Power gains as time progresses. Goes in process() so it makes x power per second.
+#define CLOCK_POWER_BEACON 5
+#define CLOCK_POWER_GENERATOR 10
+#define CLOCK_POWER_COG 1
+#define COG_MAX_SIPHON_THRESHOLD 0.25 //The cog will not siphon power if the APC's cell is at this % of power
+// amount of metal per brass
+#define CLOCK_METAL_TO_BRASS 5
+//Cogscarab: a wind up timer of how long can droney live without beacon
+#define CLOCK_MAX_WIND_UP_TIMER 150
+//Cogscarab: Maximum amount of cogscarab on one fabricator.
+#define MAX_COGSCRAB_PER_FABRICATOR 2
+// Cogscarab: Maximum amount of fabricators for cult.
+#define MAX_COG_FABRICATORS 2
+//Cogscarab: Amount of time to wait until a new cogscrab is ready.
+#define TIME_NEW_COGSCRAB 120
 
-//Scripture tiers and requirements; peripherals should never be used
-#define SCRIPTURE_PERIPHERAL "Peripheral"
-#define SCRIPTURE_DRIVER "Driver"
-#define SCRIPTURE_SCRIPT "Script"
-#define SCRIPTURE_APPLICATION "Application"
-#define SCRIPTURE_JUDGEMENT "Judgement"
+// Clockwork Status
+/// At what population does it switch to highpop values
+#define CLOCK_POPULATION_THRESHOLD 70
+/// Power per crew demand. (Lowpop)
+#define CLOCK_POWER_PER_CREW_LOW 260
+/// Percent for power to reveal (Lowpop)
+#define CLOCK_POWER_REVEAL_LOW 0.7
+/// Percent clockers to reveal (Lowpop)
+#define CLOCK_CREW_REVEAL_LOW 0.35
+/// Power per crew demand. (highpop)
+#define CLOCK_POWER_PER_CREW_HIGH 180
+/// Percent for power to reveal (Highpop)
+#define CLOCK_POWER_REVEAL_HIGH 0.5
+/// Percent clockers to reveal (Highpop)
+#define CLOCK_CREW_REVEAL_HIGH 0.25
 
-//Various costs related to power.
-#define MAX_CLOCKWORK_POWER 80000 //The max power in W that the cult can stockpile
-#define SCRIPT_UNLOCK_THRESHOLD 35000 //Scripts will unlock if the total power reaches this amount
-#define APPLICATION_UNLOCK_THRESHOLD 50000 //Applications will unlock if the total power reaches this amount
-#define JUDGEMENT_UNLOCK_THRESHOLD 80000 //might as well have this unlock at a power amount like the other scriptures, Judgement unlocks at this amount.
+// Text
+#define CLOCK_GREETING "<span class='clocklarge'>Вы мельком видите царство Ратвара, Заводного Юстициара. \
+						Теперь вы видите, насколько хрупок мир. Видите, что он должен быть открыт для познания Ратвара.</span>"
 
-//clockcult power defines
-#define MIN_CLOCKCULT_POWER 25 //the minimum amount of power clockcult machines will handle gracefully
+#define CLOCK_CURSES list("A fuel technician just slit his own throat and begged for death.",                                          \
+			"The shuttle's navigation programming was replaced by a file containing two words, IT COMES.",                             \
+			"The shuttle's custodian tore out his guts and began painting strange shapes on the floor.",                               \
+			"A shuttle engineer began screaming 'DEATH IS NOT THE END' and ripped out wires until an arc flash seared off her flesh.", \
+			"A shuttle inspector started laughing madly over the radio and then threw herself into an engine turbine.",                \
+			"The shuttle dispatcher was found dead with bloody symbols carved into their flesh.",                                      \
+			"Steve repeatedly touched a lightbulb until his hands fell off.")
 
-#define CLOCKCULT_POWER_UNIT (MIN_CLOCKCULT_POWER*100) //standard power amount for replica fabricator costs
+// Misc
+#define CLOCK_COLOR "#ffb700"
+#define CLOCK_CLOTHING list(/obj/item/clothing/suit/hooded/clockrobe, /obj/item/clothing/suit/armor/clockwork, /obj/item/clothing/gloves/clockwork, /obj/item/clothing/shoes/clockwork, /obj/item/clothing/head/helmet/clockwork)
 
-#define POWER_STANDARD (CLOCKCULT_POWER_UNIT*0.2) //how much power is in anything else; doesn't matter as much as the following
+// Clockwork objective status
+#define RATVAR_IS_ASLEEP 0
+#define RATVAR_DEMANDS_POWER 1
+#define RATVAR_NEEDS_SUMMONING 2
+#define RATVAR_HAS_RISEN 3
+#define RATVAR_HAS_FALLEN -1
 
-#define POWER_FLOOR (CLOCKCULT_POWER_UNIT*0.1) //how much power is in a clockwork floor, determines the cost of clockwork floor production
+#define RATVAR_SUMMON_POSSIBILITIES 3
 
-#define POWER_WALL_MINUS_FLOOR (CLOCKCULT_POWER_UNIT*0.4) //how much power is in a clockwork wall, determines the cost of clockwork wall production
+//the time amount the Gateway to the Celestial Derelict gets each process tick;
+#define GATEWAY_SUMMON_RATE 1
+#define GATEWAY_REEBE_FOUND 60 // First stage
+#define GATEWAY_RATVAR_COMING 120 // Second stage
+#define GATEWAY_RATVAR_ARRIVAL 180 // Third Stage
 
-#define POWER_GEAR (CLOCKCULT_POWER_UNIT*0.3) //how much power is in a wall gear, minus the brass from the wall
-
-#define POWER_WALL_TOTAL (POWER_WALL_MINUS_FLOOR+POWER_FLOOR) //how much power is in a clockwork wall and the floor under it
-
-#define POWER_ROD (CLOCKCULT_POWER_UNIT*0.01) //how much power is in one rod
-
-#define POWER_METAL (CLOCKCULT_POWER_UNIT*0.02) //how much power is in one sheet of metal
-
-#define POWER_PLASTEEL (CLOCKCULT_POWER_UNIT*0.05) //how much power is in one sheet of plasteel
-
-//Ark defines
-#define GATEWAY_SUMMON_RATE 1 //the time amount the Gateway to the Celestial Derelict gets each process tick; defaults to 1 per tick
-
-#define GATEWAY_REEBE_FOUND 120 //when progress is at or above this, the gateway finds reebe and begins drawing power
-
-#define GATEWAY_RATVAR_COMING 240 //when progress is at or above this, ratvar has entered and is coming through the gateway
-
-#define GATEWAY_RATVAR_ARRIVAL 300 //when progress is at or above this, game over ratvar's here everybody go home
-
-//Objective text define
-#define CLOCKCULT_OBJECTIVE "Construct the Ark of the Clockwork Justicar and free Ratvar."
-
-//Eminence defines
-#define SUPERHEATED_CLOCKWORK_WALL_LIMIT 20 //How many walls can be superheated at once
-
-//misc clockcult stuff
-
-#define SIGIL_ACCESS_RANGE 2 //range at which transmission sigils can access power
-
-#define FABRICATOR_REPAIR_PER_TICK 4 //how much a fabricator repairs each tick, and also how many deciseconds each tick is
-
-#define OCULAR_WARDEN_EXCLUSION_RANGE 3 //the range at which ocular wardens cannot be placed near other ocular wardens
-
-#define CLOCKWORK_ARMOR_COOLDOWN 1800 //The cooldown period between summoning suits of clockwork armor
-
-#define RATVARIAN_WEAPON_COOLDOWN 300 //The cooldown period between summoning another Ratvarian spear
-
-#define MARAUDER_SCRIPTURE_SCALING_THRESHOLD 600 //The amount of deciseconds that must pass before marauder scripture will not gain a recital penalty
-
-#define MARAUDER_SCRIPTURE_SCALING_TIME 20 //The amount of extra deciseconds tacked on to the marauder scripture recital time per recent marauder
-
-#define MARAUDER_SCRIPTURE_SCALING_MAX 300 //The maximum extra time applied to the marauder scripture
-
-#define GUARDIAN_EMERGE_THRESHOLD 65 //guardian cannot emerge unless host is at this% or less health
-
-#define ARK_SCREAM_COOLDOWN 300 //This much time has to pass between instances of the Ark taking damage before it will "scream" again
-
-#define PRISM_DELAY_DURATION 1200 //how long prolonging prisms delay the shuttle for; defaults to 2 minutes
+//from colors
+#define COLOR_THEME_CLOCKWORK "#CFBA47"
+//role
+#define SPECIAL_ROLE_CLOCKER "Clockwork Cultist"
+//golem
+#define SPECIES_GOLEM_CLOCKWORK "Латунный Голем"
+//prefs
+#define ROLE_CLOCKER			"Clockwork Cultist"

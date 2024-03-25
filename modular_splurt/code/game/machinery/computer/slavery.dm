@@ -6,7 +6,6 @@
 	desc = "Used to track and manage collared slaves. The limited range reaches only as far as the hideout perimeter."
 	icon_screen = "explosive"
 	icon_keyboard = "security_key"
-	clockwork = TRUE
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	req_access = list(ACCESS_SLAVER)
 	light_color = LIGHT_COLOR_RED

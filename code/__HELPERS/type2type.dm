@@ -716,8 +716,6 @@
 			return 'modular_citadel/icons/ui/screen_slimecore.dmi'
 		if('icons/mob/screen_operative.dmi')
 			return 'modular_citadel/icons/ui/screen_operative.dmi'
-		if('icons/mob/screen_clockwork.dmi')
-			return 'modular_citadel/icons/ui/screen_clockwork.dmi'
 		if('icons/mob/screen_glass.dmi')
 			return 'modular_citadel/icons/ui/screen_glass.dmi'
 		if('icons/mob/screen_trasenknox.dmi')

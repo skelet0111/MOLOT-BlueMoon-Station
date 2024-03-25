@@ -55,6 +55,7 @@
 						/mob/living/simple_animal/hostile/cult/mannequin = 4,\
 						/mob/living/simple_animal/hostile/cult/horror = 4,\
 						/mob/living/simple_animal/hostile/cult/warrior = 4,\
+						/mob/living/simple_animal/hostile/cult/cultistmelee = 4,\
 						/mob/living/simple_animal/hostile/cult/spear = 2,\
 						/mob/living/simple_animal/hostile/cult/assassin = 2,\
 						/mob/living/simple_animal/hostile/cult/magic = 2)

@@ -652,126 +652,128 @@ GLOBAL_LIST_INIT(runed_metal_recipes, list ( \
 /*
  * Brass
  */
-GLOBAL_LIST_INIT(brass_recipes, list ( \
-	new/datum/stack_recipe("wall gear", /obj/structure/destructible/clockwork/wall_gear, 3, time = 10, one_per_turf = TRUE, on_floor = TRUE), \
-	null, \
-	new/datum/stack_recipe("brass pinion airlock", /obj/machinery/door/airlock/clockwork, 5, time = 50, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("brass pinion airlock - windowed", /obj/machinery/door/airlock/clockwork/brass, 5, time = 50, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("brass windoor", /obj/machinery/door/window/clockwork, 2, time = 30, on_floor = TRUE, window_checks = TRUE), \
-	null, \
-	new/datum/stack_recipe("brass reflector", /obj/structure/destructible/clockwork/reflector, 10, time = 100, one_per_turf = TRUE, on_floor = TRUE, window_checks = TRUE), \
-	null, \
-	new/datum/stack_recipe("brass window - directional", /obj/structure/window/reinforced/clockwork/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("brass window - fulltile", /obj/structure/window/reinforced/clockwork/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("brass chair", /obj/structure/chair/brass, 1, time = 0, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("brass bar stool",  /obj/structure/chair/stool/bar/brass, 1, time = 0, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("brass stool", /obj/structure/chair/stool/brass, 1, time = 0, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("brass table frame", /obj/structure/table_frame/brass, 1, time = 5, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("brass anvil", /obj/structure/anvil/obtainable/ratvar, 10, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("brass furnace", /obj/structure/furnace/infinite/ratvar, 10, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
-	null, \
-	new/datum/stack_recipe("sender - pressure sensor", /obj/structure/destructible/clockwork/trap/trigger/pressure_sensor, 2, time = 20, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("sender - mech sensor", /obj/structure/destructible/clockwork/trap/trigger/pressure_sensor/mech, 2, time = 20, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("sender - lever", /obj/structure/destructible/clockwork/trap/trigger/lever, 1, time = 10, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("sender - repeater", /obj/structure/destructible/clockwork/trap/trigger/repeater, 2, time = 20, one_per_turf = TRUE, on_floor = TRUE), \
-	null, \
-	new/datum/stack_recipe("receiver - brass skewer", /obj/structure/destructible/clockwork/trap/brass_skewer, 2, time = 20, one_per_turf = TRUE, on_floor = TRUE, placement_checks = STACK_CHECK_ADJACENT), \
-	new/datum/stack_recipe("receiver - steam vent", /obj/structure/destructible/clockwork/trap/steam_vent, 3, time = 30, one_per_turf = TRUE, on_floor = TRUE, placement_checks = STACK_CHECK_CARDINALS), \
-	new/datum/stack_recipe("receiver - power nullifier", /obj/structure/destructible/clockwork/trap/power_nullifier, 5, time = 20, one_per_turf = TRUE, on_floor = TRUE, placement_checks = STACK_CHECK_CARDINALS), \
-	null, \
-	new/datum/stack_recipe("brass flask", /obj/item/reagent_containers/food/drinks/bottle/holyoil/empty), \
-	new/datum/stack_recipe("brass smith's hammer", /obj/item/melee/smith/hammer/ratvar, 6), \
-	new/datum/stack_recipe("brass ingot", /obj/item/ingot/ratvar, 6, time = 100), \
+
+GLOBAL_LIST_INIT(brass_recipes, list(
+	new /datum/stack_recipe("Altar of credence", /obj/structure/destructible/clockwork/functional/altar, 4, time = 40, one_per_turf = TRUE, on_floor = TRUE, cult_structure = TRUE),
+	new /datum/stack_recipe("Eternal workshop", /obj/structure/destructible/clockwork/functional/workshop, 4, time = 40, one_per_turf = TRUE, on_floor = TRUE, cult_structure = TRUE),
+	new /datum/stack_recipe("Herald's beacon", /obj/structure/destructible/clockwork/functional/beacon, 6, time = 80, one_per_turf = TRUE, on_floor = TRUE, cult_structure = TRUE),
+	new /datum/stack_recipe("Cogscarab fabricator", /obj/structure/destructible/clockwork/functional/cogscarab_fabricator, 5, time = 100, one_per_turf = TRUE, on_floor = TRUE, cult_structure = TRUE),
+	new /datum/stack_recipe("Wall Gear", /obj/structure/destructible/clockwork/wall_gear, time = 10, one_per_turf = TRUE, on_floor = TRUE, cult_structure = TRUE),
+	null,
+	new /datum/stack_recipe_list("Windows and furniture", list(
+		new /datum/stack_recipe("Brass chair", /obj/structure/chair/brass, one_per_turf = TRUE, on_floor = TRUE),
+		new /datum/stack_recipe("Brass table frame", /obj/structure/table_frame/brass, time = 5, one_per_turf = TRUE, on_floor = TRUE),
+		new /datum/stack_recipe("Bronze ashtray", /obj/item/storage/ashtray/bronze, 2, one_per_turf = TRUE, on_floor = TRUE),
+		null,
+		new /datum/stack_recipe("Clockwork floor tile", /obj/item/stack/tile/clockwork, res_amount = 4, max_res_amount = 20),
+		new /datum/stack_recipe/window("Brass windoor", /obj/machinery/door/window/clockwork, 2, time = 30, on_floor = TRUE, check_direction = TRUE),
+		new /datum/stack_recipe/window("Directional brass window", /obj/structure/window/reinforced/clockwork, on_floor = TRUE, check_direction = TRUE),
+		new /datum/stack_recipe/window("Fulltile brass window", /obj/structure/window/reinforced/clockwork/fulltile, 2, on_floor = TRUE, is_fulltile = TRUE),
+	)),
 ))
 
-/obj/item/stack/tile/brass
+GLOBAL_LIST_INIT(fake_brass_recipes, list(
+	new /datum/stack_recipe("Altar of credence", /obj/structure/destructible/clockwork/altar, 4, time = 40, one_per_turf = TRUE, on_floor = TRUE, cult_structure = FALSE),
+	new /datum/stack_recipe("Eternal workshop", /obj/structure/destructible/clockwork/workshop, 4, time = 40, one_per_turf = TRUE, on_floor = TRUE, cult_structure = FALSE),
+	new /datum/stack_recipe("Herald's beacon", /obj/structure/destructible/clockwork/beacon, 6, time = 80, one_per_turf = TRUE, on_floor = TRUE, cult_structure = FALSE),
+	new /datum/stack_recipe("Wall gear", /obj/structure/destructible/clockwork/wall_gear/fake, time = 10, one_per_turf = TRUE, on_floor = TRUE, cult_structure = FALSE),
+	null,
+	new /datum/stack_recipe_list("Windows and furniture", list(
+		new /datum/stack_recipe("Brass chair", /obj/structure/chair/brass/fake, one_per_turf = TRUE, on_floor = TRUE),
+		new /datum/stack_recipe("Brass table frame", /obj/structure/table_frame/brass/fake, time = 5, one_per_turf = TRUE, on_floor = TRUE),
+		new /datum/stack_recipe("Bronze ashtray", /obj/item/storage/ashtray/bronze, 2, one_per_turf = TRUE, on_floor = TRUE),
+		null,
+		new /datum/stack_recipe("Clockwork floor tile", /obj/item/stack/tile/clockwork, res_amount = 4, max_res_amount = 20),
+		new /datum/stack_recipe/window("Brass windoor", /obj/machinery/door/window/clockwork_fake, 2, time = 30, on_floor = TRUE, check_direction = TRUE),
+		new /datum/stack_recipe/window("Directional brass window", /obj/structure/window/reinforced/clockworkfake, on_floor = TRUE, check_direction = TRUE),
+		new /datum/stack_recipe/window("Fulltile brass window", /obj/structure/window/reinforced/clockworkfake/fulltile, 2, on_floor = TRUE, is_fulltile = TRUE),
+	)),
+))
+
+/obj/item/stack/sheet/brass
 	name = "brass"
-	desc = "Sheets made out of brass."
+	desc = "Specially hand-crafted sheets of brass."
 	singular_name = "brass sheet"
 	icon_state = "sheet-brass"
 	item_state = "sheet-brass"
-	icon = 'icons/obj/stack_objects.dmi'
+	icon = 'icons/obj/items.dmi'
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	throwforce = 10
 	max_amount = 50
 	throw_speed = 1
 	throw_range = 3
-	turf_type = /turf/open/floor/clockwork
-	novariants = FALSE
-	grind_results = list(/datum/reagent/iron = 5, /datum/reagent/teslium = 15, /datum/reagent/fuel/holyoil = 1)
-	merge_type = /obj/item/stack/tile/brass
-	tableVariant = /obj/structure/table/reinforced/brass
+	merge_type = /obj/item/stack/sheet/brass
 
-/obj/item/stack/tile/brass/narsie_act()
+/obj/item/stack/sheet/brass/narsie_act()
 	new /obj/item/stack/sheet/runed_metal(loc, amount)
 	qdel(src)
 
-/obj/item/stack/tile/brass/attack_self(mob/living/user)
-	if(!is_servant_of_ratvar(user))
-		to_chat(user, "<span class='danger'>[src] seems far too fragile and rigid to build with.</span>") //haha that's because it's actually replicant alloy you DUMMY
+/obj/item/stack/sheet/brass/attack_self(mob/living/user)
+	if(iscultist(user))
+		user.visible_message("<span class='warning'>[user] drops [src] with burning wounds appearing!</span>", \
+		"<span class='clocklarge'>\"How dare you even to hold this piece of my art?\"</span>")
+		user.drop_from_active_hand()
+		user.adjustFireLoss(20)
 		return
-	..()
+	if(!isclocker(user))
+		to_chat(user, "<span class='warning'>Only one with forbidden knowledge could hope to work this metal...</span>")
+		return
+	if(!is_level_reachable(user.z))
+		to_chat(user, "<span class='warning'>The energies of this place interfere with the metal shaping!</span>")
+		return
 
-/obj/item/stack/tile/brass/get_main_recipes()
+	return ..()
+
+/obj/item/stack/sheet/brass/Initialize(mapload, new_amount, merge = TRUE)
 	. = ..()
-	. += GLOB.brass_recipes
+	recipes = GLOB.brass_recipes
 
-/obj/item/stack/tile/brass/fifty
+/obj/item/stack/sheet/brass/ten
+	amount = 10
+
+/obj/item/stack/sheet/brass/fifty
 	amount = 50
 
-/*
- * Bronze
- */
+/obj/item/stack/sheet/brass/cyborg
+	materials = list()
+	is_cyborg = 1
+	cyborg_construction_stack = /obj/item/stack/sheet/brass
 
-GLOBAL_LIST_INIT(bronze_recipes, list ( \
-	new/datum/stack_recipe("wall gear", /obj/structure/girder/bronze, 2, time = 20, one_per_turf = TRUE, on_floor = TRUE), \
-	null,
-	new/datum/stack_recipe("directional bronze window", /obj/structure/window/bronze/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("fulltile bronze window", /obj/structure/window/bronze/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("pinion airlock assembly", /obj/structure/door_assembly/door_assembly_bronze, 4, time = 50, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("bronze pinion airlock assembly", /obj/structure/door_assembly/door_assembly_bronze/seethru, 4, time = 50, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("bronze hat", /obj/item/clothing/head/bronze), \
-	new/datum/stack_recipe("bronze suit", /obj/item/clothing/suit/bronze), \
-	new/datum/stack_recipe("bronze boots", /obj/item/clothing/shoes/bronze), \
-	new/datum/stack_recipe("bronze uniform", /obj/item/clothing/under/misc/cog), \
-	new/datum/stack_recipe("bronze jumpskirt", /obj/item/clothing/under/misc/cog/jumpskirt), \
-	new/datum/stack_recipe("cog plant", /obj/item/kirbyplants/brass, 15, time = 50, on_floor = TRUE), \
-	null,
-	new/datum/stack_recipe("bronze chair", /obj/structure/chair/bronze, 1, time = 0, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("bronze bar stool",  /obj/structure/chair/stool/bar/bronze, 1, time = 0, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("bronze stool", /obj/structure/chair/stool/bronze, 1, time = 0, one_per_turf = TRUE, on_floor = TRUE), \
-	new/datum/stack_recipe("bronze anvil",/obj/structure/anvil/obtainable/bronze, 20, time = 110, one_per_turf = TRUE, on_floor = TRUE), \
-	null,
-	new/datum/stack_recipe("bronze ingot", /obj/item/ingot/bronze, 6, time = 100), \
-	new/datum/stack_recipe("ashtray", /obj/item/ashtray/bronze, 1), \
-	new/datum/stack_recipe("bronze floor tiles", /obj/item/stack/tile/bronze, 1, 4, 20), \
-))
 
-/obj/item/stack/sheet/bronze
+/obj/item/stack/sheet/brass_fake
 	name = "brass"
-	desc = "On closer inspection, what appears to be wholly-unsuitable-for-building brass is actually more structurally stable bronze."
-	singular_name = "bronze sheet"
+	desc = "Specially hand-crafted sheets of brass. These ones look tarnished. "
+	singular_name = "brass sheet"
 	icon_state = "sheet-brass"
 	item_state = "sheet-brass"
-	icon = 'icons/obj/stack_objects.dmi'
-	custom_materials = list(/datum/material/bronze = MINERAL_MATERIAL_AMOUNT)
+	icon = 'icons/obj/items.dmi'
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	grind_results = list(/datum/reagent/iron = 5, /datum/reagent/copper = 3) //we have no "tin" reagent so this is the closest thing
-	merge_type = /obj/item/stack/sheet/bronze
-	tableVariant = /obj/structure/table/bronze
-	material_type = /datum/material/bronze
+	throwforce = 10
+	max_amount = 50
+	throw_speed = 1
+	throw_range = 3
+	merge_type = /obj/item/stack/sheet/brass_fake
 
-/obj/item/stack/sheet/bronze/attack_self(mob/living/user)
-	if(is_servant_of_ratvar(user)) //still lets them build with it, just gives a message
-		to_chat(user, "<span class='danger'>Wha... what is this cheap imitation crap? This isn't brass at all!</span>")
-	..()
+/obj/item/stack/sheet/brass_fake/narsie_act()
+	qdel(src)
 
-/obj/item/stack/sheet/bronze/get_main_recipes()
+/obj/item/stack/sheet/brass_fake/attack_self(mob/living/user)
+	if(iscultist(user))
+		user.visible_message("<span class='clocklarge'>\"I can't resist you.. bloody fool..\"</span>")
+	if(!isclocker(user))
+		to_chat(user, "<span class='warning'>Only my followers have to work with it...but I can't prevent it.</span>")
+	if(!is_level_reachable(user.z))
+		to_chat(user, "<span class='warning'>The energies of this place interfere with the metal shaping!</span>")
+		return
+
+	return ..()
+
+/obj/item/stack/sheet/brass_fake/Initialize(mapload, new_amount, merge = TRUE)
 	. = ..()
-	. += GLOB.bronze_recipes
+	recipes = GLOB.fake_brass_recipes
 
-/obj/item/stack/sheet/bronze/thirty
-	amount = 30
+/obj/item/stack/sheet/brass_fake/fifty
+	amount = 50
 
 /*
  * Lesser and Greater gems - unused

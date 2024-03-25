@@ -286,7 +286,7 @@
 	return
 
 /obj/item/multitool/advanced/brass
-	name = "clockwork multitool"
+	name = "Clockwork Multitool"
 	desc = "A brass...multitool? With three prongs arcing electricity between them. It vibrates subtly in your hand."
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "clockitool"

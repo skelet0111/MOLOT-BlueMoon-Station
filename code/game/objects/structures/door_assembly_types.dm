@@ -242,7 +242,7 @@
 	glass_type = /obj/machinery/door/airlock/wood/glass
 
 /obj/structure/door_assembly/door_assembly_bronze
-	name = "bronze airlock assembly"
+	name = "Bronze Airlock Assembly"
 	icon = 'icons/obj/doors/airlocks/clockwork/pinion_airlock.dmi'
 	base_name = "bronze airlock"
 	airlock_type = /obj/machinery/door/airlock/bronze
@@ -251,6 +251,14 @@
 
 /obj/structure/door_assembly/door_assembly_bronze/seethru
 	airlock_type = /obj/machinery/door/airlock/bronze/seethru
+
+/obj/structure/door_assembly/door_assembly_clock
+	name = "Clock Airlock Assembly"
+	icon = 'icons/obj/doors/airlocks/clockwork/pinion_airlock.dmi'
+	base_name = "clock airlock"
+	overlays_file = 'icons/obj/doors/airlocks/clockwork/overlays.dmi'
+	airlock_type = /obj/machinery/door/airlock/clockwork
+	glass_type = /obj/machinery/door/airlock/clockwork/glass
 
 /obj/structure/door_assembly/door_assembly_material
 	name = "airlock assembly"

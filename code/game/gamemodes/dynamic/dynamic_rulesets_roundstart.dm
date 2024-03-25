@@ -479,67 +479,6 @@
 
 //////////////////////////////////////////////
 //                                          //
-//               Clock Cult                 //
-//                                          //
-//////////////////////////////////////////////
-
-/datum/dynamic_ruleset/roundstart/clockcult
-	name = "Clock Cult"
-	antag_flag = ROLE_SERVANT_OF_RATVAR
-	antag_datum = /datum/antagonist/clockcult
-	minimum_required_age = 0 // BLUEMOON EDIT
-	protected_roles = list("NanoTrasen Representative", "Lawyer", "Blueshield", "Peacekeeper", "Brig Physician", "Security Officer", "Warden", "Detective", "Head of Security", "Captain", "Head of Personnel", "Quartermaster", "Chief Engineer", "Chief Medical Officer", "Research Director")  //BLUEMOON CHANGES
-	restricted_roles = list("Cyborg", "AI", "Positronic Brain")
-	required_candidates = 2
-	weight = 3
-	cost = 20
-	required_round_type = list(ROUNDTYPE_DYNAMIC_TEAMBASED, ROUNDTYPE_DYNAMIC_HARD, ROUNDTYPE_DYNAMIC_MEDIUM) // BLUEMOON ADD
-	requirements = list(101,101,101,101,101,50,40,30,20,15) //BLUEMOON CHANGES
-	flags = HIGH_IMPACT_RULESET
-	antag_cap = list("denominator" = 20, "offset" = 1)
-	var/datum/team/clockcult/main_clockcult
-
-/datum/dynamic_ruleset/roundstart/clockcult/ready(population, forced = FALSE)
-	required_candidates = get_antag_cap(population)
-	. = ..()
-
-/datum/dynamic_ruleset/roundstart/clockcult/pre_execute(population)
-	. = ..()
-	var/cultists = get_antag_cap(population)
-	for(var/cultists_number = 1 to cultists)
-		// BLUEMOON ADD START - если нет кандидатов и не выданы все роли, иначе выдаст рантайм
-		if(candidates.len <= 0)
-			message_admins("Рулсет [name] не был активирован по причине отсутствия кандидатов.")
-			break
-		// BLUEMOON ADD END
-		var/mob/M = pick_n_take(candidates)
-		assigned += M.mind
-		M.mind.special_role = ROLE_SERVANT_OF_RATVAR
-		M.mind.restricted_roles = restricted_roles
-	return TRUE
-
-/datum/dynamic_ruleset/roundstart/clockcult/execute()
-	main_clockcult = new
-	for(var/datum/mind/M in assigned)
-		var/datum/antagonist/clockcult/new_cultist = new antag_datum()
-		new_cultist.clock_team = main_clockcult
-		new_cultist.give_equipment = TRUE
-		SSticker.mode.equip_servant(new_cultist)
-		SSticker.mode.greet_servant(new_cultist)
-		M.add_antag_datum(new_cultist)
-	return TRUE
-
-/datum/dynamic_ruleset/roundstart/clockcult/round_result()
-	..()
-	if(main_clockcult.check_clockwork_victory())
-		SSticker.mode_result = "win - servants completed their objective (summon ratvar)"
-		SSticker.news_report = CLOCK_SUMMON
-	else
-		SSticker.mode_result = "loss - servants failed their objective (summon ratvar)"
-		SSticker.news_report = CULT_FAILURE
-
-//////////////////////////////////////////////
-//                                          //
 //                 FAMILIES                 //
 //                                          //
 //////////////////////////////////////////////

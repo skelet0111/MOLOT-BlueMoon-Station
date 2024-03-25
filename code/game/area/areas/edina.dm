@@ -2,8 +2,6 @@
 	name = "Nova Edina wilderness"
 	icon_state = "edina"
 	has_gravity = STANDARD_GRAVITY
-	clockwork_warp_allowed = FALSE // Can servants warp into this area from Reebe?
-	clockwork_warp_fail = "The aurora borealis is interfering with your teleport! Try somewhere closer to the city."
 	always_unpowered = TRUE
 
 	//dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
@@ -16,28 +14,24 @@
 /area/edina/backstreet
 	name = "Nova Edina backstreets"
 	icon_state = "edina_alley"
-	clockwork_warp_allowed = TRUE
 	ambientsounds = MAINTENANCE
 	always_unpowered = FALSE //Sure you can have power if you want
 
 /area/edina/backstreet/supply
 	name = "Supply Backstreets"
 	icon_state = "edina_alley"
-	clockwork_warp_allowed = TRUE
 	ambientsounds = MAINTENANCE
 	always_unpowered = FALSE //Sure you can have power if you want
 
 /area/edina/backstreet/research
 	name = "Research Backstreets"
 	icon_state = "edina_alley"
-	clockwork_warp_allowed = TRUE
 	ambientsounds = MAINTENANCE
 	always_unpowered = FALSE //Sure you can have power if you want
 
 /area/edina/backstreet/med
 	name = "Hospital Backstreets"
 	icon_state = "edina_alley"
-	clockwork_warp_allowed = TRUE
 	ambientsounds = MAINTENANCE
 	always_unpowered = FALSE //Sure you can have power if you want
 
@@ -149,7 +143,6 @@
 /////////////////Edina specific derivitives///////////////////////////////////
 
 /area/edina/crew_quarters
-	clockwork_warp_allowed = TRUE
 	area_flags = BLOBS_ALLOWED | VALID_TERRITORY
 
 /area/edina/crew_quarters/holo_atrium

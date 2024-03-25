@@ -12,7 +12,6 @@
 	var/brightness_on = 1
 	var/icon_keyboard = "generic_key"
 	var/icon_screen = "generic"
-	var/clockwork = FALSE
 	var/time_to_screwdrive = 20
 	/// The object that will drop on deconstruction. Mainly used for computer alt skins.
 	var/obj/structure/frame/computer/deconpath = /obj/structure/frame/computer
@@ -29,21 +28,11 @@
 		return FALSE
 	return TRUE
 
-/obj/machinery/computer/ratvar_act()
-	if(!clockwork)
-		clockwork = TRUE
-		icon_screen = "ratvar[rand(1, 3)]"
-		icon_keyboard = "ratvar_key[rand(1, 2)]"
-		icon_state = "ratvarcomputer"
-		update_icon()
-
 /obj/machinery/computer/narsie_act()
-	if(clockwork && clockwork != initial(clockwork)) //if it's clockwork but isn't normally clockwork
-		clockwork = FALSE
-		icon_screen = initial(icon_screen)
-		icon_keyboard = initial(icon_keyboard)
-		icon_state = initial(icon_state)
-		update_icon()
+	icon_screen = initial(icon_screen)
+	icon_keyboard = initial(icon_keyboard)
+	icon_state = initial(icon_state)
+	update_icon()
 
 /obj/machinery/computer/update_overlays()
 	. = ..()

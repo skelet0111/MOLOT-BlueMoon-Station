@@ -61,7 +61,6 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 //Human sub-species
 #define isabductor(A) (is_species(A, /datum/species/abductor))
 #define isgolem(A) (is_species(A, /datum/species/golem))
-#define isclockworkgolem(A) (is_species(A, /datum/species/golem/clockwork/no_scrap))
 #define islizard(A) (is_species(A, /datum/species/lizard))
 #define isplasmaman(A) (is_species(A, /datum/species/plasmaman))
 #define isvox(A) (is_species(A, /datum/species/mammal/vox))
@@ -155,8 +154,6 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 #define isswarmer(A) (istype(A, /mob/living/simple_animal/hostile/swarmer))
 
 #define isguardian(A) (istype(A, /mob/living/simple_animal/hostile/guardian))
-
-#define isclockmob(A) (istype(A, /mob/living/simple_animal/hostile/clockwork))
 
 #define isconstruct(A) (istype(A, /mob/living/simple_animal/hostile/construct))
 

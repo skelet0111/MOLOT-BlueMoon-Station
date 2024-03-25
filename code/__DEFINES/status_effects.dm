@@ -83,10 +83,6 @@
 
 #define STATUS_EFFECT_GEISTRACKER /datum/status_effect/geis_tracker //if you're using geis, this tracks that and keeps you from using scripture
 
-#define STATUS_EFFECT_MANIAMOTOR /datum/status_effect/maniamotor //disrupts, damages, and confuses the affected as long as they're in range of the motor
-#define MAX_MANIA_SEVERITY 100 //how high the mania severity can go
-#define MANIA_DAMAGE_TO_CONVERT 90 //how much damage is required before it'll convert affected targets
-
 #define STATUS_EFFECT_CHOKINGSTRAND /datum/status_effect/strandling //Choking Strand
 
 #define STATUS_EFFECT_HISWRATH /datum/status_effect/his_wrath //His Wrath.

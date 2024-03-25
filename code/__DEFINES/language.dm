@@ -11,7 +11,6 @@
 #define LANGUAGE_ABSORB			"absorb"
 #define LANGUAGE_APHASIA		"aphasia"
 #define LANGUAGE_BLOODSUCKER	"bloodsucker"
-#define LANGUAGE_CLOCKIE		"clockie"
 #define LANGUAGE_CULTIST		"cultist"
 #define LANGUAGE_CURATOR 		"curator"
 #define LANGUAGE_DEVIL			"devil"
