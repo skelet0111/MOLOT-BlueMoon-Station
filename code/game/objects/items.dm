@@ -198,6 +198,10 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	/// Used if we want to have a custom verb text for throwing. "John Spaceman flicks the ciggerate" for example.
 	var/throw_verb
 
+	//Clockwork enchantment
+	var/enchant_type = NO_SPELL // What's the type on enchantment on it? 0
+	var/list/enchants = null // List(datum)
+
 /obj/item/Initialize(mapload)
 
 	if(attack_verb)
@@ -1354,3 +1358,10 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 /// Special stuff you want to do when an outfit equips this item.
 /obj/item/proc/on_outfit_equip(mob/living/carbon/human/outfit_wearer, visuals_only, item_slot)
 	return
+
+/obj/item/proc/deplete_spell()
+	enchant_type = NO_SPELL
+	var/enchant_action = locate(/datum/action/item_action/activate/enchant) in actions
+	if(enchant_action)
+		qdel(enchant_action)
+	update_icon()

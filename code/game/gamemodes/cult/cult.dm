@@ -158,7 +158,6 @@
 	else
 		return 1
 
-
 /datum/game_mode/cult/generate_report()
 	return "Some stations in your sector have reported evidence of blood sacrifice and strange magic. Ties to the Wizards' Federation have been proven not to exist, and many employees \
 			have disappeared; even Central Command employees light-years away have felt strange presences and at times hysterical compulsions. Interrogations point towards this being the work of \

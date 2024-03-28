@@ -38,7 +38,7 @@
 // 	if(curselimit >= 1)
 // 		to_chat(user, "<span class='notice'>Мы исчерпали свою способность проклинать Космическую Станцию.</span>")
 // 		return
-// 	if(locate(/obj/structure/destructible/clockwork/massive/ratvar) in GLOB.poi_list)
+// 	if(locate(/obj/singularity/ratvar) in GLOB.poi_list)
 // 		to_chat(user, "<span class='warning'>Ratvar is already on this plane, there is no delaying the end of all things.</span>")
 // 		return
 

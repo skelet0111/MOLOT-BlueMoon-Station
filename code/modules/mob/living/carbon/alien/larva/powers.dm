@@ -17,8 +17,7 @@
 		user.layer = MOB_LAYER
 		user.visible_message("[user] slowly peeks up from the ground...", \
 					"<span class='noticealien'>You stop hiding.</span>")
-	return 1
-
+	return TRUE
 
 /obj/effect/proc_holder/alien/larva_evolve
 	name = "Evolve"

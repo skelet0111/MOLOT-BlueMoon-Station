@@ -563,7 +563,7 @@
 			candidates -= player //no ghost roles
 			continue
 
-		if(!is_eligible_servant(player))
+		if(!is_convertable_to_cult(player))
 			candidates -= player
 			continue
 

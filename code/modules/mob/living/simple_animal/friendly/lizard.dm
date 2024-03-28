@@ -26,6 +26,7 @@
 	obj_damage = 0
 	environment_smash = ENVIRONMENT_SMASH_NONE
 	var/static/list/edibles = typecacheof(list(/mob/living/simple_animal/butterfly, /mob/living/simple_animal/cockroach)) //list of atoms, however turfs won't affect AI, but will affect consumption.
+	pass_door_while_hidden = TRUE
 
 /mob/living/simple_animal/hostile/lizard/ComponentInitialize()
 	. = ..()

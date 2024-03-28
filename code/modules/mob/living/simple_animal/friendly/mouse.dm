@@ -31,6 +31,7 @@
 	faction = list("rat")
 	vocal_bark_id = "squeak"
 	vocal_pitch = 1.4
+	pass_door_while_hidden = TRUE
 
 /mob/living/simple_animal/mouse/Initialize(mapload)
 	. = ..()

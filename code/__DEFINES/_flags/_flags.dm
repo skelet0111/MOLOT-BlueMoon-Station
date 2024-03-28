@@ -126,6 +126,7 @@ GLOBAL_LIST_INIT(bitflags, list(
 #define	PASSMACHINE		(1<<7)
 #define PASSSTRUCTURE	(1<<8)
 #define PASSCRAWL		(1<<9) //SPLURT edit
+#define PASSDOOR 		(1<<10)
 
 //Movement Types
 #define GROUND				(1<<0)

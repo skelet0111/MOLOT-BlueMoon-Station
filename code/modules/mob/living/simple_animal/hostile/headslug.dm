@@ -23,6 +23,7 @@
 	var/datum/mind/origin
 	var/egg_lain = 0
 	gold_core_spawnable = HOSTILE_SPAWN //NO, It's powergame time! :wooo:
+	pass_door_while_hidden = TRUE
 
 /mob/living/simple_animal/hostile/headslug/Initialize(mapload)
 	. = ..()

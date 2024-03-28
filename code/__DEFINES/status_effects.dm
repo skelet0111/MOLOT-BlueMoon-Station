@@ -126,6 +126,8 @@
 /// shoves inflict this to indicate the next shove while this is in effect should disarm guns
 #define STATUS_EFFECT_OFF_BALANCE /datum/status_effect/off_balance
 
+#define STATUS_EFFECT_STAMINADOT /datum/status_effect/stamina_dot
+
 /////////////
 // NEUTRAL //
 /////////////

@@ -157,6 +157,8 @@
 	var/simple_mob_flags = NONE
 
 	var/mob/living/carbon/human/master_commander = null //holding var for determining who own/controls a sentient simple animal (for sentience potions).
+	/// Allows a mob to pass unbolted doors while hidden
+	var/pass_door_while_hidden = FALSE
 
 /mob/living/simple_animal/Initialize(mapload)
 	. = ..()

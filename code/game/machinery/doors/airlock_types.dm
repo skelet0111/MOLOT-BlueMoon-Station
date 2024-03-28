@@ -607,12 +607,12 @@
 	new /obj/effect/temp_visual/ratvar/door(get_turf(src))
 
 /obj/machinery/door/airlock/clockwork/canAIControl(mob/user)
-	return (isclocker(user) && !isAllPowerLoss())
+	return (is_servant_of_ratvar(user) && !isAllPowerLoss())
 
 /obj/machinery/door/airlock/clockwork/allowed(mob/living/L)
 	if(!density)
 		return TRUE
-	if(friendly || isclocker(L))
+	if(friendly || is_servant_of_ratvar(L))
 		return TRUE
 	else
 		new /obj/effect/temp_visual/ratvar/door(loc)

@@ -41,6 +41,12 @@
 #define TIME_SPELL 2
 #define RECONSTRUCT_SPELL 3
 
+GLOBAL_VAR_INIT(clockwork_power, 0) // clockwork mode, How many watts of power are globally available to the clockwork cult.
+GLOBAL_VAR_INIT(ark_of_the_clockwork_justiciar, null) //There can only be one!
+GLOBAL_LIST_EMPTY(clockwork_beacons) // clockwork mode, Beacon list for goal check.
+GLOBAL_LIST_EMPTY(clockwork_fabricators) // clockwork mode, Fabricator list used to limit clockers from spam.
+GLOBAL_LIST_EMPTY(clockwork_altars) // clockwork mode, List of altars used for teleportation spell
+
 // spell_enchant(name, type_SPELL, cost, time SECONDS(def 3), action needs)
 GLOBAL_LIST_INIT(clockslab_spells, list(
 	new /datum/spell_enchant("Stun", STUN_SPELL, 125, 8),
@@ -152,11 +158,34 @@ GLOBAL_LIST_INIT(shard_spells, list(
 #define GATEWAY_RATVAR_COMING 120 // Second stage
 #define GATEWAY_RATVAR_ARRIVAL 180 // Third Stage
 
-//from colors
-#define COLOR_THEME_CLOCKWORK "#CFBA47"
 //role
 #define SPECIAL_ROLE_CLOCKER "Clockwork Cultist"
 //golem
 #define SPECIES_GOLEM_CLOCKWORK "Латунный Голем"
 //prefs
 #define ROLE_CLOCKER			"Clockwork Cultist"
+
+/proc/is_servant_of_ratvar(mob/living/M)
+	return istype(M) && M.mind && SSticker && SSticker.mode && (M.mind in SSticker.mode.clockwork_cult)
+
+/proc/is_eligible_servant(mob/M)
+	if(!istype(M))
+		return FALSE
+	if(M.mind)
+		if(M.mind.assigned_role in list("Captain", "Chaplain"))
+			return FALSE
+		if(M.mind.enslaved_to && !is_servant_of_ratvar(M.mind.enslaved_to))
+			return FALSE
+		if(M.mind.unconvertable)
+			return FALSE
+	else
+		return FALSE
+	if(iscultist(M) || isconstruct(M) || ispAI(M))
+		return FALSE
+	if(isliving(M))
+		var/mob/living/L = M
+		if(HAS_TRAIT(L, TRAIT_MINDSHIELD))
+			return FALSE
+	if(ishuman(M) || isbrain(M) || isguardian(M) || issilicon(M) || isclockmob(M) || istype(M, /mob/living/simple_animal/drone/cogscarab) || istype(M, /mob/camera/eminence))
+		return TRUE
+	return FALSE

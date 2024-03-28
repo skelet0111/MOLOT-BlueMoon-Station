@@ -25,6 +25,7 @@
 	var/obj/item/inventory_head
 	var/obj/item/inventory_mask
 	gold_core_spawnable = FRIENDLY_SPAWN
+	pass_door_while_hidden = TRUE
 
 /mob/living/simple_animal/crab/Initialize(mapload)
 	. = ..()

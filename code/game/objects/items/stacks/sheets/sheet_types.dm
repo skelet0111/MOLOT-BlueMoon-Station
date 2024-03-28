@@ -715,7 +715,7 @@ GLOBAL_LIST_INIT(fake_brass_recipes, list(
 		user.drop_from_active_hand()
 		user.adjustFireLoss(20)
 		return
-	if(!isclocker(user))
+	if(!is_servant_of_ratvar(user))
 		to_chat(user, "<span class='warning'>Only one with forbidden knowledge could hope to work this metal...</span>")
 		return
 	if(!is_level_reachable(user.z))
@@ -760,7 +760,7 @@ GLOBAL_LIST_INIT(fake_brass_recipes, list(
 /obj/item/stack/sheet/brass_fake/attack_self(mob/living/user)
 	if(iscultist(user))
 		user.visible_message("<span class='clocklarge'>\"I can't resist you.. bloody fool..\"</span>")
-	if(!isclocker(user))
+	if(!is_servant_of_ratvar(user))
 		to_chat(user, "<span class='warning'>Only my followers have to work with it...but I can't prevent it.</span>")
 	if(!is_level_reachable(user.z))
 		to_chat(user, "<span class='warning'>The energies of this place interfere with the metal shaping!</span>")

@@ -535,8 +535,8 @@
 			user.dropItemToGround(src, TRUE)
 
 /obj/item/clothing/glasses/hud/health/night/cultblind
-	desc = "may Nar'Sie guide you through the darkness and shield you from the light."
-	name = "zealot's blindfold"
+	name = "Zealot's Blindfold"
+	desc = "May Nar'Sie guide you through the darkness and shield you from the light."
 	icon_state = "blindfold"
 	item_state = "blindfold"
 	flash_protect = 1

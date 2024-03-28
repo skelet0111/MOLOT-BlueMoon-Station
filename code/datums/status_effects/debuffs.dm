@@ -1264,4 +1264,13 @@
 /datum/status_effect/teleport_madness/tick(seconds_between_ticks)
 	dump_in_space(owner)
 
+/datum/status_effect/stamina_dot
+	id = "stamina_dot"
+	duration = 6 SECONDS
+	alert_type = null
+	status_type = STATUS_EFFECT_STAMINADOT
+
+/datum/status_effect/stamina_dot/tick()
+	owner.adjustStaminaLoss(10)
+
 #undef HEALING_SLEEP_DEFAULT
