@@ -1282,7 +1282,7 @@
 		var/mob/living/simple_animal/hostile/clockwork/marauder/cog = new (get_turf(src))
 		soul.brainmob.mind.transfer_to(cog)
 		playsound(cog, 'sound/effects/constructform.ogg', 50)
-		user.temporarily_remove_item_from_inventory(soul)
+		user.temporarilyRemoveItemFromInventory(soul)
 		qdel(soul)
 		qdel(src)
 
@@ -1362,7 +1362,7 @@
 		return
 	var/mob/living/carbon/human/human = target
 	if(human.stat == DEAD && is_servant_of_ratvar(human)) // dead clocker
-		user.temporarily_remove_item_from_inventory(src)
+		user.temporarilyRemoveItemFromInventory(src)
 		qdel(src)
 		if(!human.client)
 			give_ghost(human)

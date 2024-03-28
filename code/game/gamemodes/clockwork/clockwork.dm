@@ -16,6 +16,64 @@ GLOBAL_LIST_EMPTY(all_clockers)
 	/// Used for CentCom announcement when reached crew limit conversion
 	var/reveal_percent
 
+//CLOCKCULT PROOF OF CONCEPT
+/datum/antagonist/clockcult
+	name = "Clock Cultist"
+	roundend_category = "clock cultists"
+	antagpanel_category = "Clockcult"
+	job_rank = ROLE_SERVANT_OF_RATVAR
+	antag_moodlet = /datum/mood_event/cult
+	skill_modifiers = list(/datum/skill_modifier/job/level/wiring, /datum/skill_modifier/job/level/dwarfy/blacksmithing)
+	ui_name = "AntagInfoClockwork"
+	threat = 3
+	var/datum/team/clockcult/clock_team
+	var/make_team = TRUE //This should be only false for tutorial scarabs
+	var/neutered = FALSE			//can not use round ending, gibbing, converting, or similar things with unmatched round impact
+	var/ignore_eligibility_check = FALSE
+	var/ignore_holy_water = FALSE
+
+/datum/antagonist/clockcult/ui_data(mob/user)
+	. = ..()
+	if(!.)
+		return
+	.["HONOR_RATVAR"] = GLOB.ratvar_awakens
+
+/datum/antagonist/clockcult/neutered
+	name = "Neutered Clock Cultist"
+	neutered = TRUE
+	soft_antag = TRUE
+	ui_name = null // no.
+
+/datum/antagonist/clockcult/neutered/traitor
+	name = "Traitor Clock Cultist"
+	ignore_eligibility_check = TRUE
+	ignore_holy_water = TRUE
+	show_in_roundend = FALSE
+	make_team = FALSE
+
+/datum/antagonist/clockcult/get_team()
+	return clock_team
+
+/datum/antagonist/clockcult/create_team(datum/team/clockcult/new_team)
+	if(!new_team && make_team)
+		//TODO blah blah same as the others, allow multiple
+		for(var/datum/antagonist/clockcult/H in GLOB.antagonists)
+			if(!H.owner)
+				continue
+			if(H.clock_team)
+				clock_team = H.clock_team
+				return
+		clock_team = new /datum/team/clockcult
+		return
+	if(make_team && !istype(new_team))
+		stack_trace("Wrong team type passed to [type] initialization.")
+	clock_team = new_team
+
+/datum/antagonist/clockcult/can_be_owned(datum/mind/new_owner)
+	. = ..()
+	if(. && !ignore_eligibility_check)
+		. = is_eligible_servant(new_owner.current)
+
 /proc/is_convertable_to_clocker(datum/mind/mind)
 	if(!mind)
 		return FALSE
@@ -31,7 +89,7 @@ GLOBAL_LIST_EMPTY(all_clockers)
 		var/mob/living/carbon/human/H = mind.current
 		if(HAS_TRAIT(H, TRAIT_MINDSHIELD)) //mindshield protects against conversions unless removed
 			return FALSE
-	if(IS_GHOSTROLE(mind))
+	if(IS_GHOSTROLE(mind.current))
 		return FALSE
 	if(issilicon(mind.current))
 		return FALSE //Can't be converted by platform. Have to use a clock slab as an emag.
@@ -41,6 +99,28 @@ GLOBAL_LIST_EMPTY(all_clockers)
 			return FALSE //can't convert it unless the owner is converted
 	return TRUE
 
+/proc/is_eligible_servant(mob/M)
+	if(!istype(M))
+		return FALSE
+	if(M.mind)
+		if(M.mind.assigned_role in list("Captain", "Chaplain"))
+			return FALSE
+		if(M.mind.enslaved_to && !is_servant_of_ratvar(M.mind.enslaved_to))
+			return FALSE
+		if(M.mind.unconvertable)
+			return FALSE
+	else
+		return FALSE
+	if(iscultist(M) || isconstruct(M) || ispAI(M))
+		return FALSE
+	if(isliving(M))
+		var/mob/living/L = M
+		if(HAS_TRAIT(L, TRAIT_MINDSHIELD))
+			return FALSE
+	if(ishuman(M) || isbrain(M) || isguardian(M) || issilicon(M) || isclockmob(M) || istype(M, /mob/living/simple_animal/drone/cogscarab) || istype(M, /mob/camera/eminence))
+		return TRUE
+	return FALSE
+
 /proc/adjust_clockwork_power(amount)
 	GLOB.clockwork_power += amount
 	SSticker.mode.check_power_reveal()
@@ -49,8 +129,8 @@ GLOBAL_LIST_EMPTY(all_clockers)
 /datum/game_mode/clockwork
 	name = "Clockwork Cult"
 	config_tag = "clockwork"
-	restricted_jobs = list(JOB_TITLE_CHAPLAIN, JOB_TITLE_AI, JOB_TITLE_CYBORG, JOB_TITLE_LAWYER, JOB_TITLE_OFFICER, JOB_TITLE_WARDEN, JOB_TITLE_DETECTIVE, JOB_TITLE_PILOT, JOB_TITLE_HOS, JOB_TITLE_CAPTAIN, JOB_TITLE_HOP, JOB_TITLE_BLUESHIELD, JOB_TITLE_REPRESENTATIVE, JOB_TITLE_JUDGE, JOB_TITLE_BRIGDOC, JOB_TITLE_CCOFFICER, JOB_TITLE_CCFIELD, JOB_TITLE_CCSPECOPS, JOB_TITLE_CCSUPREME, JOB_TITLE_SYNDICATE)
-	protected_jobs = list()
+	restricted_jobs = list("Prisoner", "AI", "Cyborg")
+	protected_jobs = list("Security Officer", "Shaft Miner", "Warden", "Detective", "Head of Security", "Captain", "Head of Personnel", "Chief Engineer", "Chief Medical Officer", "Research Director", "Quartermaster", "Blueshield", "Brig Physician", "Peacekeeper", "NanoTrasen Representative", "Lawyer", "Chaplain")
 	required_players = 30
 	required_enemies = 3
 	recommended_enemies = 4
@@ -64,6 +144,8 @@ GLOBAL_LIST_EMPTY(all_clockers)
 /datum/game_mode/clockwork/pre_setup()
 	if(CONFIG_GET(flag/protect_roles_from_antagonist))
 		restricted_jobs += protected_jobs
+	if(CONFIG_GET(flag/protect_assistant_from_antagonist))
+		restricted_jobs += "Assistant"
 
 	var/list/clockers_possible = get_players_for_role(ROLE_CLOCKER)
 	for(var/clockers_number in 1 to max_clockers_to_start)
@@ -80,20 +162,16 @@ GLOBAL_LIST_EMPTY(all_clockers)
 	clocker_objs.setup()
 
 	for(var/datum/mind/clockwork_mind in clockwork_cult)
-		SEND_SOUND(clockwork_mind.current, 'sound/ambience/antag/clockcult.ogg')
+		SEND_SOUND(clockwork_mind.current, 'sound/ambience/antag/ClockCultAlr.ogg')
 		var/list/messages = list(CLOCK_GREETING)
 		to_chat(clockwork_mind.current, chat_box_yellow(messages.Join("<br>")))
 		equip_clocker(clockwork_mind.current)
-		clockwork_mind.current.faction |= "clockwork_cult"
-		var/datum/objective/serveclock/obj = new
-		obj.owner = clockwork_mind
-		clockwork_mind.objectives += obj
+		clockwork_mind.current.faction |= "ratvar"
+		add_servant_of_ratvar(clockwork_mind.current)
 
-		if(clockwork_mind.assigned_role == JOB_TITLE_CLOWN)
-			to_chat(clockwork_mind.current, "<span class='clockitalic'>A dark power has allowed you to overcome your clownish nature, letting you wield weapons without harming yourself.</span>")
-			clockwork_mind.current.mutations.Remove(CLUMSY)
-			var/datum/action/innate/toggle_clumsy/A = new
-			A.Grant(clockwork_mind.current)
+		if(clockwork_mind.assigned_role == "Clown")
+			to_chat(owner, "Your training has allowed you to overcome your clownish nature, allowing you to wield weapons without harming yourself.")
+			clockwork_mind.current.dna.remove_mutation(CLOWNMUT)
 
 		add_clock_actions(clockwork_mind)
 		update_clock_icons_added(clockwork_mind)
@@ -101,6 +179,17 @@ GLOBAL_LIST_EMPTY(all_clockers)
 	clockwork_threshold_check()
 	addtimer(CALLBACK(src, PROC_REF(clockwork_threshold_check)), 2 MINUTES) // Check again in 2 minutes for latejoiners
 	. = ..()
+
+/datum/game_mode/clockwork/post_setup()
+	clocker_objs.setup()
+
+	for(var/datum/mind/clockwork_mind in clockwork_cult)
+		SEND_SOUND(clockwork_mind.current, 'sound/ambience/antag/ClockCultAlr.ogg')
+		var/list/messages = list(CLOCK_GREETING)
+		to_chat(clockwork_mind.current, chat_box_yellow(messages.Join("<br>")))
+
+		equip_clocker(clockwork_mind.current)
+		add_servant_of_ratvar(clockwork_mind.current)
 
 /**
   * Decides at the start of the round how many conversions are needed to reveal or how many power supplied to reveal.
@@ -126,7 +215,7 @@ GLOBAL_LIST_EMPTY(all_clockers)
 		clocker_objs.power_goal = 1200 + length(GLOB.player_list)*CLOCK_POWER_PER_CREW_LOW
 		power_reveal_number = round(clocker_objs.power_goal * 0.67) // 2/3 of power goal
 		crew_reveal_number = round(CLOCK_CREW_REVEAL_LOW * (players - clockers),1)
-	add_game_logs("Clockwork Cult power/crew reveal numbers: [power_reveal_number]/[crew_reveal_number].")
+	log_game("Clockwork Cult power/crew reveal numbers: [power_reveal_number]/[crew_reveal_number].")
 
 /**
   * Returns the current number of clockers and constructs.
@@ -155,13 +244,14 @@ GLOBAL_LIST_EMPTY(all_clockers)
 	. += clock_give_item(/obj/item/clockwork/clockslab, H)
 	if(metal)
 		. += clock_give_item(/obj/item/stack/sheet/brass/ten, H)
-	to_chat(H, "<span class='clock'>These will help you start the cult on this station. Use them well, and remember - you are not the only one.</span>")
+	to_chat(H, "<span class='clock'>Эти предметы помогут вам образовать культ на этой станции. Используйте их правильно и помните - вы не единственный.</span>")
 
 /datum/game_mode/proc/clock_give_item(obj/item/item_path, mob/living/carbon/human/H)
 	var/list/slots = list(
-		"backpack" = slot_in_backpack,
-		"left pocket" = slot_l_store,
-		"right pocket" = slot_r_store)
+		"backpack" = ITEM_SLOT_BACKPACK,
+		"left pocket" = ITEM_SLOT_LPOCKET,
+		"right pocket" = ITEM_SLOT_RPOCKET
+	)
 	var/T = new item_path(H)
 	var/item_name = initial(item_path.name)
 	var/where = H.equip_in_one_of_slots(T, slots, qdel_on_fail = TRUE)
@@ -172,6 +262,25 @@ GLOBAL_LIST_EMPTY(all_clockers)
 		to_chat(H, "<span class='danger'>You have a [item_name] in your [where].</span>")
 		return TRUE
 
+/proc/add_servant_of_ratvar(mob/L, create_team = TRUE, override_type)
+	if(!L || !L.mind)
+		return
+	var/update_type = /datum/antagonist/clockcult
+	if(override_type)		//prioritizes
+		update_type = override_type
+	var/datum/antagonist/clockcult/C = new update_type(L.mind)
+	C.make_team = create_team
+	C.show_in_roundend = create_team //tutorial scarabs begone
+
+	if(iscyborg(L))
+		var/mob/living/silicon/robot/R = L
+		if(R.deployed)
+			var/mob/living/silicon/ai/AI = R.mainframe
+			R.undeploy()
+			to_chat(AI, "<span class='userdanger'>Anomaly Detected. Returned to core!</span>") //The AI needs to be in its core to properly be converted
+
+	. = L.mind.add_antag_datum(C)
+	flash_color(L, flash_color = list("#BE8700", "#BE8700", "#BE8700", rgb(0,0,0)), flash_time = 5)
 
 /datum/game_mode/proc/add_clocker(datum/mind/clock_mind)
 	if(!istype(clock_mind))
@@ -183,7 +292,7 @@ GLOBAL_LIST_EMPTY(all_clockers)
 
 	if(!(clock_mind in clockwork_cult))
 		clockwork_cult += clock_mind
-		clock_mind.current.faction |= "clockwork_cult"
+		clock_mind.current.faction |= "ratvar"
 		clock_mind.special_role = SPECIAL_ROLE_CLOCKER
 
 		if(clock_mind.assigned_role == JOB_TITLE_CLOWN)
@@ -191,6 +300,7 @@ GLOBAL_LIST_EMPTY(all_clockers)
 			clock_mind.current.mutations.Remove(CLUMSY)
 			var/datum/action/innate/toggle_clumsy/A = new
 			A.Grant(clock_mind.current)
+
 		SEND_SOUND(clock_mind.current, 'sound/ambience/antag/clockcult.ogg')
 		add_conversion_logs(clock_mind.current, "converted to the clockwork cult")
 
@@ -271,7 +381,7 @@ GLOBAL_LIST_EMPTY(all_clockers)
 		return
 	var/mob/clocker = clock_mind.current
 	clockwork_cult -= clock_mind
-	clocker.faction -= "clockwork_cult"
+	clocker.faction -= "ratvar"
 	clock_mind.special_role = null
 	for(var/datum/objective/serveclock/O in clock_mind.objectives)
 		clock_mind.objectives -= O
@@ -293,13 +403,13 @@ GLOBAL_LIST_EMPTY(all_clockers)
 		"<span class='userdanger'>An unfamiliar white light flashes through your mind, cleansing the taint of Ratvar and the memories of your time as their servant with it.</span>")
 
 /datum/game_mode/proc/update_clock_icons_added(datum/mind/clock_mind)
-	var/datum/atom_hud/antag/clockhud = GLOB.huds[ANTAG_HUD_CLOCK]
+	var/datum/atom_hud/antag/clockhud = GLOB.huds[ANTAG_HUD_CLOCKWORK]
 	if(clock_mind.current)
 		clockhud.join_hud(clock_mind.current)
-		set_antag_hud(clock_mind.current, "hudclocker")
+		set_antag_hud(clock_mind.current, "clockwork")
 
 /datum/game_mode/proc/update_clock_icons_removed(datum/mind/clock_mind)
-	var/datum/atom_hud/antag/clockhud = GLOB.huds[ANTAG_HUD_CLOCK]
+	var/datum/atom_hud/antag/clockhud = GLOB.huds[ANTAG_HUD_CLOCKWORK]
 	if(clock_mind.current)
 		clockhud.leave_hud(clock_mind.current)
 		set_antag_hud(clock_mind.current, null)

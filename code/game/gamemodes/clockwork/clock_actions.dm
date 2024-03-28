@@ -48,7 +48,7 @@
 		else if((M in GLOB.dead_mob_list) && !isnewplayer(M))
 			to_chat(M, "<span class='clockspeech'> <a href='?src=[M.UID()];follow=[user.UID()]'>(F)</a> [my_message] </span>")
 
-	add_say_logs(user, message, language = "CLOCKCULT")
+	user.log_talk(message, LOG_SAY, tag="clockwork")
 
 //Objectives
 /datum/action/innate/clockwork/check_progress

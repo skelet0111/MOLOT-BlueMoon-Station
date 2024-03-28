@@ -167,25 +167,3 @@ GLOBAL_LIST_INIT(shard_spells, list(
 
 /proc/is_servant_of_ratvar(mob/living/M)
 	return istype(M) && M.mind && SSticker && SSticker.mode && (M.mind in SSticker.mode.clockwork_cult)
-
-/proc/is_eligible_servant(mob/M)
-	if(!istype(M))
-		return FALSE
-	if(M.mind)
-		if(M.mind.assigned_role in list("Captain", "Chaplain"))
-			return FALSE
-		if(M.mind.enslaved_to && !is_servant_of_ratvar(M.mind.enslaved_to))
-			return FALSE
-		if(M.mind.unconvertable)
-			return FALSE
-	else
-		return FALSE
-	if(iscultist(M) || isconstruct(M) || ispAI(M))
-		return FALSE
-	if(isliving(M))
-		var/mob/living/L = M
-		if(HAS_TRAIT(L, TRAIT_MINDSHIELD))
-			return FALSE
-	if(ishuman(M) || isbrain(M) || isguardian(M) || issilicon(M) || isclockmob(M) || istype(M, /mob/living/simple_animal/drone/cogscarab) || istype(M, /mob/camera/eminence))
-		return TRUE
-	return FALSE

@@ -113,13 +113,11 @@
 /datum/objective/serveclock //Given to clockers on conversion/roundstart
 	explanation_text = "Assist your fellow clockwork associates and Power Ratvar to Tear the Veil! (Use the Study Veil action to check your progress.)"
 	completed = TRUE
-	needs_target = FALSE
 
 /datum/objective/demand_power
 	var/power_get = FALSE
 	var/beacon_get = FALSE
 	var/clockers_get = FALSE
-	needs_target = FALSE
 	explanation_text = "The Ratvar demands power in order to prepare the summoning."
 
 /datum/objective/demand_power/check_completion()
@@ -127,7 +125,6 @@
 
 
 /datum/objective/clockgod
-	needs_target = FALSE
 	var/summoned = FALSE
 	var/killed = FALSE
 	var/list/ritual_spots = list()
@@ -141,9 +138,9 @@
 		ritual_spots = new()
 	var/sanity = 0
 	while(length(ritual_spots) < RATVAR_SUMMON_POSSIBILITIES && sanity < 100)
-		var/area/summon = pick(return_sorted_areas() - ritual_spots)
+		var/area/summon = pick(GLOB.sortedAreas - summon_spots)
 		var/valid_spot = FALSE
-		if(summon && is_station_level(summon.z) && summon.valid_territory) // Check if there's a turf that you can walk on, if not it's not valid
+		if(summon && is_station_level(summon.z) && (summon.area_flags & VALID_TERRITORY))
 			for(var/turf/T as anything in get_area_turfs(summon))
 				if(!T.density)
 					var/clear = TRUE

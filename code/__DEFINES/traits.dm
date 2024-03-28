@@ -258,6 +258,7 @@
 #define TRAIT_MULTILINGUAL		"multilingual"
 #define TRAIT_HEARING_SENSITIVE "hearing_sensitive"
 #define TRAIT_CULT_EYES 		"cult_eyes"
+#define CLOCK_HANDS 			"clock_hands"
 #define TRAIT_AUTO_CATCH_ITEM	"auto_catch_item"
 #define TRAIT_CLOWN_MENTALITY	"clown_mentality" // The future is now, clownman.
 #define TRAIT_FREESPRINT		"free_sprinting"
