@@ -366,8 +366,8 @@
 			return "Code Scotch"
 
 /proc/get_all_jobs()
-	return list("Assistant", "Captain", "Blueshield", "Head of Personnel", "Bridge Officer", "Bartender", "Cook", "Entertainer", "Botanist", "Quartermaster", "Cargo Technician",
-				"Shaft Miner", "Clown", "Mime", "Janitor", "Curator", "Lawyer", "Chaplain", "Chief Engineer", "Station Engineer",
+	return list("Assistant","Bridge Officer", "Captain", "Blueshield", "Head of Personnel", "Bartender", "Cook", "Entertainer", "Botanist", "Quartermaster", "Cargo Technician",
+				"Shaft Miner", "Clown", "Mime", "Janitor", "Curator", "Internal Affairs Agent", "Chaplain", "Chief Engineer", "Station Engineer",
 				"Atmospheric Technician", "Chief Medical Officer", "Medical Doctor", "Chemist", "Geneticist", "Virologist", "Psychologist", "Paramedic",
 				"Research Director", "Scientist", "Roboticist", "Expeditor", "Head of Security", "Warden", "Detective", "Security Officer", "Brig Physician", "Peacekeeper", "Prisoner", "NanoTrasen Representative", "Bouncer") //BlueMoon edit
 
@@ -386,6 +386,8 @@
 		return "scrambled"
 	if (istype(src, /obj/item/card/id/syndicate))
 		return "syndicate"
+	if (istype(src, /obj/item/card/id/syndicate/inteq))
+		return "inteq"
 	if (istype(src, /obj/item/card/id/nri))
 		return "nri"
 	if (istype(src, /obj/item/card/id/nri_citizen))
