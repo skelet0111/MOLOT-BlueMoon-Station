@@ -111,7 +111,7 @@
 //Objectives
 
 /datum/objective/serveclock //Given to clockers on conversion/roundstart
-	explanation_text = "Assist your fellow clockwork associates and Power Ratvar to Tear the Veil! (Use the Study Veil action to check your progress.)"
+	explanation_text = "Помогите своим соратникам по часовому делу и Силе Ратвара разорвать Вуаль! (Используйте действие Study Veil, чтобы проверить свой прогресс.)"
 	completed = TRUE
 
 /datum/objective/demand_power

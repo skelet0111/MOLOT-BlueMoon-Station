@@ -18,9 +18,14 @@ GLOBAL_LIST_EMPTY(all_clockers)
 		var/mob/living/L = M
 		if(HAS_TRAIT(L, TRAIT_MINDSHIELD))
 			return FALSE
-	if(ishuman(M) || isbrain(M) || isguardian(M) || issilicon(M) || isclockmob(M) || istype(M, /mob/living/simple_animal/drone/cogscarab)
+	if(ishuman(M) || isbrain(M) || isguardian(M) || issilicon(M) || isclockmob(M) || istype(M, /mob/living/silicon/robot/cogscarab))
 		return TRUE
 	return FALSE
+
+/datum/team/clockcult
+	name = "Clockcult"
+	var/list/objective
+	var/datum/mind/eminence
 
 /datum/antagonist/clockcult
 	name = "Clock Cultist"
@@ -78,11 +83,6 @@ GLOBAL_LIST_EMPTY(all_clockers)
 	. = ..()
 	if(. && !ignore_eligibility_check)
 		. = is_eligible_servant(new_owner.current)
-
-/datum/team/clockcult
-	name = "Clockcult"
-	var/list/objective
-	var/datum/mind/eminence
 
 /datum/game_mode
 	/// A list of all minds currently in the cult
@@ -172,7 +172,9 @@ GLOBAL_LIST_EMPTY(all_clockers)
 		to_chat(clockwork_mind.current, chat_box_yellow(messages.Join("<br>")))
 		equip_clocker(clockwork_mind.current)
 		clockwork_mind.current.faction |= "ratvar"
-		add_servant_of_ratvar(clockwork_mind.current)
+
+		var/datum/antagonist/clockcult/new_cultist = new()
+		clockwork_mind.add_antag_datum(new_cultist)
 
 		if(clockwork_mind.assigned_role == "Clown")
 			to_chat(H, "Your training has allowed you to overcome your clownish nature, allowing you to wield weapons without harming yourself.")
@@ -184,17 +186,6 @@ GLOBAL_LIST_EMPTY(all_clockers)
 	clockwork_threshold_check()
 	addtimer(CALLBACK(src, PROC_REF(clockwork_threshold_check)), 2 MINUTES) // Check again in 2 minutes for latejoiners
 	. = ..()
-
-/datum/game_mode/clockwork/post_setup()
-	clocker_objs.setup()
-
-	for(var/datum/mind/clockwork_mind in clockwork_cult)
-		SEND_SOUND(clockwork_mind.current, 'sound/ambience/antag/ClockCultAlr.ogg')
-		var/list/messages = list(CLOCK_GREETING)
-		to_chat(clockwork_mind.current, chat_box_yellow(messages.Join("<br>")))
-
-		equip_clocker(clockwork_mind.current)
-		add_servant_of_ratvar(clockwork_mind.current)
 
 /**
   * Decides at the start of the round how many conversions are needed to reveal or how many power supplied to reveal.
@@ -294,9 +285,9 @@ GLOBAL_LIST_EMPTY(all_clockers)
 			clocker_objs.setup()
 		update_clock_icons_added(clockwork_mind)
 		add_clock_actions(clockwork_mind)
-		var/datum/objective/serveclock/obj = new
-		obj.owner = clockwork_mind
-		clockwork_mind.objectives += obj
+
+		var/datum/antagonist/clockcult/new_cultist = new()
+		clockwork_mind.add_antag_datum(new_cultist)
 
 		adjust_clockwork_power(CLOCK_POWER_CONVERT)
 
@@ -315,9 +306,10 @@ GLOBAL_LIST_EMPTY(all_clockers)
 	clockwork_cult -= clockwork_mind
 	clocker.faction -= "ratvar"
 	clockwork_mind.special_role = null
-	for(var/datum/objective/serveclock/O in clockwork_mind.objectives)
-		clockwork_mind.objectives -= O
-		qdel(O)
+
+	var/datum/antagonist/clockcult/new_cultist = new()
+	clockwork_mind.remove_antag_datum(new_cultist)
+
 	for(var/datum/action/innate/clockwork/C in clocker.actions)
 		qdel(C)
 	update_clock_icons_removed(clockwork_mind)
