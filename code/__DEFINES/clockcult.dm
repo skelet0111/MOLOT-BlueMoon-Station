@@ -164,6 +164,8 @@ GLOBAL_LIST_INIT(shard_spells, list(
 #define SPECIES_GOLEM_CLOCKWORK "Латунный Голем"
 //prefs
 #define ROLE_CLOCKER			"Clockwork Cultist"
+//Трейты
+#define CLOCK_TRAIT "clockwork_cult"
 
 /proc/is_servant_of_ratvar(mob/living/M)
 	return istype(M) && M.mind && SSticker && SSticker.mode && (M.mind in SSticker.mode.clockwork_cult)

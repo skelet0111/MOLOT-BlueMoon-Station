@@ -177,6 +177,7 @@
 #include "code\__DEFINES\ai\pets.dm"
 #include "code\__DEFINES\ai\ventcrawling.dm"
 #include "code\__DEFINES\chemistry\reactions.dm"
+#include "code\__DEFINES\chat_box_defines.dm"
 #include "code\__DEFINES\color\color_priority.dm"
 #include "code\__DEFINES\color\colors.dm"
 #include "code\__DEFINES\color\lum.dm"

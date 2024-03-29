@@ -605,3 +605,18 @@
 		return chaos_levels[config_tag]
 	else
 		return chaos
+
+/datum/game_mode/proc/replace_jobbanned_player(mob/living/player, role_type)
+	var/list/mob/dead/observer/candidates = pollGhostCandidates("Do you want to play as a [role_type]?", role_type, null, role_type, 15 SECONDS)
+	var/mob/dead/observer/theghost = null
+	if(length(candidates))
+		theghost = pick(candidates)
+		to_chat(player, span_userdanger("Your mob has been taken over by a ghost! Appeal your job ban if you want to avoid this in the future!"))
+		message_admins("[key_name_admin(theghost)] has taken control of ([key_name_admin(player)]) to replace a jobbanned player.")
+		log_game("[theghost.key] has taken control of ([player.key]) to replace a jobbanned for [role_type] player.")
+		player.ghostize()
+		player.key = theghost.key
+	else
+		log_game("[player] ([player.key] has been converted into [role_type] with an active antagonist jobban for said role since no ghost has volunteered to take player's place.")
+		message_admins("[player] ([player.key] has been converted into [role_type] with an active antagonist jobban for said role since no ghost has volunteered to take [player.p_their()] place.")
+		to_chat(player, span_dangerbigger("You have been converted into [role_type] with an active jobban. Any further violations of the rules on your part are likely to result in a permanent ban."))
