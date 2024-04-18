@@ -270,6 +270,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 "neckfire_color" = "ffffff"
 )
 
+	var/list/custom_emote_panel = list() //user custom emote panel
 
 	var/custom_speech_verb = "default" //if your say_mod is to be something other than your races
 	var/custom_tongue = "default" //if your tongue is to be something other than your races
@@ -4196,6 +4197,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						random_character()
 						real_name = random_unique_name(gender)
 						save_character()
+					if(user.client?.prefs) //custom emote panel is attached to the character
+						var/list/payload = user.client.prefs.custom_emote_panel
+						user.client.tgui_panel?.window.send_message("emotes/setList", payload)
 
 				if("tab")
 					if(href_list["tab"])
