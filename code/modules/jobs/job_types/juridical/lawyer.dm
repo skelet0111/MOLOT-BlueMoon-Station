@@ -54,8 +54,9 @@
 	chameleon_extras = /obj/item/stamp/law
 
 	backpack_contents = list(/obj/item/stamp/law=1, /obj/item/gun/energy/civilian=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
+  
 	box = /obj/item/storage/box/survival/command
-	accessory = /obj/item/clothing/accessory/permit/staff
+	accessory = /obj/item/clothing/accessory/permit/special/lawyer
 
 	implants = list(/obj/item/implant/mindshield)
 
@@ -80,6 +81,8 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
 	box = /obj/item/storage/box/survival/syndie
 	pda_slot = ITEM_SLOT_BELT
+	accessory = /obj/item/clothing/accessory/permit/special/lawyer
+
 	backpack_contents = list(/obj/item/gun/energy/e_gun=1, /obj/item/stamp/law=1, /obj/item/syndicate_uplink=1)
 
 /datum/outfit/job/lawyer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
