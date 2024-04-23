@@ -4152,6 +4152,7 @@
 #include "modular_bluemoon\code\modules\client\loadout\eyes.dm"
 #include "modular_bluemoon\code\modules\client\loadout\shoes.dm"
 #include "modular_bluemoon\code\modules\client\loadout\uniform.dm"
+#include "modular_bluemoon\code\modules\clothing\fancy_maid_costume.dm"
 #include "modular_bluemoon\code\modules\clothing\suits\eyes.dm"
 #include "modular_bluemoon\code\modules\clothing\suits\miscellaneous.dm"
 #include "modular_bluemoon\code\modules\clothing\suits\poly_cape.dm"
