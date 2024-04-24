@@ -199,7 +199,7 @@
 	failure = TRUE
 	mod.wearer.visible_message("<span class='warning'>Внутри [mod], который носит [mod.wearer], что-то еле слышно щёлкает...</span>", "<span class='boldwarning'>Вы слышите тихий звук медленно распрямляющихся пружин из своего [mod]...</span>")
 	playsound(src, 'sound/items/modsuit/springlock.ogg', 75, TRUE)
-	addtimer(CALLBACK(src, PROC_REF(snap_shut), rand(3 SECONDS, 5 SECONDS)))
+	addtimer(CALLBACK(src, PROC_REF(snap_shut)), rand(3 SECONDS, 5 SECONDS))
 
 ///Result of springlocks failure, gives award, flashes red screen, plays a sound and launches snap_death_process proc
 /obj/item/mod/module/springlock/proc/snap_shut(silenced = FALSE)

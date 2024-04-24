@@ -126,4 +126,4 @@ In all, this is a lot like the monkey code. /N
 	return FALSE
 
 /mob/living/carbon/alien/acid_act(acidpwr, acid_volume)
-	return 0//aliens are immune to acid.
+	return FALSE //aliens are immune to acid.

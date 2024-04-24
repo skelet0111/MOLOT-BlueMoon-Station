@@ -1133,22 +1133,22 @@
 	switch(charge_type)
 		if(ADV_ACTION_TYPE_RECHARGE)
 			if(charge_counter == 0)
-				return 0
+				return FALSE
 			if(charge_max == 0)
-				return 1
+				return TRUE
 			return charge_counter / charge_max
 		if(ADV_ACTION_TYPE_TOGGLE_RECHARGE)
 			if(action_ready)
-				return 1
+				return TRUE
 			if(charge_counter == 0)
-				return 0
+				return FALSE
 			if(charge_max == 0)
-				return 1
+				return TRUE
 			return charge_counter / charge_max
 		if(ADV_ACTION_TYPE_CHARGES)
 			if(charge_counter)
-				return 1
-			return 0
+				return TRUE
+			return FALSE
 
 /datum/action/item_action/advanced/proc/apply_unavailable_effect()
 	var/progress = get_availability_percentage()
