@@ -20,7 +20,7 @@
 	button_icon_state = "power_feed"
 	var/total_uses = 1
 	bloodcost = 50
-	cooldown = 50
+	cooldown_time = 50
 	bloodsucker_can_buy = FALSE // BLUEMOON EDIT - было TRUE
 
 

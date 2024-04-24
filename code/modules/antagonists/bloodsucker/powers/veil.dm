@@ -4,7 +4,7 @@
 	desc = "Disguise yourself in the illusion of another identity."
 	button_icon_state = "power_veil"
 	bloodcost = 35
-	cooldown = 150
+	cooldown_time = 150
 	amToggle = TRUE
 	bloodsucker_can_buy = TRUE
 	warn_constant_cost = TRUE

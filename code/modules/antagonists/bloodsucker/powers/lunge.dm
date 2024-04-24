@@ -5,7 +5,7 @@
 	desc = "Prepare the strenght to grapple your prey."
 	button_icon_state = "power_lunge"
 	bloodcost = 20
-	cooldown = 70
+	cooldown_time = 70
 	bloodsucker_can_buy = TRUE
 	warn_constant_cost = TRUE
 	amToggle = TRUE

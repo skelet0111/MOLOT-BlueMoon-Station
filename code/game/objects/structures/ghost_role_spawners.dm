@@ -588,7 +588,7 @@
 	short_desc = "You are a crewmember aboard the syndicate flagship: the SBC Starfury."
 	flavour_text = "Your job is to follow your captain's orders, maintain the ship, and keep the engine running. If you are not familiar with how the supermatter engine functions: do not attempt to start it."
 	important_info = "The armory is not a candy store, and your role is not to assault the station directly, leave that work to the assault operatives."
-	outfit = /datum/outfit/syndicate_empty/SBC
+	outfit = /datum/outfit/syndicate_empty/battlecruiser
 	can_load_appearance = TRUE
 
 /datum/outfit/syndicate_empty/battlecruiser

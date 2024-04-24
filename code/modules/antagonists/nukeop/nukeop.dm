@@ -35,11 +35,10 @@
 	REMOVE_TRAIT(owner, TRAIT_DISK_VERIFIER, NUKEOP_TRAIT)
 
 /datum/antagonist/nukeop/proc/equip_op()
+	var/mob/living/carbon/human/H = owner.current
 	title = pick("Царь", "Босс", "Лидер", "Шеф", "Король", "Пингвин", "Директор", "Лорд", "Оверлорд", "Глав", "Альфа", "Первый", "Bождь", "Бонза", "Айко", "Русич", "Сек", "Мёртвый")
 	if(!ishuman(owner.current))
 		return
-	var/mob/living/carbon/human/H = owner.current
-
 	if(!istype(H))
 		return
 	if(GLOB.master_mode == "Extended")
@@ -49,8 +48,9 @@
 		H.equipOutfit(nukeop_outfit)
 
 	if(name == "Lone Operative")
-		H.can_load_appearance = TRUE
-		H.checkloadappearance()
+		var/load_character = alert(H.client, "Желаете загрузить текущего своего выбранного персонажа?", "Играть своим персонажем!", "Да", "Нет")
+		if(load_character == "Да")
+			H.load_client_appearance(H.client)
 
 	give_alias()
 

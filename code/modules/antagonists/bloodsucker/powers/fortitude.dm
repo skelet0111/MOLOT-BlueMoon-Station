@@ -7,7 +7,7 @@
 	desc = "Withstand egregious physical wounds and walk away from attacks that would stun, pierce, and dismember lesser beings. You cannot run while active."
 	button_icon_state = "power_fortitude"
 	bloodcost = 60
-	cooldown = 200
+	cooldown_time = 200
 	bloodsucker_can_buy = TRUE
 	amToggle = TRUE
 	warn_constant_cost = TRUE
@@ -49,7 +49,7 @@
 		sleep(20) // Check every few ticks that we haven't disabled this power
 	// Return to Running (if you were before)
 
-/datum/action/bloodsucker/fortitude/DeactivatePower(mob/living/user = owner, mob/living/target)
+/datum/action/cooldown/bloodsucker/fortitude/DeactivatePower(mob/living/user = owner, mob/living/target)
 	..()
 	// Restore Traits & Effects
 	REMOVE_TRAIT(user, TRAIT_PIERCEIMMUNE, "fortitude")

@@ -5,7 +5,7 @@
 	desc = "Snap restraints with ease, or deal terrible damage with your bare hands."
 	button_icon_state = "power_strength"
 	bloodcost = 25
-	cooldown = 180
+	cooldown_time = 180
 	target_range = 1
 	power_activates_immediately = TRUE
 	message_Trigger = ""//"Whom will you subvert to your will?"

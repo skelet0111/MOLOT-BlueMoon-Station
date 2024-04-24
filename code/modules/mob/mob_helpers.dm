@@ -603,54 +603,25 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 		return
 	return TRUE
 
-/mob/proc/checkloadappearance()
-	var/mob/living/carbon/human/H = src
-	//This will be where the person gets to select their appearance instead of the random character
-	if (H.can_load_appearance == TRUE)
-		SEND_SOUND(H, 'sound/misc/server-ready.ogg')
-		to_chat(H, "<span class='boldannounce'>Вам разрешено использовать своего персонажа.</span>")
-		if(alert(H, "Желаете загрузить текущего своего выбранного персонажа?", "Warning", "Yes", "No") == "Yes")
-			if(alert(H, "Вам разрешено использовать персонажей, которые ещё не были в раунде. Вы понимаете это?", "Warning", "Yes", "No") == "Yes")
-				H.client.prefs.copy_to(H)
-				H.real_name = H.client.prefs.real_name
-				H.mind.name = H.real_name //Makes sure to change their mind name to their real name.
-				SSquirks.AssignQuirks(H, H.client, TRUE, FALSE, SSjob.GetJob(H.job), FALSE)//This Assigns the selected character's quirks
-				SSlanguage.AssignLanguage(H, H.client)
-				H.dna.update_dna_identity() //This makes sure their DNA is updated.
-				var/obj/item/card/id/id_card = H.get_idcard() //Time to change their ID card as well if they have one.
-				if (id_card != null)
-					id_card.update_label(H.real_name, id_card.assignment)
-					id_card.registered_name = H.real_name
-				ADD_TRAIT(H,TRAIT_EXEMPT_HEALTH_EVENTS,GHOSTROLE_TRAIT) //Makes sure they are exempt from health events.
-				ADD_TRAIT(H, TRAIT_NO_MIDROUND_ANTAG, GHOSTROLE_TRAIT)
-				SEND_SOUND(H, 'sound/magic/charge.ogg') //Fluff
-				to_chat(H, "<span class='boldannounce'>Ваша голова немного побаливает.</span>")
-				log_game("[key_name(H)] has loaded their default appearance for a ghost role.")
-				message_admins("[ADMIN_LOOKUPFLW(H)] has loaded their default appearance for a ghost role.")
-				return
-
 /mob/living/carbon/human/proc/load_client_appearance(client/client)
 	if(!client)
 		client = src.client
 	var/old_name = real_name
 	SEND_SOUND(src, 'sound/misc/server-ready.ogg')
-	to_chat(H, "<span class='boldannounce'>Вам разрешено использовать своего персонажа.</span>")
-		if(alert(H, "Желаете загрузить текущего своего выбранного персонажа?", "Warning", "Yes", "No") == "Yes")
-			if(alert(H, "Вам разрешено использовать персонажей, которые ещё не были в раунде. Вы понимаете это?", "Warning", "Yes", "No") == "Yes")
-				client.prefs.copy_to(src)
-				SSquirks.AssignQuirks(src, client, TRUE, FALSE, job, FALSE)//This Assigns the selected character's quirks
-				var/obj/item/card/id/id_card = get_idcard() //Time to change their ID card as well if they have one.
-				if(id_card)
-					id_card.registered_name = real_name
-					id_card.update_label(real_name, id_card.assignment)
-				fully_replace_character_name(old_name, real_name)
-				ADD_TRAIT(src, TRAIT_EXEMPT_HEALTH_EVENTS, GHOSTROLE_TRAIT) //Makes sure they are exempt from health events.
-				ADD_TRAIT(src, TRAIT_NO_MIDROUND_ANTAG, GHOSTROLE_TRAIT)
-				SEND_SOUND(src, 'sound/magic/charge.ogg') //Fluff
-				to_chat(src, "<span class='boldannounce'>Ваша голова немного побаливает.</span>")
-				log_game("[key_name(src)] has loaded their default appearance for a ghost role.")
-				message_admins("[ADMIN_LOOKUPFLW(src)] has loaded their default appearance for a ghost role.")
-				return
+	client.prefs.copy_to(src)
+	SSquirks.AssignQuirks(src, client, TRUE, FALSE, job, FALSE)//This Assigns the selected character's quirks
+	var/obj/item/card/id/id_card = get_idcard() //Time to change their ID card as well if they have one.
+	if(id_card)
+		id_card.registered_name = real_name
+		id_card.update_label(real_name, id_card.assignment)
+	fully_replace_character_name(old_name, real_name)
+	ADD_TRAIT(src, TRAIT_EXEMPT_HEALTH_EVENTS, GHOSTROLE_TRAIT) //Makes sure they are exempt from health events.
+	ADD_TRAIT(src, TRAIT_NO_MIDROUND_ANTAG, GHOSTROLE_TRAIT)
+	SEND_SOUND(src, 'sound/magic/charge.ogg') //Fluff
+	to_chat(src, "<span class='boldannounce'>Ваша голова немного побаливает.</span>")
+	log_game("[key_name(src)] has loaded their default appearance for a ghost role.")
+	message_admins("[ADMIN_LOOKUPFLW(src)] has loaded their default appearance for a ghost role.")
+	return
 
 ///Returns a mob's real name between brackets. Useful when you want to display a mob's name alongside their real name
 /mob/proc/get_realname_string()

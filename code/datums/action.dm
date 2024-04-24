@@ -28,6 +28,8 @@
 	/// full key we are bound to
 	var/full_key
 
+	var/atom/movable/screen/movable/action_button/button = null
+
 /datum/action/New(Target)
 	link_to(Target)
 
@@ -143,16 +145,11 @@
 
 		ApplyIcon(button, force)
 
-	button.update_keybind_maptext(full_key)
-
 	if(!IsAvailable(TRUE))
 		button.color = transparent_when_unavailable ? rgb(128,0,0,128) : rgb(128,0,0)
 	else
 		button.color = rgb(255,255,255,255)
 		return TRUE
-
-/datum/action/proc/update_button_status(atom/movable/screen/movable/action_button/current_button, force = FALSE)
-	current_button.update_keybind_maptext(full_key)
 
 /datum/action/proc/ApplyIcon(atom/movable/screen/movable/action_button/current_button, force = FALSE)
 	if(icon_icon && button_icon_state && ((current_button.button_icon_state != button_icon_state) || force))
@@ -1048,7 +1045,7 @@
 	icon_state_disabled = background_icon_state
 	last_use_time = world.time
 	if(charge_type == ADV_ACTION_TYPE_CHARGES)
-		UpdateButtonIcon()
+		UpdateButton()
 		add_charges_overlay()
 	if(starts_charged)
 		charge_counter = charge_max
@@ -1056,12 +1053,12 @@
 		start_recharge()
 
 /datum/action/item_action/advanced/proc/start_recharge()
-	UpdateButtonIcon()
+	UpdateButton()
 	START_PROCESSING(SSfastprocess, src)
 
 /datum/action/item_action/advanced/process()
 	charge_counter += 2
-	UpdateButtonIcon()
+	UpdateButton()
 	if(charge_counter < charge_max)
 		return
 	STOP_PROCESSING(SSfastprocess, src)
@@ -1078,7 +1075,7 @@
 			charge_counter = charge_max
 		if(ADV_ACTION_TYPE_CHARGES)
 			charge_counter++
-			UpdateButtonIcon()
+			UpdateButton()
 			add_charges_overlay()
 
 /datum/action/item_action/advanced/proc/use_action()
@@ -1097,7 +1094,7 @@
 		if(ADV_ACTION_TYPE_CHARGES)
 			charge_counter--
 			last_use_time = world.time
-			UpdateButtonIcon()
+			UpdateButton()
 			add_charges_overlay()
 
 /* Basic availability checks in this proc.
@@ -1191,7 +1188,7 @@
 		background_icon_state = "[background_icon_state]_on"
 	else
 		background_icon_state = icon_state_disabled
-	UpdateButtonIcon()
+	UpdateButton()
 
 //Ninja action type
 ///datum/action/item_action/advanced/ninja
@@ -1223,7 +1220,7 @@
 //		background_icon_state = icon_state_active
 //	else
 //		background_icon_state = icon_state_disabled
-//	UpdateButtonIcon()
+//	UpdateButton()
 
 /datum/action/proc/keydown(mob/source, key, client/client, full_key)
 	SIGNAL_HANDLER

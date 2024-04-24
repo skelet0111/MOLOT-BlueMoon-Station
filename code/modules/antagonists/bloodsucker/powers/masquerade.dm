@@ -21,7 +21,7 @@
 	desc = "Имитировать жизненные особенности бытия смертных, чтобы скрыть, каким монстром на самом деле являешься."
 	button_icon_state = "power_human"
 	bloodcost = 20 // BLUEMOON EDIT - было 50
-	cooldown = 200
+	cooldown_time = 200
 	amToggle = TRUE
 	bloodsucker_can_buy = TRUE
 	warn_constant_cost = TRUE

@@ -297,7 +297,7 @@
             SEND_SOUND(owner, sound('sound/mecha/imag_enh_syndicate.ogg',volume=50))
         else
             owner.client.view_size.resetToDefault()
-        UpdateButtonIcon()
+        UpdateButton()
 
 ///
 
@@ -322,7 +322,7 @@
             SEND_SOUND(owner, sound('sound/mecha/imag_enh_russian.ogg',volume=50))
         else
             owner.client.view_size.resetToDefault()
-        UpdateButtonIcon()
+        UpdateButton()
 
 //
 
@@ -347,6 +347,6 @@
             SEND_SOUND(owner, sound('modular_bluemoon/kovac_shitcode/sound/mecha/imag_enh_sol.ogg',volume=50))
         else
             owner.client.view_size.resetToDefault()
-        UpdateButtonIcon()
+        UpdateButton()
 
 ///

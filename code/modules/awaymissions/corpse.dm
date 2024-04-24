@@ -62,7 +62,7 @@
 		return
 	var/requested_char = FALSE
 	if(can_load_appearance == TRUE && ispath(mob_type, /mob/living/carbon/human)) // Can't just use if(can_load_appearance), 2 has a different behavior
-		switch(alert(user, "Load currently selected slot?", "Play as your character!", "Yes", "No", "Actually nevermind"))
+		switch(alert(user, "Желаете загрузить текущего своего выбранного персонажа?", "Play as your character!", "Yes", "No", "Actually nevermind"))
 			if("Yes")
 				requested_char = TRUE
 			if("Actually nevermind")
@@ -164,7 +164,6 @@
 				SSjob.equip_loadout(null, M)
 				SSjob.post_equip_loadout(null, M)
 		MM.name = M.real_name
-		M.checkloadappearance()
 		to_chat(M,"<span class='boldwarning'>В Эксту посещать станцию допустимо, в Динамику запрещено!</span>")
 		special_post_appearance(M, name) // BLUEMOON ADD
 	if(uses > 0)
@@ -304,11 +303,6 @@
 			W.assignment = id_job
 		W.registered_name = H.real_name
 		W.update_label()
-
-	if (can_load_appearance)
-		H.can_load_appearance = TRUE
-	else
-		H.can_load_appearance = FALSE
 
 //Instant version - use when spawning corpses during runtime
 /obj/effect/mob_spawn/human/corpse

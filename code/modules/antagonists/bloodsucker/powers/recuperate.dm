@@ -4,7 +4,7 @@
 	button_icon_state = "power_recup"
 	amToggle = TRUE
 	bloodcost = 15
-	cooldown = 200
+	cooldown_time = 200
 
 /datum/action/cooldown/bloodsucker/vassal/recuperate/CheckCanUse(display_error)
 	. = ..()

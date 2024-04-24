@@ -100,7 +100,10 @@
 	M.mind.grab_ghost()
 	to_chat(M, "<b>Вы вернулись из могилы и обрели новое тело. Слава Некрополису!</b>")
 	playsound(get_turf(M),'sound/magic/exit_blood.ogg', 100, TRUE)
-	M.checkloadappearance()
+
+	var/load_character = alert(M.client, "Желаете загрузить текущего своего выбранного персонажа?", "Играть своим персонажем!", "Да", "Нет")
+	if(load_character == "Да")
+		M.load_client_appearance(M.client)
 
 /obj/structure/lavaland/ash_walker/proc/spawn_mob()
 	if(meat_counter >= ASH_WALKER_SPAWN_THRESHOLD)

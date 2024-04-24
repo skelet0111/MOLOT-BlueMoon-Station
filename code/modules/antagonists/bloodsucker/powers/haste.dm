@@ -8,7 +8,7 @@
 	desc = "Dash somewhere with supernatural speed. Those nearby may be knocked away, stunned, or left empty-handed."
 	button_icon_state = "power_speed"
 	bloodcost = 14
-	cooldown = 160
+	cooldown_time = 160
 	target_range = 15
 	power_activates_immediately = TRUE
 	message_Trigger = ""//"Whom will you subvert to your will?"
