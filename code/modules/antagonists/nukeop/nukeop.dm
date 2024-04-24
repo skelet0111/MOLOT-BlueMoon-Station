@@ -49,7 +49,7 @@
 		H.equipOutfit(nukeop_outfit)
 
 	if(name == "Lone Operative")
-		H.canloadappearance = TRUE
+		H.can_load_appearance = TRUE
 		H.checkloadappearance()
 
 	give_alias()

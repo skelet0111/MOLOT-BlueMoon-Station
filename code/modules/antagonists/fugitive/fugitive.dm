@@ -20,7 +20,7 @@
 /datum/antagonist/fugitive/on_gain()
 	forge_objectives()
 	var/mob/living/carbon/human/H = owner.current
-	H.canloadappearance = TRUE
+	H.can_load_appearance = TRUE
 	H.checkloadappearance()
 	. = ..()
 

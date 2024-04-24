@@ -130,7 +130,7 @@
 
 	owner.current.mind.assigned_role = ROLE_NINJA
 	owner.current.mind.special_role = ROLE_NINJA
-	owner.current.canloadappearance = TRUE
+	owner.current.can_load_appearance = TRUE
 	owner.current.checkloadappearance()
 	return ..()
 
