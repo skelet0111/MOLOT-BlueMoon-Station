@@ -174,7 +174,7 @@
 		to_chat(quirk_holder, span_love("[pick(trigger_phrases)]"))
 
 	reminder_trigger = rand(3000, 9000)
-	reminder_timer = addtimer(CALLBACK(src, .proc/reminder), reminder_trigger, TIMER_STOPPABLE)
+	reminder_timer = addtimer(CALLBACK(src, PROC_REF(reminder)), reminder_trigger, TIMER_STOPPABLE)
 
 	// Add active status trait
 	ADD_TRAIT(quirk_holder, TRAIT_DUMB_CUM_CRAVE, DUMB_CUM_TRAIT)
@@ -191,7 +191,7 @@
 	deltimer(reminder_timer)
 	reminder_timer = null
 	reminder_trigger = rand(3000, 9000)
-	reminder_timer = addtimer(CALLBACK(src, .proc/reminder), reminder_trigger, TIMER_STOPPABLE)
+	reminder_timer = addtimer(CALLBACK(src, PROC_REF(reminder)), reminder_trigger, TIMER_STOPPABLE)
 
 /datum/quirk/dumb4cum/proc/uncrave(print_text = FALSE)
 	// Remove active status trait
@@ -288,7 +288,7 @@
 
 /datum/quirk/well_trained/add()
 	. = ..()
-	RegisterSignal(quirk_holder, COMSIG_PARENT_EXAMINE, .proc/on_examine_holder)
+	RegisterSignal(quirk_holder, COMSIG_PARENT_EXAMINE, PROC_REF(on_examine_holder))
 
 /datum/quirk/well_trained/remove()
 	. = ..()

@@ -231,7 +231,7 @@
 
 /datum/quirk/russian/add()
 	// Add examine text.
-	RegisterSignal(quirk_holder, COMSIG_PARENT_EXAMINE, .proc/quirk_examine_russian)
+	RegisterSignal(quirk_holder, COMSIG_PARENT_EXAMINE, PROC_REF(quirk_examine_russian))
 
 /datum/quirk/russian/remove()
 	// Remove examine text

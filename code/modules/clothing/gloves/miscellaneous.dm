@@ -267,7 +267,7 @@
 	var/nextnanitesloop
 	var/list/not_allowed_list = list("Captain", "Blueshield", "Head of Security", "Warden", "Detective", "Security Officer", "Peacekeeper")
 
-/obj/item/clothing/gloves/fingerless/pugilist/mauler/Initialize(mapload)	
+/obj/item/clothing/gloves/fingerless/pugilist/mauler/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, GLOVE_TRAIT)
 
@@ -289,7 +289,7 @@
 			return
 		use_mauls(user, TRUE)
 		ADD_TRAIT(user, TRAIT_NOSOFTCRIT, GLOVE_TRAIT)
-		RegisterSignal(user, COMSIG_LIVING_COMBAT_ENABLED, .proc/injectnanites)
+		RegisterSignal(user, COMSIG_LIVING_COMBAT_ENABLED, PROC_REF(injectnanites))
 
 /obj/item/clothing/gloves/fingerless/pugilist/mauler/dropped(mob/user)
 	. = ..()
@@ -299,7 +299,7 @@
 			return
 		use_mauls(user, FALSE)
 	REMOVE_TRAIT(user, TRAIT_NOSOFTCRIT, GLOVE_TRAIT)
-	UnregisterSignal(user, COMSIG_LIVING_COMBAT_ENABLED, .proc/injectnanites)
+	UnregisterSignal(user, COMSIG_LIVING_COMBAT_ENABLED, PROC_REF(injectnanites))
 
 
 /obj/item/clothing/gloves/fingerless/pugilist/mauler/proc/use_mauls(mob/user, maul)

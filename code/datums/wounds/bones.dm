@@ -444,7 +444,7 @@
 
 	user.visible_message("<span class='danger'>[user] пытаетесь нанести [I] на конечность - [limb.ru_name] - персонажа [victim]...</span>", "<span class='warning'>Вы пытаетесь нанести [I] на [user == victim ? "вашу конечность - [limb.ru_name]" : "конечность - [limb.ru_name] - персонажа [victim]"].</span>")
 
-	if(!do_after(user, base_treat_time * 1.5 * (user == victim ? 1.5 : 1), target = victim, extra_checks=CALLBACK(src, .proc/still_exists)))
+	if(!do_after(user, base_treat_time * 1.5 * (user == victim ? 1.5 : 1), target = victim, extra_checks=CALLBACK(src, PROC_REF(still_exists))))
 		return
 
 	I.use(1)
