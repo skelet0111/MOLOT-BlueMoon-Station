@@ -218,7 +218,7 @@
 	user.reveal(reveal)
 	user.stun(stun)
 	if(action)
-		action.UpdateButtonIcon()
+		action.UpdateButtons()
 	return TRUE
 
 //Overload Light: Breaks a light that's online and sends out lightning bolts to all nearby people.
@@ -237,7 +237,7 @@
 /obj/effect/proc_holder/spell/aoe_turf/qareen/overload/cast(list/targets, mob/living/simple_animal/qareen/user = usr)
 	if(attempt_cast(user))
 		for(var/turf/T in targets)
-			INVOKE_ASYNC(src, .proc/overload, T, user)
+			INVOKE_ASYNC(src, PROC_REF(overload), T, user)
 
 /obj/effect/proc_holder/spell/aoe_turf/qareen/overload/proc/overload(turf/T, mob/user)
 	for(var/obj/machinery/light/L in T)
@@ -250,7 +250,7 @@
 		s.set_up(4, 0, L)
 		s.start()
 		new /obj/effect/temp_visual/revenant(get_turf(L))
-		addtimer(CALLBACK(src, .proc/overload_shock, L, user), 20)
+		addtimer(CALLBACK(src, PROC_REF(overload_shock), L, user), 20)
 
 /obj/effect/proc_holder/spell/aoe_turf/qareen/overload/proc/overload_shock(obj/machinery/light/L, mob/user)
 	if(!L.on) //wait, wait, don't shock me

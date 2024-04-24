@@ -6,7 +6,7 @@
 
 /datum/quirk/social_anxiety/add()
 	. = ..()
-	RegisterSignal(quirk_holder, COMSIG_MOB_SAY, .proc/handle_speech)
+	RegisterSignal(quirk_holder, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 
 /datum/quirk/social_anxiety/remove()
 	. = ..()
@@ -150,7 +150,7 @@
 /datum/quirk/dumb4cum/add()
 	// Set timer
 	timer_trigger = rand(9000, 18000)
-	timer = addtimer(CALLBACK(src, .proc/crave), timer_trigger, TIMER_STOPPABLE)
+	timer = addtimer(CALLBACK(src, PROC_REF(crave)), timer_trigger, TIMER_STOPPABLE)
 
 /datum/quirk/dumb4cum/remove()
 	// Remove status trait
@@ -211,7 +211,7 @@
 	reminder_timer = null
 	timer_trigger = rand(9000, 18000)
 	// Add new timer
-	timer = addtimer(CALLBACK(src, .proc/crave), timer_trigger, TIMER_STOPPABLE)
+	timer = addtimer(CALLBACK(src, PROC_REF(crave)), timer_trigger, TIMER_STOPPABLE)
 
 	if(print_text)
 		to_chat(quirk_holder, span_love("[pick(uncrave_phrases)]"))

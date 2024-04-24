@@ -2,7 +2,7 @@
 
 
 
-/datum/action/bloodsucker/fortitude
+/datum/action/cooldown/bloodsucker/fortitude
 	name = "Fortitude"
 	desc = "Withstand egregious physical wounds and walk away from attacks that would stun, pierce, and dismember lesser beings. You cannot run while active."
 	button_icon_state = "power_fortitude"
@@ -15,7 +15,7 @@
 
 	var/fortitude_resist // So we can raise and lower your brute resist based on what your level_current WAS.
 
-/datum/action/bloodsucker/fortitude/ActivatePower()
+/datum/action/cooldown/bloodsucker/fortitude/ActivatePower()
 	var/datum/antagonist/bloodsucker/B = owner.mind.has_antag_datum(ANTAG_DATUM_BLOODSUCKER)
 	var/mob/living/user = owner
 //	to_chat(user, "<span class='notice'>Your flesh, skin, and muscles become as steel.</span>") // BLUEMOON REMOVAL - передвинуто ниже
