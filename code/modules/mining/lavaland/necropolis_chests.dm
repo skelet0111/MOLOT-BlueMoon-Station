@@ -1175,7 +1175,7 @@
 	icon_state = "vial"
 
 /obj/item/mayhem/attack_self(mob/user)
-	for(var/mob/living/carbon/human/H in range(7,user))
+	for(var/mob/living/carbon/human/H in range(21,user))
 		var/obj/effect/mine/pickup/bloodbath/B = new(H)
 		INVOKE_ASYNC(B, TYPE_PROC_REF(/obj/effect/mine/pickup/bloodbath, mineEffect), H)
 	to_chat(user, "<span class='notice'>You shatter the bottle!</span>")
