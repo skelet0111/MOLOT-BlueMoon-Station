@@ -119,7 +119,7 @@
 	say("[src] beeps, \"[criminal]: [notifytext]\"")
 
 /obj/machinery/door_timer/Initialize()
-	..()
+	. = ..()
 
 	Radio = new/obj/item/radio(src)
 	if(radio_key)
