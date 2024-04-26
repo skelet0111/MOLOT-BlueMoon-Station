@@ -161,7 +161,8 @@
 )
 	. = ..()
 
-	RegisterSignal(escape_menu.client, COMSIG_CLIENT_MOB_LOGIN, PROC_REF(on_client_mob_login))
+	if(escape_menu?.client)
+		RegisterSignal(escape_menu.client, COMSIG_CLIENT_MOB_LOGIN, PROC_REF(on_client_mob_login))
 
 /atom/movable/screen/escape_menu/home_button/leave_body/enabled()
 	if (!..())

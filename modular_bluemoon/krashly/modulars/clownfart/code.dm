@@ -18,5 +18,5 @@
 	sound_vol = 30
 
 /obj/effect/gibspawner/confetti/New()
-	gibdirections = list(GLOB.alldirs, list())
+	gibdirections = list(GLOB.alldirs, GLOB.alldirs, GLOB.alldirs, list())
 	..()
