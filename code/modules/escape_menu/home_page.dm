@@ -39,6 +39,16 @@
 		)
 	)
 
+	page_holder.give_screen_object(
+		new /atom/movable/screen/escape_menu/home_button/leave_body(
+			null,
+			src,
+			"Покинуть Игру",
+			/* offset = */ 4,
+			CALLBACK(src, PROC_REF(home_close_game)),
+		)
+	)
+
 /datum/escape_menu/proc/home_resume()
 	qdel(src)
 
@@ -48,6 +58,10 @@
 
 /datum/escape_menu/proc/home_stop_sounds()
 	client?.tgui_panel?.stop_music()
+	qdel(src)
+
+/datum/escape_menu/proc/home_close_game()
+	qdel(client)
 	qdel(src)
 
 /atom/movable/screen/escape_menu/home_button
@@ -153,7 +167,7 @@
 	if (!..())
 		return FALSE
 
-	return isliving(escape_menu.client?.mob)
+	return isliving(escape_menu?.client?.mob)
 
 /atom/movable/screen/escape_menu/home_button/leave_body/proc/on_client_mob_login()
 	SIGNAL_HANDLER

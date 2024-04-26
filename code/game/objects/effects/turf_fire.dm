@@ -78,7 +78,7 @@
 	if(!isturf(loc)) // guh
 		return INITIALIZE_HINT_QDEL
 	open_turf = get_turf(src)
-	if(isgroundlessturf(open_turf))
+	if(isgroundlessturf(open_turf) || !istype(open_turf))
 		return INITIALIZE_HINT_QDEL
 	if(open_turf.turf_fire)
 		return INITIALIZE_HINT_QDEL
