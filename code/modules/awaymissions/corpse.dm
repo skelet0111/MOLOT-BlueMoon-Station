@@ -131,8 +131,9 @@
 
 	if(ckey)
 		M.ckey = ckey
-		var/mob/living/carbon/human/H = M
-		H.load_client_appearance(H.client)
+		if(load_character)
+			var/mob/living/carbon/human/H = M
+			H.load_client_appearance(H.client)
 		//splurt change
 		if(jobban_isbanned(M, "pacifist")) //do you love repeat code? i sure do
 			to_chat(M, "<span class='cult'>You are pacification banned. Pacifist has been force applied.</span>")
