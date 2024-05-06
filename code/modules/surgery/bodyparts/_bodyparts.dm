@@ -14,6 +14,7 @@
 	var/needs_processing = FALSE
 	var/ru_name = ""
 	var/ru_name_v = ""
+	var/ru_name_y = ""
 	var/ru_name_capital = ""
 
 	var/body_zone //BODY_ZONE_CHEST, BODY_ZONE_L_ARM, etc , used for def_zone
