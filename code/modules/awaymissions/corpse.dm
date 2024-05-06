@@ -131,7 +131,7 @@
 
 	if(ckey)
 		M.ckey = ckey
-		if(load_character)
+		if(ishuman(M) && load_character)
 			var/mob/living/carbon/human/H = M
 			H.load_client_appearance(H.client)
 		//splurt change
