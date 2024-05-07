@@ -69,8 +69,6 @@
 		return
 	if(QDELETED(src) || QDELETED(user))
 		return
-	if(uses > 0)
-		uses--
 	if(latejoinercalling)
 		var/mob/dead/new_player/NP = user
 		if(istype(NP))
@@ -167,6 +165,8 @@
 		MM.name = M.real_name
 		to_chat(M,"<span class='boldwarning'>В Эксту посещать станцию допустимо, в Динамику запрещено!</span>")
 		special_post_appearance(M, name) // BLUEMOON ADD
+	if(uses > 0)
+		uses--
 	if(!permanent && !uses)
 		qdel(src)
 
