@@ -3700,9 +3700,7 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome1{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome1)
 "anq" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -4269,9 +4267,7 @@
 /obj/effect/landmark/thunderdome/one,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
-/area/tdome/tdome2{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome2)
 "arU" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -4406,18 +4402,14 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome2{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome2)
 "asN" = (
 /obj/effect/landmark/thunderdome/one,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome2{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome2)
 "asO" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -4431,9 +4423,7 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome2{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome2)
 "asS" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -4645,9 +4635,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome2{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome2)
 "auB" = (
 /obj/structure/lattice,
 /obj/structure/lattice,
@@ -4770,18 +4758,14 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome1{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome1)
 "avK" = (
 /obj/effect/landmark/thunderdome/two,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome1{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome1)
 "avP" = (
 /obj/structure/sign/flag/skull,
 /turf/closed/indestructible/riveted,
@@ -4807,9 +4791,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome2{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome2)
 "avW" = (
 /obj/machinery/door/poddoor{
 	id = "thunderdomegen1";
@@ -4912,18 +4894,14 @@
 /obj/effect/landmark/thunderdome/two,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
-/area/tdome/tdome1{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome1)
 "awD" = (
 /obj/effect/landmark/thunderdome/two,
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome1{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome1)
 "awG" = (
 /obj/structure/sign/flag/ger_sol,
 /turf/closed/indestructible/riveted,
@@ -4938,9 +4916,7 @@
 /obj/effect/landmark/thunderdome/one,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
-/area/tdome/tdome2{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome2)
 "awM" = (
 /obj/structure/chair/wood/wings{
 	dir = 8
@@ -8628,9 +8604,7 @@
 	req_access_txt = "19"
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome2{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome2)
 "aWd" = (
 /obj/machinery/deepfryer,
 /turf/open/floor/plasteel/cafeteria,
@@ -9471,9 +9445,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome1{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome1)
 "aZY" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Kitchen";
@@ -11569,9 +11541,7 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome2{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome2)
 "djZ" = (
 /obj/machinery/vending/kink{
 	shut_up = 1
@@ -13540,9 +13510,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome1{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome1)
 "faR" = (
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel/dark,
@@ -17064,18 +17032,14 @@
 /obj/effect/landmark/thunderdome/two,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
-/area/tdome/tdome1{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome1)
 "isj" = (
 /obj/effect/landmark/thunderdome/one,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome2{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome2)
 "isJ" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/blood/gibs/body,
@@ -22659,9 +22623,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome1{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome1)
 "nFj" = (
 /obj/structure/table/plasmaglass,
 /obj/item/reagent_containers/spray/cleaner{
@@ -23205,9 +23167,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome2{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome2)
 "olH" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -27061,9 +27021,7 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome2{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome2)
 "rXQ" = (
 /obj/structure/closet/crate/trashcart,
 /obj/machinery/light/small{
@@ -27496,9 +27454,7 @@
 	req_access_txt = "19"
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome1{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome1)
 "soS" = (
 /obj/structure/closet/syndicate/inteq/personal_raider,
 /turf/open/floor/wood/wood_parquet,
@@ -27902,9 +27858,7 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome1{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome1)
 "sFG" = (
 /obj/effect/turf_decal/tile/dark_red/fourcorners,
 /turf/open/floor/iron/dark,
@@ -32656,9 +32610,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/tdome/tdome1{
-	dynamic_lighting = 0
-	})
+/area/tdome/tdome1)
 "xcy" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
