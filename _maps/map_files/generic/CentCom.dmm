@@ -4252,9 +4252,7 @@
 	locked = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "arI" = (
 /obj/structure/sign/flag/goldring,
 /turf/closed/indestructible/riveted,
@@ -4787,9 +4785,7 @@
 "avP" = (
 /obj/structure/sign/flag/skull,
 /turf/closed/indestructible/riveted,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "avU" = (
 /obj/machinery/door/poddoor{
 	id = "thunderdomehea1";
@@ -4931,9 +4927,7 @@
 "awG" = (
 /obj/structure/sign/flag/ger_sol,
 /turf/closed/indestructible/riveted,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "awH" = (
 /obj/structure/artilleryplaceholder{
 	icon_state = "1"
@@ -5018,9 +5012,7 @@
 "axo" = (
 /obj/structure/sign/flag/ravenheart,
 /turf/closed/indestructible/riveted,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "axu" = (
 /obj/machinery/light,
 /turf/open/floor/wood,
@@ -5234,9 +5226,7 @@
 "ayU" = (
 /obj/structure/sign/flag/vulp,
 /turf/closed/indestructible/riveted,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "azc" = (
 /obj/effect/turf_decal/tile/bar{
 	dir = 4
@@ -7118,9 +7108,7 @@
 "aOj" = (
 /obj/structure/sign/flag/mars_sol,
 /turf/closed/indestructible/riveted,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "aOl" = (
 /obj/effect/turf_decal/loading_area,
 /obj/effect/turf_decal/tile/red/opposingcorners,
@@ -7670,11 +7658,6 @@
 /obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
-"aRm" = (
-/turf/closed/indestructible/riveted,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
 "aRr" = (
 /obj/machinery/light,
 /obj/effect/turf_decal/tile/red{
@@ -13890,9 +13873,7 @@
 "fsC" = (
 /obj/structure/sign/flag/terragov,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "fsD" = (
 /obj/effect/turf_decal/siding/dark_red,
 /turf/open/floor/iron/white/textured_large,
@@ -14625,9 +14606,7 @@
 "gcQ" = (
 /obj/structure/sign/flag/germany,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "gdx" = (
 /obj/machinery/light{
 	dir = 1
@@ -15964,9 +15943,7 @@
 "hsy" = (
 /obj/structure/sign/flag/rus,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "hsG" = (
 /obj/structure/table,
 /obj/effect/turf_decal/tile/brown{
@@ -16672,9 +16649,7 @@
 "hXE" = (
 /obj/structure/sign/flag/chechnya,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "hYi" = (
 /obj/structure/table/abductor,
 /obj/machinery/light/floor,
@@ -17848,9 +17823,7 @@
 "jdP" = (
 /obj/structure/sign/flag/soviet,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "jdX" = (
 /obj/structure/chair/pew/left{
 	dir = 1
@@ -18624,9 +18597,7 @@
 "jUz" = (
 /obj/structure/sign/flag/usa,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "jUC" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/machinery/computer{
@@ -18988,9 +18959,7 @@
 "kmu" = (
 /obj/structure/sign/flag/syndicate,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "kmE" = (
 /obj/structure/table/abductor,
 /obj/item/dildo/flared/huge{
@@ -22534,12 +22503,6 @@
 /obj/item/coffee_cartridge/fancy,
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
-"nyJ" = (
-/obj/structure/sign/flag/goldring,
-/turf/closed/indestructible/riveted,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
 "nyM" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "ERTArmory1"
@@ -22980,9 +22943,7 @@
 "nXQ" = (
 /obj/structure/sign/flag/nanotrasen,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "nXZ" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Response Area 21";
@@ -25859,9 +25820,7 @@
 "qLB" = (
 /obj/structure/sign/flag/nri,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "qLI" = (
 /obj/structure/railing{
 	dir = 1
@@ -26064,9 +26023,7 @@
 "qXD" = (
 /obj/structure/sign/flag/ukraine,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "qXK" = (
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck/cas/black,
@@ -28423,9 +28380,7 @@
 "tcc" = (
 /obj/structure/sign/flag/ssc,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "tcj" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -29735,9 +29690,7 @@
 "uvS" = (
 /obj/structure/sign/flag/tizira,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "uwf" = (
 /obj/machinery/computer,
 /obj/machinery/light{
@@ -30318,15 +30271,11 @@
 "uVL" = (
 /obj/structure/sign/flag/belarus,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "uVR" = (
 /obj/structure/sign/flag/mothic,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "uVX" = (
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /obj/structure/table,
@@ -31456,9 +31405,7 @@
 "vWO" = (
 /obj/structure/sign/flag/humancommonwealth,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "vXa" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -33276,9 +33223,7 @@
 "xAa" = (
 /obj/structure/sign/flag/fake_inteq,
 /turf/closed/indestructible/fakeglass,
-/area/tdome/arena{
-	dynamic_lighting = 2
-	})
+/area/tdome/arena)
 "xAc" = (
 /obj/structure/chair/sofa,
 /turf/open/floor/glass/reinforced,
@@ -75304,15 +75249,15 @@ amD
 ann
 mlM
 dlg
-aRm
-aRm
-aRm
-aRm
-aRm
-aRm
-aRm
-aRm
-aRm
+cZQ
+cZQ
+cZQ
+cZQ
+cZQ
+cZQ
+cZQ
+cZQ
+cZQ
 amR
 uSg
 mlM
@@ -75561,7 +75506,7 @@ amD
 ann
 mlM
 lFr
-aRm
+cZQ
 aIy
 aIy
 aIy
@@ -75570,7 +75515,7 @@ aIy
 aIy
 cZQ
 cZQ
-aRm
+cZQ
 hqD
 mlM
 mlM
@@ -75817,8 +75762,8 @@ aoM
 amD
 ann
 mlM
-aRm
-aRm
+cZQ
+cZQ
 aIz
 aIz
 aIz
@@ -75827,7 +75772,7 @@ aIz
 aIz
 cZQ
 cZQ
-aRm
+cZQ
 amR
 atP
 aAm
@@ -76075,7 +76020,7 @@ amD
 oTg
 qNR
 aEp
-aRm
+cZQ
 aZX
 xcd
 xcd
@@ -76084,7 +76029,7 @@ xcd
 anp
 aJD
 aJH
-aRm
+cZQ
 aio
 aio
 aio
@@ -76332,7 +76277,7 @@ apl
 qNR
 qNR
 dwR
-aRm
+cZQ
 faD
 irV
 avI
@@ -76846,7 +76791,7 @@ xcN
 qNR
 qNR
 pSw
-aRm
+cZQ
 soO
 irV
 avI
@@ -77103,7 +77048,7 @@ ttO
 qNR
 qNR
 oqt
-aRm
+cZQ
 sFg
 avK
 avK
@@ -77359,7 +77304,7 @@ aEp
 xcN
 qNR
 aqt
-aRm
+cZQ
 arI
 aID
 aID
@@ -77882,7 +77827,7 @@ aIt
 aIt
 aIt
 aIt
-aRm
+cZQ
 iXL
 mCL
 aiB
@@ -78139,7 +78084,7 @@ aIF
 aIF
 aIF
 aIu
-aRm
+cZQ
 ail
 air
 air
@@ -78396,7 +78341,7 @@ aIG
 aIG
 aIG
 aIt
-aRm
+cZQ
 iXL
 mCL
 aiB
@@ -78653,7 +78598,7 @@ aIH
 aIH
 aIH
 aIt
-aRm
+cZQ
 ail
 air
 air
@@ -80195,7 +80140,7 @@ aIH
 aIH
 aIH
 aIt
-nyJ
+arI
 ail
 air
 air
@@ -80452,7 +80397,7 @@ gSW
 gSW
 gSW
 aIt
-aRm
+cZQ
 iXL
 mCL
 aiB
@@ -80709,7 +80654,7 @@ aII
 aII
 aII
 aIt
-aRm
+cZQ
 ail
 ail
 ail
@@ -80966,7 +80911,7 @@ aIF
 aIF
 aIF
 aIu
-aRm
+cZQ
 iXL
 mCL
 aiB
@@ -81223,7 +81168,7 @@ aIt
 aIt
 aIt
 aIt
-aRm
+cZQ
 ail
 air
 air
@@ -81480,7 +81425,7 @@ aJk
 aJt
 aIJ
 aIF
-aRm
+cZQ
 ail
 ail
 ail
@@ -81728,7 +81673,7 @@ aEp
 wbe
 qNR
 qNR
-aRm
+cZQ
 xnB
 dzO
 dzO
@@ -81986,7 +81931,7 @@ wbe
 qNR
 qNR
 aqU
-aRm
+cZQ
 asM
 isj
 isj
@@ -82243,7 +82188,7 @@ wbe
 qNR
 qNR
 aTe
-aRm
+cZQ
 aWc
 arS
 avV
@@ -82500,7 +82445,7 @@ qNR
 qNR
 qNR
 aTe
-aRm
+cZQ
 asN
 avV
 auA
@@ -83014,7 +82959,7 @@ kot
 qNR
 qNR
 aTe
-aRm
+cZQ
 asP
 oll
 oll
@@ -83271,7 +83216,7 @@ alQ
 qNR
 qNR
 aTe
-aRm
+cZQ
 avW
 avW
 avW
@@ -83528,7 +83473,7 @@ akk
 aqy
 aqy
 aqz
-aRm
+cZQ
 aIP
 aIP
 aIP
@@ -83785,7 +83730,7 @@ aEp
 aEp
 aEp
 aEp
-aRm
+cZQ
 cZQ
 cZQ
 cZQ
