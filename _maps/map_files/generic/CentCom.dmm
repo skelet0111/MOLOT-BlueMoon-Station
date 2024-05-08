@@ -3534,6 +3534,7 @@
 /area/centcom/ferry)
 "amI" = (
 /obj/effect/turf_decal/trimline/dark_red/line,
+/obj/effect/landmark/ert_shuttle_brief_spawn,
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod/loading/ert)
 "amK" = (
