@@ -11046,7 +11046,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/bot_white,
-/obj/structure/rack/shelf,
+/obj/structure/closet/secure_closet/commandmopp,
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "cJr" = (
@@ -12437,15 +12437,12 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "ebv" = (
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#c1caff"
-	},
 /obj/effect/turf_decal/bot_white,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple/anticorner,
+/obj/structure/closet/secure_closet/mopp,
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "eby" = (
@@ -14092,6 +14089,10 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 4
 	},
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "fBh" = (
@@ -15538,20 +15539,12 @@
 /turf/open/floor/iron/white,
 /area/centcom/holding)
 "gYX" = (
-/obj/vehicle/sealed/mecha/combat/marauder/mauler/loaded{
-	req_access_txt = "109";
-	internals_req_access = list(29,5);
-	operation_req_access = list()
-	},
 /obj/effect/turf_decal/tile/red/anticorner,
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#c1caff"
-	},
 /obj/effect/turf_decal/bot_red,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
+/obj/vehicle/sealed/mecha/combat/marauder/loaded,
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "gZo" = (
@@ -16676,10 +16669,6 @@
 /obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 2
 	},
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#c1caff"
-	},
 /obj/effect/turf_decal/bot_blue,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -17311,6 +17300,7 @@
 /obj/effect/turf_decal/tile/purple/half{
 	dir = 4
 	},
+/obj/structure/closet/secure_closet/mopp,
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "iGk" = (
@@ -19656,7 +19646,6 @@
 /turf/open/floor/carpet/red,
 /area/centcom/holding)
 "kPz" = (
-/obj/structure/rack/shelf,
 /obj/machinery/light{
 	dir = 1;
 	light_color = "#c1caff"
@@ -19665,6 +19654,7 @@
 /obj/effect/turf_decal/tile/purple/half{
 	dir = 1
 	},
+/obj/structure/closet/secure_closet/medmopp,
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "kPN" = (
@@ -20191,22 +20181,22 @@
 /area/centcom/holding)
 "lnk" = (
 /obj/structure/rack/shelf,
-/obj/item/gun/ballistic/automatic/m16a4{
-	pixel_y = 7
-	},
-/obj/item/gun/ballistic/automatic/m16a4{
-	pixel_y = -4
-	},
-/obj/item/ammo_box/magazine/m16/ap,
-/obj/item/ammo_box/magazine/m16/ap,
-/obj/item/ammo_box/magazine/m16/ap,
-/obj/item/ammo_box/magazine/m16/ap,
-/obj/item/ammo_box/magazine/m16/ap,
-/obj/item/ammo_box/magazine/m16/ap,
 /obj/effect/turf_decal/tile/brown/anticorner{
 	dir = 1
 	},
 /obj/effect/turf_decal/bot,
+/obj/item/gun/ballistic/automatic/m16a4/tactical{
+	pixel_y = -4
+	},
+/obj/item/gun/ballistic/automatic/m16a4/tactical{
+	pixel_y = 7
+	},
+/obj/item/ammo_box/magazine/m16/ap,
+/obj/item/ammo_box/magazine/m16/ap,
+/obj/item/ammo_box/magazine/m16/ap,
+/obj/item/ammo_box/magazine/m16/ap,
+/obj/item/ammo_box/magazine/m16/ap,
+/obj/item/ammo_box/magazine/m16/ap,
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "lnq" = (
@@ -21259,10 +21249,6 @@
 	req_access_txt = "109"
 	},
 /obj/effect/turf_decal/tile/dark_green/anticorner,
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#c1caff"
-	},
 /obj/effect/turf_decal/bot_white,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -22353,6 +22339,10 @@
 /obj/effect/turf_decal/tile/red/half{
 	dir = 4
 	},
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "ntl" = (
@@ -22788,6 +22778,15 @@
 	},
 /obj/effect/turf_decal/bot_white,
 /obj/effect/turf_decal/stripes/corner,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/jetpack/oxygen/harness,
+/obj/item/tank/jetpack/oxygen/harness,
+/obj/item/tank/jetpack/oxygen/harness,
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "nMH" = (
@@ -23354,14 +23353,14 @@
 /area/centcom/control)
 "oty" = (
 /obj/structure/rack/shelf,
-/obj/item/gun/ballistic/automatic/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
-/obj/item/ammo_box/magazine/ak12,
 /obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 1
 	},
 /obj/effect/turf_decal/bot_blue,
+/obj/item/ammo_box/magazine/m556,
+/obj/item/ammo_box/magazine/m556,
+/obj/item/ammo_box/magazine/m556,
+/obj/item/gun/ballistic/automatic/ar,
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "otP" = (
@@ -23813,11 +23812,11 @@
 /turf/open/floor/grass/grass0,
 /area/centcom/holding)
 "oOL" = (
-/obj/structure/rack/shelf,
 /obj/effect/turf_decal/bot_white,
 /obj/effect/turf_decal/tile/purple/half{
 	dir = 1
 	},
+/obj/structure/closet/secure_closet/engimopp,
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "oOV" = (
@@ -24654,6 +24653,10 @@
 /obj/effect/turf_decal/tile/purple/half{
 	dir = 4
 	},
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "pzu" = (
@@ -25050,11 +25053,11 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/supply)
 "pWy" = (
-/obj/structure/rack/shelf,
 /obj/effect/turf_decal/bot_white,
 /obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 4
 	},
+/obj/structure/closet/secure_closet/secmopp,
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "pWE" = (
@@ -26860,6 +26863,16 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/floor/grass,
 /area/centcom/control)
+"rMi" = (
+/obj/effect/turf_decal/tile/dark_blue/half{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/turf/open/floor/plasteel/dark,
+/area/centcom/ferry)
 "rMk" = (
 /obj/machinery/atmospherics/components/unary/shuttle/heater{
 	dir = 8
@@ -28231,6 +28244,10 @@
 /obj/effect/turf_decal/tile/dark_green/half{
 	dir = 4
 	},
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "sVB" = (
@@ -29536,10 +29553,6 @@
 	req_access_txt = "109"
 	},
 /obj/effect/turf_decal/tile/brown/anticorner,
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#c1caff"
-	},
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -75486,7 +75499,7 @@ arN
 alI
 kYP
 qEO
-sCW
+rMi
 eSP
 hZr
 sTw
