@@ -2967,7 +2967,7 @@
 /area/centcom/ferry)
 "ajP" = (
 /obj/machinery/door/poddoor/ert{
-	name = "ERT Armory";
+	name = "Armory Green Team";
 	id = "ERTArmory1"
 	},
 /obj/effect/turf_decal/delivery,
@@ -10876,7 +10876,7 @@
 /obj/structure/sign/poster/contraband/vulp4{
 	pixel_y = -32
 	},
-/turf/open/space/transit/centcom,
+/turf/open/space/basic,
 /area/space)
 "cxc" = (
 /obj/structure/fence/door,
@@ -11000,6 +11000,15 @@
 /obj/effect/turf_decal/tile/red/half,
 /obj/structure/chair/sofa/middle{
 	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/centcom/control)
+"cGf" = (
+/obj/machinery/computer/communications{
+	dir = 8;
+	pixel_x = 11;
+	pixel_y = 5;
+	layer = 3.0
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
@@ -11144,7 +11153,7 @@
 	layer = 3.1
 	},
 /obj/machinery/door/poddoor/shutters/window{
-	layer = 4.12;
+	layer = 3.2;
 	id = "ShuttleCheckpoint"
 	},
 /turf/open/floor/plasteel/dark,
@@ -12009,13 +12018,6 @@
 /obj/effect/decal/cleanable/blood/gibs/body,
 /turf/open/space/basic,
 /area/centcom)
-"dCT" = (
-/obj/machinery/computer/communications{
-	pixel_y = 46;
-	pixel_x = -10
-	},
-/turf/open/floor/carpet/blackred,
-/area/centcom/control)
 "dDz" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/iron/kitchen{
@@ -12330,7 +12332,7 @@
 /area/centcom)
 "dSE" = (
 /obj/machinery/door/airlock/centcom{
-	name = "Special Ops Officer Office";
+	name = "Cryo Chambers of the Emergency Response Team";
 	req_access_txt = "101"
 	},
 /turf/open/floor/plasteel/dark,
@@ -12811,6 +12813,9 @@
 /obj/structure/chair/comfy/black{
 	dir = 1
 	},
+/obj/structure/sign/painting/library_private{
+	pixel_x = -32
+	},
 /turf/open/floor/wood/wood_parquet,
 /area/centcom/control)
 "ewk" = (
@@ -12972,6 +12977,14 @@
 	},
 /turf/open/indestructible/hoteltile,
 /area/centcom/holding)
+"eBS" = (
+/obj/machinery/computer/camera_advanced/syndie{
+	dir = 4;
+	pixel_y = -9;
+	pixel_x = -11
+	},
+/turf/open/floor/plasteel/dark,
+/area/centcom/control)
 "eDp" = (
 /obj/effect/turf_decal/tile/red/half{
 	dir = 4
@@ -17651,7 +17664,7 @@
 /area/centcom/holding)
 "iTl" = (
 /obj/machinery/door/poddoor/ert{
-	name = "ERT Armory";
+	name = "Armory Red Team";
 	id = "ERTArmory4"
 	},
 /obj/effect/turf_decal/delivery,
@@ -18218,7 +18231,7 @@
 /area/space)
 "jEH" = (
 /obj/structure/sign/painting/library{
-	pixel_y = 29
+	pixel_y = 32
 	},
 /obj/item/kirbyplants{
 	icon_state = "plant-21"
@@ -18540,7 +18553,7 @@
 /area/centcom/control)
 "jRK" = (
 /obj/structure/sign/painting/library{
-	pixel_y = -26
+	pixel_y = -32
 	},
 /turf/open/floor/wood/wood_tiled,
 /area/centcom/control)
@@ -20107,6 +20120,12 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/centcom/holding)
+"ljq" = (
+/obj/structure/sign/painting/library_private{
+	pixel_y = 32
+	},
+/turf/open/floor/wood/wood_tiled,
+/area/centcom/control)
 "ljw" = (
 /mob/living/simple_animal/bot/medbot{
 	desc = "When engaged in combat, the vanquishing of thine enemy can be the warrior's only concern.";
@@ -20203,22 +20222,22 @@
 /area/centcom/holding)
 "lnk" = (
 /obj/structure/rack/shelf,
+/obj/item/gun/ballistic/automatic/m16a4{
+	pixel_y = 7
+	},
+/obj/item/gun/ballistic/automatic/m16a4{
+	pixel_y = -4
+	},
+/obj/item/ammo_box/magazine/m16/ap,
+/obj/item/ammo_box/magazine/m16/ap,
+/obj/item/ammo_box/magazine/m16/ap,
+/obj/item/ammo_box/magazine/m16/ap,
+/obj/item/ammo_box/magazine/m16/ap,
+/obj/item/ammo_box/magazine/m16/ap,
 /obj/effect/turf_decal/tile/brown/anticorner{
 	dir = 1
 	},
 /obj/effect/turf_decal/bot,
-/obj/item/gun/ballistic/automatic/m16a4/tactical{
-	pixel_y = -4
-	},
-/obj/item/gun/ballistic/automatic/m16a4/tactical{
-	pixel_y = 7
-	},
-/obj/item/ammo_box/magazine/m16/ap,
-/obj/item/ammo_box/magazine/m16/ap,
-/obj/item/ammo_box/magazine/m16/ap,
-/obj/item/ammo_box/magazine/m16/ap,
-/obj/item/ammo_box/magazine/m16/ap,
-/obj/item/ammo_box/magazine/m16/ap,
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "lnq" = (
@@ -20659,6 +20678,14 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel,
 /area/centcom)
+"lEa" = (
+/obj/machinery/computer/camera_advanced/syndie{
+	dir = 8;
+	pixel_y = -9;
+	pixel_x = 11
+	},
+/turf/open/floor/plasteel/dark,
+/area/centcom/control)
 "lEo" = (
 /obj/structure/table,
 /obj/item/storage/box/handcuffs{
@@ -21368,7 +21395,7 @@
 /area/centcom/holding)
 "mqZ" = (
 /obj/machinery/door/poddoor/ert{
-	name = "ERT Armory";
+	name = "Armory Amber Team";
 	id = "ERTArmory3"
 	},
 /obj/effect/turf_decal/delivery,
@@ -23649,6 +23676,9 @@
 /area/syndicate_mothership/control)
 "oGD" = (
 /obj/structure/chair/comfy/black,
+/obj/structure/sign/painting/library_private{
+	pixel_x = -32
+	},
 /turf/open/floor/wood/wood_parquet,
 /area/centcom/control)
 "oGE" = (
@@ -25139,11 +25169,11 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/inteq/collosus)
 "qds" = (
+/obj/effect/turf_decal/delivery,
 /obj/machinery/door/poddoor/ert{
-	name = "ERT Armory";
+	name = "Armory Other Team";
 	id = "ERTArmory0"
 	},
-/obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "qdt" = (
@@ -25744,7 +25774,7 @@
 /area/syndicate_mothership/control)
 "qGt" = (
 /obj/structure/sign/painting/library_secure{
-	pixel_y = 29
+	pixel_y = 32
 	},
 /turf/open/floor/wood/wood_tiled,
 /area/centcom/control)
@@ -26076,25 +26106,17 @@
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
 "qZq" = (
-/obj/machinery/computer/secure_data{
-	dir = 4;
-	pixel_x = -11;
-	pixel_y = 57
-	},
-/obj/machinery/computer/communications{
-	dir = 4;
-	pixel_x = -11;
-	pixel_y = 40
-	},
-/obj/machinery/computer/camera_advanced/syndie{
-	dir = 4;
-	pixel_y = 23;
-	pixel_x = -11
-	},
 /obj/machinery/computer/med_data{
 	dir = 4;
 	pixel_y = 6;
-	pixel_x = -11
+	pixel_x = -11;
+	layer = 3.2
+	},
+/obj/machinery/computer/secure_data{
+	dir = 4;
+	pixel_x = -11;
+	pixel_y = 23;
+	layer = 3.1
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
@@ -27307,7 +27329,7 @@
 /area/syndicate_mothership/control)
 "sfF" = (
 /obj/machinery/door/poddoor/ert{
-	name = "ERT Armory";
+	name = "Armory Other Team";
 	id = "ERTArmory0"
 	},
 /turf/open/floor/plasteel/dark,
@@ -27550,25 +27572,17 @@
 	},
 /area/centcom/control)
 "sqC" = (
-/obj/machinery/computer/secure_data{
-	dir = 8;
-	pixel_x = 10;
-	pixel_y = 57
-	},
-/obj/machinery/computer/communications{
-	dir = 8;
-	pixel_x = 10;
-	pixel_y = 40
-	},
-/obj/machinery/computer/camera_advanced/syndie{
-	dir = 8;
-	pixel_y = 23;
-	pixel_x = 10
-	},
 /obj/machinery/computer/med_data{
 	dir = 8;
 	pixel_y = 6;
-	pixel_x = 10
+	pixel_x = 11;
+	layer = 3.2
+	},
+/obj/machinery/computer/secure_data{
+	dir = 8;
+	pixel_x = 11;
+	pixel_y = 23;
+	layer = 3.1
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
@@ -29981,13 +29995,17 @@
 /turf/open/floor/grass,
 /area/centcom)
 "uBo" = (
+/obj/machinery/computer/security/telescreen/entertainment{
+	pixel_y = 36;
+	layer = 2.7
+	},
 /obj/machinery/computer/secure_data{
 	pixel_y = 14;
 	pixel_x = 17
 	},
-/obj/machinery/computer/security/telescreen/entertainment{
-	pixel_y = 36;
-	layer = 2.7
+/obj/machinery/computer/communications{
+	pixel_y = 14;
+	pixel_x = -10
 	},
 /turf/open/floor/carpet/blackred,
 /area/centcom/control)
@@ -31088,9 +31106,15 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/centcom/holding)
 "vGn" = (
-/turf/closed/indestructible/fakedoor{
-	name = "Raiders"
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
 	},
+/obj/machinery/door/airlock/centcom{
+	name = "Intersection";
+	req_access_txt = "152"
+	},
+/turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
 "vHf" = (
 /obj/structure/table/plasmaglass,
@@ -32066,6 +32090,15 @@
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/grass,
+/area/centcom/control)
+"wzi" = (
+/obj/machinery/computer/communications{
+	dir = 4;
+	pixel_x = -11;
+	pixel_y = 5;
+	layer = 3.0
+	},
+/turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "wzF" = (
 /obj/machinery/power/emitter/prototype{
@@ -33418,6 +33451,10 @@
 /obj/structure/table/wood,
 /turf/open/floor/plasteel,
 /area/centcom)
+"xIJ" = (
+/obj/effect/turf_decal/trimline/dark_red/line,
+/turf/open/floor/plasteel/dark,
+/area/centcom/supplypod/loading/ert)
 "xIY" = (
 /obj/effect/turf_decal/tile/brown/anticorner/contrasted{
 	dir = 8
@@ -33778,6 +33815,14 @@
 /obj/structure/flora/tree/jungle,
 /turf/open/floor/grass/grass2,
 /area/centcom/control)
+"xZq" = (
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/obj/machinery/door/airlock/centcom{
+	name = "Intersection";
+	req_access_txt = "152"
+	},
+/turf/open/floor/iron/dark,
+/area/syndicate_mothership/control)
 "xZT" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -52082,7 +52127,7 @@ uZh
 uZh
 uZh
 uZh
-vGn
+xZq
 jAc
 vGn
 uZh
@@ -54930,7 +54975,7 @@ prN
 prN
 mlc
 uZh
-vGn
+oLP
 uZh
 uZh
 uZh
@@ -69591,10 +69636,10 @@ aaa
 aaa
 alI
 alI
-alI
 aaa
 aaa
-rEL
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -69847,12 +69892,12 @@ aaa
 aaa
 aaa
 aaa
-aaa
 alI
 aaa
-anB
-rHV
-anB
+aaa
+aaa
+rEL
+aaa
 aaa
 aaa
 aaa
@@ -70104,11 +70149,11 @@ aaa
 aaa
 aaa
 aaa
-aaa
 alI
 aaa
+aaa
 anB
-awy
+rHV
 anB
 aaa
 aaa
@@ -70362,10 +70407,10 @@ aaa
 aaa
 aaa
 alI
-alI
+aaa
 aaa
 anB
-rHT
+awy
 anB
 aaa
 aaa
@@ -70621,9 +70666,9 @@ aaa
 amD
 amD
 amD
-amD
-azA
-amD
+anB
+rHT
+anB
 amD
 amD
 amD
@@ -74221,7 +74266,7 @@ ajD
 amD
 azA
 ame
-amI
+xIJ
 aor
 aor
 aor
@@ -75226,7 +75271,7 @@ aaa
 aaa
 aaa
 aio
-qGt
+ljq
 fPa
 xVG
 fPa
@@ -75763,7 +75808,7 @@ ipz
 eLD
 alK
 ame
-amI
+xIJ
 aoM
 aoM
 aoM
@@ -84484,7 +84529,7 @@ mlM
 lCa
 aio
 uBo
-dCT
+eFX
 eFX
 bSH
 aio
@@ -85517,8 +85562,8 @@ mlM
 dlg
 cgk
 mlM
-mlM
-mlM
+lEa
+cGf
 sqC
 dlg
 aio
@@ -86288,8 +86333,8 @@ mlM
 eit
 aio
 ann
-mlM
-mlM
+eBS
+wzi
 qZq
 dlg
 aio
