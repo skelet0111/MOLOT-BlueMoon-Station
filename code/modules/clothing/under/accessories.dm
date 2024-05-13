@@ -412,7 +412,7 @@
 	desc = "An award for only the most annoying of assistants.  Locked doors mean nothing to you and behaving is not in your vocabulary"
 	icon_state = "greytide"
 
-/obj/item/clothing/accessory/medal/donator/bm/delta
+/obj/item/clothing/accessory/medal/delta
 	name = MARINE_DELTA_MEDAL
 	desc = "Proof of belonging to the \"Delta Squad\", as well as the strength and leadership in it."
 	icon_state = "medal_delta"
