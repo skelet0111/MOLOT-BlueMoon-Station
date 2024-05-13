@@ -431,10 +431,12 @@
 /obj/item/clothing/accessory/medal/silver/valor
 	name = "medal of valor"
 	desc = "A silver medal awarded for acts of exceptional valor."
+	icon_state = "silver_b"
 
 /obj/item/clothing/accessory/medal/silver/security
 	name = "robust security award"
 	desc = "An award for distinguished combat and sacrifice in defence of Nanotrasen's commercial interests. Often awarded to security staff."
+	icon_state = "silver_c"
 
 /obj/item/clothing/accessory/medal/gold
 	name = "gold medal"
@@ -447,16 +449,19 @@
 	name = "medal of captaincy"
 	desc = "A golden medal awarded exclusively to those promoted to the rank of captain. It signifies the codified responsibilities of a captain to Nanotrasen, and their undisputable authority over their crew."
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
+	icon_state = "gold_b"
 
 /obj/item/clothing/accessory/medal/gold/captain/family
 	name = "old medal of captaincy"
 	desc = "A rustic badge pure gold, has been through hell and back by the looks, the syndcate have been after these by the looks of it for generations..."
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 10) //Pure gold
 	custom_materials = list(/datum/material/gold=2000)
+	icon_state = "gold_c"
 
 /obj/item/clothing/accessory/medal/gold/heroism
 	name = "medal of exceptional heroism"
 	desc = "An extremely rare golden medal awarded only by CentCom. To receive such a medal is the highest honor and as such, very few exist. This medal is almost never awarded to anybody but commanders."
+	icon_state = "platinum"
 
 /obj/item/clothing/accessory/medal/plasma
 	name = "plasma medal"
@@ -475,6 +480,7 @@
 /obj/item/clothing/accessory/medal/plasma/nobel_science
 	name = "nobel sciences award"
 	desc = "A plasma medal which represents significant contributions to the field of science or engineering."
+	icon_state = "plasma_b"
 
 ////////////
 //Armbands//
