@@ -389,6 +389,7 @@
 /obj/item/clothing/accessory/medal/conduct
 	name = "distinguished conduct medal"
 	desc = "A bronze medal awarded for distinguished conduct. Whilst a great honor, this is the most basic award given by Nanotrasen. It is often awarded by a captain to a member of his crew."
+	icon_state = "bronze_b"
 
 /obj/item/clothing/accessory/medal/bronze_heart
 	name = "bronze heart medal"
@@ -413,6 +414,7 @@
 /obj/item/clothing/accessory/medal/ribbon/cargo
 	name = "\"cargo tech of the shift\" award"
 	desc = "An award bestowed only upon those cargotechs who have exhibited devotion to their duty in keeping with the highest traditions of Cargonia."
+	icon_state = "cargo"
 
 /obj/item/clothing/accessory/medal/ribbon/medical_doctor
 	name = "\"doctor of the shift\" award"
