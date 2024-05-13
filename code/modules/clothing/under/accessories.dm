@@ -327,6 +327,12 @@
 //Medals//
 //////////
 
+#define MARINE_CONDUCT_MEDAL "Distinguished Conduct Medal"
+#define MARINE_BRONZE_HEART_MEDAL "Bronze Heart Medal"
+#define MARINE_VALOR_MEDAL "Medal of Valor"
+#define MARINE_HEROISM_MEDAL "Medal of Exceptional Heroism"
+#define MARINE_DELTA_MEDAL "Delta Squad Medal"
+
 /obj/item/clothing/accessory/medal
 	name = "bronze medal"
 	desc = "A bronze medal."
@@ -387,12 +393,12 @@
 		..()
 
 /obj/item/clothing/accessory/medal/conduct
-	name = "distinguished conduct medal"
+	name = MARINE_CONDUCT_MEDAL
 	desc = "A bronze medal awarded for distinguished conduct. Whilst a great honor, this is the most basic award given by Nanotrasen. It is often awarded by a captain to a member of his crew."
 	icon_state = "bronze_b"
 
 /obj/item/clothing/accessory/medal/bronze_heart
-	name = "bronze heart medal"
+	name = MARINE_BRONZE_HEART_MEDAL
 	desc = "A bronze heart-shaped medal awarded for sacrifice. It is often awarded posthumously or for severe injury in the line of duty."
 	icon_state = "bronze_heart"
 
@@ -406,6 +412,11 @@
 	desc = "An award for only the most annoying of assistants.  Locked doors mean nothing to you and behaving is not in your vocabulary"
 	icon_state = "greytide"
 
+/obj/item/clothing/accessory/medal/donator/bm/delta
+	name = MARINE_DELTA_MEDAL
+	desc = "Proof of belonging to the \"Delta Squad\", as well as the strength and leadership in it."
+	icon_state = "medal_delta"
+
 /obj/item/clothing/accessory/medal/ribbon
 	name = "ribbon"
 	desc = "A ribbon"
@@ -414,7 +425,7 @@
 /obj/item/clothing/accessory/medal/ribbon/cargo
 	name = "\"cargo tech of the shift\" award"
 	desc = "An award bestowed only upon those cargotechs who have exhibited devotion to their duty in keeping with the highest traditions of Cargonia."
-	icon_state = "cargo"
+	icon_state = "cargo_b"
 
 /obj/item/clothing/accessory/medal/ribbon/medical_doctor
 	name = "\"doctor of the shift\" award"
@@ -429,7 +440,7 @@
 	custom_materials = list(/datum/material/silver=1000)
 
 /obj/item/clothing/accessory/medal/silver/valor
-	name = "medal of valor"
+	name = MARINE_VALOR_MEDAL
 	desc = "A silver medal awarded for acts of exceptional valor."
 	icon_state = "silver_b"
 
@@ -459,7 +470,7 @@
 	icon_state = "gold_c"
 
 /obj/item/clothing/accessory/medal/gold/heroism
-	name = "medal of exceptional heroism"
+	name = MARINE_HEROISM_MEDAL
 	desc = "An extremely rare golden medal awarded only by CentCom. To receive such a medal is the highest honor and as such, very few exist. This medal is almost never awarded to anybody but commanders."
 	icon_state = "platinum"
 
