@@ -17718,17 +17718,6 @@
 /obj/structure/table/wood,
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership/control)
-"izz" = (
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/obj/machinery/door/airlock/centcom{
-	name = "Intersection";
-	req_access_txt = "152"
-	},
-/turf/open/floor/iron/dark,
-/area/syndicate_mothership/control)
 "izH" = (
 /obj/structure/artilleryplaceholder{
 	icon_state = "17"
@@ -25204,14 +25193,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/evac)
-"pCV" = (
-/obj/effect/turf_decal/tile/brown/opposingcorners,
-/obj/machinery/door/airlock/centcom{
-	name = "Intersection";
-	req_access_txt = "152"
-	},
-/turf/open/floor/iron/dark,
-/area/syndicate_mothership/control)
 "pCX" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -52516,9 +52497,9 @@ uZh
 uZh
 uZh
 uZh
-pCV
+koj
 jAc
-izz
+koj
 uZh
 jAc
 jAc
@@ -55364,7 +55345,7 @@ prN
 prN
 mlc
 uZh
-oLP
+koj
 uZh
 uZh
 uZh
@@ -56644,7 +56625,7 @@ uZh
 wyv
 uZh
 jAc
-chv
+jAc
 jAc
 jAc
 uZh
