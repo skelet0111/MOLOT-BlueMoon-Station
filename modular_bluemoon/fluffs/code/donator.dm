@@ -163,6 +163,20 @@
 	ckeywhitelist = list("oni3288", "smileycom")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
+/datum/gear/donator/bm/blackcool_mask
+	name = "CFIS Gasmask"
+	slot = ITEM_SLOT_MASK
+	path = /obj/item/clothing/mask/gas/syndicate/blackcool_version
+	ckeywhitelist = list("discord980")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/black_tape
+	name = "Black Sticky Tape"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/stack/sticky_tape/black
+	ckeywhitelist = list("blazeba")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
 /datum/gear/donator/bm/Rar_Suit
 	name = "HEV Suit"
 	slot = ITEM_SLOT_OCLOTHING
