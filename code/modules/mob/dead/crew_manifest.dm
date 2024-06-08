@@ -25,7 +25,8 @@
 		DEPARTMENT_SCIENCE = 0,
 		DEPARTMENT_SUPPLY = 0,
 		DEPARTMENT_SERVICE = 0,
-		DEPARTMENT_SILICON = 0
+		DEPARTMENT_SILICON = 0,
+		DEPARTMENT_LAW = 0
 	)
 	var/list/departments = list(
 		list("flag" = DEPARTMENT_BITFLAG_COMMAND, "name" = DEPARTMENT_COMMAND),
@@ -35,7 +36,8 @@
 		list("flag" = DEPARTMENT_BITFLAG_SCIENCE, "name" = DEPARTMENT_SCIENCE),
 		list("flag" = DEPARTMENT_BITFLAG_SUPPLY, "name" = DEPARTMENT_SUPPLY),
 		list("flag" = DEPARTMENT_BITFLAG_SERVICE, "name" = DEPARTMENT_SERVICE),
-		list("flag" = DEPARTMENT_BITFLAG_SILICON, "name" = DEPARTMENT_SILICON)
+		list("flag" = DEPARTMENT_BITFLAG_SILICON, "name" = DEPARTMENT_SILICON),
+		list("flag" = DEPARTMENT_BITFLAG_LAW, "name" = DEPARTMENT_LAW)
 	)
 
 	for(var/datum/job/job in SSjob.occupations)

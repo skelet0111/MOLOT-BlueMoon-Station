@@ -97,7 +97,7 @@
 	alarm_manager.send_alarm(ALARM_BURGLAR)
 	addtimer(CALLBACK(alarm_manager, /datum/alarm_handler/proc/clear_alarm, ALARM_BURGLAR), 1 MINUTES)
 
-	playsound(src, 'sound/effects/alert.ogg', 50, TRUE)
+	playsound(src, 'sound/misc/alerts/alert.ogg', 50, TRUE)
 
 /obj/structure/displaycase/update_overlays()
 	. = ..()

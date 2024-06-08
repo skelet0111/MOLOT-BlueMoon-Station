@@ -19,7 +19,7 @@
 /obj/machinery/computer/station_alert/ui_interact(mob/user)
 	alert_control.ui_interact(user)
 
-/obj/machinery/computer/station_alert/on_machine_stat_update(stat)
+/obj/machinery/computer/station_alert/on_stat_update(stat)
 	if(stat & BROKEN)
 		alert_control.listener.prevent_alarm_changes()
 	else

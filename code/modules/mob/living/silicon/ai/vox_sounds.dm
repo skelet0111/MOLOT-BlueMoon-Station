@@ -1908,7 +1908,7 @@ GLOBAL_LIST_INIT(vox_types, init_vox_list())
 		"zone" = 'modular_sand/sound/vox_military/zone.ogg',
 		"," = 'modular_sand/sound/vox_military/_comma.ogg',
 		"." = 'modular_sand/sound/vox_military/_period.ogg'
-	)
+	),
 	//for vim
 	// :%s/\(\(.*\)\.ogg\)/"\2" = 'modular_bluemoon\/SmiLeY\/sounds\/vox_sounds_alliance\/\1',/g
 	"Alliance" = list(

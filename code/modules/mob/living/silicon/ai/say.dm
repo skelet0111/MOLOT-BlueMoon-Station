@@ -111,8 +111,6 @@
 			continue
 		if(!GLOB.vox_types[voxType][word])
 			incorrect_words += word
-		if(!GLOB.vox_sounds_alliance[word] && voxType == "alliance")
-			incorrect_words += word
 
 	if(incorrect_words.len)
 		to_chat(src, span_notice("These words are not available on the announcement system: [english_list(incorrect_words)]."))
