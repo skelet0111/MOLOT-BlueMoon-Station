@@ -163,6 +163,23 @@
 	var/datum/reagents/fluid_source = G.climaxable(src)
 	if(!fluid_source)
 		return
+	var/user_name
+	var/user_p_their
+	var/target_name
+	var/target_p_their
+	var/target_p_them
+	if(anonymous)
+		user_name = "Someone"
+		target_name = "someone"
+		user_p_their = "their"
+		target_p_their = "their"
+		target_p_them = "them"
+	else
+		user_name = "[src]"
+		target_name = "[L]"
+		user_p_their = p_their()
+		target_p_their = L.p_their()
+		target_p_them = L.p_them()
 	if(mb_time) //Skip warning if this is an instant climax.
 		if(!do_after(src, mb_time, target = src) || !in_range(src, L) || !G.climaxable(src, TRUE))
 			return
@@ -267,7 +284,7 @@
 
 //Here's the main proc itself
 //skyrat edit - forced partner and spillage
-/mob/living/carbon/human/proc/mob_climax(forced_climax=FALSE,cause = "", var/mob/living/forced_partner = null, var/forced_spillage = TRUE, var/obj/item/organ/genital/forced_receiving_genital = null, anonymous = FALSE)
+/mob/living/carbon/human/proc/mob_climax(forced_climax = FALSE, cause = "", var/mob/living/forced_partner = null, var/forced_spillage = TRUE, var/obj/item/organ/genital/forced_receiving_genital = null, anonymous = FALSE)
 	set waitfor = FALSE
 	if(mb_cd_timer > world.time)
 		if(!forced_climax) //Don't spam the message to the victim if forced to come too fast
