@@ -89,6 +89,7 @@
 	lefthand_file = 'modular_bluemoon/kovac_shitcode/icons/mob/weapons/weapons_l.dmi'
 	righthand_file = 'modular_bluemoon/kovac_shitcode/icons/mob/weapons/weapons_r.dmi'
 	mag_type = /obj/item/ammo_box/magazine/m10mm_large
+	w_class = WEIGHT_CLASS_NORMAL
 	can_suppress = FALSE
 	burst_size = 4
 	fire_delay = 3
