@@ -258,8 +258,9 @@
 	crate_name = "medipen crate"
 
 /datum/supply_pack/medical/medbeamgun
-	name = "Weak Medbeam Gun"
+	name = "Two Civilian Medbeam Guns"
 	desc = "Содержит одну слабую версию медицинского орудия, которое хорошо подходит для стабилизации пациентов в критическом состоянии."
-	cost = 50000
-	contains = list(/obj/item/gun/medbeam/weak)
-	crate_name = "Weak Medbeam Gun Crate"
+	cost = 25000
+	contains = list(/obj/item/gun/medbeam/weak,
+					/obj/item/gun/medbeam/weak)
+	crate_name = "Two Civilian Medbeam Guns Crate"

@@ -90,7 +90,7 @@
 	if(!los_check(source, current_target))
 		QDEL_NULL(current_beam)
 		return
-	
+
 	if(current_target)
 		on_beam_tick(current_target)
 
@@ -113,7 +113,7 @@
 					continue
 				return FALSE
 			first_step = FALSE
-		
+
 		if(mounted && next_step == user_turf)
 			continue //Mechs are dense and thus fail the check
 		if(next_step.density)
@@ -163,8 +163,8 @@
 	name = "medical beam"
 
 /obj/item/gun/medbeam/weak
-	name = "Weak Medical Beamgun"
-	desc = "Just like a regular beamgun but cheaper. Used only to stabilize patients in critical condition."
+	name = "Civilian Medical Beamgun"
+	desc = "Just like a regular beamgun, but cheaper. Used only to stabilize patients in critical condition."
 
 /obj/item/gun/medbeam/weak/on_beam_tick(var/mob/living/target)
 	if(target.stat == DEAD)
@@ -172,7 +172,7 @@
 		return
 	if(target.health != target.maxHealth)
 		new /obj/effect/temp_visual/heal(get_turf(target), "#80F5FF")
-	if(target.health < 0)
+	if(target.health < 50)
 		target.adjustBruteLoss(-2)
 		target.adjustFireLoss(-2)
 		target.adjustOxyLoss(-5)
