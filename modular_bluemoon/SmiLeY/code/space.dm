@@ -10,11 +10,11 @@
 	switch(num)
 		if(0)
 			suffix = "defcon5.dmm"
-		else if(1)
+		if(1)
 			suffix = "defcon4.dmm"
-		else if(2)
+		if(2)
 			suffix = "defcon3.dmm"
-		else if(3)
+		if(3)
 			suffix = "defcon2.dmm"
 	. = ..()
 

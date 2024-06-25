@@ -357,7 +357,7 @@
 	switch(num)
 		if(0)
 			suffix = "spacehermit.dmm"
-		else if(1)
+		if(1)
 			suffix = "spacehermit1.dmm"
 	. = ..()
 
