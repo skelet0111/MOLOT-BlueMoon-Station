@@ -71,7 +71,7 @@
 	name = "Melter"
 	desc = "Генератор высокотемпературной плазмы, предназначенный для производственных нужд, но внедрения технологий NT получил возможность отправлять сгусток плазмы во полёт."
 	item = /obj/item/gun/energy/pulse/pistol/inteq
-	cost = 13
+	cost = 16
 	purchasable_from = (UPLINK_TRAITORS | UPLINK_NUKE_OPS)
 
 /datum/uplink_item/inteq/canceller

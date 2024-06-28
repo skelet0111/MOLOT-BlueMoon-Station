@@ -478,7 +478,6 @@
 	desc = "Носи с гордостью."
 	icon_state = "hardsuit0-ftu_combat"
 	item_state = "hardsuit0-ftu_combat"
-	tail_state = "syndicate-winter"
 	hardsuit_type = "ftu_combat"
 	mob_overlay_icon = 'modular_bluemoon/Ren/Icons/Mob/clothing.dmi'
 	icon = 'modular_bluemoon/Ren/Icons/Obj/cloth.dmi'
@@ -489,6 +488,7 @@
 	desc = "Боевой костюм, расчитаный на длительные сражения в космосе с превосходящими силами противника. После многолетних чисток целых секторов от пиратства, теперь заставляет многих нервно сглотнуть от одного своего вида."
 	icon_state = "hardsuit-ftu_combat"
 	item_state = "hardsuit-ftu_combat"
+	tail_state = "syndicate-winter"
 	mob_overlay_icon = 'modular_bluemoon/Ren/Icons/Mob/clothing.dmi'
 	icon = 'modular_bluemoon/Ren/Icons/Obj/cloth.dmi'
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/ftu
@@ -517,6 +517,7 @@
 	desc = "Стандартный инженерный костюм для технического обслуживания судов торгового флота."
 	icon_state = "hardsuit-odst"
 	item_state = "hardsuit-odst"
+	tail_state = "juggernaut"
 	mob_overlay_icon = 'modular_sand/icons/mob/clothing/suit.dmi'
 	icon = 'modular_bluemoon/Ren/Icons/Obj/cloth.dmi'
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/engine/ftu
