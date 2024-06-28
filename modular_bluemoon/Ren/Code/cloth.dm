@@ -478,6 +478,7 @@
 	desc = "Носи с гордостью."
 	icon_state = "hardsuit0-ftu_combat"
 	item_state = "hardsuit0-ftu_combat"
+	tail_state = "syndicate-winter"
 	hardsuit_type = "ftu_combat"
 	mob_overlay_icon = 'modular_bluemoon/Ren/Icons/Mob/clothing.dmi'
 	icon = 'modular_bluemoon/Ren/Icons/Obj/cloth.dmi'
