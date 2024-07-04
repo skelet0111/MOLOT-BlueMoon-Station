@@ -8272,6 +8272,12 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/eva)
+"bWh" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/cargo/miningdock)
 "bWj" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
@@ -8959,10 +8965,6 @@
 /obj/effect/turf_decal/tile/blue{
 	alpha = 200;
 	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	alpha = 200;
-	dir = 1
 	},
 /obj/effect/turf_decal/tile/blue{
 	alpha = 200;
@@ -11828,6 +11830,9 @@
 /area/science/storage)
 "cOz" = (
 /obj/machinery/pipedispenser,
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "cOB" = (
@@ -15804,9 +15809,11 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
 	},
-/obj/effect/turf_decal/stripes/line,
 /obj/machinery/light{
 	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
 	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
@@ -16929,7 +16936,7 @@
 	id = "minemechbay2";
 	name = "Mining Mech Bay Shutters"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/cargo/miningdock)
 "dYZ" = (
 /turf/open/floor/plating/airless,
@@ -24443,6 +24450,10 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
 	alpha = 220
+	},
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 4;
+	name = "Connector Port (Air Supply)"
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
@@ -33098,18 +33109,8 @@
 /turf/open/floor/plasteel,
 /area/cargo/office)
 "hPN" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Port Aft Maintenance";
-	req_access_txt = "12"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/supplymain/hidden{
-	name = "high pressure supply"
-	},
-/turf/open/floor/plating/airless,
-/area/maintenance/port/aft)
+/turf/open/floor/plasteel/dark,
+/area/cargo/miningdock)
 "hPR" = (
 /obj/effect/turf_decal/tile/blue{
 	alpha = 200
@@ -35784,6 +35785,14 @@
 	dir = 8;
 	alpha = 220
 	},
+/obj/item/reagent_containers/glass/beaker/cryoxadone{
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/glass/beaker/cryoxadone{
+	pixel_x = 7;
+	pixel_y = 1
+	},
+/obj/item/wrench/medical,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "iAX" = (
@@ -37886,6 +37895,9 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
 	alpha = 220
+	},
+/obj/machinery/atmospherics/pipe/simple/general/visible{
+	dir = 10
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
@@ -40215,6 +40227,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/central)
+"jAQ" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/science/mixing)
 "jAX" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -43839,6 +43857,9 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "ktO" = (
@@ -44764,6 +44785,7 @@
 /obj/effect/turf_decal/tile/red{
 	alpha = 220
 	},
+/obj/machinery/cell_charger,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "kEB" = (
@@ -57865,14 +57887,14 @@
 /area/tcommsat/server)
 "nLt" = (
 /obj/effect/turf_decal/delivery,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /obj/machinery/door/poddoor/shutters{
 	id = "minemechbay2";
 	name = "Mining Mech Bay Shutters"
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/cargo/miningdock)
 "nLz" = (
 /obj/machinery/computer/secure_data,
@@ -63317,6 +63339,19 @@
 	},
 /turf/open/floor/plasteel,
 /area/service/hydroponics/garden)
+"oVq" = (
+/obj/effect/turf_decal/tile/red{
+	alpha = 220
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4;
+	alpha = 220
+	},
+/obj/machinery/atmospherics/pipe/simple/general/visible{
+	dir = 10
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/zone2)
 "oVr" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Fire Suppression Storage";
@@ -65161,9 +65196,6 @@
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 4
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
 /obj/machinery/camera{
 	c_tag = "Toxins Lab - Port";
 	network = list("ss13","rd")
@@ -65171,6 +65203,9 @@
 /obj/machinery/meter,
 /obj/machinery/embedded_controller/radio/airlock_controller/incinerator_toxmix{
 	pixel_x = -24
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
 	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
@@ -69893,6 +69928,9 @@
 /area/service/bar)
 "qzA" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer,
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "qzC" = (
@@ -74862,6 +74900,20 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/security/office)
+"rFk" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1;
+	alpha = 220
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8;
+	alpha = 220
+	},
+/obj/machinery/atmospherics/pipe/simple/general/visible{
+	dir = 6
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/zone2)
 "rFt" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/delivery,
@@ -82938,6 +82990,10 @@
 /obj/machinery/vending/cola/pwr_game,
 /turf/open/floor/carpet/red,
 /area/maintenance/central)
+"txi" = (
+/obj/machinery/atmospherics/pipe/manifold4w/general/visible,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/zone2)
 "txA" = (
 /turf/open/floor/carpet{
 	icon_state = "carpetsymbol"
@@ -87967,6 +88023,9 @@
 /obj/machinery/status_display{
 	pixel_y = 32
 	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "uyF" = (
@@ -90698,7 +90757,7 @@
 	id = "minemechbay";
 	name = "Mining Mech Bay Shutters"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/cargo/miningdock)
 "vfK" = (
 /obj/machinery/atmospherics/components/binary/volume_pump{
@@ -93540,7 +93599,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/cargo/miningdock)
 "vQr" = (
 /obj/structure/door_assembly/door_assembly_mai,
@@ -95248,7 +95307,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/cargo/miningdock)
 "woY" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -95668,9 +95727,6 @@
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "wth" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	dir = 1
-	},
 /obj/machinery/camera{
 	c_tag = "Medbay - Cryogenics";
 	dir = 1
@@ -95681,6 +95737,9 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
 	alpha = 220
+	},
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
+	dir = 1
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
@@ -96482,6 +96541,9 @@
 /obj/machinery/power/apc/auto_name/north,
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
@@ -97862,6 +97924,7 @@
 /turf/open/floor/plasteel/checker,
 /area/cargo/sorting)
 "wSH" = (
+/obj/machinery/atmospherics/pipe/simple/general/visible,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "wSQ" = (
@@ -103927,7 +103990,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/cargo/miningdock)
 "yku" = (
 /obj/structure/closet/secure_closet/exile,
@@ -124323,7 +124386,7 @@ irn
 sbb
 mxR
 cOz
-irU
+jAQ
 wbQ
 kPk
 ntr
@@ -125360,7 +125423,7 @@ iRF
 cdP
 qIW
 hTi
-hPN
+hYT
 uxO
 qhE
 eeR
@@ -133091,7 +133154,7 @@ htl
 ptn
 fNz
 iAT
-cQs
+rFk
 iWv
 eHi
 oGk
@@ -133348,7 +133411,7 @@ cQs
 kEy
 jaU
 wSH
-wSH
+txi
 wth
 eHi
 jqB
@@ -133605,7 +133668,7 @@ tUF
 xGc
 hQP
 tUF
-tUF
+oVq
 rPn
 eHi
 aag
@@ -133828,8 +133891,8 @@ pTy
 bEG
 bWd
 nuq
-aKG
-wLM
+bWh
+hPN
 vrK
 eow
 tTm
@@ -134342,8 +134405,8 @@ xdL
 tRC
 bWd
 uMj
-aKG
-wLM
+bWh
+hPN
 gXw
 eow
 eow
