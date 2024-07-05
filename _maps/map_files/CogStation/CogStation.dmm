@@ -9579,7 +9579,8 @@
 	id = "armory";
 	name = "Armory Blast Door Control";
 	pixel_x = 24;
-	pixel_y = -5
+	pixel_y = -5;
+	req_access_txt = "3"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
@@ -88135,7 +88136,8 @@
 	id = "armory";
 	name = "Armory Blast Door Control";
 	pixel_x = -24;
-	pixel_y = -5
+	pixel_y = -5;
+	req_access_txt = "3"
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
