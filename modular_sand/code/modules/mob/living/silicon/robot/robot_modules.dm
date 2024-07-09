@@ -83,7 +83,7 @@
 		"FMeka Ninja" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi', icon_state = "fmekaninja"), // Lyoll Request (Skyrat Port)
 		"K4 Ninja" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi', icon_state = "k4tninja"), // Lyoll Request (Skyrat Port)
 		"MMeka Ninja" = image(icon = 'modular_bluemoon/Gardelin0/icons/mob/tallrobot.dmi', icon_state = "mmekaninja"), // Lyoll Request (Skyrat Port)
-		"Drakemech" = image(icon = 'modular_sand/icons/mob/cyborg/drakemech.dmi', icon_state = "drakebox")	//DarkSer request by Gardelin0
+		"Drakemech" = image(icon = 'modular_sand/icons/mob/cyborg/drakemech.dmi', icon_state = "drakebox"),	//DarkSer request by Gardelin0
 		"BootyGorlex" = image(icon = 'modular_splurt/icons/mob/robots.dmi', icon_state = "bootygorlex"), // SPLURT Addon (Hyper Port)
 		"Meka" = image(icon = 'modular_splurt/icons/mob/robots_32x64.dmi', icon_state = "mekasyndi"), // SPLURT Addon (Bubbers Port)
 		"M-Meka" = image(icon = 'modular_splurt/icons/mob/robots_32x64.dmi', icon_state = "mmekasyndi"), // SPLURT Addon (Bubbers Port)
