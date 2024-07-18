@@ -778,9 +778,25 @@
     ckeywhitelist = list("fedor1545", "berly12")
     subcategory = LOADOUT_SUBCATEGORIES_DON04
 
+
+/datum/gear/donator/bm/a46_kit
+	name = "A46 Kit"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/modkit/a46
+	ckeywhitelist = list("nai1ten")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/ots18_kit
+	name = "OTs-18 Kit"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/modkit/ots18
+	ckeywhitelist = list("nai1ten")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
 /datum/gear/donator/bm/rune_jacket
     name = "Rune Jacket"
     slot = ITEM_SLOT_OCLOTHING
     path = /obj/item/clothing/suit/donator/bm/rune_jacket
     ckeywhitelist = list("D0NALD")
     subcategory = LOADOUT_SUBCATEGORIES_DON02
+
