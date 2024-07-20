@@ -797,6 +797,6 @@
     name = "Rune Jacket"
     slot = ITEM_SLOT_OCLOTHING
     path = /obj/item/clothing/suit/donator/bm/rune_jacket
-    ckeywhitelist = list("D0NALD")
+    ckeywhitelist = list("d0nald")
     subcategory = LOADOUT_SUBCATEGORIES_DON02
 
