@@ -178,16 +178,16 @@
 /datum/reagent/consumable/ethanol/vodka/on_mob_metabolize(mob/living/L)
 	. = ..()
 
-	if(HAS_TRAIT(M,TRAIT_RUSSIAN))
-		M.mob_light(_color = LIGHT_COLOR_HOLY_MAGIC, _range = 2, _duration = 100)
+	if(HAS_TRAIT(L,TRAIT_RUSSIAN))
+		L.mob_light(_color = LIGHT_COLOR_HOLY_MAGIC, _range = 2, _duration = 100)
 		var/mutable_appearance/forbearance = mutable_appearance('icons/effects/genetics.dmi', "servitude", -MUTATIONS_LAYER)
-		M.add_overlay(forbearance)
+		L.add_overlay(forbearance)
 
-		M.gain_trauma(/datum/brain_trauma/special/godwoken, TRAUMA_RESILIENCE_ABSOLUTE)
+		L.gain_trauma(/datum/brain_trauma/special/godwoken, TRAUMA_RESILIENCE_ABSOLUTE)
 
 /datum/reagent/consumable/ethanol/vodka/on_mob_end_metabolize(mob/living/L)
 	. = ..()
-	if(HAS_TRAIT(M, TRAIT_RUSSIAN))
-		M.cut_overlay(forbearance)
+	if(HAS_TRAIT(L, TRAIT_RUSSIAN))
+		L.cut_overlay(forbearance)
 
-		M.cure_trauma_type(/datum/brain_trauma/special/godwoken)
+		L.cure_trauma_type(/datum/brain_trauma/special/godwoken)
