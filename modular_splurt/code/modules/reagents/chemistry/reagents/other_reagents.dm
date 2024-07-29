@@ -191,6 +191,7 @@
 
 	var/mob/living/carbon/human/M = L
 	if(HAS_TRAIT(L, TRAIT_RUSSIAN))
+		var/mutable_appearance/forbearance = mutable_appearance('icons/effects/genetics.dmi', "servitude", -MUTATIONS_LAYER)
 		M.cut_overlay(forbearance)
 
 		M.cure_trauma_type(/datum/brain_trauma/special/godwoken)
