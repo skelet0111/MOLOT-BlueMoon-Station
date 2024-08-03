@@ -6021,6 +6021,13 @@
 /obj/item/folder,
 /turf/open/floor/carpet,
 /area/service/bar)
+"bwV" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/manifold/yellow/visible{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space/nearstation)
 "bxi" = (
 /obj/machinery/door/airlock{
 	name = "Fitness Toilets"
@@ -24558,12 +24565,12 @@
 /turf/open/floor/plasteel/stairs/left,
 /area/hallway/secondary/exit/departure_lounge)
 "fOs" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Kitchen cold room";
-	req_one_access_txt = "28"
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/simple/yellow/visible{
+	dir = 9
 	},
-/turf/open/floor/plating,
-/area/service/kitchen)
+/turf/open/space/basic,
+/area/space/nearstation)
 "fOE" = (
 /obj/machinery/computer/camera_advanced/xenobio{
 	dir = 4
@@ -43475,16 +43482,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
-"kmC" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/hidden{
-	dir = 4
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/yellow/hidden,
-/turf/closed/wall/r_wall,
-/area/engineering/atmos)
 "knh" = (
 /obj/machinery/vending/boozeomat{
 	pixel_y = 32
@@ -53608,6 +53605,13 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel/dark/corner,
 /area/hallway/secondary/entry)
+"mJb" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Kitchen cold room";
+	req_one_access_txt = "28"
+	},
+/turf/open/floor/plating,
+/area/service/kitchen)
 "mJh" = (
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -76054,13 +76058,6 @@
 	},
 /turf/open/floor/carpet/red,
 /area/maintenance/central)
-"rPP" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/pipe/manifold/yellow/visible{
-	dir = 8
-	},
-/turf/open/space/basic,
-/area/space/nearstation)
 "rQh" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 4;
@@ -84146,10 +84143,6 @@
 	},
 /turf/open/floor/wood,
 /area/commons/fitness)
-"tHL" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/space/nearstation)
 "tIc" = (
 /obj/effect/turf_decal/tile/red{
 	alpha = 182
@@ -90897,6 +90890,16 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/fore)
+"vem" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/hidden{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/yellow/hidden,
+/turf/closed/wall/r_wall,
+/area/engineering/atmos)
 "ven" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 8;
@@ -94276,13 +94279,6 @@
 	icon_state = "platingdmg3"
 	},
 /area/maintenance/central/secondary)
-"vVc" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/pipe/simple/yellow/visible{
-	dir = 9
-	},
-/turf/open/space/basic,
-/area/space/nearstation)
 "vVd" = (
 /obj/machinery/airalarm{
 	pixel_y = 24
@@ -133676,7 +133672,7 @@ mbY
 plb
 wVE
 gJx
-tHL
+gJx
 tYi
 tYi
 kVY
@@ -145549,7 +145545,7 @@ utt
 dSE
 wzi
 tVp
-rPP
+bwV
 jNF
 lco
 xVj
@@ -145805,8 +145801,8 @@ equ
 esM
 xrh
 fxT
-kmC
-vVc
+vem
+fOs
 kQP
 kQP
 kQP
@@ -147022,7 +147018,7 @@ jwO
 loS
 fNp
 fNp
-fOs
+mJb
 fNp
 fNp
 fNp
