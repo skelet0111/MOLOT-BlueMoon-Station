@@ -2,7 +2,7 @@
 	"version": 1,
 	"map_name": "4Nal Station",
 	"map_path": "splurt_maps/map_files/4Nalstation",
-	"map_file": "4NaL Station.dmm",
+	"map_file": "4NaL_Station.dmm",
 	"shuttles": {
 		"cargo": "cargo_box",
 		"ferry": "ferry_fancy",
