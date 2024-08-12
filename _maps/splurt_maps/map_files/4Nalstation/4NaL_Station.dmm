@@ -11949,6 +11949,16 @@
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall,
 /area/cargo/storage)
+"ekp" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/effect/landmark/start/mime,
+/turf/open/floor/wood,
+/area/hallway/secondary/entry)
 "ekr" = (
 /obj/structure/girder/displaced,
 /turf/open/floor/plating,
@@ -13705,6 +13715,10 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/engine,
 /area/science/storage)
+"eSD" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/aft)
 "eSE" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 4
@@ -21834,6 +21848,22 @@
 	icon_state = "hallway_floor"
 	},
 /area/hallway/primary/port)
+"hSH" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/aft/secondary)
 "hSZ" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -34684,6 +34714,11 @@
 	},
 /turf/open/floor/engine,
 /area/engineering/supermatter)
+"mPx" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/aft/secondary)
 "mPJ" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 4
@@ -39582,6 +39617,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/detective,
 /turf/open/floor/carpet,
 /area/security/detectives_office)
 "oBz" = (
@@ -43919,6 +43955,10 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
+"qfv" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/central)
 "qfw" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -51772,6 +51812,10 @@
 "sUU" = (
 /turf/closed/wall/r_wall,
 /area/maintenance/central)
+"sVb" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/starboard/upper)
 "sVq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/structure/disposalpipe/segment{
@@ -55326,6 +55370,16 @@
 	icon_state = "titanium_dam2_old"
 	},
 /area/engineering/transit_tube)
+"upN" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/effect/landmark/start/clown,
+/turf/open/floor/wood,
+/area/hallway/secondary/entry)
 "upX" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -61189,6 +61243,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/structure/disposalpipe/segment,
+/obj/effect/landmark/start/depsec/science,
 /turf/open/floor/plasteel/white,
 /area/security/checkpoint/science/research)
 "wAL" = (
@@ -97818,7 +97873,7 @@ wap
 wap
 lrI
 gTU
-wap
+mPx
 lwl
 bXg
 lwl
@@ -100627,7 +100682,7 @@ lwl
 lwl
 lwl
 cph
-fSV
+hSH
 wNT
 uVF
 kmW
@@ -152286,12 +152341,12 @@ pfh
 dVX
 vwn
 vwn
-vwn
+upN
 lWX
 czV
 byQ
 lWX
-vwn
+ekp
 vwn
 vwn
 vwn
@@ -154892,7 +154947,7 @@ pso
 uVu
 bcl
 bcl
-bcl
+eSD
 bcl
 rtA
 ouL
@@ -155633,7 +155688,7 @@ krc
 ngQ
 gkg
 pFF
-pFF
+qfv
 ePv
 bVY
 kxO
@@ -167698,7 +167753,7 @@ chZ
 klY
 iwE
 pFF
-pFF
+qfv
 qhB
 nEA
 bry
@@ -230412,7 +230467,7 @@ jHm
 jHm
 jHm
 jSB
-jSB
+sVb
 jSB
 jSB
 jSB
@@ -230910,7 +230965,7 @@ tWu
 tWu
 bWv
 tWu
-jSB
+sVb
 apq
 nUb
 nUb
