@@ -26654,7 +26654,7 @@
 /area/medical/genetics/cloning)
 "jsp" = (
 /obj/item/restraints/legcuffs/beartrap/crystalwire{
-	armed = TRUE
+	armed = 1
 	},
 /turf/open/floor/wood/shadow,
 /area/ruin/powered/ylva)
