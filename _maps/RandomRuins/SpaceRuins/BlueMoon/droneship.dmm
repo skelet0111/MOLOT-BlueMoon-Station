@@ -354,11 +354,11 @@
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/has_grav/droneship)
 "Jg" = (
-/obj/effect/spawner/structure/window/reinforced/tinted/electrochromatic,
 /obj/machinery/door/poddoor/preopen{
 	id = "droneshipu";
 	name = "containment blast door"
 	},
+/obj/effect/spawner/structure/window/reinforced/tinted,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/has_grav/droneship)
 "Jv" = (
