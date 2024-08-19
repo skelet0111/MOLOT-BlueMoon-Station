@@ -51296,9 +51296,6 @@
 /turf/open/floor/carpet/royalblack,
 /area/service/library)
 "sfT" = (
-/obj/machinery/vending/wallmed{
-	pixel_y = 28
-	},
 /obj/structure/table,
 /obj/item/clothing/glasses/hud/health,
 /obj/item/clothing/glasses/hud/health,
@@ -51319,6 +51316,10 @@
 	},
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 9
+	},
+/obj/machinery/vending/medical{
+	pixel_y = 31;
+	density = 0
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/storage)
