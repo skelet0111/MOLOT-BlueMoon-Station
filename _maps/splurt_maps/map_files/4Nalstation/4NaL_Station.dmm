@@ -5117,7 +5117,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
-/obj/structure/transit_tube_pod,
 /turf/closed/wall/r_wall,
 /area/medical/virology)
 "bSL" = (
@@ -28547,10 +28546,10 @@
 /turf/open/space/transparent/openspace,
 /area/space/nearstation)
 "kbt" = (
-/obj/structure/transit_tube/station/flipped,
 /obj/structure/transit_tube_pod{
 	dir = 4
 	},
+/obj/structure/transit_tube/station/flipped,
 /turf/open/floor/mineral/titanium/tiled,
 /area/engineering/transit_tube)
 "kbA" = (
@@ -38324,11 +38323,14 @@
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "nFH" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
 /obj/structure/transit_tube/station/reverse/flipped{
 	dir = 1
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 5
+/obj/structure/transit_tube_pod{
+	dir = 4
 	},
 /turf/open/floor/plasteel{
 	icon_state = "hallway_floor"
@@ -40858,9 +40860,6 @@
 /area/engineering/workshop)
 "oxc" = (
 /obj/structure/transit_tube/horizontal,
-/obj/structure/transit_tube_pod{
-	dir = 4
-	},
 /turf/open/floor/glass/reinforced,
 /area/engineering/lobby)
 "oxh" = (
@@ -67985,6 +67984,9 @@
 /area/engineering/engine_smes)
 "yfF" = (
 /obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/structure/transit_tube_pod{
+	dir = 4
+	},
 /obj/structure/transit_tube/station/reverse{
 	dir = 1
 	},
@@ -94805,7 +94807,7 @@ wap
 mNE
 lwl
 kEx
-kEx
+hTY
 hTY
 ePC
 hTY
@@ -95062,9 +95064,9 @@ wap
 mNE
 lwl
 kEx
-kEx
 hTY
-ePC
+hLI
+uRY
 hTY
 kEx
 kEx
@@ -95319,10 +95321,10 @@ wap
 ePX
 lwl
 kEx
-kEx
 hTY
-ePC
-hTY
+hQJ
+hLI
+wKn
 kEx
 kEx
 kEx
@@ -95576,10 +95578,10 @@ wap
 wap
 lwl
 kEx
-kEx
 hTY
-ePC
-hTY
+aOH
+hLI
+llk
 kEx
 kEx
 kEx
@@ -95833,9 +95835,9 @@ wap
 kph
 lwl
 kEx
-kEx
 hTY
-ePC
+hLI
+eSx
 hTY
 kEx
 kEx
@@ -96090,7 +96092,7 @@ oIG
 kph
 lwl
 kEx
-kEx
+hTY
 hTY
 ePC
 hTY
@@ -96347,7 +96349,7 @@ tZV
 dpk
 dpk
 kEx
-hTY
+kEx
 hTY
 ePC
 hTY
@@ -96604,9 +96606,9 @@ lMY
 jOd
 dpk
 kEx
+kEx
 hTY
-hLI
-uRY
+ePC
 hTY
 kEx
 kEx
@@ -96861,10 +96863,10 @@ koQ
 jOd
 dpk
 kEx
+kEx
 hTY
-hQJ
-hLI
-wKn
+ePC
+hTY
 kEx
 kEx
 kEx
@@ -97118,10 +97120,10 @@ fjj
 erM
 dpk
 kEx
+kEx
 hTY
-aOH
-hLI
-llk
+ePC
+hTY
 kEx
 kEx
 kEx
@@ -97375,9 +97377,9 @@ tPN
 baH
 dpk
 kEx
+kEx
 hTY
-hLI
-eSx
+ePC
 hTY
 kEx
 kEx
@@ -97632,7 +97634,7 @@ coj
 mYz
 dpk
 kEx
-hTY
+kEx
 hTY
 ePC
 hTY
