@@ -15203,6 +15203,9 @@
 /turf/open/floor/glass/reinforced,
 /area/maintenance/department/engine)
 "fnr" = (
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/plasteel/white{
 	dir = 1;
 	icon_state = "plaswhite_traction_plate"
@@ -18772,6 +18775,14 @@
 /obj/structure/table,
 /turf/open/floor/plasteel/checker,
 /area/command/heads_quarters/rd)
+"gDe" = (
+/mob/living/simple_animal/hostile/poison/bees{
+	beegent = /datum/reagent/drug/copium;
+	poison_type = /datum/reagent/drug/copium;
+	name = "The Whitty bee"
+	},
+/turf/open/floor/plating/smooth/grass/lavaland_jungle,
+/area/maintenance/aft/secondary)
 "gDp" = (
 /obj/machinery/mineral/stacking_unit_console{
 	machinedir = 8;
@@ -23357,6 +23368,9 @@
 "ify" = (
 /obj/structure/table/glass,
 /obj/item/clothing/neck/cloak/teshari/jobs/chemistry,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/open/floor/plasteel/white{
 	dir = 8;
 	icon_state = "plaswhite_traction_plate"
@@ -26433,6 +26447,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/ai_monitored/security/armory)
+"jnG" = (
+/obj/machinery/light,
+/turf/open/floor/plasteel/white{
+	icon_state = "plaswhite_traction_plate"
+	},
+/area/maintenance/aft/secondary)
 "jnW" = (
 /obj/machinery/reagentgrinder,
 /obj/structure/table/reinforced,
@@ -28244,6 +28264,12 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore/upper)
+"jVi" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/maintenance/aft/secondary)
 "jVj" = (
 /turf/open/floor/plasteel/dark/corner{
 	dir = 8
@@ -37995,7 +38021,11 @@
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "nzC" = (
-/mob/living/simple_animal/hostile/poison/bees,
+/mob/living/simple_animal/hostile/poison/bees{
+	beegent = /datum/reagent/consumable/ethanol/panty_dropper;
+	poison_type = /datum/reagent/consumable/ethanol/panty_dropper;
+	name = "The Wolf bee"
+	},
 /turf/open/floor/plating/smooth/grass/lavaland_jungle,
 /area/maintenance/aft/secondary)
 "nzH" = (
@@ -41054,6 +41084,9 @@
 "oAs" = (
 /obj/structure/table/glass,
 /obj/item/storage/bag/chemistry,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/plasteel/white,
 /area/maintenance/aft/secondary)
 "oAL" = (
@@ -63167,10 +63200,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/engineering/atmos)
-"wtZ" = (
-/mob/living/simple_animal/hostile/poison/bees/toxin,
-/turf/open/floor/plating/smooth/grass/lavaland_jungle,
-/area/maintenance/aft/secondary)
 "wuf" = (
 /obj/machinery/holopad,
 /turf/open/floor/plasteel,
@@ -89156,8 +89185,8 @@ aua
 huW
 eba
 ccz
-nzC
-wtZ
+gDe
+mgm
 nzC
 ccz
 kEx
@@ -89915,7 +89944,7 @@ kGM
 kGM
 kGM
 kGM
-pjz
+jnG
 mRN
 mRN
 fnr
@@ -90952,7 +90981,7 @@ wTC
 xhm
 kRZ
 rAh
-wVs
+jVi
 cXs
 aux
 wKo
