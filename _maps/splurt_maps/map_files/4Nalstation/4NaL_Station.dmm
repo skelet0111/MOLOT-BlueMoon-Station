@@ -8199,6 +8199,7 @@
 /obj/structure/chair/comfy{
 	dir = 8
 	},
+/obj/effect/landmark/start/scientist,
 /turf/open/floor/carpet,
 /area/medical/break_room)
 "cTE" = (
@@ -33658,6 +33659,10 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /turf/open/floor/engine,
 /area/engineering/gravity_generator)
+"lPw" = (
+/obj/effect/landmark/start/stowaway,
+/turf/open/floor/plating,
+/area/maintenance/aft/secondary)
 "lPJ" = (
 /mob/living/simple_animal/pet/bumbles,
 /obj/effect/turf_decal/trimline/green/filled/line{
@@ -36011,6 +36016,7 @@
 /obj/structure/chair/comfy{
 	dir = 4
 	},
+/obj/effect/landmark/start/roboticist,
 /turf/open/floor/carpet,
 /area/medical/break_room)
 "mNc" = (
@@ -48580,6 +48586,13 @@
 	},
 /turf/open/floor/engine,
 /area/engineering/gravity_generator)
+"res" = (
+/obj/structure/chair/comfy{
+	dir = 8
+	},
+/obj/effect/landmark/start/medical_doctor,
+/turf/open/floor/carpet,
+/area/medical/break_room)
 "rez" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -52417,6 +52430,13 @@
 /obj/structure/flora/rock/pile,
 /turf/open/floor/plating/asteroid/basalt/wasteland,
 /area/maintenance/aft/secondary)
+"ssX" = (
+/obj/structure/chair/comfy{
+	dir = 4
+	},
+/obj/effect/landmark/start/psychologist,
+/turf/open/floor/carpet,
+/area/medical/break_room)
 "stv" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Maintenance Access";
@@ -67989,6 +68009,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/effect/spawner/structure/window/reinforced,
 /obj/effect/turf_decal/trimline/blue/filled,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "ybt" = (
@@ -90907,7 +90930,7 @@ nrP
 bRX
 sLa
 pFY
-fKA
+lPw
 wap
 wap
 smh
@@ -226382,7 +226405,7 @@ deK
 boK
 iKg
 bag
-mNb
+ssX
 mNb
 ckJ
 smB
@@ -227153,7 +227176,7 @@ lHT
 qoO
 dGv
 bSi
-cTn
+res
 cTn
 ckJ
 smB
