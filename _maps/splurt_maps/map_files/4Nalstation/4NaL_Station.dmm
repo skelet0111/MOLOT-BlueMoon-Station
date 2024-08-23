@@ -28096,6 +28096,10 @@
 "jJn" = (
 /turf/open/floor/mineral/titanium/tiled,
 /area/engineering/transit_tube)
+"jJr" = (
+/obj/machinery/power/port_gen/pacman,
+/turf/open/floor/plasteel/dark,
+/area/engineering/main)
 "jJs" = (
 /obj/machinery/light,
 /obj/structure/closet/emcloset,
@@ -34133,6 +34137,7 @@
 "lOR" = (
 /obj/effect/spawner/structure/window/plasma,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
+/obj/machinery/power/port_gen/pacman,
 /turf/open/floor/engine,
 /area/engineering/gravity_generator)
 "lPw" = (
@@ -57179,6 +57184,7 @@
 	pixel_y = -26
 	},
 /obj/machinery/light,
+/obj/machinery/power/port_gen/pacman,
 /turf/open/floor/glass,
 /area/engineering/gravity_generator)
 "tPu" = (
@@ -162631,7 +162637,7 @@ htj
 wBY
 oKV
 cQX
-aRw
+wIb
 aRw
 aRw
 jqL
@@ -212250,7 +212256,7 @@ fUk
 vQd
 qRf
 qRf
-qRf
+jJr
 fCR
 hgP
 hgP
