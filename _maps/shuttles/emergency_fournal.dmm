@@ -81,6 +81,12 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
+"eM" = (
+/obj/machinery/computer/operating{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/escape)
 "fn" = (
 /obj/structure/closet/boxinggloves,
 /turf/open/floor/mineral/plastitanium/red,
@@ -1699,7 +1705,7 @@ vl
 nV
 RE
 bp
-bp
+eM
 pJ
 tX
 "}
