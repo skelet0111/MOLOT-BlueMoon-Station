@@ -1650,6 +1650,14 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/prison)
+"aHY" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 6
+	},
+/turf/open/floor/plasteel{
+	icon_state = "hallway_floor"
+	},
+/area/engineering/break_room)
 "aIa" = (
 /obj/structure/reagent_dispensers/keg/femcum,
 /turf/open/floor/wood,
@@ -1792,6 +1800,9 @@
 "aKR" = (
 /obj/structure/chair/comfy/black,
 /obj/effect/landmark/start/station_engineer,
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 1
+	},
 /turf/open/floor/plasteel{
 	icon_state = "hallway_floor"
 	},
@@ -2304,8 +2315,8 @@
 /area/command/bridge)
 "aVQ" = (
 /obj/docking_port/stationary/random{
-	id = "pod_lavaland1";
-	name = "lavaland"
+	name = "lavaland";
+	shuttle_id = "pod_lavaland1"
 	},
 /turf/open/space/transparent/openspace,
 /area/space)
@@ -3092,6 +3103,10 @@
 	},
 /turf/open/floor/glass,
 /area/hallway/secondary/exit)
+"bkW" = (
+/obj/effect/turf_decal/siding/wideplating,
+/turf/open/floor/glass,
+/area/engineering/lobby)
 "ble" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -3109,13 +3124,10 @@
 	},
 /area/engineering/break_room)
 "bls" = (
-/obj/structure/chair{
-	pixel_y = -2
-	},
-/obj/effect/landmark/start/security_officer,
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 8
 	},
+/obj/structure/closet/secure_closet/security/sec,
 /turf/open/floor/plasteel/dark,
 /area/security/office)
 "blP" = (
@@ -4016,6 +4028,10 @@
 "bzC" = (
 /obj/structure/chair/comfy/black,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/wood{
+	color = "#4C4C4C";
+	dir = 1
+	},
 /turf/open/floor/plasteel/grimy,
 /area/maintenance/central)
 "bzL" = (
@@ -4137,9 +4153,9 @@
 /obj/docking_port/stationary{
 	dwidth = 5;
 	height = 7;
-	id = "supply_home";
 	name = "Cargo Bay";
-	width = 12
+	width = 12;
+	shuttle_id = "supply_home"
 	},
 /turf/open/space/transparent/openspace,
 /area/space)
@@ -8024,6 +8040,10 @@
 	icon_state = "wood-broken3"
 	},
 /area/maintenance/department/crew_quarters/bar)
+"cOf" = (
+/obj/effect/turf_decal/siding/wideplating/corner,
+/turf/open/floor/glass,
+/area/engineering/lobby)
 "cOt" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -10060,6 +10080,9 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
+/obj/effect/turf_decal/siding/wideplating/dark/corner{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/security/brig/upper)
 "dxT" = (
@@ -10881,6 +10904,12 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/genetics/cloning)
+"dIo" = (
+/obj/effect/turf_decal/siding/wideplating/corner{
+	dir = 4
+	},
+/turf/open/floor/glass,
+/area/engineering/lobby)
 "dIr" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -11466,6 +11495,12 @@
 	},
 /turf/open/floor/wood,
 /area/service/bar/atrium)
+"dSC" = (
+/obj/effect/turf_decal/siding/wideplating{
+	dir = 1
+	},
+/turf/open/floor/glass,
+/area/engineering/lobby)
 "dSJ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 1
@@ -12930,6 +12965,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 1
 	},
+/obj/effect/turf_decal/siding/thinplating,
 /turf/open/floor/plasteel{
 	icon_state = "hallway_floor"
 	},
@@ -14547,6 +14583,14 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/exit)
+"eUY" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 10
+	},
+/turf/open/floor/plasteel{
+	icon_state = "hallway_floor"
+	},
+/area/engineering/break_room)
 "eVd" = (
 /obj/machinery/light/small,
 /obj/structure/table/wood/fancy,
@@ -15115,6 +15159,10 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/wood{
+	color = "#4C4C4C";
+	dir = 8
+	},
 /turf/open/floor/plasteel/grimy,
 /area/maintenance/central)
 "ffj" = (
@@ -15443,6 +15491,14 @@
 	icon_state = "hallway_floor"
 	},
 /area/engineering/lobby)
+"flD" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 4
+	},
+/turf/open/floor/plasteel{
+	icon_state = "hallway_floor"
+	},
+/area/engineering/break_room)
 "flJ" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -15808,6 +15864,12 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/carpet/royalblack,
 /area/command/bridge)
+"frY" = (
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/security/brig/upper)
 "fsa" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer1,
 /turf/open/floor/engine,
@@ -17855,10 +17917,10 @@
 	dir = 8;
 	dwidth = 3;
 	height = 5;
-	id = "commonmining_home";
 	name = "SS13: Common Mining Dock";
 	roundstart_template = /datum/map_template/shuttle/mining_common/meta;
-	width = 7
+	width = 7;
+	shuttle_id = "commonmining_home"
 	},
 /turf/open/space/transparent/openspace,
 /area/space)
@@ -19464,10 +19526,10 @@
 /obj/docking_port/stationary{
 	dwidth = 11;
 	height = 20;
-	id = "whiteship_home";
 	name = "SS13: Auxiliary Dock, Station-Port";
 	width = 30;
-	dir = 8
+	dir = 8;
+	shuttle_id = "whiteship_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -20696,6 +20758,12 @@
 "hgp" = (
 /turf/open/floor/plasteel/cafeteria,
 /area/service/kitchen)
+"hgq" = (
+/obj/effect/turf_decal/siding/wideplating/corner{
+	dir = 1
+	},
+/turf/open/floor/glass,
+/area/engineering/lobby)
 "hgD" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -20720,10 +20788,10 @@
 /obj/docking_port/stationary{
 	dwidth = 3;
 	height = 5;
-	id = "mining_home";
 	name = "mining shuttle bay";
 	roundstart_template = /datum/map_template/shuttle/mining/box;
-	width = 7
+	width = 7;
+	shuttle_id = "mining_home"
 	},
 /turf/open/space/transparent/openspace,
 /area/space)
@@ -23237,6 +23305,10 @@
 /obj/effect/decal/cleanable/semendrip{
 	pixel_x = -9
 	},
+/obj/effect/turf_decal/siding/wood{
+	color = "#4C4C4C";
+	dir = 4
+	},
 /turf/open/floor/wood{
 	color = "#4C4C4C";
 	icon_state = "wood-broken7"
@@ -24906,6 +24978,9 @@
 /area/engineering/transit_tube)
 "izJ" = (
 /obj/structure/ladder,
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 8
+	},
 /turf/open/floor/plating{
 	icon_state = "plating_rust"
 	},
@@ -25476,6 +25551,13 @@
 	},
 /turf/closed/wall/r_wall,
 /area/command/heads_quarters/rd)
+"iKL" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/effect/landmark/start/security_officer,
+/turf/open/floor/plasteel/dark,
+/area/security/office)
 "iKM" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/wood,
@@ -28260,6 +28342,12 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/circuit/airless,
 /area/ai_monitored/turret_protected/ai)
+"jLs" = (
+/obj/effect/turf_decal/siding/wideplating{
+	dir = 4
+	},
+/turf/open/floor/glass,
+/area/engineering/lobby)
 "jLO" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -28464,6 +28552,14 @@
 	},
 /turf/closed/wall,
 /area/service/lawoffice)
+"jPa" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 5
+	},
+/turf/open/floor/plasteel{
+	icon_state = "hallway_floor"
+	},
+/area/engineering/break_room)
 "jPg" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Security Desk";
@@ -31106,6 +31202,14 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/commons/storage/art)
+"kIk" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 9
+	},
+/turf/open/floor/plasteel{
+	icon_state = "hallway_floor"
+	},
+/area/engineering/break_room)
 "kIl" = (
 /obj/machinery/light{
 	dir = 1
@@ -32911,6 +33015,14 @@
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/lobby)
+"loQ" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 8
+	},
+/turf/open/floor/plasteel{
+	icon_state = "hallway_floor"
+	},
+/area/engineering/break_room)
 "loR" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 1
@@ -33160,8 +33272,8 @@
 /area/ruin/powered/ylva)
 "ltw" = (
 /obj/docking_port/stationary/random{
-	id = "pod_lavaland1";
-	name = "lavaland"
+	name = "lavaland";
+	shuttle_id = "pod_lavaland1"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -36191,6 +36303,9 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/security/brig/upper)
 "mGL" = (
@@ -37424,6 +37539,10 @@
 /area/maintenance/department/engine)
 "nbO" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/wood{
+	color = "#4C4C4C";
+	dir = 9
+	},
 /turf/open/floor/plasteel/grimy,
 /area/maintenance/central)
 "nbQ" = (
@@ -40180,6 +40299,7 @@
 /obj/structure/mineral_door/paperframe{
 	color = "#4C4C4C"
 	},
+/obj/effect/turf_decal/siding/wideplating,
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/central)
 "nXs" = (
@@ -42008,6 +42128,10 @@
 /turf/closed/wall/r_wall,
 /area/engineering/atmos)
 "oCj" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#4C4C4C";
+	dir = 8
+	},
 /turf/open/floor/plasteel/grimy,
 /area/maintenance/central)
 "oCt" = (
@@ -42842,6 +42966,9 @@
 /area/engineering/secure_construction)
 "oQo" = (
 /obj/structure/chair/comfy/black,
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 1
+	},
 /turf/open/floor/plasteel{
 	icon_state = "hallway_floor"
 	},
@@ -44323,8 +44450,8 @@
 "prf" = (
 /obj/docking_port/stationary/random{
 	dir = 4;
-	id = "pod_lavaland3";
-	name = "lavaland"
+	name = "lavaland";
+	shuttle_id = "pod_lavaland3"
 	},
 /turf/open/space/transparent/openspace,
 /area/space)
@@ -45260,6 +45387,10 @@
 "pJz" = (
 /obj/structure/mineral_door/paperframe{
 	color = "#4C4C4C"
+	},
+/obj/effect/turf_decal/siding/wood{
+	color = "#4C4C4C";
+	dir = 4
 	},
 /turf/open/floor/wood{
 	color = "#4C4C4C";
@@ -48382,6 +48513,12 @@
 	icon_state = "darkfull_whole_alt"
 	},
 /area/maintenance/space_hut/cabin)
+"qNJ" = (
+/obj/effect/turf_decal/siding/wideplating/corner{
+	dir = 8
+	},
+/turf/open/floor/glass,
+/area/engineering/lobby)
 "qNU" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 22
@@ -51231,7 +51368,9 @@
 /area/medical/morgue)
 "rLH" = (
 /obj/machinery/pool/controller,
-/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	color = "#4C4C4C"
+	},
 /turf/open/floor/glass,
 /area/commons/fitness/pool)
 "rLM" = (
@@ -51984,6 +52123,12 @@
 	},
 /turf/closed/wall,
 /area/security/courtroom)
+"rYk" = (
+/obj/effect/turf_decal/siding/thinplating,
+/turf/open/floor/plasteel{
+	icon_state = "hallway_floor"
+	},
+/area/engineering/break_room)
 "rYp" = (
 /obj/effect/decal/cleanable/ash,
 /obj/item/candle,
@@ -52042,10 +52187,10 @@
 /obj/docking_port/stationary{
 	dwidth = 1;
 	height = 32;
-	id = "arrivals_stationary";
 	name = "4nal arrivals";
 	roundstart_template = /datum/map_template/shuttle/arrival/fournal;
-	width = 9
+	width = 9;
+	shuttle_id = "arrivals_stationary"
 	},
 /turf/open/space/transparent/openspace,
 /area/space)
@@ -54514,7 +54659,9 @@
 /turf/open/floor/glass,
 /area/maintenance/starboard/upper)
 "sOB" = (
-/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	color = "#4C4C4C"
+	},
 /turf/open/floor/glass,
 /area/commons/fitness/pool)
 "sOL" = (
@@ -54836,6 +54983,12 @@
 "sTL" = (
 /turf/closed/wall/r_wall,
 /area/command/meeting_room)
+"sTV" = (
+/obj/effect/turf_decal/siding/wideplating{
+	dir = 8
+	},
+/turf/open/floor/glass,
+/area/engineering/lobby)
 "sUe" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 8
@@ -56703,6 +56856,14 @@
 	name = "large"
 	},
 /area/engineering/lobby)
+"tER" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 1
+	},
+/turf/open/floor/plasteel{
+	icon_state = "hallway_floor"
+	},
+/area/engineering/break_room)
 "tES" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -57322,10 +57483,10 @@
 	dir = 4;
 	dwidth = 2;
 	height = 5;
-	id = "laborcamp_home";
 	name = "fore bay 1";
 	roundstart_template = /datum/map_template/shuttle/labour/box;
-	width = 9
+	width = 9;
+	shuttle_id = "laborcamp_home"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -57782,9 +57943,9 @@
 	dir = 4;
 	dwidth = 12;
 	height = 18;
-	id = "emergency_home";
 	name = "4NaLStation emergency evac bay";
-	width = 32
+	width = 32;
+	shuttle_id = "emergency_home"
 	},
 /turf/open/space/transparent/openspace,
 /area/space)
@@ -65643,6 +65804,10 @@
 /obj/structure/chair/comfy/black{
 	dir = 4
 	},
+/obj/effect/turf_decal/siding/wood{
+	color = "#4C4C4C";
+	dir = 8
+	},
 /turf/open/floor/plasteel/grimy,
 /area/maintenance/central)
 "wNJ" = (
@@ -67114,16 +67279,9 @@
 /obj/docking_port/stationary{
 	dwidth = 2;
 	height = 13;
-	id = "ferry_home";
 	name = "port bay 2";
-	width = 5
-	},
-/obj/docking_port/stationary{
-	dwidth = 2;
-	height = 13;
-	id = "ferry_home";
-	name = "port bay 2";
-	width = 5
+	width = 5;
+	shuttle_id = "ferry_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -67427,6 +67585,7 @@
 /obj/effect/decal/cleanable/semen{
 	icon_state = "semen4"
 	},
+/obj/effect/turf_decal/siding/wideplating,
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/central)
 "xxD" = (
@@ -69453,6 +69612,14 @@
 /obj/structure/chair/stool,
 /turf/open/floor/plasteel/dark,
 /area/security/prison/garden)
+"yhL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/wood{
+	color = "#4C4C4C";
+	dir = 1
+	},
+/turf/open/floor/plasteel/grimy,
+/area/maintenance/central)
 "yhP" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -69466,6 +69633,9 @@
 "yin" = (
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/siding/wideplating/dark/corner{
+	dir = 1
 	},
 /turf/open/floor/plating{
 	icon_state = "plating_rust"
@@ -158499,7 +158669,7 @@ pVb
 kBI
 ueY
 jvs
-jvs
+iKL
 hhO
 evg
 pFF
@@ -163657,7 +163827,7 @@ htj
 htj
 hmK
 sPA
-nbO
+yhL
 xDP
 fPT
 lsy
@@ -170067,15 +170237,15 @@ kWz
 mpC
 kWz
 kSx
-pOp
-pOp
-pOp
+frY
+frY
+frY
 izJ
-pOp
-pOp
-pOp
-pOp
-pOp
+frY
+frY
+frY
+frY
+frY
 yin
 urW
 glD
@@ -210942,10 +211112,10 @@ cNF
 jzp
 smU
 cvN
-pJK
-pJK
-pJK
-pJK
+kIk
+loQ
+loQ
+eUY
 jFd
 udr
 kwf
@@ -211199,10 +211369,10 @@ iZc
 osx
 osx
 cvN
-pJK
+tER
 blg
 blg
-pJK
+rYk
 iPq
 ygS
 dMf
@@ -211970,10 +212140,10 @@ dCX
 uqm
 ehL
 cvN
-pJK
+tER
 xuH
 pJK
-pJK
+rYk
 riG
 gbF
 axk
@@ -212227,10 +212397,10 @@ ntB
 pyU
 rSg
 cvN
+tER
 pJK
 pJK
-pJK
-pJK
+rYk
 vVm
 pyz
 nCP
@@ -212484,10 +212654,10 @@ wCj
 osx
 qnz
 soY
-pJK
-pJK
-pJK
-pJK
+jPa
+flD
+flD
+aHY
 iPq
 pyz
 nCP
@@ -222253,12 +222423,12 @@ lED
 jWv
 mUE
 mUE
-mUE
-mUE
-mUE
-mUE
-mUE
-mUE
+cOf
+jLs
+jLs
+jLs
+jLs
+dIo
 xnB
 gxC
 qqS
@@ -222510,12 +222680,12 @@ wty
 qlM
 kdQ
 mUE
-mUE
+bkW
 bdl
 qyh
 qyh
 bdl
-mUE
+dSC
 xnB
 bVZ
 qqS
@@ -222767,12 +222937,12 @@ wpo
 qlM
 mUE
 mUE
-mUE
+bkW
 bZm
 oLB
 fQz
 eAD
-mUE
+dSC
 bqG
 gxC
 qqS
@@ -223024,12 +223194,12 @@ hMQ
 qlM
 tmo
 mUE
-mUE
+bkW
 vEF
 qbv
 qbv
 bdl
-mUE
+dSC
 sZy
 bVZ
 qqS
@@ -223281,12 +223451,12 @@ iVy
 qlM
 mUE
 mUE
-mUE
-mUE
-mUE
-mUE
-mUE
-mUE
+qNJ
+sTV
+sTV
+sTV
+sTV
+hgq
 sZy
 gxC
 qbc

@@ -39,6 +39,22 @@
 	color = "#BD83AC"
 	},
 /area/shuttle/abandoned)
+"do" = (
+/obj/effect/decal/cleanable/dirt{
+	desc = "A thin layer of dust coating the floor.";
+	name = "dust"
+	},
+/obj/machinery/button/door{
+	id = "whiteship_bridge";
+	name = "Bridge Blast Door Control";
+	pixel_x = 5;
+	pixel_y = -24
+	},
+/turf/open/floor/plasteel/white{
+	icon_state = "plaswhite_whole_alt";
+	color = "#cc0000"
+	},
+/area/shuttle/abandoned/bridge)
 "eb" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible{
 	dir = 9
@@ -455,9 +471,6 @@
 	},
 /area/shuttle/abandoned/engine)
 "qG" = (
-/obj/structure/window/shuttle{
-	color = "#cc0000"
-	},
 /obj/machinery/door/poddoor{
 	id = "whiteship_bridge";
 	color = "#cc0000"
@@ -711,9 +724,6 @@
 	},
 /area/shuttle/abandoned)
 "Cq" = (
-/obj/structure/window/shuttle{
-	color = "#cc0000"
-	},
 /obj/machinery/door/poddoor{
 	id = "whiteship_bridge";
 	color = "#cc0000"
@@ -823,9 +833,6 @@
 	},
 /area/shuttle/abandoned)
 "FP" = (
-/obj/structure/window/shuttle{
-	color = "#cc0000"
-	},
 /obj/structure/window/shuttle,
 /obj/structure/grille{
 	color = "#cc0000"
@@ -851,9 +858,6 @@
 	},
 /area/shuttle/abandoned/bridge)
 "HW" = (
-/obj/structure/window/shuttle{
-	color = "#cc0000"
-	},
 /obj/machinery/door/poddoor{
 	id = "whiteship_bridge";
 	color = "#cc0000"
@@ -904,6 +908,10 @@
 /area/shuttle/abandoned)
 "Lk" = (
 /obj/structure/window/shuttle,
+/obj/machinery/door/poddoor{
+	id = "whiteship_bridge";
+	color = "#cc0000"
+	},
 /turf/open/floor/plasteel/white{
 	icon_state = "plaswhite_whole_alt"
 	},
@@ -983,13 +991,13 @@
 	dheight = 0;
 	dwidth = 11;
 	height = 13;
-	id = "whiteship";
 	launch_status = 0;
 	movement_force = list("KNOCKDOWN" = 0, "THROW" = 0);
 	name = "KnotTailus";
 	port_direction = 8;
 	preferred_direction = 4;
-	width = 28
+	width = 28;
+	shuttle_id = "whiteship"
 	},
 /turf/open/floor/plasteel/white{
 	icon_state = "plaswhite_whole_alt";
@@ -1019,9 +1027,6 @@
 	},
 /area/shuttle/abandoned/engine)
 "RO" = (
-/obj/structure/window/shuttle{
-	color = "#cc0000"
-	},
 /obj/machinery/door/poddoor{
 	id = "whiteship_bridge";
 	color = "#cc0000"
@@ -1142,12 +1147,6 @@
 "Xa" = (
 /obj/structure/chair/comfy/purple{
 	dir = 4
-	},
-/obj/machinery/button/door{
-	id = "whiteship_bridge";
-	name = "Bridge Blast Door Control";
-	pixel_x = 5;
-	pixel_y = -24
 	},
 /turf/open/floor/plasteel/white{
 	icon_state = "plaswhite_whole_alt";
@@ -1560,7 +1559,7 @@ EN
 of
 Mh
 zj
-iy
+do
 of
 EN
 EN
