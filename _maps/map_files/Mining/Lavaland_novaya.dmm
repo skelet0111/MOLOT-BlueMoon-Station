@@ -5243,7 +5243,7 @@
 	height = 16;
 	name = "DS-1 Parking Spot";
 	width = 16;
-	id = "ds1_syndicate";
+	shuttle_id = "ds1_syndicate";
 	dwidth = 6
 	},
 /turf/open/lava/smooth/lava_land_surface,
@@ -7033,7 +7033,7 @@
 	dir = 2;
 	dwidth = 11;
 	height = 22;
-	id = "whiteship_lavaland";
+	shuttle_id = "whiteship_lavaland";
 	name = "lavaland wastes";
 	width = 35
 	},
@@ -7401,7 +7401,7 @@
 	dir = 8;
 	dwidth = 3;
 	height = 7;
-	id = "lavaland_common_away_xenoarch_2";
+	shuttle_id = "lavaland_common_away_xenoarch_2";
 	name = "Xenoarch Public Dock";
 	width = 7
 	},
@@ -13623,7 +13623,7 @@
 	area_type = /area/lavaland/surface/outdoors;
 	dwidth = 3;
 	height = 7;
-	id = "lavaland_common_away";
+	shuttle_id = "lavaland_common_away";
 	name = "Lavaland Mining Public Wing";
 	width = 7
 	},
@@ -15931,7 +15931,7 @@
 	dir = 2;
 	dwidth = 3;
 	height = 10;
-	id = "mining_away";
+	shuttle_id = "mining_away";
 	name = "lavaland mine";
 	width = 7
 	},
@@ -20142,7 +20142,7 @@
 /obj/docking_port/stationary{
 	dwidth = 3;
 	height = 6;
-	id = "laborcamp_away";
+	shuttle_id = "laborcamp_away";
 	name = "labor camp";
 	roundstart_template = null;
 	width = 12
@@ -22138,7 +22138,7 @@
 	dir = 8;
 	dwidth = 3;
 	height = 7;
-	id = "lavaland_common_away_xenoarch_1";
+	shuttle_id = "lavaland_common_away_xenoarch_1";
 	name = "Mining base public dock";
 	width = 7
 	},

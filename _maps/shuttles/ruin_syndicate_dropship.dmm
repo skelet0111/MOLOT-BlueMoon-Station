@@ -19,7 +19,7 @@
 	dir = 8
 	},
 /obj/machinery/button/door{
-	id = "caravansyndicate3_bolt_starboard";
+	shuttle_id = "caravansyndicate3_bolt_starboard";
 	name = "External Bolt Control";
 	normaldoorcontrol = 1;
 	pixel_x = -24;
@@ -73,7 +73,7 @@
 	dir = 2;
 	dwidth = 6;
 	height = 7;
-	id = "caravansyndicate3";
+	shuttle_id = "caravansyndicate3";
 	name = "Syndicate Drop Ship";
 	port_direction = 8;
 	preferred_direction = 4;
@@ -145,14 +145,14 @@
 "ns" = (
 /obj/structure/table/reinforced,
 /obj/machinery/button/door{
-	id = "caravansyndicate3_bridge";
+	shuttle_id = "caravansyndicate3_bridge";
 	name = "Bridge Blast Door Control";
 	pixel_x = -16;
 	pixel_y = 5;
 	req_access_txt = "150"
 	},
 /obj/machinery/button/door{
-	id = "caravansyndicate3_bolt_bridge";
+	shuttle_id = "caravansyndicate3_bolt_bridge";
 	name = "Bridge Bolt Control";
 	normaldoorcontrol = 1;
 	pixel_x = -16;
@@ -198,7 +198,7 @@
 /obj/structure/grille,
 /obj/structure/window/plastitanium,
 /obj/machinery/door/poddoor{
-	id = "caravansyndicate3_bridge"
+	shuttle_id = "caravansyndicate3_bridge"
 	},
 /turf/open/floor/plating,
 /area/shuttle/caravan/syndicate3)
@@ -286,7 +286,7 @@
 	dir = 8
 	},
 /obj/machinery/button/door{
-	id = "caravansyndicate3_bolt_port";
+	shuttle_id = "caravansyndicate3_bolt_port";
 	name = "External Bolt Control";
 	normaldoorcontrol = 1;
 	pixel_x = -24;

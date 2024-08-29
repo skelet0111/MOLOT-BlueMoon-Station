@@ -1079,7 +1079,7 @@
 	name = "Aegis Ship";
 	port_direction = 2;
 	width = 23;
-	id = "vox_raiders"
+	shuttle_id = "vox_raiders"
 	},
 /obj/docking_port/stationary{
 	dwidth = 11;

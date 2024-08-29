@@ -45,7 +45,7 @@
 /area/shuttle/caravan/syndicate1)
 "uW" = (
 /obj/machinery/button/door{
-	id = "caravansyndicate1_bolt";
+	shuttle_id = "caravansyndicate1_bolt";
 	name = "External Bolt Control";
 	normaldoorcontrol = 1;
 	pixel_x = -25;
@@ -94,7 +94,7 @@
 	dir = 4;
 	dwidth = 4;
 	height = 5;
-	id = "caravansyndicate1";
+	shuttle_id = "caravansyndicate1";
 	ignitionTime = 25;
 	name = "Syndicate Fighter";
 	port_direction = 2;
