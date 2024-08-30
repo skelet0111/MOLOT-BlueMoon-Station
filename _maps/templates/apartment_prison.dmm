@@ -236,7 +236,6 @@
 	req_access_txt = "12";
 	pixel_x = 0;
 	pixel_y = 0;
-	id = "main-prison-door";
 	id_tag = "main-prison-door"
 	},
 /turf/open/floor/plasteel,
