@@ -30499,6 +30499,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral,
+/obj/effect/landmark/start/bridgeofficer,
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "bfN" = (
@@ -33766,6 +33767,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral,
+/obj/effect/landmark/start/bridgeofficer,
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "bnk" = (
@@ -59606,6 +59608,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
+/obj/effect/landmark/start/bridgeofficer,
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/command)
 "cIP" = (
@@ -64675,6 +64678,18 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
+"dsN" = (
+/obj/structure/table/wood,
+/obj/item/paper_bin{
+	pixel_x = 4;
+	pixel_y = 2
+	},
+/obj/item/clipboard,
+/obj/item/pen{
+	pixel_x = 12
+	},
+/turf/open/floor/carpet,
+/area/medical/psychology)
 "dsO" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -64723,6 +64738,12 @@
 	icon_state = "wood-broken5"
 	},
 /area/maintenance/bar)
+"duj" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/medical/psychology)
 "dus" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -64944,6 +64965,9 @@
 /obj/structure/closet/secure_closet/freezer/kitchen,
 /turf/open/floor/plasteel/freezer,
 /area/service/kitchen)
+"dAE" = (
+/turf/closed/wall,
+/area/medical/psychology)
 "dAI" = (
 /obj/effect/spawner/structure/window,
 /obj/machinery/door/poddoor/preopen{
@@ -65843,6 +65867,10 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/commons/toilet)
+"ebf" = (
+/obj/structure/filingcabinet,
+/turf/open/floor/carpet,
+/area/medical/psychology)
 "ebn" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/junglebush,
@@ -67885,6 +67913,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/commons/fitness/recreation)
+"fky" = (
+/obj/structure/closet/secure_closet/psychology,
+/turf/open/floor/carpet/blue,
+/area/medical/psychology)
 "fkG" = (
 /obj/structure/rack,
 /obj/item/clothing/glasses/meson,
@@ -70427,6 +70459,10 @@
 	},
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
+"gBW" = (
+/obj/effect/landmark/navigate_destination/psychologist,
+/turf/open/floor/wood,
+/area/service/hydroponics/garden/monastery)
 "gCg" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -71693,6 +71729,11 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/central)
+"hrw" = (
+/obj/structure/table/wood,
+/obj/item/toy/plush/random,
+/turf/open/floor/carpet/blue,
+/area/medical/psychology)
 "hrD" = (
 /obj/machinery/power/terminal{
 	dir = 4
@@ -71959,6 +72000,16 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
+"hzt" = (
+/obj/machinery/airalarm{
+	dir = 8;
+	pixel_x = 23
+	},
+/obj/structure/sign/poster/official/help_others{
+	pixel_y = -32
+	},
+/turf/open/floor/carpet,
+/area/medical/psychology)
 "hzu" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -72167,6 +72218,13 @@
 "hFi" = (
 /turf/closed/wall,
 /area/commons/fitness/recreation)
+"hGn" = (
+/obj/structure/chair/sofa/left{
+	dir = 8
+	},
+/obj/machinery/power/apc/auto_name/east,
+/turf/open/floor/carpet,
+/area/medical/psychology)
 "hGs" = (
 /turf/open/floor/plasteel/white,
 /area/cargo/storage)
@@ -72852,6 +72910,15 @@
 	},
 /turf/open/pool,
 /area/commons/fitness/recreation)
+"icT" = (
+/obj/structure/chair/sofa/right{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/medical/psychology)
 "idd" = (
 /obj/structure/railing,
 /obj/structure/railing{
@@ -73197,6 +73264,14 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/dorms)
+"inV" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "psych_shutters";
+	name = "psychology office shutters"
+	},
+/turf/open/floor/glass/reinforced,
+/area/medical/psychology)
 "iol" = (
 /obj/machinery/vending/cigarette,
 /obj/effect/decal/cleanable/dirt,
@@ -73901,6 +73976,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
+"iUq" = (
+/obj/machinery/door/airlock/medical{
+	name = "Psychologist's Quarters";
+	req_access_txt = "76"
+	},
+/turf/open/floor/carpet/blue,
+/area/medical/psychology)
 "iUs" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/fans/tiny/invisible,
@@ -80565,6 +80647,11 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/engineering/break_room)
+"mNI" = (
+/obj/structure/bed,
+/obj/item/bedsheet/random,
+/turf/open/floor/carpet/blue,
+/area/medical/psychology)
 "mNR" = (
 /obj/structure/dresser,
 /turf/open/floor/carpet,
@@ -83401,6 +83488,9 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
+"oAW" = (
+/turf/open/floor/carpet/blue,
+/area/medical/psychology)
 "oBc" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/green/visible,
@@ -83887,6 +83977,12 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/fore)
+"oPf" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/medical/psychology)
 "oPj" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 6
@@ -89593,6 +89689,22 @@
 	},
 /turf/open/floor/mineral/titanium/blue,
 /area/commons/dorms)
+"sBQ" = (
+/obj/structure/table/wood,
+/obj/machinery/computer/med_data/laptop,
+/obj/item/radio/intercom{
+	name = "Station Intercom (General)";
+	pixel_x = 27
+	},
+/obj/machinery/button/door{
+	id = "psych_shutters";
+	name = "psychology office shutters control";
+	pixel_x = 26;
+	pixel_y = -9;
+	req_access_txt = "76"
+	},
+/turf/open/floor/carpet,
+/area/medical/psychology)
 "sCb" = (
 /obj/item/poster/random_official,
 /turf/open/floor/plating,
@@ -89766,6 +89878,17 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/medical)
+"sHB" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/light_switch{
+	pixel_x = -28;
+	pixel_y = 12
+	},
+/turf/open/floor/carpet,
+/area/medical/psychology)
 "sII" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -89963,6 +90086,16 @@
 /obj/structure/bedsheetbin,
 /turf/open/floor/wood/wood_tiled,
 /area/commons/toilet)
+"sRx" = (
+/obj/machinery/firealarm{
+	pixel_y = -24
+	},
+/obj/structure/chair/office/dark{
+	dir = 1
+	},
+/obj/effect/landmark/start/psychologist,
+/turf/open/floor/carpet,
+/area/medical/psychology)
 "sSt" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -90659,6 +90792,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/command/gateway)
+"tmu" = (
+/obj/effect/landmark/start/peacekeeper,
+/turf/open/floor/plasteel,
+/area/security/brig)
 "tnk" = (
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
@@ -92675,6 +92812,14 @@
 	},
 /turf/open/floor/wood,
 /area/service/bar)
+"uyF" = (
+/obj/machinery/door/airlock/medical{
+	name = "Psychology";
+	req_access_txt = "76"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/carpet,
+/area/medical/psychology)
 "uyX" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Aux Base Maintenance";
@@ -97273,6 +97418,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/construction/mining/aux_base)
+"xrG" = (
+/turf/open/floor/carpet,
+/area/medical/psychology)
 "xrO" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 1
@@ -139026,7 +139174,7 @@ xjG
 aqG
 aCX
 aDL
-aqJ
+tmu
 aDL
 cbV
 aqG
@@ -197166,16 +197314,16 @@ dQI
 dQI
 dQI
 dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
+inV
+inV
+inV
+inV
+dAE
+inV
+dAE
+dAE
+dAE
+dAE
 dQI
 dQI
 dQI
@@ -197423,16 +197571,16 @@ dQI
 dQI
 dQI
 dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
+inV
+ebf
+oPf
+xrG
+sHB
+xrG
+iUq
+oAW
+oAW
+dAE
 dQI
 dQI
 dQI
@@ -197680,16 +197828,16 @@ dQI
 dQI
 dQI
 dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
+inV
+duj
+xrG
+xrG
+dsN
+sRx
+dAE
+oAW
+fky
+dAE
 dQI
 dQI
 dQI
@@ -197937,16 +198085,16 @@ dQI
 dQI
 dQI
 dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
-dQI
+inV
+xrG
+icT
+hGn
+sBQ
+hzt
+dAE
+mNI
+hrw
+dAE
 dQI
 dQI
 dQI
@@ -198195,14 +198343,14 @@ sML
 fJF
 fJF
 sML
-fJF
-fJF
-fJF
+uyF
 sML
-fJF
-fJF
-fJF
-fJF
+sML
+sML
+sML
+sML
+sML
+sML
 sML
 fJF
 fJF
@@ -198451,8 +198599,8 @@ gSG
 oVd
 oVd
 oVd
-oVd
 gSG
+gBW
 oVd
 oVd
 mFC
@@ -198709,7 +198857,7 @@ oVd
 oVd
 uTA
 oVd
-oVd
+jtG
 oVd
 oVd
 oVd
@@ -198966,7 +199114,7 @@ iVK
 oVd
 oVd
 oVd
-oVd
+jtG
 oVd
 tYV
 khj
@@ -199223,7 +199371,7 @@ gBa
 oVd
 vjG
 oVd
-oVd
+jtG
 oVd
 oVd
 oVd
@@ -199480,7 +199628,7 @@ oVd
 oVd
 oVd
 oVd
-oVd
+jtG
 oVd
 uTA
 oVd
@@ -199737,8 +199885,8 @@ oVd
 oVd
 oVd
 oVd
+jtG
 omq
-oVd
 oVd
 oVd
 oVd
@@ -199993,8 +200141,8 @@ jtG
 jtG
 jtG
 oVd
-oVd
 lMn
+jtG
 oVd
 vjG
 oVd
