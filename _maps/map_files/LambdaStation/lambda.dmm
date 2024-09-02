@@ -40973,7 +40973,7 @@
 /area/space)
 "bIQ" = (
 /obj/structure/table/reinforced,
-/obj/item/katana/goldbrand,
+/obj/item/pneumatic_cannon/dildo,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
 "bIR" = (
@@ -94270,7 +94270,7 @@
 /area/maintenance/bar)
 "vpw" = (
 /obj/structure/table/reinforced,
-/obj/item/clothing/suit/space/hardsuit/shielded/goldenpa,
+/obj/item/dildo/knotted,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
 "vpM" = (
