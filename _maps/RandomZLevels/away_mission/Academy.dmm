@@ -3335,7 +3335,7 @@
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/trophy/gold_cup{
 	name = "Кубок Маркусону Дабильсон";
-	desc = "Победитель конкурса "бесконечный генератор пиццы" 2453 года"
+	desc = "Победитель конкурса = бесконечный генератор пиццы 2453 года"
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/academy/academyaft)
@@ -4600,6 +4600,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/academy/academyengine)
+"oI" = (
+/obj/item/pizzabox/pineapple,
+/turf/open/space,
+/area/space/nearstation)
 "oK" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/cafeteria,
@@ -4696,6 +4700,10 @@
 /obj/item/clothing/under/color/lightpurple,
 /turf/open/floor/carpet/purple,
 /area/awaymission/academy/classrooms)
+"pF" = (
+/obj/item/pizzabox/margherita,
+/turf/open/space,
+/area/space/nearstation)
 "pG" = (
 /obj/machinery/light{
 	dir = 8
@@ -4910,6 +4918,14 @@
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/open/floor/grass/grass0,
 /area/awaymission/academy/academygate)
+"rI" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/effect/overlay/water,
+/obj/effect/overlay/water/top,
+/turf/open/water,
+/area/awaymission/academy/academycellar)
 "rJ" = (
 /obj/structure/bed,
 /mob/living/simple_animal/hostile/wizard,
@@ -4919,7 +4935,7 @@
 "rM" = (
 /obj/item/pizzabox/bomb,
 /turf/open/space,
-/area/space)
+/area/space/nearstation)
 "rQ" = (
 /obj/structure/mineral_door/wood,
 /obj/structure/cable{
@@ -6184,6 +6200,17 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/awaymission/academy/headmaster)
+"Cb" = (
+/obj/structure/lattice,
+/mob/living/simple_animal/hostile/carp{
+	icon_dead = "magicarp_dead";
+	icon_gib = "magicarp_gib";
+	icon_living = "magicarp";
+	icon_state = "magicarp";
+	name = "bootleg  magicarp"
+	},
+/turf/open/space,
+/area/space/nearstation)
 "Cc" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 1
@@ -6623,6 +6650,10 @@
 /obj/structure/fluff/divine/shrine,
 /turf/open/floor/plating,
 /area/awaymission/academy/academyengine)
+"FV" = (
+/obj/item/pizzabox/mushroom,
+/turf/open/space,
+/area/space/nearstation)
 "FX" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -6910,10 +6941,6 @@
 /mob/living/simple_animal/hostile/mannequin,
 /turf/open/floor/wood,
 /area/awaymission/academy/classrooms)
-"Iz" = (
-/mob/living/simple_animal/hostile/mannequin,
-/turf/closed/wall,
-/area/awaymission/academy/headmaster)
 "IB" = (
 /obj/structure/shuttle/engine/large,
 /turf/open/space,
@@ -7042,6 +7069,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/academy/classrooms)
+"JJ" = (
+/obj/structure/lattice,
+/obj/item/picket_sign{
+	name = "ПОСЛАНИЕ УРОДУ ДАБИЛЬСОНУ!";
+	desc = "ТВОЯ ПИЦЦА МЕШАЕТ ДВИЖЕНИЮ КОРАБЛЯ! ТУПОЙ ТЫ УРОД!"
+	},
+/turf/open/space,
+/area/space/nearstation)
 "JN" = (
 /obj/machinery/door/window/brigdoor{
 	dir = 4
@@ -7053,6 +7088,11 @@
 /obj/item/clothing/head/wizard/red,
 /turf/open/floor/iron/rockvault/alien,
 /area/awaymission/academy/academyaft)
+"JQ" = (
+/obj/structure/lattice,
+/obj/item/pizzabox/vegetable,
+/turf/open/space,
+/area/space/nearstation)
 "JR" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -8154,6 +8194,10 @@
 /obj/item/kirbyplants/random,
 /turf/open/floor/wood,
 /area/awaymission/academy/classrooms)
+"SQ" = (
+/obj/item/pizzabox/vegetable,
+/turf/open/space,
+/area/space/nearstation)
 "SS" = (
 /obj/machinery/computer/operating,
 /turf/open/floor/plasteel,
@@ -8373,6 +8417,15 @@
 "UC" = (
 /turf/open/floor/circuit/red,
 /area/awaymission/academy/classrooms)
+"UD" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/item/toy/plush/carpplushie,
+/obj/effect/overlay/water,
+/obj/effect/overlay/water/top,
+/turf/open/water,
+/area/awaymission/academy/academycellar)
 "UF" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/brflowers,
@@ -8420,7 +8473,7 @@
 "UV" = (
 /obj/item/pitchfork,
 /turf/open/space,
-/area/space)
+/area/space/nearstation)
 "UW" = (
 /obj/structure/chair/wood/wings{
 	dir = 1
@@ -8530,6 +8583,12 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/academy/classrooms)
+"VY" = (
+/obj/item/toy/plush/carpplushie,
+/obj/effect/overlay/water,
+/obj/effect/overlay/water/top,
+/turf/open/water,
+/area/awaymission/academy/academycellar)
 "Wc" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/circuitboard/computer/labor_shuttle,
@@ -8711,6 +8770,9 @@
 	dir = 4
 	},
 /area/awaymission/academy/headmaster)
+"XG" = (
+/turf/open/floor/plating/ashplanet/wateryrock,
+/area/awaymission/academy/academycellar)
 "XI" = (
 /obj/machinery/light,
 /obj/item/kirbyplants/hedge,
@@ -10825,7 +10887,7 @@ aa
 aa
 aa
 aa
-ac
+WZ
 aa
 aa
 aa
@@ -10969,7 +11031,7 @@ aa
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
@@ -11562,6 +11624,7 @@ aa
 aa
 aa
 aa
+ac
 aa
 aa
 aa
@@ -11576,8 +11639,7 @@ aa
 aa
 aa
 aa
-aa
-aa
+ac
 aa
 aa
 aa
@@ -11753,7 +11815,7 @@ aa
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
@@ -12005,7 +12067,7 @@ aa
 aa
 aa
 aa
-ac
+aa
 aa
 aa
 aa
@@ -12079,7 +12141,7 @@ aa
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
@@ -12387,7 +12449,7 @@ aa
 aa
 aa
 aa
-ac
+aa
 aa
 aa
 aa
@@ -12744,25 +12806,25 @@ aa
 aa
 aa
 aa
+ac
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aS
-aS
 aa
 aa
 aa
 ac
+aa
+aa
+aa
+aa
+aa
+aa
+aS
+aS
+aa
+aa
+aa
+WZ
 aa
 aa
 aa
@@ -13133,7 +13195,7 @@ aa
 aa
 aa
 aa
-aa
+WZ
 aa
 aa
 aa
@@ -14187,10 +14249,10 @@ aa
 aa
 aa
 aa
+ac
 aa
 aa
-aa
-aa
+ac
 aa
 aa
 aa
@@ -14574,7 +14636,7 @@ aa
 aa
 aa
 aa
-ac
+aa
 aa
 aa
 aa
@@ -14687,7 +14749,7 @@ aa
 aa
 aa
 aa
-ac
+aa
 aa
 aa
 aa
@@ -15738,7 +15800,7 @@ aa
 aa
 aa
 aa
-aa
+pF
 aa
 aa
 aa
@@ -16254,7 +16316,7 @@ aa
 aa
 aa
 aa
-aa
+SQ
 aa
 aa
 aa
@@ -16522,7 +16584,7 @@ aa
 aa
 aa
 aa
-aP
+JQ
 qV
 pK
 aF
@@ -16640,12 +16702,12 @@ WZ
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+aP
+LZ
+aP
+aP
+aP
+aP
 aa
 aa
 aa
@@ -16769,15 +16831,15 @@ WZ
 WZ
 aa
 aa
+aP
+aP
 aa
 aa
+aP
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+aP
+aP
+aP
 aa
 WZ
 WZ
@@ -16899,7 +16961,7 @@ aa
 aa
 aa
 aa
-aa
+aP
 ab
 mZ
 na
@@ -16937,7 +16999,7 @@ cR
 dd
 Oj
 Oq
-un
+dc
 un
 fs
 bE
@@ -17027,8 +17089,8 @@ aa
 aa
 aa
 aa
-aa
-aa
+aP
+aP
 ab
 ab
 AL
@@ -17060,7 +17122,7 @@ ab
 as
 as
 as
-Iz
+as
 as
 as
 as
@@ -17157,7 +17219,7 @@ aa
 aa
 aa
 aa
-aa
+aP
 ab
 ab
 Kv
@@ -17284,10 +17346,10 @@ aa
 aa
 aa
 aa
+FV
 aa
 aa
-aa
-aa
+aP
 kw
 HI
 aF
@@ -17417,7 +17479,7 @@ aa
 aa
 aa
 aa
-aa
+aP
 kF
 ae
 hs
@@ -17547,7 +17609,7 @@ aa
 aa
 aa
 aa
-aa
+aP
 kF
 af
 ah
@@ -17677,7 +17739,7 @@ aa
 aa
 aa
 aa
-aa
+JJ
 kF
 ae
 UW
@@ -17802,7 +17864,7 @@ aa
 aa
 aa
 aa
-aa
+oI
 aa
 aa
 aa
@@ -18981,7 +19043,7 @@ aa
 aa
 aa
 aa
-aa
+FV
 aa
 aa
 aa
@@ -19749,7 +19811,7 @@ aa
 aa
 aa
 aa
-aa
+ac
 aa
 WZ
 WZ
@@ -20010,7 +20072,7 @@ aa
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
@@ -20165,7 +20227,7 @@ aa
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
@@ -20297,7 +20359,7 @@ aa
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
@@ -20404,7 +20466,7 @@ aa
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aG
@@ -20423,12 +20485,12 @@ aa
 aa
 aa
 aa
+ac
 aa
 aa
 aa
 aa
-aa
-aa
+ac
 aa
 aa
 aa
@@ -20531,7 +20593,7 @@ aa
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
@@ -20561,7 +20623,7 @@ aa
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
@@ -20594,7 +20656,7 @@ aP
 aP
 aP
 aP
-aP
+Cb
 aP
 aP
 aP
@@ -20720,7 +20782,7 @@ fk
 VW
 Ny
 bs
-aa
+ac
 aa
 aa
 aa
@@ -20816,7 +20878,7 @@ aG
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
@@ -20918,46 +20980,46 @@ aa
 (93,1,1) = {"
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aG
-aG
-aG
-aG
-aG
-tF
-tF
-tF
-tF
-tF
-aL
-aL
-aL
-aL
-aL
-aG
-aG
-aG
-aG
-aG
-aG
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 ac
+aa
+aa
+aa
+aa
+aG
+aG
+aG
+aG
+aG
+tF
+tF
+tF
+tF
+tF
+aL
+aL
+aL
+aL
+aL
+aG
+aG
+aG
+aG
+aG
+aG
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -20983,7 +21045,7 @@ bs
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
@@ -21076,14 +21138,14 @@ aL
 aG
 aG
 aG
-WZ
+aG
+aG
+aG
+aG
+aG
 aa
 aa
-aa
-aa
-aa
-aa
-aa
+ac
 aa
 aa
 aa
@@ -21117,7 +21179,7 @@ aa
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
@@ -21206,11 +21268,11 @@ aL
 aG
 aG
 aG
+aL
+aL
+aL
+aL
 aG
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -21336,12 +21398,12 @@ aL
 aL
 aL
 aL
+aL
+XG
+VY
+aL
 aG
-aa
-aa
-aa
-aa
-aa
+aG
 aa
 aa
 aa
@@ -21467,11 +21529,11 @@ dK
 pa
 aL
 aL
-WZ
-WZ
-WZ
-aa
-aa
+UD
+rI
+aL
+aG
+aG
 aa
 aa
 aa
@@ -21502,7 +21564,7 @@ rm
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
@@ -21597,8 +21659,8 @@ kS
 Hw
 Vs
 aL
-kV
-kV
+dK
+dK
 aL
 aG
 aG
@@ -21626,7 +21688,7 @@ aa
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
@@ -22008,7 +22070,7 @@ aa
 aa
 aa
 aa
-aa
+ac
 aa
 aa
 aa
