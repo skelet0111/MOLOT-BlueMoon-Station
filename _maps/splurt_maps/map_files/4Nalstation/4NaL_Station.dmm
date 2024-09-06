@@ -55753,7 +55753,7 @@
 /area/security/brig)
 "tkz" = (
 /obj/effect/spawner/structure/window/ice,
-/turf/open/space/basic,
+/turf/open/floor/plating/asteroid/snow/icemoon,
 /area/hallway/secondary/entry)
 "tkB" = (
 /obj/structure/disposalpipe/segment{
