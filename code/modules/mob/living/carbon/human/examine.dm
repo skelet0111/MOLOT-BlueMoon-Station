@@ -594,8 +594,7 @@ BLUEMOON - mechanical_erp_verbs_examine - REMOVAL END*/
 	if(LAZYLEN(.) > 2) //Want this to appear after species text
 		.[2] += "<hr>"
 
-	if(!(ITEM_SLOT_EYES in obscured))
-		. += span_boldnotice("Профиль персонажа: <a href='?src=\ref[src];character_profile=1'>\[Осмотреть\]</a>")
+	. += span_boldnotice("Профиль персонажа: <a href='?src=\ref[src];character_profile=1'>\[Осмотреть\]</a>")
 
 	if(activity)
 		. += "Деятельность: [activity]"
