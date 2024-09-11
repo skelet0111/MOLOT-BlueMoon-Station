@@ -4055,6 +4055,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
+"bAn" = (
+/obj/structure/table/wood/shadow,
+/obj/item/paper/fluff/fournal_lore,
+/turf/open/floor/wood/shadow,
+/area/ruin/powered/ylva)
 "bAR" = (
 /obj/machinery/door/airlock/command/glass{
 	name = "Research Director";
@@ -257017,7 +257022,7 @@ ozm
 ozm
 ozm
 ozm
-bZf
+bAn
 bZf
 cjh
 ozm

@@ -16,3 +16,7 @@
 <br>
 <br><br>
 <i>~Ylva, Chosen of the Wilds Near and Far'</i>"}
+
+/obj/item/paper/fluff/fournal_lore
+	name = "Placeholder"
+	info = {"Placeholder until I get time to lore"} 
