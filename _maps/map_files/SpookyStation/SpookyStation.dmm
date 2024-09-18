@@ -16777,10 +16777,6 @@
 	},
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/tcommsat/server)
-"gDp" = (
-/obj/item/hilbertshotel/ghostdojo,
-/turf/open/floor/spooktime/cobble,
-/area/eventmap/outside)
 "gIM" = (
 /obj/machinery/computer/telecomms/server{
 	dir = 4;
@@ -17585,6 +17581,10 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/tcommsat/computer)
+"vGR" = (
+/obj/item/hilbertshotel/ghostdojo,
+/turf/open/floor/spooktime/cobble,
+/area/eventmap/outside)
 "vMZ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
@@ -40022,7 +40022,7 @@ aab
 aab
 aab
 aph
-gDp
+vGR
 awm
 ayO
 aWA
