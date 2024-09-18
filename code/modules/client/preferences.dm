@@ -102,7 +102,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/preferred_map = null
 	var/preferred_chaos = null
 	var/be_victim = null
-	var/use_new_playerpanel = FALSE
+	var/use_new_playerpanel = TRUE
 	var/disable_combat_cursor = FALSE
 	var/pda_style = MONO
 	var/pda_color = "#808000"
@@ -303,7 +303,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	var/list/ignoring = list()
 
-	var/clientfps = 0
+	var/clientfps = 60
 
 	var/parallax = PARALLAX_INSANE
 
@@ -1519,7 +1519,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<b>Preferred Chaos Amount:</b> <a href='?_src_=prefs;preference=preferred_chaos;task=input'>[p_chaos]</a><br>"
 
 					//SPLURT Edit
-					dat += "<h2>S.P.L.U.R.T. Preferences</h2>"
+					dat += "<h2>VENUS Preferences</h2>"
 					dat += "<b>Be Antagonist Victim:</b> <a href='?_src_=prefs;preference=be_victim;task=input'>[be_victim ? be_victim : BEVICTIM_ASK]</a><br>"
 					dat += "<b>Disable combat mode cursor:</b> <a href='?_src_=prefs;preference=disable_combat_cursor'>[disable_combat_cursor?"Yes":"No"]</a><br>"
 					dat += "<b>Splashscreen Player Panel Style:</b> <a href='?_src_=prefs;preference=tg_playerpanel'>[(toggles & TG_PLAYER_PANEL)?"TG":"Old"]</a><br>"

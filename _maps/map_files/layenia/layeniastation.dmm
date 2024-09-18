@@ -8755,7 +8755,7 @@
 /area/ai_monitored/turret_protected/aisat/hallway)
 "bxg" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/urinal/shit{
+/obj/structure/urinal{
 	pixel_y = 4;
 	pixel_x = 26
 	},
@@ -19194,9 +19194,9 @@
 	color = "#FFFFFF"
 	},
 /obj/structure/closet/secure_closet/personal,
-/obj/item/toy/poolnoodle/blue,
-/obj/item/toy/poolnoodle/red,
-/obj/item/toy/poolnoodle/yellow,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
 /obj/machinery/airalarm{
 	pixel_y = 22
 	},
@@ -21933,7 +21933,7 @@
 	},
 /area/hallway/secondary/entry)
 "dHQ" = (
-/obj/item/toy/poolnoodle/blue,
+/obj/item/pool/pool_noodle,
 /turf/open/pool,
 /area/commons/fitness/pool)
 "dHU" = (
@@ -67120,9 +67120,9 @@
 	color = "#FFFFFF"
 	},
 /obj/structure/closet/secure_closet/personal,
-/obj/item/toy/poolnoodle/blue,
-/obj/item/toy/poolnoodle/red,
-/obj/item/toy/poolnoodle/yellow,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
 /turf/open/floor/plasteel{
 	icon_state = "hallway_floor"
 	},
@@ -101567,7 +101567,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/apc/auto_name/east,
-/obj/structure/urinal/shit{
+/obj/structure/urinal{
 	pixel_y = 34
 	},
 /turf/open/floor/plasteel/freezer,
@@ -143666,9 +143666,9 @@
 	color = "#FFFFFF"
 	},
 /obj/structure/closet/secure_closet/personal,
-/obj/item/toy/poolnoodle/blue,
-/obj/item/toy/poolnoodle/red,
-/obj/item/toy/poolnoodle/yellow,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
 /turf/open/floor/plasteel{
 	icon_state = "hallway_floor"
 	},

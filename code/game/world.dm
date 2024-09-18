@@ -308,7 +308,7 @@ GLOBAL_LIST(topic_status_cache)
 	var/defaultstation = CONFIG_GET(string/stationname)
 	if(servername || stationname != defaultstation)
 		. += (servername ? "<b>[servername]" : "<b>")
-		. += (stationname != defaultstation ? "[servername ? " &#8212 " : ""][stationname]</b>\] " : "</b>\] ")
+		. += (stationname != defaultstation ? "[servername ? ": " : ""][stationname]</b>\] " : "</b>\] ")
 
 	var/communityname = CONFIG_GET(string/communityshortname)
 	var/communitylink = CONFIG_GET(string/communitylink)
@@ -333,7 +333,7 @@ GLOBAL_LIST(topic_status_cache)
 	if(NUM2SECLEVEL(GLOB.security_level))
 		. += "[NUM2SECLEVEL(GLOB.security_level)] alert, "
 
-	. += "[get_active_player_count(afk_check = TRUE)] playing"
+	. += "[get_total_player_count()] playing"
 
 	status = .
 

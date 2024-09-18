@@ -254,9 +254,9 @@
 	//Set news report and mode result
 	mode.set_round_result()
 
-	var/survival_rate = GLOB.joined_player_list.len ? "[PERCENT(popcount[POPCOUNT_SURVIVORS]/GLOB.joined_player_list.len)]%" : "there's literally no player"
+	// var/survival_rate = GLOB.joined_player_list.len ? "[PERCENT(popcount[POPCOUNT_SURVIVORS]/GLOB.joined_player_list.len)]%" : "there's literally no player"
 
-	send2adminchat("Server", "A round of [mode.name] just ended[mode_result == "undefined" ? "." : " with a [mode_result]."] Survival rate: [survival_rate]")
+	// send2adminchat("Server", "A round of [mode.name] just ended[mode_result == "undefined" ? "." : " with a [mode_result]."] Survival rate: [survival_rate]")
 
 	if(length(CONFIG_GET(keyed_list/cross_server)))
 		send_news_report()
@@ -269,7 +269,7 @@
 			broadcastmessage += "[GLOB.round_end_notifiees.Join(", ")], "
 
 
-		broadcastmessage += "[((broadcastmessage == "") ? "the" : "The")] current round has ended. Please standby for your shift interlude Nanotrasen News Network's report!\n"
+		broadcastmessage += "[((broadcastmessage == "") ? "The" : "the")] current round has ended. Please standby for your shift interlude Nanotrasen News Network's report!\n"
 		broadcastmessage += "```\n[send_news_report()]\n```"
 
 		if(CONFIG_GET(string/chat_reboot_role))

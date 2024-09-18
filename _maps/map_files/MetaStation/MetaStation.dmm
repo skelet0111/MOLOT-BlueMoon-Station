@@ -60903,6 +60903,16 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
 	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "kFi" = (
@@ -63284,7 +63294,7 @@
 /area/commons/dorms)
 "lRU" = (
 /obj/structure/closet/athletic_mixed,
-/obj/item/toy/poolnoodle/blue,
+/obj/item/pool/pool_noodle,
 /turf/open/floor/plating,
 /area/commons/fitness/pool)
 "lSH" = (

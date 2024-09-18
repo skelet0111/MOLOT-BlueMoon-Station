@@ -1,4 +1,5 @@
 // Verb to toggle restart notifications
+/*
 /client/verb/notify_restart()
 	set category = "OOC"
 	set name = "Notify Restart"
@@ -19,7 +20,7 @@
 
 	var/stored_id = SSdiscord.lookup_id(usr.ckey)
 	if(!stored_id) // Account is not linked
-		to_chat(src, span_warning("This requires you to link your Discord account with the \"Link Discord Account\" verb."))
+		to_chat(src, span_warning("This requires you to have your Discord account linked to your Ckey."))
 		return
 
 	else // Linked
@@ -32,3 +33,5 @@
 		// If we got here, they arent in the list. Chuck 'em in!
 		to_chat(src, span_notice("You will now be notified when the server restarts"))
 		SSdiscord.notify_members += "<@[stored_id]>" // The list uses strings because BYOND cannot handle a 17 digit integer
+
+*/

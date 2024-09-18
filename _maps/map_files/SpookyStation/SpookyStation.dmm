@@ -17352,6 +17352,10 @@
 /obj/machinery/telecomms/server/presets/medical,
 /turf/open/floor/plasteel/dark,
 /area/eventmap/mountaininside)
+"qwA" = (
+/obj/item/hilbertshotel/ghostdojo,
+/turf/open/floor/spooktime/cobble,
+/area/eventmap/outside)
 "qyu" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -40018,7 +40022,7 @@ aab
 aab
 aab
 aph
-apR
+qwA
 awm
 ayO
 aWA
