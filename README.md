@@ -1,9 +1,9 @@
-## VENUS Station 13
-Based and maintained from VENUS Station.
+## S.P.L.U.R.T. Station 13
+Based and maintained from Sandstorm Station 13, which is based and maintained from Citadel, which is based and mantained from /tg/station. (yup)
 
-[![CI Suite](https://github.com/VENUS-Station/VENUS-Station-13/workflows/CI%20Suite/badge.svg)](https://github.com/VENUS-Station/VENUS-Station-13//actions?query=workflow%3A%22CI+Suite%22)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/VENUS-Station/VENUS-Station-13.svg)](http://isitmaintained.com/project/VENUS-Station/VENUS-Station-13 "Percentage of issues still open")
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/VENUS-Station/VENUS-Station-13.svg)](http://isitmaintained.com/project/VENUS-Station/VENUS-Station-13 "Average time to resolve an issue")
+[![CI Suite](https://github.com/SPLURT-Station/S.P.L.U.R.T-Station-13/workflows/CI%20Suite/badge.svg)](https://github.com/SPLURT-Station/S.P.L.U.R.T-Station-13//actions?query=workflow%3A%22CI+Suite%22)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/SPLURT-Station/S.P.L.U.R.T-Station-13.svg)](http://isitmaintained.com/project/SPLURT-Station/S.P.L.U.R.T-Station-13 "Percentage of issues still open")
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/SPLURT-Station/S.P.L.U.R.T-Station-13.svg)](http://isitmaintained.com/project/SPLURT-Station/S.P.L.U.R.T-Station-13 "Average time to resolve an issue")
 
 [![forthebadge](http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/pretty-risque.svg)](https://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com) [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 
@@ -28,11 +28,11 @@ Based and maintained from VENUS Station.
 * **Code:** <https://github.com/SandPoot/Sandstorm-Station-13>
 * **Discord:**  <https://discord.gg/quXTqa6cp9> (updated 19/01/2022)
 
-**VENUS Station Information**
-* **Code:** https://github.com/VENUS-Station/VENUS-Station-13
+**S.P.L.U.R.T. Station Information**
+* **Code:** https://github.com/SPLURT-Station/S.P.L.U.R.T-Station-13
 * **Discord:** https://discord.gg/wynHVMzHzC
-* **Patreon:** https://www.patreon.com/VENUSstation13
-* **Ko-fi:** https://ko-fi.com/VENUS
+* **Patreon:** https://www.patreon.com/SPLURTstation13
+* **Ko-fi:** https://ko-fi.com/splurt
 
 ## DOWNLOADING
 
@@ -161,7 +161,7 @@ Web delivery of game resources makes it quicker for players to join and reduces 
 
 1. Edit compile_options.dm to set the `PRELOAD_RSC` define to `0`
 1. Add a url to config/external_rsc_urls pointing to a .zip file containing the .rsc.
-    * If you keep up to date with /tg/ you could reuse /tg/'s rsc cdn at http://tgstation13.download/byond/tgstation.zip. Otherwise you can use cdn services like CDN77 or cloudflare (requires adding a page rule to enable caching of the zip), or roll your own cdn using route 53 and vps providers.
+	* If you keep up to date with /tg/ you could reuse /tg/'s rsc cdn at http://tgstation13.download/byond/tgstation.zip. Otherwise you can use cdn services like CDN77 or cloudflare (requires adding a page rule to enable caching of the zip), or roll your own cdn using route 53 and vps providers.
 	* Regardless even offloading the rsc to a website without a CDN will be a massive improvement over the in game system for transferring files.
 
 ## IRC BOT SETUP
