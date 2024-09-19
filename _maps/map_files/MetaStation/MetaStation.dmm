@@ -199,8 +199,8 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/execution/education)
@@ -216,12 +216,12 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
 /obj/machinery/light/small{
 	dir = 1;
 	light_color = "#ffc1c1"
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
-	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/execution/education)
@@ -1276,9 +1276,6 @@
 /area/security/prison/cells)
 "adp" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 9
-	},
 /turf/open/floor/plasteel/dark,
 /area/security/execution/education)
 "adq" = (
@@ -60906,27 +60903,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
 	},
-/obj/structure/closet/secure_closet{
-	name = "contraband locker";
-	req_access_txt = "3"
-	},
-/obj/effect/spawner/lootdrop/maintenance{
-	lootcount = 3;
-	name = "3maintenance loot spawner"
-	},
-/obj/effect/spawner/lootdrop/armory_contraband{
-	loot = list(/obj/item/gun/ballistic/automatic/pistol=5,/obj/item/gun/ballistic/shotgun/automatic/combat=5,/obj/item/gun/ballistic/revolver/mateba,/obj/item/gun/ballistic/automatic/pistol/deagle,/obj/item/storage/box/syndie_kit/throwing_weapons=3)
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "kFi" = (
@@ -79682,7 +79658,7 @@
 "uNg" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 4
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/execution/education)
