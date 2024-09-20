@@ -67565,7 +67565,7 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/security/prison/upper)
 "ykh" = (
-/obj/structure/urinal{
+/obj/structure/urinal/shit{
 	pixel_y = 30
 	},
 /turf/open/floor/mineral/titanium/blue,
