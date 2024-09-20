@@ -67,7 +67,6 @@
 		<span class='danger'>And see a bag full of dice. Confused, \
 		you take one... and the bag vanishes.</span>")
 	var/turf/T = get_turf(user)
-	//SPLURT CHANGE (So long, free wiznerd) | VENUS CHANGE: BROUGHT IT BACK.
 	var/obj/item/dice/d20/fate/one_use/critical_fail = new(T)
 	user.put_in_hands(critical_fail)
 	qdel(src)

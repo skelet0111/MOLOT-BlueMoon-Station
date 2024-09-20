@@ -16,14 +16,12 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	var/datum/map_template/hilbertshotel/apartment/bar/hilberts_hotel_rooms_apartment_bar
 	var/datum/map_template/hilbertshotel/apartment/garden/hilberts_hotel_rooms_apartment_garden
 	var/datum/map_template/hilbertshotel/apartment/sauna/hilberts_hotel_rooms_apartment_sauna
-	//SPLURT EDIT END
-	//VENUS EDIT START
 	var/datum/map_template/hilbertshotel/apartment/beach/hilberts_hotel_rooms_apartment_beach
 	var/datum/map_template/hilbertshotel/apartment/prison/hilberts_hotel_rooms_apartment_prison
 	var/datum/map_template/hilbertshotel/apartment/winter/hilberts_hotel_rooms_apartment_winter
 	var/datum/map_template/hilbertshotel/apartment/forest/hilberts_hotel_rooms_apartment_forest
 	var/datum/map_template/hilbertshotel/apartment/jungle/hilberts_hotel_rooms_apartment_jungle
-	//VENUS EDIT END
+	//SPLURT EDIT END
 	var/datum/map_template/hilbertshotel/hotelRoomTemp
 	var/datum/map_template/hilbertshotel/empty/hotelRoomTempEmpty
 	var/datum/map_template/hilbertshotel/lore/hotelRoomTempLore
@@ -52,14 +50,12 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	hilberts_hotel_rooms_apartment_bar = new()
 	hilberts_hotel_rooms_apartment_garden = new()
 	hilberts_hotel_rooms_apartment_sauna = new()
-	//SPLURT EDIT END
-	//VENUS EDIT START
 	hilberts_hotel_rooms_apartment_beach = new()
 	hilberts_hotel_rooms_apartment_prison = new()
 	hilberts_hotel_rooms_apartment_winter= new()
 	hilberts_hotel_rooms_apartment_forest = new()
 	hilberts_hotel_rooms_apartment_jungle = new()
-	//VENUS EDIT END
+	//SPLURT EDIT END
 	var/area/currentArea = get_area(src)
 	if(currentArea.type == /area/ruin/space/has_grav/hilbertresearchfacility)
 		ruinSpawned = TRUE
