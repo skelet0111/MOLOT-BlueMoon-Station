@@ -91805,12 +91805,12 @@
 /obj/structure/closet/crate{
 	name = "noodle crate"
 	},
-/obj/item/toy/poolnoodle/yellow,
-/obj/item/toy/poolnoodle/red,
-/obj/item/toy/poolnoodle/blue,
-/obj/item/toy/poolnoodle/yellow,
-/obj/item/toy/poolnoodle/red,
-/obj/item/toy/poolnoodle/blue,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
 /turf/open/floor/plasteel/dark,
 /area/commons/fitness/pool)
 "tLV" = (
