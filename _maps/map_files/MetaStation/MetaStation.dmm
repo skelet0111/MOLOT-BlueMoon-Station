@@ -191,40 +191,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/execution/education)
-"aaC" = (
-/obj/machinery/atmospherics/pipe/simple/general/hidden,
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/security/execution/education)
-"aaD" = (
-/obj/structure/sink/kitchen{
-	desc = "A sink used for washing one's hands and face. It looks rusty and home-made";
-	name = "old sink";
-	pixel_y = 28
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/light/small{
-	dir = 1;
-	light_color = "#ffc1c1"
-	},
-/turf/open/floor/plasteel/dark,
-/area/security/execution/education)
 "aaE" = (
 /obj/machinery/power/apc{
 	areastring = "/area/security/execution/education";
@@ -269,13 +235,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/execution/education)
-"aaH" = (
-/obj/structure/chair/office/dark{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/open/floor/plasteel/dark,
-/area/security/execution/education)
 "aaI" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -317,15 +276,6 @@
 "aaR" = (
 /turf/open/floor/plasteel,
 /area/security/prison)
-"aaS" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/red,
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
-/obj/machinery/light/small,
-/turf/open/floor/plasteel/dark,
-/area/security/execution/education)
 "aaT" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
@@ -1274,10 +1224,6 @@
 	},
 /turf/open/floor/plating,
 /area/security/prison/cells)
-"adp" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
-/turf/open/floor/plasteel/dark,
-/area/security/execution/education)
 "adq" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -20475,6 +20421,11 @@
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"bGD" = (
+/obj/structure/closet/athletic_mixed,
+/obj/item/pool/pool_noodle,
+/turf/open/floor/plating,
+/area/commons/fitness/pool)
 "bGF" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow,
@@ -24549,6 +24500,19 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"caO" = (
+/obj/machinery/atmospherics/pipe/simple/general/hidden,
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/execution/education)
 "caT" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -48747,6 +48711,27 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
+"dVN" = (
+/obj/structure/sink/kitchen{
+	desc = "A sink used for washing one's hands and face. It looks rusty and home-made";
+	name = "old sink";
+	pixel_y = 28
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 1;
+	light_color = "#ffc1c1"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/execution/education)
 "dVP" = (
 /obj/structure/cable/white,
 /obj/machinery/light{
@@ -56154,6 +56139,17 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/security/prison/upper)
+"ieq" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/light/small,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/execution/education)
 "ieA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
@@ -60899,22 +60895,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/cargo/miningoffice)
-"kEV" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 6
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/ai_monitored/security/armory)
 "kFi" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
@@ -62299,6 +62279,15 @@
 /obj/machinery/holopad/secure,
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
+"lpP" = (
+/obj/structure/chair/office/dark{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/execution/education)
 "lpS" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass{
@@ -63292,11 +63281,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/dorms)
-"lRU" = (
-/obj/structure/closet/athletic_mixed,
-/obj/item/pool/pool_noodle,
-/turf/open/floor/plating,
-/area/commons/fitness/pool)
 "lSH" = (
 /obj/docking_port/stationary/random{
 	shuttle_id = "pod_2_lavaland";
@@ -73149,6 +73133,12 @@
 /obj/item/lighter,
 /turf/open/floor/carpet,
 /area/command/bridge)
+"rcR" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/execution/education)
 "rcZ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -79580,6 +79570,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/storage/tools)
+"uJP" = (
+/obj/machinery/atmospherics/pipe/simple/general/hidden,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/execution/education)
 "uJR" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
@@ -79665,13 +79662,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/service/bar)
-"uNg" = (
-/obj/machinery/atmospherics/pipe/simple/general/hidden,
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/security/execution/education)
 "uOc" = (
 /obj/effect/landmark/start/captain,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -84966,6 +84956,22 @@
 	},
 /turf/open/floor/plasteel,
 /area/cargo/office)
+"xBn" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 6
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/security/armory)
 "xBK" = (
 /obj/effect/landmark/start/station_engineer,
 /obj/machinery/light{
@@ -102383,7 +102389,7 @@ cbp
 row
 eHR
 eSC
-lRU
+bGD
 row
 cjp
 ckO
@@ -109749,7 +109755,7 @@ abW
 acn
 mIR
 aaB
-aaH
+lpP
 aaQ
 aeh
 abo
@@ -110005,8 +110011,8 @@ abz
 abX
 aco
 syL
-aaC
-uNg
+caO
+uJP
 kUL
 aei
 aeJ
@@ -110262,9 +110268,9 @@ aaZ
 aaZ
 aaZ
 aaZ
-aaD
-adp
-aaS
+dVN
+rcR
+ieq
 aaZ
 aaZ
 aaZ
@@ -114129,7 +114135,7 @@ aaa
 lMJ
 aeq
 aes
-kEV
+xBn
 fEr
 gYh
 xae
