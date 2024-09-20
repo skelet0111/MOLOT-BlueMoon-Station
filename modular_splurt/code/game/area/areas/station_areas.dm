@@ -13,3 +13,7 @@
 /area/ruin/powered/ylva
     name = "Tower of Ylva"
     icon_state = "purple"
+
+/area/ruin/unpowered/ylvaturf
+    name = "Ylva Outskirts"
+    icon_state = "spacecontent26"
