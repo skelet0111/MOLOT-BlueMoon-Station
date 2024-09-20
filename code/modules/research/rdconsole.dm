@@ -247,7 +247,7 @@ Nothing else in the console has ID requirements.
 		if(linked_destroy.loaded_item && (!QDELETED(linked_destroy.loaded_item)))
 			var/list/techyitems = techweb_item_boost_check(linked_destroy.loaded_item)
 			var/list/pointss = techweb_item_point_check(linked_destroy.loaded_item)
-			var/list/materials = linked_destroy.loaded_item.custom_materials //VENUS: we use custom_materials instead of materials
+			var/list/materials = linked_destroy.loaded_item.custom_materials 
 			var/list/matstuff = list()
 
 			if(length(techyitems))
