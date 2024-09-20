@@ -400,4 +400,3 @@
 	icon_state = "smooth"
 	smooth = SMOOTH_TRUE|SMOOTH_DIAGONAL|SMOOTH_BORDER
 	canSmoothWith = null
-
