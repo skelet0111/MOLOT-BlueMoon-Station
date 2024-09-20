@@ -391,28 +391,6 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	name = "Hilbert's Hotel Storage"
 	mappath = '_maps/templates/hilbertshotelstorage.dmm'
 
-// VENUS STATION
-/datum/map_template/hilbertshotel/apartment/prison
-	name = "Apartment_prison"
-	mappath = '_maps/venus_maps/templates/hilbertshotel_templates/apartment_prison.dmm'
-
-/datum/map_template/hilbertshotel/apartment/winter
-	name = "Apartment_winter"
-	mappath = '_maps/venus_maps/templates/hilbertshotel_templates/apartment_winter.dmm'
-
-/datum/map_template/hilbertshotel/apartment/forest
-	name = "Apartment_forest"
-	mappath = '_maps/venus_maps/templates/hilbertshotel_templates/apartment_forest.dmm'
-
-/datum/map_template/hilbertshotel/apartment/jungle
-	name = "Apartment_jungle"
-	mappath = '_maps/venus_maps/templates/hilbertshotel_templates/apartment_jungle.dmm'
-
-/datum/map_template/hilbertshotel/apartment/beach
-	name = "Apartment_beach"
-	mappath = '_maps/venus_maps/templates/hilbertshotel_templates/apartment_beach.dmm'
-// VENUS STATION
-
 //Turfs and Areas
 /turf/closed/indestructible/hotelwall
 	name = "hotel wall"
