@@ -83,6 +83,20 @@
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
+"dz" = (
+/obj/structure/window/reinforced,
+/obj/structure/table/wood,
+/obj/structure/curtain/goliath,
+/obj/item/storage/fancy/heart_box,
+/obj/item/paper/fluff/hilbertshotel/welcomeletter,
+/turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
+"eC" = (
+/obj/machinery/vending/boozeomat{
+	onstation = 0
+	},
+/turf/closed/indestructible/wood,
+/area/hilbertshotel)
 "eS" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -106,6 +120,13 @@
 /turf/open/floor/plating/asteroid/snow{
 	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=275"
 	},
+/area/hilbertshotel)
+"gB" = (
+/obj/machinery/vending/games{
+	shut_up = 1;
+	onstation = 0
+	},
+/turf/closed/indestructible/wood,
 /area/hilbertshotel)
 "gX" = (
 /obj/structure/bookcase/random/fiction,
@@ -142,13 +163,6 @@
 	},
 /obj/structure/mineral_door/woodrustic,
 /turf/open/floor/wood/wood_tiled,
-/area/hilbertshotel)
-"jc" = (
-/obj/machinery/vending/games{
-	shut_up = 1;
-	onstation = 0
-	},
-/turf/closed/indestructible/wood,
 /area/hilbertshotel)
 "jw" = (
 /obj/machinery/telecomms/relay/preset/auto,
@@ -219,6 +233,16 @@
 /obj/structure/table/wood,
 /obj/structure/curtain/goliath,
 /turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
+"mp" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/obj/machinery/vending/kink{
+	shut_up = 1;
+	onstation = 0
+	},
+/turf/open/floor/carpet,
 /area/hilbertshotel)
 "mz" = (
 /obj/effect/turf_decal/siding/wood,
@@ -418,6 +442,13 @@
 /obj/structure/flora/tree/pine,
 /turf/closed/indestructible/rock/snow,
 /area/hilbertshotel)
+"ys" = (
+/obj/machinery/vending/coffee{
+	shut_up = 1;
+	onstation = 0
+	},
+/turf/closed/indestructible/wood,
+/area/hilbertshotel)
 "yD" = (
 /turf/open/floor/plasteel/cafeteria,
 /area/hilbertshotel)
@@ -431,14 +462,6 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/cafeteria,
-/area/hilbertshotel)
-"zU" = (
-/obj/machinery/vending/dinnerware{
-	contraband = list(/obj/item/kitchen/rollingpin=2,/obj/item/kitchen/knife/butcher=2,/obj/item/reagent_containers/food/condiment/flour=4);
-	shut_up = 1;
-	onstation = 0
-	},
-/turf/closed/indestructible/wood,
 /area/hilbertshotel)
 "Ah" = (
 /obj/effect/turf_decal/siding/wood{
@@ -476,16 +499,6 @@
 	},
 /turf/open/floor/carpet,
 /area/hilbertshotel)
-"CR" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 6
-	},
-/obj/machinery/vending/cigarette{
-	shut_up = 1;
-	onstation = 0
-	},
-/turf/open/floor/carpet,
-/area/hilbertshotel)
 "Dc" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -517,13 +530,6 @@
 /turf/open/floor/plating/asteroid/snow{
 	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=275"
 	},
-/area/hilbertshotel)
-"DX" = (
-/obj/machinery/vending/coffee{
-	shut_up = 1;
-	onstation = 0
-	},
-/turf/closed/indestructible/wood,
 /area/hilbertshotel)
 "Eg" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -619,16 +625,6 @@
 	},
 /turf/open/floor/wood/wood_tiled,
 /area/hilbertshotel)
-"Ld" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 10
-	},
-/obj/machinery/vending/kink{
-	shut_up = 1;
-	onstation = 0
-	},
-/turf/open/floor/carpet,
-/area/hilbertshotel)
 "LH" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -657,6 +653,14 @@
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/cafeteria,
+/area/hilbertshotel)
+"Nj" = (
+/obj/machinery/vending/dinnerware{
+	contraband = list(/obj/item/kitchen/rollingpin=2,/obj/item/kitchen/knife/butcher=2,/obj/item/reagent_containers/food/condiment/flour=4);
+	shut_up = 1;
+	onstation = 0
+	},
+/turf/closed/indestructible/wood,
 /area/hilbertshotel)
 "Nl" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -785,12 +789,6 @@
 /obj/item/kirbyplants/random,
 /turf/open/floor/carpet/royalblue,
 /area/hilbertshotel)
-"Ty" = (
-/obj/machinery/vending/boozeomat{
-	onstation = 0
-	},
-/turf/closed/indestructible/wood,
-/area/hilbertshotel)
 "TO" = (
 /obj/structure/toilet{
 	dir = 4
@@ -876,6 +874,16 @@
 /obj/structure/bookcase/random/reference,
 /turf/closed/indestructible/wood,
 /area/hilbertshotel)
+"YC" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/obj/machinery/vending/cigarette{
+	shut_up = 1;
+	onstation = 0
+	},
+/turf/open/floor/carpet,
+/area/hilbertshotel)
 "YF" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -932,7 +940,7 @@ TO
 BZ
 Qt
 CC
-Ld
+mp
 BZ
 Nl
 cC
@@ -950,7 +958,7 @@ tg
 BZ
 rA
 ag
-CR
+YC
 BZ
 HM
 Vt
@@ -1031,7 +1039,7 @@ BZ
 BZ
 "}
 (8,1,1) = {"
-zU
+Nj
 uz
 XA
 cN
@@ -1049,7 +1057,7 @@ Zs
 BZ
 "}
 (9,1,1) = {"
-Ty
+eC
 yD
 yD
 Oh
@@ -1067,7 +1075,7 @@ Ex
 BZ
 "}
 (10,1,1) = {"
-DX
+ys
 yV
 Ng
 kf
@@ -1091,7 +1099,7 @@ aO
 aO
 Mt
 dl
-lT
+dz
 TX
 yU
 xv
@@ -1139,7 +1147,7 @@ xv
 yr
 "}
 (14,1,1) = {"
-jc
+gB
 pM
 GU
 xJ

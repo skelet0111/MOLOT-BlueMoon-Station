@@ -1,11 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"ah" = (
-/obj/machinery/vending/coffee{
-	shut_up = 1;
-	onstation = 0
-	},
-/turf/closed/indestructible/wood,
-/area/hilbertshotel)
 "aV" = (
 /obj/structure/flora/junglebush,
 /turf/open/floor/plating/smooth/grass/lavaland_jungle{
@@ -65,14 +58,6 @@
 /turf/open/floor/plating/smooth/dirt/lavaland_jungle{
 	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
 	},
-/area/hilbertshotel)
-"cI" = (
-/obj/machinery/vending/kink{
-	custom_premium_price = 0;
-	custom_price = 0;
-	onstation = 0
-	},
-/turf/open/floor/spooktime/cobble/roadmid,
 /area/hilbertshotel)
 "dl" = (
 /turf/open/floor/wood,
@@ -143,6 +128,13 @@
 	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
 	},
 /area/hilbertshotel)
+"iw" = (
+/obj/machinery/vending/games{
+	shut_up = 1;
+	onstation = 0
+	},
+/turf/closed/indestructible/wood,
+/area/hilbertshotel)
 "iF" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -186,17 +178,6 @@
 /obj/structure/spacevine,
 /turf/closed/indestructible/rock,
 /area/hilbertshotel)
-"kM" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 5
-	},
-/obj/machinery/vending/dinnerware{
-	contraband = list(/obj/item/kitchen/rollingpin=2,/obj/item/kitchen/knife/butcher=2,/obj/item/reagent_containers/food/condiment/flour=4);
-	shut_up = 1;
-	onstation = 0
-	},
-/turf/open/floor/plasteel/cafeteria,
-/area/hilbertshotel)
 "kS" = (
 /obj/structure/flora/grass/jungle,
 /turf/open/water/lavaland_jungle{
@@ -212,6 +193,18 @@
 /turf/open/floor/plating/smooth/grass/lavaland_jungle{
 	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
 	},
+/area/hilbertshotel)
+"ma" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/machinery/vending/boozeomat{
+	onstation = 0
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/cafeteria,
 /area/hilbertshotel)
 "mL" = (
 /obj/structure/fireplace,
@@ -264,13 +257,6 @@
 /obj/machinery/reagentgrinder,
 /turf/open/floor/plasteel/cafeteria,
 /area/hilbertshotel)
-"sg" = (
-/obj/structure/table/glass,
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/carpet/green,
-/area/hilbertshotel)
 "sx" = (
 /obj/structure/flora/junglebush/c,
 /turf/open/water/lavaland_jungle{
@@ -307,36 +293,24 @@
 	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
 	},
 /area/hilbertshotel)
-"uv" = (
-/obj/machinery/vending/games{
-	shut_up = 1;
-	onstation = 0
-	},
-/turf/closed/indestructible/wood,
-/area/hilbertshotel)
 "uw" = (
 /obj/machinery/light,
 /turf/open/water/lavaland_jungle{
 	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
 	},
 /area/hilbertshotel)
-"vk" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/machinery/vending/boozeomat{
-	onstation = 0
-	},
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/plasteel/cafeteria,
-/area/hilbertshotel)
 "vy" = (
 /obj/structure/curtain/goliath,
 /obj/structure/table/wood,
 /obj/structure/window/reinforced,
 /turf/open/floor/wood/wood_tiled,
+/area/hilbertshotel)
+"vK" = (
+/obj/machinery/vending/coffee{
+	shut_up = 1;
+	onstation = 0
+	},
+/turf/closed/indestructible/wood,
 /area/hilbertshotel)
 "wQ" = (
 /obj/structure/flora/grass/jungle/b,
@@ -520,6 +494,15 @@
 	},
 /turf/open/pool,
 /area/hilbertshotel)
+"HX" = (
+/obj/structure/table/glass,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/item/storage/fancy/heart_box,
+/obj/item/paper/fluff/hilbertshotel/welcomeletter,
+/turf/open/floor/carpet/green,
+/area/hilbertshotel)
 "Ii" = (
 /turf/open/floor/plasteel/stairs,
 /area/hilbertshotel)
@@ -570,6 +553,14 @@
 	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
 	},
 /area/hilbertshotel)
+"MQ" = (
+/obj/machinery/vending/kink{
+	custom_premium_price = 0;
+	custom_price = 0;
+	onstation = 0
+	},
+/turf/open/floor/spooktime/cobble/roadmid,
+/area/hilbertshotel)
 "Nz" = (
 /obj/machinery/light/floor{
 	light_power = 20;
@@ -601,6 +592,17 @@
 /turf/open/floor/plating/smooth/grass/lavaland_jungle{
 	initial_gas_mix = "o2=21.78;n2=82.36;TEMP=293.15"
 	},
+/area/hilbertshotel)
+"Oy" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/obj/machinery/vending/dinnerware{
+	contraband = list(/obj/item/kitchen/rollingpin=2,/obj/item/kitchen/knife/butcher=2,/obj/item/reagent_containers/food/condiment/flour=4);
+	shut_up = 1;
+	onstation = 0
+	},
+/turf/open/floor/plasteel/cafeteria,
 /area/hilbertshotel)
 "OG" = (
 /obj/structure/curtain/goliath,
@@ -758,7 +760,7 @@ RZ
 "}
 (2,1,1) = {"
 yr
-cI
+MQ
 KO
 gX
 fl
@@ -865,7 +867,7 @@ Po
 kf
 "}
 (8,1,1) = {"
-uv
+iw
 Ah
 sF
 bt
@@ -885,7 +887,7 @@ Fu
 (9,1,1) = {"
 pH
 mL
-sg
+HX
 dQ
 pH
 RF
@@ -901,7 +903,7 @@ fN
 kf
 "}
 (10,1,1) = {"
-ah
+vK
 Ah
 Es
 xx
@@ -992,8 +994,8 @@ Fu
 "}
 (15,1,1) = {"
 pH
-kM
-vk
+Oy
+ma
 sP
 pH
 hg

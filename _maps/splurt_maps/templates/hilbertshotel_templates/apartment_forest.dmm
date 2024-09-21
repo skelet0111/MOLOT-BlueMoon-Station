@@ -102,6 +102,11 @@
 /obj/structure/flora/biolumi/mine,
 /turf/open/floor/grass/grass1,
 /area/hilbertshotel)
+"lJ" = (
+/obj/item/storage/fancy/heart_box,
+/obj/item/paper/fluff/hilbertshotel/welcomeletter,
+/turf/open/floor/carpet/blackred,
+/area/hilbertshotel)
 "lT" = (
 /obj/effect/overlay/palmtree_l,
 /turf/open/floor/spooktime/beach/coasts/innerE,
@@ -114,6 +119,14 @@
 "nb" = (
 /obj/structure/chair/pew/right,
 /turf/open/floor/grass,
+/area/hilbertshotel)
+"od" = (
+/obj/machinery/vending/kink{
+	custom_premium_price = 0;
+	custom_price = 0;
+	onstation = 0
+	},
+/turf/open/floor/spooktime/beach,
 /area/hilbertshotel)
 "oF" = (
 /obj/structure/flora/junglebush/c,
@@ -184,14 +197,6 @@
 /area/hilbertshotel)
 "yU" = (
 /turf/open/floor/spooktime/cobble/cornerNW,
-/area/hilbertshotel)
-"yV" = (
-/obj/machinery/vending/kink{
-	custom_premium_price = 0;
-	custom_price = 0;
-	onstation = 0
-	},
-/turf/open/floor/spooktime/beach,
 /area/hilbertshotel)
 "Ah" = (
 /turf/open/floor/plating/beach/water,
@@ -400,9 +405,6 @@
 "WD" = (
 /turf/open/floor/spooktime/beach/coasts/innerN,
 /area/hilbertshotel)
-"XA" = (
-/turf/open/floor/carpet/blackred,
-/area/hilbertshotel)
 "Yd" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/open/floor/grass/grass2,
@@ -492,7 +494,7 @@ Ex
 Ex
 Ld
 Qp
-XA
+lJ
 Ex
 yr
 "}
@@ -588,7 +590,7 @@ yr
 "}
 (10,1,1) = {"
 yr
-yV
+od
 yr
 kf
 Ah

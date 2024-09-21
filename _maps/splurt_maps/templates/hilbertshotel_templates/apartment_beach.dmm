@@ -215,10 +215,6 @@
 	},
 /turf/open/floor/plating/beach/sand,
 /area/hilbertshotel)
-"Et" = (
-/obj/structure/table,
-/turf/open/floor/carpet/royalblue,
-/area/hilbertshotel)
 "ED" = (
 /obj/structure/lattice,
 /turf/closed/indestructible/wood,
@@ -267,6 +263,12 @@
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
+/turf/open/floor/carpet/royalblue,
+/area/hilbertshotel)
+"MR" = (
+/obj/structure/table,
+/obj/item/storage/fancy/heart_box,
+/obj/item/paper/fluff/hilbertshotel/welcomeletter,
 /turf/open/floor/carpet/royalblue,
 /area/hilbertshotel)
 "Ow" = (
@@ -347,20 +349,20 @@
 /obj/structure/window/reinforced/tinted,
 /turf/open/indestructible/hoteltile,
 /area/hilbertshotel)
-"UM" = (
-/obj/machinery/vending/dinnerware{
-	contraband = list(/obj/item/kitchen/rollingpin=2,/obj/item/kitchen/knife/butcher=2,/obj/item/reagent_containers/food/condiment/flour=4);
-	shut_up = 1;
-	onstation = 0
-	},
-/turf/open/floor/plasteel/cafeteria,
-/area/hilbertshotel)
 "UO" = (
 /obj/structure/table,
 /obj/item/pizzabox/meat{
 	pixel_y = 7
 	},
 /turf/open/floor/carpet/royalblue,
+/area/hilbertshotel)
+"Vc" = (
+/obj/machinery/vending/dinnerware{
+	contraband = list(/obj/item/kitchen/rollingpin=2,/obj/item/kitchen/knife/butcher=2,/obj/item/reagent_containers/food/condiment/flour=4);
+	shut_up = 1;
+	onstation = 0
+	},
+/turf/open/floor/plasteel/cafeteria,
 /area/hilbertshotel)
 "Xe" = (
 /turf/open/floor/spooktime/beach/coasts/innerE,
@@ -549,7 +551,7 @@ LK
 jP
 YR
 Ha
-Et
+MR
 vj
 YR
 "}
@@ -600,7 +602,7 @@ bz
 YR
 gz
 ZQ
-UM
+Vc
 YR
 Rk
 Ms

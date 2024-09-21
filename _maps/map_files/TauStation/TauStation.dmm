@@ -3111,6 +3111,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+"bbG" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 8;
+	pixel_x = -4
+	},
+/obj/structure/urinal/shit{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/freezer,
+/area/commons/toilet)
 "bca" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -4587,25 +4597,6 @@
 "bHi" = (
 /turf/open/floor/wood,
 /area/commons/dorms)
-"bHl" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/item/pool/pool_noodle,
-/obj/structure/closet{
-	name = "pool toys"
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white/corner,
-/area/commons/fitness/pool)
 "bHo" = (
 /turf/open/floor/carpet/black,
 /area/commons/dorms)
@@ -9079,16 +9070,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/plasteel,
 /area/commons/dorms)
-"dfT" = (
-/obj/structure/window/reinforced/tinted{
-	dir = 8;
-	pixel_x = -4
-	},
-/obj/structure/urinal/shit{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/freezer,
-/area/commons/toilet)
 "dgd" = (
 /obj/structure/grille,
 /obj/effect/decal/cleanable/dirt,
@@ -10463,6 +10444,20 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/carpet/black,
 /area/service/library)
+"dEF" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
+	dir = 4
+	},
+/obj/machinery/computer/security/telescreen/turbine{
+	dir = 1;
+	pixel_y = -30
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
+/obj/machinery/computer/turbine_computer{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/maintenance/disposal/incinerator)
 "dFf" = (
 /obj/structure/table,
 /obj/item/storage/fancy/egg_box,
@@ -33158,17 +33153,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/white,
 /area/science)
-"lyf" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
-	dir = 4
-	},
-/obj/machinery/computer/security/telescreen/turbine{
-	dir = 1;
-	pixel_y = -30
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
-/turf/open/floor/plasteel,
-/area/maintenance/disposal/incinerator)
 "lyh" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -37466,25 +37450,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/medical)
-"mUl" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/structure/closet{
-	name = "pool toys"
-	},
-/obj/item/pool/pool_noodle,
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white/corner,
-/area/commons/fitness/pool)
 "mUm" = (
 /obj/machinery/computer/security,
 /obj/structure/disposalpipe/segment{
@@ -37709,6 +37674,25 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"mXF" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/item/pool/pool_noodle,
+/obj/structure/closet{
+	name = "pool toys"
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white/corner,
+/area/commons/fitness/pool)
 "mXW" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -37739,6 +37723,25 @@
 	},
 /turf/open/floor/plasteel,
 /area/engineering/main)
+"mZk" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/closet{
+	name = "pool toys"
+	},
+/obj/item/pool/pool_noodle,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white/corner,
+/area/commons/fitness/pool)
 "mZp" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
@@ -40603,14 +40606,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/dorms)
-"oad" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 5;
-	pixel_y = 30
-	},
-/obj/machinery/computer/turbine_computer,
-/turf/open/floor/plasteel,
-/area/maintenance/disposal/incinerator)
 "oae" = (
 /obj/structure/table,
 /obj/item/storage/box/gloves{
@@ -59762,6 +59757,13 @@
 	},
 /turf/open/floor/plasteel/chapel_floor,
 /area/service/chapel/main)
+"uGY" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 5;
+	pixel_y = 30
+	},
+/turf/open/floor/plasteel,
+/area/maintenance/disposal/incinerator)
 "uHb" = (
 /obj/structure/closet/secure_closet/medical1,
 /obj/item/reagent_containers/blood/random,
@@ -88201,7 +88203,7 @@ cgK
 xMc
 adl
 xjV
-oad
+uGY
 jmf
 fro
 smf
@@ -88463,7 +88465,7 @@ nLo
 wzt
 udZ
 udZ
-lyf
+dEF
 dqA
 nLH
 tty
@@ -120725,7 +120727,7 @@ dnI
 vUO
 jbj
 xkZ
-dfT
+bbG
 qsJ
 fcg
 xkZ
@@ -122032,7 +122034,7 @@ jHQ
 vbB
 vbB
 mCp
-bHl
+mXF
 vUt
 nSf
 fbk
@@ -122289,7 +122291,7 @@ vbB
 vbB
 vbB
 mCp
-mUl
+mZk
 vUt
 nSt
 hpl
@@ -122546,7 +122548,7 @@ vbB
 vbB
 vbB
 mCp
-mUl
+mZk
 vUt
 hpl
 nSt
@@ -122803,7 +122805,7 @@ vbB
 vbB
 lXO
 mCp
-mUl
+mZk
 vUt
 nTw
 nSt
@@ -123317,7 +123319,7 @@ jIV
 lIh
 vbB
 mCp
-mUl
+mZk
 vUt
 fbk
 dtG
