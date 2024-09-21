@@ -3111,6 +3111,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+"bbG" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 8;
+	pixel_x = -4
+	},
+/obj/structure/urinal/shit{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/freezer,
+/area/commons/toilet)
 "bca" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -10434,6 +10444,20 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/carpet/black,
 /area/service/library)
+"dEF" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
+	dir = 4
+	},
+/obj/machinery/computer/security/telescreen/turbine{
+	dir = 1;
+	pixel_y = -30
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
+/obj/machinery/computer/turbine_computer{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/maintenance/disposal/incinerator)
 "dFf" = (
 /obj/structure/table,
 /obj/item/storage/fancy/egg_box,
@@ -12360,16 +12384,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/closed/wall/r_wall,
 /area/engineering/main)
-"emL" = (
-/obj/structure/window/reinforced/tinted{
-	dir = 8;
-	pixel_x = -4
-	},
-/obj/structure/urinal/shit{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/freezer,
-/area/commons/toilet)
 "emN" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -33139,17 +33153,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/white,
 /area/science)
-"lyf" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
-	dir = 4
-	},
-/obj/machinery/computer/security/telescreen/turbine{
-	dir = 1;
-	pixel_y = -30
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
-/turf/open/floor/plasteel,
-/area/maintenance/disposal/incinerator)
 "lyh" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -37675,7 +37678,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/item/toy/poolnoodle/red,
+/obj/item/pool/pool_noodle,
 /obj/structure/closet{
 	name = "pool toys"
 	},
@@ -37727,7 +37730,7 @@
 /obj/structure/closet{
 	name = "pool toys"
 	},
-/obj/item/toy/poolnoodle/blue,
+/obj/item/pool/pool_noodle,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
@@ -37752,25 +37755,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science)
-"mZy" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/structure/closet{
-	name = "pool toys"
-	},
-/obj/item/toy/poolnoodle,
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white/corner,
-/area/commons/fitness/pool)
 "mZA" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -37824,25 +37808,6 @@
 /turf/open/floor/plasteel/yellowsiding{
 	dir = 4
 	},
-/area/commons/fitness/pool)
-"nav" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/structure/closet{
-	name = "pool toys"
-	},
-/obj/item/toy/poolnoodle/yellow,
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white/corner,
 /area/commons/fitness/pool)
 "naV" = (
 /obj/effect/landmark/event_spawn,
@@ -40641,14 +40606,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/dorms)
-"oad" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 5;
-	pixel_y = 30
-	},
-/obj/machinery/computer/turbine_computer,
-/turf/open/floor/plasteel,
-/area/maintenance/disposal/incinerator)
 "oae" = (
 /obj/structure/table,
 /obj/item/storage/box/gloves{
@@ -59800,6 +59757,13 @@
 	},
 /turf/open/floor/plasteel/chapel_floor,
 /area/service/chapel/main)
+"uGY" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 5;
+	pixel_y = 30
+	},
+/turf/open/floor/plasteel,
+/area/maintenance/disposal/incinerator)
 "uHb" = (
 /obj/structure/closet/secure_closet/medical1,
 /obj/item/reagent_containers/blood/random,
@@ -88239,7 +88203,7 @@ cgK
 xMc
 adl
 xjV
-oad
+uGY
 jmf
 fro
 smf
@@ -88501,7 +88465,7 @@ nLo
 wzt
 udZ
 udZ
-lyf
+dEF
 dqA
 nLH
 tty
@@ -120763,7 +120727,7 @@ dnI
 vUO
 jbj
 xkZ
-emL
+bbG
 qsJ
 fcg
 xkZ
@@ -122584,7 +122548,7 @@ vbB
 vbB
 vbB
 mCp
-mZy
+mZk
 vUt
 hpl
 nSt
@@ -122841,7 +122805,7 @@ vbB
 vbB
 lXO
 mCp
-nav
+mZk
 vUt
 nTw
 nSt
@@ -123355,7 +123319,7 @@ jIV
 lIh
 vbB
 mCp
-nav
+mZk
 vUt
 fbk
 dtG

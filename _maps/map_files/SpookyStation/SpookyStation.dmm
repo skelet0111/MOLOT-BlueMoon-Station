@@ -17581,6 +17581,10 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/tcommsat/computer)
+"vGR" = (
+/obj/item/hilbertshotel/ghostdojo,
+/turf/open/floor/spooktime/cobble,
+/area/eventmap/outside)
 "vMZ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
@@ -40018,7 +40022,7 @@ aab
 aab
 aab
 aph
-apR
+vGR
 awm
 ayO
 aWA

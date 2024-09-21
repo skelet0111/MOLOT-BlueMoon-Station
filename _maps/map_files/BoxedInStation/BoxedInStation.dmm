@@ -7921,14 +7921,6 @@
 /obj/item/gun/energy/laser/practice,
 /turf/open/floor/plasteel,
 /area/science/research)
-"egR" = (
-/obj/structure/closet/secure_closet/personal,
-/obj/item/toy/poolnoodle/yellow,
-/obj/item/toy/poolnoodle/yellow,
-/obj/item/toy/poolnoodle/yellow,
-/obj/item/toy/poolnoodle/yellow,
-/turf/open/floor/plasteel,
-/area/commons/fitness/pool)
 "ehx" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 8
@@ -13502,14 +13494,6 @@
 /obj/machinery/camera/autoname,
 /turf/open/floor/wood,
 /area/service/library)
-"gZR" = (
-/obj/structure/closet/secure_closet/personal,
-/obj/item/toy/poolnoodle/red,
-/obj/item/toy/poolnoodle/red,
-/obj/item/toy/poolnoodle/red,
-/obj/item/toy/poolnoodle/red,
-/turf/open/floor/plasteel,
-/area/commons/fitness/pool)
 "gZX" = (
 /turf/open/floor/wood,
 /area/maintenance/bar)
@@ -18569,6 +18553,14 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/service/kitchen)
+"jEM" = (
+/obj/structure/closet/secure_closet/personal,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/turf/open/floor/plasteel,
+/area/commons/fitness/pool)
 "jEW" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
@@ -27396,6 +27388,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
+"oud" = (
+/obj/structure/closet/secure_closet/personal,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/commons/fitness/pool)
 "ouF" = (
 /obj/structure/chair,
 /obj/effect/turf_decal/tile/green{
@@ -47301,17 +47304,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
-"ykK" = (
-/obj/structure/closet/secure_closet/personal,
-/obj/item/toy/poolnoodle/blue,
-/obj/item/toy/poolnoodle/blue,
-/obj/item/toy/poolnoodle/blue,
-/obj/item/toy/poolnoodle/blue,
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/commons/fitness/pool)
 "ykV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/effect/landmark/start/scientist,
@@ -71404,9 +71396,9 @@ iiF
 iiF
 iiF
 fUT
-egR
-gZR
-ykK
+jEM
+jEM
+oud
 wVH
 ltO
 tQI
