@@ -2,7 +2,7 @@
 	name = "Anomaly: Hyper-Energetic Flux"
 	typepath = /datum/round_event/anomaly/anomaly_flux
 
-	max_occurrences = 0
+	max_occurrences = 5
 	weight = 20
 	description = "This anomaly shocks and explodes."
 
