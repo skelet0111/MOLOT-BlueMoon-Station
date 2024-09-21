@@ -3,7 +3,7 @@
 	typepath = /datum/round_event/electrical_storm
 	earliest_start = 10 MINUTES
 	min_players = 5
-	weight = 30
+	weight = 40
 	category = EVENT_CATEGORY_ENGINEERING
 	description = "Destroys all lights in a large area."
 
