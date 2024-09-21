@@ -16,7 +16,6 @@
 	icon = 'icons/effects/spacevines.dmi'
 	icon_state = "bud0"
 	layer = SPACEVINE_MOB_LAYER
-	plane = GAME_PLANE_UPPER_FOV_HIDDEN
 	opacity = FALSE
 	canSmoothWith = null
 	smoothing_flags = NONE
