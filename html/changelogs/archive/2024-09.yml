@@ -6,13 +6,6 @@
   SandPoot:
   - rscadd: Added Character offering system, exchange characters with people you want
       to!
-2024-09-09:
-  ariaworld:
-  - rscadd: 193 Randomly generated maintenance ruins to Box-Station.
-2024-09-15:
-  ariaworld:
-  - rscadd: Added some safeguards to RD console & design datums.
-  - rscadd: Added Beach, Forest, Jungle, Prison, and Winter apartments to infinidorm.
 2024-09-15:
   SaraSayomi:
   - bugfix: remove doubled up shuttle markers, causing shuttles to love up on the
