@@ -350,7 +350,8 @@
 "UM" = (
 /obj/machinery/vending/dinnerware{
 	contraband = list(/obj/item/kitchen/rollingpin=2,/obj/item/kitchen/knife/butcher=2,/obj/item/reagent_containers/food/condiment/flour=4);
-	shut_up = 1
+	shut_up = 1;
+	onstation = 0
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/hilbertshotel)

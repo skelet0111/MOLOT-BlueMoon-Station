@@ -1108,7 +1108,9 @@
 "Lg" = (
 /obj/machinery/vending/kink{
 	extended_inventory = 1;
-	shut_up = 1
+	shut_up = 1;
+	onstation = 0;
+	
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -1156,7 +1158,9 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
-/obj/machinery/vending/games,
+/obj/machinery/vending/games{
+	onstation = 0
+	},
 /turf/open/floor/wood,
 /area/hilbertshotel)
 "MP" = (
@@ -1251,7 +1255,8 @@
 "NR" = (
 /obj/machinery/vending/kink{
 	extended_inventory = 1;
-	shut_up = 1
+	shut_up = 1;
+	onstation = 0
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 9

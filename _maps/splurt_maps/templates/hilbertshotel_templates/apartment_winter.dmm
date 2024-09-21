@@ -145,7 +145,8 @@
 /area/hilbertshotel)
 "jc" = (
 /obj/machinery/vending/games{
-	shut_up = 1
+	shut_up = 1;
+	onstation = 0
 	},
 /turf/closed/indestructible/wood,
 /area/hilbertshotel)
@@ -434,7 +435,8 @@
 "zU" = (
 /obj/machinery/vending/dinnerware{
 	contraband = list(/obj/item/kitchen/rollingpin=2,/obj/item/kitchen/knife/butcher=2,/obj/item/reagent_containers/food/condiment/flour=4);
-	shut_up = 1
+	shut_up = 1;
+	onstation = 0
 	},
 /turf/closed/indestructible/wood,
 /area/hilbertshotel)
@@ -479,7 +481,8 @@
 	dir = 6
 	},
 /obj/machinery/vending/cigarette{
-	shut_up = 1
+	shut_up = 1;
+	onstation = 0
 	},
 /turf/open/floor/carpet,
 /area/hilbertshotel)
@@ -517,7 +520,8 @@
 /area/hilbertshotel)
 "DX" = (
 /obj/machinery/vending/coffee{
-	shut_up = 1
+	shut_up = 1;
+	onstation = 0
 	},
 /turf/closed/indestructible/wood,
 /area/hilbertshotel)
@@ -620,7 +624,8 @@
 	dir = 10
 	},
 /obj/machinery/vending/kink{
-	shut_up = 1
+	shut_up = 1;
+	onstation = 0
 	},
 /turf/open/floor/carpet,
 /area/hilbertshotel)
@@ -781,7 +786,9 @@
 /turf/open/floor/carpet/royalblue,
 /area/hilbertshotel)
 "Ty" = (
-/obj/machinery/vending/boozeomat,
+/obj/machinery/vending/boozeomat{
+	onstation = 0
+	},
 /turf/closed/indestructible/wood,
 /area/hilbertshotel)
 "TO" = (

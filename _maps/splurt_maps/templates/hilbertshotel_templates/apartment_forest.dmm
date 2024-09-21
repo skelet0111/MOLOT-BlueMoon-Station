@@ -188,7 +188,8 @@
 "yV" = (
 /obj/machinery/vending/kink{
 	custom_premium_price = 0;
-	custom_price = 0
+	custom_price = 0;
+	onstation = 0
 	},
 /turf/open/floor/spooktime/beach,
 /area/hilbertshotel)
