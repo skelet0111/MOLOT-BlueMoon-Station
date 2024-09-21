@@ -12,19 +12,18 @@
 /datum/round_event/spacevine/start()
 	var/list/turfs = list() //list of all the empty floor turfs in the hallway areas
 
-	var/obj/structure/spacevine/vine = new()
+	var/obj/structure/spacevine/SV = new()
 
-	for(var/area/hallway/area in world)
-		for(var/turf/floor as anything in area)
-			if(floor.Enter(vine))
-				turfs += floor
+	for(var/area/hallway/A in world)
+		for(var/turf/F in A)
+			if(F.Enter(SV))
+				turfs += F
 
-	qdel(vine)
+	qdel(SV)
 
-	if(length(turfs)) //Pick a turf to spawn at if we can
-		var/turf/floor = pick(turfs)
-		new /datum/spacevine_controller(floor, list(pick(subtypesof(/datum/spacevine_mutation))), rand(50,100), rand(1,4), src) //spawn a controller at turf with randomized stats and a single random mutation
-
+	if(turfs.len) //Pick a turf to spawn at if we can
+		var/turf/T = pick(turfs)
+		new /datum/spacevine_controller(T, list(pick(subtypesof(/datum/spacevine_mutation))), rand(30,100), rand(5,10), src) //spawn a controller at turf with randomized stats and a single random mutation
 
 /datum/spacevine_mutation
 	var/name = ""
