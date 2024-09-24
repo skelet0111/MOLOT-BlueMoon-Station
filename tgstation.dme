@@ -4247,6 +4247,7 @@
 #include "modular_bluemoon\Fink\code\items\memorizer.dm"
 #include "modular_bluemoon\Fink\code\items\moniq.dm"
 #include "modular_bluemoon\Fink\code\items\shieldbelt.dm"
+#include "modular_bluemoon\Fink\code\items\summon_chalk.dm"
 #include "modular_bluemoon\Fink\code\items\urn.dm"
 #include "modular_bluemoon\Fink\code\items\weapons\garrote.dm"
 #include "modular_bluemoon\Fink\code\items\weapons\nullrod.dm"

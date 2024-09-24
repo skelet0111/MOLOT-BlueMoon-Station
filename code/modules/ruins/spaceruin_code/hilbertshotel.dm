@@ -508,7 +508,7 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	icon_state = "hilbertshotel"
 	requires_power = FALSE
 	has_gravity = TRUE
-	area_flags = NOTELEPORT | HIDDEN_AREA
+	area_flags =  NOTELEPORT | HIDDEN_AREA
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 	var/roomnumber = 0
 	var/obj/item/hilbertshotel/parentSphere
@@ -566,7 +566,7 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	icon_state = "hilbertshotel"
 	requires_power = FALSE
 	has_gravity = TRUE
-	area_flags = NOTELEPORT | HIDDEN_AREA
+	area_flags =  NOTELEPORT | HIDDEN_AREA
 
 /obj/item/abstracthotelstorage
 	anchored = TRUE
