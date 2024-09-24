@@ -381,9 +381,11 @@
 							else
 								message = "кончает на [partner_name]."
 						if(CUM_TARGET_BREASTS) //BLUEMOON EDIT добавлено взаимодействие с боргами
+							// BLUEMOON EDIT START - я НЕ ПРЕДСТАВЛЯЮ, чего эти гиганты мысли добивались тут, используя
+							// не инициализированные переменные.
 							var/mob/living/carbon/human/sex
 							var/mob/living/silicon/robot/silicon_sex
-							if (!iscyborg(src))
+							if (istype(sex))
 								for(var/obj/item/organ/genital/G in sex.internal_organs)
 									var/datum/reagents/fluid_source = G.climaxable(partner)
 									if(!fluid_source)
@@ -391,7 +393,8 @@
 									sex.do_climax(fluid_source, src, G, TRUE, FALSE)
 							else
 								silicon_sex = src
-								silicon_sex.do_climax_silicon(silicon_sex, src, TRUE)
+								silicon_sex.do_climax_silicon(silicon_sex, src, TRUE) // BLUEMOON EDIT END
+
 							if(partner.has_breasts(REQUIRE_EXPOSED))
 								message = "кончает на грудь [partner_name]."
 							else
@@ -400,9 +403,11 @@
 							if(partner.has_mouth() && partner.mouth_is_free())
 								message = "энергично засовывает свои яйца в рот партнёра перед тем, как выпустить густое, липкое семя в глаза и волосы [partner_name]."
 						if(THIGH_SMOTHERING) //BLUEMOON EDIT добавлено взаимодействие с боргами
-							var/mob/living/carbon/human/sex
+							// BLUEMOON EDIT START - я НЕ ПРЕДСТАВЛЯЮ, чего эти гиганты мысли добивались тут, используя
+							// не инициализированные переменные.
+							var/mob/living/carbon/human/sex = src
 							var/mob/living/silicon/robot/silicon_sex
-							if (!iscyborg(src))
+							if (istype(sex))
 								for(var/obj/item/organ/genital/G in sex.internal_organs)
 									var/datum/reagents/fluid_source = G.climaxable(partner)
 									if(!fluid_source)
@@ -410,7 +415,8 @@
 									sex.do_climax(fluid_source, src, G, TRUE, FALSE)
 							else
 								silicon_sex = src
-								silicon_sex.do_climax_silicon(silicon_sex, src, TRUE)
+								silicon_sex.do_climax_silicon(silicon_sex, src, TRUE) // BLUEMOON EDIT END
+
 							if(has_penis(REQUIRE_EXPOSED)) //it already checks for the cock before, why the hell would you do this redundant shit
 								message = "держит [partner_name] между бёдрами, пока член пульсирует, по итогу сливая пульсирующую нагрузку в лицо и волосы жертвы."
 							else
@@ -574,9 +580,11 @@
 								else
 									message = "кончает на [partner_name]."
 							if(CUM_TARGET_BREASTS) //BLUEMOON EDIT добавлено взаимодействие с боргами
-								var/mob/living/carbon/human/sex
+								// BLUEMOON EDIT START - я НЕ ПРЕДСТАВЛЯЮ, чего эти гиганты мысли добивались тут, используя
+								// не инициализированные переменные.
+								var/mob/living/carbon/human/sex = src
 								var/mob/living/silicon/robot/silicon_sex
-								if (!iscyborg(src))
+								if (istype(sex))
 									for(var/obj/item/organ/genital/G in sex.internal_organs)
 										var/datum/reagents/fluid_source = G.climaxable(partner)
 										if(!fluid_source)
@@ -584,7 +592,8 @@
 										sex.do_climax(fluid_source, src, G, TRUE, FALSE)
 								else
 									silicon_sex = src
-									silicon_sex.do_climax_silicon(silicon_sex, src, TRUE)
+									silicon_sex.do_climax_silicon(silicon_sex, src, TRUE) // BLUEMOON EDIT END
+
 								if(partner.is_topless() && partner.has_breasts())
 									message = "кончает на грудь [partner_name]."
 								else
@@ -593,9 +602,11 @@
 								if(partner.has_mouth() && partner.mouth_is_free())
 									message = "энергично засовывает свои яйца в рот партнёра перед тем, как выпустить густое, липкое семя в глаза и волосы [partner_name]."
 							if(THIGH_SMOTHERING) //BLUEMOON EDIT добавлено взаимодействие с боргами
-								var/mob/living/carbon/human/sex
+								// BLUEMOON EDIT START - я НЕ ПРЕДСТАВЛЯЮ, чего эти гиганты мысли добивались тут, используя
+								// не инициализированные переменные.
+								var/mob/living/carbon/human/sex = src
 								var/mob/living/silicon/robot/silicon_sex
-								if (!iscyborg(src))
+								if (istype(sex))
 									for(var/obj/item/organ/genital/G in sex.internal_organs)
 										var/datum/reagents/fluid_source = G.climaxable(partner)
 										if(!fluid_source)
@@ -603,7 +614,8 @@
 										sex.do_climax(fluid_source, src, G, TRUE, FALSE)
 								else
 									silicon_sex = src
-									silicon_sex.do_climax_silicon(silicon_sex, src, TRUE)
+									silicon_sex.do_climax_silicon(silicon_sex, src, TRUE) // BLUEMOON EDIT END
+
 								if(has_penis())
 									message = "держит [partner_name] между бёдрами, пока член пульсирует, по итогу сливая пульсирующую нагрузку в лицо и волосы жертвы."
 								else
