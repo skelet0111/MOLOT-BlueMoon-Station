@@ -4047,18 +4047,10 @@
 /turf/open/floor/carpet/red,
 /area/command/heads_quarters/hos)
 "bwm" = (
-/obj/machinery/power/apc/highcap/fifteen_k{
-	areastring = "/area/engineering/main";
-	dir = 1;
-	name = "Engineering APC";
-	pixel_y = 23
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
+/obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/starboard/aft)
 "bwD" = (
@@ -5760,12 +5752,6 @@
 "caZ" = (
 /obj/structure/bed/roller,
 /obj/machinery/iv_drip,
-/obj/machinery/power/apc{
-	areastring = "/area/medical/medbay/aft";
-	dir = 4;
-	name = "Medbay Aft APC";
-	pixel_x = 24
-	},
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 4
 	},
@@ -5773,6 +5759,7 @@
 	icon_state = "0-2";
 	pixel_y = 1
 	},
+/obj/machinery/power/apc/auto_name/east,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/aft)
 "cbs" = (
@@ -5966,6 +5953,24 @@
 	},
 /turf/open/floor/plating/rust,
 /area/security/execution/transfer)
+"ceL" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/landmark/start/depsec/science,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 4;
+	name = "scrubbers pipe"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 5;
+	name = "air supply pipe"
+	},
+/obj/machinery/camera/xray/directional/south{
+	c_tag = "Prison Security Office West"
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/science)
 "cfr" = (
 /obj/machinery/photocopier,
 /obj/machinery/light{
@@ -6499,13 +6504,6 @@
 	id = "Single_camera_1";
 	name = "Cell 1";
 	req_access_txt = "2"
-	},
-/obj/machinery/power/apc/highcap/five_k{
-	areastring = "/area/security/prison/upper";
-	damage_deflection = 21;
-	desc = "A control terminal for the area's electrical systems. It's secured with a durable antitampering plasteel cage.";
-	name = "Armored Prison Wing Cells APC";
-	pixel_y = -26
 	},
 /obj/machinery/door_timer{
 	id = "Single_camera_1";
@@ -8219,13 +8217,7 @@
 /obj/structure/cable{
 	dir = 1
 	},
-/obj/machinery/power/apc/highcap/five_k{
-	areastring = "/area/security/prison/upper";
-	damage_deflection = 21;
-	desc = "A control terminal for the area's electrical systems. It's secured with a durable antitampering plasteel cage.";
-	name = "Armored Prison Wing Cells APC";
-	pixel_y = -26
-	},
+/obj/machinery/power/apc/auto_name/south,
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "cWS" = (
@@ -8817,6 +8809,24 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/disposal)
+"dhi" = (
+/obj/machinery/door/airlock/security/glass{
+	name = "Security Office";
+	req_access_txt = "63"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 8;
+	name = "air supply pipe"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 4;
+	name = "scrubbers pipe"
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/science)
 "dhA" = (
 /obj/structure/railing,
 /turf/open/floor/festive/stairs/stairswest,
@@ -12307,11 +12317,11 @@
 /obj/machinery/camera/autoname{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/west,
 /obj/structure/cable{
 	icon_state = "0-2";
 	pixel_y = 1
 	},
+/obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/service)
 "esL" = (
@@ -13717,6 +13727,9 @@
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
 /area/ruin/lavaland/powered)
+"eUE" = (
+/turf/open/space/basic,
+/area/maintenance/aft)
 "eUG" = (
 /obj/structure/railing{
 	dir = 1
@@ -16835,6 +16848,17 @@
 	c_tag = "Aft Primary Hallway - Middle";
 	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 8;
+	name = "air supply pipe"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 4;
+	name = "scrubbers pipe"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "gcX" = (
@@ -17125,15 +17149,10 @@
 /turf/open/floor/plating,
 /area/engineering/supermatter)
 "giC" = (
-/obj/machinery/power/apc/highcap/fifteen_k{
-	areastring = "/area/engineering/main";
-	dir = 1;
-	name = "Engineering APC";
-	pixel_y = 23
-	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
+/obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "giI" = (
@@ -17827,13 +17846,6 @@
 /obj/structure/cable{
 	dir = 1
 	},
-/obj/machinery/power/apc/highcap/five_k{
-	areastring = "/area/security/prison/upper";
-	damage_deflection = 21;
-	desc = "A control terminal for the area's electrical systems. It's secured with a durable antitampering plasteel cage.";
-	name = "Armored Prison Wing Cells APC";
-	pixel_y = -26
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 4
 	},
@@ -17841,6 +17853,7 @@
 	dir = 8;
 	name = "air supply pipe"
 	},
+/obj/machinery/power/apc/auto_name/south,
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "gtd" = (
@@ -20117,20 +20130,10 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/power/apc{
-	areastring = "/area/hallway/primary/aft";
-	dir = 8;
-	name = "Aft Hall APC";
-	pixel_x = -25;
-	pixel_y = 1
-	},
 /obj/structure/cable{
 	dir = 1
 	},
-/obj/structure/cable{
-	icon_state = "0-2";
-	pixel_y = 1
-	},
+/obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "hlL" = (
@@ -21762,6 +21765,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
+"hPH" = (
+/obj/machinery/computer/security,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
+	name = "air vent"
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/science)
 "hPJ" = (
 /obj/effect/festive/street/streetlinewest,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
@@ -22123,6 +22133,10 @@
 	icon_state = "wood-broken5"
 	},
 /area/ruin/lavaland/powered)
+"hVG" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plasteel,
+/area/security/checkpoint/science)
 "hVL" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -32623,23 +32637,16 @@
 /obj/machinery/atmospherics/pipe/simple/orange/visible,
 /turf/closed/wall/r_wall,
 /area/engineering/atmos)
-"lGq" = (
-/obj/structure/sign/warning/securearea,
-/turf/open/floor/plating,
-/area/maintenance/starboard/aft)
 "lHh" = (
 /obj/effect/turf_decal/tile/blue/full,
 /obj/machinery/vending/snack/random,
 /turf/open/floor/plasteel/dark,
 /area/command/bridge)
 "lHj" = (
-/obj/machinery/power/apc/auto_name/north,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
+/obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/plasteel,
 /area/maintenance/bar)
 "lHm" = (
@@ -33019,6 +33026,9 @@
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/lavaland/powered)
+"lPX" = (
+/turf/closed/wall/r_wall,
+/area/security/checkpoint/science)
 "lQf" = (
 /obj/structure/flora/rock,
 /turf/open/floor/plating/dirt/dark,
@@ -36092,6 +36102,18 @@
 	dir = 4
 	},
 /area/commons/fitness/pool)
+"mPm" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 8;
+	name = "air supply pipe"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 4;
+	name = "scrubbers pipe"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
 "mPn" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/machinery/door/firedoor,
@@ -39777,12 +39799,9 @@
 	icon_state = "1-2"
 	},
 /obj/structure/cable{
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/obj/structure/cable{
 	dir = 1
 	},
+/obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "oet" = (
@@ -41257,6 +41276,17 @@
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	},
 /area/awaymission)
+"oBd" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/auto_name/west,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 5;
+	name = "scrubbers pipe"
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/science)
 "oBt" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 10
@@ -46581,6 +46611,13 @@
 	},
 /turf/open/floor/engine,
 /area/engineering/supermatter)
+"qBX" = (
+/obj/structure/table,
+/obj/machinery/recharger{
+	pixel_y = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/science)
 "qCa" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow{
@@ -47752,12 +47789,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/machinery/power/apc{
-	areastring = "/area/medical/treatment_center";
-	dir = 1;
-	name = "Sleeper Room APC";
-	pixel_y = 23
-	},
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 24
@@ -47765,6 +47796,7 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
+/obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/plasteel/white,
 /area/medical/treatment_center)
 "raF" = (
@@ -48367,12 +48399,6 @@
 /turf/open/floor/carpet,
 /area/awaymission)
 "rlq" = (
-/obj/machinery/power/apc/highcap/fifteen_k{
-	areastring = "/area/engineering/main";
-	dir = 1;
-	name = "Engineering APC";
-	pixel_y = 23
-	},
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -48380,6 +48406,7 @@
 	dir = 10;
 	name = "air supply pipe"
 	},
+/obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/plasteel/dark,
 /area/medical/storage)
 "rlw" = (
@@ -52664,6 +52691,13 @@
 /obj/structure/flora/bush,
 /turf/open/misc/grass,
 /area/command/heads_quarters/cmo)
+"sJL" = (
+/obj/structure/closet/secure_closet/security/science,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	name = "air scrubber"
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/science)
 "sJS" = (
 /obj/machinery/vending/cigarette/beach{
 	onstation = 0
@@ -52858,6 +52892,20 @@
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
 /turf/open/floor/plating/rust,
 /area/ruin/lavaland/powered)
+"sMI" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 8;
+	name = "air supply pipe"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 4;
+	name = "scrubbers pipe"
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/science)
 "sNs" = (
 /obj/item/radio/intercom{
 	name = "Station Intercom (General)";
@@ -53297,26 +53345,6 @@
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/dark,
 /area/security/office)
-"sTn" = (
-/obj/machinery/power/apc{
-	areastring = "/area/hallway/primary/aft";
-	dir = 8;
-	name = "Aft Hall APC";
-	pixel_x = -25;
-	pixel_y = 1
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/obj/structure/cable{
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/hallway/primary/aft)
 "sTF" = (
 /obj/item/implanter/stealth,
 /turf/open/floor/plating/rust,
@@ -58643,13 +58671,6 @@
 	name = "Cell 2";
 	req_access_txt = "2"
 	},
-/obj/machinery/power/apc/highcap/five_k{
-	areastring = "/area/security/prison/upper";
-	damage_deflection = 21;
-	desc = "A control terminal for the area's electrical systems. It's secured with a durable antitampering plasteel cage.";
-	name = "Armored Prison Wing Cells APC";
-	pixel_y = -26
-	},
 /obj/machinery/door_timer{
 	id = "Single_camera_2";
 	name = "Cell 9";
@@ -60727,20 +60748,13 @@
 /turf/open/floor/plating/rust,
 /area/lavaland/surface/outdoors)
 "vLJ" = (
-/obj/machinery/power/apc{
-	areastring = "/area/hallway/primary/central";
-	name = "Central Hall APC";
-	pixel_y = -23
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/power/apc/auto_name/south,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "vLU" = (
@@ -62024,6 +62038,7 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
+/obj/machinery/power/apc/auto_name/east,
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "wlQ" = (
@@ -62194,14 +62209,10 @@
 /turf/open/floor/carpet/red,
 /area/command/heads_quarters/captain)
 "wpk" = (
-/obj/machinery/power/apc{
-	areastring = "/area/hallway/primary/starboard";
-	name = "Starboard Primary Hallway APC";
-	pixel_y = -23
-	},
 /obj/structure/cable{
 	dir = 1
 	},
+/obj/machinery/power/apc/auto_name/south,
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "wpl" = (
@@ -63137,19 +63148,11 @@
 /area/hallway/primary/fore)
 "wHM" = (
 /obj/machinery/light/floor,
-/obj/machinery/power/apc/highcap/five_k{
-	areastring = "/area/security/prison/upper";
-	armor = list("melee"=50,"bullet"=20,"laser"=20,"energy"=20,"bomb"=0,"bio"=0,"rad"=0,"fire"=90,"acid"=50);
-	damage_deflection = 21;
-	desc = "A control terminal for the area's electrical systems. It's secured with a durable antitampering plasteel cage.";
-	dir = 1;
-	name = "Armored Upper Prison Wing APC";
-	pixel_y = 23
-	},
 /obj/structure/cable{
 	icon_state = "0-2";
 	pixel_y = 1
 	},
+/obj/machinery/power/apc/auto_name/north,
 /turf/open/misc/grass,
 /area/security/prison/workout)
 "wHP" = (
@@ -66373,12 +66376,6 @@
 /area/hallway/primary/fore)
 "xQv" = (
 /obj/effect/turf_decal/tile/dark_red/full,
-/obj/machinery/power/apc{
-	areastring = "/area/security/checkpoint/medical";
-	dir = 8;
-	name = "Medical Security Checkpoint APC";
-	pixel_x = -25
-	},
 /obj/structure/cable{
 	dir = 1
 	},
@@ -66386,6 +66383,7 @@
 	dir = 1;
 	name = "air vent"
 	},
+/obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/plasteel,
 /area/security/checkpoint/medical)
 "xQx" = (
@@ -113990,7 +113988,7 @@ npN
 gPG
 tkB
 xZq
-xZq
+oti
 dIN
 xZq
 xZq
@@ -114591,12 +114589,12 @@ rFF
 dIN
 fbM
 uSh
-lGq
 tkB
-xZq
-oti
+tkB
 dIN
-xZq
+dIN
+dIN
+oti
 xZq
 xZq
 oti
@@ -114893,12 +114891,12 @@ xZq
 dIN
 uaj
 iyT
-tkB
-tkB
-sKP
+lPX
+sJL
+oBd
 dIN
-dIN
-xZq
+eUE
+rFF
 xZq
 rFF
 xZq
@@ -115195,10 +115193,10 @@ xZq
 dIN
 mzG
 xFJ
-qan
-rFF
-xZq
-xZq
+hVG
+hPH
+ceL
+dIN
 xZq
 xZq
 xZq
@@ -115497,10 +115495,10 @@ xZq
 dIN
 enL
 hud
-qan
-oti
-xZq
-xZq
+hVG
+qBX
+sMI
+dIN
 oti
 rFF
 xZq
@@ -115799,9 +115797,9 @@ dIN
 dIN
 efE
 mWS
-qan
-qan
-qan
+hVG
+hVG
+dhi
 qan
 qan
 qan
@@ -116101,7 +116099,7 @@ lrt
 kUi
 dzq
 jOo
-kUi
+lrt
 jpx
 gcJ
 hlk
@@ -116405,7 +116403,7 @@ eFp
 xIb
 eFp
 eFp
-eFp
+mPm
 eFp
 eFp
 eFp
@@ -116707,7 +116705,7 @@ hJK
 qlr
 fOz
 kbw
-kbw
+qlr
 kZs
 kbw
 boI
@@ -122743,7 +122741,7 @@ lrt
 lrt
 lrt
 kUi
-sTn
+hlk
 lrt
 lrt
 jpx
