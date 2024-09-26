@@ -12,7 +12,7 @@ SUBSYSTEM_DEF(job)
 	var/list/prioritized_jobs = list()
 	var/list/latejoin_trackers = list()	//Don't read this list, use GetLateJoinTurfs() instead
 
-	var/overflow_role = "Assistant"
+	var/overflow_role = CONFIG_GET(string/overflow_job)
 
 	var/list/level_order = list(JP_HIGH,JP_MEDIUM,JP_LOW)
 
@@ -23,7 +23,8 @@ SUBSYSTEM_DEF(job)
 	if(CONFIG_GET(flag/load_jobs_from_txt))
 		LoadJobs()
 	generate_selectable_species()
-	set_overflow_role(CONFIG_GET(string/overflow_job))
+	if(CONFIG_GET(string/overflow_job))
+		set_overflow_role(CONFIG_GET(string/overflow_job))
 	return ..()
 
 /// Returns a list of jobs that we are allowed to fuck with during random events
