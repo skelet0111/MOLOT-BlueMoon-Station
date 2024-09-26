@@ -4883,10 +4883,6 @@
 /obj/machinery/light/warm/directional/west,
 /turf/open/floor/wood,
 /area/hilbertshotel)
-"bLq" = (
-/obj/structure/sign/poster/contraband/inteq/inteq_no_sex,
-/turf/closed/wall/r_wall,
-/area/security/prison/cells)
 "bLu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
@@ -14565,6 +14561,10 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/security/office)
+"fiw" = (
+/obj/structure/sign/flag/fake_inteq,
+/turf/closed/wall/r_wall,
+/area/security/prison/cells)
 "fiO" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -48634,6 +48634,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/powered)
+"rtE" = (
+/obj/structure/sign/flag/nanotrasen,
+/turf/closed/wall/r_wall,
+/area/security/prison/cells)
 "rtO" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -55890,10 +55894,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/cargo/qm)
-"tQU" = (
-/obj/structure/sign/flag/inteq,
-/turf/closed/wall/r_wall,
-/area/security/prison/cells)
 "tQW" = (
 /obj/machinery/light{
 	dir = 1;
@@ -58134,10 +58134,6 @@
 	},
 /turf/open/floor/plating/rust,
 /area/lavaland/surface/outdoors)
-"uJs" = (
-/obj/structure/sign/poster/contraband/inteq/inteq_recruitment,
-/turf/closed/wall/r_wall,
-/area/security/prison/cells)
 "uJu" = (
 /obj/item/radio/intercom{
 	name = "Station Intercom";
@@ -65480,10 +65476,6 @@
 	},
 /turf/open/floor/plating/rust,
 /area/awaymission)
-"xAz" = (
-/obj/structure/sign/poster/contraband/inteq/inteq_vulp,
-/turf/closed/wall/r_wall,
-/area/security/prison/cells)
 "xAH" = (
 /obj/structure/sign/directions/engineering,
 /obj/structure/sign/directions/security{
@@ -117765,22 +117757,22 @@ blL
 dAj
 ekH
 vut
-twS
+rtE
 pGG
 wfJ
 uyJ
 vyM
-vJk
+rtE
 jUT
 vyM
 iJL
 wfJ
-twS
+rtE
 xlY
 fxk
 qIp
 wfJ
-vJk
+rtE
 kGk
 sEa
 twS
@@ -118082,7 +118074,7 @@ sQT
 maR
 npf
 sQT
-twS
+vJk
 kGk
 iVh
 twS
@@ -120496,7 +120488,7 @@ twS
 twS
 twS
 twS
-bLq
+twS
 twS
 twS
 twS
@@ -121389,22 +121381,22 @@ khv
 dAj
 wRb
 ekH
-uJs
+fiw
 azM
 rhu
 orV
 qOs
-tQU
+fiw
 eYg
 azM
 nOS
 qHV
-twS
+fiw
 hiB
 azM
 nOS
 dUA
-twS
+fiw
 kGk
 sEa
 twS
@@ -122309,7 +122301,7 @@ twS
 twS
 tqX
 tsF
-xAz
+twS
 twS
 twS
 wFd
