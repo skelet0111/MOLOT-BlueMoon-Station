@@ -32,3 +32,9 @@
   - rscadd: New space ruins
   - tweak: several edits to simplemobs such as seeing their health
   - imageadd: TG sprites for doors, floors and other items
+  ariaworld:
+  - rscadd: Added some safeguards to RD console & design datums.
+  - rscadd: Added Beach, Forest, Jungle, Prison, and Winter apartments to infinidorm.
+2024-09-26:
+  Just-Sim:
+  - bugfix: Fixed cluttercode.
