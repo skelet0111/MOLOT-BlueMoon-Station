@@ -25,3 +25,10 @@
   - rscadd: Annoyance at upstream
   - bugfix: rearrange Lambda medical, add a limb grower and paramed locker
   - bugfix: lambda is no longer affected by upstream
+2024-09-21:
+  MosleyTheMalO:
+  - rscadd: New infinidorm rooms
+  - rscadd: New random templates for boxtation's maints
+  - rscadd: New space ruins
+  - tweak: several edits to simplemobs such as seeing their health
+  - imageadd: TG sprites for doors, floors and other items
