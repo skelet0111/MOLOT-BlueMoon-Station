@@ -445,10 +445,10 @@
 /datum/spacevine_controller
 	var/list/obj/structure/spacevine/vines
 	var/list/growth_queue
-	var/spread_multiplier = 10
-	var/spread_cap = 60
+	var/spread_multiplier = 20
+	var/spread_cap = 120
 	var/list/vine_mutations_list
-	var/mutativeness = 2
+	var/mutativeness = 5
 
 /datum/spacevine_controller/New(turf/location, list/muts, potency, production, datum/round_event/event = null)
 	vines = list()
