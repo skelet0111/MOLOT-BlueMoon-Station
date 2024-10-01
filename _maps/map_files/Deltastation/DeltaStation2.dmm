@@ -77350,7 +77350,6 @@
 	pixel_y = 5
 	},
 /obj/item/stack/packageWrap,
-/obj/item/hand_labeler,
 /obj/machinery/power/apc{
 	areastring = "/area/cargo/sorting";
 	dir = 8;
@@ -77364,6 +77363,8 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
+/obj/item/dest_tagger,
+/obj/item/dest_tagger,
 /turf/open/floor/plasteel,
 /area/cargo/sorting)
 "iCD" = (
