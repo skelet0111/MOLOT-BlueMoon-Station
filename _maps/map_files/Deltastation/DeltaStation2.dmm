@@ -6073,13 +6073,23 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel,
-/area/maintenance/starboard/fore)
-"atv" = (
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/turf/closed/wall,
+/turf/open/floor/plasteel,
+/area/maintenance/starboard/fore)
+"atv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/white{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/disposalpipe/junction/flip{
+	dir = 8
+	},
+/turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "atw" = (
 /obj/structure/disposalpipe/segment{
@@ -6477,11 +6487,10 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/effect/turf_decal/delivery,
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
 /turf/open/floor/plasteel,
 /area/maintenance/starboard/fore)
 "auD" = (
@@ -6492,11 +6501,11 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 6
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/starboard/fore)
@@ -6905,6 +6914,9 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/starboard/fore)
@@ -17316,6 +17328,9 @@
 "bLe" = (
 /obj/effect/turf_decal/tile/red/half,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/security/brig_briefing)
 "bLs" = (
@@ -20938,7 +20953,7 @@
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment{
-	dir = 10
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/security/brig_briefing)
@@ -65360,8 +65375,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/structure/disposalpipe/junction{
-	dir = 4
+/obj/structure/disposalpipe/sorting/mail{
+	dir = 4;
+	sortType = 7
 	},
 /turf/open/floor/plasteel,
 /area/security/brig_briefing)
@@ -77334,7 +77350,6 @@
 	pixel_y = 5
 	},
 /obj/item/stack/packageWrap,
-/obj/item/hand_labeler,
 /obj/machinery/power/apc{
 	areastring = "/area/cargo/sorting";
 	dir = 8;
@@ -77348,6 +77363,8 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
+/obj/item/dest_tagger,
+/obj/item/dest_tagger,
 /turf/open/floor/plasteel,
 /area/cargo/sorting)
 "iCD" = (
@@ -83289,6 +83306,9 @@
 "kix" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 10
 	},
 /turf/open/floor/plasteel,
 /area/security/brig_briefing)
@@ -94313,6 +94333,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
+"nvv" = (
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/closed/wall,
+/area/cargo/storage)
 "nvH" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -97257,6 +97283,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
 /turf/closed/wall,
 /area/cargo/storage)
 "omI" = (
@@ -99674,6 +99703,9 @@
 	},
 /obj/structure/cable/white{
 	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 9
 	},
 /turf/open/floor/plasteel,
 /area/security/brig_briefing)
@@ -109596,14 +109628,19 @@
 /turf/open/floor/plasteel/grimy,
 /area/commons/dorms)
 "rQF" = (
-/obj/effect/turf_decal/tile/red/half{
-	dir = 1
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/white{
+	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/open/floor/plasteel,
-/area/security/brig_briefing)
+/obj/structure/disposalpipe/sorting/mail{
+	dir = 8;
+	sortType = 1
+	},
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
 "rQN" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -112758,15 +112795,14 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/structure/disposalpipe/sorting/mail{
-	dir = 4;
-	sortType = 1
-	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
+	},
+/obj/structure/disposalpipe/sorting/wrap{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/cargo/warehouse)
@@ -115394,13 +115430,11 @@
 /turf/open/floor/plasteel,
 /area/cargo/storage)
 "txK" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/structure/cable/white{
-	icon_state = "4-8"
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel,
-/area/security/brig_briefing)
+/turf/closed/wall,
+/area/cargo/storage)
 "txN" = (
 /obj/machinery/holopad,
 /turf/open/floor/plasteel,
@@ -118483,8 +118517,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/structure/disposalpipe/junction/flip{
-	dir = 1
+/obj/structure/disposalpipe/sorting/mail{
+	dir = 4;
+	sortType = 8
 	},
 /turf/open/floor/plasteel,
 /area/security/brig_briefing)
@@ -119121,6 +119156,7 @@
 /obj/structure/cable/white{
 	icon_state = "2-8"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/security/brig_briefing)
 "uzT" = (
@@ -131355,13 +131391,13 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+/obj/machinery/disposal/bin,
 /turf/open/floor/wood,
 /area/command/heads_quarters/hos)
 "yho" = (
@@ -174740,7 +174776,7 @@ aqz
 arc
 arY
 aig
-auB
+atv
 oml
 sRd
 iIU
@@ -174997,8 +175033,8 @@ aqA
 apy
 apy
 atu
-auB
-uqS
+rQF
+txK
 uwm
 sjU
 sIm
@@ -175253,7 +175289,7 @@ apx
 aqB
 apw
 arZ
-atv
+atw
 auC
 avX
 jYZ
@@ -175512,7 +175548,7 @@ apu
 wzu
 atw
 auD
-uqS
+nvv
 wDl
 iQK
 sIm
@@ -188926,7 +188962,7 @@ lPY
 lPY
 lPY
 bZm
-txK
+xMr
 uqt
 ivt
 yhk
@@ -189182,7 +189218,7 @@ lPY
 mOX
 iOu
 lPY
-rQF
+iBP
 oMx
 bLe
 pnV
