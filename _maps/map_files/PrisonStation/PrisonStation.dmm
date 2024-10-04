@@ -54464,6 +54464,7 @@
 /area/engineering/supermatter)
 "trB" = (
 /obj/machinery/holopad,
+/obj/item/hilbertshotel/ghostdojo,
 /turf/open/floor/festive/alleyway/safe,
 /area/service/park)
 "tsk" = (
