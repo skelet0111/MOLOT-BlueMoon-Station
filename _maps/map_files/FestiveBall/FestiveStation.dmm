@@ -40677,69 +40677,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/fitness/pool)
-"bVP" = (
-/obj/effect/turf_decal/tile/yellow{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/obj/structure/closet/athletic_mixed,
-/obj/item/toy/poolnoodle/blue,
-/obj/effect/decal/festive/fairylights{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel,
-/area/commons/fitness/pool)
-"bVQ" = (
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/obj/structure/closet/athletic_mixed,
-/obj/item/toy/poolnoodle/red,
-/obj/effect/decal/festive/christmas_ivy_string{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel,
-/area/commons/fitness/pool)
-"bVR" = (
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/obj/machinery/light{
-	dir = 1;
-	light_color = "#d1dfff"
-	},
-/obj/structure/closet/athletic_mixed,
-/obj/item/toy/poolnoodle/yellow,
-/obj/effect/decal/festive/fairylights{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel,
-/area/commons/fitness/pool)
-"bVS" = (
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/obj/structure/closet/athletic_mixed,
-/obj/item/toy/poolnoodle/blue,
-/obj/effect/decal/festive/christmas_ivy_string{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel,
-/area/commons/fitness/pool)
 "bVT" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -41130,20 +41067,6 @@
 	},
 /turf/open/floor/plating,
 /area/cargo/storage)
-"bWP" = (
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
-/obj/structure/closet/athletic_mixed,
-/obj/item/toy/poolnoodle/yellow,
-/obj/effect/decal/festive/fairylights{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel,
-/area/commons/fitness/pool)
 "bWQ" = (
 /obj/machinery/status_display{
 	pixel_x = -32
@@ -53182,6 +53105,24 @@
 	},
 /turf/open/floor/wood,
 /area/maintenance/bar)
+"cZf" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#d1dfff"
+	},
+/obj/structure/closet/athletic_mixed,
+/obj/item/pool/pool_noodle,
+/obj/effect/decal/festive/fairylights{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel,
+/area/commons/fitness/pool)
 "cZi" = (
 /obj/structure/table,
 /obj/machinery/microwave{
@@ -53299,6 +53240,20 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/bar)
+"dZY" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/structure/closet/athletic_mixed,
+/obj/item/pool/pool_noodle,
+/obj/effect/decal/festive/christmas_ivy_string{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel,
+/area/commons/fitness/pool)
 "ecw" = (
 /turf/closed/festive/whitebrick,
 /area/service/theater)
@@ -54025,6 +53980,23 @@
 /obj/machinery/autolathe/hacked,
 /turf/open/floor/circuit/off,
 /area/science)
+"ihM" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/structure/closet/athletic_mixed,
+/obj/item/pool/pool_noodle,
+/obj/effect/decal/festive/fairylights{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel,
+/area/commons/fitness/pool)
 "ijW" = (
 /obj/structure/table/wood/fancy/red,
 /obj/structure/window/reinforced{
@@ -55296,6 +55268,20 @@
 /obj/item/stack/sheet/bone,
 /turf/open/floor/carpet/royalblue,
 /area/edina/crew_quarters/store/pet)
+"qMA" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/structure/closet/athletic_mixed,
+/obj/item/pool/pool_noodle,
+/obj/effect/decal/festive/fairylights{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel,
+/area/commons/fitness/pool)
 "qMR" = (
 /obj/structure/table/reinforced,
 /obj/item/book/manual/wiki/splurt/splurt_space_law,
@@ -73618,7 +73604,7 @@ bIi
 cjY
 bHZ
 bUJ
-bVP
+ihM
 cbL
 cfq
 cfq
@@ -73875,7 +73861,7 @@ bIi
 cjY
 bHZ
 bUJ
-bVQ
+dZY
 cfg
 cfr
 cfr
@@ -74132,7 +74118,7 @@ bIi
 cjY
 bHZ
 bUJ
-bVR
+cZf
 cfh
 cfs
 cft
@@ -74389,7 +74375,7 @@ bIi
 cjY
 bHZ
 bUJ
-bVS
+dZY
 cfh
 cft
 cft
@@ -74903,7 +74889,7 @@ bSD
 cka
 cqi
 bUJ
-bVQ
+dZY
 cfh
 cft
 cft
@@ -75160,7 +75146,7 @@ bTh
 ckc
 cqr
 bUJ
-bWP
+qMA
 cfh
 cft
 cft

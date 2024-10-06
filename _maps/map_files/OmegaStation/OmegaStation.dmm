@@ -34586,6 +34586,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plating,
 /area/maintenance/solars/starboard/fore)
 "dMl" = (
 /obj/structure/sign/warning/fire,
@@ -36041,7 +36042,7 @@
 /area/maintenance/starboard/aft)
 "iSy" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/item/toy/poolnoodle/red,
+/obj/item/pool/pool_noodle,
 /turf/open/floor/wood,
 /area/maintenance/starboard/aft)
 "iUa" = (

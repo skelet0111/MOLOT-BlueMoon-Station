@@ -6712,6 +6712,16 @@
 "eKW" = (
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/aisat)
+"eLy" = (
+/obj/item/pool/pool_noodle,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/obj/structure/closet/athletic_mixed,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/turf/open/floor/plasteel,
+/area/commons/dorms)
 "eLD" = (
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/locked,
@@ -7949,16 +7959,6 @@
 	},
 /turf/open/floor/carpet,
 /area/commons/dorms)
-"fOe" = (
-/obj/item/toy/poolnoodle/yellow,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 10
-	},
-/obj/structure/closet/athletic_mixed,
-/obj/item/toy/poolnoodle/blue,
-/obj/item/toy/poolnoodle/red,
-/turf/open/floor/plasteel,
-/area/commons/dorms)
 "fOl" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -8851,6 +8851,11 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"gvo" = (
+/obj/structure/closet/secure_closet/personal,
+/obj/item/pool/pool_noodle,
+/turf/open/floor/plasteel,
+/area/commons/dorms)
 "gvT" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
@@ -9832,11 +9837,6 @@
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
-"hgN" = (
-/obj/structure/closet/secure_closet/personal,
-/obj/item/toy/poolnoodle/yellow,
-/turf/open/floor/plasteel,
-/area/commons/dorms)
 "hgO" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -17514,16 +17514,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/cargo/qm)
-"mLC" = (
-/obj/item/toy/poolnoodle/blue,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/obj/structure/closet/athletic_mixed,
-/obj/item/toy/poolnoodle/red,
-/obj/item/toy/poolnoodle/yellow,
-/turf/open/floor/plasteel,
-/area/commons/dorms)
 "mMT" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
@@ -23003,6 +22993,16 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat)
+"qSZ" = (
+/obj/item/pool/pool_noodle,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/structure/closet/athletic_mixed,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/turf/open/floor/plasteel,
+/area/commons/dorms)
 "qTp" = (
 /obj/machinery/portable_atmospherics/scrubber/huge,
 /obj/effect/turf_decal/bot,
@@ -25157,11 +25157,6 @@
 /obj/structure/grille,
 /turf/closed/wall/r_wall,
 /area/maintenance/central)
-"sFX" = (
-/obj/structure/closet/secure_closet/personal,
-/obj/item/toy/poolnoodle/red,
-/turf/open/floor/plasteel,
-/area/commons/dorms)
 "sGy" = (
 /obj/structure/table,
 /obj/item/assembly/igniter{
@@ -31779,11 +31774,6 @@
 /obj/machinery/shieldgen,
 /turf/open/floor/plasteel/dark,
 /area/engineering/main)
-"xva" = (
-/obj/structure/closet/secure_closet/personal,
-/obj/item/toy/poolnoodle/blue,
-/turf/open/floor/plasteel,
-/area/commons/dorms)
 "xvw" = (
 /obj/structure/chair/comfy/brown{
 	dir = 4
@@ -68864,7 +68854,7 @@ fxk
 vxw
 sDC
 wXO
-mLC
+qSZ
 hEf
 rGC
 rgA
@@ -69121,7 +69111,7 @@ oBG
 rwE
 bVc
 wXO
-fOe
+eLy
 aFx
 rgA
 rgA
@@ -69893,10 +69883,10 @@ ubq
 uut
 eOX
 wXO
-hgN
-sFX
-xva
-sFX
+gvo
+gvo
+gvo
+gvo
 ggu
 ilE
 wLX
