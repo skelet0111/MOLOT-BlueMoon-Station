@@ -1,6 +1,5 @@
-author: SaraSayomi
-delete-after: true
-changes:
+2024-10-07:
+  SaraSayomi:
   - bugfix: Crop top
   - bugfix: HOP parade
   - bugfix: explorer suit (fukin spaget code)
