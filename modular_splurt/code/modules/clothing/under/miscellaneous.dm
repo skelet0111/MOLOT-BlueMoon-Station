@@ -280,7 +280,6 @@
 	desc = "For those goth girls with lots of chest to show."
 	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
 	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC
 	icon_state = "pentatop"
 	item_state = "pentatop"
 	body_parts_covered = CHEST
