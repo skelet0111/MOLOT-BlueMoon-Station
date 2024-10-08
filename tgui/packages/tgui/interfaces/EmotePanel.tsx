@@ -1,7 +1,6 @@
-import { useLocalState } from '../backend';
-
 import { BooleanLike } from '../../common/react';
 import { capitalize } from '../../common/string';
+import { useLocalState } from '../backend';
 import { useBackend } from '../backend';
 import { Box, Button, Flex, Icon, Section } from '../components';
 import { Window } from '../layouts';
@@ -150,7 +149,7 @@ export const EmotePanelContent = (props, context) => {
               .sort((a, b) => (a.name > b.name ? 1 : -1))
               .map((emote) => (
                 <Button
-                  width={showIcons ? 16 : 12 }
+                  width={showIcons ? 16 : 12}
                   key={emote.name}
                   tooltip={
                     showIcons ? undefined : (
