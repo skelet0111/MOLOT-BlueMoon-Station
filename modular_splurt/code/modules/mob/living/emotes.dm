@@ -115,7 +115,7 @@ To add randomization to your emote, copy and paste this line of code:
 	key = "fart"
 	key_third_person = "farts"
 	message = "farts out shitcode."
-	sound = 'sound/effects/fart.ogg'
+	sound = 'modular_splurt/sound/voice/farts/fart.ogg'
 	vary = TRUE
 	emote_type = EMOTE_AUDIBLE
 	emote_cooldown = 3 SECONDS
@@ -961,7 +961,7 @@ To add randomization to your emote, copy and paste this line of code:
 	sound = 'modular_splurt/sound/effects/slap.ogg'
 	// Defines appendage type for generated message
 	var/metacarpus_type = "palm" // Default to hands
-	cooldown = 0.25 SECONDS
+	emote_cooldown = 0.25 SECONDS
 
 /datum/emote/sound/human/facemetacarpus/run_emote(mob/user, params)
 	// Randomly pick a message using metacarpus_type for hand
