@@ -6,7 +6,7 @@
 /obj/effect/turf_decal/tile/dark_blue/full,
 /obj/machinery/power/apc/inteq{
 	dir = 4;
-	name = "InteQ Listening Post APC";
+	name = "СИЗО-37 Listening Post APC";
 	pixel_y = 32;
 	start_charge = 45
 	},
@@ -134,7 +134,7 @@
 	},
 /obj/machinery/power/apc/inteq{
 	dir = 1;
-	name = "InteQ Post APC";
+	name = "СИЗО-37 Post APC";
 	pixel_y = 32;
 	start_charge = 35
 	},
@@ -566,7 +566,7 @@
 /obj/structure/filingcabinet,
 /obj/machinery/door/window{
 	dir = 8;
-	name = "InteQ interior door";
+	name = "СИЗО-37 interior door";
 	req_one_access_txt = "152"
 	},
 /turf/open/floor/wood/wood_large,
@@ -742,7 +742,7 @@
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/spawner/east,
 /obj/machinery/door/window{
-	name = "InteQ interior door";
+	name = "СИЗО-37 interior door";
 	req_one_access_txt = "152"
 	},
 /obj/item/ai_module/core/full/inteq,
@@ -939,7 +939,7 @@
 /area/ruin/space/has_grav/inteq_forgotten_bridge)
 "fO" = (
 /obj/machinery/door/window{
-	name = "InteQ interior door";
+	name = "СИЗО-37 interior door";
 	req_one_access_txt = "152"
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/line,
@@ -1344,7 +1344,7 @@
 "hW" = (
 /obj/machinery/door/window{
 	dir = 1;
-	name = "InteQ interior door";
+	name = "СИЗО-37 interior door";
 	req_one_access_txt = "152"
 	},
 /obj/structure/cable/yellow{
@@ -1552,7 +1552,7 @@
 	},
 /obj/machinery/power/apc/inteq{
 	dir = 1;
-	name = "InteQ Post APC";
+	name = "СИЗО-37 Post APC";
 	pixel_y = 32;
 	start_charge = 35
 	},
@@ -1777,7 +1777,7 @@
 	},
 /obj/machinery/power/apc/inteq{
 	dir = 1;
-	name = "InteQ Post APC";
+	name = "СИЗО-37 Post APC";
 	pixel_y = 32;
 	start_charge = 35
 	},
@@ -2056,7 +2056,7 @@
 	},
 /obj/machinery/power/apc/inteq{
 	dir = 1;
-	name = "InteQ Post APC";
+	name = "СИЗО-37 Post APC";
 	pixel_y = 32;
 	start_charge = 35
 	},
@@ -2337,7 +2337,7 @@
 /area/ruin/space/has_grav/inteq_forgotten_ship)
 "nl" = (
 /obj/machinery/door/airlock/external{
-	name = "InteQ ship airlock";
+	name = "СИЗО-37 ship airlock";
 	req_one_access_txt = "152"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -2468,7 +2468,7 @@
 /area/ruin/space/has_grav/inteq_forgotten_ship)
 "oc" = (
 /obj/machinery/door/window{
-	name = "InteQ interior door";
+	name = "СИЗО-37 interior door";
 	req_one_access_txt = "152"
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/line,
@@ -2645,7 +2645,7 @@
 	},
 /obj/machinery/power/apc/inteq{
 	dir = 1;
-	name = "InteQ Post APC";
+	name = "СИЗО-37 Post APC";
 	pixel_y = 32;
 	start_charge = 35
 	},
@@ -2851,7 +2851,7 @@
 "qj" = (
 /obj/structure/window/reinforced/spawner/west,
 /obj/machinery/door/window{
-	name = "InteQ interior door";
+	name = "СИЗО-37 interior door";
 	req_one_access_txt = "152"
 	},
 /obj/effect/turf_decal/trimline/blue/filled/line{
@@ -3360,7 +3360,7 @@
 	},
 /obj/machinery/power/apc/inteq{
 	dir = 1;
-	name = "InteQ Post APC";
+	name = "СИЗО-37 Post APC";
 	pixel_y = 32;
 	start_charge = 35
 	},
@@ -3602,7 +3602,7 @@
 	armor = list("melee" = 80, "bullet" = 40, "laser" = 60, "energy" = 60, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100);
 	dir = 4;
 	faction = list("InteQ");
-	name = "InteQ Ship Turret";
+	name = "СИЗО-37 Ship Turret";
 	shot_delay = 10
 	},
 /turf/closed/wall/r_wall/syndicate,
@@ -4266,7 +4266,7 @@
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
 /obj/machinery/power/apc/inteq{
 	dir = 1;
-	name = "InteQ Post APC";
+	name = "СИЗО-37 Post APC";
 	start_charge = 35;
 	pixel_x = -32
 	},
@@ -4486,7 +4486,7 @@
 /obj/structure/closet/crate/trashcart,
 /obj/machinery/power/apc/inteq{
 	dir = 1;
-	name = "InteQ Forgotten Ship APC";
+	name = "СИЗО-37 Forgotten Ship APC";
 	pixel_x = 27;
 	start_charge = 35
 	},
@@ -5161,7 +5161,7 @@
 "DM" = (
 /obj/machinery/door/window{
 	dir = 1;
-	name = "InteQ interior door";
+	name = "СИЗО-37 interior door";
 	req_one_access_txt = "152"
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -5380,7 +5380,7 @@
 "Fk" = (
 /obj/machinery/door/window{
 	dir = 1;
-	name = "InteQ interior door";
+	name = "СИЗО-37 interior door";
 	req_one_access_txt = "152"
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -5494,7 +5494,7 @@
 "FW" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/external{
-	name = "InteQ ship airlock";
+	name = "СИЗО-37 ship airlock";
 	req_one_access_txt = "152"
 	},
 /obj/effect/mapping_helpers/airlock/cutaiwire,
@@ -5695,7 +5695,7 @@
 /area/ruin/space/has_grav/inteq_forgotten_permabrig)
 "Hi" = (
 /obj/machinery/door/airlock/grunge{
-	name = "InteQ Ship Airlock";
+	name = "СИЗО-37 Ship Airlock";
 	req_one_access_txt = "152"
 	},
 /obj/structure/cable/yellow{
@@ -5822,7 +5822,7 @@
 	},
 /obj/machinery/power/apc/inteq{
 	dir = 1;
-	name = "InteQ Post APC";
+	name = "СИЗО-37 Post APC";
 	pixel_y = 32;
 	start_charge = 35
 	},
@@ -5911,7 +5911,7 @@
 	},
 /obj/machinery/door/window{
 	dir = 8;
-	name = "InteQ interior door";
+	name = "СИЗО-37 interior door";
 	req_one_access_txt = "152"
 	},
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -6061,7 +6061,7 @@
 /area/ruin/space/has_grav/inteq_forgotten_ship)
 "Jp" = (
 /obj/machinery/door/window{
-	name = "InteQ interior door";
+	name = "СИЗО-37 interior door";
 	req_one_access_txt = "152"
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -7113,7 +7113,7 @@
 	},
 /obj/machinery/power/apc/inteq{
 	dir = 1;
-	name = "InteQ Post APC";
+	name = "СИЗО-37 Post APC";
 	pixel_y = 32;
 	start_charge = 35
 	},
@@ -7432,7 +7432,7 @@
 /area/ruin/space/has_grav/inteq_forgotten_medbay)
 "Rq" = (
 /obj/machinery/mineral/ore_redemption{
-	name = "InteQ ore redemption machine";
+	name = "СИЗО-37 ore redemption machine";
 	ore_multiplier = 4;
 	req_access = list(150)
 	},
@@ -7946,7 +7946,7 @@
 /area/ruin/space/has_grav/inteq_forgotten_atmos)
 "UD" = (
 /obj/machinery/door/airlock/external{
-	name = "InteQ ship airlock";
+	name = "СИЗО-37 ship airlock";
 	req_one_access_txt = "152"
 	},
 /obj/structure/fans/tiny,
@@ -7996,7 +7996,7 @@
 "UX" = (
 /obj/machinery/power/apc/inteq{
 	dir = 1;
-	name = "InteQ Forgotten Ship APC";
+	name = "СИЗО-37 Forgotten Ship APC";
 	pixel_y = 32;
 	start_charge = 35
 	},
@@ -8131,7 +8131,7 @@
 	},
 /obj/machinery/power/apc/inteq{
 	dir = 1;
-	name = "InteQ Post APC";
+	name = "СИЗО-37 Post APC";
 	pixel_y = 32;
 	start_charge = 35
 	},
@@ -8323,7 +8323,7 @@
 /area/ruin/space/has_grav/inteq_forgotten_ship)
 "WH" = (
 /obj/machinery/door/airlock/external{
-	name = "InteQ ship airlock";
+	name = "СИЗО-37 ship airlock";
 	req_one_access_txt = "152"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -8690,7 +8690,7 @@
 	},
 /obj/machinery/power/apc/inteq{
 	dir = 1;
-	name = "InteQ Post APC";
+	name = "СИЗО-37 Post APC";
 	pixel_y = 32;
 	start_charge = 35
 	},
@@ -8702,7 +8702,7 @@
 /area/ruin/space/has_grav/inteq_forgotten_rnd)
 "YM" = (
 /obj/machinery/door/window{
-	name = "InteQ interior door";
+	name = "СИЗО-37 interior door";
 	req_one_access_txt = "152"
 	},
 /obj/effect/turf_decal/trimline/green/filled/line{
@@ -8842,7 +8842,7 @@
 	armor = list("melee" = 80, "bullet" = 40, "laser" = 60, "energy" = 60, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100);
 	dir = 4;
 	faction = list("InteQ");
-	name = "InteQ Ship Turret";
+	name = "СИЗО-37 Ship Turret";
 	shot_delay = 10
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
