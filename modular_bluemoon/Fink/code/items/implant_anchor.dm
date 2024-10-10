@@ -39,7 +39,8 @@
 /obj/item/implant/anchor/proc/on_life(mob/living/owner)
 //	to_chat(owner, "<span class='rose'>allowed_z_levels [allowed_z_levels], owner.z [owner.z] </span>")
 //	to_chat(owner, "<span class='rose'>Tick</span>")
-	if((get_area(owner) in GLOB.areas_by_type[/area/ruin/space/has_grav/bluemoon]) && (get_area(owner) in GLOB.areas_by_type[/area/shuttle/sbc_corvette]))
+	var/area/my_area = get_area(owner)
+	if(istype(my_area, /area/ruin/space/has_grav/bluemoon) || istype(my_area, /area/shuttle/sbc_corvette))
 		return
 	var/turf/my_location = get_turf(owner)
 	if(!(my_location.z in allowed_z_levels))
