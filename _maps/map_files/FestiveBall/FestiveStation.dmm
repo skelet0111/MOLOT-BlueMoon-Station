@@ -12859,12 +12859,14 @@
 /area/science)
 "aDT" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aDU" = (
 /turf/open/floor/circuit/green,
 /area/science/xenobiology)
 "aDV" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aDW" = (
@@ -13254,6 +13256,7 @@
 	name = "Creature Cell #6"
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
 "aFl" = (
@@ -13272,7 +13275,6 @@
 	id = "xeno6";
 	name = "Creature Cell #6"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
@@ -13297,6 +13299,7 @@
 	id = "xeno5";
 	name = "Creature Cell #5"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
 "aFo" = (
@@ -13315,7 +13318,6 @@
 	id = "xeno5";
 	name = "Creature Cell #5"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
@@ -13371,6 +13373,7 @@
 	id = "xeno4";
 	name = "Creature Cell #4"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
 "aFv" = (
@@ -13389,7 +13392,6 @@
 	id = "xeno4";
 	name = "Creature Cell #4"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
@@ -13414,6 +13416,7 @@
 	id = "xeno3";
 	name = "Creature Cell #3"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
 "aFy" = (
@@ -13432,7 +13435,6 @@
 	id = "xeno3";
 	name = "Creature Cell #3"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
@@ -13457,6 +13459,7 @@
 	id = "xeno2";
 	name = "Creature Cell #2"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
 "aFB" = (
@@ -13475,7 +13478,6 @@
 	id = "xeno2";
 	name = "Creature Cell #2"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
@@ -13504,6 +13506,7 @@
 	id = "xeno1";
 	name = "Creature Cell #1"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
 "aFF" = (
@@ -13522,7 +13525,6 @@
 	id = "xeno1";
 	name = "Creature Cell #1"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
@@ -13921,6 +13923,7 @@
 	req_access_txt = "55"
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aGI" = (
@@ -13932,7 +13935,6 @@
 	req_access_txt = "47"
 	},
 /obj/effect/turf_decal/delivery,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
@@ -13957,6 +13959,7 @@
 	name = "Containment Control";
 	req_access_txt = "55"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aGL" = (
@@ -13980,6 +13983,7 @@
 	req_access_txt = "55"
 	},
 /obj/effect/turf_decal/bot,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aGN" = (
@@ -13993,6 +13997,7 @@
 	name = "Containment Control";
 	req_access_txt = "55"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aGO" = (
@@ -14006,6 +14011,7 @@
 	name = "Containment Control";
 	req_access_txt = "55"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aGP" = (
@@ -14019,6 +14025,7 @@
 	name = "Containment Control";
 	req_access_txt = "55"
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aGQ" = (
@@ -14368,7 +14375,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 6
+	},
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
 "aHJ" = (
@@ -14583,9 +14592,9 @@
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aIi" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aIj" = (
@@ -14596,6 +14605,9 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /obj/machinery/light{
 	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 5
 	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
@@ -14615,7 +14627,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aIm" = (
@@ -14626,12 +14640,14 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /obj/machinery/requests_console{
 	department = "Xenobiology Lab";
 	name = "Xenobiology RC";
 	receive_ore_updates = 1;
 	pixel_y = -32
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
@@ -14668,9 +14684,7 @@
 /obj/item/slime_extract/grey,
 /obj/item/slime_extract/grey,
 /obj/item/slime_extract/grey,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aIr" = (
@@ -14678,7 +14692,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aIs" = (
@@ -14730,6 +14746,9 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/science/xenobiology)
 "aIx" = (
@@ -14893,9 +14912,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 6
-	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aIQ" = (
@@ -14904,9 +14920,6 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -14923,9 +14936,6 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -14947,9 +14957,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
 "aIT" = (
@@ -14964,9 +14971,6 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -15200,9 +15204,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
 	},
@@ -15219,9 +15220,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -15235,9 +15233,6 @@
 	dir = 4
 	},
 /obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -15357,6 +15352,9 @@
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
@@ -19188,9 +19186,6 @@
 	icon_state = "2-4"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 6
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
@@ -19324,9 +19319,6 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -19343,12 +19335,10 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/wood,
 /area/science/xenobiology)
 "aSD" = (
@@ -19872,11 +19862,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aTS" = (
@@ -32253,9 +32239,6 @@
 /obj/structure/disposalpipe/sorting/mail/flip{
 	dir = 1;
 	sortType = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -58397,7 +58380,6 @@
 /turf/open/floor/plasteel,
 /area/edina)
 "dgP" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
@@ -59036,8 +59018,10 @@
 /area/medical/exam_room)
 "ekL" = (
 /obj/machinery/holopad,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/turf_decal/bot,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 6
+	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "elG" = (
@@ -59048,9 +59032,6 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
@@ -59421,7 +59402,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 5
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
@@ -59746,18 +59727,14 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
 /obj/machinery/newscaster{
 	pixel_y = -32
 	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "fyZ" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "fBZ" = (
@@ -59767,6 +59744,9 @@
 "fCo" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "fCF" = (
@@ -60380,12 +60360,10 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 9
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "gNY" = (
@@ -60431,6 +60409,12 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/wood,
 /area/command/corporate_showroom)
+"gUj" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 5
+	},
+/turf/open/floor/carpet/red,
+/area/science/xenobiology)
 "gXr" = (
 /obj/effect/festive/street/streetlinewest,
 /obj/effect/turf_decal/arrows/white{
@@ -60987,6 +60971,14 @@
 /obj/structure/bed/dogbed,
 /turf/open/floor/grass,
 /area/edina/crew_quarters/store/pet)
+"hUg" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/closed/festive/whitebrick{
+	color = "#555555"
+	},
+/area/science/xenobiology)
 "hUh" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -61099,6 +61091,13 @@
 	},
 /turf/open/floor/festive/cobblestone,
 /area/edina/street/intersection/servsuppaux)
+"icB" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/xenobiology)
 "idg" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -61156,7 +61155,6 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "iir" = (
@@ -61223,7 +61221,6 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "ilI" = (
@@ -61469,9 +61466,7 @@
 /area/medical/genetics)
 "iFP" = (
 /obj/effect/landmark/event_spawn,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "iGc" = (
@@ -61669,7 +61664,9 @@
 /turf/open/floor/plasteel/checker,
 /area/maintenance/bar/cafe)
 "iVZ" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 4
+	},
 /turf/open/floor/carpet/red,
 /area/science/xenobiology)
 "iXm" = (
@@ -63214,9 +63211,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 5
-	},
 /turf/open/floor/carpet/red,
 /area/science/xenobiology)
 "lVR" = (
@@ -63744,9 +63738,6 @@
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
 "mPV" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 10
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
@@ -64404,6 +64395,13 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
+/area/science/xenobiology)
+"ooo" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/carpet/red,
 /area/science/xenobiology)
 "ooy" = (
 /obj/machinery/vending/dinnerware{
@@ -65347,14 +65345,12 @@
 /turf/open/floor/plasteel/dark,
 /area/security/office)
 "pOS" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/open/floor/festive/sidewalk,
-/area/edina/street/primary/princess)
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
 "pPk" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	color = "#FFFFFE";
@@ -66541,6 +66537,15 @@
 	},
 /turf/open/floor/festive/sidewalk,
 /area/security)
+"rOf" = (
+/obj/structure/sign/departments/xenobio,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/closed/festive/whitebrick{
+	color = "#555555"
+	},
+/area/science/xenobiology)
 "rOA" = (
 /obj/machinery/button/door{
 	id = "Kitchen garage door";
@@ -67290,9 +67295,7 @@
 /area/cargo/warehouse)
 "tqy" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "tqJ" = (
@@ -68572,13 +68575,11 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = -24
 	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "vMa" = (
@@ -68637,6 +68638,15 @@
 /obj/effect/turf_decal/arrows/white,
 /turf/open/floor/festive/cobblestone,
 /area/edina/street/primary/perimeter)
+"vSH" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
 "vTP" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -68670,11 +68680,11 @@
 /area/security/office)
 "wax" = (
 /obj/item/kirbyplants/random,
+/obj/effect/turf_decal/bot,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
-/obj/effect/turf_decal/bot,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "wcq" = (
@@ -69556,7 +69566,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "xxk" = (
@@ -96425,7 +96437,7 @@ aCn
 aCn
 aCn
 aIR
-aCn
+hUg
 aCn
 aCn
 aCn
@@ -96682,7 +96694,7 @@ aws
 aws
 aCn
 aIS
-aCn
+hUg
 aws
 aws
 aws
@@ -96939,7 +96951,7 @@ aCn
 aCn
 aCn
 aIT
-aCn
+hUg
 aCn
 awo
 awo
@@ -97453,7 +97465,7 @@ aGI
 ilm
 eTG
 gNp
-aCY
+vSH
 aGR
 aKI
 aKI
@@ -98221,8 +98233,8 @@ fyZ
 aDV
 aFn
 aGK
-kbq
-fdo
+pOS
+mkb
 aIX
 aCY
 aKq
@@ -99249,7 +99261,7 @@ fyZ
 aDV
 aFu
 aGM
-kbq
+pOS
 iFP
 aIX
 aCY
@@ -100277,7 +100289,7 @@ fyZ
 aDV
 aFx
 aGN
-kbq
+pOS
 fyK
 aIZ
 aCn
@@ -101305,7 +101317,7 @@ fyZ
 aDV
 aFA
 aGO
-kbq
+pOS
 vLV
 aIZ
 aJJ
@@ -102333,7 +102345,7 @@ fyZ
 aDV
 aFE
 aGP
-kbq
+pOS
 aIq
 aJg
 aJN
@@ -103618,7 +103630,7 @@ aDX
 eXD
 aSA
 aCn
-aCm
+rOf
 aIv
 aJl
 aCZ
@@ -103876,7 +103888,7 @@ rTx
 aSC
 wlK
 iVZ
-iVZ
+gUj
 lVC
 aJS
 aDW
@@ -104133,7 +104145,7 @@ lYy
 aTk
 got
 tAb
-tAb
+ooo
 aJm
 aCV
 aDW
@@ -104647,7 +104659,7 @@ aEI
 aCp
 aCn
 aCn
-aCp
+icB
 aJo
 aCp
 aCs
@@ -104904,7 +104916,7 @@ bbT
 aEO
 aEO
 aEO
-aEO
+ckF
 bxs
 aEO
 bxI
@@ -105161,8 +105173,8 @@ aEA
 aEA
 aEA
 aEW
-aEA
-pOS
+ckG
+aGj
 aEA
 aEA
 aEA
@@ -105418,8 +105430,8 @@ aEa
 aEa
 aEa
 aEa
-aEa
 aFd
+aEa
 aEa
 aEa
 aEa
