@@ -13906,10 +13906,6 @@
 	pixel_x = 26;
 	pixel_y = 26
 	},
-/obj/structure/cable/white{
-	icon_state = "1-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
@@ -14303,7 +14299,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "aHC" = (
@@ -14898,8 +14893,8 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 6
 	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
@@ -25894,13 +25889,6 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/commons/dorms)
-"bjr" = (
-/obj/machinery/power/apc/auto_name{
-	dir = 4;
-	pixel_x = -30
-	},
-/turf/open/floor/carpet/arcade,
-/area/commons/fitness/recreation)
 "bjs" = (
 /turf/open/floor/carpet/arcade,
 /area/commons/fitness/recreation)
@@ -60271,7 +60259,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -65263,9 +65250,6 @@
 	},
 /obj/machinery/status_display/evac{
 	pixel_y = 32
-	},
-/obj/structure/cable/white{
-	icon_state = "2-4"
 	},
 /obj/machinery/camera{
 	c_tag = "Xenobiology - Port";
@@ -86967,7 +86951,7 @@ bFs
 bHZ
 bhP
 biI
-bjr
+bjs
 alM
 bkf
 bkn
