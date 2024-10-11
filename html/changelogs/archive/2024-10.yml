@@ -11,3 +11,11 @@
   - bugfix: Crop top
   - bugfix: HOP parade
   - bugfix: explorer suit (fukin spaget code)
+2024-10-08:
+  Just-Sim:
+  - rscadd: popup notices
+  - rscadd: the ocky icky
+  - code_imp: added rejuvenation to the admin context menu
+  - refactor: refactored smites
+  cyfause:
+  - bugfix: allow facial hair on anthromorph species
