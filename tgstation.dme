@@ -280,7 +280,6 @@
 #include "code\__SANDCODE\HELPERS\silicon.dm"
 #include "code\__SANDCODE\HELPERS\sizecode.dm"
 #include "code\__SPLURTCODE\DEFINES\access.dm"
-#include "code\__SPLURTCODE\DEFINES\admin.dm"
 #include "code\__SPLURTCODE\DEFINES\atmospherics.dm"
 #include "code\__SPLURTCODE\DEFINES\cit_defines.dm"
 #include "code\__SPLURTCODE\DEFINES\click.dm"
