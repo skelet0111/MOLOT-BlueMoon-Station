@@ -931,3 +931,10 @@
 	path = /obj/item/modkit/tagilla
 	ckeywhitelist = list("tequilasunset228")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
+/datum/gear/donator/bm/warai_kimono
+	name = "Warai Kimono"
+	slot = ITEM_SLOT_ICLOTHING
+	path = /obj/item/clothing/suit/kimono/warai
+	ckeywhitelist =	list("germanrus")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
