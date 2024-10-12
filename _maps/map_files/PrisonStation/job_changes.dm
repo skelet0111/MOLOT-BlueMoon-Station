@@ -181,8 +181,8 @@
 /datum/job/qm/New()
 	. = ..()
 	if(SSmapping.config?.map_name == "PrisonStation")
-		total_positions = 0
-		spawn_positions = 0
+		total_positions = 1
+		spawn_positions = 1
 
 /datum/job/cargo_tech/New()
 	. = ..()
