@@ -28,10 +28,11 @@
 
 /obj/item/jukebox/emagged/ui_interact(mob/living/user, datum/tgui/ui)
 	if(user.key != "smileycom" || !(user.mind?.antag_datums))
-		user.dropItemToGround(src, TRUE)
+		to_chat(user,"<span class='warning'>Нельзя, запрещено.</span>")
+		playsound(src, 'sound/misc/compiler-failure.ogg', 25, TRUE)
 		user.DefaultCombatKnockdown(100)
 		user.adjustFireLoss(rand(25, 50))
-		user.emote("realagony")
+		user.dropItemToGround(src, TRUE)
 		return
 	. = ..()
 
