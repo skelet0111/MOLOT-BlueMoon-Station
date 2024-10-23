@@ -27,11 +27,12 @@
 	queuecost = PRICE_FREE
 
 /obj/item/jukebox/emagged/ui_interact(mob/living/user, datum/tgui/ui)
-	if(user.key != "smileycom" || user.mind?.antag_datums)
+	if(user.key != "smileycom" || !(user.mind?.antag_datums))
 		user.dropItemToGround(src, TRUE)
 		user.DefaultCombatKnockdown(100)
 		user.adjustFireLoss(rand(25, 50))
 		user.emote("realagony")
+		return
 	. = ..()
 
 ///obj/item/jukebox/emag_act(mob/user)
