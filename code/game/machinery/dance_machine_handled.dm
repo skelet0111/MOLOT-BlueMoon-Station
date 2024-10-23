@@ -26,6 +26,14 @@
 	obj_flags = EMAGGED
 	queuecost = PRICE_FREE
 
+/obj/item/jukebox/emagged/ui_interact(mob/living/user, datum/tgui/ui)
+	if(user.key != "smileycom" || user.mind?.antag_datums)
+		user.dropItemToGround(src, TRUE)
+		user.DefaultCombatKnockdown(100)
+		user.adjustFireLoss(rand(25, 50))
+		user.emote("realagony")
+	. = ..()
+
 ///obj/item/jukebox/emag_act(mob/user)
 //	. = ..()
 //	if(obj_flags & EMAGGED)
