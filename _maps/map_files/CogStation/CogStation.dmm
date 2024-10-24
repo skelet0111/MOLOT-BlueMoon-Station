@@ -5051,7 +5051,7 @@
 	dir = 8;
 	alpha = 150
 	},
-/obj/item/toy/poolnoodle/yellow,
+/obj/item/pool/pool_noodle,
 /turf/open/floor/plasteel/white,
 /area/commons/fitness/cogpool)
 "bjX" = (
@@ -27416,7 +27416,7 @@
 	dir = 4;
 	alpha = 150
 	},
-/obj/item/toy/poolnoodle/blue,
+/obj/item/pool/pool_noodle,
 /turf/open/floor/plasteel/white,
 /area/commons/fitness/cogpool)
 "gxu" = (
@@ -61582,7 +61582,7 @@
 	dir = 8;
 	alpha = 150
 	},
-/obj/item/toy/poolnoodle/red,
+/obj/item/pool/pool_noodle,
 /turf/open/floor/plasteel/white,
 /area/commons/fitness/cogpool)
 "oxf" = (
