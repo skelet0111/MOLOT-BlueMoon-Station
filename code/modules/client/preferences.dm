@@ -102,7 +102,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/preferred_map = null
 	var/preferred_chaos = null
 	var/be_victim = null
-	var/use_new_playerpanel = FALSE
+	var/use_new_playerpanel = TRUE
 	var/disable_combat_cursor = FALSE
 	var/pda_style = MONO
 	var/pda_color = "#808000"
@@ -303,7 +303,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	var/list/ignoring = list()
 
-	var/clientfps = 0
+	var/clientfps = 60
 
 	var/parallax = PARALLAX_INSANE
 
@@ -313,7 +313,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	///Should we be in the widescreen mode set by the config?
 	var/widescreenpref = TRUE
 	///Strip menu style
-	var/long_strip_menu = FALSE
+	var/long_strip_menu = TRUE
 	///What size should pixels be displayed as? 0 is strech to fit
 	var/pixel_size = 0
 	///What scaling method should we use?
@@ -356,7 +356,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	///loadout stuff
 	var/gear_points = 10
 	var/list/gear_categories
-	var/list/loadout_data = list()
+	var/list/loadout_data
 	var/list/unlockable_loadout_data = list()
 	var/loadout_slot = 1 //goes from 1 to MAXIMUM_LOADOUT_SAVES
 	var/gear_category
@@ -483,17 +483,25 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<HR>"
 
 			dat += "<center>"
-			var/client_file = user.client.Import()
+			var/savefile/client_file = new(user.client.Import())
 			var/savefile_name
-			if(client_file)
-				var/savefile/cache_savefile = new(user.client.Import())
-				if(!cache_savefile["deleted"] || savefile_needs_update(cache_savefile) != -2)
-					cache_savefile["real_name"] >> savefile_name
+			if(istype(client_file, /savefile))
+				if(!client_file["deleted"] || savefile_needs_update(client_file) != -2)
+					client_file["real_name"] >> savefile_name
 			dat += "Local storage: [savefile_name ? savefile_name : "Empty"]"
 			dat += "<br />"
 			dat += "<a href='?_src_=prefs;preference=export_slot'>Export current slot</a>"
 			dat += "<a [savefile_name ? "href='?_src_=prefs;preference=import_slot' style='white-space:normal;'" : "class='linkOff'"]>Import into current slot</a>"
 			dat += "<a href='?_src_=prefs;preference=delete_local_copy' style='white-space:normal;background:#eb2e2e;'>Delete locally saved character</a>"
+			dat += "<br />"
+			dat += "<a href='?_src_=prefs;preference=give_slot' [offer ? "style='white-space:normal;background:#eb2e2e;'" : ""]>[offer ? "Cancel offer" : "Offer slot"]</a>"
+			dat += "<a href='?_src_=prefs;preference=retrieve_slot'>Retrieve offered character</a>"
+			if(offer)
+				dat += "<br />"
+				dat += "The redemption code is <b>[offer.redemption_code]</b>"
+				dat += "<br />"
+				dat += "The offer will automatically be cancelled if there is an error, or if someone takes it"
+
 			dat += "</center>"
 
 			dat += "<HR>"
@@ -525,7 +533,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				//calculate your gear points from the chosen item
 				gear_points = CONFIG_GET(number/initial_gear_points)
 				var/list/chosen_gear = loadout_data["SAVE_[loadout_slot]"]
-				if(chosen_gear)
+				if(islist(chosen_gear))
 					loadout_errors = 0
 					for(var/loadout_item in chosen_gear)
 						var/loadout_item_path = loadout_item[LOADOUT_ITEM]
@@ -1221,6 +1229,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</tr></table>"
 				if(LOADOUT_CHAR_TAB)
 					dat += "<table align='center' width='100%'>"
+					dat += "<tr><td colspan=4><center><b>Loadout slot</b></center></td></tr>"
+					dat += "<tr><td colspan=4><center>"
+					for(var/iteration in 1 to MAXIMUM_LOADOUT_SAVES)
+						dat += "<a [loadout_slot == iteration ? "class='linkOn'" : "href='?_src_=prefs;preference=gear;select_slot=[iteration]'"]>[iteration]</a>"
+					dat += "</center></td></tr>"
 					dat += "<tr><td colspan=4><center><i style=\"color: grey;\">You can only choose one item per category, unless it's an item that spawns in your backpack or hands.</center></td></tr>"
 					dat += "<tr><td colspan=4><center><b>"
 
@@ -1592,7 +1605,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<table><tr><td width='340px' height='300px' valign='top'>"
 					dat += "<h2>Fetish content prefs</h2>"
 					dat += "<b>Allow Lewd Verbs:</b> <a href='?_src_=prefs;preference=verb_consent'>[(toggles & VERB_CONSENT) ? "Yes":"No"]</a><br>" // Skyrat - ERP Mechanic Addition
-					dat += "<b>Mute Lewd Verb Sounds:</b> <a href='?_src_=prefs;preference=mute_lewd_verb_sounds'>[(toggles & LEWD_VERB_SOUNDS) ? "Yes":"No"]</a><br>" // Sandstorm - ERP Mechanic Addition
+					dat += "<b>Lewd Verb Sounds:</b> <a href='?_src_=prefs;preference=lewd_verb_sounds'>[(toggles & LEWD_VERB_SOUNDS) ? "Yes":"No"]</a><br>" // Sandstorm - ERP Mechanic Addition
 					dat += "<b>Arousal:</b><a href='?_src_=prefs;preference=arousable'>[arousable == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<b>Genital examine text</b>:<a href='?_src_=prefs;preference=genital_examine'>[(cit_toggles & GENITAL_EXAMINE) ? "Enabled" : "Disabled"]</a><BR>"
 					dat += "<b>Vore examine text</b>:<a href='?_src_=prefs;preference=vore_examine'>[(cit_toggles & VORE_EXAMINE) ? "Enabled" : "Disabled"]</a><BR>"
@@ -3844,7 +3857,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("verb_consent") // Skyrat - ERP Mechanic Addition
 					toggles ^= VERB_CONSENT // Skyrat - ERP Mechanic Addition
 
-				if("mute_lewd_verb_sounds") // Skyrat - ERP Mechanic Addition
+				if("lewd_verb_sounds") // Skyrat - ERP Mechanic Addition
 					toggles ^= LEWD_VERB_SOUNDS // Skyrat - ERP Mechanic Addition
 
 				if("persistent_scars")
@@ -4065,8 +4078,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("import_slot")
 					var/savefile/S = new(user.client.Import())
 					if(istype(S, /savefile))
-						if(load_character(provided = S) == TRUE)
+						if(load_character(provided = S))
 							tgui_alert_async(user, "Successfully loaded character slot.")
+							save_character(TRUE)
 						else
 							tgui_alert_async(user, "Failed loading character slot")
 							return
@@ -4078,7 +4092,75 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					user.client.clear_export()
 					tgui_alert_async(user, "Local save data erased.")
 
+				if("give_slot")
+					if(!QDELETED(offer))
+						var/datum/character_offer_instance/offer_datum = LAZYACCESS(GLOB.character_offers, offer.redemption_code)
+						if(!offer_datum)
+							return
+						qdel(offer_datum)
+					else
+						var/savefile/S = save_character(export = TRUE)
+						if(istype(S, /savefile))
+							var/datum/character_offer_instance/offer_datum = new(usr.ckey, S)
+							if(QDELETED(offer_datum))
+								tgui_alert_async(usr, "Could not set up offer, try again later")
+								return
+							offer_datum.RegisterSignal(usr, COMSIG_MOB_CLIENT_LOGOUT, TYPE_PROC_REF(/datum/character_offer_instance, on_quit))
+							offer = offer_datum
+							tgui_alert_async(usr, "The redemption code is [offer_datum.redemption_code], give it to the receiver")
+
+				if("retrieve_slot")
+					if(!LAZYLEN(GLOB.character_offers))
+						tgui_alert_async(usr, "There are no active offers")
+						return
+					var/retrieve_code = input(usr, "Input the 5 digit redemption code") as text|null
+					if(!retrieve_code)
+						return
+					if(!text2num(retrieve_code))
+						tgui_alert_async(usr, "Only numbers allowed")
+						return
+					if(length(retrieve_code) != 5)
+						tgui_alert_async(usr, "Exactly 5 digits, no less, no more, try again")
+						return
+					var/datum/character_offer_instance/offer_datum = LAZYACCESS(GLOB.character_offers, retrieve_code)
+					if(!offer_datum)
+						tgui_alert_async(usr, "This is an invalid code!")
+						return
+					if(offer == offer_datum)
+						tgui_alert_async(usr, "You cannot accept your own offer")
+						return
+					var/savefile/savefile = offer_datum.character_savefile
+					var/mob/living/the_owner = get_mob_by_ckey(offer_datum.owner_ckey)
+					if(savefile_needs_update(savefile) == -2)
+						tgui_alert_async(usr, "Something's wrong, this savefile is corrupted.")
+						to_chat(the_owner, span_boldwarning("Something went wrong with the trade, it's been canceled."))
+						qdel(offer_datum)
+						return
+					var/character_name = savefile["real_name"]
+					if(alert(usr, "You are overwriting the currently selected slot with the character [character_name]", "Are you sure?", "Yes, load this character deleting the currently selected slot", "No") == "No")
+						return
+					if(QDELETED(offer_datum))
+						tgui_alert_async(usr, "This character is no longer available, such a shame!")
+						return
+					to_chat(the_owner, span_boldwarning("[usr.key] has retrieved your character, [character_name]!"))
+					if(!load_character(provided = savefile))
+						tgui_alert_async(usr, "Something went wrong loading the savefile, even though it has already been checked, please report this issue!")
+						to_chat(the_owner, span_boldwarning("Something went wrong at the final step of the trade, report this."))
+						qdel(offer_datum)
+						return
+					tgui_alert_async(usr, "Successfully received [character_name]!")
+					save_character(TRUE)
+					qdel(offer_datum)
+
 	if(href_list["preference"] == "gear")
+		if(href_list["select_slot"])
+			var/chosen = text2num(href_list["select_slot"])
+			if(!chosen)
+				return
+			chosen = floor(chosen)
+			if(chosen > MAXIMUM_LOADOUT_SAVES || chosen < 1)
+				return
+			loadout_slot = chosen
 		if(href_list["clear_loadout"])
 			loadout_data["SAVE_[loadout_slot]"] = list()
 			save_preferences()
