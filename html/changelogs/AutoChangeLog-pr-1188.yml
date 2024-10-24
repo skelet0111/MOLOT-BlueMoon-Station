@@ -1,0 +1,6 @@
+author: Sara
+delete-after: true
+changes:
+  - rscadd: Added a full new station.
+  - rscadd: Added new shuttles, arrival, escape, and whiteship.
+  - rscadd: Added new lore page for the station.
