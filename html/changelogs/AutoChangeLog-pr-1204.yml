@@ -1,5 +1,0 @@
-author: MosleyTheMalO
-delete-after: true
-changes:
-  - rscadd: adds the emote panel using tgui
-  - code_imp: refractors emote code
