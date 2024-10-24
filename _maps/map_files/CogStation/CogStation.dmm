@@ -8569,10 +8569,10 @@
 	dir = 4;
 	dwidth = 4;
 	height = 9;
-	id = "aux_base_zone";
 	name = "aux base zone";
 	roundstart_template = /datum/map_template/shuttle/aux_base/default;
-	width = 9
+	width = 9;
+	shuttle_id = "aux_base_zone"
 	},
 /turf/open/floor/plating,
 /area/construction/mining/aux_base)
@@ -29765,9 +29765,9 @@
 	dir = 2;
 	dwidth = 7;
 	height = 9;
-	id = "whiteship_home";
 	name = "SS13: Merchant Dock";
-	width = 13
+	width = 13;
+	shuttle_id = "whiteship_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -36461,10 +36461,10 @@
 	dir = 2;
 	dwidth = 4;
 	height = 12;
-	id = "arrivals_stationary";
 	name = "cog arrivals";
 	roundstart_template = /datum/map_template/shuttle/arrival/cog;
-	width = 9
+	width = 9;
+	shuttle_id = "arrivals_stationary"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -57091,10 +57091,10 @@
 	dir = 8;
 	dwidth = 2;
 	height = 5;
-	id = "laborcamp_home";
 	name = "fore bay 1";
 	roundstart_template = /datum/map_template/shuttle/labour/cog;
-	width = 9
+	width = 9;
+	shuttle_id = "laborcamp_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -68595,10 +68595,10 @@
 	dir = 4;
 	dwidth = 3;
 	height = 5;
-	id = "mining_home";
 	name = "mining shuttle bay";
 	roundstart_template = /datum/map_template/shuttle/mining/delta;
-	width = 7
+	width = 7;
+	shuttle_id = "mining_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -70811,10 +70811,10 @@
 	dir = 8;
 	dwidth = 3;
 	height = 5;
-	id = "commonmining_home";
 	name = "SS13: Common Mining Dock";
 	roundstart_template = /datum/map_template/shuttle/mining_common/meta;
-	width = 7
+	width = 7;
+	shuttle_id = "commonmining_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -77590,9 +77590,9 @@
 	dir = 8;
 	dwidth = 2;
 	height = 13;
-	id = "ferry_home";
 	name = "port bay 2";
-	width = 5
+	width = 5;
+	shuttle_id = "ferry_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -95576,9 +95576,9 @@
 	dir = 2;
 	dwidth = 9;
 	height = 22;
-	id = "emergency_home";
 	name = "CogStation Escape Dock";
-	width = 29
+	width = 29;
+	shuttle_id = "emergency_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -96367,9 +96367,9 @@
 	dir = 4;
 	dwidth = 5;
 	height = 7;
-	id = "supply_home";
 	name = "Cargo Shuttle";
-	width = 12
+	width = 12;
+	shuttle_id = "supply_home"
 	},
 /turf/open/space/basic,
 /area/space)
