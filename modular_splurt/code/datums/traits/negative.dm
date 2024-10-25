@@ -239,3 +239,51 @@
 	if(H)
 		var/datum/physiology/P = H.physiology
 		P.thirst_mod /= 2
+
+// Lite version of Bloodflege
+// Removes all special powers
+/datum/quirk/bloodfledge_lite
+	name = "Sanguine Metabolism"
+	desc = "You are a non-magical Bloodsucker Fledgling, with no special powers. Only blood will sate your hungers, and holy energies will cause your flesh to char."
+	value = 0
+	medical_record_text = "Patient exhibits an unusually weak sanguine curse."
+	mob_trait = TRAIT_BLOODFLEDGE_LITE
+	gain_text = span_notice("You feel a sanguine thirst.")
+	lose_text = span_notice("You feel the sanguine thirst fade away.")
+
+/datum/quirk/bloodfledge_lite/add()
+	// Define quirk mob
+	var/mob/living/carbon/human/quirk_mob = quirk_holder
+
+	// Add quirk traits
+	ADD_TRAIT(quirk_mob,TRAIT_NO_PROCESS_FOOD,ROUNDSTART_TRAIT)
+	ADD_TRAIT(quirk_mob,TRAIT_NOTHIRST,ROUNDSTART_TRAIT)
+
+	// Add full trait to preserve bite, holy weakness, and examine functionality
+	ADD_TRAIT(quirk_mob,TRAIT_BLOODFLEDGE,ROUNDSTART_TRAIT)
+
+	// Lite version does not set skin tone or grant the language
+	// Lite version also has no examine text
+
+/datum/quirk/bloodfledge_lite/post_add()
+	// Define quirk mob
+	var/mob/living/carbon/human/quirk_mob = quirk_holder
+
+	// Define and grant ability Bite
+	var/datum/action/cooldown/bloodfledge/bite/act_bite = new
+	act_bite.Grant(quirk_mob)
+
+	// Lite version does not grant the revive ability
+
+/datum/quirk/bloodfledge_lite/remove()
+	// Define quirk mob
+	var/mob/living/carbon/human/quirk_mob = quirk_holder
+
+	// Remove quirk traits
+	REMOVE_TRAIT(quirk_mob, TRAIT_NO_PROCESS_FOOD, ROUNDSTART_TRAIT)
+	REMOVE_TRAIT(quirk_mob, TRAIT_NOTHIRST, ROUNDSTART_TRAIT)
+	REMOVE_TRAIT(quirk_mob, TRAIT_BLOODFLEDGE, ROUNDSTART_TRAIT)
+
+	// Remove quirk ability action datums
+	var/datum/action/cooldown/bloodfledge/bite/act_bite = locate() in quirk_mob.actions
+	act_bite.Remove(quirk_mob)
