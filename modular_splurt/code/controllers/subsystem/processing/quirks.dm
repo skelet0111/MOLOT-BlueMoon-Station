@@ -24,5 +24,13 @@
 
 		// BLOCKED: Duplicate, mechanic
 		// This is a lite version of the same quirk.
-		list("Sanguine Metabolism","Bloodsucker Fledgling")
+		list("Sanguine Metabolism","Bloodsucker Fledgling"),
+
+		// BLOCKED: Mechanic
+		// Bloodsuckers have NO_THIRST trait.
+		list("Sanguine Metabolism","Thirsty"),
+
+		// BLOCKED: Thematic, mechanic, game lore.
+		// Bloodsuckers cannot interact with Hallowed users.
+		list("Sanguine Metabolism","Hallowed")
 		))
