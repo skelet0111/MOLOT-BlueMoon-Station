@@ -3627,6 +3627,7 @@
 	dir = 9
 	},
 /obj/item/pipe_dispenser,
+/obj/item/storage/belt/utility,
 /turf/open/floor/plasteel/dark,
 /area/engineering/main)
 "bry" = (
@@ -6069,6 +6070,18 @@
 	},
 /turf/open/floor/plasteel/hallway,
 /area/hallway/primary/fore)
+"chR" = (
+/obj/machinery/door/airlock/security{
+	id_tag = "WolfPit";
+	name = "Wolf Pit Access";
+	req_access_txt = "2"
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/security/execution/education)
 "chW" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -6426,18 +6439,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
-"cnJ" = (
-/obj/machinery/door/airlock/security{
-	id_tag = "WolfPit";
-	name = "Wolf Pit Access";
-	req_access_txt = "2"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
-/obj/effect/mapping_helpers/airlock/locked,
-/turf/open/floor/plasteel/elevatorshaft,
-/area/security/execution/education)
 "cnM" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/firedoor/border_only{
@@ -8703,6 +8704,7 @@
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 5
 	},
+/obj/item/storage/belt/utility,
 /turf/open/floor/plasteel/dark,
 /area/engineering/main)
 "cWG" = (
@@ -21239,6 +21241,9 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/starboard/upper)
+"hdC" = (
+/turf/closed/wall/mineral/lead,
+/area/security/execution/education)
 "hdK" = (
 /obj/structure/chair/sofa/corp/corner{
 	dir = 8
@@ -33274,6 +33279,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/item/storage/belt/utility,
 /turf/open/floor/glass,
 /area/engineering/lobby)
 "lbB" = (
@@ -41332,6 +41338,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/item/storage/belt/utility,
 /turf/open/floor/glass,
 /area/engineering/lobby)
 "nQs" = (
@@ -51558,6 +51565,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/item/storage/belt/utility,
 /turf/open/floor/plasteel/hallway,
 /area/engineering/break_room)
 "riI" = (
@@ -59675,6 +59683,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/item/storage/belt/utility,
 /turf/open/floor/glass,
 /area/engineering/lobby)
 "tRV" = (
@@ -65582,6 +65591,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/item/storage/belt/utility,
 /turf/open/floor/plasteel/hallway,
 /area/engineering/break_room)
 "vVL" = (
@@ -69706,6 +69716,7 @@
 /area/command/heads_quarters/hop)
 "xnB" = (
 /obj/structure/closet/secure_closet/atmospherics,
+/obj/item/storage/belt/utility,
 /turf/open/floor/glass,
 /area/engineering/lobby)
 "xnI" = (
@@ -101235,10 +101246,10 @@ lJw
 lJw
 lJw
 lJw
-lJw
-lJw
-lJw
-lJw
+hdC
+hdC
+hdC
+hdC
 lwl
 lwl
 dpk
@@ -101495,7 +101506,7 @@ uWV
 uWV
 uWV
 uWV
-lJw
+hdC
 krr
 klD
 dpk
@@ -101752,7 +101763,7 @@ uWV
 pBs
 uWV
 uWV
-lJw
+hdC
 ivq
 ikq
 fMQ
@@ -102009,7 +102020,7 @@ uWV
 ipW
 xfT
 xfT
-lJw
+hdC
 wuZ
 lzF
 oeZ
@@ -102266,7 +102277,7 @@ uWV
 uWV
 uWV
 uWV
-lJw
+hdC
 pAe
 ffY
 xBU
@@ -102523,7 +102534,7 @@ uWV
 uWV
 uWV
 uWV
-lJw
+hdC
 tvl
 lvG
 oYA
@@ -102780,7 +102791,7 @@ uWV
 uWV
 uWV
 uWV
-lJw
+hdC
 lrC
 lvG
 jPO
@@ -103037,7 +103048,7 @@ uWV
 uWV
 uWV
 pBs
-lJw
+hdC
 lwl
 jVY
 lwl
@@ -103294,7 +103305,7 @@ uWV
 uWV
 uWV
 uWV
-lJw
+hdC
 lwl
 vSb
 khv
@@ -103539,7 +103550,7 @@ fMc
 lJw
 lJw
 lJw
-uWV
+lJw
 uWV
 uWV
 uWV
@@ -103551,7 +103562,7 @@ uWV
 uWV
 uWV
 nuD
-lJw
+hdC
 rUf
 hGr
 muD
@@ -103795,7 +103806,8 @@ esc
 kpp
 pXa
 hAq
-cnJ
+uWV
+chR
 uWV
 uWV
 uWV
@@ -103807,8 +103819,7 @@ uWV
 uWV
 uWV
 uWV
-uWV
-lJw
+hdC
 lwl
 lwl
 pWI
@@ -104053,7 +104064,7 @@ iWa
 lJw
 lJw
 lJw
-uWV
+lJw
 uWV
 uWV
 uWV
@@ -104065,7 +104076,7 @@ uWV
 qiT
 uWV
 uWV
-lJw
+hdC
 rKK
 wap
 aLF
@@ -104322,7 +104333,7 @@ nVW
 uWV
 uWV
 uWV
-lJw
+hdC
 bfl
 lwl
 lwl
@@ -104579,7 +104590,7 @@ uWV
 ipW
 uWV
 uWV
-lJw
+hdC
 aOx
 lwl
 wap
@@ -104836,7 +104847,7 @@ uWV
 uWV
 uWV
 uWV
-lJw
+hdC
 nvp
 lwl
 fqg
@@ -105093,7 +105104,7 @@ uWV
 uWV
 uWV
 uWV
-lJw
+hdC
 bfl
 lwl
 aMB
@@ -105336,21 +105347,21 @@ oDy
 xQH
 iqF
 lJw
-lJw
-lJw
-lJw
-lJw
-lJw
-lJw
-lJw
-lJw
-lJw
-lJw
-lJw
-lJw
-lJw
-lJw
-lJw
+hdC
+hdC
+hdC
+hdC
+hdC
+hdC
+hdC
+hdC
+hdC
+hdC
+hdC
+hdC
+hdC
+hdC
+hdC
 nvp
 lwl
 lwl
