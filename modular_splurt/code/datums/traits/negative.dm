@@ -263,7 +263,9 @@
 	ADD_TRAIT(quirk_mob,TRAIT_BLOODFLEDGE,ROUNDSTART_TRAIT)
 
 	// Lite version does not set skin tone or grant the language
-	// Lite version also has no examine text
+
+	// Register examine text
+	RegisterSignal(quirk_holder, COMSIG_PARENT_EXAMINE, PROC_REF(quirk_examine_bloodfledge_lite))
 
 /datum/quirk/bloodfledge_lite/post_add()
 	// Define quirk mob
@@ -287,3 +289,50 @@
 	// Remove quirk ability action datums
 	var/datum/action/cooldown/bloodfledge/bite/act_bite = locate() in quirk_mob.actions
 	act_bite.Remove(quirk_mob)
+
+	// Unregister examine text
+	UnregisterSignal(quirk_holder, COMSIG_PARENT_EXAMINE)
+
+/datum/quirk/bloodfledge_lite/proc/quirk_examine_bloodfledge_lite(atom/examine_target, mob/living/carbon/human/examiner, list/examine_list)
+	SIGNAL_HANDLER
+
+	// Check if human examiner exists
+	if(!istype(examiner))
+		return
+
+	// Check if examiner is a non-Fledgling
+	if(!isbloodfledge(examiner))
+		// Return with no effects
+		return
+
+	// Check if examiner is dumb
+	if(HAS_TRAIT(examiner, TRAIT_DUMB))
+		// Return with no effects
+		return
+
+	// Define quirk mob
+	var/mob/living/carbon/human/quirk_mob = quirk_holder
+
+	// Define hunger texts
+	var/examine_hunger
+
+	// Check hunger levels
+	switch(quirk_mob.nutrition)
+		// Hungry
+		if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
+			examine_hunger = "[quirk_holder.p_they(TRUE)] [quirk_holder.p_are()] blood starved!"
+
+		// Starving
+		if(0 to NUTRITION_LEVEL_STARVING)
+			examine_hunger = "[quirk_holder.p_they(TRUE)] [quirk_holder.p_are()] in dire need of blood!"
+
+		// Invalid hunger
+		else
+			// Return with no message
+			return
+
+	// Add detection text
+	examine_list += span_info("[quirk_holder.p_their(TRUE)] hunger allows you to identify [quirk_holder.p_them()] as a lesser Bloodsucker Fledgling!")
+
+	// Add hunger text
+	examine_list += span_warning(examine_hunger)
