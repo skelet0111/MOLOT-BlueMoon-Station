@@ -31066,6 +31066,9 @@
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 8
 	},
+/obj/machinery/keycard_auth{
+	pixel_x = -23
+	},
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/ce)
 "kew" = (
