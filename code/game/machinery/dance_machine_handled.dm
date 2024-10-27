@@ -81,7 +81,7 @@
 			"И жили счастливо и долго… он долго, счастливо она.",
 			"Не копай противнику яму, сам туда ляжешь.",
 			"Кто глубоко скорбит - тот истово любил.")
-		to_chat(user, span_big_warning(message))
+		visible_message(span_big_warning(message))
 		balloon_alert_to_viewers(message)
 		playsound(src, 'sound/misc/compiler-failure.ogg', 25, TRUE)
 		user.DefaultCombatKnockdown(100)
