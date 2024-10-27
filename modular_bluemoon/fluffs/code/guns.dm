@@ -386,6 +386,45 @@
 
 /////////////////////////////////////////////////////////////////////////////////////
 
+/obj/item/modkit/stunadler_kit
+	name = "Adler stunsword Kit"
+	desc = "A modkit for making an stunbaton into a Adler stunsword."
+	product = /obj/item/melee/baton/stunadler
+	fromitem = list(/obj/item/melee/baton, /obj/item/melee/baton/loaded)
+
+/obj/item/melee/baton/stunadler
+	name = "Adler Stunsword"
+	desc = "A combat stun sword manufactured by the military industrial Complex Adler. It was created for the rapid neutralization of civilians and the use of peacekeepers by troops for destructive purposes."
+	item_state = "stunadler"
+	icon_state = "stunadler"
+	icon = 'modular_bluemoon/fluffs/icons/obj/guns.dmi'
+	lefthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_left.dmi'
+	righthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_right.dmi'
+
+/obj/item/melee/baton/stunadler/switch_status(new_status = FALSE, silent = FALSE)
+	if(turned_on != new_status)
+		turned_on = new_status
+		if(!silent)
+			playsound(loc, "sparks", 75, 1, -1)
+		if(turned_on)
+			START_PROCESSING(SSobj, src)
+		else
+			STOP_PROCESSING(SSobj, src)
+	update_icon()
+
+/obj/item/melee/baton/stunadler/update_icon_state()
+	if(turned_on)
+		icon_state = "stunadler_active"
+		item_state = "stunadler_active"
+	else if(!cell)
+		icon_state = "stunadler_nocell"
+		item_state = "stunadler"
+	else
+		icon_state = "stunadler"
+		item_state = "stunadler"
+
+/////////////////////////////////////////////////////////////////////////////////////
+
 /obj/item/modkit/tonfa_kit
 	name = "Ton-Fa Kit"
 	desc = "A modkit for making an stunbaton into a ton-Fa."
@@ -647,3 +686,47 @@
 	icon = 'modular_bluemoon/fluffs/icons/obj/acrador_guns.dmi'
 	icon_state = "anstrum"
 	fire_sound = 'modular_bluemoon/fluffs/sound/weapon/anstrumshot.ogg'
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+/obj/item/gun/energy/e_gun/hos/dreadmk3
+	name = "\improper Законодатель MK3"
+	desc = "Стандартное оружие судей из Мега-Города Солнечной Федерации. Пистолет комплектуется несколькими типами боеприпасов, иногда набор снарядов отличается от стандартного в зависимости от миссии судьи. Оснащён биометрическим датчиком ладони — оружие может применять только судья, а при несанкционированном использовании в рукояти срабатывает взрывное устройство. Этот же пистолет на радость недругов что преступают Закон, со сломанной биометрией ради стандартизации электронных бойков."
+	icon = 'modular_bluemoon/fluffs/icons/obj/dreadmk3.dmi'
+	icon_state = "dreadmk3"
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler/dreadmk3, /obj/item/ammo_casing/energy/laser/hos/dreadmk3, /obj/item/ammo_casing/energy/ion/hos/dreadmk3, /obj/item/ammo_casing/energy/electrode/hos/dreadmk3)
+	ammo_x_offset = 0
+	flight_x_offset = 22
+	flight_y_offset = 5
+
+/obj/item/ammo_casing/energy/disabler/dreadmk3
+
+/obj/item/ammo_casing/energy/laser/hos/dreadmk3
+
+/obj/item/ammo_casing/energy/ion/hos/dreadmk3
+
+/obj/item/ammo_casing/energy/electrode/hos/dreadmk3
+
+/obj/item/modkit/dreadmk3_kit
+	name = "Законодатель MK3 Kit"
+	desc = "A modkit for making a MultiPhase Energy Gun into Законодатель MK3."
+	product = /obj/item/gun/energy/e_gun/hos/dreadmk3
+	fromitem = list(/obj/item/gun/energy/e_gun/hos)
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+/obj/item/crowbar/large/heavy/hammercrowbar
+	name = "Heavy pocket hammer"
+	desc = "A heavy-duty hammer designed for all types of working conditions. Extremely durable and reliable. Made of high-quality black metal, with a rubberized silicone handle."
+	item_state = "hammercrowbar"
+	icon_state = "hammercrowbar"
+	icon = 'modular_bluemoon/fluffs/icons/obj/guns.dmi'
+	lefthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_left.dmi'
+	righthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_right.dmi'
+	hitsound = "modular_bluemoon/fluffs/sound/weapon/stab_hammer.ogg"
+
+/obj/item/modkit/hammercrowbar_kit
+	name = "Heavy pocket hammer Kit"
+	desc = "A modkit for making a Heavy crowbar into Heavy pocket hammer."
+	product = /obj/item/crowbar/large/heavy/hammercrowbar
+	fromitem = list(/obj/item/crowbar/large/heavy)
