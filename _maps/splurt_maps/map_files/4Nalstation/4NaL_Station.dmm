@@ -3076,6 +3076,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/plasteel/dark,
 /area/engineering/workshop)
 "bhv" = (
@@ -3684,6 +3685,7 @@
 	},
 /obj/item/pipe_dispenser,
 /obj/item/storage/belt/utility,
+/obj/item/clothing/gloves/color/yellow,
 /turf/open/floor/plasteel/dark,
 /area/engineering/main)
 "bry" = (
@@ -8841,6 +8843,7 @@
 	dir = 5
 	},
 /obj/item/storage/belt/utility,
+/obj/item/clothing/gloves/color/yellow,
 /turf/open/floor/plasteel/dark,
 /area/engineering/main)
 "cWG" = (
@@ -10757,7 +10760,7 @@
 	areastring = "/area/ai_monitored/security/armory";
 	name = "Armory APC";
 	pixel_x = 1;
-	pixel_y = -24
+	pixel_y = -23
 	},
 /obj/machinery/camera/motion{
 	c_tag = "Armory - Internal";
@@ -13712,7 +13715,7 @@
 /obj/machinery/door/airlock/mining/glass{
 	name = "Delivery Office";
 	req_access_txt = 0;
-	req_one_access_txt = "48;50"
+	req_one_access_txt = "48;50;31"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -14668,6 +14671,16 @@
 	},
 /turf/closed/wall/r_wall/rust,
 /area/security/office)
+"eJi" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/druggie_pill,
+/turf/open/floor/plating,
+/area/maintenance/department/engine/sat)
 "eJQ" = (
 /obj/structure/bookcase{
 	name = "Forbidden Knowledge"
@@ -17938,6 +17951,12 @@
 	name = "parquet"
 	},
 /area/service/bar/atrium)
+"fPg" = (
+/obj/structure/reflector/box/anchored{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/engineering/storage)
 "fPh" = (
 /obj/structure/cable/pink{
 	icon_state = "1-2"
@@ -20928,6 +20947,10 @@
 /obj/item/storage/fancy/donut_box,
 /turf/open/floor/carpet,
 /area/command/heads_quarters/captain)
+"gNj" = (
+/obj/effect/spawner/lootdrop/druggie_pill,
+/turf/open/floor/plating,
+/area/maintenance/department/security/upper)
 "gNk" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -23383,6 +23406,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
 "hFi" = (
@@ -24917,6 +24941,8 @@
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 4
 	},
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/five,
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/ce)
 "ibF" = (
@@ -27216,6 +27242,19 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science/research/lobby)
+"iOL" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/druggie_pill,
+/turf/open/floor/plating,
+/area/maintenance/department/cargo)
 "iOO" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -28053,7 +28092,7 @@
 "jfR" = (
 /obj/machinery/door/airlock/mining/glass{
 	name = "Cargo Office";
-	req_one_access_txt = "50;48"
+	req_one_access_txt = "50;48;31"
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/trimline/brown/filled/line{
@@ -30688,6 +30727,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/item/stack/sheet/metal/fifty,
 /turf/open/floor/plasteel/dark,
 /area/engineering/workshop)
 "jYG" = (
@@ -32621,6 +32661,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/security/office)
+"kBJ" = (
+/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/structure/closet/crate/bin,
+/turf/open/floor/plating,
+/area/maintenance/department/engine/sat)
 "kBL" = (
 /obj/structure/chair/comfy/black,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
@@ -32904,6 +32949,7 @@
 	dir = 4
 	},
 /obj/structure/closet/secure_closet/engineering_welding,
+/obj/item/clothing/gloves/color/yellow,
 /turf/open/floor/plasteel/dark,
 /area/engineering/workshop)
 "kGM" = (
@@ -34560,6 +34606,10 @@
 /obj/item/trash/candy,
 /turf/open/floor/plating,
 /area/maintenance/prison/lower)
+"ljm" = (
+/obj/effect/spawner/lootdrop/maintenance/two,
+/turf/open/floor/plating,
+/area/maintenance/department/cargo)
 "ljw" = (
 /obj/structure/table/wood,
 /obj/structure/disposalpipe/segment,
@@ -38913,7 +38963,7 @@
 /obj/machinery/door/airlock/mining/glass{
 	name = "Delivery Office";
 	req_access_txt = 0;
-	req_one_access_txt = "48;50"
+	req_one_access_txt = "48;50;31"
 	},
 /obj/effect/turf_decal/trimline/brown/filled/line,
 /obj/effect/turf_decal/trimline/brown/filled/line{
@@ -41655,6 +41705,7 @@
 /area/engineering/main)
 "nGP" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
+/obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
 "nGX" = (
@@ -49476,10 +49527,6 @@
 /turf/open/floor/plating,
 /area/engineering/atmos)
 "qef" = (
-/obj/machinery/door/airlock/mining/glass{
-	name = "Cargo Bay";
-	req_access_txt = "31"
-	},
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 8
@@ -49489,6 +49536,10 @@
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/mining/glass{
+	name = "Cargo Bay";
+	req_one_access_txt = "31;48;50"
 	},
 /turf/open/floor/plasteel,
 /area/cargo/office)
@@ -49696,6 +49747,11 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
+"qhx" = (
+/obj/effect/spawner/lootdrop/maintenance/five,
+/obj/structure/closet/crate,
+/turf/open/floor/plating,
+/area/maintenance/department/engine/sat)
 "qhB" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -54034,6 +54090,7 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
+/obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/engine/sat)
 "rCR" = (
@@ -55275,6 +55332,7 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
+/obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/plating,
 /area/maintenance/department/engine/sat)
 "rXz" = (
@@ -58604,6 +58662,13 @@
 	icon_state = "darkfull_whole_alt"
 	},
 /area/maintenance/space_hut/cabin)
+"tbJ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/spawner/lootdrop/low_tools,
+/turf/open/floor/plating,
+/area/maintenance/department/engine/sat)
 "tbX" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/effect/turf_decal/trimline/purple/filled/line{
@@ -58699,9 +58764,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/apc/auto_name/south{
-	pixel_y = -27
-	},
+/obj/machinery/power/apc/auto_name/south,
 /turf/open/floor/circuit,
 /area/science/nanite)
 "tdM" = (
@@ -61782,6 +61845,13 @@
 /obj/structure/sign/warning/biohazard,
 /turf/closed/wall,
 /area/science/xenobiology)
+"ucH" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/spawner/lootdrop/maintenance,
+/turf/open/floor/plating,
+/area/maintenance/department/cargo)
 "ucX" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -68147,6 +68217,14 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/service/kitchen)
+"woD" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/structure/closet/crate/mail/preopen,
+/obj/effect/spawner/lootdrop/maintenance/eight,
+/turf/open/floor/plating,
+/area/maintenance/department/cargo)
 "woE" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/effect/turf_decal/trimline/blue/filled/line{
@@ -69266,7 +69344,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/mining/glass{
 	name = "Cargo Office";
-	req_one_access_txt = "50;48"
+	req_one_access_txt = "50;48;31"
 	},
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 1
@@ -72287,9 +72365,7 @@
 /obj/item/gun/syringe/dart,
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/south{
-	pixel_y = -27
-	},
+/obj/machinery/power/apc/auto_name/south,
 /turf/open/floor/plasteel/white,
 /area/medical/storage)
 "xFW" = (
@@ -147593,7 +147669,7 @@ hgP
 nCP
 nCP
 acT
-ugo
+kBJ
 iOv
 axQ
 jGN
@@ -149649,7 +149725,7 @@ hgP
 nCP
 nCP
 acT
-wMe
+tbJ
 nGx
 ejZ
 tRw
@@ -150421,7 +150497,7 @@ hgP
 hgP
 acT
 wMe
-nGx
+eJi
 ejZ
 hYQ
 uaW
@@ -151712,7 +151788,7 @@ rmO
 ldF
 sVW
 mJw
-ugo
+qhx
 acT
 nCP
 nCP
@@ -163012,7 +163088,7 @@ jvs
 iKL
 hhO
 evg
-dUM
+gNj
 dTk
 dTk
 ygi
@@ -166068,7 +166144,7 @@ hgP
 hgP
 hgP
 buA
-ngq
+ljm
 ngq
 hFk
 uCc
@@ -167098,7 +167174,7 @@ snD
 aku
 egz
 buA
-fkR
+woD
 ngq
 aJQ
 njo
@@ -168135,7 +168211,7 @@ wPk
 wPk
 wPk
 buA
-hFk
+iOL
 buA
 xkJ
 noo
@@ -168905,7 +168981,7 @@ fbC
 qhr
 qhr
 qhr
-qhr
+ucH
 hFf
 stv
 smV
@@ -211348,7 +211424,7 @@ vkI
 owX
 frs
 lJe
-lJe
+fPg
 cZg
 uCt
 guj
