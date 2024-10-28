@@ -51,15 +51,13 @@
 	name = "Server Room";
 	req_access_txt = "30"
 	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/dark,
 /area/science/server)
 "aaU" = (
@@ -140,6 +138,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
+	},
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 3;
+	name = "3maintenance loot spawner"
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/engine/mid)
@@ -1582,10 +1584,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4;
-	name = "east facing firelock"
-	},
+/obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/security{
 	name = "Security Checkpoint";
 	req_access_txt = "63"
@@ -3928,10 +3927,8 @@
 	name = "Medbay Storage";
 	req_access_txt = "5"
 	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
 /obj/effect/turf_decal/trimline/blue/filled,
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "bvR" = (
@@ -4202,9 +4199,6 @@
 	name = "Research Director";
 	req_access_txt = "30"
 	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 4;
 	color = "#63138f"
@@ -4212,6 +4206,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/checker,
 /area/command/heads_quarters/rd)
 "bBe" = (
@@ -13124,10 +13119,6 @@
 	req_access_txt = "1"
 	},
 /obj/structure/table/reinforced,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1;
-	name = "north facing firelock"
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -13140,6 +13131,7 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 1
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "ejr" = (
@@ -14853,6 +14845,22 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plasteel/dark,
 /area/medical/medbay/central)
+"eMq" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 2;
+	name = "2maintenance loot spawner"
+	},
+/turf/open/floor/plating,
+/area/maintenance/department/science/mid)
 "eMP" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
@@ -22958,13 +22966,11 @@
 	name = "Research and Development Desk";
 	req_one_access_txt = "7;29"
 	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
 /obj/effect/turf_decal/trimline/purple/filled{
 	color = "#63138f"
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "hyr" = (
@@ -24765,14 +24771,12 @@
 	name = "Medbay";
 	req_access_txt = "5"
 	},
-/obj/machinery/door/firedoor/border_only{
-	name = "south facing firelock"
-	},
 /obj/effect/turf_decal/trimline/blue/filled,
 /obj/effect/mapping_helpers/airlock/unres,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "hZo" = (
@@ -28542,6 +28546,13 @@
 	},
 /turf/open/floor/plating,
 /area/engineering/secure_construction)
+"jmM" = (
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 4;
+	name = "4maintenance loot spawner"
+	},
+/turf/open/floor/plating,
+/area/maintenance/department/security/upper)
 "jmS" = (
 /obj/machinery/button/door{
 	id = "telelab";
@@ -30343,7 +30354,6 @@
 /turf/open/floor/plasteel/checker,
 /area/service/theater)
 "jSh" = (
-/obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/airlock/research{
 	name = "Mech Bay";
 	req_access_txt = "29"
@@ -30351,6 +30361,7 @@
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	color = "#63138f"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
 /area/science/robotics/mechbay)
 "jSl" = (
@@ -31562,6 +31573,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/bar)
 "kmb" = (
@@ -31637,9 +31649,6 @@
 	name = "Nanites Lab";
 	req_one_access_txt = "7;29"
 	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
 /obj/effect/turf_decal/trimline/purple/filled/end{
 	color = "#63138f";
 	dir = 8
@@ -31647,6 +31656,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
 /area/science/nanite)
 "kny" = (
@@ -34162,6 +34172,13 @@
 "lca" = (
 /turf/open/floor/circuit,
 /area/science/robotics/mechbay)
+"lcd" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/maintenance,
+/turf/open/floor/plating,
+/area/security/processing)
 "lcl" = (
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 8
@@ -36005,10 +36022,7 @@
 /turf/closed/wall,
 /area/maintenance/aft/lower)
 "lJS" = (
-/obj/machinery/door/firedoor/border_only{
-	dir = 4;
-	name = "east facing firelock"
-	},
+/obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/mining/glass{
 	name = "Quartermaster";
 	req_access_txt = "41"
@@ -37215,11 +37229,9 @@
 	name = "Medbay";
 	req_access_txt = "5"
 	},
-/obj/machinery/door/firedoor/border_only{
-	name = "south facing firelock"
-	},
 /obj/effect/turf_decal/trimline/blue/filled,
 /obj/effect/mapping_helpers/airlock/unres,
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "mgX" = (
@@ -37888,7 +37900,7 @@
 	id = "Skynet_launch";
 	name = "mech bay"
 	},
-/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor,
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	color = "#63138f"
 	},
@@ -38056,6 +38068,10 @@
 /turf/open/floor/plating,
 /area/science/xenobiology)
 "mxd" = (
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 2;
+	name = "2maintenance loot spawner"
+	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -41570,6 +41586,17 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/science/mid)
+"nEf" = (
+/obj/machinery/door/airlock/medical/glass{
+	id_tag = "MedbayFoyer";
+	name = "Medbay";
+	req_access_txt = "5"
+	},
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/trimline/blue/filled,
+/obj/effect/mapping_helpers/airlock/unres,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
 "nEA" = (
 /obj/structure/loot_pile/maint,
 /turf/open/floor/plating,
@@ -42957,6 +42984,13 @@
 /obj/machinery/atmospherics/pipe/manifold,
 /turf/open/floor/plasteel/dark/telecomms,
 /area/science/server)
+"obg" = (
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 3;
+	name = "3maintenance loot spawner"
+	},
+/turf/open/floor/plating,
+/area/maintenance/department/engine/mid)
 "obt" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -46583,6 +46617,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/storage/art)
+"pgp" = (
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 2;
+	name = "2maintenance loot spawner"
+	},
+/turf/open/floor/plating,
+/area/maintenance/aft/lower)
 "pgr" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -47376,6 +47417,13 @@
 /obj/structure/window/reinforced/tinted,
 /turf/open/floor/plasteel/cafeteria,
 /area/security/prison/mess)
+"ptN" = (
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 2;
+	name = "2maintenance loot spawner"
+	},
+/turf/open/floor/plating,
+/area/maintenance/department/science/mid)
 "ptO" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -48823,6 +48871,13 @@
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/wood/shadow,
 /area/ruin/powered/ylva)
+"pTq" = (
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 2;
+	name = "2maintenance loot spawner"
+	},
+/turf/open/floor/plating,
+/area/maintenance/department/crew_quarters/bar)
 "pTt" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -52155,7 +52210,7 @@
 /turf/open/floor/carpet/black,
 /area/service/bar/atrium)
 "qXf" = (
-/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research/glass{
 	name = "Robotics Lab";
 	req_access_txt = "29"
@@ -55374,6 +55429,13 @@
 	},
 /turf/closed/wall,
 /area/security/courtroom)
+"rYc" = (
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 4;
+	name = "4maintenance loot spawner"
+	},
+/turf/open/floor/plating,
+/area/security/processing)
 "rYh" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -68106,7 +68168,6 @@
 	name = "Robotics Lab";
 	req_access_txt = "29"
 	},
-/obj/machinery/door/firedoor/border_only,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -68119,6 +68180,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "wnt" = (
@@ -69091,9 +69153,6 @@
 	name = "Research and Development Lab";
 	req_one_access_txt = "7;29"
 	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "rnd";
@@ -69106,6 +69165,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "wBs" = (
@@ -72653,6 +72713,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/cargo/storage)
+"xKP" = (
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 2;
+	name = "2maintenance loot spawner"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/security/processing)
 "xLg" = (
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 9
@@ -109922,7 +109989,7 @@ wkX
 ukQ
 lJO
 wXn
-fKA
+pgp
 lJO
 kEx
 kEx
@@ -164654,7 +164721,7 @@ ars
 blX
 ars
 ooU
-ars
+obg
 qrz
 qbe
 xFw
@@ -166709,7 +166776,7 @@ fhM
 fhM
 fhM
 gHk
-pFF
+ptN
 nQF
 pFF
 iAb
@@ -167981,7 +168048,7 @@ kyH
 rTH
 rGa
 rYh
-dUM
+jmM
 sfZ
 vDe
 sQp
@@ -172878,7 +172945,7 @@ pFF
 pFF
 pFF
 pFF
-nFn
+eMq
 tax
 cKF
 juL
@@ -173639,7 +173706,7 @@ byg
 hHv
 mGD
 pOp
-mHZ
+lcd
 xDs
 bpd
 jnt
@@ -174143,7 +174210,7 @@ ahD
 ffp
 kSx
 alP
-byg
+xKP
 byg
 byg
 byg
@@ -174920,7 +174987,7 @@ pOp
 pOp
 pOp
 pOp
-pOp
+rYc
 pOp
 twY
 urW
@@ -175212,7 +175279,7 @@ xUw
 nRJ
 inx
 pso
-mgS
+nEf
 uxN
 cDD
 vEZ
@@ -175469,7 +175536,7 @@ ldj
 inw
 inx
 pso
-mgS
+nEf
 eMP
 vEZ
 vEZ
@@ -177476,7 +177543,7 @@ rlP
 tBy
 tBy
 mtJ
-wmQ
+pTq
 wmQ
 tMw
 kVD
