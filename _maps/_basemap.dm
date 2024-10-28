@@ -18,6 +18,7 @@
 		#include "map_files\TauStation\TauStation.dmm"
 		#include "splurt_maps\map_files\Smexistation\Snaxi_Splurt.dmm"
 		#include "map_files\PrisonStation\PrisonStation.dmm"
+		#include "splurt_maps\map_files\4Nalstation\4Nal_station.dmm"
 
 		#ifdef CIBUILDING
 			#include "templates.dm"

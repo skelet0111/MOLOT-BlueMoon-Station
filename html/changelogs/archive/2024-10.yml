@@ -1,0 +1,30 @@
+2024-10-01:
+  Just-Sim:
+  - rscadd: Added Emote Panel
+  - rscdel: Remove herobrine.
+  - refactor: refactored emote code.
+2024-10-05:
+  Just-Sim:
+  - bugfix: fixes bugs brought about by the emote panel
+2024-10-07:
+  SaraSayomi:
+  - bugfix: Crop top
+  - bugfix: HOP parade
+  - bugfix: explorer suit (fukin spaget code)
+2024-10-14:
+  SaraSayomi:
+  - bugfix: Fixed the susplush and steppy poster
+2024-10-16:
+  cyfause:
+  - bugfix: allow facial hair on anthromorph species
+2024-10-24:
+  MosleyTheMalO:
+  - rscadd: adds the emote panel using tgui
+  - code_imp: refractors emote code
+  Sara:
+  - rscadd: Added a full new station.
+  - rscadd: Added new shuttles, arrival, escape, and whiteship.
+  - rscadd: Added new lore page for the station.
+2024-10-25:
+  SaraSayomi:
+  - bugfix: 4nal tubes

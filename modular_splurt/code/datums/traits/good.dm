@@ -104,9 +104,8 @@
 	SIGNAL_HANDLER
 
 	. = FALSE
-	var/datum/emote/E
-	E = E.emote_list[lowertext(emote_args[EMOTE_ACT])]
-	if(TIMER_COOLDOWN_CHECK(quirk_holder, COOLDOWN_DOMINANT_SNAP) || !findtext(E?.key, "snap"))
+	var/key = GLOB.emote_list[lowertext(emote_args[EMOTE_ACT])]
+	if(TIMER_COOLDOWN_CHECK(quirk_holder, COOLDOWN_DOMINANT_SNAP) || !findtext(key, "snap"))
 		return
 	for(var/mob/living/carbon/human/sub in hearers(DOMINANT_DETECT_RANGE, quirk_holder))
 		if(!sub.has_quirk(/datum/quirk/well_trained) || (sub == quirk_holder))
@@ -117,7 +116,7 @@
 				good_x = "мальчик"
 			if(FEMALE)
 				good_x = "девочка"
-		switch(E?.key)
+		switch(key)
 			if("snap")
 				sub.dir = get_dir(sub, quirk_holder)
 				sub.emote(pick("blush", "pant"))

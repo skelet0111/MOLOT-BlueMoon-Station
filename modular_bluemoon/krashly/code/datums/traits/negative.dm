@@ -25,8 +25,7 @@
 		quirk_holder.dust(TRUE, TRUE)
 
 /datum/quirk/onelife/proc/get_rid_of_them_emote(mob/user, list/emote_args)
-	var/datum/emote/E
-	E = E.emote_list[lowertext(emote_args[EMOTE_ACT])]
-	if(E.key == "deathgasp")
+	var/key = GLOB.emote_list[lowertext(emote_args[EMOTE_ACT])]
+	if(key == "deathgasp")
 		remove_signals()
 		quirk_holder.dust(TRUE, TRUE)

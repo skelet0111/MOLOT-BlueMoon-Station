@@ -114,3 +114,25 @@
 	'modular_bluemoon/SmiLeY/sounds/tiamat_meow2.ogg' = 1,
 	'modular_bluemoon/SmiLeY/sounds/tiamat_meow3.ogg' = 1
 	)
+
+/obj/item/toy/plush/mammal/fox/vulp
+	desc = "An adorable stuffed toy resembling a vulp."
+	icon = 'modular_sand/icons/obj/plushes.dmi'
+	lefthand_file = 'modular_sand/icons/mob/inhands/misc/plushes_lefthand.dmi'
+	righthand_file = 'modular_sand/icons/mob/inhands/misc/plushes_righthand.dmi'
+
+/obj/item/toy/plush/mammal/fox/vulp/emma
+	name = "Emma Plushie"
+	icon_state = "emma"
+
+/obj/item/toy/plush/mammal/fox/vulp/shiro
+	name = "shiro plushie"
+	icon_state = "shiro"
+
+/obj/item/toy/plush/mammal/fox/vulp/raita
+	name = "raita plushie"
+	icon_state = "raita"
+
+/obj/item/toy/plush/mammal/fox/vulp/aiko
+	name = "Aiko Plushie"
+	icon_state = "aiko"
