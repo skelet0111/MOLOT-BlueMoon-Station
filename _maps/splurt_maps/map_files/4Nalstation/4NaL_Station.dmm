@@ -48477,7 +48477,7 @@
 "qgK" = (
 /obj/item/bedsheet/black/double,
 /obj/structure/bed/double/pod,
-/obj/item/toy/plush/mammal/fox/vulp/emma,
+/obj/item/toy/plush/mammal/fox/emma/aiko,
 /turf/open/floor/wood{
 	color = "#4C4C4C";
 	icon_state = "wood_tile"
