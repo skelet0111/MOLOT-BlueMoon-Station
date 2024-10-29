@@ -2,6 +2,9 @@
  * Don't use the apostrophe in name or desc. Causes script errors.//probably no longer true
  */
 
+#define ANTAG_EXTENDED 	(1<<0)
+#define ANTAG_DYNAMIC 	(1<<1)
+
 /datum/action/changeling
 	name = "Prototype Sting - Debug button, ahelp this"
 	background_icon_state = "bg_changeling"
@@ -17,6 +20,8 @@
 	var/ignores_fakedeath = FALSE // usable with the FAKEDEATH flag
 	var/loudness = 0.5 //Determines how much having this ability will affect changeling blood tests. This is averaged with other purchased abilities. Above 1, the blood will react violently and turn to ash, creating a unique message in the process. Above 2, the blood will explode when heated.
 	var/active = FALSE//used by a few powers that toggle
+
+	var/gamemode_restriction_type = ANTAG_EXTENDED|ANTAG_DYNAMIC
 
 /*
 changeling code now relies on on_purchase to grant powers.
@@ -86,3 +91,10 @@ the same goes for Remove(). if you override Remove(), call parent or else your p
 	if(req_human && !ishuman(user))
 		return FALSE
 	return TRUE
+
+/datum/action/changeling/proc/gamemode_restricted()
+	if(ANTAG_EXTENDED & gamemode_restriction_type && GLOB.master_mode == "Extended")
+		. = TRUE
+	if(ANTAG_DYNAMIC & gamemode_restriction_type)
+		if(GLOB.master_mode == "Dynamic (Light)" && GLOB.master_mode == "Dynamic (Medium)" && GLOB.master_mode == "Dynamic (Hard)" && GLOB.master_mode == "Dynamic (Team-Based)")
+			. = TRUE

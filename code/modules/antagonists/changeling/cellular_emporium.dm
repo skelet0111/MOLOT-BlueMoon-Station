@@ -43,6 +43,9 @@
 		if(dna_cost <= 0)
 			continue
 
+		if(ability.gamemode_restricted())
+			continue
+
 		var/list/AL = list()
 		AL["name"] = initial(ability.name)
 		AL["desc"] = initial(ability.desc)
