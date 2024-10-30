@@ -1,0 +1,5 @@
+author: cyfause
+delete-after: true
+changes:
+  - tweak: enables tail + horns + ears bodyparts for ipc characters
+  - tweak: disables opacity on ipc character hair
