@@ -2,9 +2,6 @@
  * Don't use the apostrophe in name or desc. Causes script errors.//probably no longer true
  */
 
-#define ANTAG_EXTENDED 	(1<<0)
-#define ANTAG_DYNAMIC 	(1<<1)
-
 /datum/action/changeling
 	name = "Prototype Sting - Debug button, ahelp this"
 	background_icon_state = "bg_changeling"
@@ -91,10 +88,3 @@ the same goes for Remove(). if you override Remove(), call parent or else your p
 	if(req_human && !ishuman(user))
 		return FALSE
 	return TRUE
-
-/datum/action/changeling/proc/gamemode_restricted()
-	if(ANTAG_EXTENDED & gamemode_restriction_type && GLOB.master_mode == "Extended")
-		. = TRUE
-	if(ANTAG_DYNAMIC & gamemode_restriction_type)
-		if(GLOB.master_mode == "Dynamic (Light)" && GLOB.master_mode == "Dynamic (Medium)" && GLOB.master_mode == "Dynamic (Hard)" && GLOB.master_mode == "Dynamic (Team-Based)")
-			. = TRUE
