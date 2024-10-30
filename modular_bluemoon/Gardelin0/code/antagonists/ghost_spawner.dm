@@ -68,3 +68,8 @@
 		return . = ..()
 	else
 		return to_chat(user, "<span class='warning'>Игра за ЕРП-антагонистов допускается лишь в Режим Extended!</span>")
+
+/obj/effect/mob_spawn/human/changeling_extended/special(mob/living/new_spawn)
+	. = ..()
+	var/mob/living/carbon/human/H = new_spawn
+	H.mind.make_Changeling()

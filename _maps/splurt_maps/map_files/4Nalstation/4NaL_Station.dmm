@@ -21545,7 +21545,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/deathclaw/pacifist,
+/mob/living/simple_animal/hostile/deathclaw/funclaw/gentle/newclaw/alphaclaw,
 /turf/open/floor/grass/fakebasalt,
 /area/maintenance/central/zoo)
 "gUW" = (
@@ -36258,15 +36258,15 @@
 /turf/open/floor/plasteel/dark,
 /area/medical/paramedic)
 "lQw" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 8
-	},
 /obj/machinery/computer/security/telescreen{
 	name = "Hole Watch";
 	network = list("Hole");
 	pixel_y = 32
 	},
 /obj/structure/disposalpipe/segment,
+/obj/structure/chair/sofa/corp/left{
+	dir = 8
+	},
 /turf/open/floor/carpet/black,
 /area/service/bar/atrium)
 "lQJ" = (
@@ -38309,7 +38309,6 @@
 "mzZ" = (
 /obj/structure/closet/crate/wooden/shadow,
 /obj/item/clothing/head/wizard/black,
-/obj/item/clothing/suit/space/hardsuit/shielded/wizard,
 /obj/item/clothing/suit/wizrobe/fake{
 	icon_state = "blackwizard"
 	},
@@ -51470,11 +51469,11 @@
 	},
 /area/maintenance/central/brothel)
 "qFJ" = (
-/obj/structure/chair/sofa/corp/left{
-	dir = 8
-	},
 /obj/structure/window/reinforced/tinted{
 	dir = 4
+	},
+/obj/structure/chair/sofa/corp/right{
+	dir = 8
 	},
 /turf/open/floor/carpet/black,
 /area/service/bar/atrium)
@@ -52591,10 +52590,10 @@
 /turf/open/floor/plasteel,
 /area/cargo/office)
 "qWZ" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/disposalpipe/segment,
+/obj/structure/chair/sofa/corp/right{
 	dir = 8
 	},
-/obj/structure/disposalpipe/segment,
 /turf/open/floor/carpet/black,
 /area/service/bar/atrium)
 "qXg" = (
@@ -176782,7 +176781,7 @@ kCg
 pDo
 hOn
 wVW
-eAN
+mGo
 sjp
 iaB
 nms
@@ -177307,7 +177306,7 @@ tXO
 cPA
 dJM
 uzL
-mGo
+eAN
 wVW
 tLL
 lcq
@@ -177808,8 +177807,8 @@ cEH
 rjw
 wQA
 pDo
-mGo
 eAN
+mGo
 dsK
 pxw
 ore
