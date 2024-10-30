@@ -64865,7 +64865,7 @@
 	},
 /obj/effect/turf_decal/trimline/green/filled/line,
 /obj/item/paper{
-	info = "Fuck off! Sincerely ~hydro"
+	default_raw_text = "Fuck off! Sincerely ~hydro"
 	},
 /turf/open/floor/plasteel,
 /area/service/hydroponics)
@@ -73733,7 +73733,7 @@
 	},
 /obj/structure/table/wood,
 /obj/item/paper{
-	info = "Get bullied NERD! ~All of command"
+	default_raw_text = "Get bullied NERD! ~All of command"
 	},
 /turf/open/floor/carpet/royalblack,
 /area/command/bridge/upper)
