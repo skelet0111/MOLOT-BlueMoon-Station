@@ -63,7 +63,7 @@
 	use_outfit_name = TRUE
 	outfit = /datum/outfit/job/stowaway/syndicate
 
-/obj/effect/mob_spawn/human/changeling_extended(mob/user, latejoinercalling)
+/obj/effect/mob_spawn/human/changeling_extended/attack_ghost(mob/user, latejoinercalling)
 	if(GLOB.master_mode == "Extended")
 		return . = ..()
 	else
