@@ -407,8 +407,14 @@
 				if(!GLOB.dna_for_copying || !istype(GLOB.dna_for_copying, /datum/dna))
 					alert(usr, "ERROR: There's nothing to copy!")
 					return
+				if(!is_station_level(H.z))
+					continue
 				GLOB.dna_for_copying.transfer_identity(H, TRUE)
 				H.real_name = H.dna.real_name
+				var/obj/item/card/id/W = H.wear_id
+				if(W)
+					W.registered_name = H.real_name
+					W.update_label(W.registered_name, W.assignment)
 				H.updateappearance(mutcolor_update=1)
 				H.domutcheck()
 				amount_modified++
