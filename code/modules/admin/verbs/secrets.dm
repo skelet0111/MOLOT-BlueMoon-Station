@@ -411,10 +411,15 @@
 					continue
 				GLOB.dna_for_copying.transfer_identity(H, TRUE)
 				H.real_name = H.dna.real_name
-				var/obj/item/card/id/W = H.wear_id
+				var/obj/item/pda/worn = H.wear_id
+				var/obj/item/card/id/W = H.wear_id?.GetID()
 				if(W)
 					W.registered_name = H.real_name
 					W.update_label(W.registered_name, W.assignment)
+					if(worn)
+						if(istype(worn, /obj/item/pda))
+							worn.owner = W.registered_name
+							worn.update_label()
 				H.updateappearance(mutcolor_update=1)
 				H.domutcheck()
 				amount_modified++
