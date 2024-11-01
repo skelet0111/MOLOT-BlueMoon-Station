@@ -14,9 +14,9 @@ Our Method:
 • Scan through the player list an count how many alive engineers are there. If you sign up as an engineer, you consent to fixing the damage.
 */
 
-#define EXPLOSION_MODIFIER_SMALL 100
-#define EXPLOSION_MODIFIER_MEDIUM 200
-#define EXPLOSION_MODIFIER_LARGE 300
+#define EXPLOSION_MODIFIER_SMALL 10000
+#define EXPLOSION_MODIFIER_MEDIUM 20000
+#define EXPLOSION_MODIFIER_LARGE 30000
 
 // Check if the SM Can explode at all or not
 /proc/check_sm_delam()
@@ -46,9 +46,9 @@ Our Method:
 
 // Let's turn the base explosion power down a little...
 /obj/machinery/power/supermatter_crystal
-	explosion_power = 120
+	explosion_power = 240
 /obj/machinery/power/supermatter_crystal/shard
-	explosion_power = 60
+	explosion_power = 120
 
 // Proc to screen the mob list for engineers. We'll need this later!
 /proc/count_alive_engineers(mob/M)
