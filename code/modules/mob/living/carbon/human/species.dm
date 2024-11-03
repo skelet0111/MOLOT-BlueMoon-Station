@@ -2429,7 +2429,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			H.damageoverlaytemp = 20
 			var/damage_amount
 			if (HAS_TRAIT(H, TRAIT_TOUGHT) && !forced) // проверка на трейт стойкости
-				if (damage <= 10) //если урон до применения модификаторов не привышает 10, то он не учитывается
+				if (damage < 10) //если урон до применения модификаторов не привышает 10, то он не учитывается
 					if(HAS_TRAIT(H, TRAIT_ROBOTIC_ORGANISM))
 						H.visible_message(span_warning("Корпус [H] слишком прочный, удар не повредил его!"), span_notice("Корпус нивелирует наносимые повреждения."))
 					else
