@@ -1,0 +1,4 @@
+author: Meghan-Rossi
+delete-after: true
+changes:
+  - server: Server can now be compiled on byond 515.1543
