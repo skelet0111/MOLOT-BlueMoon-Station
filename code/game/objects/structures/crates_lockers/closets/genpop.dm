@@ -5,7 +5,7 @@
 	var/default_name = "prisoner closet"
 	req_access = list(ACCESS_BRIG)
 	var/obj/item/card/id/prisoner/registered_id = null
-	icon_state = "personal closet"
+	icon_state = "secure"
 	locked = FALSE
 	anchored = TRUE
 	opened = TRUE
@@ -107,7 +107,7 @@
 			locked = TRUE
 			update_icon()
 			registered_id.forceMove(src.loc)
-			new /obj/item/clothing/under/rank/prisoner(src.loc)
+			//new /obj/item/clothing/under/rank/prisoner(src.loc)
 		else
 			qdel(registered_id)
 			registered_id = null
