@@ -223,10 +223,12 @@
 "acV" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -281,18 +283,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/item/folder/red,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -304,10 +310,12 @@
 "adv" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/closet/secure_closet/security{
 	name = "service security officer's locker"
@@ -317,11 +325,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/item/encryptionkey/headset_service,
 /obj/item/clothing/accessory/armband/hydro,
@@ -1054,18 +1064,22 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -1323,10 +1337,12 @@
 "aoQ" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -1967,9 +1983,7 @@
 	dir = 8;
 	alpha = 150
 	},
-/turf/open/floor/plasteel/white/side{
-	dir = 1
-	},
+/turf/open/floor/plasteel/dark,
 /area/cargo/miningdock)
 "axN" = (
 /obj/effect/turf_decal/siding/wideplating{
@@ -2450,11 +2464,6 @@
 	dir = 10
 	},
 /area/science/xenobiology)
-"aDZ" = (
-/obj/effect/spawner/lootdrop/two_percent_xeno_egg_spawner,
-/obj/machinery/light,
-/turf/open/floor/engine,
-/area/science/xenobiology)
 "aEc" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2656,11 +2665,13 @@
 /area/engineering/atmos)
 "aGm" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3408,7 +3419,8 @@
 "aQU" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/light,
 /obj/structure/sign/poster/official/enlist{
@@ -3463,28 +3475,34 @@
 "aRE" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/auxiliary)
 "aSa" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	name = "low pressure supply"
@@ -3499,11 +3517,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/camera{
 	c_tag = "Security Office East";
@@ -4147,15 +4167,18 @@
 /area/science/robotics/lab)
 "aZy" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
@@ -4587,18 +4610,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -5176,7 +5203,8 @@
 "bkO" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	name = "air vent"
@@ -5606,10 +5634,12 @@
 "brU" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 9;
@@ -5617,7 +5647,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -31
@@ -5643,11 +5674,13 @@
 /area/cargo/miningdock)
 "bsq" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -5889,19 +5922,23 @@
 /area/service/chapel/office)
 "buU" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -7189,11 +7226,13 @@
 "bIa" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 29
@@ -7777,18 +7816,22 @@
 "bOC" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced{
@@ -7957,11 +8000,13 @@
 "bQP" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
@@ -8759,14 +8804,16 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/light{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
@@ -8869,10 +8916,12 @@
 "cbG" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/table,
 /obj/item/paper_bin,
@@ -8897,11 +8946,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/auxiliary)
@@ -8982,18 +9033,22 @@
 /obj/effect/landmark/start/depsec/medical,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -9016,11 +9071,13 @@
 /area/security/courtroom/jury)
 "ccX" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
@@ -9067,14 +9124,17 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/firealarm{
 	dir = 4;
@@ -9083,7 +9143,8 @@
 /obj/item/book/manual/wiki/splurt/splurt_space_law,
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -9177,18 +9238,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/airlock/security{
 	name = "Security Checkpoint";
@@ -9480,11 +9545,13 @@
 /area/science/research)
 "chY" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8;
@@ -10178,11 +10245,13 @@
 "cqh" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -10575,19 +10644,23 @@
 	},
 /obj/item/pen,
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/airalarm{
 	dir = 8;
@@ -10892,7 +10965,8 @@
 	pixel_y = -25
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
@@ -11012,18 +11086,22 @@
 /obj/machinery/computer/prisoner/management,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -11429,10 +11507,12 @@
 "cGJ" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/button/door{
 	id = "permaextwindow";
@@ -12565,11 +12645,13 @@
 "cUo" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -12587,10 +12669,12 @@
 "cUr" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -12611,11 +12695,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -12665,10 +12751,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4;
@@ -12745,7 +12833,8 @@
 "cWr" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -12898,7 +12987,8 @@
 	name = "low pressure supply"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -13002,11 +13092,13 @@
 "cYG" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8;
@@ -13514,7 +13606,8 @@
 "dfR" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -13524,11 +13617,13 @@
 	req_access_txt = "63"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden{
 	name = "high pressure supply"
@@ -13552,11 +13647,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
@@ -14096,11 +14193,13 @@
 "dlS" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -14384,28 +14483,34 @@
 "dpb" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
 "dpj" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
@@ -14569,18 +14674,22 @@
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	name = "low pressure supply"
@@ -15713,11 +15822,13 @@
 "dEb" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -15823,10 +15934,12 @@
 "dFn" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	name = "low pressure supply"
@@ -16634,11 +16747,13 @@
 "dPc" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	name = "air vent"
@@ -16648,7 +16763,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -16699,18 +16815,22 @@
 /obj/structure/window/reinforced,
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/item/flashlight/lamp,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -17420,10 +17540,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4;
@@ -17524,11 +17646,13 @@
 "ebE" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -17539,11 +17663,13 @@
 	},
 /obj/effect/landmark/start/security_officer,
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -17554,10 +17680,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/camera{
 	c_tag = "Security - Brig Control";
@@ -17565,11 +17693,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -18248,11 +18378,13 @@
 /area/hallway/primary/central)
 "ejg" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -18311,11 +18443,13 @@
 "ekk" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	alpha = 80
@@ -18503,15 +18637,18 @@
 "emD" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/firealarm{
 	dir = 4;
@@ -18519,7 +18656,8 @@
 	},
 /obj/machinery/computer/secure_data,
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/item/radio/intercom{
 	frequency = 1359;
@@ -19247,7 +19385,8 @@
 "ewe" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/sign/departments/security{
 	pixel_x = -32
@@ -19701,6 +19840,8 @@
 /area/science/research)
 "eBs" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/item/electropack/shockcollar,
+/obj/item/assembly/signaler,
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
 "eBD" = (
@@ -20145,18 +20286,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -20177,7 +20322,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
@@ -20547,18 +20693,22 @@
 "eLE" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/vending/wardrobe/sec_wardrobe,
 /turf/open/floor/plasteel,
@@ -20585,11 +20735,13 @@
 /area/service/hydroponics/lobby)
 "eMb" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	name = "scrubbers"
@@ -21075,7 +21227,8 @@
 "eRt" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -21140,10 +21293,12 @@
 "eSK" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 6;
@@ -21154,7 +21309,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -21648,11 +21804,13 @@
 	name = "scrubbers"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
@@ -21842,11 +22000,6 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/turf/open/floor/engine,
-/area/science/xenobiology)
-"fda" = (
-/obj/structure/bed,
-/obj/item/bedsheet/purple,
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "fdc" = (
@@ -22196,9 +22349,7 @@
 /obj/effect/turf_decal/tile/purple{
 	alpha = 150
 	},
-/turf/open/floor/plasteel/white/side{
-	dir = 1
-	},
+/turf/open/floor/plasteel/dark,
 /area/cargo/miningdock)
 "fhf" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -22286,7 +22437,8 @@
 "fib" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 8;
@@ -22516,10 +22668,12 @@
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/window/westleft{
 	name = "Security Checkpoint";
@@ -22528,11 +22682,13 @@
 /obj/item/folder/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -22546,11 +22702,13 @@
 "flA" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/rack,
 /obj/item/clothing/suit/straight_jacket,
@@ -22669,15 +22827,18 @@
 /obj/structure/closet/secure_closet/warden,
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -22687,7 +22848,8 @@
 	pixel_x = -26
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/item/bodycam_upgrade,
 /obj/item/clothing/accessory/badge,
@@ -22946,11 +23108,13 @@
 "fpO" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
@@ -22972,11 +23136,13 @@
 "fqa" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/power/apc/auto_name/west,
 /obj/structure/cable{
@@ -22988,10 +23154,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -23377,19 +23545,23 @@
 "fvO" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/filingcabinet/chestdrawer,
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/auxiliary)
@@ -23527,11 +23699,13 @@
 "fxc" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/airalarm{
 	dir = 4;
@@ -23542,11 +23716,13 @@
 	name = "air vent"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/auxiliary)
@@ -23684,7 +23860,8 @@
 "fyy" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -25187,19 +25364,23 @@
 /area/medical/medbay/lobby)
 "fQE" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -25389,18 +25570,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	name = "low pressure supply"
@@ -25514,18 +25699,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -25720,19 +25909,23 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
@@ -25754,18 +25947,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -26027,10 +26224,12 @@
 "fZo" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 1;
@@ -26044,11 +26243,13 @@
 	req_access_txt = "63"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable{
@@ -26056,11 +26257,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
@@ -26171,18 +26374,22 @@
 /obj/effect/landmark/start/depsec/supply,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -26374,11 +26581,13 @@
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -26493,10 +26702,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
@@ -26537,7 +26748,8 @@
 "gfP" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -26800,18 +27012,22 @@
 "gje" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	name = "low pressure supply"
@@ -27005,18 +27221,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
@@ -28177,14 +28397,17 @@
 "gAw" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/button/door{
 	id = "brigvisitation";
@@ -28538,11 +28761,13 @@
 "gEu" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -28788,18 +29013,22 @@
 /obj/effect/landmark/start/depsec/engineering,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -29016,11 +29245,13 @@
 	name = "low pressure supply"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -29395,18 +29626,22 @@
 "gOT" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/button/flasher{
 	pixel_y = 29;
@@ -30167,10 +30402,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/central/secondary)
-"gZe" = (
-/obj/structure/chair/comfy/black,
-/turf/open/floor/engine,
-/area/science/xenobiology)
 "gZR" = (
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden{
 	dir = 4;
@@ -30732,11 +30963,13 @@
 /obj/machinery/autolathe,
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/camera{
 	c_tag = "Security - Brig";
@@ -30812,18 +31045,22 @@
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -30862,9 +31099,7 @@
 /obj/effect/turf_decal/tile/purple{
 	alpha = 150
 	},
-/turf/open/floor/plasteel/white/side{
-	dir = 1
-	},
+/turf/open/floor/plasteel/dark,
 /area/cargo/miningdock)
 "hii" = (
 /obj/machinery/cryopod{
@@ -30903,18 +31138,22 @@
 "hiw" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8;
@@ -31101,11 +31340,13 @@
 "hjX" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/light{
 	dir = 1
@@ -31268,7 +31509,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/computer/atmos_control/tank/nitrous_tank,
 /turf/open/floor/plasteel/white/corner{
@@ -31585,21 +31827,25 @@
 "hqL" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/computer/security{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/item/radio/intercom{
 	frequency = 1359;
@@ -31774,11 +32020,13 @@
 /area/maintenance/central)
 "htf" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -32028,11 +32276,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8;
@@ -32046,11 +32296,13 @@
 	icon_state = "2-8"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint)
@@ -32339,11 +32591,13 @@
 "hyA" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/firealarm{
 	pixel_y = 26
@@ -32434,10 +32688,12 @@
 "hzx" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs/auxiliary)
@@ -32517,19 +32773,23 @@
 	req_access_txt = "2"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -32687,18 +32947,22 @@
 "hBY" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 6;
@@ -33273,21 +33537,25 @@
 /obj/machinery/computer/secure_data,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -33486,15 +33754,18 @@
 /area/commons/fitness)
 "hMy" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -33510,7 +33781,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint)
@@ -33696,19 +33968,23 @@
 /area/maintenance/department/electrical)
 "hOG" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/light,
 /obj/structure/reagent_dispensers/peppertank{
@@ -33900,18 +34176,22 @@
 /obj/machinery/computer/crew,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -34304,10 +34584,12 @@
 "hWw" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8;
@@ -34326,7 +34608,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -34512,11 +34795,13 @@
 /area/construction/mining/aux_base)
 "hYS" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 1;
@@ -34524,11 +34809,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint)
@@ -34824,18 +35111,22 @@
 "ieo" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -34922,11 +35213,13 @@
 "ieO" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -35449,11 +35742,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -35488,11 +35783,13 @@
 "imW" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -35577,10 +35874,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4;
@@ -35740,15 +36039,18 @@
 /obj/structure/rack,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/item/clothing/gloves/color/orange,
 /obj/item/restraints/handcuffs,
@@ -35765,11 +36067,13 @@
 "iqh" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -35783,10 +36087,12 @@
 /obj/effect/landmark/start/security_officer,
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs/auxiliary)
@@ -36708,8 +37014,11 @@
 /area/command/heads_quarters/captain)
 "iDO" = (
 /obj/structure/bed,
-/obj/effect/spawner/lootdrop/bedsheet,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/restraints/handcuffs/fake,
+/obj/item/tank/internals/anesthetic,
+/obj/item/clothing/mask/breath,
+/obj/effect/spawner/lootdrop/bedsheet,
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
 "iEh" = (
@@ -36760,10 +37069,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
@@ -36820,15 +37131,18 @@
 /area/commons/storage/primary)
 "iEP" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/filingcabinet/chestdrawer,
 /obj/machinery/light{
@@ -36842,7 +37156,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -37272,19 +37587,23 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
@@ -39689,7 +40008,8 @@
 "jlp" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -40129,7 +40449,7 @@
 	name = "low pressure supply"
 	},
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel,
 /area/security/warden)
 "jqH" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -40138,11 +40458,13 @@
 "jqL" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -40673,11 +40995,13 @@
 /area/commons/fitness/cogpool)
 "jwN" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -40757,11 +41081,13 @@
 /area/cargo/sorting)
 "jxR" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -40900,10 +41226,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -40911,11 +41239,13 @@
 /obj/effect/landmark/start/warden,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -40985,8 +41315,6 @@
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
 "jzF" = (
-/obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/snacks/meat/steak,
 /obj/machinery/camera{
 	c_tag = "Xenobiology - Test Chamber";
 	dir = 1;
@@ -41712,10 +42040,12 @@
 "jIi" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -41728,11 +42058,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -41994,10 +42326,12 @@
 "jKx" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -42125,18 +42459,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -42945,11 +43283,13 @@
 	name = "low pressure supply"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -42959,11 +43299,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -45037,18 +45379,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -46144,21 +46490,25 @@
 "kKg" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/computer/secure_data{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/auxiliary)
@@ -46226,10 +46576,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 1;
@@ -46505,15 +46857,18 @@
 /area/ai_monitored/command/storage/eva)
 "kOi" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -47238,11 +47593,13 @@
 /area/cargo/miningdock)
 "kWH" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -47452,11 +47809,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/closet/emcloset,
 /turf/open/floor/plasteel,
@@ -47726,25 +48085,30 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "lcH" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -48413,10 +48777,12 @@
 "lmN" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	name = "air scrubber"
@@ -49440,18 +49806,22 @@
 "lyV" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced{
@@ -49857,12 +50227,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/lobby)
-"lDo" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/science/xenobiology)
 "lDs" = (
 /obj/machinery/button/door{
 	id = "EngineeringConveyorBlastDoor";
@@ -50065,15 +50429,18 @@
 "lFA" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/button/door{
 	id = "secod2ss";
@@ -50083,7 +50450,8 @@
 	req_access_txt = "1"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/computer/security,
 /obj/machinery/button/door{
@@ -50226,11 +50594,13 @@
 "lGA" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -51083,15 +51453,18 @@
 "lRo" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -51621,26 +51994,31 @@
 /area/maintenance/central)
 "mac" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint)
 "maf" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -51821,18 +52199,22 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/table,
 /obj/machinery/recharger,
@@ -52676,19 +53058,23 @@
 /area/security/office)
 "moR" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/siding/red/corner{
 	dir = 1
@@ -53524,11 +53910,13 @@
 /area/command/heads_quarters/hos)
 "mxF" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	name = "low pressure supply"
@@ -53813,19 +54201,23 @@
 /area/hallway/primary/central)
 "mBJ" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -53872,18 +54264,22 @@
 "mCo" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	name = "scrubbers"
@@ -53974,7 +54370,8 @@
 "mDd" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -54145,7 +54542,8 @@
 "mFd" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -54193,7 +54591,8 @@
 "mFC" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -54649,15 +55048,18 @@
 /area/commons/dorms)
 "mKp" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/firealarm{
 	dir = 8;
@@ -54672,7 +55074,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -54712,11 +55115,13 @@
 "mKP" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/camera{
 	c_tag = "Prison Hallway East";
@@ -55519,18 +55924,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -55647,7 +56056,8 @@
 "mWd" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -56034,18 +56444,22 @@
 "nan" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/light{
 	dir = 1
@@ -57812,18 +58226,22 @@
 "nvO" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -58173,18 +58591,22 @@
 "nAZ" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	name = "air scrubber"
@@ -58227,7 +58649,8 @@
 "nCC" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -58577,7 +59000,8 @@
 "nFT" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1;
@@ -59170,11 +59594,13 @@
 /area/commons/locker)
 "nLZ" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -59341,18 +59767,22 @@
 "nPi" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	name = "air scrubber"
@@ -59362,10 +59792,12 @@
 "nPj" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/window/brigdoor{
 	name = "Reception Office";
@@ -59374,11 +59806,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
@@ -59562,11 +59996,13 @@
 "nRq" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/light{
 	dir = 1
@@ -59666,11 +60102,13 @@
 "nSG" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -59683,10 +60121,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs/auxiliary)
@@ -59728,18 +60168,22 @@
 "nTg" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	name = "low pressure supply"
@@ -60439,28 +60883,34 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
 "oba" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -60485,11 +60935,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -60771,11 +61223,13 @@
 "odq" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden{
 	name = "high pressure supply"
@@ -61472,11 +61926,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
-"ola" = (
-/obj/structure/table/reinforced,
-/obj/item/modular_computer/laptop/preset/civilian,
-/turf/open/floor/engine,
-/area/science/xenobiology)
 "olh" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -61839,19 +62288,23 @@
 /area/medical/morgue)
 "ooC" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -62102,7 +62555,8 @@
 "ord" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -62529,7 +62983,8 @@
 "owf" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -63529,18 +63984,22 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -63613,11 +64072,13 @@
 "oIg" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -63631,14 +64092,16 @@
 	name = "low pressure supply"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -63831,18 +64294,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -64205,11 +64672,13 @@
 "oPQ" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	name = "low pressure supply"
@@ -64222,11 +64691,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/light_switch/directional/west,
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/auxiliary)
@@ -64363,10 +64834,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	name = "air scrubber"
@@ -64415,10 +64888,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
@@ -64773,18 +65248,22 @@
 "oWC" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/airlock/security/glass{
 	name = "Security Desk";
@@ -64879,14 +65358,17 @@
 "oXE" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
@@ -64897,7 +65379,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -64996,14 +65479,6 @@
 	},
 /turf/open/floor/plating,
 /area/service/kitchen)
-"oZh" = (
-/obj/structure/table/reinforced,
-/obj/item/clothing/under/misc/staffassistant,
-/obj/item/clothing/under/misc/staffassistant,
-/obj/item/clothing/suit/apron/surgical,
-/obj/item/clothing/suit/apron/surgical,
-/turf/open/floor/engine,
-/area/science/xenobiology)
 "oZm" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4;
@@ -65032,11 +65507,13 @@
 "oZz" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/rack,
 /obj/item/multitool,
@@ -65085,15 +65562,18 @@
 "oZI" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -65651,18 +66131,22 @@
 "phs" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/chair,
 /turf/open/floor/plasteel,
@@ -66052,18 +66536,22 @@
 "plH" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4;
@@ -66081,18 +66569,22 @@
 "plL" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/table,
 /obj/machinery/recharger,
@@ -66511,18 +67003,22 @@
 /obj/effect/landmark/start/depsec/science,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -66808,18 +67304,22 @@
 "pvg" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -67072,19 +67572,23 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
@@ -67352,14 +67856,17 @@
 "pCP" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/chair/office/dark,
 /obj/effect/landmark/start/depsec/engineering,
@@ -67370,7 +67877,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/auxiliary)
@@ -67694,11 +68202,13 @@
 /area/service/chapel/office)
 "pGZ" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 1;
@@ -67713,11 +68223,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -67973,11 +68485,13 @@
 "pLc" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -68348,15 +68862,18 @@
 /area/commons/dorms)
 "pQE" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
@@ -68625,7 +69142,8 @@
 "pUj" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -68679,9 +69197,7 @@
 /obj/effect/turf_decal/tile/purple{
 	alpha = 150
 	},
-/turf/open/floor/plasteel/white/side{
-	dir = 1
-	},
+/turf/open/floor/plasteel/dark,
 /area/cargo/miningdock)
 "pUE" = (
 /obj/structure/closet/secure_closet/medical1,
@@ -68987,10 +69503,12 @@
 "pYB" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/power/apc/auto_name/east,
 /obj/structure/cable{
@@ -69680,11 +70198,13 @@
 "qgB" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/window/brigdoor{
 	name = "Reception Desk";
@@ -69693,11 +70213,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "secod1";
@@ -70229,14 +70751,17 @@
 "qmL" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/table,
 /obj/machinery/recharger,
@@ -70245,7 +70770,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint)
@@ -70301,11 +70827,13 @@
 	name = "scrubbers"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1;
@@ -71222,10 +71750,12 @@
 "qxW" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8;
@@ -71279,11 +71809,13 @@
 "qyW" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/computer/security/telescreen/interrogation{
 	name = "isolation cell monitor";
@@ -71504,7 +72036,8 @@
 /area/security/prison/mess)
 "qAh" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
@@ -71893,11 +72426,13 @@
 "qFz" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -72330,18 +72865,22 @@
 "qLf" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 1;
@@ -72714,11 +73253,13 @@
 "qPB" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	name = "scrubbers"
@@ -73309,11 +73850,13 @@
 "qXZ" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/airalarm{
 	dir = 4;
@@ -73327,10 +73870,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -73379,7 +73924,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel/white/corner{
 	dir = 1
@@ -73582,11 +74128,13 @@
 "raG" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8;
@@ -73763,11 +74311,13 @@
 /area/ai_monitored/command/storage/eva)
 "rbM" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 1;
@@ -73775,11 +74325,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -73840,7 +74392,8 @@
 "rci" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
@@ -73911,10 +74464,12 @@
 "rcJ" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/computer/card{
 	dir = 8
@@ -73925,11 +74480,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 8;
@@ -74118,14 +74675,17 @@
 "reG" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port/fore)
@@ -74317,15 +74877,18 @@
 "rgX" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	name = "low pressure supply"
@@ -74781,19 +75344,23 @@
 	req_one_access_txt = "1;2"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/siding/red/corner{
 	dir = 8
@@ -75097,11 +75664,13 @@
 "rpl" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -75258,7 +75827,8 @@
 /area/commons/dorms)
 "rrI" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	name = "scrubbers"
@@ -75294,18 +75864,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -75692,11 +76266,13 @@
 "rwX" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -76607,11 +77183,13 @@
 	name = "scrubbers"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -76879,18 +77457,22 @@
 "rKV" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 1;
@@ -76961,18 +77543,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -77360,12 +77946,6 @@
 	icon_state = "platingdmg3"
 	},
 /area/maintenance/port/fore)
-"rPf" = (
-/obj/structure/table/reinforced,
-/obj/item/electropack,
-/obj/item/assembly/signaler,
-/turf/open/floor/engine,
-/area/science/xenobiology)
 "rPh" = (
 /obj/effect/turf_decal/delivery,
 /obj/structure/tank_dispenser/plasma,
@@ -77672,18 +78252,22 @@
 /obj/effect/landmark/start/depsec/supply,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint)
@@ -77695,14 +78279,17 @@
 "rTM" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/filingcabinet/chestdrawer,
 /obj/structure/cable{
@@ -77711,7 +78298,8 @@
 /obj/machinery/light_switch/directional/west,
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint)
@@ -77869,11 +78457,13 @@
 /obj/structure/rack,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/item/restraints/handcuffs,
 /obj/item/assembly/flash/handheld,
@@ -78331,7 +78921,8 @@
 /area/maintenance/port/aft)
 "rZC" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -78851,7 +79442,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 0;
@@ -79301,11 +79893,13 @@
 /area/service/chapel/office)
 "smG" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -80171,10 +80765,12 @@
 "swu" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
@@ -80243,11 +80839,13 @@
 /area/service/bar)
 "sxb" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -80449,18 +81047,22 @@
 "szi" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4;
@@ -80615,18 +81217,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/grunge{
@@ -80815,10 +81421,12 @@
 "sDh" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port/fore)
@@ -80913,7 +81521,8 @@
 "sED" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -80945,18 +81554,22 @@
 "sFb" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/computer/secure_data{
 	dir = 1
@@ -81147,15 +81760,18 @@
 /area/science/mixing)
 "sHC" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/light,
 /turf/open/floor/plasteel,
@@ -81497,18 +82113,22 @@
 "sMe" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -81738,10 +82358,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4;
@@ -82076,15 +82698,18 @@
 "sSX" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/table,
 /obj/item/stack/sheet/metal/fifty,
@@ -82526,11 +83151,13 @@
 /area/cargo/miningdock)
 "sVP" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -82823,7 +83450,8 @@
 "taj" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -82884,10 +83512,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/computer/atmos_control/tank/nitrogen_tank{
 	dir = 1
@@ -82903,11 +83533,13 @@
 "tbp" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/power/apc/auto_name/west,
 /obj/structure/cable,
@@ -82926,11 +83558,13 @@
 	dir = 5
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/auxiliary)
@@ -83281,11 +83915,13 @@
 "tfp" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -83405,7 +84041,8 @@
 "tgv" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -83469,11 +84106,13 @@
 "thR" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden{
 	dir = 4;
@@ -83714,18 +84353,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/auxiliary)
@@ -84274,18 +84917,22 @@
 "tru" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -84454,11 +85101,13 @@
 /area/science/xenobiology)
 "ttL" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 6;
@@ -84544,11 +85193,13 @@
 "tuN" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4;
@@ -84559,11 +85210,13 @@
 	name = "scrubbers"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -84826,10 +85479,12 @@
 "tyH" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 5;
@@ -84841,11 +85496,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -85413,11 +86070,13 @@
 /area/medical/medbay/central)
 "tFt" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -85652,11 +86311,13 @@
 /area/commons/fitness)
 "tIc" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden{
 	dir = 4;
@@ -86026,10 +86687,12 @@
 /obj/effect/landmark/start/clown,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4;
@@ -86167,19 +86830,23 @@
 /obj/structure/table,
 /obj/machinery/recharger,
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs/auxiliary)
@@ -86402,10 +87069,12 @@
 "tOB" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -86794,11 +87463,13 @@
 "tSj" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -86902,11 +87573,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	name = "air scrubber"
@@ -86917,10 +87590,12 @@
 /obj/effect/landmark/start/depsec/medical,
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint)
@@ -87380,7 +88055,8 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -87544,11 +88220,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
@@ -87735,22 +88413,26 @@
 	name = "low pressure supply"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -87800,14 +88482,17 @@
 "ucW" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk,
@@ -87860,11 +88545,13 @@
 "udI" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/photocopier,
 /turf/open/floor/plasteel,
@@ -88017,18 +88704,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
@@ -88312,7 +89003,8 @@
 /area/medical/clinic)
 "ujq" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -89976,11 +90668,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/item/book/manual/wiki/splurt/splurt_space_law,
 /obj/machinery/button/door{
@@ -90875,10 +91569,12 @@
 "uLz" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -90889,11 +91585,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/auxiliary)
@@ -91909,11 +92607,13 @@
 "uWL" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	name = "air vent"
@@ -92082,19 +92782,23 @@
 /area/maintenance/port/fore)
 "uZL" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -92350,10 +93054,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4;
@@ -92409,11 +93115,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -92731,11 +93439,13 @@
 "vgl" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -92972,11 +93682,13 @@
 /obj/machinery/recharger,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/button/door{
 	id = "permalock2";
@@ -92994,10 +93706,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -93237,11 +93951,13 @@
 "vnU" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/prison/cells)
@@ -93409,18 +94125,22 @@
 "vqo" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/northleft{
@@ -93863,7 +94583,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "vvg" = (
-/obj/effect/spawner/lootdrop/keg,
+/obj/machinery/vending/kink,
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
 "vvj" = (
@@ -94230,15 +94950,18 @@
 /area/science/xenobiology)
 "vAa" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -94309,7 +95032,8 @@
 	alpha = 80
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
@@ -94806,11 +95530,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/computer/security,
 /obj/machinery/light{
@@ -94822,10 +95548,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint)
@@ -94979,18 +95707,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
@@ -95070,18 +95802,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
@@ -95189,10 +95925,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4;
@@ -95247,18 +95985,22 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -95284,30 +96026,36 @@
 "vLB" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/closet/bombcloset/security,
 /turf/open/floor/plasteel,
 /area/security/brig)
 "vLI" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -95369,19 +96117,23 @@
 "vMN" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -95621,11 +96373,13 @@
 /area/engineering/atmos)
 "vQZ" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/table,
 /obj/item/paper_bin,
@@ -95648,21 +96402,25 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint)
 "vRk" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -96088,11 +96846,13 @@
 /area/security/checkpoint/customs)
 "vXf" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -96721,7 +97481,8 @@
 "wew" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 1;
@@ -96752,10 +97513,12 @@
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/window/westright{
 	name = "Security Checkpoint";
@@ -96764,11 +97527,13 @@
 /obj/item/flashlight/lamp,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -97274,7 +98039,8 @@
 /area/maintenance/bar)
 "wnH" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -97406,10 +98172,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4;
@@ -97830,7 +98598,8 @@
 "wue" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -97875,11 +98644,13 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -98293,7 +99064,8 @@
 "wAi" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -98443,15 +99215,18 @@
 /area/engineering/workshop)
 "wBA" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -99265,11 +100040,13 @@
 "wKb" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/closet/l3closet/security,
 /turf/open/floor/plasteel,
@@ -99620,10 +100397,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -100047,11 +100826,13 @@
 /area/medical/medbay/zone2)
 "wSQ" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -100755,11 +101536,13 @@
 /area/science/mixing)
 "wZU" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
@@ -100772,15 +101555,18 @@
 "xad" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4;
@@ -100791,7 +101577,8 @@
 	name = "scrubbers"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/item/radio/intercom{
 	frequency = 1359;
@@ -100936,11 +101723,13 @@
 "xbK" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/computer/security/telescreen/prison{
 	pixel_y = 26
@@ -101373,11 +102162,13 @@
 /area/hallway/secondary/exit/departure_lounge)
 "xhk" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -102740,10 +103531,12 @@
 "xvE" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/airlock/security{
 	name = "Security Checkpoint";
@@ -102760,11 +103553,13 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
@@ -102959,10 +103754,12 @@
 /obj/effect/landmark/start/clown,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4;
@@ -103101,10 +103898,11 @@
 	},
 /area/science/xenobiology)
 "xzO" = (
-/obj/structure/table/reinforced,
-/obj/item/book/random,
-/turf/open/floor/engine,
-/area/science/xenobiology)
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/under/costume/maid,
+/obj/item/clothing/mask/muzzle,
+/turf/open/floor/plating,
+/area/maintenance/central/secondary)
 "xzX" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -103503,11 +104301,13 @@
 "xEo" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 4;
@@ -103515,10 +104315,12 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs/auxiliary)
@@ -103551,7 +104353,8 @@
 /area/cargo/warehouse)
 "xEP" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -103566,18 +104369,21 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -103903,12 +104709,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
-"xIN" = (
-/obj/structure/chair{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/science/xenobiology)
 "xJe" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -104000,17 +104800,20 @@
 "xKx" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	name = "scrubbers"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -104040,11 +104843,13 @@
 /area/service/theater)
 "xKR" = (
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/disposal/bin{
 	name = "Brig Catering"
@@ -104467,18 +105272,22 @@
 "xPO" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced{
@@ -104852,11 +105661,13 @@
 "xVa" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -104916,18 +105727,22 @@
 "xVt" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/office)
@@ -104989,14 +105804,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/science/research)
-"xWC" = (
-/obj/structure/table/reinforced,
-/obj/item/assembly/igniter,
-/obj/item/assembly/igniter,
-/obj/item/assembly/igniter,
-/obj/item/assembly/igniter,
-/turf/open/floor/engine,
-/area/science/xenobiology)
 "xWD" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 9;
@@ -105619,18 +106426,22 @@
 "ycG" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4;
@@ -105826,18 +106637,22 @@
 /obj/effect/landmark/start/warden,
 /obj/effect/turf_decal/tile/red{
 	dir = 1;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/red{
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -105889,10 +106704,6 @@
 "yfw" = (
 /turf/open/floor/plasteel,
 /area/ai_monitored/command/storage/eva)
-"yfy" = (
-/obj/structure/bookcase/random/nonfiction,
-/turf/open/floor/engine,
-/area/science/xenobiology)
 "yfB" = (
 /obj/machinery/seed_extractor,
 /turf/open/floor/plating,
@@ -106065,7 +106876,8 @@
 "yiz" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8;
-	alpha = 182
+	alpha = 170;
+	color = "#CD2929"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	color = "#FFFFFF";
@@ -122608,10 +123420,10 @@ txL
 pck
 wSv
 hxE
-yfy
-fda
-gZe
-ola
+hve
+hve
+hve
+hve
 hxE
 nsq
 tYi
@@ -123382,7 +124194,7 @@ wtf
 wtf
 cXG
 hve
-lDo
+hve
 hxE
 nsq
 tYi
@@ -123896,7 +124708,7 @@ stN
 stN
 reE
 hve
-xIN
+hve
 hxE
 nsq
 tYi
@@ -124153,7 +124965,7 @@ paN
 hve
 hve
 hve
-aDZ
+tjQ
 hxE
 nsq
 tYi
@@ -124664,10 +125476,10 @@ jtY
 oFA
 wSv
 hxE
-rPf
-xWC
-xzO
-oZh
+hve
+hve
+hve
+hve
 hxE
 nsq
 tYi
@@ -147713,7 +148525,7 @@ mpp
 lke
 iVS
 vvg
-eBs
+xzO
 iDO
 iVS
 moB
@@ -160794,8 +161606,8 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
+jdU
+jdU
 jdU
 jdU
 jdU
@@ -161051,8 +161863,8 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
+jdU
+jdU
 jdU
 jdU
 jdU
@@ -161308,8 +162120,8 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
+jdU
+jdU
 jdU
 jdU
 jdU
@@ -161565,10 +162377,10 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
-oYa
-oYa
+jdU
+jdU
+jdU
+jdU
 jdU
 jdU
 jdU
@@ -161822,10 +162634,10 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
-oYa
-oYa
+jdU
+jdU
+jdU
+jdU
 jdU
 jdU
 jdU
@@ -162079,10 +162891,10 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
-oYa
-oYa
+jdU
+jdU
+jdU
+jdU
 jdU
 jdU
 jdU
@@ -162336,10 +163148,10 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
-oYa
-oYa
+jdU
+jdU
+jdU
+jdU
 jdU
 jdU
 jdU
@@ -162593,10 +163405,10 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
-oYa
-oYa
+jdU
+jdU
+jdU
+jdU
 jdU
 jdU
 jdU
@@ -162850,10 +163662,10 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
-oYa
-oYa
+jdU
+jdU
+jdU
+jdU
 jdU
 jdU
 jdU
@@ -163107,10 +163919,10 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
-oYa
-oYa
+jdU
+jdU
+jdU
+jdU
 jdU
 jdU
 jdU
@@ -163364,10 +164176,10 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
-oYa
-oYa
+jdU
+jdU
+jdU
+jdU
 jdU
 jdU
 jdU
@@ -163621,9 +164433,9 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
-oYa
+jdU
+jdU
+jdU
 jdU
 jdU
 aqL
@@ -163878,8 +164690,8 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
+jdU
+jdU
 jdU
 jdU
 kDb
@@ -164135,8 +164947,8 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
+jdU
+jdU
 jdU
 kDb
 kDb
@@ -164392,8 +165204,8 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
+jdU
+jdU
 jdU
 aqL
 cPb
@@ -164649,8 +165461,8 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
+jdU
+jdU
 jdU
 aqL
 gzn
@@ -164906,8 +165718,8 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
+jdU
+jdU
 jdU
 kDb
 kDb
@@ -165163,8 +165975,8 @@ oYa
 oYa
 oYa
 oYa
-oYa
-oYa
+jdU
+jdU
 jdU
 ozY
 wwN
