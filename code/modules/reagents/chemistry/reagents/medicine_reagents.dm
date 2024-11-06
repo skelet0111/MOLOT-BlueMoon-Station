@@ -1054,7 +1054,7 @@
 					if(policy)
 						to_chat(M, policy)
 					M.log_message("revived using strange reagent, [tplus] deciseconds from time of death, considered late revival due to usage of strange reagent.", LOG_GAME)
-					message_admins(M, "[ADMIN_LOOKUPFLW(M)] возвращён к жизни и [late? "всё помнит" : "ничего не помнит"].")
+					message_admins("[ADMIN_LOOKUPFLW(M)] возвращён к жизни и [late? "всё помнит" : "ничего не помнит"].")
 					log_admin(M, "[M] возвращён к жизни и [late? "всё помнит" : "ничего не помнит"].")
 	..()
 

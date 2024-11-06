@@ -136,7 +136,7 @@
 						if(policy)
 							to_chat(C, policy)
 						C.log_message("revived using synthtissue, [tplus] deciseconds from time of death, considered late revival due to usage of synthtissue.", LOG_GAME)
-						message_admins(C, "[ADMIN_LOOKUPFLW(C)] возвращён к жизни и [late? "всё помнит" : "ничего не помнит"].")
+						message_admins("[ADMIN_LOOKUPFLW(C)] возвращён к жизни и [late? "всё помнит" : "ничего не помнит"].")
 						log_admin(C, "[C] возвращён к жизни и [late? "всё помнит" : "ничего не помнит"].")
 			else
 				var/preheal_brute = C.getBruteLoss()

@@ -49,7 +49,7 @@
 		if(policy)
 			to_chat(target, policy)
 		target.log_message("revived using surgical revival, [tplus] deciseconds from time of death, considered [late? "late" : "memory-intact"] revival under configured policy limits.", LOG_GAME)
-		message_admins(target, "[ADMIN_LOOKUPFLW(target)] возвращён к жизни и [late? "всё помнит" : "ничего не помнит"].")
+		message_admins("[ADMIN_LOOKUPFLW(target)] возвращён к жизни и [late? "всё помнит" : "ничего не помнит"].")
 		log_admin(target, "[target] возвращён к жизни и [late? "всё помнит" : "ничего не помнит"].")
 		return TRUE
 	else
