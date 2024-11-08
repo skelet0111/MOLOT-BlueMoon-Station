@@ -200,12 +200,24 @@ GLOBAL_LIST_INIT(strippable_human_items, create_strippable_list(list(
 	if (isnull(item))
 		return FALSE
 
-	to_chat(user, span_notice("You try to empty [source]'s [pocket_side] pocket."))
+	to_chat(user, span_notice("Вы пробуете обчистить [pocket_side] карман [source]."))
 
-	var/log_message = "[key_name(source)] is being pickpocketed of [item] by [key_name(user)] ([pocket_side])"
+	var/log_message = "[key_name(source)] стал жертвой воровства. Предмет [item] был украден из [pocket_side] кармана [key_name(user)]."
 	user.log_message(log_message, LOG_ATTACK, color="red")
 	source.log_message(log_message, LOG_VICTIM, color="red", log_globally=FALSE)
 	item.add_fingerprint(source)
+
+	var/strip_silence
+	var/obj/item/clothing/gloves/gloves = user.get_item_by_slot(ITEM_SLOT_GLOVES)
+	if(istype(gloves))
+		strip_silence = gloves.strip_silence
+
+	if(!strip_silence)
+		source.visible_message(
+			span_warning("[user] пробует обчистить [pocket_side] карман [source]."),
+			span_userdanger("[user] пробует обчистить твой [pocket_side] карман."),
+			ignored_mobs = user,
+		)
 
 	var/result = start_unequip_mob(item, source, user, POCKET_STRIP_DELAY)
 
@@ -215,17 +227,17 @@ GLOBAL_LIST_INIT(strippable_human_items, create_strippable_list(list(
 	return result
 
 /datum/strippable_item/mob_item_slot/pocket/proc/warn_owner(atom/owner)
-	to_chat(owner, span_warning("You feel your [pocket_side] pocket being fumbled with!"))
+	to_chat(owner, span_warning("Вы чувствуете чьи-то пальцы в [pocket_side] кармане!"))
 
 /datum/strippable_item/mob_item_slot/pocket/left
 	key = STRIPPABLE_ITEM_LPOCKET
 	item_slot = ITEM_SLOT_LPOCKET
-	pocket_side = "left"
+	pocket_side = "левом"
 
 /datum/strippable_item/mob_item_slot/pocket/right
 	key = STRIPPABLE_ITEM_RPOCKET
 	item_slot = ITEM_SLOT_RPOCKET
-	pocket_side = "right"
+	pocket_side = "правом"
 
 /proc/get_strippable_alternate_action_internals(obj/item/item, atom/source)
 	if (!iscarbon(source))
