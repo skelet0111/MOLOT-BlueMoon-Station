@@ -1,4 +1,0 @@
-author: CSDSP
-delete-after: true
-changes:
-  - bugfix: Code disabling the shuttle_catastrophe event while a BYOS is active.
