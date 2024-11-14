@@ -1,0 +1,5 @@
+author: LeDrascol
+delete-after: true
+changes:
+  - code_imp: Modular quirks are now in separate files
+  - code_imp: Modularized edits to upstream quirks
