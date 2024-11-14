@@ -8,6 +8,9 @@
 	mutanttongue = /obj/item/organ/tongue/abductor
 	species_category = SPECIES_CATEGORY_ALIEN
 	ass_image = 'icons/ass/assgrey.png'
+	icon_limbs = 'icons/mob/human_parts_greyscale.dmi'
+	limbs_id = SPECIES_SYNTH
+	wings_icons = SPECIES_WINGS_ROBOT
 
 /datum/species/abductor/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	. = ..()

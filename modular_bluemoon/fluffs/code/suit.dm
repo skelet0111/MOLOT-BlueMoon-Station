@@ -275,3 +275,6 @@
 	item_state = "les"
 	body_parts_covered = CHEST
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+
+/obj/item/clothing/suit/armor/abductor/vest/fake
+	actions_types = list()
