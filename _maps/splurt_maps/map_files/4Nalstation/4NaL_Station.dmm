@@ -33194,11 +33194,11 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/starboard/upper)
 "ktL" = (
-/obj/machinery/door/airlock{
-	name = "Hydroponics Backroom";
-	req_access_txt = "35"
-	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	name = "Secondary Service Hall";
+	req_one_access_txt = "25;26;35;28"
+	},
 /turf/open/floor/plasteel/cafeteria,
 /area/hallway/secondary/service/secondary)
 "ktS" = (
@@ -47121,14 +47121,14 @@
 /turf/open/floor/plasteel,
 /area/commons/storage/art)
 "oPe" = (
-/obj/machinery/door/airlock{
-	name = "Kitchen";
-	req_access_txt = "28"
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	name = "Secondary Service Hall";
+	req_one_access_txt = "25;26;35;28"
+	},
 /turf/open/floor/plasteel/cafeteria,
 /area/hallway/secondary/service/secondary)
 "oPp" = (
@@ -70789,10 +70789,6 @@
 /turf/open/floor/glass,
 /area/commons/dorms)
 "wux" = (
-/obj/machinery/door/airlock{
-	name = "Service Hall";
-	req_one_access_txt = "25;26;35;28"
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -70800,6 +70796,10 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	name = "Service Hall";
+	req_one_access_txt = "25;26;35;28"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/service)
 "wuA" = (
