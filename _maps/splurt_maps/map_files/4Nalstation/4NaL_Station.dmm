@@ -20821,6 +20821,7 @@
 /obj/item/pinpointer/crew,
 /obj/structure/table/glass,
 /obj/item/gun/syringe/dart,
+/obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "gAX" = (
@@ -30347,6 +30348,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 6
 	},
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "jCR" = (
@@ -44434,6 +44436,9 @@
 /obj/structure/transit_tube/diagonal,
 /turf/open/floor/glass,
 /area/maintenance/department/science/upper)
+"obG" = (
+/turf/open/floor/plating/airless,
+/area/space)
 "obR" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/maintenance/central/porn)
@@ -48398,6 +48403,10 @@
 	},
 /turf/closed/wall/r_wall,
 /area/ai_monitored/command/nuke_storage)
+"pkY" = (
+/obj/structure/lattice,
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
 "plc" = (
 /obj/structure/chair/office/dark,
 /turf/open/floor/plasteel/grimy,
@@ -55932,7 +55941,7 @@
 	dir = 4;
 	icon_state = "stairs_t"
 	},
-/turf/open/space/basic,
+/turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "rDs" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
@@ -238001,8 +238010,8 @@ tzs
 cJO
 rKt
 mfC
-nCP
-nCP
+pkY
+pkY
 nCP
 nCP
 nCP
@@ -238258,8 +238267,8 @@ eEY
 ngb
 ngb
 ngb
-nCP
-hgP
+pkY
+obG
 hgP
 hgP
 hgP
@@ -238515,8 +238524,8 @@ bLm
 wmU
 vCR
 rNu
-hgP
-hgP
+obG
+obG
 hgP
 hgP
 hgP
