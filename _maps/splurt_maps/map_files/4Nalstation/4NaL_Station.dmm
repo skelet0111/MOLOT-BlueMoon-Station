@@ -9043,6 +9043,9 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 8
 	},
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "cUH" = (
@@ -20276,6 +20279,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/light,
 /turf/open/floor/plasteel/white,
 /area/medical/patients_rooms/room_b)
 "grU" = (
@@ -30425,6 +30429,7 @@
 	dir = 6
 	},
 /obj/machinery/airalarm/directional/south,
+/obj/machinery/light,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "jCR" = (
@@ -30581,6 +30586,9 @@
 	dir = 9
 	},
 /obj/item/kirbyplants/random,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "jEQ" = (
@@ -44502,6 +44510,9 @@
 "obe" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 9
+	},
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
@@ -66630,6 +66641,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/light,
 /turf/open/floor/plasteel/white,
 /area/medical/patients_rooms/room_a)
 "vaR" = (
