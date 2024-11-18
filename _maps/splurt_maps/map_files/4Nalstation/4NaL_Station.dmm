@@ -29275,6 +29275,9 @@
 	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "jix" = (
@@ -52628,6 +52631,8 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/zone2)
 "qBk" = (
