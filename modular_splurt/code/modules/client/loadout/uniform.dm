@@ -261,3 +261,33 @@
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_JOBS
 	restricted_roles = list("Clown")
 	restricted_desc = "Clown"
+
+// Vore station import/improvement
+
+/datum/gear/uniform/wench
+	name = "Wench's Dress"
+	path = /obj/item/clothing/under/misc/wench
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+	loadout_initial_colors = list("#ffffff", "#242424", "96710f")
+
+/datum/gear/uniform/tian_dress
+	name = "Tian Dress"
+	path = /obj/item/clothing/under/misc/tian_dress
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+	loadout_initial_colors = list("#7c1649", "#006cec")
+
+/datum/gear/uniform/vneck
+	name = "V-neck Dress"
+	path = /obj/item/clothing/under/misc/vneck
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+	loadout_initial_colors = list("#1c1c1c")
+
+/datum/gear/uniform/revealingdress
+	name = "Revealing Dress"
+	path = /obj/item/clothing/under/misc/revealingdress
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+	loadout_initial_colors = list("#211919", "#4ce2ff")

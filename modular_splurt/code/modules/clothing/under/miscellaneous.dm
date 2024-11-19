@@ -280,7 +280,7 @@
 	desc = "For those goth girls with lots of chest to show."
 	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
 	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC|STYLE_NO_ANTHRO_ICON
 	icon_state = "pentatop"
 	item_state = "pentatop"
 	body_parts_covered = CHEST
@@ -412,3 +412,65 @@
 /obj/item/clothing/under/rank/prisoner/skirt/reskin_obj(mob/M)
 	. = ..()
 	name = "prison [current_skin] jumpskirt"
+
+// Vore station import/improvement
+
+/obj/item/clothing/under/misc/wench
+	name = "Wench's Dress"
+	desc = "A white dress styled like a Ye Old Barmaid. Saucy!"
+	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	icon_state = "wench"
+	item_state = "wench"
+	can_adjust = TRUE
+	alt_covers_chest = FALSE
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	body_parts_covered = CHEST|GROIN|LEGS
+
+/obj/item/clothing/under/misc/wench/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#ffffff", "#242424", "96710f"), 3)
+	if(adjusted)
+		AddElement(/datum/element/polychromic)
+
+/obj/item/clothing/under/misc/tian_dress
+	name = "Tian Dress"
+	desc= "A simple, tight fitting purple dress."
+	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	icon_state = "tian_dress"
+	item_state = "tian_dress"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	body_parts_covered = CHEST|GROIN|LEGS
+
+/obj/item/clothing/under/misc/tian_dress/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#7c1649", "#006cec"), 2)
+
+/obj/item/clothing/under/misc/vneck
+	name = "V-neck Dress"
+	desc = "A black V-neck Dress with an exaggerated neckline covered in a sheer mesh."
+	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	icon_state = "vneckdress"
+	item_state = "vneckdress"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	body_parts_covered = CHEST|GROIN|LEGS
+
+/obj/item/clothing/under/misc/vneck/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#1c1c1c"), 1)
+
+/obj/item/clothing/under/misc/revealingdress
+	name = "Revealing Dress"
+	desc = "A very revealing polychromatic dress. Is this work appropriate?"
+	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	icon_state = "revealingdress"
+	item_state = "revealingdress"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	body_parts_covered = CHEST|GROIN|LEGS
+
+/obj/item/clothing/under/misc/revealingdress/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#211919", "#4ce2ff"), 2)
