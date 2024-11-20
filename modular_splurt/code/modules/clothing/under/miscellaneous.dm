@@ -474,3 +474,46 @@
 /obj/item/clothing/under/misc/revealingdress/ComponentInitialize()
 	. = ..()
 	AddElement(/datum/element/polychromic, list("#211919", "#4ce2ff"), 2)
+
+/obj/item/clothing/under/misc/rippedpunk
+	name = "ripped punk jeans"
+	desc = "Black ripped jeans and a fishnet top. How punk."
+	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	anthro_mob_worn_overlay = 'modular_splurt/icons/mob/clothing/uniform_digi.dmi'
+	icon_state = "rippedpunk"
+	item_state = "rippedpunk"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+
+/obj/item/clothing/under/misc/rippedpunk/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#211919", "#4ce2ff"), 2)
+
+/obj/item/clothing/under/misc/gothic
+	name = "gothic dress"
+	desc = "A polychromatic dress with a sheer mesh over it, tastefully old school goth."
+	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	icon_state = "gothic"
+	item_state = "gothic"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	body_parts_covered = CHEST|GROIN|LEGS
+
+/obj/item/clothing/under/misc/gothic/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#232323", "#232323", "#232323", "#232323"), 4)
+
+/obj/item/clothing/under/misc/pentagram
+	name = "pentagram dress"
+	desc = "A polychromatic dress with straps over the chest in the shape of a pentagram."
+	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	icon_state = "pentagram"
+	item_state = "pentagram"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	body_parts_covered = CHEST|GROIN|LEGS
+
+/obj/item/clothing/under/misc/pentagram/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#211919", "#232323"), 2)

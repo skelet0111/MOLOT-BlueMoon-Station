@@ -291,3 +291,24 @@
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
 	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
 	loadout_initial_colors = list("#211919", "#4ce2ff")
+
+/datum/gear/uniform/rippedpunk
+	name = "Ripped Punk"
+	path = /obj/item/clothing/under/misc/rippedpunk
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_GENERAL
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+	loadout_initial_colors = list("#211919", "#4ce2ff")
+
+/datum/gear/uniform/gothic
+	name = "gothic dress"
+	path = /obj/item/clothing/under/misc/gothic
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+	loadout_initial_colors = list("#232323", "#232323", "#232323", "#232323")
+
+/datum/gear/uniform/pentagram
+	name = "pentagram dress"
+	path = /obj/item/clothing/under/misc/pentagram
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+	loadout_initial_colors = list("#211919", "#232323")
