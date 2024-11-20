@@ -38250,6 +38250,10 @@
 	},
 /turf/open/floor/plasteel/hallway,
 /area/engineering/break_room)
+"mbs" = (
+/obj/machinery/airalarm/directional/west,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
 "mbu" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
@@ -57989,6 +57993,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 1
 	},
+/obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/dark/texcorner{
 	dir = 4
 	},
@@ -59823,6 +59828,10 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/engine/sat)
+"sKH" = (
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/plasteel/dark,
+/area/security/prison)
 "sKJ" = (
 /turf/open/floor/plating/beach/coastline_t{
 	dir = 5
@@ -73574,6 +73583,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
+/obj/machinery/airalarm/directional/east,
 /turf/open/floor/plasteel/white,
 /area/science/hall/mid)
 "xls" = (
@@ -105979,7 +105989,7 @@ glU
 ehp
 eLL
 ugC
-iWa
+sKH
 lJw
 uWV
 uWV
@@ -173639,7 +173649,7 @@ mtt
 daE
 gqY
 daE
-daE
+mbs
 daE
 cdm
 uXm
