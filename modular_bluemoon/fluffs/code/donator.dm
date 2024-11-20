@@ -317,6 +317,13 @@
 	ckeywhitelist = list("irfish", "devildeadspace", "mikolaostavkin", "allazarius", "definitelynotnesuby")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
+/datum/gear/donator/bm/tratch_patch
+	name = "Tratch Patch"
+	slot = ITEM_SLOT_BACKPACK
+	path = /obj/item/clothing/accessory/tratch_patch
+	ckeywhitelist = list("fryktik", "hazzi", "targon38", "ghos7ik")
+	subcategory = LOADOUT_SUBCATEGORIES_DON02
+
 /datum/gear/donator/bm/SH_jacket
 	name = "Shiro Silverhand Jacket"
 	slot = ITEM_SLOT_OCLOTHING
