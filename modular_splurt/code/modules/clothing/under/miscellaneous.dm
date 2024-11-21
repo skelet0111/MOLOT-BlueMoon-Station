@@ -517,3 +517,87 @@
 /obj/item/clothing/under/misc/pentagram/ComponentInitialize()
 	. = ..()
 	AddElement(/datum/element/polychromic, list("#211919", "#232323"), 2)
+
+/obj/item/clothing/under/misc/swoop
+	name = "swooped dress"
+	desc = "A polychromatic dress that swoops to the side."
+	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	icon_state = "swoop"
+	item_state = "swoop"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	body_parts_covered = CHEST|GROIN|LEGS
+
+/obj/item/clothing/under/misc/swoop/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#f2ce66", "#272525"), 2)
+
+/obj/item/clothing/under/misc/asym
+	name = "asymmetrical slit skirt"
+	desc = "A futuristic uniform with asymmetrical slit skirt. Trendy!"
+	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	icon_state = "asym"
+	item_state = "asym"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	body_parts_covered = CHEST|GROIN|LEGS
+
+/obj/item/clothing/under/misc/asym/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#8abe67", "#8abe67"), 2)
+
+/obj/item/clothing/under/misc/sheer
+	name = "sheer dress"
+	desc = "An entirely sheer dress. Best worn with nothing underneath!"
+	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	icon_state = "sheer"
+	item_state = "sheer"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	body_parts_covered = CHEST|GROIN|LEGS
+
+/obj/item/clothing/under/misc/sheer/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#3e769cc5"), 1)
+
+/obj/item/clothing/under/misc/corsetdress
+	name = "corset dress"
+	desc = "A polychromatic dress with a corset, really makes the gals pop."
+	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	icon_state = "corsetdress"
+	item_state = "corsetdress"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	body_parts_covered = CHEST|GROIN|LEGS
+
+/obj/item/clothing/under/misc/corsetdress/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#1e1b1e", "#f6efdb", "#4b6c5a", "#d4ccb3"), 4)
+
+/obj/item/clothing/under/misc/miniskirt
+	name = "fashionable miniskirt"
+	desc = "An impractically short miniskirt allegedly making waves through the local fashion scene."
+	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	icon_state = "miniskirt"
+	item_state = "miniskirt"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	body_parts_covered = GROIN
+
+/obj/item/clothing/under/misc/miniskirt/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#0e0e0e"), 1)
+
+/obj/item/clothing/under/misc/miniskirt_sheer
+	name = "fashionable sheer miniskirt"
+	desc = "An impractically short miniskirt, can it even be called clothing though?"
+	icon = 'modular_splurt/icons/obj/clothing/uniforms.dmi'
+	mob_overlay_icon = 'modular_splurt/icons/mob/clothing/uniform.dmi'
+	icon_state = "miniskirt_sheer"
+	item_state = "miniskirt_sheer"
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	body_parts_covered = GROIN
+
+/obj/item/clothing/under/misc/miniskirt_sheer/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/polychromic, list("#0e0e0e"), 1)

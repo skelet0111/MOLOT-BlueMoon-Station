@@ -312,3 +312,45 @@
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
 	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
 	loadout_initial_colors = list("#211919", "#232323")
+
+/datum/gear/uniform/swoop
+	name = "swooped dress"
+	path = /obj/item/clothing/under/misc/swoop
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+	loadout_initial_colors = list("#f2ce66", "#272525")
+
+/datum/gear/uniform/asym
+	name = "asymmetrical slit skirt"
+	path = /obj/item/clothing/under/misc/asym
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+	loadout_initial_colors = list("#8abe67", "#8abe67")
+
+/datum/gear/uniform/sheer
+	name = "sheer dress"
+	path = /obj/item/clothing/under/misc/sheer
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+	loadout_initial_colors = list("#3e769cc5")
+
+/datum/gear/uniform/corsetdress
+	name = "corset dress"
+	path = /obj/item/clothing/under/misc/corsetdress
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+	loadout_initial_colors = list("#1e1b1e", "#f6efdb", "#4b6c5a", "#d4ccb3")
+
+/datum/gear/uniform/miniskirt_sheer
+	name = "fashionable sheer miniskirt"
+	path = /obj/item/clothing/under/misc/miniskirt_sheer
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SKIRTS
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+	loadout_initial_colors = list("#0e0e0e")
+
+/datum/gear/uniform/miniskirt
+	name = "fashionable miniskirt"
+	path = /obj/item/clothing/under/misc/miniskirt
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SKIRTS
+	loadout_flags = LOADOUT_CAN_NAME | LOADOUT_CAN_DESCRIPTION | LOADOUT_CAN_COLOR_POLYCHROMIC
+	loadout_initial_colors = list("#0e0e0e")
