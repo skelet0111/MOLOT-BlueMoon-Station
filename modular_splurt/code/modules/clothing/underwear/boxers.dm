@@ -71,5 +71,5 @@
 
 /obj/item/clothing/underwear/briefs/panties/maebari/maebari_anal_bandaid
 	name = "anal bandaid"
-	desc = "This is literally just a bandaid, put directly onto a asshole, because someone couldn't even be bothered to wear underwear."
+	desc = "This is literally just a bandaid, put directly onto a asshole... because someone couldn't even be bothered to wear underwear."
 	icon_state = "maebari_anal_bandaid"
