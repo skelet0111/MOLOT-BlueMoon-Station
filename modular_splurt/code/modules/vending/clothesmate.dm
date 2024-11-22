@@ -55,6 +55,18 @@
 		/obj/item/clothing/under/pants/yoga = 3,
 		/obj/item/clothing/under/blutigen_undergarment = 3,
 		/obj/item/clothing/glasses/contact = 3,
+		/obj/item/clothing/underwear/briefs/panties/maebari = 3,
+		/obj/item/clothing/underwear/briefs/panties/maebari/maebari_heart = 3,
+		/obj/item/clothing/underwear/briefs/panties/maebari/maebari_sheer = 3,
+		/obj/item/clothing/underwear/briefs/panties/maebari/maebari_mini = 3,
+		/obj/item/clothing/underwear/briefs/panties/maebari/maebari_sheer_mini = 3,
+		/obj/item/clothing/underwear/briefs/panties/maebari/maebari_vag_sheer = 3,
+		/obj/item/clothing/underwear/briefs/panties/maebari/maebari_vag_mini = 3,
+		/obj/item/clothing/underwear/briefs/panties/maebari/maebari_vag = 3,
+		/obj/item/clothing/underwear/briefs/panties/maebari/maebari_anal = 3,
+		/obj/item/clothing/underwear/briefs/panties/maebari/maebari_vag_x = 3,
+		/obj/item/clothing/underwear/briefs/panties/maebari/maebari_vag_bandaid = 3,
+		/obj/item/clothing/underwear/briefs/panties/maebari/maebari_anal_bandaid = 3,
 		/obj/item/clothing/accessory/pride/other = 30
 	)
 	var/list/extra_contraband = list(
