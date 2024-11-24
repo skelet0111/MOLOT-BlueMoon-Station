@@ -1,10 +1,10 @@
 /datum/quirk/breathless
-	name = "Breathless"
-	desc = "Whether due to genetic engineering, technology, or bluespace magic, you no longer require air to function. This also means that administering life-saving manuevers such as CPR would be impossible."
+	name = "Недышащий"
+	desc = "Благодаря генной инженерии, технологиям или магии блюспейса вам больше не нужен воздух для жизнедеятельности. Это также означает, что проведение таких жизненно важных манипуляций, как искусственное дыхание, станет невозможным."
 	value = 3
-	medical_record_text = "Patient's biology demonstrates no need for breathing."
-	gain_text = span_notice("You no longer need to breathe.")
-	lose_text = span_notice("You need to breathe again...")
+	medical_record_text = "Биологические показатели пациента свидетельствуют об отсутствии необходимости в дыхании."
+	gain_text = span_notice("Вам больше не нужно дышать.")
+	lose_text = span_notice("Вам нужно снова дышать...")
 	processing_quirk = TRUE
 
 /datum/quirk/breathless/add()
@@ -15,6 +15,10 @@
 /datum/quirk/breathless/remove()
 	. = ..()
 	var/mob/living/carbon/human/H = quirk_holder
+	// BLUEMOON EDIT START - sanity check
+	if(!H)
+		return
+	// BLUEMOON EDIT END
 	REMOVE_TRAIT(H,TRAIT_NOBREATH, ROUNDSTART_TRAIT)
 
 /datum/quirk/breathless/on_process()

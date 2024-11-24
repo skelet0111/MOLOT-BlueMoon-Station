@@ -1,8 +1,8 @@
 /datum/quirk/messy
-	name = "Messy"
-	desc = "Due to your unique biology/construction/bluespace magic you always manage to make a mess when you cum, even if it's not possible in normal circumstances."
+	name = "Грязнуля"
+	desc = "Из-за биологических особенностей вашего тела или блюспейс аномалии вы всегда устраиваете бардак, когда кончаете. Даже в тех обстоятельствах, когда это казалось бы невозможно."
 	value = 0
 	mob_trait = TRAIT_MESSY
-	gain_text = span_lewd("You feel like covering something in layer of your fluids.")
-	lose_text = span_notice("You don't feel 'messy' anymore.")
-	medical_record_text = "Had to be sedated after covering entire hospital wing with cum."
+	gain_text = span_lewd("Вы хотите покрыть что-то с помощью своих органических жидкостей.")
+	lose_text = span_notice("Вы более не ощущаете себя 'грязнулей'.")
+	medical_record_text = "Врачу пришлось принять успокоительное после того, как пациент обкончал весь медбей."

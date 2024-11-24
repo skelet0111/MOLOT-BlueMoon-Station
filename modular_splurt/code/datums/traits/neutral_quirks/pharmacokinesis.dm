@@ -1,9 +1,9 @@
 /datum/quirk/pharmacokinesis //Supposed to prevent unwanted organ additions. But i don't think it's really working rn
-	name = "Acute Hepatic Pharmacokinesis" //copypasting dumbo
-	desc = "You have a genetic disorder that causes Incubus Draft and Succubus Milk to be absorbed by your liver instead."
+	name = "Острый Печеночный Фармакокинез" //copypasting dumbo
+	desc = "У вас генетическое заболевание, которое заставляет печень усваивать семя инкуба и молоко суккуба при попадании их в организм."
 	value = 0
 	mob_trait = TRAIT_PHARMA
-	lose_text = span_notice("Your liver feels... different, somehow.")
+	lose_text = span_notice("Ваша печень ощущается... по-иному.")
 	var/active = FALSE
 	var/power = 0
 	var/cachedmoveCalc = 1

@@ -1,6 +1,6 @@
 /datum/quirk/fluid_infuser
-	name = "Fluid Infuser"
-	desc = "You just couldn't wait to get one of NanoTrasen's new fluid inducers when they first came out, so now you can hop in the station with editable titty milk!"
+	name = "Тядзин"
+	desc = "Вы не упустили возможность приобрести новый жидкостный индуктор от NanoTrasen, как только он был выпущен, и теперь можете заскочить на станцию с изменяемым грудным молочком!"
 	value = 0
 
 /datum/quirk/fluid_infuser/on_spawn()

@@ -1,11 +1,11 @@
 //You are a CIA agent.
 /datum/quirk/cosglow
-	name = "Cosmetic Glow"
-	desc = "You glow! Be it an obscure radiation emission, or simple Bioluminescent properties.."
+	name = "Косметическая подсветка"
+	desc = "Ваше тело слегка светится! Что бы это не значило - излучение от радиации или люминисцентных грибов вдоль кожного покрова.."
 	value = 0
 	mob_trait = TRAIT_COSGLOW
-	gain_text = span_notice("You feel empowered by a three-letter agency!")
-	lose_text = span_notice("You realize that working for the space CIA sucks!")
+	gain_text = span_notice("Вы ощущаете приток света вокруг себя!")
+	lose_text = span_notice("Вы осознаете, что косплеить космическое ЦРУ совсем не для вас!")
 
 /datum/quirk/cosglow/add()
 	// Define quirk holder mob
@@ -17,7 +17,10 @@
 /datum/quirk/cosglow/remove()
 	// Define quirk holder mob
 	var/mob/living/carbon/human/quirk_mob = quirk_holder
-
+	// BLUEMOON EDIT START - sanity check
+	if(!quirk_mob)
+		return
+	// BLUEMOON EDIT END
 	// Remove glow control action
 	var/datum/action/cosglow/update_glow/quirk_action = locate() in quirk_mob.actions
 	quirk_action.Remove(quirk_mob)
@@ -65,6 +68,11 @@
 
 	// Define user mob
 	var/mob/living/carbon/human/action_mob = owner
+
+	// BLUEMOON EDIT START - sanity check
+	if(!action_mob)
+		return
+	// BLUEMOON EDIT END
 
 	// Remove glow
 	action_mob.remove_filter("rad_fiend_glow")

@@ -1,11 +1,11 @@
 /datum/quirk/werewolf //adds the werewolf quirk
-	name = "Werewolf"
-	desc = "A beastly affliction allows you to shape-shift into a large anthropomorphic canine at will."
+	name = "Оборотень"
+	desc = "Ликантропия позволяет вам перевоплощаться в большого прямоходящего волка."
 	value = 0
 	mob_trait = TRAIT_WEREWOLF
-	gain_text = span_notice("You feel the full moon beckon.")
-	lose_text = span_notice("The moon's call hushes into silence.")
-	medical_record_text = "Patient has been reported howling at the night sky."
+	gain_text = span_notice("Полная луна зовёт.")
+	lose_text = span_notice("Зов луны растворяется в тишине.")
+	medical_record_text = "Сообщалось, что пациент выл на ночное небо."
 	var/list/old_features
 
 /datum/quirk/werewolf/add()
@@ -32,6 +32,10 @@
 	quirk_action.Grant(quirk_holder)
 
 /datum/quirk/werewolf/remove()
+	// BLUEMOON EDIT START - sanity check
+	if(!quirk_holder)
+		return
+	// BLUEMOON EDIT END
 	// Define quirk action
 	var/datum/action/cooldown/werewolf/transform/quirk_action = locate() in quirk_holder.actions
 

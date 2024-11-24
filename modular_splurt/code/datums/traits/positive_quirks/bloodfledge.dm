@@ -4,13 +4,13 @@
 #define BLOODFLEDGE_BANK_CAPACITY (BLOODFLEDGE_DRAIN_NUM * 2)
 
 /datum/quirk/bloodfledge
-	name = "Bloodsucker Fledgling"
-	desc = "You are a fledgling belonging to ancient Bloodsucker bloodline. While the blessing has yet to fully convert you, some things have changed. Only blood will sate your hungers, and holy energies will cause your flesh to char. <b>This is NOT an antagonist role!</b>"
-	value = 2
-	medical_record_text = "Patient exhibits onset symptoms of a sanguine curse."
+	name = "Отпрыск Кровопийцы"
+	desc = "Вы новообращенный, принадлежащий к древнему роду Кровопийц. Благословению еще предстоит полностью изменить вас, но некоторые вещи уже поменялись. Только кровь утолит голод, а божественная сила обуглит вашу плоть. <b>Это НЕ роль антагониста!</b>"
+	value = 0
+	medical_record_text = "Пациент демонстрирует начальные симптомы кровяного проклятия."
 	mob_trait = TRAIT_BLOODFLEDGE
-	gain_text = span_notice("You feel a sanguine thirst.")
-	lose_text = span_notice("You feel the sanguine thirst fade away.")
+	gain_text = span_notice("Вы чувствуете жажду крови.")
+	lose_text = span_notice("Вы чувствуете, что жажда крови угасла.")
 	processing_quirk = FALSE // Handled by crates.dm
 
 /datum/quirk/bloodfledge/add()
@@ -124,6 +124,11 @@
 /datum/quirk/bloodfledge/remove()
 	// Define quirk mob
 	var/mob/living/carbon/human/quirk_mob = quirk_holder
+
+	// BLUEMOON EDIT START - sanity check
+	if(!quirk_mob)
+		return
+	// BLUEMOON EDIT END
 
 	// Remove quirk traits
 	REMOVE_TRAIT(quirk_mob, TRAIT_NO_PROCESS_FOOD, ROUNDSTART_TRAIT)
@@ -335,7 +340,7 @@
 		bite_target = pull_target
 
 	// Or cocooned carbon
-	else if(istype(pull_target,/obj/structure/arachnid/cocoon))
+	else if(istype(pull_target, /obj/structure/spider/stickyweb/arachnid/cocoon))
 		// Define if cocoon has a valid target
 		// This cannot use pull_target
 		var/possible_cocoon_target = locate(/mob/living/carbon/human) in action_owner.pulling.contents

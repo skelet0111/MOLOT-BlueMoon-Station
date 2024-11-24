@@ -1,7 +1,6 @@
-//succubus and incubus below
 /datum/quirk/succubus
-	name = "Succubus"
-	desc = "Your seductress-like metabolism can only be sated by semen. (And milk, if you're an Incubus as well.)"
+	name = "Суккуб"
+	desc = "Ваш голод может быть утолен только семенем. (И молоком, если вы также Инкуб.)"
 	value = 0
 	mob_trait = TRAIT_SUCCUBUS
 	processing_quirk = TRUE

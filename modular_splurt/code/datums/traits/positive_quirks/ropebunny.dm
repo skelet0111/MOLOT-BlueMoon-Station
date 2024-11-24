@@ -1,10 +1,10 @@
 /datum/quirk/ropebunny
-	name = "Rope Bunny"
-	desc = "You have mastered all forms of bondage! You can create bondage rope out of cloth, and bondage bolas out of bondage rope!"
+	name = "Верёвочный Кролик"
+	desc = "Вы обучены искусно вязать верёвки любой формы. Вы можете создавать веревку из ткани, а из этой веревки - болы!"
 	value = 2
 
 /datum/quirk/ropebunny/add()
-	.=..()
+	. = ..()
 	var/mob/living/carbon/human/H = quirk_holder
 	if (!H)
 		return
@@ -13,6 +13,10 @@
 
 /datum/quirk/ropebunny/remove()
 	var/mob/living/carbon/human/H = quirk_holder
+	// BLUEMOON EDIT START - sanity check
+	if(!H)
+		return
+	// BLUEMOON EDIT END
 	var/datum/action/ropebunny/conversion/C = locate() in H.actions
 	C.Remove(H)
 	. = ..()

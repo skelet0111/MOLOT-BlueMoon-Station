@@ -1,10 +1,10 @@
 /datum/quirk/flimsy
-	name = "Flimsy"
-	desc = "Your body is a little more fragile then most, decreasing total health by 20%."
+	name = "Хрупкость"
+	desc = "Ваше тело слабее, чем у большинства, здоровье уменьшено на 20%."
 	value = -2
-	medical_record_text = "Patient has abnormally low capacity for injury."
-	gain_text = span_notice("You feel like you could break with a single hit.")
-	lose_text = span_notice("You feel more durable.")
+	medical_record_text = "У пациента чрезвычайно низкая устойчивость к травмам."
+	gain_text = span_notice("Вы чувствуете, что вас могли бы снести с одного удара.")
+	lose_text = span_notice("Вы чувствуете себя крепче.")
 
 /datum/quirk/flimsy/add()
 	quirk_holder.maxHealth *= 0.8

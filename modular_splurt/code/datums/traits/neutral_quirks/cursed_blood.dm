@@ -1,8 +1,8 @@
 /datum/quirk/cursed_blood
-	name = "Cursed Blood"
-	desc = "Your lineage is cursed with the paleblood curse. Best to stay away from holy water... Hell water, on the other hand..."
+	name = "Проклятая Кровь"
+	desc = "На вашем роду лежит проклятие бледной крови. Лучше держаться подальше от святой воды... а вот адской воды, напротив..."
 	value = 0
 	mob_trait = TRAIT_CURSED_BLOOD
-	gain_text = span_notice("A curse from a land where men return as beasts runs deep in your blood.")
-	lose_text = span_notice("You feel the weight of the curse in your blood finally gone.")
-	medical_record_text = "Patient suffers from an unknown type of aversion to holy reagents. Keep them away from a chaplain."
+	gain_text = span_notice("Проклятие с земель, где люди возвращаются зверьми, течёт в вашей крови.")
+	lose_text = span_notice("Вы чувствуете, что тяжесть проклятия крови наконец пропала.")
+	medical_record_text = "Организм пациента по неизвестной причине отторгает святые реагенты. Рекомендуется держать подальше от капеллана."

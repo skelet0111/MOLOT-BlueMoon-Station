@@ -1,7 +1,7 @@
 /datum/quirk/illiterate
-	name = "Illiterate"
-	desc = "You can't read nor write, plain and simple."
+	name = "Неграмотность"
+	desc = "Всё просто - вы не умеете ни писать, ни читать."
 	value = -1
 	mob_trait = TRAIT_ILLITERATE
-	gain_text = span_notice("The knowledge of how to read seems to escape from you.")
-	lose_text = span_notice("Written words suddenly make sense again.")
+	gain_text = "<span class='notice'>Знание грамоты... ускользает от вас.</span>"
+	lose_text = "<span class='notice'>Написанные слова снова обретают смысл."

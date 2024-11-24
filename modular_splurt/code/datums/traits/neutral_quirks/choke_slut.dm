@@ -1,7 +1,7 @@
 /datum/quirk/choke_slut
-	name = "Choke Slut"
-	desc = "You are aroused by suffocation."
+	name = "Асфиксиофилия"
+	desc = "Вас возбуждает удушье."
 	value = 0
 	mob_trait = TRAIT_CHOKE_SLUT
-	gain_text = span_notice("You feel like you want to feel fingers around your neck, choking you until you pass out or make a mess... Maybe both.")
-	lose_text = span_notice("Seems you don't have a kink for suffocation anymore.")
+	gain_text = span_notice("Вы хотите ощутить пальцы вокруг шеи, сжимающие её до тех пор, пока не отключитесь или кончите... а может, всё сразу?")
+	lose_text = span_notice("Похоже, вас больше не возбуждает асфиксия.")

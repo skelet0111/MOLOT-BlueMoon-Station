@@ -7,7 +7,6 @@
 	min_players = 30
 	category = EVENT_CATEGORY_ENTITIES
 
-/*
 /datum/round_event_control/slaughter/canSpawnEvent()
 	weight = initial(src.weight)
 	var/list/allowed_turf_typecache = typecacheof(/turf/open) - typecacheof(/turf/open/space)
@@ -24,7 +23,6 @@
 		weight += 0.03
 		CHECK_TICK
 	return ..()
-*/
 
 /datum/round_event/ghost_role/slaughter
 	minimum_required = 1

@@ -1,8 +1,8 @@
 /datum/quirk/kiss_slut
-	name = "Kiss Slut"
-	desc = "The sheer thought of kissing someone makes you blush and overheat, effectively increasing your arousal with each smooch."
+	name = "Чувствительные Губы"
+	desc = "Одна только мысль о поцелуе заставляет вас краснеть и возбуждаться, эффективно усиляя ваше возбуждение с каждым поцелуем."
 	value = 0
 	mob_trait = TRAIT_KISS_SLUT
-	gain_text = span_lewd("You feel like kissing someone...")
-	lose_text = span_notice("You don't feel like kissing someone anymore...")
-	medical_record_text = "Patient seems to demonstrate an extraordinary liking in kissing."
+	gain_text = span_lewd("Вам хочется поцеловать кого-нибудь...")
+	lose_text = span_notice("Вас больше не тянет целоваться...")
+	medical_record_text = "Пациент проявляет необычайную симпатию к поцелуям."

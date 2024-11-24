@@ -1,10 +1,10 @@
 /datum/quirk/jiggly_ass
-	name = "Buns of Thunder"
-	desc = "That pants-stretching, seat-creaking, undie-devouring butt of yours is as satisfying as it is difficult to keep balanced when smacked!"
+	name = "Булки Грома"
+	desc = "Твоя задница, растягивающая штаны, настолько же приятна, насколько трудно удержать равновесие, когда ее шлепают!"
 	value = 0
 	mob_trait = TRAIT_JIGGLY_ASS
-	gain_text = span_notice("Your butt feels extremely smackable.")
-	lose_text = span_notice("Your butt feels normally smackable again.")
+	gain_text = span_notice("Ваш зад кажется очень удобным для шлепков.")
+	lose_text = span_notice("Ваша задница снова чувствует себя нормально.")
 
 /datum/quirk/jiggly_ass/add()
 	// Add examine text
@@ -16,4 +16,4 @@
 
 // Quirk examine text
 /datum/quirk/jiggly_ass/proc/on_examine_holder(atom/examine_target, mob/living/carbon/human/examiner, list/examine_list)
-	examine_list += span_lewd("[quirk_holder.p_their(TRUE)] butt could use a firm smack.")
+	examine_list += span_lewd("[quirk_holder.ru_ego(TRUE)] заднице не помешает крепкий шлепок.")

@@ -1,9 +1,11 @@
 /datum/quirk/nudist
-	name = "Nudist"
-	desc = "Wearing most types of clothing unnerves you. Bring a gear harness!"
-	gain_text = span_notice("You feel spiritually connected to your natural form.")
-	lose_text = span_notice("It feels like clothing could fit you comfortably.")
-	medical_record_text = "Patient expresses a psychological need to remain unclothed."
+	// Mostly derived from masked_mook.
+	// Spawning with a gear harness is preferable, but failed during testing.
+	name = "Нудизм"
+	desc = "Ношение большинства типов одежды нервирует вас. Несите портупею!"
+	gain_text = span_notice("Вы чувствуете духовную связь со своим естеством.")
+	lose_text = span_notice("Вы больше не чувствуете дискомфорта при ношении одежды.")
+	medical_record_text = "Пациент выражает психологическую потребность оставаться без одежды."
 	value = 0
 	mood_quirk = TRUE
 	var/is_nude
@@ -47,7 +49,7 @@
 			return
 
 		// Alert user in chat
-		to_chat(quirk_mob, span_nicegreen("You begin to feel better without the restraint of clothing!"))
+		to_chat(quirk_mob, span_nicegreen("Вам намного лучше без сковывающих вас обносков!"))
 
 		// Set nude status
 		is_nude = TRUE
@@ -62,7 +64,7 @@
 			return
 
 		// Alert user in chat
-		to_chat(quirk_mob, span_warning("The clothes feel wrong on your body..."))
+		to_chat(quirk_mob, span_warning("Одежда вашему телу не подходит..."))
 
 		// Set nude status
 		is_nude = FALSE
@@ -71,7 +73,7 @@
 	SIGNAL_HANDLER
 
 	// Define default status term
-	var/mood_term = "content with [quirk_holder.p_their()] lack of"
+	var/mood_term = "в радостном состоянии из-за отсутствия на себе"
 
 	// Define default span class
 	var/span_class
@@ -79,10 +81,10 @@
 	// Check if dressed
 	if(!is_nude)
 		// Set negative term
-		mood_term = "disturbed by wearing"
+		mood_term = "в раздражении из-за ношения на себе"
 
 		// Set negative span class
 		span_class = "warning"
 
 	// Add examine text
-	examine_list += "<span class='[span_class]'>[quirk_holder.p_they(TRUE)] appear[quirk_holder.p_s()] [mood_term] clothing.</span>"
+	examine_list += "<span class='[span_class]'>[quirk_holder.p_they_ru(TRUE)] [mood_term] одежды.</span>"

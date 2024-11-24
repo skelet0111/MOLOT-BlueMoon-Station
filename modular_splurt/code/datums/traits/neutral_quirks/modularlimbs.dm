@@ -1,6 +1,6 @@
 /datum/quirk/modular
-	name = "Modular Limbs"
-	desc = "Your limbs are able to be attached and detached easily... Unfortunately, everyone around you can alter your limbs too! Right click yourself to use this quirk."
+	name = "Модульные Конечности"
+	desc = "Ваши конечности можно легко присоединять и отсоединять... к сожалению, все окружающие тоже могут изменять ваши конечности! Щелкните правой кнопкой мыши на себе, чтобы использовать эту причуду."
 	value = 0
 
 /datum/quirk/modular/add()
@@ -9,6 +9,10 @@
 
 /datum/quirk/modular/remove()
 	var/mob/living/carbon/human/C = quirk_holder
+	// BLUEMOON EDIT START - sanity check
+	if(!C)
+		return
+	// BLUEMOON EDIT END
 	remove_verb(C,/mob/living/proc/alterlimbs)
 
 /mob/living/proc/alterlimbs()

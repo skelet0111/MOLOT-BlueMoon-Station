@@ -1,6 +1,6 @@
 /datum/quirk/gargoyle //Mmmm yes stone time
-	name = "Gargoyle"
-	desc = "You are some form of gargoyle! You can only leave your stone form for so long, and will have to return to it to regain energy. On the bright side, you heal in statue form!"
+	name = "Горгулья"
+	desc = "Вы относитесь к какому-то виду горгульи! Вы можете выходить из каменной формы на определенное время, но вам придётся в неё вернуться, чтобы восстановить энергию. С другой стороны, вы лечитесь, будучи в камне!"
 	value = 0
 	processing_quirk = TRUE
 	var/energy = 0
@@ -75,7 +75,7 @@
 	. = ..()
 
 //
-// Quirk actions: Gargoyle
+// Quirk: Gargoyle
 //
 
 /datum/action/gargoyle/transform

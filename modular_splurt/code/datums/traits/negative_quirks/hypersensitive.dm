@@ -1,11 +1,11 @@
 /datum/quirk/hypersensitive
-	name = "Hypersensitive"
-	desc = "For better or worse, everything seems to affect your mood more than it should."
+	name = "Гиперчувствительность"
+	desc = "Всё вокруг влияет на ваше настроение больше, чем должно."
 	value = -1
-	gain_text = span_danger("You seem to make a big deal out of everything.")
-	lose_text = span_notice("You don't seem to make a big deal out of everything anymore.")
+	gain_text = "<span class='danger'>Вы делаете из мухи слона.</span>"
+	lose_text = "<span class='notice'>Вы больше не преувеличиваете значимость событий вокруг вас.</span>"
 	mood_quirk = TRUE //yogs
-	medical_record_text = "Patient demonstrates a high level of emotional volatility."
+	medical_record_text = "Пациент демонстрирует высокий уровень эмоциональной неустойчивости."
 
 /datum/quirk/hypersensitive/add()
 	var/datum/component/mood/mood = quirk_holder.GetComponent(/datum/component/mood)

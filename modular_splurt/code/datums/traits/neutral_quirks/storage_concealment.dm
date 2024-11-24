@@ -1,7 +1,6 @@
 /datum/quirk/storage_concealment
-	name = "Dorsualiphobic Augmentation"
-	desc = "You despise the idea of being seen wearing any type of back-mounted storage apparatus! A new technology shields you from the immense shame you may experience, by hiding your equipped backpack."
-
+	name = "Имплант Для Дорсуалифоба"
+	desc = "У вас вызывает отвращение сама идея быть увиденным с любой ёмкостью для переноски, закрепленной на спине! Новая технология скрывает объект за вашей спиной, таким образом защищая вас от безмерного стыда."
 	// UNUSED: Enable by setting these values to TRUE
 	// The shame is unbearable
 	mood_quirk = FALSE

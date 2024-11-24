@@ -1,11 +1,11 @@
 /datum/quirk/headpat_slut
-	name = "Headpat Slut"
-	desc = "You love the feeling of others touching your head! Maybe a little too much, actually... Others patting your head will provide a bigger mood boost and cause aroused reactions."
+	name = "Тактилофилия"
+	desc = "Вам нравится, когда другие прикасаются к вашей голове! Может, даже слишком... когда другие гладят вас по голове, это повышает ваше настроение и возбуждает вас."
 	mob_trait = TRAIT_HEADPAT_SLUT
 	value = 0
-	gain_text = span_notice("You crave headpats immensely!")
-	lose_text = span_notice("Your headpats addiction wanes.")
-	medical_record_text = "Patient seems overly affectionate."
+	gain_text = span_notice("Вы жаждете ласки!")
+	lose_text = span_notice("Ваша зависимость от ласки исчезает.")
+	medical_record_text = "Пациент очень любвеобильный."
 
 /datum/quirk/headpat_slut/add()
 	. = ..()
@@ -13,4 +13,8 @@
 
 /datum/quirk/headpat_slut/remove()
 	. = ..()
+	// BLUEMOON EDIT START - sanity check
+	if(!quirk_holder)
+		return
+	// BLUEMOON EDIT END
 	quirk_holder.RemoveElement(/datum/element/wuv/headpat)

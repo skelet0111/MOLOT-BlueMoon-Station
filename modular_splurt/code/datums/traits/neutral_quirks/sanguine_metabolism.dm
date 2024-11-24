@@ -1,13 +1,13 @@
 // Lite version of Bloodflege
 // Removes all special powers
 /datum/quirk/bloodfledge_lite
-	name = "Sanguine Metabolism"
-	desc = "You are a non-magical Bloodsucker Fledgling, with no special powers. Only blood will sate your hungers, and holy energies will cause your flesh to char."
+	name = "Метаболизм Cангвина"
+	desc = "Вы - немагический молодой кровосос, не обладающий никакими особыми способностями. Только кровь утолит ваш голод, а святая энергия заставит вашу плоть обуглиться."
 	value = 0
-	medical_record_text = "Patient exhibits an unusually weak sanguine curse."
+	medical_record_text = "Пациент демонстрирует необычайно слабое сангвиническое проклятие."
 	mob_trait = TRAIT_BLOODFLEDGE_LITE
-	gain_text = span_notice("You feel a sanguine thirst.")
-	lose_text = span_notice("You feel the sanguine thirst fade away.")
+	gain_text = span_notice("Вы ощущаете сангвиническую жажду.")
+	lose_text = span_notice("Вы чувствуете, как угасает жажда крови.")
 
 /datum/quirk/bloodfledge_lite/add()
 	// Define quirk mob

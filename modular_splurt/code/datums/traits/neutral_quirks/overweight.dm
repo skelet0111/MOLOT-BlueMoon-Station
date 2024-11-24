@@ -1,8 +1,8 @@
 /datum/quirk/overweight
-	name = "Overweight"
-	desc = "You're particularly fond of food, and join the shift being overweight."
+	name = "Лишний Вес"
+	desc = "Вы обожаете еду и появляетесь на смене с лишним весом."
 	value = 0
-	gain_text = span_notice("You feel a bit chubby!")
+	gain_text = span_notice("Вы чувствуете себя толстым!")
 	//no lose_text cause why would there be?
 
 /datum/quirk/overweight/on_spawn()

@@ -1,10 +1,10 @@
 /datum/quirk/rad_fiend
-	name = "Rad Fiend"
-	desc = "You've been blessed by Cherenkov's warming light, causing you to emit a subtle glow at all times. Only -very- intense radiation is capable of penetrating your protective barrier."
+	name = "Рад Фьенд"
+	desc = "Вас благословил согревающий свет Атома, заставляющий вас постоянно излучать едва заметное свечение. Только особо интенсивное излучение способно проникнуть через ваш защитный барьер."
 	value = 2
 	mob_trait = TRAIT_RAD_FIEND
-	gain_text = span_notice("You feel empowered by Cherenkov's glow.")
-	lose_text = span_notice("You realize that rads aren't so rad.")
+	gain_text = span_notice("Вы чувствуете в себе силы благодаря свечению Атома.")
+	lose_text = span_notice("Вы понимаете, что радиация не такая уж безопасная.")
 
 /datum/quirk/rad_fiend/add()
 	// Define quirk holder mob
@@ -16,6 +16,11 @@
 /datum/quirk/rad_fiend/remove()
 	// Define quirk holder mob
 	var/mob/living/carbon/human/quirk_mob = quirk_holder
+
+	// BLUEMOON EDIT START - sanity check
+	if(!quirk_mob)
+		return
+	// BLUEMOON EDIT END
 
 	// Remove glow control action
 	var/datum/action/rad_fiend/update_glow/quirk_action = locate() in quirk_mob.actions

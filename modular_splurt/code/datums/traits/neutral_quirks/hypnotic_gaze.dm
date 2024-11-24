@@ -2,13 +2,13 @@
 #define HYPNOEYES_COOLDOWN_BRAINWASH 30 SECONDS
 
 /datum/quirk/Hypnotic_gaze
-	name = "Hypnotic Gaze"
-	desc = "Be it through mysterious patterns, flickering colors, or some genetic oddity, prolonged eye contact with you will place the viewer into a highly-suggestible hypnotic trance."
+	name = "Гипнотический Взгляд"
+	desc = "Вследствие мистических узоров, мерцающих цветов или какой-нибудь генетической странности, длительный визуальный контакт с вами поместит наблюдателя в легковнушаемый гипнотический транс."
 	value = 0
 	mob_trait = TRAIT_HYPNOTIC_GAZE
-	gain_text = span_notice("Your eyes glimmer hypnotically...")
-	lose_text = span_notice("Your eyes return to normal.")
-	medical_record_text = "Prolonged exposure to Patient's eyes exhibits soporific effects."
+	gain_text = span_notice("Ваши глаза завораживающе мерцают...")
+	lose_text = span_notice("Ваша глаза становятся обычными.")
+	medical_record_text = "Длительное воздействие глаз пациента влечет усыпляющий эффект."
 
 /datum/quirk/Hypnotic_gaze/add()
 	// Define quirk mob
@@ -24,7 +24,10 @@
 /datum/quirk/Hypnotic_gaze/remove()
 	// Define quirk mob
 	var/mob/living/carbon/human/quirk_mob = quirk_holder
-
+	// BLUEMOON EDIT START - sanity check
+	if(!quirk_mob)
+		return
+	// BLUEMOON EDIT END
 	// Remove quirk ability action datum
 	var/datum/action/cooldown/hypnotize/act_hypno = locate() in quirk_mob.actions
 	act_hypno.Remove(quirk_mob)
@@ -34,7 +37,7 @@
 
 // Quirk examine text
 /datum/quirk/Hypnotic_gaze/proc/on_examine_holder(atom/examine_target, mob/living/carbon/human/examiner, list/examine_list)
-	examine_list += "[quirk_holder.p_their(TRUE)] eyes glimmer with an entrancing power..."
+	examine_list += "[quirk_holder.ru_ego(TRUE)] глаза необычайно сверкают..."
 
 //
 // Quirk actions: Hypnotic Gaze

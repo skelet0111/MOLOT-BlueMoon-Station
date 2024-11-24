@@ -1,11 +1,11 @@
 /datum/quirk/masked_mook
-	name = "Bane Syndrome"
-	desc = "For some reason you don't feel... right without wearing some kind of gas mask."
-	gain_text = span_danger("You start feeling unwell without any gas mask on.")
-	lose_text = span_notice("You no longer have a need to wear some gas mask.")
-	value = 0
+	name = "Синдром Бейна"
+	desc = "По какой-то причине вам... не по себе без противогаза на лице."
+	gain_text = span_danger("Вы начинаете чувствовать себя нехорошо без противогаза.")
+	lose_text = span_notice("У вас больше нет нужды в ношении противогаза.")
+	value = -1
 	mood_quirk = TRUE
-	medical_record_text = "Patient feels more secure when wearing a gas mask."
+	medical_record_text = "Пациент чувствует себя более безопасно при ношении противогаза."
 	processing_quirk = TRUE
 
 /datum/quirk/masked_mook/on_process()

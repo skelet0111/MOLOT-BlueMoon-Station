@@ -1,11 +1,11 @@
 /datum/quirk/ashresistance
-	name = "Ashen Resistance"
-	desc = "Your body is adapted to the burning sheets of ash that coat volcanic worlds, though the heavy downpours of silt will still tire you."
+	name = "Пепельная Устойчивость"
+	desc = "Ваше тело адаптировалось к пылающим покровам пепла, которые застилают вулканические миры, но это не значит, что вы не будете уставать."
 	value = 2 //Is not actually THAT good. Does not grant breathing and does stamina damage to the point you are unable to attack. Crippling on lavaland, but you'll survive. Is not a replacement for SEVA suits for this reason. Can be adjusted.
 	mob_trait = TRAIT_ASHRESISTANCE
-	medical_record_text = "Patient has an abnormally thick epidermis."
-	gain_text = span_notice("You feel resistant to burning brimstone.")
-	lose_text = span_notice("You feel less as if your flesh is more flamamble.")
+	medical_record_text = "У пациента аномально плотный эпидермис."
+	gain_text = "<span class='notice'>Вы чувствуете себя устойчивее против горящей серы.</span>"
+	lose_text = "<span class='notice'>Ваша плоть становится более легковоспламеняемой.</span>"
 
 /* --FALLBACK SYSTEM INCASE THE TRAIT FAILS TO WORK. Do NOT enable this without editing ash_storm.dm to deal stamina damage with ash immunity.
 /datum/quirk/ashresistance/add()

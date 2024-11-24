@@ -1,12 +1,12 @@
 //hydra code below
 /datum/quirk/hydra
-	name = "Hydra Heads"
-	desc = "You are a tri-headed creature. To use, format your name like (Rucks-Sucks-Ducks)."
+	name = "Головы Гидры"
+	desc = "Вы трёхглавое создание. Оформите имя, как (Ваня-Саня-Даня)."
 	value = 0
 	mob_trait = TRAIT_HYDRA_HEADS
-	gain_text = span_notice("You hear two other voices inside of your head(s).")
-	lose_text = span_danger("All of your minds become singular.")
-	medical_record_text = "Patient has multiple heads and personalities affixed to their body."
+	gain_text = span_notice("Вы слышите два других голоса внутри головы(ов).")
+	lose_text = span_danger(" становится единым.")
+	medical_record_text = "Пациент имеет несколько голов и личностей, присоединенных к телу."
 
 /datum/quirk/hydra/on_spawn()
 	var/mob/living/carbon/human/hydra = quirk_holder

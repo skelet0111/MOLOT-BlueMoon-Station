@@ -1,17 +1,30 @@
 /datum/quirk/dumb4cum
-	name = "Dumb For Cum"
-	desc = "For one reason or another, you're totally obsessed with seminal fluids. The heat of it, the smell... the taste... It's quite simply euphoric."
+	name = "Спермоприёмник"
+	desc = "По той или иной причине, вы помешаны на сперме. Её тепло, запах... вкус... делают счастливее."
 	value = 0
 	mob_trait = TRAIT_DUMB_CUM
-	gain_text = span_notice("You feel an insatiable craving for seminal fluids.")
-	lose_text = span_notice("Cum didn't even taste that good, anyways.")
-	medical_record_text = "Patient seems to have an unhealthy psychological obsession with seminal fluids."
+	gain_text = span_notice("Неожиданно вам захотелось ощутить семя внутри себя!")
+	lose_text = span_notice("Всё равно сперма была не такой уж и вкусной...")
+	medical_record_text = "У пациента навязчивая одержимость семенными жидкостями."
 	mood_quirk = TRUE
 	var/timer
-	var/timer_trigger = 15 MINUTES
+	var/timer_trigger
+	var/reminder_timer
+	var/reminder_trigger
+	var/list/trigger_phrases = list(
+										"У тебя урчит в животе, а на ум приходит сперма.",\
+										"Уф-ф, сейчас бы не помешало раздобыть спермы...",\
+										"Было бы неплохо сейчас потребить спермы!",\
+										"Ты начинаешь тосковать по сперме..."
+									  )
+	var/list/uncrave_phrases = list("Вы узнаете хорошо знакомый вам вкус свежей спермы~",\
+									"Незабываемый вкус свежей спермы вы узнаете из тысячи~",\
+									"Ммм~, мне так не хватало этой восхитительной спермы~"
+									)
 
 /datum/quirk/dumb4cum/add()
 	// Set timer
+	timer_trigger = rand(9000, 18000)
 	timer = addtimer(CALLBACK(src, PROC_REF(crave)), timer_trigger, TIMER_STOPPABLE)
 
 /datum/quirk/dumb4cum/remove()
@@ -21,29 +34,22 @@
 	// Remove penalty traits
 	REMOVE_TRAIT(quirk_holder, TRAIT_ILLITERATE, DUMB_CUM_TRAIT)
 	REMOVE_TRAIT(quirk_holder, TRAIT_DUMB, DUMB_CUM_TRAIT)
-	REMOVE_TRAIT(quirk_holder, TRAIT_PACIFISM, DUMB_CUM_TRAIT)
 
 	// Remove mood event
 	SEND_SIGNAL(quirk_holder, COMSIG_CLEAR_MOOD_EVENT, QMOOD_DUMB_CUM)
 
 	// Remove timer
 	deltimer(timer)
+	deltimer(reminder_timer)
 
 /datum/quirk/dumb4cum/proc/crave()
 	// Check if conscious
 	if(quirk_holder.stat == CONSCIOUS)
-		// Display emote
-		quirk_holder.emote("sigh")
-
-		// Define list of phrases
-		var/list/trigger_phrases = list(
-										"Your stomach rumbles a bit and cum comes to your mind.",\
-										"Urgh, you should really get some cum...",\
-										"Some jizz wouldn't be so bad right now!",\
-										"You're starting to long for some more cum..."
-									)
 		// Alert user in chat
 		to_chat(quirk_holder, span_love("[pick(trigger_phrases)]"))
+
+	reminder_trigger = rand(3000, 9000)
+	reminder_timer = addtimer(CALLBACK(src, PROC_REF(reminder)), reminder_trigger, TIMER_STOPPABLE)
 
 	// Add active status trait
 	ADD_TRAIT(quirk_holder, TRAIT_DUMB_CUM_CRAVE, DUMB_CUM_TRAIT)
@@ -51,35 +57,46 @@
 	// Add illiterate, dumb, and pacifist
 	ADD_TRAIT(quirk_holder, TRAIT_ILLITERATE, DUMB_CUM_TRAIT)
 	ADD_TRAIT(quirk_holder, TRAIT_DUMB, DUMB_CUM_TRAIT)
-	ADD_TRAIT(quirk_holder, TRAIT_PACIFISM, DUMB_CUM_TRAIT)
 
 	// Add negative mood effect
 	SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, QMOOD_DUMB_CUM, /datum/mood_event/cum_craving)
 
-/datum/quirk/dumb4cum/proc/uncrave()
+/datum/quirk/dumb4cum/proc/reminder()
+	to_chat(quirk_holder, span_love("[pick(trigger_phrases)]"))
+	deltimer(reminder_timer)
+	reminder_timer = null
+	reminder_trigger = rand(3000, 9000)
+	reminder_timer = addtimer(CALLBACK(src, PROC_REF(reminder)), reminder_trigger, TIMER_STOPPABLE)
+
+/datum/quirk/dumb4cum/proc/uncrave(print_text = FALSE)
 	// Remove active status trait
 	REMOVE_TRAIT(quirk_holder, TRAIT_DUMB_CUM_CRAVE, DUMB_CUM_TRAIT)
 
 	// Remove penalty traits
 	REMOVE_TRAIT(quirk_holder, TRAIT_ILLITERATE, DUMB_CUM_TRAIT)
 	REMOVE_TRAIT(quirk_holder, TRAIT_DUMB, DUMB_CUM_TRAIT)
-	REMOVE_TRAIT(quirk_holder, TRAIT_PACIFISM, DUMB_CUM_TRAIT)
 
 	// Add positive mood event
 	SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, QMOOD_DUMB_CUM, /datum/mood_event/cum_stuffed)
 
 	// Remove timer
 	deltimer(timer)
+	deltimer(reminder_timer)
 	timer = null
-
+	reminder_timer = null
+	timer_trigger = rand(9000, 18000)
 	// Add new timer
 	timer = addtimer(CALLBACK(src, PROC_REF(crave)), timer_trigger, TIMER_STOPPABLE)
 
+	if(print_text)
+		to_chat(quirk_holder, span_love("[pick(uncrave_phrases)]"))
+
 /datum/mood_event/cum_craving
-	description = span_warning("I... NEED... CUM...\n")
-	mood_change = -20
+	description = span_warning("МНЕ... НУЖНА... СПЕРМА...\n") // Я умер от испанского стыда, переводя ЕРП мудлеты. - прим. переводчика
+	//mood_change = -20
+	mood_change = -5 //STOP BEING SUICIDAL BECAUSE OF THE LACK OF CUM! - Gardelin0
 
 /datum/mood_event/cum_stuffed
-	description = span_nicegreen("The cum feels so good inside me!\n")
+	description = span_nicegreen("Вкусная была еда! Ням-ням!\n")
 	mood_change = 8
 	timeout = 5 MINUTES

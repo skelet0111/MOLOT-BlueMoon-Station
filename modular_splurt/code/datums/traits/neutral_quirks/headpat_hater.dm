@@ -1,11 +1,11 @@
 /datum/quirk/headpat_hater
-	name = "Distant"
-	desc = "You don't seem to show much care for being touched. Whether it's because you're reserved or due to self control, others touching your head won't make you wag your tail should you possess one, and the action may even attract your ire."
+	name = "Отстраненность"
+	desc = "Вам нет дела до ласки со стороны других. Будь то вследствие сдержанности или самоконтроля, получаемые поглаживания не заставят вилять хвостом, если таковой есть, ласка может даже разгневать."
 	mob_trait = TRAIT_DISTANT
 	value = 0
-	gain_text = span_notice("Others' touches begin to make your blood boil...")
-	lose_text = span_notice("Having your head pet doesn't sound so bad right about now...")
-	medical_record_text = "Patient cares little with or dislikes being touched."
+	gain_text = span_notice("Чужие прикосновения раздражают вас...")
+	lose_text = span_notice("Теперь поглаживания не кажутся настолько уж плохими...")
+	medical_record_text = "Пациента мало заботят или раздражают чужие прикосновения."
 
 /datum/quirk/headpat_hater/add()
 
@@ -17,7 +17,10 @@
 /datum/quirk/headpat_hater/remove()
 
 	var/mob/living/carbon/human/quirk_mob = quirk_holder
-
+	// BLUEMOON EDIT START - sanity check
+	if(!quirk_mob)
+		return
+	// BLUEMOON EDIT END
 	var/datum/action/cooldown/toggle_distant/act_toggle = locate() in quirk_mob.actions
 	if(act_toggle)
 		act_toggle.Remove(quirk_mob)

@@ -1,8 +1,10 @@
+//Own traits
 /datum/quirk/cum_sniff
-	name = "Genital Taster"
-	desc = "You've built so much experience savoring other people's genitals through your life that you can easily tell what liquids they're full of, besides reagents in their blood that is."
+	name = "Дегустатор Гениталий"
+	desc = "Вы набрались столько опыта, обсасывая чужие гениталии, что с легкостью можете сказать, какая жидкость находится внутри них, исключая реагенты в крови."
 	value = 0
 	mob_trait = TRAIT_GFLUID_DETECT
-	gain_text = span_notice("You begin sensing peculiar smells from people's bits...")
-	lose_text = span_notice("People's genitals start smelling all the same to you...")
-	medical_record_text = "Patient attempted to get their doctor to drag his balls accross their face."
+	gain_text = span_notice("Вы начинаете ощущать специфические запахи, исходящие от чужих промежностей...")
+	lose_text = span_notice("Чужие гениталии начинают пахнуть для вас одинаково...")
+	medical_record_text = "Пациент добивался того, чтобы доктор провёл яйцами по его лицу."
+	human_only = FALSE
