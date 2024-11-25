@@ -239,6 +239,13 @@
 	},
 /turf/open/floor/engine,
 /area/engineering/main)
+"ady" = (
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
 "adC" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -2638,6 +2645,7 @@
 "aWk" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /obj/machinery/light,
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/wood,
 /area/service/bar)
 "aWm" = (
@@ -19273,6 +19281,7 @@
 /obj/machinery/camera/autoname{
 	dir = 9
 	},
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "gbe" = (
@@ -33403,6 +33412,10 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 10
 	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "kwf" = (
@@ -35002,6 +35015,7 @@
 	name = "Cargo Bay Warehouse Maintenance";
 	req_access_txt = "31"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
 "kVY" = (
@@ -38597,6 +38611,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/trimline/brown/filled/line,
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/dark,
 /area/command/gateway)
 "mhu" = (
@@ -39064,6 +39079,7 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Gateway Chamber"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/dark,
 /area/command/gateway)
 "mqp" = (
@@ -45036,6 +45052,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 8
 	},
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/carpet/black,
 /area/security/courtroom)
 "oka" = (
@@ -46005,6 +46022,7 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/trimline/brown/filled/line,
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/dark,
 /area/command/gateway)
 "ozH" = (
@@ -47193,6 +47211,7 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 6
 	},
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "oPZ" = (
@@ -58952,6 +58971,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/command/gateway)
 "sxh" = (
@@ -59360,6 +59380,10 @@
 "sDU" = (
 /obj/structure/closet/emcloset,
 /obj/effect/turf_decal/stripes/line,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 28
+	},
 /turf/open/floor/plasteel/dark,
 /area/command/gateway)
 "sDW" = (
@@ -60963,6 +60987,7 @@
 	id = "qm_warehouse";
 	name = "Warehouse Shutters"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/cargo/warehouse)
 "tfy" = (
@@ -70480,6 +70505,11 @@
 /obj/structure/sink/kitchen{
 	dir = 8;
 	pixel_x = 12
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -4;
+	pixel_y = -28
 	},
 /turf/open/floor/wood,
 /area/service/bar)
@@ -165337,7 +165367,7 @@ jTr
 dkK
 jsV
 dgc
-qUe
+ady
 rUH
 rdJ
 tuT
