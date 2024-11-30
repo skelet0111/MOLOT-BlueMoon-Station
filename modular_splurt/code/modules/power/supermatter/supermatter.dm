@@ -14,9 +14,9 @@ Our Method:
 • Scan through the player list an count how many alive engineers are there. If you sign up as an engineer, you consent to fixing the damage.
 */
 
-#define EXPLOSION_MODIFIER_SMALL 10
-#define EXPLOSION_MODIFIER_MEDIUM 20
-#define EXPLOSION_MODIFIER_LARGE 30
+#define EXPLOSION_MODIFIER_SMALL 1
+#define EXPLOSION_MODIFIER_MEDIUM 2
+#define EXPLOSION_MODIFIER_LARGE 3
 
 // Check if the SM Can explode at all or not
 /proc/check_sm_delam()
@@ -132,27 +132,27 @@ Our Method:
 		if(0)
 			investigate_log("has delaminated, but there are only [alive_engineers] engineers! Defaulting to minimum explosion.", INVESTIGATE_SUPERMATTER)
 			priority_announce("Обнаружено расслоение структуры Суперматерии. Гиперструктура кристалла разрушилась в пределах допустимого уровня безопасности, что привело к самоаннигиляции сверхматериального образования.", "BНИМАНИЕ: СУПЕРМАТЕРИЯ ПОТЕРЯНА!")
-			explosion(get_turf(src), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), TRUE, TRUE)
+			explosion(get_turf(src), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL * 0.5), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL * 0.75), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL * 1.25), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL * 1.5), TRUE, TRUE)
 			qdel(src)
 			return
 //	DELAMINATION C: Enough engineers, halved explosion size.
 		if(1)
 			investigate_log("has delaminated with [alive_engineers] engineers, explosion size has been halved!", INVESTIGATE_SUPERMATTER)
 			priority_announce("Обнаружено множественное расслоение структуры Суперматерии. Гиперструктура кристалла завершила коллапс фатально. Bозможны жертвы.", "BНИМАНИЕ: СУПЕРМАТЕРИЯ ПОТЕРЯНА!")
-			explosion(get_turf(src), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_MEDIUM), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_MEDIUM), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_MEDIUM), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_MEDIUM), TRUE, TRUE)
+			explosion(get_turf(src), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_MEDIUM * 0.5), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_MEDIUM * 0.75), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_MEDIUM * 1.25), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_MEDIUM * 1.5), TRUE, TRUE)
 			qdel(src)
 			return
 //	DELAMINATION D:
 		if(2 to INFINITY)
 			investigate_log("has delaminated with full effect due to there being [alive_engineers] engineers.", INVESTIGATE_SUPERMATTER)
 			priority_announce("Обнаружено катастрофическое расслоение структуры Суперматерии. Гиперструктура кристалла создала катастрофический хлопок.", sender_override="BНИМАНИЕ: СУПЕРМАТЕРИЯ ПОТЕРЯНА!")
-			explosion(get_turf(src), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE), TRUE, TRUE)
+			explosion(get_turf(src), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 0.5), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 0.75), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 1.25), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 1.5), TRUE, TRUE)
 			qdel(src)
 			return
 		if(null)
 			investigate_log("has delaminated, but there are only [alive_engineers] engineers! Defaulting to minimum explosion.", INVESTIGATE_SUPERMATTER)
 			priority_announce("Обнаружено расслоение структуры Суперматерии. Гиперструктура кристалла разрушилась в пределах допустимого уровня безопасности, что привело к самоаннигиляции сверхматериального образования.", "BНИМАНИЕ: СУПЕРМАТЕРИЯ ПОТЕРЯНА!")
-			explosion(get_turf(src), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), TRUE, TRUE)
+			explosion(get_turf(src), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL * 0.5), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL * 0.75), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL * 1.25), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL * 1.5), TRUE, TRUE)
 			qdel(src)
 			return
 
