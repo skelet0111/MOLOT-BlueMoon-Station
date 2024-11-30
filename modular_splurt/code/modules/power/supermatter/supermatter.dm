@@ -14,9 +14,9 @@ Our Method:
 • Scan through the player list an count how many alive engineers are there. If you sign up as an engineer, you consent to fixing the damage.
 */
 
-#define EXPLOSION_MODIFIER_SMALL 10000
-#define EXPLOSION_MODIFIER_MEDIUM 20000
-#define EXPLOSION_MODIFIER_LARGE 30000
+#define EXPLOSION_MODIFIER_SMALL 10
+#define EXPLOSION_MODIFIER_MEDIUM 20
+#define EXPLOSION_MODIFIER_LARGE 30
 
 // Check if the SM Can explode at all or not
 /proc/check_sm_delam()
