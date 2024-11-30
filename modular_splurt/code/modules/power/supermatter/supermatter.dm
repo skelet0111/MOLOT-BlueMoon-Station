@@ -152,7 +152,7 @@ Our Method:
 		if(null)
 			investigate_log("has delaminated, but there are only [alive_engineers] engineers! Defaulting to minimum explosion.", INVESTIGATE_SUPERMATTER)
 			priority_announce("Обнаружено расслоение структуры Суперматерии. Гиперструктура кристалла разрушилась в пределах допустимого уровня безопасности, что привело к самоаннигиляции сверхматериального образования.", "BНИМАНИЕ: СУПЕРМАТЕРИЯ ПОТЕРЯНА!")
-			explosion(get_turf(src), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), TURE, TRUE)
+			explosion(get_turf(src), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_SMALL), TRUE, TRUE)
 			qdel(src)
 			return
 
