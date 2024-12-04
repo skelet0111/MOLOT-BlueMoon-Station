@@ -57,3 +57,4 @@ $include splurt/autocryo.txt
 
 # Bluemoon stuff!
 $include entries/bluemoon.txt
+$include bluemoon/ipintel.txt
