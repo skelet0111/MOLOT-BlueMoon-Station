@@ -146,7 +146,7 @@ Our Method:
 		if(2 to INFINITY)
 			investigate_log("has delaminated with full effect due to there being [alive_engineers] engineers.", INVESTIGATE_SUPERMATTER)
 			priority_announce("Обнаружено катастрофическое расслоение структуры Суперматерии. Гиперструктура кристалла создала катастрофический хлопок.", sender_override="BНИМАНИЕ: СУПЕРМАТЕРИЯ ПОТЕРЯНА!")
-			explosion(get_turf(src), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 0.025, ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 0.05), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 0.1), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 0.2), TRUE, TRUE, ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 0.2))
+			explosion(get_turf(src), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 0.025), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 0.05), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 0.1), ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 0.2), TRUE, TRUE, ((explosion_power*gasmix_power_ratio)*EXPLOSION_MODIFIER_LARGE * 0.2))
 			qdel(src)
 			return
 		if(null)
