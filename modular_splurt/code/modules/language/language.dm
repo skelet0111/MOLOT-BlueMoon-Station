@@ -44,4 +44,3 @@
 	//SKYRAT CHANGE - language restriction
 	restricted = FALSE
 	//
-	

@@ -15,4 +15,3 @@
 	name = "\improper Old Glory sunflower seeds"
 	icon_state = "sfseeds"
 	icon = 'modular_splurt/icons/obj/janitor.dmi'
-	

@@ -204,4 +204,3 @@
 	filling_color = "##BCAAA4"
 	tastes = list("americana" = 1)
 	foodtype = JUNKFOOD
-	
