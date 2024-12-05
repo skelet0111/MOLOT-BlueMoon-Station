@@ -84,7 +84,4 @@
 	name = "boritos bag"
 	icon_state = "boritos"
 	grind_results = list(/datum/reagent/aluminium = 1) //from the mylar bag
-
-/obj/item/trash/sfseeds
-	name = "\improper Old Glory sunflower seeds"
-	icon_state = "sfseeds"
+	
