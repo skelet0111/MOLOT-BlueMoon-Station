@@ -1,6 +1,5 @@
-author: SaraSayomi
-delete-after: true
-changes:
+2024-12-05:
+  SaraSayomi:
   - bugfix: Crew manifests default titles
   - rscadd: Now shows both alt title and normal to help people who don't know what
       role a condom is
