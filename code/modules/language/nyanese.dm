@@ -1,4 +1,4 @@
-/datum/language/draconic
+/datum/language/nyanese
 	name = "Nyanese"
 	desc = "The intergalatic language of felines, it is often used to annoy gods."
 	speech_verb = "meows"
