@@ -24,7 +24,7 @@ SUBSYSTEM_DEF(ipintel)
 	/// Cache for previously queried IP addresses and those stored in the database
 	var/list/datum/ip_intel/cached_queries = list()
 	/// The store for rate limiting
-	var/rate_limit_minute
+	var/list/rate_limit_minute
 
 /// The ip intel for a given address
 /datum/ip_intel
@@ -53,7 +53,7 @@ SUBSYSTEM_DEF(ipintel)
 
 	if(length(fail_messages))
 		message_admins("IPIntel: Initialization failed check logs!")
-		log_config("IPIntel is not enabled because the configs are not valid. [fail_messages]")
+		log_access("IPIntel is not enabled because the configs are not valid. [fail_messages]")
 
 /datum/controller/subsystem/ipintel/stat_entry(msg)
 	return "[..()] | M: [CONFIG_GET(number/ipintel_rate_minute) - rate_limit_minute]"
@@ -110,9 +110,9 @@ SUBSYSTEM_DEF(ipintel)
 	request.execute_blocking()
 	var/datum/http_response/response = request.into_response()
 	var/list/data = json_decode(response.body)
+	var/json_data = json_encode(data)
 	// Log the response
-	log_config("ip check response body [data]")
-
+	log_access("ip check response body [json_data]")
 	var/datum/ip_intel/intel = new
 	intel.query_status = data["status"]
 	if(intel.query_status != "success")
@@ -130,7 +130,7 @@ SUBSYSTEM_DEF(ipintel)
 	set waitfor = FALSE //no need to make the client connection wait for this step.
 	if (!SSdbcore.Connect())
 		return
-	var/datum/db_query/query = SSdbcore.NewQuery(
+	var/datum/db_query/add_intel_to_database_query = SSdbcore.NewQuery(
 		"INSERT INTO [format_table_name("ipintel")] ( \
 			ip, \
 			intel \
@@ -139,13 +139,13 @@ SUBSYSTEM_DEF(ipintel)
 			:result \
 		)", list(
 			"address" = intel.address,
-			"result" = intel.result,
+			"result" = intel.result
 		)
 	)
-	if(!query.warn_execute())
-		qdel(query)
+	if(!add_intel_to_database_query.warn_execute())
+		qdel(add_intel_to_database_query)
 		return
-	qdel(query)
+	qdel(add_intel_to_database_query)
 
 /datum/controller/subsystem/ipintel/proc/fetch_cached_ip_intel(address)
 	if (!SSdbcore.Connect())
@@ -156,18 +156,18 @@ SUBSYSTEM_DEF(ipintel)
 	if(ipintel_cache_length > 1)
 		date_restrictor = " AND date > DATE_SUB(NOW(), INTERVAL :ipintel_cache_length DAY)"
 		sql_args["ipintel_cache_length"] = ipintel_cache_length
-	var/datum/db_query/query = SSdbcore.NewQuery(
+	var/datum/db_query/fetch_cached_ip_intel_query = SSdbcore.NewQuery(
 		"SELECT * FROM [format_table_name("ipintel")] WHERE ip = INET_ATON(:address)[date_restrictor]",
 		sql_args
 	)
-	if(!query.warn_execute())
-		qdel(query)
-		return
+	if(!fetch_cached_ip_intel_query.warn_execute())
+		qdel(fetch_cached_ip_intel_query)
+		return null
 
 
-	query.NextRow()
-	var/list/data = query.item
-	qdel(query)
+	fetch_cached_ip_intel_query.NextRow()
+	var/list/data = fetch_cached_ip_intel_query.item
+	qdel(fetch_cached_ip_intel_query)
 	if(isnull(data))
 		return null
 
@@ -194,17 +194,17 @@ SUBSYSTEM_DEF(ipintel)
 	return FALSE
 
 /datum/controller/subsystem/ipintel/proc/is_whitelisted(ckey)
-	var/datum/db_query/query = SSdbcore.NewQuery(
+	var/datum/db_query/is_whitelisted_query = SSdbcore.NewQuery(
 		"SELECT * FROM [format_table_name("ipintel_whitelist")] WHERE ckey = :ckey", list(
 			"ckey" = ckey
 		)
 	)
-	if(!query.warn_execute())
-		qdel(query)
-		return
-	query.NextRow()
-	. = !!query.item // if they have a row, they are whitelisted
-	qdel(query)
+	if(!is_whitelisted_query.warn_execute())
+		qdel(is_whitelisted_query)
+		return FALSE
+	is_whitelisted_query.NextRow()
+	. = !!is_whitelisted_query.item // if they have a row, they are whitelisted
+	qdel(is_whitelisted_query)
 
 /client/proc/ipintel_allow(ckey as text)
 	set category = "Debug"
@@ -217,7 +217,7 @@ SUBSYSTEM_DEF(ipintel)
 		to_chat(usr, "Player is already whitelisted.")
 		return
 
-	var/datum/db_query/query = SSdbcore.NewQuery(
+	var/datum/db_query/ipintel_allow_query = SSdbcore.NewQuery(
 		"INSERT INTO [format_table_name("ipintel_whitelist")] ( \
 			ckey, \
 			admin_ckey \
@@ -229,11 +229,11 @@ SUBSYSTEM_DEF(ipintel)
 			"admin_ckey" = usr.ckey,
 		)
 	)
-	if(!query.warn_execute())
-		qdel(query)
+	if(!ipintel_allow_query.warn_execute())
+		qdel(ipintel_allow_query)
 		return
 
-	qdel(query)
+	qdel(ipintel_allow_query)
 	message_admins("IPINTEL: [key_name_admin(usr)] has whitelisted '[ckey]'")
 
 /client/proc/ipintel_revoke(ckey as text)
@@ -246,13 +246,13 @@ SUBSYSTEM_DEF(ipintel)
 	if(!SSipintel.is_whitelisted(ckey))
 		to_chat(usr, "Player is not whitelisted.")
 		return
-	var/datum/db_query/query = SSdbcore.NewQuery(
+	var/datum/db_query/ipintel_revoke_query = SSdbcore.NewQuery(
 		"DELETE FROM [format_table_name("ipintel_whitelist")] WHERE ckey = :ckey", list(
 			"ckey" = ckey
 		)
 	)
-	if(!query.warn_execute())
-		qdel(query)
+	if(!ipintel_revoke_query.warn_execute())
+		qdel(ipintel_revoke_query)
 		return
 
 	message_admins("IPINTEL: [key_name_admin(usr)] has revoked the VPN whitelist for '[ckey]'")

@@ -458,7 +458,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 		if (CONFIG_GET(flag/irc_first_connection_alert))
 			send2tgs_adminless_only("new_byond_user", "[key_name(src)] (IP: [address], ID: [computer_id]) is a new BYOND account [account_age] day[(account_age==1?"":"s")] old, created on [account_join_date].")
 	get_message_output("watchlist entry", ckey)
-	check_ip_intel()
+	//check_ip_intel() // BLUEMOON EDIT: IPINTEL FROM TG
 	validate_key_in_db()
 
 	send_resources()
@@ -514,7 +514,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 			menuitem.Load_checked(src)
 
 	SSambience.remove_ambience_client(src)
-
+	check_ip_intel() // BLUEMOON EDIT: IPINTEL FROM TG
 	view_size = new(src, getScreenSize(prefs.widescreenpref))
 	view_size.resetFormat()
 	view_size.setZoomMode()
