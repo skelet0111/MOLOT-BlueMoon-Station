@@ -176,7 +176,10 @@
 		var/datum/data/record/G = new()
 		G.fields["id"]			= id
 		G.fields["name"]		= H.real_name
-		G.fields["rank"]		= displayed_rank
+		if(!displayed_rank)
+			G.fields["rank"]		= assignment
+		else
+			G.fields["rank"]		= "[displayed_rank], [assignment]"
 		G.fields["age"]			= H.age
 		G.fields["species"]	= H.dna.species.name
 		G.fields["fingerprint"]	= md5(H.dna.uni_identity)
