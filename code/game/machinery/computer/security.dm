@@ -957,8 +957,8 @@ What a mess.*/
 									temp += "<a href='?src=[REF(src)];choice=Edit Field;field=alt_title;rank=[rank]'>Use Title<span style='color:#BBBBBB; font-style: italic;'> ([how_many_alts + 1] options)</span></a>"
 								temp += "</li>"
 							temp += "</ul>"
-						else
-							alert(usr, "You do not have the required rank to do this!")
+					else
+						alert(usr, "You do not have the required rank to do this!")
 				if("alt_title")
 					if(istype(active1, /datum/data/record) && ((ACCESS_CAPTAIN in logged_access) || (ACCESS_HOP in logged_access) || (ACCESS_CENT_GENERAL in logged_access)))
 						temp = "<h5>Rank Title:</h5>"
