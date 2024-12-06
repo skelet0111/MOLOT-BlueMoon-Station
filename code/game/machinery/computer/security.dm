@@ -970,7 +970,7 @@ What a mess.*/
 							for(var/rank in job_datum.alt_titles)
 								temp += "<li><a href='?src=[REF(src)];choice=Change Rank;rank=[rank]'>[rank]</a></li>"
 						else
-								temp += "<li><b>We're very sorry, there was an internal error fetching titles. Report to centcom error: </b>null_job_or_no_titles</li>"
+							temp += "<li><b>We're very sorry, there was an internal error fetching titles. Report to centcom error: </b>null_job_or_no_titles</li>"
 						temp += "</ul>"
 					else
 						alert(usr, "You do not have the required rank to do this!")
