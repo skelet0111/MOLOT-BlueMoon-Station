@@ -951,12 +951,12 @@ What a mess.*/
 						temp += "<ul>"
 						for(var/rank in get_all_jobs())
 							temp += "<li><a href='?src=[REF(src)];choice=Change Rank;rank=[rank]'>[rank]</a>"
-								var/datum/job/job_datum = SSjob.name_occupations[rank]
-								if(job_datum && length(job_datum.alt_titles))
-									var/how_many_alts = length(job_datum.alt_titles)
-									temp += "<a href='?src=[REF(src)];choice=Edit Field;field=alt_title;rank=[rank]'>Use Title<span style='color:#BBBBBB; font-style: italic;'> ([how_many_alts + 1] options)</span></a>"
-								temp += "</li>"
-							temp += "</ul>"
+							var/datum/job/job_datum = SSjob.name_occupations[rank]
+							if(job_datum && length(job_datum.alt_titles))
+								var/how_many_alts = length(job_datum.alt_titles)
+								temp += "<a href='?src=[REF(src)];choice=Edit Field;field=alt_title;rank=[rank]'>Use Title<span style='color:#BBBBBB; font-style: italic;'> ([how_many_alts + 1] options)</span></a>"
+							temp += "</li>"
+						temp += "</ul>"
 					else
 						alert(usr, "You do not have the required rank to do this!")
 				if("alt_title")
