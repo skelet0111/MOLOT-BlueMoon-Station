@@ -78,7 +78,7 @@
 // // // // // // // //
 
 /datum/gear/donator/bm/dc_gorka
-	name = "SpecOps gorka"
+	name = "SpecOps Gorka"
 	slot = ITEM_SLOT_ICLOTHING
 	path = /obj/item/clothing/under/inteq/tactical_gorka
 	ckeywhitelist = list("dragoncora")
@@ -87,7 +87,7 @@
 // // // // // // // //
 
 /datum/gear/donator/bm/dc_boots
-	name = "SpecOps gorka"
+	name = "Combat Boots"
 	slot = ITEM_SLOT_FEET
 	path = /obj/item/clothing/shoes/dragoncora
 	ckeywhitelist = list("dragoncora")

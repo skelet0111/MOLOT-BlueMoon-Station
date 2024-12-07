@@ -11,12 +11,12 @@
 
 /obj/item/ammo_casing/caseless/rocket/anti_singulo
 	name = "AS rocket shell"
-	desc = "Ракета особого типа, предназначенная для разрушения гравитационных сингулярностей с помощью манипуляций с блюспейс пространством."
+	desc = "Ракета особого типа, предназначенная для разрушения гравитационных сингулярностей с помощью манипуляций с блюспейс-пространством."
 	icon_state = "rocket-as"
-	projectile_type = /obj/item/projectile/anti_singulo
+	projectile_type = /obj/item/projectile/bullet/anti_singulo
 	caliber = "rocket_as"
 
-/obj/item/projectile/anti_singulo
+/obj/item/projectile/bullet/anti_singulo
 	name = "singularity buster charge"
 	icon_state = "ice_1"
 	light_color = "#00ffff"
@@ -25,16 +25,20 @@
 	damage = 60
 	damage_type = BURN
 
-/obj/item/projectile/anti_singulo/on_hit(atom/target, def_zone = BODY_ZONE_CHEST, blocked = 0)
+/obj/item/projectile/bullet/anti_singulo/on_hit(atom/target, blocked = 0)
+	..()
+
 	if(istype(target, /obj/singularity/narsie))
 		return
 
 	if(istype(target, /obj/singularity))
-		empulse(target, 4, 10)
-		qdel(target)
+		empulse(target.loc, 4, 10)
+		explosion(target.loc, 1, 2, 3, 6)
+		if(!QDELETED(target))
+			qdel(target)
 		return
 
-	return ..()
+	return BULLET_ACT_HIT
 
 /obj/item/gun/ballistic/rocketlauncher/anti_singulo
 	name = "XASL Mk.2 Singularity Buster"
