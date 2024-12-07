@@ -244,7 +244,7 @@
 	name = "FTU Cape"
 	slot = ITEM_SLOT_NECK
 	path = /obj/item/clothing/neck/cloak/ftu
-	ckeywhitelist = list("fanlexa", "kosep")
+	ckeywhitelist = list("fanlexa", "kosep", "dragoncora")
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
 /datum/gear/donator/bm/angelo
@@ -1048,20 +1048,6 @@
 	subcategory = LOADOUT_SUBCATEGORIES_DON02
 	restricted_desc = "Head of Security, Warden, Detective, Security Officer, Brig Physician, Peacekeeper, Blueshield."
 	restricted_roles = list("Head of Security", "Warden", "Detective", "Security Officer", "Brig Physician", "Peacekeeper", "Blueshield")
-
-/datum/gear/donator/bm/dc_helmet
-	name = "Agent Headgear"
-	slot = ITEM_SLOT_HEAD
-	path = /obj/item/clothing/head/helmet/abductor/fake
-	ckeywhitelist = list("dragoncora")
-	subcategory = LOADOUT_SUBCATEGORIES_DON02
-
-/datum/gear/donator/bm/dc_suit
-	name = "Agent Suit"
-	slot = ITEM_SLOT_OCLOTHING
-	path = /obj/item/clothing/suit/armor/abductor/vest/fake
-	ckeywhitelist = list("dragoncora")
-	subcategory = LOADOUT_SUBCATEGORIES_DON02
 
 
 /datum/gear/donator/bm/soviet_coat

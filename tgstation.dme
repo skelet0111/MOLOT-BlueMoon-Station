@@ -4368,6 +4368,7 @@
 #include "modular_bluemoon\flixsim\code\kvass\kvass_reagents.dm"
 #include "modular_bluemoon\fluffs\code\accessories.dm"
 #include "modular_bluemoon\fluffs\code\donator.dm"
+#include "modular_bluemoon\fluffs\code\dragoncora.dm"
 #include "modular_bluemoon\fluffs\code\guns.dm"
 #include "modular_bluemoon\fluffs\code\head.dm"
 #include "modular_bluemoon\fluffs\code\items.dm"
