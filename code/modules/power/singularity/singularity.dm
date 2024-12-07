@@ -268,10 +268,10 @@
 			dissipate_strength = 1
 			singulo_swirl.plane = SINGULARITY_EFFECT_PLANE_1
 			singulo_effect.plane = SINGULARITY_EFFECT_PLANE_1
-			animate(singulo_lens, transform = matrix().Scale(0.6), time = 25)
+			animate(singulo_lens, transform = matrix().Scale(0.5), time = 25)
 			singulo_lens.pixel_x = -128
 			singulo_lens.pixel_y = -128
-			animate(singulo_swirl, transform = matrix().Scale(0.3), time = 25)
+			animate(singulo_swirl, transform = matrix().Scale(0.25), time = 25)
 			singulo_swirl.pixel_x = -128
 			singulo_swirl.pixel_y = -128
 			animate(singulo_effect, transform = matrix().Scale(0.015), time = 25)
