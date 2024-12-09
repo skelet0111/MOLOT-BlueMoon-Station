@@ -16,7 +16,7 @@
 
 /obj/item/reagent_containers/food/drinks/soda_cans/blood
 	name = "Stoker's Reserve"
-	desc = "A cola bottle made to look like a night out on the town, bears a large V"
+	desc = "A cola bottle made to look like a night out on the town, bears a large V."
 	icon = 'modular_splurt/icons/obj/drinks.dmi'
 	icon_state = "blood"
 	list_reagents = list(/datum/reagent/blood = 30)
