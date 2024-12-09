@@ -113,6 +113,8 @@
 	singulo_effect = new(src)
 	vis_contents += singulo_effect
 
+	expand()
+
 	START_PROCESSING(SSobj, src)
 	GLOB.poi_list |= src
 	GLOB.singularities |= src
