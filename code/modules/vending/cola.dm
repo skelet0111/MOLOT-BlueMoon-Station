@@ -1,4 +1,3 @@
-
 /obj/machinery/vending/cola
 	name = "\improper Robust Softdrinks"
 	desc = "A softdrink vendor provided by Robust Industries, LLC."
@@ -88,7 +87,7 @@
 	light_mask = "pwr_game-light-mask"
 	light_color = COLOR_STRONG_VIOLET
 
-/obj/machinery/vending/cola/shamblers
+// /obj/machinery/vending/cola/shamblers
 	name = "\improper Shambler's Vendor"
 	desc = "~Shake me up some of that Shambler's Juice!~"
 	icon_state = "shamblers_juice"
@@ -105,7 +104,7 @@
 	product_ads = "Refreshing!;Jyrbv dv lg jfdv fw kyrk Jyrdscvi'j Alztv!;Over 1 trillion souls drank!;Thirsty? Nyp efk uizeb kyv uribevjj?;Kyv Jyrdscvi uizebj kyv ezxyk!;Drink up!;Krjkp."
 	light_mask = "shamblers-light-mask"
 	light_color = COLOR_MOSTLY_PURE_PINK
-/obj/machinery/vending/cola/buzz_fuzz
+// /obj/machinery/vending/cola/buzz_fuzz
 	name = "\improper Buzz Fuzz Vendor"
 	desc = "~A hive of Flavour!~"
 	icon_state = "honey_vender"
