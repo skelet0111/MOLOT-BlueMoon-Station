@@ -1,9 +1,9 @@
 /// Lower excess value for APC arcing, 5% chance to arc
-#define APC_ARC_LOWERLIMIT 5 MEGAWATTS
+#define APC_ARC_LOWERLIMIT 5 MEGA WATT
 /// Moderate excess value for APC arcing, 10% chance to arc
-#define APC_ARC_MEDIUMLIMIT 10 MEGAWATTS
+#define APC_ARC_MEDIUMLIMIT 10 MEGA WATT
 /// Upper excess value for for APC arcing, 15% chance to arc
-#define APC_ARC_UPPERLIMIT 15 MEGAWATTS
+#define APC_ARC_UPPERLIMIT 15 MEGA WATT
 
 /obj/machinery/power/apc
 	/// Has the APC been protected against arcing?
