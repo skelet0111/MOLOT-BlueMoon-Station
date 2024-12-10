@@ -1,4 +1,4 @@
-/obj/item/clothing/under/rank/centcom
+/obj/item/clothing/under/rank/centcom/ccuniforms
 	name = "centcom suit"
 	desc = "A green suit that smells of self importance, often worn by a certain bridge \"advisor\"."
 	icon = 'icons/obj/clothing/uniforms.dmi'
