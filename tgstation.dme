@@ -5181,6 +5181,7 @@
 #include "modular_splurt\code\modules\vending\boozeomat.dm"
 #include "modular_splurt\code\modules\vending\cigarette.dm"
 #include "modular_splurt\code\modules\vending\clothesmate.dm"
+#include "modular_splurt\code\modules\vending\cola.dm"
 #include "modular_splurt\code\modules\vending\engineering.dm"
 #include "modular_splurt\code\modules\vending\games.dm"
 #include "modular_splurt\code\modules\vending\kinkmate.dm"

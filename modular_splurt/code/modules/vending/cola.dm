@@ -1,4 +1,4 @@
-/* /obj/machinery/vending/cola/Initialize(mapload)
+/obj/machinery/vending/cola/Initialize(mapload)
 	var/list/extra_products = list(
 			/obj/item/reagent_containers/glass/beaker/waterbottle/large = 5,
 			/obj/item/reagent_containers/food/drinks/soda_cans/carbonatedcum = 5,
@@ -8,4 +8,3 @@
 	)
 	LAZYADD(products, extra_products)
 	. = ..()
-Doesn't work, why bother?

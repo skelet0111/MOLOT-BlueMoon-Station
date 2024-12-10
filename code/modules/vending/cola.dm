@@ -12,13 +12,7 @@
 					/obj/item/reagent_containers/food/drinks/soda_cans/pwr_game = 10,
 					/obj/item/reagent_containers/food/drinks/soda_cans/lemon_lime = 10,
 					/obj/item/reagent_containers/food/drinks/soda_cans/sol_dry = 10,
-					/obj/item/reagent_containers/glass/beaker/waterbottle = 10,
-					//SPLURT ADDITIONS - MODULARIZATION IMPOSSIBLE?
-					/obj/item/reagent_containers/glass/beaker/waterbottle/large = 5,
-					/obj/item/reagent_containers/food/drinks/soda_cans/carbonatedcum = 5,
-					/obj/item/reagent_containers/food/drinks/soda_cans/carbonatedfemcum = 5,
-					/obj/item/reagent_containers/food/drinks/soda_cans/blood = 5,
-					/obj/item/reagent_containers/food/drinks/soda_cans/blooddiscrete = 5
+					/obj/item/reagent_containers/glass/beaker/waterbottle = 10
 					)
 	contraband = list(/obj/item/reagent_containers/food/drinks/soda_cans/thirteenloko = 6,
 					/obj/item/reagent_containers/food/drinks/soda_cans/shamblers = 6,
