@@ -10566,6 +10566,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/service)
+"aOQ" = (
+/obj/structure/particle_accelerator/particle_emitter/left{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/engineering/main)
 "aOR" = (
 /obj/structure/cable/white{
 	icon_state = "0-2"
@@ -23907,14 +23913,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plating/airless,
-/area/space/nearstation)
-"cky" = (
-/obj/structure/cable,
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/machinery/power/tesla_coil,
+/obj/machinery/power/rad_collector/anchored,
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "ckz" = (
@@ -25175,6 +25174,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+/obj/machinery/power/rad_collector/anchored,
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "cnI" = (
@@ -26186,16 +26186,6 @@
 	},
 /turf/open/space,
 /area/space)
-"crI" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/machinery/power/tesla_coil,
-/turf/open/floor/plating/airless,
-/area/space/nearstation)
 "crJ" = (
 /obj/item/wrench,
 /turf/open/floor/plating/airless,
@@ -26215,6 +26205,10 @@
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
+	},
+/obj/machinery/power/rad_collector/anchored,
+/obj/structure/cable{
+	icon_state = "0-4"
 	},
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
@@ -28461,14 +28455,7 @@
 	icon_state = "0-2"
 	},
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/plating/airless,
-/area/space/nearstation)
-"czq" = (
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/effect/turf_decal/stripes/line,
-/obj/machinery/power/tesla_coil,
+/obj/machinery/power/rad_collector/anchored,
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "czr" = (
@@ -73947,6 +73934,9 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/service/theater)
 "hIu" = (
+/obj/structure/particle_accelerator/particle_emitter/right{
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/engineering/main)
 "hIw" = (
@@ -74012,6 +74002,7 @@
 /area/engineering/atmos)
 "hJl" = (
 /obj/structure/cable,
+/obj/machinery/particle_accelerator/control_box,
 /turf/open/floor/plating,
 /area/engineering/main)
 "hJo" = (
@@ -83604,6 +83595,20 @@
 /obj/machinery/meter,
 /turf/open/floor/plasteel,
 /area/engineering/atmospherics_engine)
+"klZ" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/power/rad_collector/anchored,
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1
+	},
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
 "kma" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/dark/side,
@@ -89260,6 +89265,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/bot,
+/obj/structure/tank_dispenser,
 /turf/open/floor/plasteel,
 /area/engineering/main)
 "mbd" = (
@@ -96384,6 +96390,12 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
+"nYc" = (
+/obj/structure/particle_accelerator/fuel_chamber{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/engineering/main)
 "nYh" = (
 /obj/machinery/status_display/evac{
 	pixel_y = -32
@@ -114357,6 +114369,12 @@
 	},
 /turf/open/floor/carpet,
 /area/service/chapel/office)
+"tjP" = (
+/obj/structure/particle_accelerator/particle_emitter/center{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/engineering/main)
 "tke" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -129092,6 +129110,12 @@
 	},
 /turf/open/floor/carpet,
 /area/service/lawoffice)
+"xxG" = (
+/obj/structure/particle_accelerator/end_cap{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/engineering/main)
 "xxJ" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
@@ -129385,6 +129409,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/service/bar/atrium)
+"xAH" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/power/rad_collector/anchored,
+/obj/structure/cable,
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
 "xAJ" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/stripes/line,
@@ -129642,6 +129677,12 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/wood,
 /area/command/heads_quarters/hop)
+"xFN" = (
+/obj/structure/particle_accelerator/power_box{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/engineering/main)
 "xFX" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
@@ -152049,7 +152090,7 @@ clR
 cnB
 clR
 clR
-crI
+cnB
 clR
 clR
 cnB
@@ -153329,7 +153370,7 @@ ruT
 qIX
 aad
 cjb
-cky
+ckx
 aaa
 aad
 abj
@@ -153339,7 +153380,7 @@ ctn
 abj
 aad
 aaa
-czq
+czp
 cAI
 aad
 qIX
@@ -154616,13 +154657,13 @@ aad
 cjc
 ckz
 clU
-clU
+klZ
 clU
 clU
 crL
 clU
 clU
-clU
+xAH
 clU
 czr
 cAJ
@@ -155389,8 +155430,8 @@ reO
 reO
 kVk
 rXT
-hIu
-hIu
+aOQ
+tjP
 hIu
 spg
 kVk
@@ -155647,7 +155688,7 @@ rHr
 qba
 rXT
 sQv
-hIu
+xFN
 pYs
 uou
 qba
@@ -155904,7 +155945,7 @@ nsY
 pzB
 icy
 hJl
-hIu
+nYc
 ylT
 fTv
 pzB
@@ -156161,7 +156202,7 @@ mIT
 gPu
 sZf
 jLv
-hIu
+xxG
 qps
 hcR
 gPu
