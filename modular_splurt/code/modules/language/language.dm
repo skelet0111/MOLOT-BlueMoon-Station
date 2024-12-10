@@ -26,7 +26,7 @@
 	speech_verb = "meows"
 	ask_verb = "mrrps"
 	exclaim_verb = "mrowls"
-	key = "9"
+	key = "m"
 	flags = TONGUELESS_SPEECH
 	space_chance = 100
 	syllables = list(
@@ -43,4 +43,3 @@
 	default_priority = 75
 	//SKYRAT CHANGE - language restriction
 	restricted = FALSE
-	//
