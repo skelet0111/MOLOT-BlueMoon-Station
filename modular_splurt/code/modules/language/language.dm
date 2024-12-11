@@ -26,7 +26,7 @@
 	speech_verb = "meows"
 	ask_verb = "mrrps"
 	exclaim_verb = "mrowls"
-	key = "m"
+	key = "3"
 	flags = TONGUELESS_SPEECH
 	space_chance = 100
 	syllables = list(
@@ -39,7 +39,13 @@
 
 	)
 	icon_state = "feline"
-	icon = 'modular_splurt/icons/misc/language.dmi'
 	default_priority = 75
 	//SKYRAT CHANGE - language restriction
 	restricted = FALSE
+
+//    							-----LUCKY KITTY MEOW MEOW LEARNING TIME-----
+// CODER! To save you the hassle, the key variable of a language must have be completly unique and not shared with any other languages.
+// To save you the trouble I have gone through all the languages in SPLURT Code. The remaining keys are 5, 7 and 8.
+// Please remove the keys from this comment when you use them! - Lucky (12/10/24)
+
+// Hypothetically, we could get around this by dynamically assigning keys to the languages a person speaks, but that's beyond me
