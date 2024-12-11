@@ -58294,18 +58294,6 @@
 "nBr" = (
 /turf/open/floor/grass/grass0,
 /area/commons/dorms)
-"nBB" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel,
-/area/engineering/main)
 "nBI" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -106618,7 +106606,7 @@ cfB
 cfI
 cgQ
 cjS
-nBB
+sFt
 cgI
 cgI
 cgI
