@@ -216,6 +216,9 @@ GLOBAL_LIST_INIT(autodrobe_other_items, list(
 	/obj/item/clothing/under/costume/loincloth/sensor = 1,
 	/obj/item/clothing/under/costume/loincloth/cloth/sensor = 1,
 	/obj/item/clothing/under/vaultsuit = 3,
+	/obj/item/clothing/underwear/briefs/garland_panties = 5,
+	/obj/item/clothing/underwear/shirt/garland_bra = 5,
+	/obj/item/clothing/suit/garland_suit = 5,
 ))
 
 GLOBAL_LIST_INIT(autodrobe_premium_items, list(
