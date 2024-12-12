@@ -1,4 +1,3 @@
-
 2024-12-04:
   SandPoot:
   - rscadd: Higher staff can now set titles for you on the manifest using the security
@@ -44,3 +43,11 @@
   - bugfix: Misc things, like removing the bombs
   - rscadd: Medical patient rooms, for "fun"
   - rscadd: A work-around fix for medical having issues monitoring crew
+2024-12-12:
+  JWosak:
+  - rscadd: Aux Engine
+  - rscadd: Junk collector shuttle (non movable)
+  - tweak: Genpop closets now uses secure closet sprite due to lack of prisoner one
+  - tweak: Genpop no longer creates new copy of prisoner uniform
+  - bugfix: Floor tiles are now fixed (not sprites codewise just location and orientations
+      of tiles on map file)

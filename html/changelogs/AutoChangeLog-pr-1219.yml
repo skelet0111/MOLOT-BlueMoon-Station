@@ -1,9 +1,0 @@
-author: JWosak
-delete-after: true
-changes:
-  - rscadd: Aux Engine
-  - rscadd: Junk collector shuttle (non movable)
-  - tweak: Genpop closets now uses secure closet sprite due to lack of prisoner one
-  - tweak: Genpop no longer creates new copy of prisoner uniform
-  - bugfix: Floor tiles are now fixed (not sprites codewise just location and orientations
-      of tiles on map file)
