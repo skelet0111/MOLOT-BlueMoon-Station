@@ -1,3 +1,9 @@
+GLOBAL_LIST_INIT(clothesmate_shirt, list())
+
+GLOBAL_LIST_INIT(clothesmate_underwear, list())
+
+GLOBAL_LIST_INIT(clothesmate_socks, list())
+
 /obj/machinery/vending/clothing
 	name = "ClothesMate"
 	desc = "A vending machine for clothing."
@@ -175,7 +181,7 @@
 
 		list(
 			"name" = "Under",
-			"icon" = "shirt",
+			"icon" = "person-dress",
 			"products" = list(
 				/obj/item/clothing/under/bluedress = 3,
 				/obj/item/clothing/under/blutigen_undergarment = 3,
@@ -388,7 +394,7 @@
 
 		list(
 			"name" = "Shoes",
-			"icon" = "socks",
+			"icon" = "shoe-prints",
 			"products" = list(
 				/obj/item/clothing/shoes/basil_boys = 7,
 				/obj/item/clothing/shoes/cowboyboots = 3,
@@ -489,6 +495,47 @@
 	payment_department = NO_FREEBIES
 	light_mask = "wardrobe-light-mask"
 	light_color = LIGHT_COLOR_ELECTRIC_GREEN
+
+/obj/machinery/vending/clothing/Initialize(mapload)
+	for(var/P in typesof(/datum/gear/shirt))
+		var/datum/gear/G = P
+		var/obj/item/path = initial(G.path)
+		if(path)
+			GLOB.clothesmate_shirt[path] = 5
+
+	for(var/P in typesof(/datum/gear/underwear))
+		var/datum/gear/G = P
+		var/obj/item/path = initial(G.path)
+		if(path)
+			GLOB.clothesmate_underwear[path] = 5
+
+	for(var/P in typesof(/datum/gear/socks))
+		var/datum/gear/G = P
+		var/obj/item/path = initial(G.path)
+		if(path)
+			GLOB.clothesmate_socks[path] = 5
+
+	product_categories += list(
+		list(
+			"name" = "Undershirt",
+			"icon" = "shirt",
+			"products" = GLOB.clothesmate_shirt,
+		),
+
+		list(
+			"name" = "Underwear",
+			"icon" = "file-shield",
+			"products" = GLOB.clothesmate_underwear,
+		),
+
+		list(
+			"name" = "Undersocks",
+			"icon" = "socks",
+			"products" = GLOB.clothesmate_socks,
+		),
+	)
+
+	return ..()
 
 /obj/machinery/vending/clothing/canLoadItem(obj/item/I,mob/user)
 	return (I.type in products)

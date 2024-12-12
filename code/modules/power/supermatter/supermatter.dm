@@ -192,6 +192,9 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 	///Disables the sm's proccessing totally.
 	var/processes = TRUE
 
+	/// If the SM is decorated with holiday lights
+	var/holiday_lights = FALSE
+
 /obj/machinery/power/supermatter_crystal/Initialize(mapload)
 	. = ..()
 	uid = gl_uid++
@@ -212,6 +215,9 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 
 	soundloop = new(src, TRUE)
 
+	if((NEW_YEAR in SSevents.holidays) || (CHRISTMAS in SSevents.holidays))
+		holiday_lights()
+
 /obj/machinery/power/supermatter_crystal/Destroy()
 	investigate_log("has been destroyed.", INVESTIGATE_SUPERMATTER)
 	SSair.stop_processing_machine(src)
@@ -229,6 +235,8 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 		var/mob/living/carbon/C = user
 		if (!istype(C.glasses, /obj/item/clothing/glasses/meson) && (get_dist(user, src) < HALLUCINATION_RANGE(power)))
 			. += "<span class='danger'>You get headaches just from looking at it.</span>"
+	if(holiday_lights)
+		. += span_notice("Испуская как праздничное настроение, так и настоящую радиацию, этот объект украшен ослепительными гирляндами, которые аккуратно обвивают его основание, превращая потенциальное оружие апокалипсиса в космический рождественский шедевр.")
 
 // SupermatterMonitor UI for ghosts only. Inherited attack_ghost will call this.
 /obj/machinery/power/supermatter_crystal/ui_interact(mob/user, datum/tgui/ui)
@@ -331,6 +339,13 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 	. = ..()
 	if(final_countdown)
 		. += "casuality_field"
+	if(holiday_lights)
+		if(istype(src, /obj/machinery/power/supermatter_crystal/shard))
+			. += mutable_appearance(icon, "holiday_lights_shard")
+			. += emissive_appearance(icon, "holiday_lights_shard_e", src, alpha = src.alpha)
+		else
+			. += mutable_appearance(icon, "holiday_lights")
+			. += emissive_appearance(icon, "holiday_lights_e", src, alpha = src.alpha)
 
 /obj/machinery/power/supermatter_crystal/proc/countdown()
 	set waitfor = FALSE
@@ -851,6 +866,16 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 			playsound(src, 'sound/effects/supermatter.ogg', 50, TRUE)
 			radiation_pulse(src, 50, 3)
 			return
+	if((NEW_YEAR in SSevents.holidays) || (CHRISTMAS in SSevents.holidays))
+		if(istype(W, /obj/item/clothing/head/christmashat) || istype(W, /obj/item/clothing/head/christmashatg))
+			QDEL_NULL(W)
+			RegisterSignal(src, COMSIG_PARENT_EXAMINE, PROC_REF(holiday_hat_examine))
+			if(istype(src, /obj/machinery/power/supermatter_crystal/shard))
+				add_overlay(mutable_appearance(icon, "santa_hat_shard"))
+			else
+				add_overlay(mutable_appearance(icon, "santa_hat"))
+			return COMPONENT_CANCEL_ATTACK_CHAIN
+		return NONE
 	if(istype(W, /obj/item/scalpel/supermatter))
 		var/obj/item/scalpel/supermatter/scalpel = W
 		to_chat(user, "<span class='notice'>You carefully begin to scrape \the [src] with \the [W]...</span>")
@@ -1167,6 +1192,15 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 			if(zap_count > 1)
 				targets_hit = targets_hit.Copy() //Pass by ref begone
 			supermatter_zap(target, new_range, zap_str, zap_flags, targets_hit)
+
+/obj/machinery/power/supermatter_crystal/proc/holiday_lights()
+	holiday_lights = TRUE
+	update_appearance()
+
+/// Adds the hat flavor text when examined
+/obj/machinery/power/supermatter_crystal/proc/holiday_hat_examine(atom/source, mob/user, list/examine_list)
+	SIGNAL_HANDLER
+	examine_list += span_info("There's a santa hat placed atop it. How it got there without being dusted is a mystery.")
 
 #undef HALLUCINATION_RANGE
 #undef GRAVITATIONAL_ANOMALY
