@@ -111,7 +111,7 @@ Our Method:
 	if(combined_gas > MOLE_PENALTY_THRESHOLD)
 		investigate_log("has collapsed into a singularity.", INVESTIGATE_SUPERMATTER)
 		if(T) //If something fucks up we blow anyhow. This fix is 4 years old and none ever said why it's here. help.
-			var/obj/singularity/S = new(T)
+			var/obj/singularity/gravitational/S = new(T)
 			S.energy = 800
 			S.consume(src)
 			return //No boom for me sir
