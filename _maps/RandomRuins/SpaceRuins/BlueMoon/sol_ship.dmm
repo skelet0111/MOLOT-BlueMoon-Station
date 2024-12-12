@@ -1941,7 +1941,8 @@
 "ll" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/n2{
 	dir = 1;
-	piping_layer = 3
+	piping_layer = 3;
+	on = 0
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/inteq_forgotten_atmos)
@@ -2541,7 +2542,8 @@
 "ox" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/o2{
 	dir = 1;
-	piping_layer = 3
+	piping_layer = 3;
+	on = 0
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/inteq_forgotten_atmos)
@@ -5295,7 +5297,8 @@
 /area/ruin/space/has_grav/inteq_forgotten_medbay)
 "Ez" = (
 /obj/machinery/atmospherics/components/trinary/mixer/airmix/flipped{
-	dir = 4
+	dir = 4;
+	on = 0
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -8281,7 +8284,8 @@
 "Wt" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/plasma{
 	dir = 1;
-	piping_layer = 3
+	piping_layer = 3;
+	on = 0
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/inteq_forgotten_atmos)

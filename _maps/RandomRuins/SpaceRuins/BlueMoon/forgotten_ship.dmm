@@ -1729,6 +1729,7 @@
 	dir = 1;
 	icon_state = "delivery_red"
 	},
+/obj/machinery/suit_storage_unit/syndicate/inteq,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/inteq_forgotten_vault)
 "jo" = (
@@ -2200,7 +2201,8 @@
 "ll" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/n2{
 	dir = 1;
-	piping_layer = 3
+	piping_layer = 3;
+	on = 0
 	},
 /obj/item/ammo_casing/shotgun/buckshot,
 /obj/item/ammo_casing/shotgun/buckshot,
@@ -3007,7 +3009,8 @@
 "ox" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/o2{
 	dir = 1;
-	piping_layer = 3
+	piping_layer = 3;
+	on = 0
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/inteq_forgotten_atmos)
@@ -6247,7 +6250,8 @@
 /area/ruin/space/has_grav/inteq_forgotten_medbay)
 "Ez" = (
 /obj/machinery/atmospherics/components/trinary/mixer/airmix/flipped{
-	dir = 4
+	dir = 4;
+	on = 0
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -9528,7 +9532,8 @@
 "Wt" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/plasma{
 	dir = 1;
-	piping_layer = 3
+	piping_layer = 3;
+	on = 0
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/inteq_forgotten_atmos)
