@@ -82,7 +82,7 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 
 /obj/machinery/power/supermatter_crystal
 	name = "supermatter crystal"
-	desc = "A strangely translucent and iridescent crystal."
+	desc = "Странный, полупрозрачный и переливающийся энергией кристалл нейтронной звезды."
 	icon = 'icons/obj/supermatter.dmi'
 	icon_state = "sm"
 	density = TRUE
@@ -871,9 +871,9 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 			QDEL_NULL(W)
 			RegisterSignal(src, COMSIG_PARENT_EXAMINE, PROC_REF(holiday_hat_examine))
 			if(istype(src, /obj/machinery/power/supermatter_crystal/shard))
-				add_overlay(mutable_appearance(icon, "santa_hat_shard"))
+				add_overlay(mutable_appearance(icon, "santa_hat_shard", 3))
 			else
-				add_overlay(mutable_appearance(icon, "santa_hat"))
+				add_overlay(mutable_appearance(icon, "santa_hat", 3))
 			return COMPONENT_CANCEL_ATTACK_CHAIN
 		return NONE
 	if(istype(W, /obj/item/scalpel/supermatter))
@@ -1200,7 +1200,7 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 /// Adds the hat flavor text when examined
 /obj/machinery/power/supermatter_crystal/proc/holiday_hat_examine(atom/source, mob/user, list/examine_list)
 	SIGNAL_HANDLER
-	examine_list += span_info("There's a santa hat placed atop it. How it got there without being dusted is a mystery.")
+	examine_list += span_info("На кристалл Суперматерии надета шапка Деда Мороза. Как она туда попала, не будучи стёртой в пыль, остается загадкой...")
 
 #undef HALLUCINATION_RANGE
 #undef GRAVITATIONAL_ANOMALY
