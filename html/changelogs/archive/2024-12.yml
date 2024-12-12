@@ -51,3 +51,8 @@
   - tweak: Genpop no longer creates new copy of prisoner uniform
   - bugfix: Floor tiles are now fixed (not sprites codewise just location and orientations
       of tiles on map file)
+  SpaceCat404:
+  - rscadd: Old Glory sunflower seeds, a junk food available in snack machines.
+  - rscadd: Nyanese (feline) language.
+  - rscadd: TSC gasmask, available in sci wardrobe vendors. Slightly better bio and
+      acid protection at the cost of rad protection.
