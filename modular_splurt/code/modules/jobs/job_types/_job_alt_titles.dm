@@ -10,7 +10,8 @@
 		"Cuntpitain",
 		"Cap-Slut",
 		"Grey Cardinals",
-		"Condom"
+		"Condom",
+		"Catpain"
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()
