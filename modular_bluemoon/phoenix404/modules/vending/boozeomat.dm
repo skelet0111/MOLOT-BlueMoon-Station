@@ -31,6 +31,10 @@
 				/obj/item/reagent_containers/food/drinks/bottle/navy_rum = 3,
 				/obj/item/reagent_containers/food/drinks/ale = 6,
 				/obj/item/reagent_containers/food/drinks/beer = 6,
+				/obj/item/reagent_containers/food/drinks/bottle/navy_rum = 3,
+				/obj/item/reagent_containers/food/drinks/bottle/bloodwine = 3,
+				/obj/item/reagent_containers/food/drinks/bottle/femcum_whiskey = 4,
+				/obj/item/reagent_containers/food/drinks/bottle/cum_rum = 4,
 			),
 		),
 

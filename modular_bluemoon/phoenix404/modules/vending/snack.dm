@@ -17,6 +17,7 @@
 		/obj/item/reagent_containers/food/snacks/cornchips = 5,
 		/obj/item/reagent_containers/food/snacks/energybar = 6,
 		/obj/item/storage/fancy/jellybean_bowl = 5,
+		/obj/item/reagent_containers/food/snacks/sfseeds = 5,
 	)
 	contraband = list(
 		/obj/item/reagent_containers/food/snacks/cracker = 10,

@@ -348,6 +348,7 @@
 		/obj/item/clothing/shoes/sneakers/white = 4,
 		/obj/item/radio/headset/headset_sci = 4,
 		/obj/item/clothing/mask/balaclava/breath/redscarf/purplescarf = 4,
+		/obj/item/clothing/mask/gas/tscmask = 3,
 		/obj/item/clothing/mask/gas = 5
 	)
 	refill_canister = /obj/item/vending_refill/wardrobe/science_wardrobe
